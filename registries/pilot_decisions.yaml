@@ -1,0 +1,72 @@
+schema_version: 1
+registry_id: TA-PILOT-DEC-1.0
+frozen_on: 2026-09-18
+rule: No scheduled choice may use final-holdout outcomes.
+decisions:
+  - id: DEC-S02-001
+    choice: Exact LEGACY eligibility list, label-free stratifiers, and star-grouped split assignment.
+    status: scheduled
+    decision_stage: S2_T2.8
+    owner_role: data_steward_with_supervisor_approval
+    evidence_required: Verified identities, missingness/QC distribution, no topology outputs, no final performance labels.
+  - id: DEC-S03-001
+    choice: Primary classical implementation and reference range for nu_max and Delta_nu.
+    status: scheduled
+    decision_stage: S3_G3
+    owner_role: principal_researcher_and_supervisor
+    evidence_required: Rudy Lightkurve/pySYD/background/window reconciliation.
+  - id: DEC-S04-001
+    choice: Duration, SNR, duty-cycle, cadence, damping, and background factorial ranges.
+    status: scheduled
+    decision_stage: S4_pilot_freeze
+    owner_role: methods_reviewer
+    evidence_required: Bounded pilot, physical coverage, compute profile, no confirmation simulations inspected.
+  - id: DEC-S05-001
+    choice: Retained diagram summaries, normalization, and independent TDA backends.
+    status: scheduled
+    decision_stage: S5_representation_review
+    owner_role: principal_researcher_and_methods_reviewer
+    evidence_required: Analytic agreement, perturbation tests, localization, topology-free ablations.
+  - id: DEC-S06-001
+    choice: PSD background branch, smoothing bandwidth family, search interval, and H1 practical margin.
+    status: scheduled
+    decision_stage: S6_before_confirmation
+    owner_role: methods_reviewer_with_supervisor_approval
+    evidence_required: Simulation plus development stars only; paired uncertainty and classical variability scale.
+  - id: DEC-S07-001
+    choice: Delay dimension/lag family, retained coherence target, and H4 operating point.
+    status: scheduled
+    decision_stage: S7_statistic_lock
+    owner_role: methods_reviewer
+    evidence_required: Simulation/development surrogate separation and PSD-only control.
+  - id: DEC-S08-001
+    choice: Ridge-linking penalties, radial-order range, trial-Delta grid, and locked H3 ratio.
+    status: scheduled
+    decision_stage: S8_before_population_confirmation
+    owner_role: principal_researcher_and_methods_reviewer
+    evidence_required: Analytic ridges, aliases, simulations, and development stars only.
+  - id: DEC-S09-001
+    choice: Decision-usefulness/tightness margin for H6.
+    status: scheduled
+    decision_stage: S9_before_claim_freeze
+    owner_role: supervisor_and_methods_reviewer
+    evidence_required: Physical perturbation scale and exact/counterexample suite.
+  - id: DEC-S11-001
+    choice: H5 target, practical gain margin, subgroup minimum size, and final model complexity.
+    status: scheduled
+    decision_stage: S11_before_holdout
+    owner_role: supervisor_and_methods_reviewer
+    evidence_required: Nested development/internal-validation results, simulation power, no holdout access.
+  - id: DEC-S12-001
+    choice: Whether and how actual Rudy TESS sectors may be combined and whether broader TESS work proceeds.
+    status: scheduled
+    decision_stage: S12_transfer_gate
+    owner_role: supervisor
+    evidence_required: Kepler degradation, sectorwise window/noise/crowding audit, detectability forecast.
+  - id: DEC-S13-001
+    choice: Install/run a compact MESA/GYRE grid or use published/asymptotic frequencies.
+    status: scheduled
+    decision_stage: S13_extension_gate
+    owner_role: supervisor
+    evidence_required: Core stable, discriminating scientific question, one-cycle compute/install bound.
+

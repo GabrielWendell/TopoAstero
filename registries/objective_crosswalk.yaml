@@ -1,0 +1,126 @@
+schema_version: 1
+registry_id: TA-OBJ-1.0
+frozen_on: 2026-09-18
+research_questions:
+  - id: RQ0
+    text: Can persistent topology provide stable, interpretable, complementary solar-like oscillation observables under degraded conditions?
+    hypotheses: [H1, H2, H3, H4, H5, H6]
+  - id: RQ1
+    text: Which physical representation gives the most reproducible and interpretable persistence?
+    hypotheses: [H1, H2, H4]
+  - id: RQ2
+    text: Can upper-star normalized-PSD persistence recover nu_max or a robust peak hierarchy?
+    hypotheses: [H1]
+  - id: RQ3
+    text: Can cylindrical ridge connectivity estimate Delta_nu and reject half/double aliases?
+    hypotheses: [H2]
+  - id: RQ4
+    text: Can angular ridge separation recover small-separation quantities with calibrated uncertainty?
+    hypotheses: [H3]
+  - id: RQ5
+    text: Does delay persistence retain coherence/damping information after conditioning on the PSD?
+    hypotheses: [H4]
+  - id: RQ6
+    text: How do noise, backgrounds, gaps, cadence, and windows alter persistence and inference?
+    hypotheses: [H1, H2, H3, H4, H6]
+  - id: RQ7
+    text: Do hybrid models improve held-out recovery, calibration, or QC over strong baselines?
+    hypotheses: [H5]
+  - id: RQ8
+    text: Which conclusions transfer from Kepler to TESS?
+    hypotheses: [H5]
+  - id: RQ9
+    text: Which exact formulas or bounds hold for idealized and noisy mode-comb models?
+    hypotheses: [H6]
+objectives:
+  - id: O1
+    text: Reproduce conventional global and detailed benchmarks for KIC 10963065.
+    class: operational_scientific_control
+    hypothesis_ids: [H1, H2, H3]
+    estimand_or_acceptance: Difference from defensible Lightkurve/pySYD/peak-bagged reference ranges with joint uncertainty.
+    null_or_failure: Unexplained convention-dependent mismatch.
+    baseline: Published and independently recomputed classical quantities.
+    unit_of_analysis: Rudy product set and complete workflow.
+    minimum_publishable_conclusion: Reconciled benchmark or transparent discrepancy report before TDA claims.
+  - id: O2
+    text: Construct and compare five physically motivated topological representations.
+    class: scientific
+    hypothesis_ids: [H1, H2, H3, H4]
+    estimand_or_acceptance: Reproducibility, localization, stability, null separation, and redundancy by representation.
+    null_or_failure: A topology-free control or preprocessing artifact explains the feature.
+    baseline: Matched non-topological statistic for each representation.
+    unit_of_analysis: Representation x analytic/simulation/star case.
+    minimum_publishable_conclusion: Retain the smallest defensible set and publish drop reasons.
+  - id: O3
+    text: Define topological estimators of nu_max and Delta_nu with uncertainty.
+    class: scientific
+    hypothesis_ids: [H1, H2]
+    estimand_or_acceptance: Paired recovery error, coverage, and failure/alias probability.
+    null_or_failure: No practical advantage or calibrated reliability value versus classical baseline.
+    baseline: pySYD/Lightkurve plus ACF/PSPS.
+    unit_of_analysis: Star or independent stochastic realization.
+    minimum_publishable_conclusion: Calibrated estimator or explicit operating/failure boundary.
+  - id: O4
+    text: Develop cylindrical topological echelle and ridge persistence.
+    class: scientific
+    hypothesis_ids: [H2]
+    estimand_or_acceptance: Correct-spacing ridge-coherence recovery under periodic boundary.
+    null_or_failure: Rectangular-boundary, smoothing, or graph-only control explains performance.
+    baseline: Conventional echelle ridge and periodic graph-only score.
+    unit_of_analysis: Spectrum realization or star.
+    minimum_publishable_conclusion: Correct construction plus distinct value or quantified redundancy.
+  - id: O5
+    text: Test geometric/topological estimators of small-separation ratios.
+    class: scientific
+    hypothesis_ids: [H3]
+    estimand_or_acceptance: Error and complete-selection coverage for one locked ratio.
+    null_or_failure: No ratio meets the locked adequacy criterion.
+    baseline: Conventional frequency fit/peak bagging.
+    unit_of_analysis: Eligible star.
+    minimum_publishable_conclusion: Calibrated ratio domain or rigorous no-estimate conclusion.
+  - id: O6
+    text: Derive exact relations or bounds for idealized signals and perturbations.
+    class: scientific
+    hypothesis_ids: [H6]
+    estimand_or_acceptance: Bound validity, tightness, and decision-usefulness.
+    null_or_failure: Invalid assumptions or uniformly noninformative tightness.
+    baseline: Direct perturbation calculation and generic stability bound.
+    unit_of_analysis: Analytic case or perturbation realization.
+    minimum_publishable_conclusion: Useful bound, exact limited identity, or counterexample.
+  - id: O7
+    text: Establish operating regions in duration, SNR, cadence, and duty cycle.
+    class: scientific_calibration
+    hypothesis_ids: [H1, H2, H3, H4, H6]
+    estimand_or_acceptance: Bias, variance, coverage, Type-I error, power, and failure surface.
+    null_or_failure: Calibration or coverage fails in the claimed region.
+    baseline: Identical simulation grid with classical/topology-free methods.
+    unit_of_analysis: Independent simulation realization.
+    minimum_publishable_conclusion: Honest operating-domain map including failure regions.
+  - id: O8
+    text: Validate on the 66-star Kepler LEGACY sample and matched controls.
+    class: scientific_confirmation
+    hypothesis_ids: [H1, H2, H3, H5]
+    estimand_or_acceptance: Star-grouped held-out paired performance and calibration.
+    null_or_failure: No generalization or leakage/selection invalidates comparison.
+    baseline: Locked classical pipeline on identical stars/folds.
+    unit_of_analysis: Independent star.
+    minimum_publishable_conclusion: Generalization or explicitly bounded domain without leakage.
+  - id: O9
+    text: Evaluate TESS transfer with degradation and actual observations.
+    class: bounded_scientific_extension
+    hypothesis_ids: [H5]
+    estimand_or_acceptance: Domain-shift error, detectability, and QC calibration.
+    null_or_failure: Duration/noise/window makes transfer nonidentifiable.
+    baseline: Matched Kepler degradation and classical TESS analysis.
+    unit_of_analysis: Star-sector or independent degradation seed, grouped by star.
+    minimum_publishable_conclusion: Transfer result or detectability limit, not a false method failure.
+  - id: O10
+    text: Release reproducible code, manifests, configurations, tests, and reference outputs.
+    class: operational_reproducibility
+    hypothesis_ids: []
+    estimand_or_acceptance: Clean-environment unattended reproduction with complete provenance.
+    null_or_failure: Missing identity/hash/configuration or irreproducible headline output.
+    baseline: Independent collaborator following only repository documentation.
+    unit_of_analysis: Tagged release.
+    minimum_publishable_conclusion: R2 clean reproduction and DOI-bearing release record.
+

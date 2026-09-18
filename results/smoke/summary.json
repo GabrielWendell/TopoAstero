@@ -1,0 +1,12 @@
+{
+  "config_hash": "571952aa0113f5f84c6f3ff2f791082f9befff1cdada5e0b3a5bf84b2ea54f72",
+  "essential_pair_count": 1,
+  "finite_pair_count": 60,
+  "largest_finite_persistence": 2.401656179925063,
+  "pairs_hash": "50aba24f5859f56582ddec6f1f5e702947c3c5fce8cf4f019d1a25c2b0e7747d",
+  "random_seed": 20260721,
+  "result_hash": "c5c0170db39da89bbfaef2a968278dfcf2cb8ce93e16d5f6a4c240d04349c46f",
+  "samples": 512,
+  "signal_hash": "31eb91e4984802078ad04e1357c02d02b77f862692df5fe90af9f677bc98e715",
+  "workflow": "stage0-smoke-v1"
+}

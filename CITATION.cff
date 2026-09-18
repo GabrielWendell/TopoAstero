@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "TopoAstero"
+message: "If you use TopoAstero, cite the software release and the associated paper when available."
+type: software
+authors:
+  - family-names: "Wendell"
+    given-names: "Gabriel"
+version: 0.1.0
+date-released: 2026-09-18
+license: BSD-3-Clause
+keywords:
+  - asteroseismology
+  - persistent homology
+  - topological data analysis

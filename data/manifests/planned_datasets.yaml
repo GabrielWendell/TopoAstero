@@ -1,0 +1,101 @@
+schema_version: 1
+inventory_id: TA-DATASETS-1.0
+frozen_on: 2026-09-18
+identity_rule: Planned records do not become verified inputs until exact IDs and SHA-256 values pass T2 checks.
+datasets:
+  - id: DS-ANALYTIC
+    tier: T0_analytic
+    role: Exact identities, invariance tests, counterexamples, and implementation regression.
+    source: Project-generated sinusoids, Lorentzians, combs, and ideal cylindrical ridges.
+    planned_material: [sinusoid, multimode_signal, lorentzian_peak, regular_comb, randomized_comb, periodic_ridge]
+    identity_status: generator_specified_seeded_instances_pending_S4
+    resolution_stage: S4
+    license_or_terms: TopoAstero BSD-3-Clause code; released tables intended CC-BY-4.0.
+    retention_class: archive_generator_configs_and_reference_outputs
+    split_role: analytic
+
+  - id: DS-SIMULATION
+    tier: T1_stochastic_synthetic
+    role: Bias, coverage, Type-I error, detection boundary, and compute profiling.
+    source: Project stochastic damped-mode plus granulation/photon-noise simulator with mission windows.
+    planned_material: [solar_like_modes, harvey_background, photon_noise, gaps, Kepler_window, TESS_window]
+    identity_status: design_registered_factor_levels_pending_S4
+    resolution_stage: S4
+    license_or_terms: Project-generated; release under CC-BY-4.0 with code under BSD-3-Clause.
+    retention_class: archive_configs_seeds_sufficient_tables_and_selected_realizations
+    split_role: simulation_pilot_then_simulation_confirmation
+
+  - id: DS-MESA-GYRE
+    tier: T2_stellar_models
+    role: Optional physical ridge curvature, glitches, and mixed-mode onset stress test.
+    source: Official-version MESA structures and GYRE frequencies, or published/asymptotic substitute.
+    planned_material: [compact_evolutionary_grid, adiabatic_mode_frequencies]
+    identity_status: optional_capability_not_installed_at_S0
+    resolution_stage: S13_extension_gate
+    license_or_terms: MESA LGPL-3.0; GYRE GPL-3.0; exact releases and citations required.
+    retention_class: archive_inlists_version_logs_frequency_tables_and_selected_models
+    split_role: physics_extension
+
+  - id: DS-RUDY-KEPLER
+    tier: T3_stellar_benchmark
+    role: Transparent end-to-end benchmark and classical/topological localization case.
+    source: MAST Kepler short-cadence products for KIC 10963065 (HD 176693; Kepler-408; TIC 48450369).
+    planned_material:
+      quarters_proposal_stage: [2, 5, 6, 7]
+      cadence: short
+      exact_product_ids: null
+      exact_checksums: null
+    identity_status: aliases_and_quarters_provisional_exact_MAST_products_pending
+    resolution_stage: S2_T2.1_T2.2
+    license_or_terms: MAST/Kepler public archive terms and mission citation; verify per product.
+    retention_class: raw_manifest_indefinite_local_payload_project_plus_five_years_if_feasible
+    split_role: descriptive_case
+
+  - id: DS-RUDY-TESS
+    tier: T3_benchmark_transfer
+    role: Optional sectorwise and justified combined Kepler-to-TESS transfer case.
+    source: MAST TESS products for TIC 48450369.
+    planned_material:
+      sectors_seen_at_proposal_stage: [14, 15, 40, 41, 53, 55, 74, 75, 80, 81, 82]
+      sectors_are_frozen_inputs: false
+      exact_product_ids: null
+      exact_checksums: null
+    identity_status: proposal_query_only_must_requery_and_verify
+    resolution_stage: S2_T2.3
+    license_or_terms: MAST/TESS public archive terms and mission/pipeline citation; verify per product.
+    retention_class: raw_manifest_indefinite_local_payload_project_plus_five_years_if_feasible
+    split_role: descriptive_transfer_case
+
+  - id: DS-LEGACY
+    tier: T4_population_validation
+    role: Development, internal validation, and final population confirmation with authoritative labels.
+    source: Kepler Asteroseismic LEGACY sample of 66 well-characterized solar-like oscillators and published mode/stellar tables.
+    planned_material: [Kepler_light_curves, mode_frequencies, global_parameters, stellar_properties]
+    identity_status: cohort_concept_verified_exact_stars_products_tables_and_checksums_pending
+    resolution_stage: S1_T1.4_then_S2_T2.2_T2.6_T2.8
+    license_or_terms: Source catalog and MAST terms; citations and redistribution rights recorded per table/product.
+    retention_class: manifests_and_reference_tables_indefinite_holdout_assignment_protected_until_open
+    split_role: development_internal_validation_final_holdout_grouped_by_star
+
+  - id: DS-CONTROLS
+    tier: T5_stress_controls
+    role: Matched non-oscillator/background systems, quiet segments, and topology-free/null controls.
+    source: MAST/public products or registered transformations matched by noise, window, density, and stellar covariates.
+    planned_material: [background_only, quiet_segments, randomized_labels, matched_solar_analogs, early_subgiants]
+    identity_status: matching_variables_and_candidates_pending_S1_S2_S4
+    resolution_stage: S4_then_S11
+    license_or_terms: Inherit each source product's terms; project-generated transforms released with provenance.
+    retention_class: archive_matching_table_configs_seeds_and_manifest
+    split_role: control_group_inheriting_source_star_partition
+
+  - id: DS-KEPLER-TESS-DEGRADED
+    tier: T5_transfer_stress
+    role: Controlled attribution of duration, cadence, exposure, noise, dilution, and gaps before actual TESS interpretation.
+    source: Deterministic registered degradation of verified Kepler products using TESS-like observing factors.
+    planned_material: [duration, cadence, exposure, noise, dilution, sector_gaps, multiple_seeds]
+    identity_status: factor_design_and_parent_products_pending
+    resolution_stage: S12_T12.6
+    license_or_terms: Inherit Kepler terms; transformation code BSD-3-Clause and compact derived tables intended CC-BY-4.0.
+    retention_class: archive_parent_hashes_configs_seeds_summary_tables_and_selected_realizations
+    split_role: transfer_simulation_inheriting_parent_star_partition
+

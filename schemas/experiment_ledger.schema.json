@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/experiment_ledger.schema.json",
+  "title": "TopoAstero experiment ledger row",
+  "type": "object",
+  "required": ["experiment_id", "hypothesis_id", "status", "data_manifest", "split_role", "config_hash", "code_version", "environment", "random_seeds", "estimand_metric", "baseline_null", "outputs", "result", "decision", "deviation"],
+  "properties": {
+    "experiment_id": {"type": "string", "minLength": 1},
+    "hypothesis_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["planned", "running", "completed", "failed", "superseded", "invalid"]},
+    "config_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "split_role": {"type": "string"},
+    "random_seeds": {"type": "string"},
+    "decision": {"enum": ["retain", "drop", "repeat", "reframe", "escalate", "diagnostic_only", "pending"]}
+  },
+  "additionalProperties": true
+}

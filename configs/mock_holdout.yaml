@@ -1,0 +1,11 @@
+schema_version: 1
+workflow_id: mock-holdout-interface-v1
+experiment_id: TA-S00-T05-MOCK-HOLDOUT-R001
+hypothesis_id: DIAGNOSTIC-S0
+split_role: synthetic_mock_holdout
+contains_real_holdout_identifiers: false
+allow_parameter_updates: false
+failure_return:
+  status: no_estimate
+  retain_diagnostics: true
+

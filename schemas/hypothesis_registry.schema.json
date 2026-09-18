@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/hypothesis_registry.schema.json",
+  "title": "TopoAstero hypothesis registry",
+  "type": "object",
+  "required": ["schema_version", "registry_id", "frozen_on", "hypotheses"],
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "registry_id": {"type": "string"},
+    "frozen_on": {"type": "string", "format": "date"},
+    "hypotheses": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["id", "hypothesis", "null_hypothesis", "estimand", "unit_of_analysis", "primary_metric", "baseline", "minimum_publishable_conclusion", "falsification_rule", "decision_stage"],
+        "properties": {
+          "id": {"pattern": "^H[1-6]$"},
+          "hypothesis": {"type": "string", "minLength": 20},
+          "null_hypothesis": {"type": "string", "minLength": 20}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

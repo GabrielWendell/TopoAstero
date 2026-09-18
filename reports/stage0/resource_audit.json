@@ -1,0 +1,62 @@
+{
+  "archive_access": {
+    "attempted": false,
+    "reachable": null,
+    "status": "offline_mode",
+    "url": "https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html"
+  },
+  "audit_version": 1,
+  "captured_at_utc": "2026-09-18T14:52:48+00:00",
+  "host": {
+    "logical_cpu_count": 20,
+    "machine": "AMD64",
+    "memory_bytes": null,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "storage": {
+      "free_bytes": 326632296448,
+      "path": "TopoAstero",
+      "total_bytes": 510481395712
+    }
+  },
+  "persistence_benchmark": {
+    "algorithm": "exact_superlevel_h0_path",
+    "pairs_last_run": 61,
+    "repeats": 100,
+    "samples": 512,
+    "seconds_per_run": 0.000696802000165917,
+    "total_seconds": 0.0696802000165917
+  },
+  "planning_targets": {
+    "archival_derived_gb_max": 200,
+    "cpu_hours": "50000-100000 for the full publication program; replace after S4 profiling",
+    "gpu_required_for_core": false,
+    "temporary_storage_tb": "2-5"
+  },
+  "software": {
+    "commands": {
+      "apptainer": false,
+      "docker": false,
+      "git": true,
+      "gyre": false,
+      "mesa": false,
+      "python": true,
+      "star": false,
+      "uv": true
+    },
+    "gyre_capability": "not_detected",
+    "mesa_capability": "not_detected",
+    "python_distributions": [
+      {
+        "license": "BSD-3-Clause",
+        "name": "TopoAstero",
+        "version": "0.1.0"
+      },
+      {
+        "license": "MIT",
+        "name": "PyYAML",
+        "version": "6.0.3"
+      }
+    ]
+  }
+}

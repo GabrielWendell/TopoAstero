@@ -1,0 +1,49 @@
+{
+  "benchmark": {
+    "repeats": 100,
+    "seconds_per_run": 0.000684287000040058,
+    "total_seconds": 0.0684287000040058
+  },
+  "captured_at_utc": "2026-09-18T14:51:44+00:00",
+  "code": {
+    "commit": null,
+    "describe": null,
+    "dirty": null
+  },
+  "configuration": {
+    "path": "configs\\smoke.yaml",
+    "sha256_canonical": "571952aa0113f5f84c6f3ff2f791082f9befff1cdada5e0b3a5bf84b2ea54f72"
+  },
+  "environment": {
+    "captured_at_utc": "2026-09-18T14:51:45+00:00",
+    "cpu_count": 20,
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "python": "3.12.10"
+  },
+  "experiment_id": "TA-S00-T08-SMOKE-R001",
+  "hypothesis_id": "DIAGNOSTIC-S0",
+  "outputs": {
+    "persistence_pairs.csv": {
+      "sha256": "ae7c15ee2cc275b938acb2f323ef2aad9e67a610b87e4a628b1b98a560d236c7"
+    },
+    "signal.csv": {
+      "sha256": "06d2c1f0e8c8fa86eb551e7b658c7e99ea2a3fba9b5db4fc6538c15d67c81f71"
+    },
+    "smoke_figure.svg": {
+      "sha256": "a270a860320a7144d95b9aaa68b074fe5762adf2bad0c1f818d74610392d798f"
+    },
+    "summary.json": {
+      "sha256": "39ab433f05fde60e902e7fc089ac66bca4ac598ca9b8406202320e1f43b9a4bf"
+    }
+  },
+  "package_version": "0.1.0",
+  "random_seeds": [
+    20260721
+  ],
+  "result_hash": "c5c0170db39da89bbfaef2a968278dfcf2cb8ce93e16d5f6a4c240d04349c46f",
+  "split_role": "analytic",
+  "status": "completed"
+}

@@ -1,0 +1,169 @@
+schema_version: 1
+registry_id: TA-RISK-1.0
+frozen_on: 2026-09-18
+scale:
+  probability: {L: unlikely, M: plausible, H: likely_or_imminent}
+  impact: {L: local_rework, M: stage_or_claim_reduction, H: headline_or_defense_risk}
+review_cadence: Monthly, and immediately when an early-warning trigger fires.
+risks:
+  - id: RISK-SCI-001
+    category: scientific_novelty
+    risk: PSD H0 persistence duplicates classical peak prominence.
+    probability: M
+    impact: H
+    early_warning: Near-perfect equivalence in exact cases and S5-S6 ablations.
+    mitigation: Require physical localization and test incremental robustness or QC value.
+    owner_role: principal_researcher
+    fallback: Publish exact equivalence/stability and remove the novelty claim.
+    review_date: 2026-10-16
+  - id: RISK-SCI-002
+    category: scientific_novelty
+    risk: Topological echelle reduces to a topology-free ridge score.
+    probability: M
+    impact: H
+    early_warning: Periodic graph-only control matches PH across locked pilots.
+    mitigation: Use correct cylinder, matched parameter counts, aliases, and perturbation tests.
+    owner_role: methods_reviewer
+    fallback: Publish the correct geometry and quantified redundancy; narrow H2.
+    review_date: 2026-11-13
+  - id: RISK-SCI-003
+    category: scientific_information
+    risk: Delay topology has no information beyond the PSD.
+    probability: H
+    impact: M
+    early_warning: Original and PSD-preserving surrogates are indistinguishable.
+    mitigation: Lock surrogate design and conditional PSD-only comparison before interpretation.
+    owner_role: principal_researcher
+    fallback: Freeze a rigorous negative result and remove delay topology from the critical path.
+    review_date: 2026-11-27
+  - id: RISK-SCI-004
+    category: observational_artifact
+    risk: Mission windows mimic oscillation topology.
+    probability: M
+    impact: H
+    early_warning: High scores in background-only simulations with real windows.
+    mitigation: Use real-window nulls and maximum-statistic correction; annotate alias basins.
+    owner_role: methods_reviewer
+    fallback: Restrict operating domain and require a reliability/no-estimate return.
+    review_date: 2026-10-30
+  - id: RISK-SCI-005
+    category: analysis_flexibility
+    risk: Preprocessing choices dominate persistence diagrams.
+    probability: M
+    impact: H
+    early_warning: Registered branch variation exceeds signal/between-star variation.
+    mitigation: Treat branches as pipeline uncertainty and prohibit favorable-branch selection.
+    owner_role: principal_researcher
+    fallback: Use topology as a preprocessing diagnostic, widen uncertainty, and narrow claims.
+    review_date: 2026-10-30
+  - id: RISK-SCI-006
+    category: classical_baseline
+    risk: Rudy classical benchmark cannot be reconciled.
+    probability: L-M
+    impact: H
+    early_warning: nu_max or Delta_nu changes materially under undocumented units/background/window conventions.
+    mitigation: Audit time/frequency units, PSD normalization, window, background, and product identity first.
+    owner_role: principal_researcher
+    fallback: Pause TDA and publish/reconcile the baseline discrepancy before advancing.
+    review_date: 2026-10-16
+  - id: RISK-SCI-007
+    category: aliasing
+    risk: Half- or double-Delta_nu aliases dominate the ridge score.
+    probability: M
+    impact: M
+    early_warning: Multimodal score curves persist in adequate-SNR pilots.
+    mitigation: Register alias basins and score penalties; report competing maxima.
+    owner_role: principal_researcher
+    fallback: Return a candidate set/posterior and reliability flag rather than a forced estimate.
+    review_date: 2026-11-13
+  - id: RISK-STAT-001
+    category: statistical_power
+    risk: The 66-star LEGACY sample is too small for flexible models or subgroups.
+    probability: H
+    impact: H
+    early_warning: High fold-to-fold variance, unstable features, or underpowered subgroup simulation.
+    mitigation: Low-dimensional regularized models, paired tests, star grouping, and frozen minimum subgroup size.
+    owner_role: methods_reviewer
+    fallback: Report compact validation/equivalence and avoid feature-image or high-capacity models.
+    review_date: 2027-01-15
+  - id: RISK-SCI-008
+    category: mission_transfer
+    risk: Rudy oscillations are not detectably recoverable in usable TESS sectors.
+    probability: H
+    impact: M
+    early_warning: Registered Kepler degradation predicts low detection probability.
+    mitigation: Quantify duration/noise/window/dilution separately before actual-sector claims.
+    owner_role: principal_researcher
+    fallback: Publish a transfer/detectability limit; do not label nondetection as method failure.
+    review_date: 2027-03-12
+  - id: RISK-MATH-001
+    category: theory
+    risk: A valid stability bound is too loose for astrophysical decisions.
+    probability: M
+    impact: M
+    early_warning: Bound exceeds empirical change by orders of magnitude across realistic pilots.
+    mitigation: Derive local/probabilistic bounds and retain exact idealized cases/counterexamples.
+    owner_role: methods_reviewer
+    fallback: Publish exact scope and empirical calibration without claiming practical propagation.
+    review_date: 2027-02-12
+  - id: RISK-COMP-001
+    category: optional_modeling
+    risk: MESA/GYRE installation, grid design, or convergence delays the core.
+    probability: M
+    impact: H
+    early_warning: Capability consumes more than one review cycle or lacks a discriminating question.
+    mitigation: Require extension gate, compact grid, official releases, and explicit cost cap.
+    owner_role: supervisor
+    fallback: Defer S13 and use published frequencies or asymptotic simulations.
+    review_date: 2027-01-29
+  - id: RISK-COMP-002
+    category: compute_storage
+    risk: Runtime or storage exceeds the available allocation.
+    probability: L-M
+    impact: M
+    early_warning: Pilot extrapolation exceeds allocation by a factor of two.
+    mitigation: Profile first; adaptive design, chunking, caching, and primary summaries only.
+    owner_role: principal_researcher
+    fallback: Smaller simulations and one-dimensional persistence until resources are approved.
+    review_date: 2026-10-30
+  - id: RISK-PROG-001
+    category: schedule
+    risk: May 2027 defense deadline compresses calibration or confirmation.
+    probability: H
+    impact: H
+    early_warning: Core G6/G8/G10-equivalent work slips beyond January 2027 or any core stage overruns by two weeks.
+    mitigation: Maintain two-week defense buffer; monthly critical-path review and explicit scope removal.
+    owner_role: supervisor
+    fallback: Freeze extensions/full population; defend analytic-calibrated core plus compact independent validation.
+    review_date: 2026-10-16
+  - id: RISK-DATA-001
+    category: data_identity
+    risk: Archive holdings, aliases, or product versions change after proposal-stage inspection.
+    probability: M
+    impact: H
+    early_warning: MAST re-query differs from listed quarters/sectors or checksums change.
+    mitigation: Resolve stable IDs, queries, versions, and SHA-256 in T2; never trust local filenames.
+    owner_role: data_steward
+    fallback: Pin verified available products and mark unavailable transfer inputs optional.
+    review_date: 2026-10-02
+  - id: RISK-DATA-002
+    category: leakage
+    risk: Same-star segments cross development, validation, or holdout roles.
+    probability: L
+    impact: H
+    early_warning: Partition test finds a canonical star ID in multiple roles or aliases unresolved.
+    mitigation: Resolve aliases first, split by stable star ID, and enforce inheritance across missions/representations.
+    owner_role: data_steward
+    fallback: Invalidate affected run, rebuild split without inspecting outcomes, and rerun all dependent analyses.
+    review_date: 2026-10-16
+  - id: RISK-PROG-002
+    category: governance_overhead
+    risk: Documentation burden displaces scientific work.
+    probability: M
+    impact: M
+    early_warning: Two consecutive weeks with governance work but no testable scientific artifact.
+    mitigation: Keep only artifacts that control scientific flexibility, provenance, or decisions; generate views from registries.
+    owner_role: principal_researcher
+    fallback: Consolidate prose while preserving normative registries, ledgers, and gate evidence.
+    review_date: 2026-10-02
+

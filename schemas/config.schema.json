@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/config.schema.json",
+  "title": "TopoAstero experiment configuration",
+  "type": "object",
+  "required": ["schema_version", "workflow_id", "experiment_id", "hypothesis_id", "split_role", "random_seed"],
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "workflow_id": {"type": "string", "minLength": 1},
+    "experiment_id": {"type": "string", "pattern": "^TA-S[0-9]{2}-T[0-9]{2}-[A-Z0-9-]+-R[0-9]{3,4}$"},
+    "hypothesis_id": {"type": "string", "minLength": 1},
+    "split_role": {
+      "enum": ["analytic", "simulation_pilot", "simulation_confirmation", "development", "internal_validation", "final_holdout", "descriptive_case", "synthetic_mock_holdout", "transfer"]
+    },
+    "random_seed": {"type": "integer", "minimum": 0}
+  },
+  "additionalProperties": true
+}

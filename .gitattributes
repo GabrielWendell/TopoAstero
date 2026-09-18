@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.fits binary
+*.h5 binary
+*.parquet binary
+

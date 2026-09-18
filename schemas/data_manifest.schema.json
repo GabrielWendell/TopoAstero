@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/data_manifest.schema.json",
+  "title": "TopoAstero file-level data manifest record",
+  "type": "object",
+  "required": ["schema_version", "manifest_id", "dataset_id", "record_status", "source", "file", "rights", "provenance"],
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "dataset_id": {"type": "string", "pattern": "^DS-[A-Z0-9-]+$"},
+    "record_status": {"enum": ["planned", "retrieved", "verified", "invalid", "superseded", "archived"]},
+    "source": {
+      "type": "object",
+      "required": ["provider", "collection", "uri_or_query", "retrieved_at_utc"],
+      "properties": {
+        "provider": {"type": "string"},
+        "collection": {"type": "string"},
+        "mission": {"type": ["string", "null"]},
+        "observation_id": {"type": ["string", "null"]},
+        "product_id": {"type": ["string", "null"]},
+        "uri_or_query": {"type": ["string", "null"]},
+        "retrieved_at_utc": {"type": ["string", "null"], "format": "date-time"}
+      },
+      "additionalProperties": true
+    },
+    "file": {
+      "type": "object",
+      "required": ["name", "size_bytes", "sha256"],
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "size_bytes": {"type": ["integer", "null"], "minimum": 0},
+        "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
+      },
+      "additionalProperties": false
+    },
+    "rights": {
+      "type": "object",
+      "required": ["license_or_terms", "citation"],
+      "properties": {
+        "license_or_terms": {"type": "string", "minLength": 1},
+        "citation": {"type": ["string", "null"]}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["parent_ids", "config_hash", "code_version", "experiment_id"],
+      "properties": {
+        "parent_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "config_hash": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+        "code_version": {"type": ["string", "null"]},
+        "experiment_id": {"type": ["string", "null"]}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"record_status": {"const": "verified"}}},
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "uri_or_query": {"type": "string", "minLength": 1},
+              "retrieved_at_utc": {"type": "string", "format": "date-time"}
+            }
+          },
+          "file": {
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "size_bytes": {"type": "integer", "minimum": 0},
+              "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+            }
+          },
+          "rights": {"properties": {"citation": {"type": "string", "minLength": 1}}}
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

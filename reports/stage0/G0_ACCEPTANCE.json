@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "stage": "S0",
+  "gate": "G0",
+  "evaluated_on": "2026-09-18",
+  "recommendation": "pass_with_registered_limitations",
+  "formal_supervisor_signoff": "pending",
+  "implementation_complete": true,
+  "tasks": {
+    "T0.1": "pass",
+    "T0.2": "pass",
+    "T0.3": "pass",
+    "T0.4": "pass",
+    "T0.5": "pass",
+    "T0.6": "pass",
+    "T0.7": "pass",
+    "T0.8": "pass_with_external_limits"
+  },
+  "deliverables": {
+    "D0.1": "accepted",
+    "D0.2": "accepted",
+    "D0.3": "accepted",
+    "D0.4": "accepted"
+  },
+  "verification": {
+    "tests_passed": 24,
+    "tests_failed": 0,
+    "coverage_percent": 88.31,
+    "lint": "pass",
+    "strict_types": "pass",
+    "governance_contract": "pass",
+    "package_build": "pass",
+    "clean_extracted_copy": "pass",
+    "smoke_result_hash": "91141ba6148cf9766db1be710533577db158a21e70dc92f4a0763a9c92cba847"
+  },
+  "limitations": [
+    "Programmatic MAST connectivity was not established from the implementation runtime; recheck in T2 acquisition environment.",
+    "Full-program CPU and storage allocations are planning targets pending S4 profiling.",
+    "MESA and GYRE are not installed and remain optional S13 capabilities."
+  ],
+  "holdout_access_count": 0,
+  "next_authorized_stage": "S1_after_formal_gate_signoff"
+}

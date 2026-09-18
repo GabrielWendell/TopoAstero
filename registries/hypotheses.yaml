@@ -1,0 +1,229 @@
+schema_version: 1
+registry_id: TA-HYP-1.0
+frozen_on: 2026-09-18
+status: preregistered_stage0
+authority: docs/protocols/PREREGISTERED_ANALYSIS_PROTOCOL.md
+hypotheses:
+  - id: H1
+    title: PSD persistence estimates the oscillation envelope
+    research_questions: [RQ0, RQ1, RQ2, RQ6]
+    objectives: [O2, O3, O7]
+    claim_level: II
+    hypothesis: >-
+      Upper-star H0 persistence of a background-normalized PSD yields a stable estimator of
+      oscillation-envelope location and strength, with competitive error or independently useful
+      robustness or quality information.
+    null_hypothesis: >-
+      After matching preprocessing, background, and search range, PSD persistence has no
+      practically meaningful error, calibration, robustness, or quality-control advantage beyond
+      the locked classical estimator and peak-prominence control.
+    estimand:
+      name: paired_nu_max_performance_difference
+      definition: >-
+        Population mean and distribution of the star/realization-level difference between the
+        topological and classical absolute relative nu_max errors, together with interval coverage
+        and failure probability over the registered observing domain.
+      target_parameter: nu_max
+      unit: dimensionless_error_difference
+    unit_of_analysis: independent star or independent simulated stochastic realization
+    primary_metric:
+      name: paired_absolute_relative_error_difference
+      direction: lower_is_better
+      required_companions: [coverage_68, coverage_95, catastrophic_failure_rate]
+    baseline:
+      primary: locked_pySYD_or_equivalent_envelope_fit
+      controls: [Lightkurve_reference_workflow, peak_prominence, background_only_spectrum]
+    required_nulls: [harvey_background_window, injected_signal_control]
+    minimum_publishable_conclusion: >-
+      A calibrated domain where persistence improves recovery, is noninferior while adding a
+      registered robustness/QC signal, or a quantified boundary where it is redundant or worse.
+    falsification_rule: >-
+      Reject the positive estimator claim if paired error or variance is consistently worse than
+      the locked classical baseline and no preregistered robustness, calibration, or QC benefit
+      exceeds its frozen practical margin.
+    decision_stage: S6_then_S10
+    freeze_status: metric_form_frozen_margin_scheduled
+
+  - id: H2
+    title: Cylindrical ridge persistence identifies the physical large separation
+    research_questions: [RQ0, RQ1, RQ3, RQ6]
+    objectives: [O3, O4, O7]
+    claim_level: II
+    hypothesis: >-
+      A periodic echelle ridge-coherence score is maximized near the physical Delta_nu and rejects
+      the common half- and double-spacing aliases across the calibrated operating domain.
+    null_hypothesis: >-
+      The score maximum is no closer to the physical Delta_nu, and rejects aliases no more often,
+      than topology-free periodic ridge scores or classical ACF/PSPS baselines.
+    estimand:
+      name: paired_Delta_nu_recovery_and_alias_risk
+      definition: >-
+        Star/realization-level relative error of the selected Delta_nu and probability that the
+        selected candidate lies in the registered half- or double-spacing alias basin.
+      target_parameter: Delta_nu
+      unit: relative_error_and_probability
+    unit_of_analysis: independent star or independent simulated spectrum/window realization
+    primary_metric:
+      name: paired_absolute_relative_error_Delta_nu
+      direction: lower_is_better
+      required_companions: [half_alias_rate, double_alias_rate, no_estimate_rate]
+    baseline:
+      primary: best_locked_of_ACF_or_PSPS
+      controls: [conventional_echelle_ridge_score, periodic_graph_score_without_PH]
+    required_nulls: [randomized_comb, background_window, half_double_spacing]
+    minimum_publishable_conclusion: >-
+      Stable correct-spacing recovery on a stated duration/SNR/window domain, or a reproducible
+      alias/redundancy map with a reliability flag and candidate-set return.
+    falsification_rule: >-
+      Reject the distinct topological claim if performance is dominated by smoothing, order range,
+      or graph parameters, or a matched topology-free score reproduces it across locked pilots and
+      validation stars.
+    decision_stage: S8_then_S10
+    freeze_status: metric_form_frozen_parameters_scheduled
+
+  - id: H3
+    title: Persistent ridge geometry estimates a small-separation ratio
+    research_questions: [RQ0, RQ4, RQ6]
+    objectives: [O5, O7]
+    claim_level: II
+    hypothesis: >-
+      Angular geometry of localized persistent ridges permits stable estimation of at least one
+      locked ratio among r02, r01, and r10 with calibrated uncertainty in adequate-SNR stars.
+    null_hypothesis: >-
+      No candidate ratio reaches the locked error and coverage criterion beyond a conventional
+      frequency-fit baseline, or the apparent relation depends on arbitrary ridge labeling.
+    estimand:
+      name: paired_small_separation_ratio_error
+      definition: >-
+        Error of the preselected ratio relative to the authoritative peak-bagged value, evaluated
+        with complete-selection uncertainty and reported over the eligible population.
+      target_parameter: one_of_r02_r01_r10_locked_before_confirmation
+      unit: dimensionless_ratio_error
+    unit_of_analysis: eligible independent star
+    primary_metric:
+      name: paired_absolute_ratio_error
+      direction: lower_is_better
+      required_companions: [normalized_residual, coverage_68, coverage_95, no_estimate_rate]
+    baseline:
+      primary: conventional_mode_frequency_or_peak_bagging_fit
+      controls: [circular_statistics_without_PH, randomized_mode_labels]
+    required_nulls: [randomized_mode_labels, matched_density_mode_cloud]
+    minimum_publishable_conclusion: >-
+      Calibrated recovery of one prespecified ratio on an explicit SNR/order domain, or a rigorous
+      statement that persistent ridge geometry cannot support ratio inference at available quality.
+    falsification_rule: >-
+      Reject the positive claim if the locked ratio fails peak-bagged agreement at nominal coverage
+      on adequate-SNR validation stars or is not robust to the registered labeling perturbations.
+    decision_stage: S8_then_S11
+    freeze_status: candidate_family_frozen_single_ratio_scheduled
+
+  - id: H4
+    title: Delay persistence contains phase-sensitive coherence information
+    research_questions: [RQ0, RQ1, RQ5, RQ6]
+    objectives: [O2, O7]
+    claim_level: II
+    hypothesis: >-
+      Delay-embedding H1 persistence retains information about coherence, damping, lifetime, or
+      quality factor after conditioning on the observed PSD.
+    null_hypothesis: >-
+      Phase-randomized and IAAFT surrogates that preserve the PSD reproduce the observed delay-
+      persistence distribution and its conditional predictive performance.
+    estimand:
+      name: phase_sensitive_persistence_excess
+      definition: >-
+        Difference between the observed delay-persistence statistic and its PSD-preserving
+        surrogate distribution, plus conditional predictive gain for a locked coherence target.
+      target_parameter: locked_coherence_or_damping_target
+      unit: standardized_effect_and_predictive_score
+    unit_of_analysis: independent star/realization with a surrogate ensemble
+    primary_metric:
+      name: maximum_statistic_standardized_surrogate_effect
+      direction: larger_is_more_phase_sensitive
+      required_companions: [empirical_p_value, conditional_log_score_gain, failure_rate]
+    baseline:
+      primary: PSD_only_model_on_identical_folds
+      controls: [phase_randomized_surrogates, IAAFT_surrogates]
+    required_nulls: [phase_randomized, IAAFT]
+    minimum_publishable_conclusion: >-
+      A multiplicity-controlled phase-sensitive effect tied to a physical coherence target, or a
+      rigorous negative result showing that delay persistence re-encodes the PSD in the tested domain.
+    falsification_rule: >-
+      Reject the positive claim when observed and PSD-preserving surrogate statistics are
+      indistinguishable at the locked operating point and conditional prediction adds no practical gain.
+    decision_stage: S7
+    freeze_status: null_family_frozen_embedding_grid_scheduled
+
+  - id: H5
+    title: Locked topology features add conditional inferential or QC value
+    research_questions: [RQ0, RQ7, RQ8]
+    objectives: [O8, O9]
+    claim_level: IV
+    hypothesis: >-
+      Adding a small locked set of topological features to a regularized classical model improves
+      out-of-sample parameter recovery, probabilistic calibration, or automated quality control by
+      more than a prespecified practical margin.
+    null_hypothesis: >-
+      Conditional on classical estimates, SNR, window, and stellar covariates, topology features
+      yield no practically meaningful out-of-sample gain and no better calibrated QC decision.
+    estimand:
+      name: paired_conditional_predictive_gain
+      definition: >-
+        Expected star-level difference in held-out log predictive density between otherwise
+        identical hybrid and classical-only models, with target-specific error/calibration companions.
+      target_parameter: locked_global_parameter_or_quality_event
+      unit: log_score_difference_per_star
+    unit_of_analysis: independent star; folds and bootstrap resamples are grouped by star
+    primary_metric:
+      name: paired_log_predictive_density_gain
+      direction: higher_is_better
+      required_companions: [paired_target_error, calibration_error, conditional_permutation_importance]
+    baseline:
+      primary: regularized_classical_only_model_identical_folds
+      controls: [topology_only_model, shuffled_topology_features]
+    required_nulls: [shuffled_topology_features]
+    minimum_publishable_conclusion: >-
+      A cross-validated conditional gain beyond a frozen practical margin, a useful calibrated QC
+      improvement, or a powered equivalence/redundancy statement.
+    falsification_rule: >-
+      Reject the positive gain claim when nested star-grouped validation shows no improvement beyond
+      the locked margin after classical variables are included.
+    decision_stage: S11_then_S12
+    freeze_status: metric_frozen_target_and_margin_scheduled
+
+  - id: H6
+    title: Stability theory yields decision-useful astrophysical bounds
+    research_questions: [RQ0, RQ6, RQ9]
+    objectives: [O6, O7]
+    claim_level: I
+    hypothesis: >-
+      Exact relations or stability bounds for the retained constructions are valid under explicit
+      assumptions and tight enough to constrain at least one realistic observing or preprocessing
+      decision or propagated stellar-parameter uncertainty.
+    null_hypothesis: >-
+      Although formally valid, the bound is violated in its stated domain or is too loose to alter
+      any realistic observing, preprocessing, reliability, or uncertainty decision.
+    estimand:
+      name: stability_bound_validity_and_tightness
+      definition: >-
+        Coverage of the asserted inequality over registered perturbations and the ratio of bound
+        width to realized persistence/parameter change across the declared domain.
+      target_parameter: persistence_or_propagated_stellar_quantity
+      unit: coverage_probability_and_dimensionless_tightness
+    unit_of_analysis: analytic case or independent registered perturbation realization
+    primary_metric:
+      name: bound_coverage_then_tightness_ratio
+      direction: coverage_must_hold_then_lower_is_tighter
+      required_companions: [assumption_violation_rate, decision_change_indicator]
+    baseline:
+      primary: direct_perturbation_Monte_Carlo
+      controls: [generic_bottleneck_bound, exact_idealized_case]
+    required_nulls: [registered_counterexamples]
+    minimum_publishable_conclusion: >-
+      A valid useful bound, an exact idealized identity with empirically mapped breakdown, or a
+      counterexample showing why the general bound cannot support astrophysical inference.
+    falsification_rule: >-
+      Reject decision usefulness when the bound fails declared coverage or remains orders of
+      magnitude above realized change across every realistic registered regime.
+    decision_stage: S9
+    freeze_status: estimand_frozen_utility_margin_scheduled
+

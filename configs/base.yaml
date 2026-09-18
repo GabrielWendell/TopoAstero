@@ -1,0 +1,27 @@
+schema_version: 1
+project:
+  name: TopoAstero
+  scientific_title: Topological Asteroseismology of Solar-like Stars
+  package: topoastero
+  stage: S0
+conventions:
+  coefficient_field: F2
+  frequency_unit: uHz
+  time_units:
+    kepler: BKJD
+    tess: BTJD
+  hashes: sha256
+  configuration_hash: canonical_json_sha256
+  random_seed_policy: registered_master_plus_namespaced_sha256
+paths:
+  manifests: data/manifests
+  registries: registries
+  results: results
+  reports: reports
+guardrails:
+  group_partitions_by: star
+  allow_holdout_tuning: false
+  require_topology_free_control: true
+  require_claim_specific_null: true
+  retain_negative_results: true
+

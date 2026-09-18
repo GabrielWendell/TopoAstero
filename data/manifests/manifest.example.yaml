@@ -1,0 +1,28 @@
+schema_version: 1
+manifest_id: EXAMPLE-ONLY-NOT-A-SCIENTIFIC-INPUT
+dataset_id: DS-RUDY-KEPLER
+record_status: planned
+target:
+  canonical_id: KIC 10963065
+  aliases: [HD 176693, Kepler-408, TIC 48450369]
+source:
+  provider: MAST
+  mission: Kepler
+  collection: Kepler
+  observation_id: null
+  product_id: null
+  uri_or_query: null
+  retrieved_at_utc: null
+file:
+  name: null
+  size_bytes: null
+  sha256: null
+rights:
+  license_or_terms: Verify MAST and mission product terms.
+  citation: null
+provenance:
+  parent_ids: []
+  config_hash: null
+  code_version: null
+  experiment_id: null
+notes: All null identity fields must be resolved in S2 before status becomes verified.

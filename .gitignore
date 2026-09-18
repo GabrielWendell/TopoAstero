@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+dist/
+build/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Scientific data: metadata stays in Git; payloads do not.
+data/raw/**
+!data/raw/README.md
+data/derived/**
+!data/derived/README.md
+data/archive/**
+!data/archive/README.md
+
+# Generated scratch outputs. The versioned Stage 0 smoke reference is retained.
+results/*
+!results/README.md
+!results/recipes/
+!results/recipes/**
+!results/smoke/
+!results/smoke/**
+

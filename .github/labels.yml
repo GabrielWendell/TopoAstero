@@ -1,0 +1,46 @@
+- name: stage:S0
+  color: "0D7F86"
+  description: Governance and reproducibility foundation
+- name: stage:S1-S4
+  color: "2C6EAA"
+  description: Evidence, data, baseline, and simulation stages
+- name: stage:S5-S9
+  color: "6A4C93"
+  description: Topological methods and theory stages
+- name: stage:S10-S14
+  color: "B5651D"
+  description: Benchmark, validation, transfer, and release stages
+- name: type:science
+  color: "1D76DB"
+  description: Scientific claim, method, null, or validation
+- name: type:software
+  color: "5319E7"
+  description: Package, workflow, test, or infrastructure
+- name: type:data
+  color: "0052CC"
+  description: Identity, manifest, schema, QC, or provenance
+- name: type:documentation
+  color: "0075CA"
+  description: Documentation without numerical behavior change
+- name: priority:critical
+  color: "B60205"
+  description: Blocks a core gate or correctness
+- name: priority:high
+  color: "D93F0B"
+  description: Required in current stage
+- name: priority:normal
+  color: "FBCA04"
+  description: Planned work without current gate block
+- name: negative-result
+  color: "C5DEF5"
+  description: Valid unfavorable or redundant scientific outcome
+- name: holdout-sensitive
+  color: "000000"
+  description: Do not expose protected confirmation identities or outcomes
+- name: blocked
+  color: "E99695"
+  description: Requires a named dependency or decision
+- name: bounded-repeat
+  color: "F9D0C4"
+  description: Named repair with fixed scope and deadline
+

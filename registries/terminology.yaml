@@ -1,0 +1,74 @@
+schema_version: 1
+registry_id: TA-TERM-1.0
+frozen_on: 2026-09-18
+terms:
+  - id: persistence
+    preferred_label: persistence
+    operational_definition: Birth filtration value minus death filtration value for a localized homology class under a declared filtration; essential classes are labeled, not assigned an arbitrary finite lifetime.
+    measurement_rule: Record domain, scalar/metric, filtration direction, H_k, coefficient field, truncation, localization, and essential-class convention.
+    prohibited_shortcut: Calling an unlocalized diagram coordinate a physical feature.
+  - id: ridge
+    preferred_label: mode ridge
+    operational_definition: A physically localized, order-linked locus of high normalized spectral intensity on the periodic echelle cylinder.
+    measurement_rule: Link candidates across adjacent radial orders with circular phase distance and registered uncertainty/penalty rules.
+    prohibited_shortcut: Treating any bright rectangular-image pixel chain as a ridge.
+  - id: coherence
+    preferred_label: oscillation coherence
+    operational_definition: Reproducible continuity or persistence across order, time, or stochastic realization after comparison with a claim-appropriate null.
+    measurement_rule: Report the registered continuity/persistence statistic, domain, uncertainty, and null effect.
+    prohibited_shortcut: Equating peak height alone with coherence.
+  - id: topological_echelle
+    preferred_label: topological echelle diagram
+    operational_definition: A filtration or localized ridge construction on the cylindrical domain S1 x I obtained by folding frequency modulo a trial separation with periodic phase adjacency.
+    measurement_rule: State trial interval/grid, periodic boundary implementation, normalization, filtration, graph rule, H_k, and alias handling.
+    prohibited_shortcut: Using disconnected rectangular boundaries while claiming cylindrical topology.
+  - id: detection
+    preferred_label: detection
+    operational_definition: A binary or ranked decision made with a frozen statistic, search/multiplicity rule, null generator, threshold, and failure-return behavior.
+    measurement_rule: Report sensitivity, specificity or precision-recall behavior, false-alarm probability, completeness, and operating point.
+    prohibited_shortcut: Labeling a visually plausible feature as detected.
+  - id: calibration
+    preferred_label: calibration
+    operational_definition: Agreement between nominal probabilities, intervals, or error rates and empirical frequencies over the declared data-generating domain.
+    measurement_rule: Use coverage, calibration curves, Brier/log score, and Type-I error with uncertainty.
+    prohibited_shortcut: Calling a narrow interval calibrated without coverage evidence.
+  - id: robustness
+    preferred_label: robustness
+    operational_definition: Controlled stability of a locked result over a preregistered perturbation set in data, sampling, preprocessing, or model assumptions.
+    measurement_rule: Report response curves and worst/quantile change over the registered set.
+    prohibited_shortcut: Selecting the most favorable branch after inspection.
+  - id: complementarity
+    preferred_label: complementarity
+    operational_definition: Out-of-sample conditional information from topology after strong classical features and relevant covariates are included.
+    measurement_rule: Paired nested-validation gain with uncertainty, practical-equivalence margin, conditional importance, and shuffled-feature control.
+    prohibited_shortcut: Marginal correlation with a target already encoded by nu_max or SNR.
+  - id: failure
+    preferred_label: failure
+    operational_definition: A prespecified no-estimate, invalid, uncalibrated, aliased, non-generalizing, or falsifying state that remains in all denominators and ledgers as appropriate.
+    measurement_rule: Return a machine-readable failure code and diagnostics; separate scientific failure from software defect.
+    prohibited_shortcut: Deleting failed stars/runs or converting them to exclusions after topology is seen.
+  - id: equivalence
+    preferred_label: exact equivalence
+    operational_definition: A proved or exhaustively tested identity under explicitly stated assumptions, such as one-dimensional merge-tree lifetime and peak prominence.
+    measurement_rule: Cite theorem/test domain and counterexamples outside it.
+  - id: stability
+    preferred_label: stability
+    operational_definition: A bound in named input and output metrics under an explicit perturbation norm and domain.
+    measurement_rule: State norm, constant, assumptions, empirical coverage, and tightness.
+  - id: Rudy
+    preferred_label: Rudy
+    operational_definition: KIC 10963065, also HD 176693, Kepler-408, and TIC 48450369; descriptive benchmark, not final population holdout.
+    measurement_rule: Resolve coordinates, Gaia ID, exact products, and checksums in T2 before analysis.
+  - id: holdout
+    preferred_label: final holdout
+    operational_definition: Star-grouped data unavailable for representation, hyperparameter, threshold, margin, exclusion, or narrative selection and opened once after full freeze.
+    measurement_rule: Require authorization and append-only access log with split/code/config hashes.
+  - id: background_normalized_PSD
+    preferred_label: background-normalized PSD
+    operational_definition: One-sided PSD divided by or transformed relative to a declared fitted background and normalization, with posterior/branch uncertainty retained.
+    measurement_rule: Store frequency/PSD units, normalization, background components, fit version, window, and provenance.
+  - id: physical_localization
+    preferred_label: physical localization
+    operational_definition: Traceability of a persistence class or summary to time, frequency, order, ridge, mode candidate, or image cells.
+    measurement_rule: Store generating indices/coordinates and uncertainty with every retained feature.
+

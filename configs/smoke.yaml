@@ -1,0 +1,28 @@
+schema_version: 1
+workflow_id: stage0-smoke-v1
+experiment_id: TA-S00-T08-SMOKE-R001
+hypothesis_id: DIAGNOSTIC-S0
+split_role: analytic
+random_seed: 20260721
+signal:
+  model: seeded_two_mode_signal
+  samples: 512
+  fundamental_cycles: 5.0
+  secondary_cycles: 11.0
+  secondary_amplitude: 0.35
+  noise_sigma: 0.02
+persistence:
+  object: scalar_path
+  filtration: superlevel
+  homology_degree: 0
+  coefficient_field: F2
+  include_zero: false
+benchmark:
+  repeats: 100
+outputs:
+  - signal.csv
+  - persistence_pairs.csv
+  - summary.json
+  - smoke_figure.svg
+  - run_manifest.json
+

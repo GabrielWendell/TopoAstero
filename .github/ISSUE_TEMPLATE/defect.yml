@@ -1,0 +1,33 @@
+name: Reproducibility or correctness defect
+description: Report a software, data, mathematical, or provenance defect.
+title: "[DEFECT] "
+labels: ["priority:high"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [software, data identity, numerical, mathematical, statistical, provenance, documentation]
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Include command, config hash, environment, and input manifest ID. Do not expose secrets or protected holdout outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Affected experiments, claims, figures, or gates
+    validations:
+      required: true
+  - type: checkboxes
+    id: holdout
+    attributes:
+      label: Holdout status
+      options:
+        - label: I have stated whether final-holdout data were inspected before this report.
+          required: true
+

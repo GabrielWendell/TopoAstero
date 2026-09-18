@@ -1,0 +1,64 @@
+name: Scientific experiment
+description: Register an analysis, null, ablation, or confirmation run.
+title: "[Sxx][Hx] "
+labels: ["type:science", "priority:normal"]
+body:
+  - type: input
+    id: task
+    attributes:
+      label: Stage/task ID
+      placeholder: S06/T6.3
+    validations:
+      required: true
+  - type: input
+    id: hypothesis
+    attributes:
+      label: Hypothesis or diagnostic label
+      placeholder: H1
+    validations:
+      required: true
+  - type: textarea
+    id: estimand
+    attributes:
+      label: Estimand, unit of analysis, and primary metric
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Baseline, null, and topology-free ablation
+    validations:
+      required: true
+  - type: dropdown
+    id: split
+    attributes:
+      label: Split role
+      options:
+        - analytic
+        - simulation pilot
+        - simulation confirmation
+        - development
+        - internal validation
+        - final holdout (requires authorization)
+        - descriptive case
+        - transfer
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance, falsification, and failure-return rules
+    validations:
+      required: true
+  - type: checkboxes
+    id: guardrails
+    attributes:
+      label: Guardrails
+      options:
+        - label: The configuration and seeds will be frozen before the run.
+          required: true
+        - label: All observations from the same star remain in one partition.
+          required: true
+        - label: Negative results and deviations will remain in the ledger.
+          required: true
+

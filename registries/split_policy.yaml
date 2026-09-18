@@ -1,0 +1,29 @@
+schema_version: 1
+policy_id: TA-SPLIT-1.0
+frozen_on: 2026-09-18
+assignment_status: scheduled_for_T2.8
+group_key: stable_star_id
+rudy_role: descriptive_benchmark_only
+target_fractions:
+  development: 0.60
+  internal_validation: 0.20
+  final_holdout: 0.20
+algorithm:
+  name: deterministic_grouped_stratified_assignment
+  master_seed: 20260721
+  order_rule: Sort by canonical stable star ID before any seeded operation.
+  stratification_candidates: [evolutionary_state, nu_max_bin, signal_to_noise_bin, duty_cycle_bin]
+  stratification_freeze: Choose from label-free verified metadata in T2 before computing topological outputs.
+constraints:
+  - Every star appears in exactly one role.
+  - Every observation, mission segment, and derived representation of a star inherits its role.
+  - A TESS observation cannot validate a method tuned on the same star's Kepler observation.
+  - Exclusions are determined before topology and retained in the exclusion ledger.
+protection:
+  identities_visible_before_opening: false_where_infrastructure_permits
+  publish_assignment_hash: true
+  one_time_access: true
+  authorization_roles: [supervisor, data_steward]
+  access_log: registries/holdout_access_log.csv
+actual_assignments: null
+

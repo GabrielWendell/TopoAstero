@@ -1,0 +1,79 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TopoAstero"
+version = "0.1.0"
+description = "Reproducible research framework for topological asteroseismology"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+authors = [
+  { name = "Gabriel Wendell" },
+]
+keywords = ["asteroseismology", "persistent-homology", "topological-data-analysis"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+  "PyYAML>=6.0.2,<7",
+]
+
+[project.scripts]
+topoastero = "topoastero.cli:main"
+
+[dependency-groups]
+dev = [
+  "build>=1.2,<2",
+  "mypy>=1.15,<2",
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.11,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/topoastero"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers --cov=topoastero --cov-report=term-missing --cov-fail-under=85"
+testpaths = ["tests"]
+markers = [
+  "governance: validates frozen Stage 0 governance artifacts",
+  "integration: exercises more than one package component",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["topoastero"]
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "if __name__ == .__main__.:",
+  "raise NotImplementedError",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+

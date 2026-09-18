@@ -1,0 +1,14 @@
+schema_version: 1
+figure_id: FIG-S0-SMOKE-001
+source_tables:
+  - results/smoke/signal.csv
+  - results/smoke/persistence_pairs.csv
+configuration: configs/smoke.yaml
+generator: topoastero.render.write_smoke_svg
+output: results/smoke/smoke_figure.svg
+style:
+  format: svg
+  width_px: 960
+  height_px: 520
+  accessible_palette: true
+
