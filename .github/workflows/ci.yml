@@ -38,6 +38,7 @@ jobs:
           uv run python workflows/compare_smoke_reference.py results/smoke "$RUNNER_TEMP/topoastero-smoke" --abs-tol 1e-12
       - name: Validate Stage 0 contract
         run: uv run topoastero validate-stage0 --root .
+      - name: Validate Stage 1 contract
+        run: uv run topoastero validate-stage1 --root .
       - name: Build distribution
         run: uv build
-

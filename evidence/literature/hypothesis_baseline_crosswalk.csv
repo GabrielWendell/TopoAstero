@@ -1,0 +1,8 @@
+hypothesis_id,topological_claim,classical_baseline_ids,primary_metric,comparison_rule,source_keys
+H1,topological summaries improve oscillation-envelope detection,CB-02;CB-05,pre-registered detection metric,paired star-grouped comparison against pySYD and background fit,Chontos2022;Kallinger2014
+H2,topological summaries improve dnu recovery,CB-03;CB-04;CB-06,absolute and relative dnu error,paired comparison against ACF PSPS and conventional echelle,Mathur2012;Huber2011
+H3,topological features improve mode or ridge recovery,CB-06;CB-07,mode-frequency and ridge recovery score,compare against echelle plus peak-bagging with identical candidate bands,Lund2017;Davies2016
+H4,topological time-domain structure exceeds PSD-only or surrogate structure,CB-01;CB-05,null-calibrated statistic,compare with identical preprocessing and phase-randomized or IAAFT controls,Theiler1992;SchreiberSchmitz1996
+H5,combined topology and classical features outperform classical-only features,CB-02;CB-03;CB-04;CB-05,pre-registered held-out predictive metric,identical folds preprocessing and model capacity except topological features,Chontos2022;Mathur2012
+H6,empirical robustness is consistent with declared stability bounds,CB-07,change in estimate under perturbation,compare topological sensitivity with direct Monte Carlo peak-fit sensitivity,CohenSteiner2007;Lund2017
+

@@ -1,4 +1,4 @@
-"""Command-line interface for the Stage 0 repository contract."""
+"""Command-line interface for TopoAstero repository contracts."""
 
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ from topoastero.config import configuration_hash
 from topoastero.provenance import sha256_file
 from topoastero.resources import write_resource_audit
 from topoastero.smoke import run_smoke
+from topoastero.stage1_validation import validate_stage1
 from topoastero.validation import validate_stage0
 
 
@@ -25,6 +26,12 @@ def build_parser() -> argparse.ArgumentParser:
     validate = subparsers.add_parser("validate-stage0", help="validate governance artifacts")
     validate.add_argument("--root", default=".")
     validate.add_argument("--without-smoke", action="store_true")
+
+    stage1 = subparsers.add_parser(
+        "validate-stage1", help="validate literature evidence, benchmarks, and G1"
+    )
+    stage1.add_argument("--root", default=".")
+    stage1.add_argument("--without-stage0", action="store_true")
 
     hash_parser = subparsers.add_parser("hash-config", help="print a canonical config hash")
     hash_parser.add_argument("path")
@@ -54,6 +61,15 @@ def main(argv: Sequence[str] | None = None) -> None:
             raise SystemExit(1)
         print("Stage 0 governance contract: PASS")
         return
+    if args.command == "validate-stage1":
+        errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+        if errors:
+            print("Stage 1 evidence contract failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        print("Stage 1 literature and benchmark contract: PASS")
+        return
     if args.command == "hash-config":
         print(configuration_hash(args.path))
         return
@@ -65,4 +81,3 @@ def main(argv: Sequence[str] | None = None) -> None:
         print(json.dumps(record, indent=2, sort_keys=True))
         return
     raise RuntimeError(f"Unhandled command: {args.command}")
-

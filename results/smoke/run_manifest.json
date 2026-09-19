@@ -1,21 +1,21 @@
 {
   "benchmark": {
     "repeats": 100,
-    "seconds_per_run": 0.000684287000040058,
-    "total_seconds": 0.0684287000040058
+    "seconds_per_run": 0.0003473790001589805,
+    "total_seconds": 0.03473790001589805
   },
-  "captured_at_utc": "2026-09-18T14:51:44+00:00",
+  "captured_at_utc": "2026-09-19T23:53:37+00:00",
   "code": {
-    "commit": null,
-    "describe": null,
-    "dirty": null
+    "commit": "ed3846194ba584ab2db8f32878b4da8bfe53a69a",
+    "describe": "ed38461-dirty",
+    "dirty": true
   },
   "configuration": {
     "path": "configs\\smoke.yaml",
     "sha256_canonical": "571952aa0113f5f84c6f3ff2f791082f9befff1cdada5e0b3a5bf84b2ea54f72"
   },
   "environment": {
-    "captured_at_utc": "2026-09-18T14:51:45+00:00",
+    "captured_at_utc": "2026-09-19T23:53:38+00:00",
     "cpu_count": 20,
     "implementation": "CPython",
     "machine": "AMD64",
@@ -39,7 +39,7 @@
       "sha256": "39ab433f05fde60e902e7fc089ac66bca4ac598ca9b8406202320e1f43b9a4bf"
     }
   },
-  "package_version": "0.1.0",
+  "package_version": "0.2.0",
   "random_seeds": [
     20260721
   ],

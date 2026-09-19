@@ -4,11 +4,11 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-This version implements Stage 0 - Project governance and reproducibility foundation
-(T0.1-T0.8). It intentionally contains no downloaded Kepler, TESS, or LEGACY payloads and
-does not expose the final holdout. Stage 0 freezes the rules that later stages must follow.
+Version 0.2.0 implements Stage 0 - Project governance and reproducibility foundation and Stage 1 -
+Literature evidence map and benchmark specification. It contains traceable derived tables but no
+redistributed Kepler, TESS, or publisher payloads, and it does not expose the final holdout.
 
-## Reproduce Stage 0
+## Reproduce Stages 0 and 1
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -17,6 +17,7 @@ uv sync --locked --group dev
 uv run topoastero smoke --config configs/smoke.yaml --output-dir results/smoke
 uv run topoastero audit-resources --root . --output reports/stage0/resource_audit.json
 uv run topoastero validate-stage0 --root .
+uv run topoastero validate-stage1 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -26,6 +27,9 @@ uv build
 The smoke command constructs a seeded two-mode signal, computes exact zero-dimensional
 superlevel persistence on a path, and writes a table, persistence pairs, an SVG figure, a stable
 result hash, and a run manifest. The workflow does not need mission data or a network connection.
+Stage 1 validation is also offline: it checks literature/source links, the 66-star LEGACY sheet,
+276 numerical target rows, 42 Rudy mode frequencies, novelty-search semantics, bibliography
+integrity, deliverable hashes, G1, and the complete Stage 0 regression contract.
 
 ## Stage 0 implementation map
 
@@ -43,6 +47,23 @@ result hash, and a run manifest. The workflow does not need mission data or a ne
 The detailed file-level mapping is in
 [`reports/stage0/TRACEABILITY_MATRIX.md`](reports/stage0/TRACEABILITY_MATRIX.md).
 
+## Stage 1 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T1.1 Physics map | physics matrix and solar-like physics note | required concepts, limitations, and source links |
+| T1.2 Classical pipelines | eight-baseline matrix and pipeline note | exact CB-01..CB-08 plus H1-H6 crosswalk |
+| T1.3 Rudy evidence | identity YAML, target table, 42-mode table | aliases, exact global targets, mode count and numeric bounds |
+| T1.4 LEGACY population | 66-star population sheet and specification | unique KICs and four authoritative targets per star |
+| T1.5 Mathematical TDA | nine-topic theorem matrix and assumptions map | exact TDA-01..TDA-09 with explicit non-claims |
+| T1.6 Astronomy TDA | adjacency/gap map | direct/adjacent distinction and transfer limits |
+| T1.7 Novelty audit | dated 18-query execution log and gap memo | failed queries cannot count as zero; two complete services |
+| T1.8 References | clean BibTeX, claim audit, schemas, quarterly protocol | key equality, DOI uniqueness, full source resolution |
+
+The detailed mapping and gate record are in
+[`reports/stage1/TRACEABILITY_MATRIX.md`](reports/stage1/TRACEABILITY_MATRIX.md) and
+[`reports/stage1/G1_ACCEPTANCE.json`](reports/stage1/G1_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -50,10 +71,11 @@ TopoAstero/
 |- configs/                 Frozen workflow configurations
 |- data/                    Raw, derived, archive tiers and immutable manifests
 |- docs/                    Charter, governance, protocol, DMP, science definitions
+|- evidence/                Stage 1 literature, benchmark, search, and reference records
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0/          Acceptance evidence and machine audit outputs
+|- reports/stage0,stage1/   Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -78,6 +100,10 @@ explain those records but do not silently override them.
 
 - Exact MAST product identifiers, checksums, Gaia aliases, and star partitions are deliberately
   deferred to Stage 2, where T2.1-T2.8 acquire and verify them.
+- The Stage 1 novelty result is a dated search conclusion, not proof that no uncatalogued direct
+  precedent exists; its next scheduled update is 2026-12-19.
+- LEGACY is a selected high-signal population. Population-wide performance claims require broader
+  samples and the Stage 2 stratification plan.
 - The TESS sector list in the planned inventory is proposal-stage information and must be
   re-queried before use.
 - MESA/GYRE is an extension capability. The core Stage 0 workflow is CPU-only and independent
@@ -89,5 +115,4 @@ explain those records but do not silently override them.
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned at Stage 0.
-
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 1.

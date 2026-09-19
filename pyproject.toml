@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "TopoAstero"
-version = "0.1.0"
+version = "0.2.0"
 description = "Reproducible research framework for topological asteroseismology"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -46,7 +46,7 @@ packages = ["src/topoastero"]
 addopts = "--strict-config --strict-markers --cov=topoastero --cov-report=term-missing --cov-fail-under=85"
 testpaths = ["tests"]
 markers = [
-  "governance: validates frozen Stage 0 governance artifacts",
+  "governance: validates frozen Stage 0 and Stage 1 research artifacts",
   "integration: exercises more than one package component",
 ]
 
@@ -76,4 +76,3 @@ ignore = ["E501"]
 python_version = "3.11"
 strict = true
 files = ["src"]
-

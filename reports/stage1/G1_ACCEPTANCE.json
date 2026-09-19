@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "gate": "G1",
+  "decision": "PASS",
+  "decided_on": "2026-09-19",
+  "scope": "Stage 1 literature evidence map and benchmark specification",
+  "qualification": "No duplicate direct precedent was found in the recorded dated search; this is not a universal absence claim.",
+  "clauses": [
+    {
+      "id": "G1.1",
+      "requirement": "No duplicate direct precedent after a reproducible search",
+      "status": "pass",
+      "evidence": [
+        "evidence/search/novelty_search_log.csv",
+        "docs/literature/NOVELTY_AUDIT.md",
+        "docs/literature/RESEARCH_GAP_MEMORANDUM.md"
+      ]
+    },
+    {
+      "id": "G1.2",
+      "requirement": "Every benchmark number is traceable to units uncertainty method source and reconciliation",
+      "status": "pass",
+      "evidence": [
+        "evidence/benchmarks/benchmark_targets.csv",
+        "evidence/benchmarks/rudy_mode_frequencies.csv",
+        "evidence/benchmarks/source_provenance.csv"
+      ]
+    },
+    {
+      "id": "G1.3",
+      "requirement": "Every topological claim has at least one classical baseline",
+      "status": "pass",
+      "evidence": [
+        "evidence/literature/classical_baseline_matrix.csv",
+        "evidence/literature/hypothesis_baseline_crosswalk.csv"
+      ]
+    },
+    {
+      "id": "G1.4",
+      "requirement": "A discovered direct precedent triggers novelty redefinition",
+      "status": "pass",
+      "evidence": [
+        "docs/literature/RESEARCH_GAP_MEMORANDUM.md",
+        "docs/literature/REFERENCE_UPDATE_PROTOCOL.md"
+      ]
+    }
+  ],
+  "counts": {
+    "literature_records": 25,
+    "legacy_stars": 66,
+    "authoritative_benchmark_targets": 264,
+    "context_only_targets": 12,
+    "rudy_modes": 42,
+    "clean_references": 35,
+    "novelty_query_executions": 18,
+    "successful_search_services": 2
+  },
+  "next_review_due": "2026-12-19"
+}
+

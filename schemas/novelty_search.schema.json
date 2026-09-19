@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/novelty_search.schema.json",
+  "title": "TopoAstero novelty-search execution row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "audit_id",
+    "concept_id",
+    "service",
+    "query",
+    "query_scope",
+    "run_date",
+    "request_url",
+    "http_status",
+    "status",
+    "total_results",
+    "screened_results",
+    "direct_precedents",
+    "screening_outcome",
+    "limitations"
+  ],
+  "properties": {
+    "audit_id": {"type": "string", "pattern": "^NSA-[0-9]{3}$"},
+    "concept_id": {"type": "string", "pattern": "^NQ-[0-9]{2}$"},
+    "service": {"type": "string", "minLength": 1},
+    "query": {"type": "string", "minLength": 1},
+    "query_scope": {"type": "string", "minLength": 1},
+    "run_date": {"type": "string", "format": "date"},
+    "request_url": {"type": "string", "format": "uri"},
+    "http_status": {"type": "string", "pattern": "^[0-9]{3}$"},
+    "status": {"enum": ["completed", "access_limited", "failed"]},
+    "total_results": {"type": "string", "pattern": "^$|^[0-9]+$"},
+    "screened_results": {"type": "string", "pattern": "^$|^[0-9]+$"},
+    "direct_precedents": {"type": "string", "pattern": "^$|^[0-9]+$"},
+    "screening_outcome": {"type": "string", "minLength": 1},
+    "limitations": {"type": "string", "minLength": 1}
+  }
+}
