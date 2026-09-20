@@ -1,0 +1,36 @@
+schema_version: 1
+config_id: TA-STAGE2-DATA-1.0
+frozen_on: "2026-09-20"
+identity:
+  stable_star_id_namespace: KIC
+  coordinate_frame: ICRS
+  coordinate_epoch: J2000
+mission_products:
+  kepler:
+    target: "KIC 10963065"
+    author: Kepler
+    cadence: short
+    quarters: [2, 5, 6, 7]
+    flux_column: PDCSAP_FLUX
+    quality_policy: retain_flags_and_record_mask_reason
+  tess:
+    target: "TIC 48450369"
+    authors: [SPOC, TESS-SPOC, QLP]
+    sectors: [14, 15, 40, 41, 53, 55, 74, 75, 80, 81, 82]
+    comparison_rule: never_mix_authors_or_cadences_without_an_explicit_transform
+canonical_model:
+  time_scale: BJD_TDB
+  frequency_unit: uHz
+  uncertainty_rule: nonnegative_finite
+  provenance_required: [raw_product_ids, config_sha256, software_version]
+partition:
+  algorithm_id: TA-GROUPED-STRATIFIED-SHA256-v1
+  group_key: stable_star_id
+  seed: 20260721
+  primary_stratum: numax_rank_tertile
+  balance_diagnostic: teff_rank_tertile
+  target_fractions:
+    development: 0.60
+    internal_validation: 0.20
+    final_holdout: 0.20
+  rudy_role: descriptive_benchmark

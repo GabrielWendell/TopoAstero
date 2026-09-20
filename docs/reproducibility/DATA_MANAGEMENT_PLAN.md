@@ -1,7 +1,7 @@
-# T0.6 - Data-management plan
+# Data-management plan
 
-**DMP version:** 1.0  
-**Frozen:** 2026-09-18  
+**DMP version:** 2.0
+**Frozen:** 2026-09-20
 **Data steward:** principal researcher until formally reassigned
 
 ## Data tiers
@@ -21,9 +21,16 @@ cadence, segment, author/pipeline, flux type, data release/version, and retrieva
 payload receives a byte-level SHA-256 checksum. Derived products name every parent checksum,
 configuration hash, producing experiment, code version, and schema version.
 
-The canonical manifest schema is `schemas/data_manifest.schema.json`. Stage 2 populates exact MAST
-IDs after a new archive query. Proposal-stage quarter/sector lists are marked provisional and cannot
-be silently promoted to verified identities.
+The general manifest schema is `schemas/data_manifest.schema.json`; Stage 2 adds the stricter
+`schemas/mission_product_manifest.schema.json` and canonical row schemas. The Rudy Kepler and TESS
+manifests contain exact MAST IDs, archive URIs, byte sizes, FITS metadata, and payload SHA-256 values
+from a 2026-09-20 query. Raw FITS files were verified in an external cache and are not redistributed.
+
+The 66-star LEGACY product index is intentionally an archive inventory, not an analysis-input
+manifest. Its rows have stable product IDs, byte sizes, and checksums of their metadata records;
+`payload_sha256` remains blank and the state is `candidate_inventory_only_not_an_analysis_input`.
+Any candidate selected later must first be downloaded, content-hashed, and promoted through a new
+manifest record. This prevents a metadata digest from being misrepresented as a payload checksum.
 
 ## Naming
 
@@ -90,4 +97,3 @@ Released tables include field definitions, units, null/missing conventions, unce
 quality flags, sample counts, exclusions, software/configuration versions, and provenance links.
 Machine-readable data accompany human-readable interpretation. A release fails if a headline figure
 cannot be regenerated from archived tables.
-

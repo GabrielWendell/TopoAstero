@@ -7,11 +7,13 @@ import json
 import sys
 from collections.abc import Sequence
 
+from topoastero.acquisition import verify_cached_products
 from topoastero.config import configuration_hash
 from topoastero.provenance import sha256_file
 from topoastero.resources import write_resource_audit
 from topoastero.smoke import run_smoke
 from topoastero.stage1_validation import validate_stage1
+from topoastero.stage2_validation import validate_stage2
 from topoastero.validation import validate_stage0
 
 
@@ -32,6 +34,18 @@ def build_parser() -> argparse.ArgumentParser:
     )
     stage1.add_argument("--root", default=".")
     stage1.add_argument("--without-stage0", action="store_true")
+
+    stage2 = subparsers.add_parser(
+        "validate-stage2", help="validate data manifests, schemas, partitions, QC, and G2"
+    )
+    stage2.add_argument("--root", default=".")
+    stage2.add_argument("--without-prior-stages", action="store_true")
+
+    cache = subparsers.add_parser(
+        "verify-stage2-cache", help="verify cached mission payloads against frozen manifests"
+    )
+    cache.add_argument("--manifest", action="append", required=True)
+    cache.add_argument("--cache-dir", required=True)
 
     hash_parser = subparsers.add_parser("hash-config", help="print a canonical config hash")
     hash_parser.add_argument("path")
@@ -69,6 +83,24 @@ def main(argv: Sequence[str] | None = None) -> None:
                 print(f"- {error}", file=sys.stderr)
             raise SystemExit(1)
         print("Stage 1 literature and benchmark contract: PASS")
+        return
+    if args.command == "validate-stage2":
+        errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+        if errors:
+            print("Stage 2 data contract failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        print("Stage 2 data, provenance, and canonical-model contract: PASS")
+        return
+    if args.command == "verify-stage2-cache":
+        errors = verify_cached_products(args.manifest, args.cache_dir)
+        if errors:
+            print("Stage 2 cached payload verification failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        print("Stage 2 cached payload verification: PASS")
         return
     if args.command == "hash-config":
         print(configuration_hash(args.path))

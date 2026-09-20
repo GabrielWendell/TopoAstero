@@ -1,0 +1,28 @@
+{
+  "payload_policy": "FITS payloads were downloaded to an external cache for checksum/header/QC inspection and are not redistributed in this repository.",
+  "queries": [
+    {
+      "expression": "search_lightcurve('KIC 10963065', cadence='short', author='Kepler', quarter=(2,5,6,7))",
+      "query_id": "MAST-QRY-RUDY-KEPLER-20260920",
+      "returned_products": 10,
+      "selection": "all returned products"
+    },
+    {
+      "expression": "search_lightcurve('TIC 48450369', mission='TESS')",
+      "query_id": "MAST-QRY-RUDY-TESS-20260920",
+      "returned_products_all_authors": 55,
+      "selected_products": 33,
+      "selection": "author in {SPOC,TESS-SPOC,QLP}"
+    }
+  ],
+  "query_date_utc": "2026-09-20",
+  "schema_version": 1,
+  "software": {
+    "astropy": "8.0.1",
+    "lightkurve": "2.6.0"
+  },
+  "target": {
+    "kic": "10963065",
+    "tic": "48450369"
+  }
+}

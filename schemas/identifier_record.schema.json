@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/identifier_record.schema.json",
+  "title": "TopoAstero stable astronomical identity record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_id", "stable_star_id", "canonical_name", "coordinates",
+    "identifiers", "aliases", "resolution", "cross_checks", "provenance"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_id": {"type": "string", "minLength": 1},
+    "stable_star_id": {"type": "string", "pattern": "^KIC [0-9]+$"},
+    "canonical_name": {"type": "string", "minLength": 1},
+    "coordinates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frame", "epoch", "ra_deg", "dec_deg", "source"],
+      "properties": {
+        "frame": {"const": "ICRS"},
+        "epoch": {"type": "string", "minLength": 1},
+        "ra_deg": {"type": "number", "minimum": 0, "exclusiveMaximum": 360},
+        "dec_deg": {"type": "number", "minimum": -90, "maximum": 90},
+        "source": {"type": "string", "minLength": 1}
+      }
+    },
+    "identifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kic", "tic", "gaia_dr3", "hd"],
+      "properties": {
+        "kic": {"type": "string", "pattern": "^[0-9]+$"},
+        "tic": {"type": "string", "pattern": "^[0-9]+$"},
+        "gaia_dr3": {"type": "string", "pattern": "^[0-9]+$"},
+        "hd": {"type": "string", "pattern": "^[0-9]+$"}
+      }
+    },
+    "aliases": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string"}},
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["queried_on", "services", "angular_match_arcsec", "status"],
+      "properties": {
+        "queried_on": {"type": "string", "format": "date"},
+        "services": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+        "angular_match_arcsec": {"type": "number", "minimum": 0},
+        "status": {"const": "resolved"}
+      }
+    },
+    "cross_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mast_tic_ra_deg", "mast_tic_dec_deg", "mast_tic_gaia_dr3", "tic_tmag",
+        "tic_contamination_ratio", "tic_distance_pc"
+      ],
+      "properties": {
+        "mast_tic_ra_deg": {"type": "number"},
+        "mast_tic_dec_deg": {"type": "number"},
+        "mast_tic_gaia_dr3": {"type": "string", "pattern": "^[0-9]+$"},
+        "tic_tmag": {"type": "number"},
+        "tic_contamination_ratio": {"type": "number", "minimum": 0},
+        "tic_distance_pc": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["query_date_utc", "simbad_client", "mast_client", "decision"],
+      "properties": {
+        "query_date_utc": {"type": "string", "format": "date"},
+        "simbad_client": {"type": "string", "minLength": 1},
+        "mast_client": {"type": "string", "minLength": 1},
+        "decision": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

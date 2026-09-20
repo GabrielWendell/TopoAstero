@@ -1,0 +1,46 @@
+schema_version: 1
+record_id: ALIAS-RUDY-20260920
+stable_star_id: "KIC 10963065"
+canonical_name: Rudy
+coordinates:
+  frame: ICRS
+  epoch: J2000
+  ra_deg: 284.78618530976996
+  dec_deg: 48.42322232216
+  source: "SIMBAD coordinate associated with Gaia DR3 2131593785132997632"
+identifiers:
+  kic: "10963065"
+  tic: "48450369"
+  gaia_dr3: "2131593785132997632"
+  hd: "176693"
+aliases:
+  - "KIC 10963065"
+  - "HD 176693"
+  - "Kepler-408"
+  - "TIC 48450369"
+  - "Gaia DR3 2131593785132997632"
+  - "Gaia DR2 2131593785132997632"
+  - "Gaia DR1 2131593780833377024"
+  - "2MASS J18590868+4825236"
+  - "TYC 3545-1227-1"
+resolution:
+  queried_on: "2026-09-20"
+  services:
+    - "SIMBAD TAP identifier query for KIC 10963065"
+    - "MAST TIC cone/identifier query for TIC 48450369"
+  angular_match_arcsec: 0.0023
+  status: resolved
+cross_checks:
+  mast_tic_ra_deg: 284.786186045964
+  mast_tic_dec_deg: 48.4232219395491
+  mast_tic_gaia_dr3: "2131593785132997632"
+  tic_tmag: 8.327
+  tic_contamination_ratio: 0.00285311649
+  tic_distance_pc: 88.7832
+provenance:
+  query_date_utc: "2026-09-20"
+  simbad_client: "astroquery.simbad.Simbad.query_objectids/query_object"
+  mast_client: "astroquery.mast.Catalogs.query_object(catalog='TIC')"
+  decision: >-
+    The KIC, HD, Kepler, TIC, and Gaia DR3 identifiers resolve to the same coordinates well
+    inside 0.01 arcsec. KIC 10963065 is the stable project key; mission aliases never replace it.

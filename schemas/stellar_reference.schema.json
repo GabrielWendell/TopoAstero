@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/stellar_reference.schema.json",
+  "title": "TopoAstero canonical stellar-reference row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "row_id", "stable_star_id", "quantity", "value", "unit", "uncertainty_minus",
+    "uncertainty_plus", "source_id", "source_version", "provenance"
+  ],
+  "properties": {
+    "row_id": {"type": "string", "minLength": 1},
+    "stable_star_id": {"type": "string", "minLength": 1},
+    "quantity": {"type": "string", "minLength": 1},
+    "value": {"type": "number"},
+    "unit": {"type": "string", "minLength": 1},
+    "uncertainty_minus": {"type": "number", "minimum": 0},
+    "uncertainty_plus": {"type": "number", "minimum": 0},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "provenance": {"$ref": "derived_provenance.schema.json"}
+  }
+}

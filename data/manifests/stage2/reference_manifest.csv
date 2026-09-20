@@ -1,0 +1,4 @@
+reference_id,path,rows,size_bytes,sha256,source_version
+REF-01,data/reference/mode_frequencies.csv,42,9439,ec67a15dd60ff3ad6799b4d8048a5a958818a88d8c4236fb5f3cabc0130d0455,TopoAstero-0.3.0
+REF-02,data/reference/stellar_references.csv,264,76086,3e604f4a76c92c6ae8ba57b1052ab51dc7ae028aaa0b8ab6319c0912ceff28a0,TopoAstero-0.3.0
+REF-03,data/reference/frequency_ratios.csv,38,8846,5ef49825ba0cbe0c634aa2e319a0ff5008ded3b644ca0d9c721cd290d338bccb,TopoAstero-0.3.0

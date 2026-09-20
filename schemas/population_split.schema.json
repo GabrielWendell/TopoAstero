@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/population_split.schema.json",
+  "title": "TopoAstero frozen star-grouped partition row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "assignment_id", "stable_star_id", "kic", "role", "group_key", "stratum",
+    "numax_bin", "teff_bin", "assignment_rank", "algorithm_id", "master_seed",
+    "source_row_sha256", "frozen_on"
+  ],
+  "properties": {
+    "assignment_id": {"type": "string", "pattern": "^SPLIT-[0-9]{3}$"},
+    "stable_star_id": {"type": "string", "pattern": "^KIC [0-9]+$"},
+    "kic": {"type": "string", "pattern": "^[0-9]+$"},
+    "role": {"enum": ["development", "internal_validation", "final_holdout", "descriptive_benchmark"]},
+    "group_key": {"const": "stable_star_id"},
+    "stratum": {"type": "string", "minLength": 1},
+    "numax_bin": {"enum": ["low", "middle", "high", "benchmark"]},
+    "teff_bin": {"enum": ["low", "middle", "high", "benchmark"]},
+    "assignment_rank": {"type": "integer", "minimum": 0},
+    "algorithm_id": {"const": "TA-GROUPED-STRATIFIED-SHA256-v1"},
+    "master_seed": {"type": "integer", "minimum": 0},
+    "source_row_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "frozen_on": {"type": "string", "format": "date"}
+  }
+}

@@ -1,7 +1,7 @@
-schema_version: 1
-inventory_id: TA-DATASETS-1.0
-frozen_on: 2026-09-18
-identity_rule: Planned records do not become verified inputs until exact IDs and SHA-256 values pass T2 checks.
+schema_version: 2
+inventory_id: TA-DATASETS-2.0
+frozen_on: 2026-09-20
+identity_rule: Only rows with a verified payload SHA-256 may become analysis inputs.
 datasets:
   - id: DS-ANALYTIC
     tier: T0_analytic
@@ -43,10 +43,11 @@ datasets:
     planned_material:
       quarters_proposal_stage: [2, 5, 6, 7]
       cadence: short
-      exact_product_ids: null
-      exact_checksums: null
-    identity_status: aliases_and_quarters_provisional_exact_MAST_products_pending
-    resolution_stage: S2_T2.1_T2.2
+      exact_product_manifest: data/manifests/stage2/rudy_kepler_products.csv
+      verified_product_count: 10
+      checksum_algorithm: SHA-256
+    identity_status: resolved_and_payload_verified_manifest_frozen
+    resolution_stage: S2_T2.1_T2.2_complete
     license_or_terms: MAST/Kepler public archive terms and mission citation; verify per product.
     retention_class: raw_manifest_indefinite_local_payload_project_plus_five_years_if_feasible
     split_role: descriptive_case
@@ -57,11 +58,13 @@ datasets:
     source: MAST TESS products for TIC 48450369.
     planned_material:
       sectors_seen_at_proposal_stage: [14, 15, 40, 41, 53, 55, 74, 75, 80, 81, 82]
-      sectors_are_frozen_inputs: false
-      exact_product_ids: null
-      exact_checksums: null
-    identity_status: proposal_query_only_must_requery_and_verify
-    resolution_stage: S2_T2.3
+      sectors_are_frozen_inputs: true
+      exact_product_manifest: data/manifests/stage2/rudy_tess_products.csv
+      verified_product_count: 33
+      product_families: [SPOC, TESS-SPOC, QLP]
+      checksum_algorithm: SHA-256
+    identity_status: resolved_and_payload_verified_manifest_frozen_optional_transfer
+    resolution_stage: S2_T2.3_complete
     license_or_terms: MAST/TESS public archive terms and mission/pipeline citation; verify per product.
     retention_class: raw_manifest_indefinite_local_payload_project_plus_five_years_if_feasible
     split_role: descriptive_transfer_case
@@ -71,8 +74,10 @@ datasets:
     role: Development, internal validation, and final population confirmation with authoritative labels.
     source: Kepler Asteroseismic LEGACY sample of 66 well-characterized solar-like oscillators and published mode/stellar tables.
     planned_material: [Kepler_light_curves, mode_frequencies, global_parameters, stellar_properties]
-    identity_status: cohort_concept_verified_exact_stars_products_tables_and_checksums_pending
-    resolution_stage: S1_T1.4_then_S2_T2.2_T2.6_T2.8
+    identity_status: >-
+      66 stable stars, publisher reference tables, candidate MAST product metadata, and grouped
+      split are frozen; candidate light-curve payloads require SHA-256 verification before use
+    resolution_stage: S1_T1.4_and_S2_T2.2_T2.6_T2.8_complete
     license_or_terms: Source catalog and MAST terms; citations and redistribution rights recorded per table/product.
     retention_class: manifests_and_reference_tables_indefinite_holdout_assignment_protected_until_open
     split_role: development_internal_validation_final_holdout_grouped_by_star
@@ -98,4 +103,3 @@ datasets:
     license_or_terms: Inherit Kepler terms; transformation code BSD-3-Clause and compact derived tables intended CC-BY-4.0.
     retention_class: archive_parent_hashes_configs_seeds_summary_tables_and_selected_realizations
     split_role: transfer_simulation_inheriting_parent_star_partition
-

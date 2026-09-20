@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/mode_frequency.schema.json",
+  "title": "TopoAstero canonical mode-frequency reference row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "row_id", "stable_star_id", "radial_order_n", "angular_degree_l", "frequency_uHz",
+    "uncertainty_minus_uHz", "uncertainty_plus_uHz", "source_id", "source_version", "provenance"
+  ],
+  "properties": {
+    "row_id": {"type": "string", "minLength": 1},
+    "stable_star_id": {"type": "string", "minLength": 1},
+    "radial_order_n": {"type": "integer", "minimum": 0},
+    "angular_degree_l": {"type": "integer", "minimum": 0},
+    "frequency_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "uncertainty_minus_uHz": {"type": "number", "minimum": 0},
+    "uncertainty_plus_uHz": {"type": "number", "minimum": 0},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "provenance": {"$ref": "derived_provenance.schema.json"}
+  }
+}

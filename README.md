@@ -4,11 +4,11 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.2.0 implements Stage 0 - Project governance and reproducibility foundation and Stage 1 -
-Literature evidence map and benchmark specification. It contains traceable derived tables but no
-redistributed Kepler, TESS, or publisher payloads, and it does not expose the final holdout.
+Version 0.3.0 implements Stages 0-2 through the data acquisition, provenance, and canonical-model
+gate. It contains traceable derived tables and payload-verified mission manifests but redistributes
+no Kepler, TESS, or publisher payloads.
 
-## Reproduce Stages 0 and 1
+## Reproduce Stages 0-2
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -18,6 +18,7 @@ uv run topoastero smoke --config configs/smoke.yaml --output-dir results/smoke
 uv run topoastero audit-resources --root . --output reports/stage0/resource_audit.json
 uv run topoastero validate-stage0 --root .
 uv run topoastero validate-stage1 --root .
+uv run topoastero validate-stage2 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -30,6 +31,9 @@ result hash, and a run manifest. The workflow does not need mission data or a ne
 Stage 1 validation is also offline: it checks literature/source links, the 66-star LEGACY sheet,
 276 numerical target rows, 42 Rudy mode frequencies, novelty-search semantics, bibliography
 integrity, deliverable hashes, G1, and the complete Stage 0 regression contract.
+Stage 2 validation stays offline as well: it checks stable aliases, 43 payload-verified Rudy
+products, 2,159 inventory-only LEGACY candidates, four canonical row types, 344 reference rows,
+QC, the sealed 66-star grouped split, deliverable hashes, G2, and all earlier contracts.
 
 ## Stage 0 implementation map
 
@@ -64,6 +68,23 @@ The detailed mapping and gate record are in
 [`reports/stage1/TRACEABILITY_MATRIX.md`](reports/stage1/TRACEABILITY_MATRIX.md) and
 [`reports/stage1/G1_ACCEPTANCE.json`](reports/stage1/G1_ACCEPTANCE.json).
 
+## Stage 2 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T2.1 Identity | Rudy alias/coordinate record | exact KIC/TIC/Gaia/HD and cross-match checks |
+| T2.2 Kepler | 10 verified Rudy products and 66-star candidate index | product uniqueness, query, metadata and payload-state checks |
+| T2.3 TESS | 33 SPOC/TESS-SPOC/QLP products in 11 sectors | sector, author, cadence, FITS metadata, checksum checks |
+| T2.4 Light curves | closed schema, dataclass, verified excerpt | unit, uncertainty, cadence, monotonicity and round-trip tests |
+| T2.5 Spectra | normalization/window/background schema and dataclass | Nyquist, PSD convention, provenance tests |
+| T2.6 References | modes, ratios, and stellar/global tables | cardinality, uncertainty, version and row-lineage checks |
+| T2.7 QC | 11-check report and exclusion protocol | duplicates, gaps, NaNs, time, overlap, unit and checksum checks |
+| T2.8 Split | 39/13/13 grouped split plus Rudy benchmark and SHA-256 seal | no-star-overlap, role-count, source/content-seal tests |
+
+The detailed mapping and gate record are in
+[`reports/stage2/TRACEABILITY_MATRIX.md`](reports/stage2/TRACEABILITY_MATRIX.md) and
+[`reports/stage2/G2_ACCEPTANCE.json`](reports/stage2/G2_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -75,7 +96,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0,stage1/   Acceptance evidence and machine audit outputs
+|- reports/stage0..stage2/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -98,8 +119,12 @@ explain those records but do not silently override them.
 
 ## Current boundaries
 
-- Exact MAST product identifiers, checksums, Gaia aliases, and star partitions are deliberately
-  deferred to Stage 2, where T2.1-T2.8 acquire and verify them.
+- LEGACY archive candidates are metadata-inventoried but cannot become inputs until their payload
+  SHA-256 values are computed; only the 43 Rudy products are payload-verified at G2.
+- Five recent QLP products do not provide a per-cadence uncertainty column; the missing state is
+  explicit and the optional TESS transfer case remains nonblocking.
+- The portable repository has no independent secret store, so split identities are cleartext and
+  auditable. The holdout remains unopened for topological analysis under the access-log policy.
 - The Stage 1 novelty result is a dated search conclusion, not proof that no uncatalogued direct
   precedent exists; its next scheduled update is 2026-12-19.
 - LEGACY is a selected high-signal population. Population-wide performance claims require broader

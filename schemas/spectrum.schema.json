@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/spectrum.schema.json",
+  "title": "TopoAstero canonical spectral row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "row_id", "stable_star_id", "frequency_uHz", "power", "power_unit", "normalization",
+    "nyquist_uHz", "window_id", "background_components", "provenance"
+  ],
+  "properties": {
+    "row_id": {"type": "string", "minLength": 1},
+    "stable_star_id": {"type": "string", "minLength": 1},
+    "frequency_uHz": {"type": "number", "minimum": 0},
+    "power": {"type": "number", "minimum": 0},
+    "power_unit": {"type": "string", "minLength": 1},
+    "normalization": {"enum": ["one_sided_psd", "two_sided_psd", "amplitude_spectrum"]},
+    "nyquist_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "window_id": {"type": "string", "minLength": 1},
+    "background_components": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "provenance": {"$ref": "derived_provenance.schema.json"}
+  }
+}
