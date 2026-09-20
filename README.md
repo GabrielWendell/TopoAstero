@@ -4,11 +4,12 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.3.0 implements Stages 0-2 through the data acquisition, provenance, and canonical-model
-gate. It contains traceable derived tables and payload-verified mission manifests but redistributes
-no Kepler, TESS, or publisher payloads.
+Version 0.4.0 implements Stages 0-3 through the classical asteroseismic baseline and observation-
+model gate. It contains traceable derived tables, payload-verified mission manifests, a reproduced
+Lightkurve Rudy case, an independent classical pipeline, and source-backed figure suites, but
+redistributes no Kepler, TESS, or publisher payloads.
 
-## Reproduce Stages 0-2
+## Reproduce Stages 0-3
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -19,6 +20,7 @@ uv run topoastero audit-resources --root . --output reports/stage0/resource_audi
 uv run topoastero validate-stage0 --root .
 uv run topoastero validate-stage1 --root .
 uv run topoastero validate-stage2 --root .
+uv run topoastero validate-stage3 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -34,6 +36,17 @@ integrity, deliverable hashes, G1, and the complete Stage 0 regression contract.
 Stage 2 validation stays offline as well: it checks stable aliases, 43 payload-verified Rudy
 products, 2,159 inventory-only LEGACY candidates, four canonical row types, 344 reference rows,
 QC, the sealed 66-star grouped split, deliverable hashes, G2, and all earlier contracts.
+Stage 3 validation checks both Rudy pipelines, PSD/background/window conventions, six frozen
+preprocessing branches, three conventional echelle trials, all 42 mode overlays, component-separated
+uncertainty, 11 individual TESS sectors, source/output hashes, G3, and all earlier contracts.
+
+To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
+full Stage 3 tables and figures:
+
+```bash
+uv run --extra astronomy python workflows/run_stage3_classical.py \
+  --cache-dir /absolute/path/to/topoastero-cache --download
+```
 
 ## Stage 0 implementation map
 
@@ -85,6 +98,24 @@ The detailed mapping and gate record are in
 [`reports/stage2/TRACEABILITY_MATRIX.md`](reports/stage2/TRACEABILITY_MATRIX.md) and
 [`reports/stage2/G2_ACCEPTANCE.json`](reports/stage2/G2_ACCEPTANCE.json).
 
+## Stage 3 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T3.1 Lightkurve case | exact Q2/Q5/Q6/Q7 workflow and executed notebook | tutorial `numax`, `dnu`, mass, radius, and log g reproduced |
+| T3.2 Independent pipeline | Harvey-whitened envelope and FFT-ACF implementation | shared-unit/convention comparison and joint-uncertainty audit |
+| T3.3 Background | H0/H1/H2 likelihood/AIC/BIC table | H2 selection plus analytic/injection tests |
+| T3.4 Window | per-quarter and combined atlas | duty cycle, resolution, aliases, absolute/compressed comparison |
+| T3.5 Echelle | three conventional trial spacings | fixed orientation, smoothing, orders, and circular phase edge |
+| T3.6 Modes | 42-row published-mode audit | residuals and explicit publisher/echelle order offsets |
+| T3.7 Branches | six-branch preprocessing registry | four executed Kepler sensitivities; no topology-based choice |
+| T3.8 Uncertainty | 500-resample component table | random, pipeline-choice, reference, and joint terms separated |
+| T3.9 TESS | 11 single-sector SPOC pilot | one marginal candidate, ten non-detections, no forced combination |
+
+The detailed mapping and gate record are in
+[`reports/stage3/TRACEABILITY_MATRIX.md`](reports/stage3/TRACEABILITY_MATRIX.md) and
+[`reports/stage3/G3_ACCEPTANCE.json`](reports/stage3/G3_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -96,7 +127,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage2/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage3/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -122,7 +153,11 @@ explain those records but do not silently override them.
 - LEGACY archive candidates are metadata-inventoried but cannot become inputs until their payload
   SHA-256 values are computed; only the 43 Rudy products are payload-verified at G2.
 - Five recent QLP products do not provide a per-cadence uncertainty column; the missing state is
-  explicit and the optional TESS transfer case remains nonblocking.
+  explicit. The Stage 3 feasibility pilot therefore uses the homogeneous SPOC two-minute family.
+- TESS sectors remain individual at G3: one marginal candidate and ten non-detections do not
+  justify a forced combined detection.
+- Lightkurve's ACF2D result has no native uncertainty. The registered segment bootstrap is labeled
+  separately, and the independent `numax` remains materially background/estimator sensitive.
 - The portable repository has no independent secret store, so split identities are cleartext and
   auditable. The holdout remains unopened for topological analysis under the access-log policy.
 - The Stage 1 novelty result is a dated search conclusion, not proof that no uncatalogued direct
@@ -140,4 +175,4 @@ explain those records but do not silently override them.
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 1.
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 3.

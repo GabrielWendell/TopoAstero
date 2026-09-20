@@ -1,6 +1,6 @@
 # Data-management plan
 
-**DMP version:** 2.0
+**DMP version:** 3.0
 **Frozen:** 2026-09-20
 **Data steward:** principal researcher until formally reassigned
 
@@ -31,6 +31,12 @@ manifest. Its rows have stable product IDs, byte sizes, and checksums of their m
 `payload_sha256` remains blank and the state is `candidate_inventory_only_not_an_analysis_input`.
 Any candidate selected later must first be downloaded, content-hashed, and promoted through a new
 manifest record. This prevents a metadata digest from being misrepresented as a payload checksum.
+
+Stage 3 selects the ten frozen Kepler tutorial payloads and the eleven homogeneous SPOC two-minute
+TESS payloads into an external cache, verifies every size/hash, and records all 21 parents in
+`results/stage3/run_manifest.json`. Git retains compact spectra, tables, figure sources, SVGs,
+configuration, and recipes. The raw FITS cache is neither a repository artifact nor the only copy
+of any Stage 3 conclusion.
 
 ## Naming
 

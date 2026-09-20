@@ -1,13 +1,13 @@
 {
   "benchmark": {
     "repeats": 100,
-    "seconds_per_run": 0.00035787299973890187,
-    "total_seconds": 0.035787299973890185
+    "seconds_per_run": 0.00034979000047314913,
+    "total_seconds": 0.03497900004731491
   },
-  "captured_at_utc": "2026-09-20T18:31:08+00:00",
+  "captured_at_utc": "2026-09-20T21:04:48+00:00",
   "code": {
-    "commit": "79dc29b42bc75847471f1e910496af9e1be72266",
-    "describe": "79dc29b-dirty",
+    "commit": "425bcecbb73e726d96ca3352ea396522e9eb31d6",
+    "describe": "425bcec-dirty",
     "dirty": true
   },
   "configuration": {
@@ -15,7 +15,7 @@
     "sha256_canonical": "571952aa0113f5f84c6f3ff2f791082f9befff1cdada5e0b3a5bf84b2ea54f72"
   },
   "environment": {
-    "captured_at_utc": "2026-09-20T18:31:08+00:00",
+    "captured_at_utc": "2026-09-20T21:04:48+00:00",
     "cpu_count": 20,
     "implementation": "CPython",
     "machine": "AMD64",
@@ -39,7 +39,7 @@
       "sha256": "39ab433f05fde60e902e7fc089ac66bca4ac598ca9b8406202320e1f43b9a4bf"
     }
   },
-  "package_version": "0.3.0",
+  "package_version": "0.4.0",
   "random_seeds": [
     20260721
   ],

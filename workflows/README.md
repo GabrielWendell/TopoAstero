@@ -17,3 +17,7 @@ unit-tested; notebooks call the same functions and are never authoritative.
 - `build_stage2_qc.py`: derives the pre-topology machine QC report.
 - `build_stage2_manifest.py`: rebuilds the Stage 2 deliverable checksum index.
 - `validate_stage2.py`: validates T2.1-T2.8, G2, and all earlier-stage regressions.
+- `acquire_stage3_inputs.py`: downloads/verifies the 10 Kepler plus 11 SPOC TESS Stage 3 payloads.
+- `run_stage3_classical.py`: one-command T3.1-T3.9 tables, figures, and run-manifest workflow.
+- `build_stage3_manifest.py`: rebuilds the Stage 3 deliverable checksum index.
+- `validate_stage3.py`: validates T3.1-T3.9, G3, and all earlier-stage regressions offline.

@@ -1,0 +1,86 @@
+schema_version: 1
+config_id: TA-STAGE3-CLASSICAL-1.0
+experiment_id: TA-S03-T01-RUDY-R001
+frozen_on: "2026-09-20"
+software_version: TopoAstero-0.4.0
+target:
+  stable_star_id: KIC 10963065
+  name: Rudy
+  teff_K: 6140.0
+  teff_uncertainty_K: 77.0
+inputs:
+  kepler_manifest: data/manifests/stage2/rudy_kepler_products.csv
+  kepler_quarters: [2, 5, 6, 7]
+  kepler_product_count: 10
+  tess_manifest: data/manifests/stage2/rudy_tess_products.csv
+  tess_author: SPOC
+  tess_cadence_class: target_2min
+  tess_sectors: [14, 15, 40, 41, 53, 55, 74, 75, 80, 81, 82]
+preprocessing:
+  primary_branch: PP-01
+  registry: registries/preprocessing_branches.csv
+  selection_rule: classical_predeclared_no_topology
+lightkurve_reproduction:
+  flux_column: PDCSAP_FLUX
+  quality_mask: lightkurve_default
+  cleaning: normalize_each_month_then_stitch
+  periodogram: lomb_scargle
+  normalization: psd
+  frequency_min_uHz: 1500.0
+  frequency_max_uHz: 2700.0
+  background: logmedian_flatten_default
+  numax_estimator: ACF2D
+  dnu_estimator: ACF2D
+independent_pipeline:
+  pipeline_id: TA-HARVEY-ACF-v1
+  periodogram_source: same_primary_light_curve
+  broad_frequency_min_uHz: 100.0
+  broad_frequency_max_uHz: 8000.0
+  power_unit: ppm2/uHz
+  background_components_compared: [0, 1, 2]
+  harvey_exponent: 4.0
+  background_exclusion_uHz: [1500.0, 2800.0]
+  background_selection: minimum_BIC
+  envelope_search_uHz: [1700.0, 2500.0]
+  envelope_smoothing_uHz: 35.0
+  dnu_window_half_width_uHz: 275.0
+  dnu_smoothing_uHz: 0.5
+window:
+  cadence_seconds: 58.84876286
+  maximum_alias_frequency_uHz: 50.0
+  aliases_reported_per_window: 3
+  combination_choices: [absolute_time, compressed_quarter_time]
+echelle:
+  trial_dnu_uHz: [103.11, 103.179, 103.323]
+  frequency_range_uHz: [1500.0, 2800.0]
+  phase_bins: 128
+  phase_smoothing_bins: 1.5
+  orientation: frequency_increases_bottom_to_top; phase_increases_left_to_right
+  phase_boundary: circular_wrap
+mode_audit:
+  source: data/reference/mode_frequencies.csv
+  peak_search_half_width_uHz: 2.5
+uncertainty:
+  method: monthly_segment_nonparametric_bootstrap
+  master_seed: 20260721
+  resamples: 500
+  common_grid_step_uHz: 0.1
+  random_component: bootstrap_standard_deviation
+  pipeline_choice_component: half_range_across_registered_executed_branches
+  reference_component: published_interval_half_width
+  combination: quadrature
+tess_pilot:
+  analyze_sectors_individually: true
+  combine_for_detection: false
+  envelope_peak_snr_threshold: 1.20
+  numax_tolerance_uHz: 150.0
+  dnu_tolerance_uHz: 10.0
+  dnu_autocorrelation_threshold: 0.08
+gate:
+  require_lightkurve_exact_context_reproduction: true
+  numax_context_tolerance_uHz: 0.1
+  dnu_context_tolerance_uHz: 0.01
+  require_psd_parseval_test: true
+  require_background_injection_test: true
+  require_documented_discrepancies: true
+  topology_used_for_branch_selection: false

@@ -1,2 +1,2 @@
 change_id,proposed_at_utc,motivation,affected_hypothesis,affected_stage,affected_deliverable,data_inspected,scientific_benefit,leakage_risk,schedule_cost,alternative,decision,approver,version,closed_at_utc
-
+CHG-S03-001,2026-09-20T00:00:00Z,"Implement the preregistered classical observation model before topology development",H1-H2;H5,S3,D3.1-D3.5,"Rudy descriptive benchmark only; no population holdout","Establishes trustworthy PSD/background/window baselines and exposes pipeline sensitivity",low,"four weeks planned","pause topology until classical baseline exists",approved,principal_researcher,0.4.0,2026-09-20T23:59:59Z

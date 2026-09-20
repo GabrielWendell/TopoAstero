@@ -7,7 +7,21 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ### Planned
 
-- Stage 3 signal conditioning, window characterization, and spectral estimation.
+- Stage 4 simulation and null-calibration engine.
+
+## [0.4.0] - 2026-09-20
+
+### Added
+
+- Complete Stage 3 classical asteroseismic baseline and observation model.
+- Exact Lightkurve Rudy reproduction plus an independent Harvey-background/FFT-ACF pipeline with
+  frequency/PSD convention reconciliation and uncorrected scaling products.
+- H0/H1/H2 background comparison, quarter/combination window atlas, three-trial conventional
+  echelle suite, and a 42-mode reference/residual/order-convention audit.
+- Six-branch preprocessing registry, 500-resample component-separated uncertainty budget, and
+  individual-sector TESS feasibility pilot retaining one marginal candidate and ten non-detections.
+- One-command external-cache workflow, executed benchmark notebook, source-backed SVG figures,
+  JSON Schemas, G3 validator, analytic/injection tests, and CI enforcement.
 
 ## [0.3.0] - 2026-09-20
 

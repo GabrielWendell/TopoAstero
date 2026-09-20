@@ -42,5 +42,7 @@ jobs:
         run: uv run topoastero validate-stage1 --root .
       - name: Validate Stage 2 contract
         run: uv run topoastero validate-stage2 --root .
+      - name: Validate Stage 3 contract
+        run: uv run topoastero validate-stage3 --root .
       - name: Build distribution
         run: uv build

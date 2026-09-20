@@ -1,0 +1,4 @@
+trial_id,dnu_uHz,frequency_min_uHz,frequency_max_uHz,phase_bins,radial_order_min,radial_order_max,orientation,phase_boundary,smoothing
+ECH-103.110,103.11,1500.0,2800.0,128,14,27,frequency_increases_bottom_to_top; phase_increases_left_to_right,circular_wrap,Gaussian phase sigma=1.5 bins; circular wrap
+ECH-103.179,103.179,1500.0,2800.0,128,14,27,frequency_increases_bottom_to_top; phase_increases_left_to_right,circular_wrap,Gaussian phase sigma=1.5 bins; circular wrap
+ECH-103.323,103.323,1500.0,2800.0,128,14,27,frequency_increases_bottom_to_top; phase_increases_left_to_right,circular_wrap,Gaussian phase sigma=1.5 bins; circular wrap

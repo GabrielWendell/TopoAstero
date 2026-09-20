@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/stage3_run_manifest.schema.json",
+  "title": "TopoAstero Stage 3 run manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "software_version",
+    "config_path",
+    "config_sha256",
+    "command",
+    "environment",
+    "git",
+    "random",
+    "inputs",
+    "input_policy",
+    "outputs",
+    "observational_conventions",
+    "summary",
+    "topology_used",
+    "elapsed_seconds"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"const": "TA-S03-T01-RUDY-R001"},
+    "software_version": {"const": "TopoAstero-0.4.0"},
+    "config_path": {"const": "configs/stage3_classical.yaml"},
+    "config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "command": {"type": "string", "minLength": 1},
+    "environment": {"type": "object"},
+    "git": {"type": "object"},
+    "random": {
+      "type": "object",
+      "required": ["master_seed", "resamples", "namespace"],
+      "properties": {
+        "master_seed": {"const": 20260721},
+        "resamples": {"const": 500},
+        "namespace": {"const": "stage3-monthly-segment-bootstrap"}
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "array",
+      "minItems": 21,
+      "maxItems": 21,
+      "items": {
+        "type": "object",
+        "required": ["product_key", "mission", "segment_number", "author", "filename", "size_bytes", "sha256"],
+        "properties": {
+          "product_key": {"type": "string", "minLength": 1},
+          "mission": {"enum": ["Kepler", "TESS"]},
+          "segment_number": {"type": "integer", "minimum": 1},
+          "author": {"type": "string", "minLength": 1},
+          "filename": {"type": "string", "minLength": 1},
+          "size_bytes": {"type": "integer", "minimum": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "input_policy": {"type": "string", "minLength": 1},
+    "outputs": {
+      "type": "array",
+      "minItems": 16,
+      "items": {
+        "type": "object",
+        "required": ["path", "size_bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "size_bytes": {"type": "integer", "minimum": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "observational_conventions": {"type": "object"},
+    "summary": {"type": "object"},
+    "topology_used": {"const": false},
+    "elapsed_seconds": {"type": "number", "minimum": 0}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "gate": "G3",
+  "decision": "PASS",
+  "decided_on": "2026-09-20",
+  "decision_owner": "principal_researcher",
+  "topology_inspected": false,
+  "holdout_access_state": "unopened_for_analysis",
+  "clauses": [
+    {
+      "clause": "The documented Lightkurve Rudy case is reproducible",
+      "status": "pass",
+      "evidence": "The ten frozen Q2/Q5/Q6/Q7 payloads reproduce 2145.0 uHz, 103.1121 uHz, 1.0816 Msun, 1.2291 Rsun, and logg 4.2930 with Lightkurve 2.6.0."
+    },
+    {
+      "clause": "Independent results and every material discrepancy are reconciled",
+      "status": "pass",
+      "evidence": "Both paths share products, absolute time, frequency unit, one-sided PSD, and scaling constants; the remaining 86.57-uHz numax and 0.254-uHz dnu differences are registered background/estimator choices and enter the uncertainty budget."
+    },
+    {
+      "clause": "PSD units and background normalization pass analytic and injection tests",
+      "status": "pass",
+      "evidence": "Parseval, sinusoid frequency/power, white-plus-Harvey positivity/model selection, and autocorrelation comb recovery are enforced in tests/unit/test_classical.py."
+    },
+    {
+      "clause": "Window, modes, preprocessing, and uncertainties are auditable",
+      "status": "pass",
+      "evidence": "Six windows, three echelle trials, 42 mode matches, six frozen branches, 500 segment bootstraps, and component-separated uncertainties have machine-readable tables and source-backed figures."
+    },
+    {
+      "clause": "TESS feasibility is reported without forcing an aggregate detection",
+      "status": "pass",
+      "evidence": "Eleven SPOC sectors were tested independently: one marginal candidate and ten non-detections; every row records do_not_combine_for_detection_at_G3."
+    }
+  ],
+  "analytic_tests": [
+    "one_sided_fft_psd_parseval",
+    "sinusoid_frequency_and_integrated_power",
+    "harvey_background_injection_and_model_comparison",
+    "comb_autocorrelation_large_separation",
+    "spectral_window_duty_and_aliases",
+    "circular_echelle_phase_boundary"
+  ],
+  "normative_results": "results/stage3/rudy_baseline.csv",
+  "run_manifest": "results/stage3/run_manifest.json",
+  "residual_limits": [
+    "Lightkurve ACF2D has no native uncertainty; the added bootstrap is labeled separately.",
+    "The independent numax estimate is background-model sensitive and is not selected as truth.",
+    "TESS single-sector evidence is insufficient for confirmation and sectors are not combined.",
+    "Raw FITS payloads remain external and are recovered by exact MAST IDs and SHA-256 values."
+  ]
+}

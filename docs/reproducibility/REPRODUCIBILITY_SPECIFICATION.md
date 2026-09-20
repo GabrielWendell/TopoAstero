@@ -1,7 +1,7 @@
 # D0.2 - Reproducibility specification
 
-**Specification:** RS-1.0  
-**Frozen:** 2026-09-18  
+**Specification:** RS-1.1  
+**Updated:** 2026-09-20  
 **Normative machine records:** `pyproject.toml`, `uv.lock`, `schemas/`, `configs/`, and
 `registries/`
 
@@ -13,8 +13,9 @@ environment. Python 3.12 is the reference interpreter and 3.11-3.13 are supporte
 
 `environment/environment.yml` is a convenience bridge for conda users; it invokes the locked uv
 installation and is not an independent dependency authority. `environment/Dockerfile` provides a
-clean Linux build. The package has one small runtime dependency at S0. Later scientific backends
-enter only through reviewed version changes and cross-backend tests.
+clean Linux build. Stage 3 adds locked NumPy/SciPy/Matplotlib numerical dependencies. Astropy and
+Lightkurve are a locked `astronomy` extra used only for FITS acquisition and exact tutorial
+reproduction; the offline contract and independent numerical core do not require that extra.
 
 Every result manifest records package version, Git commit/dirty state when available, Python,
 platform, CPU count, configuration hash, seeds, inputs, output checksums, and timing. A dirty tree
@@ -31,7 +32,8 @@ is allowed during exploration but not in a confirmation or release manifest.
 4. Seed lists or the deterministic rule are stored in the experiment ledger and run manifest.
 5. Random seeds support exact reruns but do not replace repeated-realization uncertainty.
 
-The Stage 0 smoke seed, `20260721`, is fixed from the planning-edition date and is diagnostic only.
+The Stage 0 smoke and Stage 3 bootstrap master seed, `20260721`, is fixed from the planning-edition
+date. Stage 3 records the namespace and 500 resamples in its manifest.
 
 ## Configuration hashing
 
@@ -91,6 +93,6 @@ in principle be regenerated.
 - **R3 scientific:** conclusions survive registered alternative preprocessing and uncertainty
   branches.
 
-Gate G0 requires R2 for the data-free smoke workflow. Later scientific gates require R2 for their
-core workflow and R3 for headline conclusions.
-
+Gate G0 requires R2 for the data-free smoke workflow. Stage 3 supplies R2 through exact payload
+hashes plus one command and R3 through frozen branch/uncertainty sensitivity. Later scientific
+gates require R2 for their core workflow and R3 for headline conclusions.

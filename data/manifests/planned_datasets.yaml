@@ -47,7 +47,7 @@ datasets:
       verified_product_count: 10
       checksum_algorithm: SHA-256
     identity_status: resolved_and_payload_verified_manifest_frozen
-    resolution_stage: S2_T2.1_T2.2_complete
+    resolution_stage: S2_T2.1_T2.2_complete_and_S3_classical_baseline_complete
     license_or_terms: MAST/Kepler public archive terms and mission citation; verify per product.
     retention_class: raw_manifest_indefinite_local_payload_project_plus_five_years_if_feasible
     split_role: descriptive_case
@@ -64,7 +64,7 @@ datasets:
       product_families: [SPOC, TESS-SPOC, QLP]
       checksum_algorithm: SHA-256
     identity_status: resolved_and_payload_verified_manifest_frozen_optional_transfer
-    resolution_stage: S2_T2.3_complete
+    resolution_stage: S2_T2.3_complete_and_S3_individual_SPOC_feasibility_complete
     license_or_terms: MAST/TESS public archive terms and mission/pipeline citation; verify per product.
     retention_class: raw_manifest_indefinite_local_payload_project_plus_five_years_if_feasible
     split_role: descriptive_transfer_case
