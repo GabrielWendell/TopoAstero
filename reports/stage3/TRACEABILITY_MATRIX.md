@@ -19,4 +19,4 @@
 | D3.3 | sensitivity report, background table, window atlas, branch registry |
 | D3.4 | echelle/mode tables and five classical diagnostic SVGs |
 | D3.5 | TESS note, sector table, feasibility SVG |
-| G3 | acceptance JSON, validator, schemas, unit/integration/governance tests, CI gate |
+| G3 | acceptance JSON, validator, schemas, style guide/module, unit/integration/governance tests, CI gate |

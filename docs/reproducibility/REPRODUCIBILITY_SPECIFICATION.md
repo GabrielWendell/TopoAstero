@@ -1,7 +1,8 @@
 # D0.2 - Reproducibility specification
 
-**Specification:** RS-1.1  
-**Updated:** 2026-09-20  
+**Specification:** RS-1.1
+
+**Updated:** 2026-09-20
 **Normative machine records:** `pyproject.toml`, `uv.lock`, `schemas/`, `configs/`, and
 `registries/`
 
@@ -72,6 +73,12 @@ Tables use explicit units, missing-value semantics, uncertainty definition, samp
 and quality flags. Figures name a machine-readable source table and immutable recipe. Numerical
 claims are computed from tables, not recovered from graphics. A released figure is rebuilt in a
 clean environment and its source table is archived.
+
+Stage 3 and later figures must use `src/topoastero/style.py` visual contract `TA-PLOT-1.0` and
+`save_figure`. Each SVG embeds the software/style versions and machine-readable source; each run
+manifest records the style context, TeX choice, and primary format. Direct workflow-level
+`rcParams` changes and `savefig` calls are rejected by the plotting-policy test. The normative
+usage and accessibility rules are in `docs/reproducibility/PLOTTING_STYLE_GUIDE.md`.
 
 ## Archive plan
 

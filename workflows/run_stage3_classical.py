@@ -29,6 +29,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from acquire_stage3_inputs import acquire
+from matplotlib.colors import PowerNorm
 from scipy.ndimage import gaussian_filter1d
 
 from topoastero.classical import (
@@ -49,6 +50,22 @@ from topoastero.classical import (
 )
 from topoastero.config import configuration_hash, load_yaml
 from topoastero.provenance import sha256_file
+from topoastero.style import (
+    FIGSIZE,
+    STYLE_ID,
+    WINDOW_COLORS,
+    WINDOW_LINESTYLES,
+    annotate_textbox,
+    background_color,
+    background_label,
+    data_color,
+    mode_degree_color,
+    mode_degree_label,
+    panel_label,
+    save_figure,
+    style_axes,
+    topoastero_style,
+)
 
 ROOT = Path(__file__).parents[1]
 SOFTWARE_VERSION = "TopoAstero-0.4.0"
@@ -331,104 +348,314 @@ def _plot_products(
     tess_rows: list[dict[str, Any]],
 ) -> list[Path]:
     figure_dir.mkdir(parents=True, exist_ok=True)
-    plt.rcParams.update({"svg.hashsalt": "TopoAstero-Stage3", "figure.dpi": 120})
-    metadata = {"Creator": SOFTWARE_VERSION, "Date": None, "Description": "Machine-readable sources in results/stage3"}
     paths: list[Path] = []
 
     selected = (frequency >= 1500) & (frequency <= 2700)
     spacing = float(np.median(np.diff(frequency)))
     smoothed = gaussian_filter1d(power / background, 35.0 / spacing)
-    fig, axis = plt.subplots(figsize=(8.5, 4.5))
-    axis.plot(frequency[selected], power[selected], color="0.65", lw=0.45, label="PSD")
-    axis.plot(frequency[selected], background[selected], color="#1f77b4", lw=1.5, label="Harvey background")
-    axis.plot(frequency[selected], background[selected] * smoothed[selected], color="#d62728", lw=1.2, label="35 uHz smooth")
-    axis.set_yscale("log")
-    axis.set(xlabel="Frequency (uHz)", ylabel="PSD (ppm$^2$/uHz)", title="Rudy classical power spectrum")
-    axis.legend(frameon=False)
-    fig.tight_layout()
-    path = figure_dir / "rudy_power_spectrum.svg"
-    fig.savefig(path, metadata=metadata)
-    plt.close(fig)
-    paths.append(path)
-
-    fig, axis = plt.subplots(figsize=(8.5, 4.5))
-    sample = slice(None, None, 40)
-    axis.scatter(frequency[sample], power[sample], s=1, alpha=0.12, color="0.2", label="PSD samples")
-    for fit in fits:
-        axis.plot(frequency, _background_model(frequency, fit), lw=1.3, label=f"H{fit.component_count}; BIC={fit.bic:.0f}")
-    axis.axvspan(1500, 2800, color="#f0b44d", alpha=0.15, label="fit exclusion")
-    axis.set(xscale="log", yscale="log", xlabel="Frequency (uHz)", ylabel="PSD (ppm$^2$/uHz)", title="Background model comparison")
-    axis.legend(frameon=False, fontsize=8)
-    fig.tight_layout()
-    path = figure_dir / "background_comparison.svg"
-    fig.savefig(path, metadata=metadata)
-    plt.close(fig)
-    paths.append(path)
-
-    fig, axis = plt.subplots(figsize=(8.5, 4.5))
-    for name in ("Q2", "Q5", "Q6", "Q7", "combined_absolute", "combined_compressed"):
-        window = windows[name]
-        axis.plot(window.frequency_uHz, window.power, lw=1.0, label=name)
-    axis.set(xlim=(0, 5), yscale="log", xlabel="Window frequency (uHz)", ylabel="Normalized window power", title="Kepler sampling-window atlas")
-    axis.legend(frameon=False, ncol=2, fontsize=8)
-    fig.tight_layout()
-    path = figure_dir / "window_atlas.svg"
-    fig.savefig(path, metadata=metadata)
-    plt.close(fig)
-    paths.append(path)
-
-    fig, axes = plt.subplots(1, len(echelle_trials), figsize=(12, 4.5), sharey=True)
-    echelle_cmap = plt.get_cmap("magma").copy()
-    echelle_cmap.set_bad("white")
-    for axis, (trial, grid) in zip(axes, echelle_trials, strict=True):
-        image = axis.imshow(
-            np.ma.masked_where(grid.power <= 0, grid.power),
-            origin="lower",
-            aspect="auto",
-            extent=(0, trial, grid.radial_orders[0], grid.radial_orders[-1]),
-            cmap=echelle_cmap,
+    with topoastero_style(context="paper", constrained_layout=True):
+        fig, axis = plt.subplots(figsize=FIGSIZE["double"])
+        axis.plot(
+            frequency[selected],
+            power[selected],
+            color=data_color("raw"),
+            lw=0.45,
+            alpha=0.72,
+            label="PSD",
+            rasterized=True,
         )
-        axis.set(title=f"Delta nu={trial:.3f} uHz", xlabel="Frequency modulo Delta nu (uHz)")
-        fig.colorbar(image, ax=axis, fraction=0.046)
-    axes[0].set_ylabel("Echelle order (frequency increases upward)")
-    fig.tight_layout()
-    path = figure_dir / "echelle_trials.svg"
-    fig.savefig(path, metadata=metadata)
-    plt.close(fig)
-    paths.append(path)
+        axis.plot(
+            frequency[selected],
+            background[selected],
+            color=data_color("background"),
+            lw=1.6,
+            label="Harvey background",
+        )
+        axis.plot(
+            frequency[selected],
+            background[selected] * smoothed[selected],
+            color=data_color("envelope"),
+            lw=1.25,
+            label=r"35-$\mu$Hz smooth",
+        )
+        style_axes(
+            axis,
+            xlabel=r"Frequency [$\mu$Hz]",
+            ylabel=r"PSD [ppm$^2\,\mu$Hz$^{-1}$]",
+            title="Rudy classical power spectrum",
+            yscale="log",
+            grid_axis="both",
+            legend=True,
+            legend_loc="lower left",
+            legend_ncols=1,
+        )
+        path = figure_dir / "rudy_power_spectrum.svg"
+        save_figure(
+            fig,
+            path,
+            close=True,
+            source="results/stage3/reduced_spectrum.csv",
+            description="Whitened spectrum, selected background, and smoothed oscillation envelope.",
+            software_version=SOFTWARE_VERSION,
+        )
+        paths.append(path)
 
-    fig, axis = plt.subplots(figsize=(8.5, 4.5))
-    for degree, color in ((0, "#1f77b4"), (1, "#d62728"), (2, "#2ca02c")):
-        subset = [row for row in mode_rows if int(row["angular_degree_l"]) == degree]
+        fig, axis = plt.subplots(figsize=FIGSIZE["double"])
+        sample = slice(None, None, 40)
         axis.scatter(
-            [float(row["reference_frequency_uHz"]) for row in subset],
-            [float(row["residual_uHz"]) for row in subset],
-            s=22,
-            label=f"l={degree}",
-            color=color,
+            frequency[sample],
+            power[sample],
+            s=2.5,
+            alpha=0.16,
+            color=data_color("raw"),
+            edgecolors="none",
+            label="PSD samples",
+            rasterized=True,
         )
-    axis.axhline(0, color="0.2", lw=0.8)
-    axis.set(xlabel="Published mode frequency (uHz)", ylabel="Nearest-peak residual (uHz)", title="Published-mode overlay audit")
-    axis.legend(frameon=False, ncol=4)
-    fig.tight_layout()
-    path = figure_dir / "mode_overlay_audit.svg"
-    fig.savefig(path, metadata=metadata)
-    plt.close(fig)
-    paths.append(path)
+        selected_fit = min(fits, key=lambda fit: fit.bic)
+        for fit in fits:
+            axis.plot(
+                frequency,
+                _background_model(frequency, fit),
+                color=background_color(fit.component_count),
+                lw=1.7 if fit is selected_fit else 1.05,
+                ls="-" if fit is selected_fit else "--",
+                label=rf"{background_label(fit.component_count)}; $\mathrm{{BIC}}={fit.bic:.0f}$",
+            )
+        axis.axvspan(
+            1500,
+            2800,
+            color=data_color("exclusion"),
+            alpha=0.12,
+            label="Oscillation exclusion",
+            zorder=0,
+        )
+        style_axes(
+            axis,
+            xlabel=r"Frequency [$\mu$Hz]",
+            ylabel=r"PSD [ppm$^2\,\mu$Hz$^{-1}$]",
+            title="Background model comparison",
+            xscale="log",
+            yscale="log",
+            grid_axis="both",
+            legend=True,
+            legend_ncols=2,
+        )
+        annotate_textbox(axis, rf"Selected: {background_label(selected_fit.component_count)}")
+        path = figure_dir / "background_comparison.svg"
+        save_figure(
+            fig,
+            path,
+            close=True,
+            source="results/stage3/background_models.csv",
+            description="H0/H1/H2 exponential-likelihood comparison; minimum-BIC model emphasized.",
+            software_version=SOFTWARE_VERSION,
+        )
+        paths.append(path)
 
-    fig, axis = plt.subplots(figsize=(8.5, 4.5))
-    sectors = [int(row["sector"]) for row in tess_rows]
-    snr = [float(row["envelope_peak_snr"]) for row in tess_rows]
-    colors = ["#f0a202" if row["classification"].startswith("marginal") else "#6c7a89" for row in tess_rows]
-    axis.scatter(sectors, snr, c=colors, s=42)
-    axis.axhline(1.20, color="#d62728", ls="--", label="frozen envelope threshold")
-    axis.set(xlabel="TESS sector", ylabel="Smoothed envelope peak/background", title="TESS single-sector feasibility (no combined detection)")
-    axis.legend(frameon=False)
-    fig.tight_layout()
-    path = figure_dir / "tess_sector_feasibility.svg"
-    fig.savefig(path, metadata=metadata)
-    plt.close(fig)
-    paths.append(path)
+        fig, axis = plt.subplots(figsize=FIGSIZE["double"])
+        window_widths = {
+            "Q2": 1.0,
+            "Q5": 1.0,
+            "Q6": 1.0,
+            "Q7": 1.0,
+            "combined_absolute": 1.6,
+            "combined_compressed": 1.25,
+        }
+        for name, linewidth in window_widths.items():
+            window = windows[name]
+            label = {
+                "combined_absolute": "Absolute time",
+                "combined_compressed": "Compressed time",
+            }.get(name, name)
+            axis.plot(
+                window.frequency_uHz,
+                window.power,
+                color=WINDOW_COLORS[name],
+                ls=WINDOW_LINESTYLES[name],
+                lw=linewidth,
+                label=label,
+            )
+        style_axes(
+            axis,
+            xlabel=r"Window frequency [$\mu$Hz]",
+            ylabel="Normalized window power",
+            title="Kepler sampling-window atlas",
+            xlim=(0, 5),
+            yscale="log",
+            grid_axis="both",
+            legend=True,
+            legend_loc="upper center",
+            legend_ncols=3,
+        )
+        path = figure_dir / "window_atlas.svg"
+        save_figure(
+            fig,
+            path,
+            close=True,
+            source="results/stage3/window_atlas.csv",
+            description="Four quarters plus physical and compressed-time combination diagnostics.",
+            software_version=SOFTWARE_VERSION,
+        )
+        paths.append(path)
+
+        positive = np.concatenate(
+            [grid.power[grid.power > 0] for _, grid in echelle_trials]
+        )
+        norm = PowerNorm(
+            gamma=0.55,
+            vmin=float(np.percentile(positive, 2.0)),
+            vmax=float(np.percentile(positive, 99.5)),
+        )
+        fig, axes = plt.subplots(
+            1,
+            len(echelle_trials),
+            figsize=FIGSIZE["triple"],
+            sharey=True,
+        )
+        echelle_cmap = plt.get_cmap("magma").copy()
+        echelle_cmap.set_bad("white")
+        image = None
+        for index, (axis, (trial, grid)) in enumerate(
+            zip(axes, echelle_trials, strict=True)
+        ):
+            image = axis.imshow(
+                np.ma.masked_where(grid.power <= 0, grid.power),
+                origin="lower",
+                aspect="auto",
+                extent=(0, trial, grid.radial_orders[0], grid.radial_orders[-1]),
+                cmap=echelle_cmap,
+                norm=norm,
+            )
+            style_axes(
+                axis,
+                xlabel=r"Frequency mod $\Delta\nu$ [$\mu$Hz]",
+                title=rf"$\Delta\nu={trial:.3f}\,\mu$Hz",
+                grid=False,
+                minor=False,
+            )
+            panel_label(axis, f"({chr(97 + index)})")
+        axes[0].set_ylabel("Echelle order")
+        if image is not None:
+            colorbar = fig.colorbar(image, ax=axes, fraction=0.026, pad=0.02)
+            colorbar.set_label("Whitened power")
+        path = figure_dir / "echelle_trials.svg"
+        save_figure(
+            fig,
+            path,
+            close=True,
+            source=(
+                "results/stage3/reduced_spectrum.csv",
+                "results/stage3/echelle_trials.csv",
+            ),
+            description="Common normalization and orientation across three conventional trial spacings.",
+            software_version=SOFTWARE_VERSION,
+        )
+        paths.append(path)
+
+        fig, axis = plt.subplots(figsize=FIGSIZE["double"])
+        axis.axhspan(
+            -1,
+            1,
+            color=data_color("reference"),
+            alpha=0.08,
+            label=r"$\pm1\,\mu$Hz band",
+            zorder=0,
+        )
+        markers = {0: "o", 1: "s", 2: "^"}
+        for degree in (0, 1, 2):
+            subset = [row for row in mode_rows if int(row["angular_degree_l"]) == degree]
+            axis.scatter(
+                [float(row["reference_frequency_uHz"]) for row in subset],
+                [float(row["residual_uHz"]) for row in subset],
+                s=30,
+                marker=markers[degree],
+                label=mode_degree_label(degree),
+                color=mode_degree_color(degree),
+                edgecolors="black",
+                linewidths=0.45,
+                zorder=3,
+            )
+        style_axes(
+            axis,
+            xlabel=r"Published mode frequency [$\mu$Hz]",
+            ylabel=r"Nearest-peak residual [$\mu$Hz]",
+            title="Published-mode overlay audit",
+            grid_axis="both",
+            legend=True,
+            legend_ncols=4,
+            zero_line=True,
+        )
+        path = figure_dir / "mode_overlay_audit.svg"
+        save_figure(
+            fig,
+            path,
+            close=True,
+            source="results/stage3/mode_audit.csv",
+            description="All 42 published modes under the frozen nearest-peak matching rule.",
+            software_version=SOFTWARE_VERSION,
+        )
+        paths.append(path)
+
+        fig, axis = plt.subplots(figsize=FIGSIZE["double"])
+        sectors = [int(row["sector"]) for row in tess_rows]
+        sector_positions = {sector: index for index, sector in enumerate(sectors)}
+        marginal = [row for row in tess_rows if row["classification"].startswith("marginal")]
+        non_detections = [
+            row for row in tess_rows if not row["classification"].startswith("marginal")
+        ]
+        axis.scatter(
+            [sector_positions[int(row["sector"])] for row in non_detections],
+            [float(row["envelope_peak_snr"]) for row in non_detections],
+            color=data_color("not_detected"),
+            s=38,
+            marker="o",
+            edgecolors="black",
+            linewidths=0.5,
+            label="Non-detection",
+            zorder=3,
+        )
+        axis.scatter(
+            [sector_positions[int(row["sector"])] for row in marginal],
+            [float(row["envelope_peak_snr"]) for row in marginal],
+            color=data_color("marginal"),
+            s=62,
+            marker="*",
+            edgecolors="0.25",
+            linewidths=0.5,
+            label="Marginal",
+            zorder=4,
+        )
+        axis.axhline(
+            1.20,
+            color=data_color("threshold"),
+            ls="--",
+            lw=1.15,
+            label="SNR = 1.20",
+        )
+        style_axes(
+            axis,
+            xlabel="TESS sector",
+            ylabel="Smoothed envelope peak / background",
+            title="TESS single-sector feasibility (no combined detection)",
+            grid_axis="both",
+            minor=False,
+            legend=True,
+            legend_loc="lower center",
+            legend_ncols=3,
+        )
+        axis.set_xticks(range(len(sectors)), [str(sector) for sector in sectors])
+        annotate_textbox(axis, "1 marginal / 10 not detected", x=0.97, fontsize=8.5)
+        path = figure_dir / "tess_sector_feasibility.svg"
+        save_figure(
+            fig,
+            path,
+            close=True,
+            source="results/stage3/tess_sector_feasibility.csv",
+            description="Eleven SPOC sectors assessed independently; no aggregate detection.",
+            software_version=SOFTWARE_VERSION,
+        )
+        paths.append(path)
     return paths
 
 
@@ -875,6 +1102,13 @@ def run(config_path: Path, cache_dir: Path, output_dir: Path, figure_dir: Path, 
             "sidedness": "one-sided",
             "lightkurve_normalization": "psd",
             "background_selection": "minimum BIC among H0/H1/H2",
+        },
+        "plot_style": {
+            "style_id": STYLE_ID,
+            "module": "topoastero.style",
+            "context": "paper",
+            "use_tex": False,
+            "primary_format": "svg",
         },
         "summary": {
             "lightkurve": lightkurve_values,

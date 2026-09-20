@@ -5,6 +5,13 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ## [Unreleased]
 
+### Added
+
+- `TA-PLOT-1.0`, a package-level academic plotting contract with asteroseismic semantic colors,
+  journal sizing, deterministic source-aware exports, tests, and governance enforcement.
+- Restyled and regenerated all six Stage 3 figures under the shared visual contract without
+  changing any machine-readable scientific result.
+
 ### Planned
 
 - Stage 4 simulation and null-calibration engine.

@@ -57,9 +57,13 @@ DELIVERABLES = {
         "reports/stage3/TRACEABILITY_MATRIX.md",
         "reports/stage3/G3_ACCEPTANCE.json",
         "src/topoastero/classical.py",
+        "src/topoastero/style.py",
         "src/topoastero/stage3_validation.py",
+        "docs/reproducibility/PLOTTING_STYLE_GUIDE.md",
         "workflows/validate_stage3.py",
         "tests/unit/test_classical.py",
+        "tests/unit/test_style.py",
+        "tests/governance/test_plot_style_contract.py",
         "tests/governance/test_stage3_contract.py",
         "tests/governance/test_stage3_schemas.py",
         "tests/integration/test_stage3_cli.py",
@@ -77,6 +81,7 @@ DELIVERABLES = {
         "configs/README.md",
         "registries/experiment_ledger.csv",
         "registries/decision_log.csv",
+        "registries/change_log.csv",
     ],
 }
 

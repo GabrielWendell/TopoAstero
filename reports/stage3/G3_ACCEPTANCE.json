@@ -25,7 +25,7 @@
     {
       "clause": "Window, modes, preprocessing, and uncertainties are auditable",
       "status": "pass",
-      "evidence": "Six windows, three echelle trials, 42 mode matches, six frozen branches, 500 segment bootstraps, and component-separated uncertainties have machine-readable tables and source-backed figures."
+      "evidence": "Six windows, three echelle trials, 42 mode matches, six frozen branches, 500 segment bootstraps, and component-separated uncertainties have machine-readable tables and TA-PLOT-1.0 source-backed figures."
     },
     {
       "clause": "TESS feasibility is reported without forcing an aggregate detection",

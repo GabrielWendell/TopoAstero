@@ -21,3 +21,6 @@ unit-tested; notebooks call the same functions and are never authoritative.
 - `run_stage3_classical.py`: one-command T3.1-T3.9 tables, figures, and run-manifest workflow.
 - `build_stage3_manifest.py`: rebuilds the Stage 3 deliverable checksum index.
 - `validate_stage3.py`: validates T3.1-T3.9, G3, and all earlier-stage regressions offline.
+
+Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
+`TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.

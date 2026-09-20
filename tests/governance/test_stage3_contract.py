@@ -37,6 +37,19 @@ def test_g3_declares_topology_free_pass_and_unopened_holdout() -> None:
     assert all(clause["status"] == "pass" for clause in gate["clauses"])
 
 
+def test_stage3_records_the_project_visual_contract() -> None:
+    manifest = json.loads((ROOT / "results/stage3/run_manifest.json").read_text())
+    assert manifest["plot_style"] == {
+        "style_id": "TA-PLOT-1.0",
+        "module": "topoastero.style",
+        "context": "paper",
+        "use_tex": False,
+        "primary_format": "svg",
+    }
+    notebook = json.loads((ROOT / "notebooks/03_rudy_classical_baseline.ipynb").read_text())
+    assert notebook["metadata"]["topoastero"]["plot_style"] == "TA-PLOT-1.0"
+
+
 def test_stage3_outputs_cover_every_agenda_task() -> None:
     traceability = (ROOT / "reports/stage3/TRACEABILITY_MATRIX.md").read_text()
     for task in range(1, 10):

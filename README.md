@@ -38,7 +38,8 @@ products, 2,159 inventory-only LEGACY candidates, four canonical row types, 344 
 QC, the sealed 66-star grouped split, deliverable hashes, G2, and all earlier contracts.
 Stage 3 validation checks both Rudy pipelines, PSD/background/window conventions, six frozen
 preprocessing branches, three conventional echelle trials, all 42 mode overlays, component-separated
-uncertainty, 11 individual TESS sectors, source/output hashes, G3, and all earlier contracts.
+uncertainty, 11 individual TESS sectors, source/output hashes, the `TA-PLOT-1.0` publication-style
+and figure-provenance contract, G3, and all earlier contracts.
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -111,6 +112,11 @@ The detailed mapping and gate record are in
 | T3.7 Branches | six-branch preprocessing registry | four executed Kepler sensitivities; no topology-based choice |
 | T3.8 Uncertainty | 500-resample component table | random, pipeline-choice, reference, and joint terms separated |
 | T3.9 TESS | 11 single-sector SPOC pilot | one marginal candidate, ten non-detections, no forced combination |
+
+All Stage 3 and later figures use the project-wide visual contract in
+[`src/topoastero/style.py`](src/topoastero/style.py); usage, accessibility, and provenance rules are
+documented in
+[`docs/reproducibility/PLOTTING_STYLE_GUIDE.md`](docs/reproducibility/PLOTTING_STYLE_GUIDE.md).
 
 The detailed mapping and gate record are in
 [`reports/stage3/TRACEABILITY_MATRIX.md`](reports/stage3/TRACEABILITY_MATRIX.md) and

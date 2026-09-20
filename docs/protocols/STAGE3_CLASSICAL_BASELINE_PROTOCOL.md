@@ -28,6 +28,15 @@ Offline audit does not contact MAST:
 uv run topoastero validate-stage3 --root .
 ```
 
+## Figure visual contract
+
+All six Stage 3 figures use `topoastero.style` visual contract `TA-PLOT-1.0` in its reproducible
+`paper` context with TeX disabled. The workflow exports figures through `save_figure`, which embeds
+the software version, style ID, and machine-readable source in deterministic SVG metadata. Stable
+colors distinguish raw spectra, fitted backgrounds, mode degree, sampling-window treatment, and
+TESS outcome; marker and line styles retain the key categorical distinctions without color alone.
+The complete policy is `docs/reproducibility/PLOTTING_STYLE_GUIDE.md`.
+
 ## T3.1 Lightkurve reproduction
 
 The primary branch is the official tutorial operation: read PDCSAP flux with Lightkurve's default

@@ -26,6 +26,7 @@ REQUIRED_FILES = [
     "schemas/tess_feasibility.schema.json",
     "schemas/stage3_run_manifest.schema.json",
     "docs/protocols/STAGE3_CLASSICAL_BASELINE_PROTOCOL.md",
+    "docs/reproducibility/PLOTTING_STYLE_GUIDE.md",
     "docs/science/CLASSICAL_OBSERVATION_MODEL.md",
     "notebooks/03_rudy_classical_baseline.ipynb",
     "results/stage3/rudy_baseline.csv",
@@ -53,6 +54,7 @@ REQUIRED_FILES = [
     "reports/stage3/figures/mode_overlay_audit.svg",
     "reports/stage3/figures/tess_sector_feasibility.svg",
     "src/topoastero/classical.py",
+    "src/topoastero/style.py",
     "workflows/acquire_stage3_inputs.py",
     "workflows/run_stage3_classical.py",
 ]
@@ -256,6 +258,14 @@ def validate_manifest_gate_and_notebook(root: Path, errors: list[str]) -> None:
         errors.append("Stage 3 run manifest has the wrong configuration hash")
     if manifest.get("software_version") != "TopoAstero-0.4.0" or manifest.get("topology_used") is not False:
         errors.append("Stage 3 run manifest software/topology declaration is invalid")
+    if manifest.get("plot_style") != {
+        "style_id": "TA-PLOT-1.0",
+        "module": "topoastero.style",
+        "context": "paper",
+        "use_tex": False,
+        "primary_format": "svg",
+    }:
+        errors.append("Stage 3 run manifest has an invalid plotting-style declaration")
     inputs = manifest.get("inputs", [])
     if not isinstance(inputs, list) or len(inputs) != 21:
         errors.append("Stage 3 run manifest must contain 21 selected payloads")
@@ -284,13 +294,24 @@ def validate_manifest_gate_and_notebook(root: Path, errors: list[str]) -> None:
 
     for path in sorted((root / "reports/stage3/figures").glob("*.svg")):
         text = path.read_text(encoding="utf-8")
-        if path.stat().st_size < 1000 or "<svg" not in text or SOFTWARE_MARKER not in text:
+        if (
+            path.stat().st_size < 1000
+            or "<svg" not in text
+            or SOFTWARE_MARKER not in text
+            or STYLE_MARKER not in text
+            or "Machine-readable source:" not in text
+        ):
             errors.append(f"Stage 3 figure lacks valid SVG/provenance metadata: {path.name}")
 
     notebook = json.loads(
         (root / "notebooks/03_rudy_classical_baseline.ipynb").read_text(encoding="utf-8")
     )
-    if notebook.get("nbformat") != 4 or notebook.get("metadata", {}).get("topoastero", {}).get("executed") is not True:
+    notebook_metadata = notebook.get("metadata", {}).get("topoastero", {})
+    if (
+        notebook.get("nbformat") != 4
+        or notebook_metadata.get("executed") is not True
+        or notebook_metadata.get("plot_style") != STYLE_MARKER
+    ):
         errors.append("Stage 3 benchmark notebook is not an executed nbformat-4 artifact")
     notebook_text = json.dumps(notebook)
     if not all(token in notebook_text for token in ("T3.1-T3.2", "T3.3-T3.8", "T3.9", "G3")):
@@ -315,6 +336,7 @@ def validate_manifest_gate_and_notebook(root: Path, errors: list[str]) -> None:
 
 
 SOFTWARE_MARKER = "TopoAstero-0.4.0"
+STYLE_MARKER = "TA-PLOT-1.0"
 
 
 def validate_stage3(root: str | Path, *, require_prior_stages: bool = True) -> list[str]:

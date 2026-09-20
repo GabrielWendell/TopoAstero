@@ -1,19 +1,19 @@
 {
   "command": "uv run --extra astronomy python workflows/run_stage3_classical.py --cache-dir <external-cache> [--download]",
-  "config_path": "configs/stage3_classical.yaml",
+  "config_path": "configs\\stage3_classical.yaml",
   "config_sha256": "dc29dd00e0bdd413c3ebeb406d86ae0e9323de166d7c1fea7b7234b5eb6293d0",
-  "elapsed_seconds": 38.902,
+  "elapsed_seconds": 104.047,
   "environment": {
     "astropy": "7.2.2",
     "lightkurve": "2.6.0",
     "matplotlib": "3.10.9",
     "numpy": "2.2.6",
-    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
-    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
     "scipy": "1.15.3"
   },
   "git": {
-    "commit": "79dc29b42bc75847471f1e910496af9e1be72266",
+    "commit": "2d9299c3a30712d526b5c56a38f112431a6569fd",
     "dirty": true
   },
   "input_policy": "raw FITS payloads checksum-verified in external cache and not redistributed",
@@ -217,86 +217,93 @@
   },
   "outputs": [
     {
-      "path": "results/stage3/background_models.csv",
-      "sha256": "91e674e75989eff0acbba57c71aff197c127f98813920b108971610b43ab496e",
-      "size_bytes": 865
+      "path": "results\\stage3\\background_models.csv",
+      "sha256": "b9e02e6590e3587d59a8f6fccc3313425dc09950cd9aad2021ca4bb4fb754813",
+      "size_bytes": 867
     },
     {
-      "path": "results/stage3/preprocessing_sensitivity.csv",
+      "path": "results\\stage3\\preprocessing_sensitivity.csv",
       "sha256": "82afd0a9fd660d60adc75e9825098e31613560b7ef1e840dc2c14261a7c4d79f",
       "size_bytes": 471
     },
     {
-      "path": "results/stage3/rudy_baseline.csv",
-      "sha256": "fb02651a872420a939c7679bb0676f83923d1697d561fe59b5e8f9fbe446b02e",
+      "path": "results\\stage3\\rudy_baseline.csv",
+      "sha256": "acc50e275d8b582189ba08fad77d03883e5859bf3e1b24f5f1d8b714a4983a26",
       "size_bytes": 2424
     },
     {
-      "path": "results/stage3/pipeline_comparison.csv",
-      "sha256": "11be6001bdf3cf6b7e330b637e8820e537d4d4d526e542a6a0da3c44f2b17fb4",
+      "path": "results\\stage3\\pipeline_comparison.csv",
+      "sha256": "3757e5ff2e07d20ba38b0251e5ce27488150d27ba08654c36ba1bc75cbd5fbf9",
       "size_bytes": 1463
     },
     {
-      "path": "results/stage3/uncertainty_budget.csv",
-      "sha256": "6855e88ef443bc2d5a912e2f43b3c1f9eac7507fe50189f9ac512183bd37e7b3",
+      "path": "results\\stage3\\uncertainty_budget.csv",
+      "sha256": "c438bc88cc962c7b65c60a24c4cdbc452025be686776877aae6a1ec0f790447a",
       "size_bytes": 605
     },
     {
-      "path": "results/stage3/window_atlas.csv",
+      "path": "results\\stage3\\window_atlas.csv",
       "sha256": "12b48b3ecf271da7f7d66458ab46edd72730436b725b5a12a7b573a5e45cf996",
       "size_bytes": 1391
     },
     {
-      "path": "results/stage3/mode_audit.csv",
+      "path": "results\\stage3\\mode_audit.csv",
       "sha256": "ec2e202a9403c41c0a64f2c13bff12c522d649757b9b518199cf944211a08091",
       "size_bytes": 5104
     },
     {
-      "path": "results/stage3/echelle_trials.csv",
+      "path": "results\\stage3\\echelle_trials.csv",
       "sha256": "5bfb5b3c68a5db74b9b1d298dfbb37fdd375a228a959fe6c3297035f7a563c4b",
       "size_bytes": 642
     },
     {
-      "path": "results/stage3/reduced_spectrum.csv",
-      "sha256": "ba27eea91a07b669ad80681da7a879c6239cade1f5bd515b1e2b2fb2d1d0ee15",
-      "size_bytes": 385561
+      "path": "results\\stage3\\reduced_spectrum.csv",
+      "sha256": "f35a02f5133ee76d92df18026d12fc4b37dacd604327257c3f82ffc71e4220b4",
+      "size_bytes": 385454
     },
     {
-      "path": "results/stage3/tess_sector_feasibility.csv",
+      "path": "results\\stage3\\tess_sector_feasibility.csv",
       "sha256": "ba5ae0181dd3ff76858ff2902e0c0fc19c3138ca53b52c960930b303b5d926f4",
       "size_bytes": 2612
     },
     {
-      "path": "reports/stage3/figures/rudy_power_spectrum.svg",
-      "sha256": "1dd9691c9baaddff7d0fe6d60de961967087cb097ff543062253ea37c51c6e1c",
-      "size_bytes": 360187
+      "path": "reports\\stage3\\figures\\rudy_power_spectrum.svg",
+      "sha256": "ad1698b117baf706020b5bc9b0f4734b8ef388e8da392a5e54fc6700735e63e6",
+      "size_bytes": 137883
     },
     {
-      "path": "reports/stage3/figures/background_comparison.svg",
-      "sha256": "4a3d11c1f9468559ac7155bc913787bbef7d2d60a405eca9b12a814948e78d9f",
-      "size_bytes": 1286575
+      "path": "reports\\stage3\\figures\\background_comparison.svg",
+      "sha256": "cb1fd64d60eb0000144ee66f8c396143ab6487dbe68c5c7ab0178d4fa576b307",
+      "size_bytes": 513155
     },
     {
-      "path": "reports/stage3/figures/window_atlas.svg",
-      "sha256": "e64a7aa31e8f617fc8ea097311bfd187195bb97f35b6e1da85989dda3177314f",
-      "size_bytes": 47393
+      "path": "reports\\stage3\\figures\\window_atlas.svg",
+      "sha256": "8c3462abee3df4b2d2aefc5f63cb71e8bb8371d0b4fc52c9bc43dd07329b001d",
+      "size_bytes": 41168
     },
     {
-      "path": "reports/stage3/figures/echelle_trials.svg",
-      "sha256": "0ae086b0eb6dadc581d3edad93ebb83f69fc838896b0b1db9bf256f62ec2e3a6",
-      "size_bytes": 351157
+      "path": "reports\\stage3\\figures\\echelle_trials.svg",
+      "sha256": "88280881b86add3d02ab83e93089b5221a053d91efe8b539aea683f1d90d368a",
+      "size_bytes": 85427
     },
     {
-      "path": "reports/stage3/figures/mode_overlay_audit.svg",
-      "sha256": "0e82f49d4e53e3d7c0be90d09a08fc549416c87c8636727456df3ddd0bf07911",
-      "size_bytes": 37642
+      "path": "reports\\stage3\\figures\\mode_overlay_audit.svg",
+      "sha256": "9b2b7c0afb4f0173911ede32c3fcbc4d01ba90237de871f1a49e78374ebd55d8",
+      "size_bytes": 51682
     },
     {
-      "path": "reports/stage3/figures/tess_sector_feasibility.svg",
-      "sha256": "341e000ce4f9202c8b97578bf3bf65e97fceed899b38cc910156870081bdffdb",
-      "size_bytes": 36479
+      "path": "reports\\stage3\\figures\\tess_sector_feasibility.svg",
+      "sha256": "db7a44d62479797d8cd1eb036f581d268d03da16545631a4d86642fcc9f0fe69",
+      "size_bytes": 24293
     }
   ],
+  "plot_style": {
+    "context": "paper",
+    "module": "topoastero.style",
+    "primary_format": "svg",
+    "style_id": "TA-PLOT-1.0",
+    "use_tex": false
+  },
   "random": {
     "master_seed": 20260721,
     "namespace": "stage3-monthly-segment-bootstrap",
@@ -308,11 +315,11 @@
   "summary": {
     "background_model": "BG-H2",
     "independent": {
-      "dnu": 103.36624766746715,
+      "dnu": 103.36624766749316,
       "logg": 4.309877237479482,
-      "mass": 1.2043094776309555,
+      "mass": 1.2043094776297436,
       "numax": 2231.568552314362,
-      "radius": 1.2718340073880066
+      "radius": 1.2718340073873664
     },
     "lightkurve": {
       "dnu": 103.11210228179654,

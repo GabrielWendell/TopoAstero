@@ -62,3 +62,11 @@ preprocessing or gate selection.
 
 The broad bootstrap `numax` interval is retained rather than narrowed post hoc. The TESS pilot is
 also intentionally inconclusive. These limitations are accepted evidence, not missing returns.
+
+## Figure style validation
+
+All six figures were regenerated under `TA-PLOT-1.0`. SVG metadata records the TopoAstero software
+version, visual-contract ID, and machine-readable source. The academic serif typography,
+colorblind-accessible semantic colors, redundant marker/line encodings, journal dimensions, and
+deterministic export path are enforced by unit, governance, and Stage 3 contract tests. The
+scientific CSV checksums remained unchanged during the style-only regeneration.
