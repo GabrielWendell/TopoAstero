@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-import csv
 from pathlib import Path
 
+from topoastero.portability import write_csv_lf
 from topoastero.provenance import sha256_file
 
 ROOT = Path(__file__).parents[1]
@@ -21,6 +21,10 @@ DELIVERABLES = {
         "docs/reproducibility/DATA_MANAGEMENT_PLAN.md",
         "uv.lock",
         "schemas/data_manifest.schema.json",
+        ".gitattributes",
+        ".editorconfig",
+        "docs/reproducibility/CROSS_PLATFORM_PORTABILITY.md",
+        "src/topoastero/portability.py",
     ],
     "D0.3": [
         "docs/protocols/PREREGISTERED_ANALYSIS_PROTOCOL.md",
@@ -35,6 +39,8 @@ DELIVERABLES = {
         "configs/smoke.yaml",
         "results/smoke/summary.json",
         "results/smoke/run_manifest.json",
+        "workflows/repair_portability.py",
+        "tests/unit/test_portability.py",
     ],
     "G0": [
         "reports/stage0/TRACEABILITY_MATRIX.md",
@@ -61,13 +67,11 @@ def main() -> None:
                     "status": "accepted",
                 }
             )
-    TARGET.parent.mkdir(parents=True, exist_ok=True)
-    with TARGET.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(
-            handle, fieldnames=["deliverable", "path", "size_bytes", "sha256", "status"]
-        )
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(
+        TARGET,
+        rows,
+        fieldnames=["deliverable", "path", "size_bytes", "sha256", "status"],
+    )
 
 
 if __name__ == "__main__":

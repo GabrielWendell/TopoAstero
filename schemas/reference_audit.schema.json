@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/reference_audit.schema.json",
+  "title": "TopoAstero reference-audit row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_key",
+    "reference_type",
+    "primary_source",
+    "doi",
+    "url",
+    "metadata_status",
+    "verified_on",
+    "supports_claims",
+    "equations_or_tables_checked",
+    "verification_route",
+    "notes"
+  ],
+  "properties": {
+    "source_key": {"type": "string", "pattern": "^[A-Za-z0-9]+$"},
+    "reference_type": {"type": "string", "minLength": 1},
+    "primary_source": {"enum": ["yes", "no"]},
+    "doi": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "metadata_status": {"enum": ["verified", "provisional", "rejected"]},
+    "verified_on": {"type": "string", "format": "date"},
+    "supports_claims": {"type": "string", "minLength": 1},
+    "equations_or_tables_checked": {"type": "string", "minLength": 1},
+    "verification_route": {"type": "string", "minLength": 1},
+    "notes": {"type": "string"}
+  }
+}
+

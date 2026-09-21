@@ -16,7 +16,9 @@ COPY . .
 RUN uv sync --locked --group dev && \
     uv run topoastero smoke --config configs/smoke.yaml --output-dir /tmp/topoastero-smoke && \
     uv run topoastero validate-stage0 --root . && \
+    uv run topoastero validate-stage1 --root . && \
+    uv run topoastero validate-stage2 --root . && \
+    uv run topoastero validate-stage3 --root . && \
     uv run pytest
 
-CMD ["uv", "run", "topoastero", "validate-stage0", "--root", "."]
-
+CMD ["uv", "run", "topoastero", "validate-stage3", "--root", "."]

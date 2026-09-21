@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/benchmark_target.schema.json",
+  "title": "TopoAstero benchmark target row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "benchmark_id",
+    "object_id",
+    "object_label",
+    "sample",
+    "quantity",
+    "value",
+    "unit",
+    "uncertainty_minus",
+    "uncertainty_plus",
+    "uncertainty_type",
+    "method",
+    "source_key",
+    "source_location",
+    "reconciliation",
+    "status"
+  ],
+  "properties": {
+    "benchmark_id": {"type": "string", "pattern": "^BT-[0-9]{4}$"},
+    "object_id": {"type": "string", "pattern": "^KIC [0-9]{7,8}$"},
+    "object_label": {"type": "string"},
+    "sample": {"enum": ["Rudy", "LEGACY"]},
+    "quantity": {"type": "string", "minLength": 1},
+    "value": {"type": "string", "pattern": "^-?[0-9]+(\\.[0-9]+)?$"},
+    "unit": {"type": "string", "minLength": 1},
+    "uncertainty_minus": {"type": "string", "pattern": "^$|^[0-9]+(\\.[0-9]+)?$"},
+    "uncertainty_plus": {"type": "string", "pattern": "^$|^[0-9]+(\\.[0-9]+)?$"},
+    "uncertainty_type": {"type": "string", "minLength": 1},
+    "method": {"type": "string", "minLength": 1},
+    "source_key": {"type": "string", "minLength": 1},
+    "source_location": {"type": "string", "minLength": 1},
+    "reconciliation": {"type": "string", "minLength": 1},
+    "status": {"enum": ["benchmark", "context_only"]}
+  }
+}
+

@@ -1,0 +1,139 @@
+{
+  "checks": [
+    {
+      "check_id": "QC-01",
+      "evidence": {
+        "duplicate_filenames": 0,
+        "duplicate_product_keys": 0,
+        "products": 43
+      },
+      "name": "unique product identities",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-02",
+      "evidence": {
+        "externally_cached_payloads_verified": 43,
+        "payloads_redistributed": 0,
+        "verification_date": "2026-09-20"
+      },
+      "name": "payload size and SHA-256 verification",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-03",
+      "evidence": {
+        "duplicate_time_rows": 0,
+        "products_with_invalid_coverage": 0,
+        "time_order_violations": 0
+      },
+      "name": "time ordering and duplicate cadence",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-04",
+      "evidence": {
+        "cross_pipeline_tess_overlap_policy": "intentional_and_kept_separate",
+        "within_pipeline_overlaps": 0
+      },
+      "name": "segment overlap",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-05",
+      "evidence": {
+        "finite_flux_rows": 760948,
+        "missingness_policy": "record_then_mask_with_reason_in_canonical_conversion",
+        "nonfinite_flux_rows": 33182,
+        "source_rows": 794130
+      },
+      "name": "finite flux and source missingness",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-06",
+      "evidence": {
+        "nonphysical_uncertainty_rows": 0,
+        "policy": "explicit_missing_not_zero_optional_use_only",
+        "products_without_source_uncertainty": 5,
+        "products_without_source_uncertainty_ids": [
+          "TESS-RUDY-S-74-QLP-777562214-abb54b071bb5",
+          "TESS-RUDY-S-75-QLP-781983473-3e558a0be237",
+          "TESS-RUDY-S-80-QLP-632323005-ad0b432ca7d5",
+          "TESS-RUDY-S-81-QLP-695637825-e94f3cb29a82",
+          "TESS-RUDY-S-82-QLP-701653867-fbf12420627e"
+        ]
+      },
+      "name": "uncertainty integrity",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-07",
+      "evidence": {
+        "mission_cadence_pairs": [
+          "Kepler:short",
+          "TESS:ffi",
+          "TESS:target_2min"
+        ],
+        "unit_records": 43,
+        "validation_errors": []
+      },
+      "name": "mission cadence and unit contract",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-08",
+      "evidence": {
+        "cadence_gap_events": 64,
+        "products_with_window_status": 43
+      },
+      "name": "spectral-window inventory",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-09",
+      "evidence": {
+        "frequency_ratios": 38,
+        "mode_frequencies": 42,
+        "stellar_references": 264
+      },
+      "name": "reference data integrity",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-10",
+      "evidence": {
+        "role_counts": {
+          "descriptive_benchmark": 1,
+          "development": 39,
+          "final_holdout": 13,
+          "internal_validation": 13
+        },
+        "stars": 66,
+        "stars_in_multiple_roles": 0
+      },
+      "name": "star-group partition leakage",
+      "status": "pass"
+    },
+    {
+      "check_id": "QC-11",
+      "evidence": {
+        "baseline": "first accepted G2 snapshot",
+        "changed_payload_checksums": 0,
+        "future_rule": "any change requires a new manifest version and decision record"
+      },
+      "name": "checksum-change baseline",
+      "status": "pass"
+    }
+  ],
+  "exclusions": {
+    "count": 0,
+    "ledger": "registries/exclusion_ledger.csv"
+  },
+  "generated_from": "frozen Stage 2 manifests and registries",
+  "generated_on": "2026-09-20",
+  "overall_status": "pass",
+  "report_id": "TA-QC-STAGE2-20260920",
+  "schema_version": 1,
+  "topology_inspected": false
+}

@@ -26,6 +26,8 @@ jobs:
           enable-cache: true
       - name: Install locked environment
         run: uv sync --locked --group dev
+      - name: Check repository portability
+        run: uv run topoastero check-portability --root .
       - name: Lint
         run: uv run ruff check .
       - name: Type check
@@ -38,6 +40,11 @@ jobs:
           uv run python workflows/compare_smoke_reference.py results/smoke "$RUNNER_TEMP/topoastero-smoke" --abs-tol 1e-12
       - name: Validate Stage 0 contract
         run: uv run topoastero validate-stage0 --root .
+      - name: Validate Stage 1 contract
+        run: uv run topoastero validate-stage1 --root .
+      - name: Validate Stage 2 contract
+        run: uv run topoastero validate-stage2 --root .
+      - name: Validate Stage 3 contract
+        run: uv run topoastero validate-stage3 --root .
       - name: Build distribution
         run: uv build
-

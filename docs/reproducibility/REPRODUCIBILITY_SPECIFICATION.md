@@ -1,7 +1,8 @@
 # D0.2 - Reproducibility specification
 
-**Specification:** RS-1.0  
-**Frozen:** 2026-09-18  
+**Specification:** RS-1.1
+
+**Updated:** 2026-09-20
 **Normative machine records:** `pyproject.toml`, `uv.lock`, `schemas/`, `configs/`, and
 `registries/`
 
@@ -13,8 +14,9 @@ environment. Python 3.12 is the reference interpreter and 3.11-3.13 are supporte
 
 `environment/environment.yml` is a convenience bridge for conda users; it invokes the locked uv
 installation and is not an independent dependency authority. `environment/Dockerfile` provides a
-clean Linux build. The package has one small runtime dependency at S0. Later scientific backends
-enter only through reviewed version changes and cross-backend tests.
+clean Linux build. Stage 3 adds locked NumPy/SciPy/Matplotlib numerical dependencies. Astropy and
+Lightkurve are a locked `astronomy` extra used only for FITS acquisition and exact tutorial
+reproduction; the offline contract and independent numerical core do not require that extra.
 
 Every result manifest records package version, Git commit/dirty state when available, Python,
 platform, CPU count, configuration hash, seeds, inputs, output checksums, and timing. A dirty tree
@@ -31,7 +33,8 @@ is allowed during exploration but not in a confirmation or release manifest.
 4. Seed lists or the deterministic rule are stored in the experiment ledger and run manifest.
 5. Random seeds support exact reruns but do not replace repeated-realization uncertainty.
 
-The Stage 0 smoke seed, `20260721`, is fixed from the planning-edition date and is diagnostic only.
+The Stage 0 smoke and Stage 3 bootstrap master seed, `20260721`, is fixed from the planning-edition
+date. Stage 3 records the namespace and 500 resamples in its manifest.
 
 ## Configuration hashing
 
@@ -71,6 +74,12 @@ and quality flags. Figures name a machine-readable source table and immutable re
 claims are computed from tables, not recovered from graphics. A released figure is rebuilt in a
 clean environment and its source table is archived.
 
+Stage 3 and later figures must use `src/topoastero/style.py` visual contract `TA-PLOT-1.0` and
+`save_figure`. Each SVG embeds the software/style versions and machine-readable source; each run
+manifest records the style context, TeX choice, and primary format. Direct workflow-level
+`rcParams` changes and `savefig` calls are rejected by the plotting-policy test. The normative
+usage and accessibility rules are in `docs/reproducibility/PLOTTING_STYLE_GUIDE.md`.
+
 ## Archive plan
 
 - Git remote: code, configurations, schemas, compact tables, recipes, and documentation.
@@ -91,6 +100,12 @@ in principle be regenerated.
 - **R3 scientific:** conclusions survive registered alternative preprocessing and uncertainty
   branches.
 
-Gate G0 requires R2 for the data-free smoke workflow. Later scientific gates require R2 for their
-core workflow and R3 for headline conclusions.
+Gate G0 requires R2 for the data-free smoke workflow. Stage 3 supplies R2 through exact payload
+hashes plus one command and R3 through frozen branch/uncertainty sensitivity. Later scientific
+gates require R2 for their core workflow and R3 for headline conclusions.
+## Cross-platform byte portability
 
+Governed text artifacts use UTF-8 with LF line endings and repository-relative POSIX paths.
+Generators must use `topoastero.portability`; CI enforces this with
+`topoastero check-portability`. The repair procedure is documented in
+`docs/reproducibility/CROSS_PLATFORM_PORTABILITY.md`.

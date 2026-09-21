@@ -1,0 +1,14 @@
+{
+  "algorithm_id": "TA-GROUPED-STRATIFIED-SHA256-v1",
+  "attestation_id": "TA-SPLIT-SEAL-20260920",
+  "file": "registries/population_partitions.csv",
+  "frozen_on": "2026-09-20",
+  "holdout_access_state": "unopened_for_analysis",
+  "integrity_mechanism": "SHA-256 content seal verified by validate-stage2",
+  "master_seed": 20260721,
+  "schema_version": 1,
+  "sha256": "12036c71b9ca1a6f1e4425bcff718c1926fe300cbde22558cd9ebd79182019d1",
+  "signatory_role": "automated_data_steward",
+  "source": "evidence/benchmarks/legacy_population.csv",
+  "source_sha256": "dbc03235e1bf37544ed352c768c83b5719bc35b63c3d4425446ee14a8f697cd9"
+}

@@ -1,0 +1,4 @@
+source_id,artifact,url,retrieved_on,sha256,redistribution,derived_use
+SRC-B05,Lund et al. 2017 publisher machine-readable Table 7,https://content.cld.iop.org/journals/0004-637X/835/2/172/revision1/apjaa5593t7_mrt.txt,2026-09-20,26bb32a8eb02d03d2aa3d270625ac96d5720ba667312d814b7f291cb38c8b39f,raw publisher payload not redistributed,data/reference/frequency_ratios.csv
+STAGE1-MODES,Stage 1 checked Rudy mode table,evidence/benchmarks/rudy_mode_frequencies.csv,2026-09-20,7cd2c4f8bcc141486e2d4ad25bfe8ab49ff32ca7d645610a6a068ceadac79f3b,project-authored derived table,data/reference/mode_frequencies.csv
+STAGE1-TARGETS,Stage 1 checked LEGACY target table,evidence/benchmarks/benchmark_targets.csv,2026-09-20,7c9d5dbe9d6652d0f433040710a7efc00ef05465b7d98426984069d17401ec5d,project-authored derived table,data/reference/stellar_references.csv

@@ -8,3 +8,6 @@ Configurations used for a released result must never be edited in place. Copy th
 its `schema_version` or experiment identifier, record the change request, and regenerate all
 dependent outputs.
 
+`stage3_classical.yaml` freezes the exact Rudy mission subset, both classical estimators,
+background/window/echelle conventions, mode matching, branch registry, bootstrap seed/resamples,
+TESS marginal-detection rule, and G3 tolerances. It must be changed under a new run ID.

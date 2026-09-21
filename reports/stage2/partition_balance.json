@@ -1,0 +1,23 @@
+{
+  "analysis_rows": 65,
+  "numax_bin_by_role": {
+    "high:development": 13,
+    "high:final_holdout": 4,
+    "high:internal_validation": 4,
+    "low:development": 13,
+    "low:final_holdout": 5,
+    "low:internal_validation": 4,
+    "middle:development": 13,
+    "middle:final_holdout": 4,
+    "middle:internal_validation": 5
+  },
+  "population_rows": 66,
+  "role_counts": {
+    "descriptive_benchmark": 1,
+    "development": 39,
+    "final_holdout": 13,
+    "internal_validation": 13
+  },
+  "schema_version": 1,
+  "stratification": "Assignment used label-free nu_max rank tertiles; Teff tertiles are recorded as a balance diagnostic and no topology-derived value was inspected."
+}

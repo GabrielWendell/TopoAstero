@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/preprocessing_branch.schema.json",
+  "title": "TopoAstero frozen preprocessing branch",
+  "type": "object",
+  "required": [
+    "branch_id",
+    "status",
+    "mission",
+    "flux_product",
+    "quality_mask",
+    "detrending",
+    "outlier_policy",
+    "gap_treatment",
+    "stitching",
+    "periodogram",
+    "normalization",
+    "selection_basis",
+    "rationale"
+  ],
+  "properties": {
+    "branch_id": {"type": "string", "pattern": "^PP-[0-9]{2}$"},
+    "status": {
+      "enum": ["primary_executed", "sensitivity_executed", "analytic_validation", "transfer_executed"]
+    },
+    "mission": {"enum": ["Kepler", "TESS"]},
+    "flux_product": {"type": "string", "minLength": 1},
+    "quality_mask": {"type": "string", "minLength": 1},
+    "detrending": {"type": "string", "minLength": 1},
+    "outlier_policy": {"type": "string", "minLength": 1},
+    "gap_treatment": {"type": "string", "minLength": 1},
+    "stitching": {"type": "string", "minLength": 1},
+    "periodogram": {"enum": ["Lomb-Scargle", "FFT"]},
+    "normalization": {"type": "string", "minLength": 1},
+    "selection_basis": {"const": "classical_predeclared_no_topology"},
+    "rationale": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+source_id,source_key,artifact,url,retrieved_on,sha256,redistribution,local_use
+SRC-B01,SilvaAguirre2017,Paper II machine-readable Table 3,https://content.cld.iop.org/journals/0004-637X/835/2/173/revision1/apjaa5587t3_mrt.txt,2026-09-19,51905681370e30050587675179c81cf7b406d42bb719e14cf4f051c491839819,not redistributed,generated LEGACY population and authoritative global/atmospheric targets
+SRC-B02,SilvaAguirre2017,Paper II machine-readable Table 4,https://content.cld.iop.org/journals/0004-637X/835/2/173/revision1/apjaa5587t4_mrt.txt,2026-09-19,451d862cf4d55812d5918890b33714b284280002294ecff6680c317fc17935ed,not redistributed,generated context-only Rudy stellar-property rows
+SRC-B03,Lund2017,Paper I machine-readable Table 6,https://content.cld.iop.org/journals/0004-637X/835/2/172/revision1/apjaa5593t6_mrt.txt,2026-09-19,d85448455956b94a1a6d12baa0021ed3b4d54ab8c02e4fb5bf33451c676bab29,not redistributed,generated 42 Rudy mode rows
+SRC-B04,LightkurveTutorial,official Lightkurve tutorial,https://lightkurve.github.io/lightkurve/tutorials/3-science-examples/asteroseismology-estimating-mass-and-radius.html,2026-09-19,47ad189eaa03e198d61a7a9ec44ce33b98a95d2720d7360610621118e06dda96,not redistributed,recorded worked-example values and caveats
+

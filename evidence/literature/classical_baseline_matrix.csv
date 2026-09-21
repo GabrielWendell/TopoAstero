@@ -1,0 +1,9 @@
+baseline_id,method,implementation,inputs,outputs,uncertainty_or_failure_mode,hypotheses,source_keys
+CB-01,mission light-curve preparation,Lightkurve,target pixel or light-curve products,cleaned flux and periodogram,aperture detrending gaps and quarter choice change the spectrum,H1;H2;H3;H4;H5,Lightkurve2018;LightkurveTutorial
+CB-02,automated global-parameter pipeline,pySYD,power spectrum,numax dnu and background parameters,initial guesses and low-SNR envelopes can fail,H1;H2;H5,Chontos2022
+CB-03,autocorrelation or envelope autocorrelation,ACF or EACF,power spectrum near the oscillation envelope,dnu candidate and significance,harmonics half-spacing and window aliases produce competing peaks,H2;H5,Huber2011;Mathur2012
+CB-04,power spectrum of the power spectrum,PSPS,power spectrum segment,dnu or half-dnu candidate,subharmonic ambiguity and background leakage,H2;H5,Mathur2012;Huber2011
+CB-05,parametric background fit,Harvey-like components plus oscillation envelope,power spectral density,background parameters numax and detection support,component count priors and activity leakage matter,H1;H4;H5,Harvey1985;Kallinger2014;Chontos2022
+CB-06,conventional echelle diagram,modulo-frequency fold,mode-frequency list and candidate dnu,ridge image and visual or numerical alignment,curvature mixed modes and a wrong modulo fold smear ridges,H2;H3;H5,Tassoul1980;GarciaBallot2019
+CB-07,peak-bagging,Lorentzian Bayesian mode fit,power spectrum and candidate modes,mode frequencies linewidths amplitudes and uncertainties,label switching blending and prior sensitivity,H3;H5,Lund2017;Davies2016
+CB-08,scaling-relation stellar inference,classical scaling equations,numax dnu teff and solar references,mass radius and logg,calibration and evolutionary-state systematics,H1;H2;H5,KjeldsenBedding1995;Hekker2020;LightkurveTutorial

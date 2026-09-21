@@ -45,9 +45,10 @@ def test_terms_and_datasets_cover_stage_gate() -> None:
 
 
 @pytest.mark.governance
-def test_holdout_is_unopened_and_unassigned() -> None:
+def test_holdout_is_frozen_and_unopened() -> None:
     split = load_yaml(ROOT / "registries/split_policy.yaml")
-    assert split["actual_assignments"] is None
+    assert split["actual_assignments"] == "registries/population_partitions.csv"
+    assert split["assignment_status"] == "frozen_T2.8"
     assert split["protection"]["one_time_access"] is True
     with (ROOT / "registries/holdout_access_log.csv").open(
         "r", encoding="utf-8", newline=""
@@ -72,4 +73,3 @@ def test_json_schemas_are_well_formed() -> None:
         schema = json.loads(path.read_text(encoding="utf-8"))
         assert schema["$schema"].endswith("2020-12/schema")
         assert schema["title"]
-

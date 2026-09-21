@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/light_curve.schema.json",
+  "title": "TopoAstero canonical light-curve row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "row_id", "stable_star_id", "time_bjd", "flux", "flux_uncertainty", "quality",
+    "cadence_seconds", "cadence_class", "mission", "segment_id", "aperture_or_product",
+    "mask_reason", "preprocessing_state", "provenance"
+  ],
+  "properties": {
+    "row_id": {"type": "string", "minLength": 1},
+    "stable_star_id": {"type": "string", "minLength": 1},
+    "time_bjd": {"type": "number"},
+    "flux": {"type": "number"},
+    "flux_uncertainty": {"type": "number", "minimum": 0},
+    "quality": {"type": "integer", "minimum": 0},
+    "cadence_seconds": {"type": "number", "exclusiveMinimum": 0},
+    "cadence_class": {"enum": ["short", "long", "target_20s", "target_2min", "ffi", "synthetic"]},
+    "mission": {"enum": ["Kepler", "TESS", "simulation"]},
+    "segment_id": {"type": "string", "minLength": 1},
+    "aperture_or_product": {"type": "string", "minLength": 1},
+    "mask_reason": {"type": "string", "minLength": 1},
+    "preprocessing_state": {"type": "string", "minLength": 1},
+    "provenance": {"$ref": "derived_provenance.schema.json"}
+  }
+}

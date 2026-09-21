@@ -2,28 +2,20 @@
 
 from __future__ import annotations
 
-import csv
-import json
 from collections.abc import Iterable, Mapping, Sequence
 from pathlib import Path
 from typing import Any
 
 from topoastero.persistence import PersistencePair
+from topoastero.portability import write_csv_lf, write_json_lf, write_text_lf
 
 
 def write_json(path: str | Path, value: Any) -> None:
-    target = Path(path)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_json_lf(path, value)
 
 
 def write_rows(path: str | Path, rows: Iterable[Mapping[str, Any]], fields: Sequence[str]) -> None:
-    target = Path(path)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    with target.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(path, rows, fieldnames=fields)
 
 
 def _scale(value: float, lower: float, upper: float, start: float, span: float) -> float:
@@ -73,7 +65,5 @@ def write_smoke_svg(
 {''.join(bars)}
 <text x="{margin}" y="500" font-family="sans-serif" font-size="12" fill="#516170">Reference implementation: exact H0 on a path graph; essential class omitted from bar panel.</text>
 </svg>\n"""
-    target = Path(path)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(svg, encoding="utf-8")
+    write_text_lf(path, svg)
 

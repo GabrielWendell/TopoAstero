@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/classical_result.schema.json",
+  "title": "TopoAstero Stage 3 classical baseline row",
+  "type": "object",
+  "required": [
+    "result_id",
+    "pipeline",
+    "quantity",
+    "value",
+    "unit",
+    "pipeline_reported_uncertainty",
+    "random_uncertainty",
+    "pipeline_choice_uncertainty",
+    "reference_value",
+    "reference_uncertainty_minus",
+    "reference_uncertainty_plus",
+    "reference_role",
+    "residual",
+    "joint_uncertainty",
+    "agreement_status"
+  ],
+  "properties": {
+    "result_id": {"type": "string", "minLength": 1},
+    "pipeline": {"enum": ["lightkurve_acf2d", "independent_harvey_acf"]},
+    "quantity": {"enum": ["numax", "dnu", "mass", "radius", "logg"]},
+    "value": {"type": "number"},
+    "unit": {"enum": ["uHz", "Msun", "Rsun", "dex(cgs)"]},
+    "pipeline_reported_uncertainty": {"type": "string", "minLength": 1},
+    "random_uncertainty": {"type": "number", "minimum": 0},
+    "pipeline_choice_uncertainty": {"type": "number", "minimum": 0},
+    "reference_value": {"type": "number"},
+    "reference_uncertainty_minus": {"type": "number", "minimum": 0},
+    "reference_uncertainty_plus": {"type": "number", "minimum": 0},
+    "reference_role": {"enum": ["authoritative_LEGACY", "context_only_catalog"]},
+    "residual": {"type": "number"},
+    "joint_uncertainty": {"type": "number", "minimum": 0},
+    "agreement_status": {
+      "enum": ["within_joint_uncertainty", "documented_convention_or_model_difference"]
+    }
+  },
+  "additionalProperties": false
+}

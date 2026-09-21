@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/tess_feasibility.schema.json",
+  "title": "TopoAstero Stage 3 TESS sector feasibility row",
+  "type": "object",
+  "required": [
+    "sector",
+    "product_key",
+    "author",
+    "cadence_seconds",
+    "duration_days",
+    "resolution_uHz",
+    "duty_cycle",
+    "candidate_numax_uHz",
+    "envelope_peak_snr",
+    "candidate_dnu_uHz",
+    "dnu_autocorrelation_peak",
+    "classification",
+    "combination_decision"
+  ],
+  "properties": {
+    "sector": {"type": "integer", "minimum": 1},
+    "product_key": {"type": "string", "minLength": 1},
+    "author": {"const": "SPOC"},
+    "cadence_seconds": {"type": "number", "exclusiveMinimum": 0},
+    "duration_days": {"type": "number", "exclusiveMinimum": 0},
+    "resolution_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "duty_cycle": {"type": "number", "exclusiveMinimum": 0, "maximum": 1.01},
+    "candidate_numax_uHz": {"type": "number", "minimum": 0},
+    "envelope_peak_snr": {"type": "number", "minimum": 0},
+    "candidate_dnu_uHz": {"type": "number", "minimum": 0},
+    "dnu_autocorrelation_peak": {"type": "number"},
+    "classification": {
+      "enum": ["marginal_candidate_not_confirmation", "not_detected_individually"]
+    },
+    "combination_decision": {"const": "do_not_combine_for_detection_at_G3"}
+  },
+  "additionalProperties": false
+}

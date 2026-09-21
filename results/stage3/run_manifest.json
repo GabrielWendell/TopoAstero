@@ -1,0 +1,342 @@
+{
+  "command": "uv run --extra astronomy python workflows/run_stage3_classical.py --cache-dir <external-cache> [--download]",
+  "config_path": "configs/stage3_classical.yaml",
+  "config_sha256": "dc29dd00e0bdd413c3ebeb406d86ae0e9323de166d7c1fea7b7234b5eb6293d0",
+  "elapsed_seconds": 104.047,
+  "environment": {
+    "astropy": "7.2.2",
+    "lightkurve": "2.6.0",
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "scipy": "1.15.3"
+  },
+  "git": {
+    "commit": "2d9299c3a30712d526b5c56a38f112431a6569fd",
+    "dirty": true
+  },
+  "input_policy": "raw FITS payloads checksum-verified in external cache and not redistributed",
+  "inputs": [
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2009259162342_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-02-KEPLER-617083-2fbfc0c0d177",
+      "segment_number": 2,
+      "sha256": "6e8e0fa657fec8a1bf38cfb273d7eabe78440be23a897bc6b7b51b2f4b6fc58b",
+      "size_bytes": 4011840
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010111051353_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-05-KEPLER-617083-575532904535",
+      "segment_number": 5,
+      "sha256": "161db74ff9bcc5b83408fd5aa88a50df34bbe01dfaefb8bc60ea73916bdf59be",
+      "size_bytes": 4659840
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010140023957_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-05-KEPLER-617083-2941dee23968",
+      "segment_number": 5,
+      "sha256": "ec04890bbbcd36e755992d96b8905196f41d70723b671bc084d2a289f064e63f",
+      "size_bytes": 4086720
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010174090439_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-05-KEPLER-617083-be167342421a",
+      "segment_number": 5,
+      "sha256": "875621c8bf5631ceb59846234d02fc8aa84fefc510aec31bbffcc4ef2842f35f",
+      "size_bytes": 4959360
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010203174610_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-06-KEPLER-617083-e0e27c8b62b9",
+      "segment_number": 6,
+      "sha256": "7db34451dcc6031bd4ba6b2ff161b7d5e0fbf6d0e1c2a4e41394ef7607ded6c6",
+      "size_bytes": 4008960
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010234115140_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-06-KEPLER-617083-dbe6f8a2b3a2",
+      "segment_number": 6,
+      "sha256": "b90623efba6713eda1e05eeba38c067f0bc9d23ce55bd204058f8a65c0051ba3",
+      "size_bytes": 4570560
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010265121752_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-06-KEPLER-617083-c3cf7cbd6dde",
+      "segment_number": 6,
+      "sha256": "fd669c8b77a4b8d2eedf6bf683f694fe4ebcf3dbdda4c385f2b4f56f9f03b2b4",
+      "size_bytes": 4452480
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010296114515_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-07-KEPLER-617083-21c81941e650",
+      "segment_number": 7,
+      "sha256": "310f3cbdddc25179f7e0e46e526df3604fc7c55feb4944d028b74fd4437a4a6f",
+      "size_bytes": 4452480
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010326094124_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-07-KEPLER-617083-32da5326e058",
+      "segment_number": 7,
+      "sha256": "fa98bd028a74073f5b9f73455399e3b8c970489de06160f24e30751c4edafd34",
+      "size_bytes": 4317120
+    },
+    {
+      "author": "Kepler",
+      "filename": "kplr010963065-2010355172524_slc.fits",
+      "mission": "Kepler",
+      "product_key": "KPLR-RUDY-Q-07-KEPLER-617083-9d6c1b27f7e9",
+      "segment_number": 7,
+      "sha256": "c2759609bb0631a41ae0e53931eb867d14cc281ce52b9360d61fb2f38e119f05",
+      "size_bytes": 4204800
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2019198215352-s0014-0000000048450369-0150-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-14-SPOC-621976224-3432886e5d0b",
+      "segment_number": 14,
+      "sha256": "ebe8c2a4ca2e56a233d59285a0c638c65b842165e7d9477b5d740a73428e52cc",
+      "size_bytes": 1964160
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2019226182529-s0015-0000000048450369-0151-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-15-SPOC-1009850056-4407f0ac344d",
+      "segment_number": 15,
+      "sha256": "4c73b3695a428d72ac352d23e64135f19aed06ed26e141782538c0cc369381bd",
+      "size_bytes": 1906560
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2021175071901-s0040-0000000048450369-0211-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-40-SPOC-117018542-5107a74c3018",
+      "segment_number": 40,
+      "sha256": "f6394032c3c49cd04b4431260e6316d1c4f4216667a0aaf06e2b564479fab978",
+      "size_bytes": 2062080
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2021204101404-s0041-0000000048450369-0212-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-41-SPOC-117917955-9e251559c81a",
+      "segment_number": 41,
+      "sha256": "992a4ac473114fb99613d1d1f6410b4ef1ece2f78658c17c4043f706051bf6a2",
+      "size_bytes": 1944000
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2022164095748-s0053-0000000048450369-0226-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-53-SPOC-807871463-41eeb13d953d",
+      "segment_number": 53,
+      "sha256": "fcef70a71a1b39f777651bc95fc255c9facd9e8aff47a9588d94befadc1280cc",
+      "size_bytes": 1828800
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2022217014003-s0055-0000000048450369-0242-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-55-SPOC-809287825-306227ad4203",
+      "segment_number": 55,
+      "sha256": "d7a5611c0bb1cb467fd80fc9839a52a8e1279dc70a7cf3f631664e963ec52abb",
+      "size_bytes": 1987200
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2024003055635-s0074-0000000048450369-0269-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-74-SPOC-391011946-ecc6324525ee",
+      "segment_number": 74,
+      "sha256": "af071ad5392762efdbed5b149ad7c90197f2b525142466dd0bf5fb8cc115cce5",
+      "size_bytes": 1952640
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2024030031500-s0075-0000000048450369-0270-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-75-SPOC-397836112-cb0a1ce68812",
+      "segment_number": 75,
+      "sha256": "f13e6c1a1b4660c40465f65dbff17d74c8f92f7b71321c88d7b8ea03067b267f",
+      "size_bytes": 2024640
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2024170053053-s0080-0000000048450369-0275-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-80-SPOC-596033645-7bfe47a21af4",
+      "segment_number": 80,
+      "sha256": "e40dc3039483f2e40483ce9c4034abf7ee47d8cc304e80029e9eda2e0a865b33",
+      "size_bytes": 1935360
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2024196212429-s0081-0000000048450369-0276-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-81-SPOC-613815753-59f057111ae7",
+      "segment_number": 81,
+      "sha256": "a3268c513651eca025111761c36a009a46d687a751ad146731951838730af3b2",
+      "size_bytes": 1946880
+    },
+    {
+      "author": "SPOC",
+      "filename": "tess2024223182411-s0082-0000000048450369-0278-s_lc.fits",
+      "mission": "TESS",
+      "product_key": "TESS-RUDY-S-82-SPOC-644482077-4e60fee67383",
+      "segment_number": 82,
+      "sha256": "e3679004e547a78ce5e65a586db0fc7cf723e86e68d7a1eff918cc0fa9240098",
+      "size_bytes": 1892160
+    }
+  ],
+  "observational_conventions": {
+    "background_selection": "minimum BIC among H0/H1/H2",
+    "frequency_unit": "uHz",
+    "lightkurve_normalization": "psd",
+    "power_unit": "ppm2/uHz",
+    "sidedness": "one-sided"
+  },
+  "outputs": [
+    {
+      "path": "results/stage3/background_models.csv",
+      "sha256": "40f8e5ca6f55101abded8a57cda7ac158d7e5fb4a6ac9976dc0183c9976960e9",
+      "size_bytes": 863
+    },
+    {
+      "path": "results/stage3/preprocessing_sensitivity.csv",
+      "sha256": "c93ad5bde783c569c82fe934e02fef4c5ba2f59fa8d1248f3ef8fa5f407f3ed2",
+      "size_bytes": 466
+    },
+    {
+      "path": "results/stage3/rudy_baseline.csv",
+      "sha256": "7990bbc06821277207c89afbeeea37639659378e8757a54e92a5b737005a8077",
+      "size_bytes": 2413
+    },
+    {
+      "path": "results/stage3/pipeline_comparison.csv",
+      "sha256": "111004b598079af4a7d43d4a806a3bb0efb5685b85410968545df6c1da829845",
+      "size_bytes": 1457
+    },
+    {
+      "path": "results/stage3/uncertainty_budget.csv",
+      "sha256": "9ea3ec2a9817914c294bdb369407b5abb411ee5b3a8c64866929523f1106292a",
+      "size_bytes": 599
+    },
+    {
+      "path": "results/stage3/window_atlas.csv",
+      "sha256": "6b410ec99eb8958027fed05bd9e8776c26c6c629ca89259282ab8cdf7d89065c",
+      "size_bytes": 1384
+    },
+    {
+      "path": "results/stage3/mode_audit.csv",
+      "sha256": "3466de914218af7eb7683b65f72b29d4ce134796f977e983cd9dc2a5bba9498f",
+      "size_bytes": 5061
+    },
+    {
+      "path": "results/stage3/echelle_trials.csv",
+      "sha256": "15d6cf768fcfabd8d9ee2d95d3a5a4997573ff457873986a805a7f3a3b5234ed",
+      "size_bytes": 638
+    },
+    {
+      "path": "results/stage3/reduced_spectrum.csv",
+      "sha256": "16a8cb07a273a6ca4b543477e57157988e55560947b80cdcb02a9ce4e18bdf00",
+      "size_bytes": 379452
+    },
+    {
+      "path": "results/stage3/tess_sector_feasibility.csv",
+      "sha256": "d0c8f2bb94c2d9cc00ebed016a74222ce1d9b3fdd11e13f419fb5c0ba34c506a",
+      "size_bytes": 2600
+    },
+    {
+      "path": "reports/stage3/figures/rudy_power_spectrum.svg",
+      "sha256": "65e83bad3835664e3d6bc91fc7b3f67daf22ed1c0e63378870ba70b7612082c7",
+      "size_bytes": 136274
+    },
+    {
+      "path": "reports/stage3/figures/background_comparison.svg",
+      "sha256": "03f36d602b618d3f010397c7f19e5a8f72c53d52b53773a8ff5630b44aff0554",
+      "size_bytes": 511760
+    },
+    {
+      "path": "reports/stage3/figures/window_atlas.svg",
+      "sha256": "1ffaf7a8283ac5835a399d3409dedc0a266eaa75b04ed98e675ef5d0ab739637",
+      "size_bytes": 39938
+    },
+    {
+      "path": "reports/stage3/figures/echelle_trials.svg",
+      "sha256": "464c97336add18a6254718a15594c2706d05687e3ae3d96ea53285d18abde939",
+      "size_bytes": 84160
+    },
+    {
+      "path": "reports/stage3/figures/mode_overlay_audit.svg",
+      "sha256": "4f442fd40851e7353af455cdab34eff58011fd1808ce605324e7ab63f8fba5a3",
+      "size_bytes": 50443
+    },
+    {
+      "path": "reports/stage3/figures/tess_sector_feasibility.svg",
+      "sha256": "603602145f3c453fa85615574092140aba4d86250327141f0d747840c93c951d",
+      "size_bytes": 23731
+    }
+  ],
+  "plot_style": {
+    "context": "paper",
+    "module": "topoastero.style",
+    "primary_format": "svg",
+    "style_id": "TA-PLOT-1.0",
+    "use_tex": false
+  },
+  "random": {
+    "master_seed": 20260721,
+    "namespace": "stage3-monthly-segment-bootstrap",
+    "resamples": 500
+  },
+  "run_id": "TA-S03-T01-RUDY-R001",
+  "schema_version": 1,
+  "software_version": "TopoAstero-0.4.0",
+  "summary": {
+    "background_model": "BG-H2",
+    "independent": {
+      "dnu": 103.36624766749316,
+      "logg": 4.309877237479482,
+      "mass": 1.2043094776297436,
+      "numax": 2231.568552314362,
+      "radius": 1.2718340073873664
+    },
+    "lightkurve": {
+      "dnu": 103.11210228179654,
+      "logg": 4.292957468758897,
+      "mass": 1.0815643268656792,
+      "numax": 2145.0,
+      "radius": 1.2290831266457236
+    },
+    "mode_count": 42,
+    "mode_order_offsets": {
+      "1": 29,
+      "2": 13
+    },
+    "tess_classifications": {
+      "marginal_candidate_not_confirmation": 1,
+      "not_detected_individually": 10
+    }
+  },
+  "topology_used": false
+}

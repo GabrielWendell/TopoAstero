@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "gate": "G2",
+  "decision": "PASS",
+  "decided_on": "2026-09-20",
+  "decision_owner": "principal_researcher",
+  "topology_inspected": false,
+  "clauses": [
+    {
+      "clause": "Every approved input has stable identity and provenance",
+      "status": "pass",
+      "evidence": "43 Rudy mission payloads have exact MAST IDs, byte sizes, SHA-256 values, FITS metadata, and query provenance; publisher references have source/output seals. LEGACY inventory-only candidates are explicitly barred from analysis until payload hashing."
+    },
+    {
+      "clause": "Canonical schemas and integrity tests pass",
+      "status": "pass",
+      "evidence": "Closed schemas and dataclasses enforce units, finite/nonnegative uncertainty, mission/cadence compatibility, monotonic segment time, unique keys, round-trip serialization, and row-level lineage."
+    },
+    {
+      "clause": "No star crosses population roles",
+      "status": "pass",
+      "evidence": "66 unique groups comprise 39 development, 13 internal validation, 13 final holdout, and Rudy as one descriptive benchmark; the assignment and source are SHA-256 sealed."
+    },
+    {
+      "clause": "Exact Rudy tutorial products are recorded and optional TESS ambiguity is nonblocking",
+      "status": "pass",
+      "evidence": "The four-quarter tutorial query resolves to 10 monthly files; 33 TESS products are retained separately by pipeline/cadence, with missing QLP uncertainties explicit and optional."
+    }
+  ],
+  "qc_report": "reports/stage2/qc_report.json",
+  "split_attestation": "registries/split_attestation.json",
+  "holdout_access_state": "unopened_for_analysis",
+  "residual_limits": [
+    "Raw mission and publisher payloads are not redistributed.",
+    "Population candidates require payload SHA-256 verification before use.",
+    "The portable repository cannot provide confidential holdout identities; process and integrity controls apply."
+  ]
+}

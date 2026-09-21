@@ -33,4 +33,5 @@ results/*
 !results/recipes/**
 !results/smoke/
 !results/smoke/**
-
+!results/stage3/
+!results/stage3/**

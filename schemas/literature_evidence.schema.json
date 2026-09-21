@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/literature_evidence.schema.json",
+  "title": "TopoAstero literature evidence row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "task",
+    "domain",
+    "question",
+    "method",
+    "dataset_or_setting",
+    "sample_size",
+    "key_result",
+    "limitation",
+    "project_relevance",
+    "evidence_class",
+    "source_keys"
+  ],
+  "properties": {
+    "record_id": {"type": "string", "pattern": "^LIT-[0-9]{3}$"},
+    "task": {"type": "string", "pattern": "^T1\\.[1-8]$"},
+    "domain": {"type": "string", "minLength": 1},
+    "question": {"type": "string", "minLength": 1},
+    "method": {"type": "string", "minLength": 1},
+    "dataset_or_setting": {"type": "string", "minLength": 1},
+    "sample_size": {"type": "string", "minLength": 1},
+    "key_result": {"type": "string", "minLength": 1},
+    "limitation": {"type": "string", "minLength": 1},
+    "project_relevance": {"type": "string", "minLength": 1},
+    "evidence_class": {"type": "string", "minLength": 1},
+    "source_keys": {"type": "string", "pattern": "^[A-Za-z0-9]+(;[A-Za-z0-9]+)*$"}
+  }
+}
+
