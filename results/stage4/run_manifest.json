@@ -1,0 +1,147 @@
+{
+  "config_id": "TA-STAGE4-SIMULATION-1.0",
+  "config_path": "configs/stage4_simulation.yaml",
+  "config_sha256": "feeda9e78c17fcdd618a0275170dce60736dd31cc0fea34ce2e92bbc1b2f3c75",
+  "environment": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "python": "3.12.10",
+    "scipy": "1.15.3"
+  },
+  "inputs": [
+    {
+      "path": "registries/stage4_confirmation_protocol.yaml",
+      "sha256": "e90bb2ff22b1bcd93932400cab389f99d9b1119fecb2016a5dff80fb3e12a76a"
+    },
+    {
+      "path": "data/derived/stage4/mission_window_templates.csv",
+      "sha256": "4cbf3eec8806e92c5980ce6e76867f673e0632e193a7e77e2f96147773f549a6"
+    }
+  ],
+  "master_seed": 20260921,
+  "outputs": [
+    {
+      "path": "registries/stage4_factorial_design.csv",
+      "sha256": "4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34",
+      "size_bytes": 9682
+    },
+    {
+      "path": "reports/stage4/figures/analytic_cases.svg",
+      "sha256": "a52a2f736a2e6ebed9b2d7d2c7c283166a85c4dcc860115bec23f2edb263513c",
+      "size_bytes": 90779
+    },
+    {
+      "path": "reports/stage4/figures/compute_profile.svg",
+      "sha256": "e16fcb1703070a9458354661cb3971eabe218ce7810f73f2784fe0051c415e47",
+      "size_bytes": 56256
+    },
+    {
+      "path": "reports/stage4/figures/coverage_map.svg",
+      "sha256": "aa7effb47911ae83816919cd03d8d976cca23226a3555737c691156374482678",
+      "size_bytes": 43154
+    },
+    {
+      "path": "reports/stage4/figures/mission_observation_effects.svg",
+      "sha256": "9d71f2de16b6466594ff13adaba433aa7606dca841d0c2b14d22f54b299b43d6",
+      "size_bytes": 88487
+    },
+    {
+      "path": "reports/stage4/figures/null_calibration.svg",
+      "sha256": "8dc6935aa507e3fa9d0c8be5049deea595156bb5eac729ec207b460871ac4ad5",
+      "size_bytes": 36107
+    },
+    {
+      "path": "reports/stage4/figures/simulator_recovery.svg",
+      "sha256": "9aa68b578350be591d7cc3282c9ff315b5f8bb5301b51ff815d73254dca74eff",
+      "size_bytes": 127835
+    },
+    {
+      "path": "reports/stage4/NULL_CALIBRATION_REPORT.md",
+      "sha256": "b6e03e2723730a760f6b9732df98593ce4337d5e0475ed24f3c41432c2cff5b2",
+      "size_bytes": 586
+    },
+    {
+      "path": "reports/stage4/SIMULATOR_VALIDATION.md",
+      "sha256": "d8974013a5e617faae9ee28d3aaf639cc4a0a74b1f753fe7b3729e5cdb31e9b8",
+      "size_bytes": 629
+    },
+    {
+      "path": "reports/stage4/STAGE4_REPORT.md",
+      "sha256": "6a824f42d6cef4446ab9cea42f156ab882fe18ab1a37633cb72193107abfe802",
+      "size_bytes": 1329
+    },
+    {
+      "path": "reports/stage4/UNCERTAINTY_AND_COMPUTE_REPORT.md",
+      "sha256": "12781b3c026ebf78ef511d0ea2b6c1f4cb4f91cc44db4b19b1e81dc78955ef05",
+      "size_bytes": 603
+    },
+    {
+      "path": "results/stage4/analytic_cases.csv",
+      "sha256": "bbb0127a5ef7d62270f98da3944c764df5a7bc61d998396fde93ff0de08eca97",
+      "size_bytes": 1292
+    },
+    {
+      "path": "results/stage4/compute_profile.csv",
+      "sha256": "599303b9f50923404f2523439642a23530ff01edbf1749d6f70b7857deac0dc0",
+      "size_bytes": 1096
+    },
+    {
+      "path": "results/stage4/factorial_pilot.csv",
+      "sha256": "a1b7ce33b7377d5066e856662068eb7b8f260b4c339aef8db996c0c1aff99e8d",
+      "size_bytes": 20086
+    },
+    {
+      "path": "results/stage4/mode_recovery.csv",
+      "sha256": "3c8dc23bc9b629cc3ce656b58b9cc630332b4d9358c5985ca43689b7064534af",
+      "size_bytes": 235
+    },
+    {
+      "path": "results/stage4/multiplicity_thresholds.csv",
+      "sha256": "3124a7442bd26219c59f26b1fd0c3cc07e3778745fe0cbffcad6a805602e854e",
+      "size_bytes": 1240
+    },
+    {
+      "path": "results/stage4/null_calibration.csv",
+      "sha256": "9dd1edd1df21e193f1f99cda512fafb6f962d36d79143579611c722212017f8c",
+      "size_bytes": 961
+    },
+    {
+      "path": "results/stage4/precision_budget.json",
+      "sha256": "4d45fb81ea1b6edab681b69ee904c9ac27c4168d80f62e03480350b0e5f6ccde",
+      "size_bytes": 440
+    },
+    {
+      "path": "results/stage4/sample_light_curve.csv",
+      "sha256": "e116b90180d22d63779b68754dc2952cb776eb7d727522794c4f129d19f4b79e",
+      "size_bytes": 40670
+    },
+    {
+      "path": "results/stage4/sample_spectrum.csv",
+      "sha256": "0ad8c3e2226f34824587467bd4f479e77d18d8e577a97bcc2be6597f593c31e0",
+      "size_bytes": 30497
+    },
+    {
+      "path": "results/stage4/simulator_validation.csv",
+      "sha256": "af0f4dbb169a96370e1cc95ce92fc3cc8a610d2d7248588b24d480d2de2ae941",
+      "size_bytes": 259
+    },
+    {
+      "path": "results/stage4/uncertainty_coverage.csv",
+      "sha256": "fac76d6542b660760c96430e1d0807a46a0c0dc81d3226d222335bbba4627186",
+      "size_bytes": 2908
+    }
+  ],
+  "population_data_used": false,
+  "random_streams": {
+    "compute": 20260925,
+    "factorial_design": 20260922,
+    "null_calibration": 20260923,
+    "simulator": 20260921,
+    "uncertainty": 20260924
+  },
+  "run_id": "TA-S04-LAB-R001",
+  "schema_version": 1,
+  "software_version": "TopoAstero-0.5.0",
+  "status": "complete",
+  "style_id": "TA-PLOT-1.0"
+}

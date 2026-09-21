@@ -1,0 +1,5 @@
+metric,expected,observed,tolerance,status
+ensemble_mean_PSD_relative_RMSE,0,0.06305815391,0.08,pass
+standardized_ordinate_mean,1,0.9984337053,0.08,pass
+standardized_ordinate_variance,1,0.9927098148,0.16,pass
+time_domain_variance_ratio,1,1.000120592,0.20,pass

@@ -153,7 +153,9 @@ def tracked_repository_files(root: str | Path) -> list[Path]:
             path
             for path in repository.rglob("*")
             if path.is_file()
-            and not any(part in EXCLUDED_DIRECTORY_NAMES for part in path.relative_to(repository).parts)
+            and not any(
+                part in EXCLUDED_DIRECTORY_NAMES for part in path.relative_to(repository).parts
+            )
         )
     paths = [repository / item.decode("utf-8") for item in completed.stdout.split(b"\0") if item]
     return sorted(path for path in paths if path.is_file())
@@ -175,9 +177,7 @@ def newline_portability_issues(root: str | Path) -> list[str]:
     issues: list[str] = []
     for path in tracked_text_files(repository):
         if b"\r" in path.read_bytes():
-            issues.append(
-                f"non-LF tracked text: {repository_relative_posix(path, repository)}"
-            )
+            issues.append(f"non-LF tracked text: {repository_relative_posix(path, repository)}")
     return issues
 
 
@@ -213,7 +213,9 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
         payload = json.loads(smoke.read_text(encoding="utf-8"))
         configuration = payload.get("configuration", {})
         if isinstance(configuration, dict):
-            check_value("results/smoke/run_manifest.json:configuration.path", configuration.get("path"))
+            check_value(
+                "results/smoke/run_manifest.json:configuration.path", configuration.get("path")
+            )
 
     stage3 = repository / "results/stage3/run_manifest.json"
     if stage3.is_file():
@@ -228,6 +230,20 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
                         record.get("path"),
                     )
 
+    stage4 = repository / "results/stage4/run_manifest.json"
+    if stage4.is_file():
+        payload = json.loads(stage4.read_text(encoding="utf-8"))
+        check_value("results/stage4/run_manifest.json:config_path", payload.get("config_path"))
+        for collection in ("inputs", "outputs"):
+            records = payload.get(collection, [])
+            if isinstance(records, list):
+                for index, record in enumerate(records):
+                    if isinstance(record, dict):
+                        check_value(
+                            f"results/stage4/run_manifest.json:{collection}[{index}].path",
+                            record.get("path"),
+                        )
+
     split = repository / "registries/split_attestation.json"
     if split.is_file():
         payload = json.loads(split.read_text(encoding="utf-8"))
@@ -240,6 +256,7 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
         repository / "reports/stage1/deliverable_manifest.csv",
         repository / "reports/stage2/deliverable_manifest.csv",
         repository / "reports/stage3/deliverable_manifest.csv",
+        repository / "reports/stage4/deliverable_manifest.csv",
     ]
     for manifest in csv_manifests:
         if not manifest.is_file():

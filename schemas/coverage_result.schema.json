@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/coverage_result.schema.json",
+  "title": "Stage 4 uncertainty coverage result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_id", "snr_level", "duration_days", "lifetime_days", "calibration_realizations", "evaluation_realizations", "bias_uHz", "realization_sigma_uHz", "pipeline_choice_sigma_uHz", "interval_half_width_uHz", "empirical_coverage", "nominal_coverage", "status"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^UC-[0-9]{3}$"},
+    "snr_level": {"enum": ["low", "medium", "high"]},
+    "duration_days": {"type": "number", "exclusiveMinimum": 0},
+    "lifetime_days": {"type": "number", "exclusiveMinimum": 0},
+    "calibration_realizations": {"type": "integer", "minimum": 1},
+    "evaluation_realizations": {"type": "integer", "minimum": 1},
+    "bias_uHz": {"type": "number"},
+    "realization_sigma_uHz": {"type": "number", "minimum": 0},
+    "pipeline_choice_sigma_uHz": {"type": "number", "minimum": 0},
+    "interval_half_width_uHz": {"type": "number", "minimum": 0},
+    "empirical_coverage": {"type": "number", "minimum": 0, "maximum": 1},
+    "nominal_coverage": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "status": {"enum": ["pass", "fail"]}
+  }
+}

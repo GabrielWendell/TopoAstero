@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/null_calibration.schema.json",
+  "title": "Stage 4 null calibration result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["null_family", "calibration_realizations", "evaluation_realizations", "registered_statistics", "threshold", "evaluation_exceedances", "empirical_fwer", "fwer_standard_error", "alpha", "calibration_seed_range", "evaluation_seed_range", "status"],
+  "properties": {
+    "null_family": {"enum": ["background_only", "randomized_comb", "white_noise", "red_noise", "phase_randomized", "iaaft", "real_window"]},
+    "calibration_realizations": {"type": "integer", "minimum": 1},
+    "evaluation_realizations": {"type": "integer", "minimum": 1},
+    "registered_statistics": {"type": "integer", "minimum": 2},
+    "threshold": {"type": "number"},
+    "evaluation_exceedances": {"type": "integer", "minimum": 0},
+    "empirical_fwer": {"type": "number", "minimum": 0, "maximum": 1},
+    "fwer_standard_error": {"type": "number", "minimum": 0},
+    "alpha": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "calibration_seed_range": {"type": "string"},
+    "evaluation_seed_range": {"type": "string"},
+    "status": {"enum": ["pass", "fail"]}
+  }
+}

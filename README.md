@@ -4,12 +4,13 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.4.0 implements Stages 0-3 through the classical asteroseismic baseline and observation-
-model gate. It contains traceable derived tables, payload-verified mission manifests, a reproduced
-Lightkurve Rudy case, an independent classical pipeline, and source-backed figure suites, but
-redistributes no Kepler, TESS, or publisher payloads.
+Version 0.5.0 implements Stages 0-4 through the analytic and stochastic simulation gate. It contains
+traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
+independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
+calibrated null/coverage maps, and source-backed figure suites, but redistributes no Kepler, TESS,
+or publisher payloads.
 
-## Reproduce Stages 0-3
+## Reproduce Stages 0-4
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -21,6 +22,7 @@ uv run topoastero validate-stage0 --root .
 uv run topoastero validate-stage1 --root .
 uv run topoastero validate-stage2 --root .
 uv run topoastero validate-stage3 --root .
+uv run topoastero validate-stage4 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -40,6 +42,10 @@ Stage 3 validation checks both Rudy pipelines, PSD/background/window conventions
 preprocessing branches, three conventional echelle trials, all 42 mode overlays, component-separated
 uncertainty, 11 individual TESS sectors, source/output hashes, the `TA-PLOT-1.0` publication-style
 and figure-provenance contract, G3, and all earlier contracts.
+Stage 4 validation checks 12 exact analytic cases, stochastic PSD/time-domain recovery, the
+balanced 72-cell pilot, payload-derived mission windows, seven independently evaluated null
+families, max-statistic multiplicity control, 27 uncertainty-coverage cells, the compute/precision
+budget, the locked confirmation protocol, G4, and all earlier contracts.
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -122,6 +128,24 @@ The detailed mapping and gate record are in
 [`reports/stage3/TRACEABILITY_MATRIX.md`](reports/stage3/TRACEABILITY_MATRIX.md) and
 [`reports/stage3/G3_ACCEPTANCE.json`](reports/stage3/G3_ACCEPTANCE.json).
 
+## Stage 4 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T4.1 Exact cases | analytic derivation and 12-case registry | path-persistence, delay-ellipse, comb-alias, peak-profile, and ridge tests |
+| T4.2 Simulator | damped-mode/background/observation API | seeded frequency- and time-domain tests |
+| T4.3 Validation | 256-spectrum ensemble and mode recovery | PSD moments, variance, frequency, intrinsic height, and linewidth gates |
+| T4.4 Factorial pilot | balanced 72-cell immutable matrix | complete pilot output spanning every registered factor level |
+| T4.5 Nulls | seven nuisance-matched generators | white/red/background/comb/phase/IAAFT/real-window calibration |
+| T4.6 Multiplicity | max-statistic, empirical-p, and BH-FDR utilities | 32-statistic family scope; pointwise thresholds diagnostic-only |
+| T4.7 Uncertainty | 27 split calibration/evaluation cells | separate realization/pipeline terms and 0.9125-0.971875 coverage |
+| T4.8 Compute | 12 runtime/memory measurements | MCSE-derived 256 null and 320 coverage repetitions |
+| T4.9 Confirmation | locked protocol version 1.0 | prespecified endpoints, margins, stopping, and holdout rules |
+
+The detailed mapping and gate record are in
+[`reports/stage4/TRACEABILITY_MATRIX.md`](reports/stage4/TRACEABILITY_MATRIX.md) and
+[`reports/stage4/G4_ACCEPTANCE.json`](reports/stage4/G4_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -133,7 +157,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage3/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage4/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -176,9 +200,12 @@ explain those records but do not silently override them.
   of either installation.
 - Practical-equivalence margins that require empirical scale information are registered as
   bounded pilot decisions, with stage and owner, rather than selected after viewing holdout data.
+- Stage 4 calibrates compact folded-spectrum/H0 summaries; it does not yet establish a population-
+  level advantage over classical estimators. That question remains behind the locked confirmation
+  and holdout rules.
 
 ## License and citation
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 3.
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 4.

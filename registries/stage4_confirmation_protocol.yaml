@@ -1,0 +1,39 @@
+schema_version: 1
+protocol_id: TA-STAGE4-CONFIRMATION-1.0
+status: locked
+frozen_on: "2026-09-21"
+applies_to: Stage_5_population_confirmation
+source_config: configs/stage4_simulation.yaml
+population_data_seen_for_topological_analysis: false
+primary_endpoint:
+  name: max_calibrated_folded_topological_score
+  familywise_alpha: 0.05
+  multiplicity_scope: all_registered_trial_Delta_filtrations_and_summaries
+  threshold_source: independent_family_specific_null_calibration
+secondary_endpoints:
+  - classical_delta_recovery_error_uHz
+  - calibrated_detection_probability
+  - interval_coverage
+equivalence_margins:
+  delta_uHz: 1.0
+  numax_relative: 0.03
+  detection_probability: 0.05
+  runtime_ratio: 1.25
+factor_repetitions:
+  pilot_cells: 72
+  null_calibration_per_family: 256
+  null_evaluation_per_family: 256
+  uncertainty_calibration_per_cell: 320
+  uncertainty_evaluation_per_cell: 320
+stopping_rules:
+  - Complete every registered cell; do not stop for significance.
+  - A numerical failure is retained and counted as a failed recovery.
+  - Stop globally only for a documented safety, integrity, or resource incident.
+  - Any material change requires a deviation record and a new protocol version.
+representation_rule:
+  confirmatory: folded_peak_superlevel_H0_with_max_statistic
+  uncalibrated_action: diagnostic_only_or_drop
+holdout_rule:
+  split_policy: registries/split_policy.yaml
+  access_log: registries/holdout_access_log.csv
+  threshold_refitting_after_access: prohibited

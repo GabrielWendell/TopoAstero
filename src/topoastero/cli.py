@@ -16,6 +16,7 @@ from topoastero.smoke import run_smoke
 from topoastero.stage1_validation import validate_stage1
 from topoastero.stage2_validation import validate_stage2
 from topoastero.stage3_validation import validate_stage3
+from topoastero.stage4_validation import validate_stage4
 from topoastero.validation import validate_stage0
 
 
@@ -48,6 +49,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     stage3.add_argument("--root", default=".")
     stage3.add_argument("--without-prior-stages", action="store_true")
+
+    stage4 = subparsers.add_parser(
+        "validate-stage4", help="validate analytic cases, simulation calibration, and G4"
+    )
+    stage4.add_argument("--root", default=".")
+    stage4.add_argument("--without-prior-stages", action="store_true")
 
     cache = subparsers.add_parser(
         "verify-stage2-cache", help="verify cached mission payloads against frozen manifests"
@@ -114,6 +121,15 @@ def main(argv: Sequence[str] | None = None) -> None:
                 print(f"- {error}", file=sys.stderr)
             raise SystemExit(1)
         print("Stage 3 classical baseline and observation-model contract: PASS")
+        return
+    if args.command == "validate-stage4":
+        errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+        if errors:
+            print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        print("Stage 4 analytic cases and stochastic simulation contract: PASS")
         return
     if args.command == "verify-stage2-cache":
         errors = verify_cached_products(args.manifest, args.cache_dir)

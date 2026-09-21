@@ -1,0 +1,13 @@
+{
+  "cache_policy": "target_PSD_and_window_masks_by_parameter_hash",
+  "chunk_size": 64,
+  "coverage_probability": 0.95,
+  "coverage_target_standard_error": 0.0125,
+  "fpr_probability": 0.05,
+  "fpr_target_standard_error": 0.015,
+  "minimum_coverage_repetitions": 305,
+  "minimum_fpr_repetitions": 212,
+  "parallelization_unit": "null_family_or_uncertainty_cell",
+  "selected_coverage_repetitions": 320,
+  "selected_fpr_repetitions": 256
+}

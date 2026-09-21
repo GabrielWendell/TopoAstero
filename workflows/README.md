@@ -21,8 +21,14 @@ unit-tested; notebooks call the same functions and are never authoritative.
 - `run_stage3_classical.py`: one-command T3.1-T3.9 tables, figures, and run-manifest workflow.
 - `build_stage3_manifest.py`: rebuilds the Stage 3 deliverable checksum index.
 - `validate_stage3.py`: validates T3.1-T3.9, G3, and all earlier-stage regressions offline.
+- `build_stage4_window_templates.py`: derives compact Kepler/TESS interval masks from verified
+  external FITS payloads without redistributing fluxes.
+- `run_stage4_simulation_lab.py`: executes T4.1-T4.9 tables, calibrated experiments, reports,
+  publication-style figures, and the Stage 4 run manifest.
+- `build_stage4_manifest.py`: rebuilds the Stage 4 deliverable checksum index.
+- `validate_stage4.py`: validates T4.1-T4.9, G4, and all earlier-stage regressions offline.
 - `repair_portability.py`: canonicalizes tracked text to LF, converts serialized repository paths to
-  POSIX form, and refreshes dependent Stage 0--3 checksums/seals without rerunning science.
+  POSIX form, and refreshes dependent Stage 0--4 checksums/seals without rerunning science.
 
 Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
 `TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.

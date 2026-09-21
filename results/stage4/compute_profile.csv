@@ -1,0 +1,13 @@
+representation,sample_size,median_runtime_seconds,peak_memory_bytes,timing_repetitions,environment,status
+superlevel_H0,512,0.001998599968,108844,5,Python-3.12.10;Windows-AMD64,measured
+superlevel_H0,2048,0.009464600007,504060,5,Python-3.12.10;Windows-AMD64,measured
+superlevel_H0,8192,0.05448240001,2203532,5,Python-3.12.10;Windows-AMD64,measured
+delay_embedding,512,1.359998714e-05,12880,5,Python-3.12.10;Windows-AMD64,measured
+delay_embedding,2048,2.480001422e-05,49744,5,Python-3.12.10;Windows-AMD64,measured
+delay_embedding,8192,7.700000424e-05,197200,5,Python-3.12.10;Windows-AMD64,measured
+FFT_spectrum,512,2.440001117e-05,9776,5,Python-3.12.10;Windows-AMD64,measured
+FFT_spectrum,2048,4.109996371e-05,34304,5,Python-3.12.10;Windows-AMD64,measured
+FFT_spectrum,8192,0.0001144999987,132608,5,Python-3.12.10;Windows-AMD64,measured
+null_score_ensemble,512,0.0007499000058,21982,5,Python-3.12.10;Windows-AMD64,measured
+null_score_ensemble,2048,0.0008345999522,68422,5,Python-3.12.10;Windows-AMD64,measured
+null_score_ensemble,8192,0.001257400028,263710,5,Python-3.12.10;Windows-AMD64,measured

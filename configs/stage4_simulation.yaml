@@ -1,0 +1,80 @@
+schema_version: 1
+config_id: TA-STAGE4-SIMULATION-1.0
+experiment_id: TA-S04-LAB-R001
+frozen_on: "2026-09-21"
+software_version: TopoAstero-0.5.0
+master_seed: 20260921
+analytic_cases:
+  persistence_convention: one_dimensional_superlevel_H0_elder_rule
+  prominence_scope: interior_nonessential_peaks_same_merge_saddle
+  delay_embedding_dimension: 2
+  comb_orders: 9
+simulator:
+  frequency_unit: uHz
+  time_unit: d
+  psd_unit: ppm2/uHz
+  oscillator_profile: Lorentzian_height_FWHM
+  lifetime_relation: Gamma_uHz=1e6/(pi*tau_days*86400)
+  stochastic_periodogram: independent_exponential_about_target_PSD
+  harvey_exponent: 4.0
+  cadence_response: sinc_squared_boxcar
+  contamination_response: stellar_power_times_(1-c)^2
+  mode_visibilities: [1.0, 1.5, 0.5]
+  rotational_splitting_uHz: 0.4
+validation:
+  ensemble_realizations: 256
+  mean_psd_relative_tolerance: 0.08
+  exponential_mean_tolerance: 0.08
+  exponential_variance_tolerance: 0.16
+  frequency_tolerance_uHz: 0.50
+  height_relative_tolerance: 0.12
+  linewidth_relative_tolerance: 0.18
+factorial_pilot:
+  design: deterministic_balanced_fractional
+  cells: 72
+  snr_levels: [low, medium, high]
+  duration_days: [27.4, 90.0, 109.6, 360.0]
+  cadence_seconds: [58.84876286, 120.0, 1800.0]
+  duty_cycle: [0.5, 0.8, 0.95]
+  numax_uHz: [1000.0, 2200.0, 3500.0]
+  dnu_uHz: [55.0, 103.0, 140.0]
+  lifetime_days: [2.0, 10.0, 30.0]
+  visible_orders: [5, 9, 13]
+  background_model: [correct, misspecified]
+  gap_pattern: [none, random, kepler_q5, tess_s14]
+  ridge_curvature: [none, weak, strong]
+  alias_target: [none, half_dnu, double_dnu]
+  mission_window_table: data/derived/stage4/mission_window_templates.csv
+null_calibration:
+  families: [background_only, randomized_comb, white_noise, red_noise, phase_randomized, iaaft, real_window]
+  calibration_realizations: 256
+  evaluation_realizations: 256
+  alpha: 0.05
+  fdr_q: 0.10
+  trial_dnu_uHz: [70.0, 80.0, 90.0, 100.0, 103.0, 110.0, 120.0, 130.0]
+  smoothing_bins: [1, 3]
+  summaries: [folded_contrast, folded_peak_ratio]
+  decision_rule: family_specific_max_statistic_across_all_registered_trials_filters_summaries
+  pointwise_thresholds_are_confirmatory: false
+uncertainty:
+  calibration_realizations: 320
+  evaluation_realizations: 320
+  interval_level: 0.95
+  snr_levels: [low, medium, high]
+  duration_days: [27.4, 90.0, 360.0]
+  lifetime_days: [2.0, 10.0, 30.0]
+  components: [realization, pipeline_choice]
+compute:
+  sample_sizes: [512, 2048, 8192]
+  timing_repetitions: 5
+  fpr_target_standard_error: 0.015
+  coverage_target_standard_error: 0.0125
+  chunk_size: 64
+gate:
+  require_all_analytic_cases: true
+  maximum_null_fwer: 0.08
+  minimum_interval_coverage: 0.90
+  maximum_interval_coverage: 0.99
+  require_independent_calibration_evaluation_seeds: true
+  require_confirmation_protocol_locked: true
+  allow_uncalibrated_confirmatory_representation: false

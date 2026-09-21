@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/simulation_design.schema.json",
+  "title": "Stage 4 factorial simulation cell",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_id", "seed", "snr_level", "duration_days", "cadence_seconds", "duty_cycle", "numax_uHz", "dnu_uHz", "lifetime_days", "visible_orders", "background_model", "gap_pattern", "ridge_curvature", "alias_target", "mission_template_duty", "design_role"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "seed": {"type": "integer", "minimum": 1},
+    "snr_level": {"enum": ["low", "medium", "high"]},
+    "duration_days": {"type": "number", "exclusiveMinimum": 0},
+    "cadence_seconds": {"type": "number", "exclusiveMinimum": 0},
+    "duty_cycle": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+    "numax_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "dnu_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "lifetime_days": {"type": "number", "exclusiveMinimum": 0},
+    "visible_orders": {"type": "integer", "minimum": 1},
+    "background_model": {"enum": ["correct", "misspecified"]},
+    "gap_pattern": {"enum": ["none", "random", "kepler_q5", "tess_s14"]},
+    "ridge_curvature": {"enum": ["none", "weak", "strong"]},
+    "alias_target": {"enum": ["none", "half_dnu", "double_dnu"]},
+    "mission_template_duty": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+    "design_role": {"const": "pilot_only_no_population_data"}
+  }
+}

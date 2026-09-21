@@ -5,20 +5,28 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ## [Unreleased]
 
+### Planned
+
+- Stage 5 topological representation benchmark under the locked confirmation protocol.
+
+## [0.5.0] - 2026-09-21
+
 ### Added
 
+- Complete Stage 4 analytic-case and stochastic simulation laboratory with 12 exact regressions,
+  a damped-mode/Harvey/observation simulator, and payload-derived Kepler/TESS window templates.
+- Balanced 72-cell factorial pilot, seven nuisance-matched null families, independent max-statistic
+  FWER calibration, and explicit diagnostic-only treatment of pointwise thresholds.
+- Split 27-cell uncertainty coverage map with realization/pipeline components, measured runtime and
+  memory profiles, MCSE-derived repetition budgets, and locked confirmation protocol version 1.0.
+- Six source-backed `TA-PLOT-1.0` figures, schemas, executed audit notebook, G4 validator, CLI/CI
+  enforcement, full traceability, run seals, and deliverable checksums.
 - Cross-platform reproducibility layer with canonical LF text serialization, POSIX manifest paths,
   a repository portability validator, an in-place repair workflow, and CI enforcement.
-- Portable Stage 0--3 checksum/seal regeneration that preserves scientific values while refreshing
+- Portable Stage 0--4 checksum/seal regeneration that preserves scientific values while refreshing
   byte-level identities after newline/path canonicalization.
 - `TA-PLOT-1.0`, a package-level academic plotting contract with asteroseismic semantic colors,
   journal sizing, deterministic source-aware exports, tests, and governance enforcement.
-- Restyled and regenerated all six Stage 3 figures under the shared visual contract without
-  changing any machine-readable scientific result.
-
-### Planned
-
-- Stage 4 simulation and null-calibration engine.
 
 ## [0.4.0] - 2026-09-20
 
