@@ -26,6 +26,8 @@ jobs:
           enable-cache: true
       - name: Install locked environment
         run: uv sync --locked --group dev
+      - name: Check repository portability
+        run: uv run topoastero check-portability --root .
       - name: Lint
         run: uv run ruff check .
       - name: Type check

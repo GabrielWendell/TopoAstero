@@ -103,3 +103,9 @@ in principle be regenerated.
 Gate G0 requires R2 for the data-free smoke workflow. Stage 3 supplies R2 through exact payload
 hashes plus one command and R3 through frozen branch/uncertainty sensitivity. Later scientific
 gates require R2 for their core workflow and R3 for headline conclusions.
+## Cross-platform byte portability
+
+Governed text artifacts use UTF-8 with LF line endings and repository-relative POSIX paths.
+Generators must use `topoastero.portability`; CI enforces this with
+`topoastero check-portability`. The repair procedure is documented in
+`docs/reproducibility/CROSS_PLATFORM_PORTABILITY.md`.

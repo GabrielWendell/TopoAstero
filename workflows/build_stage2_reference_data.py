@@ -11,6 +11,7 @@ from collections.abc import Mapping, Sequence
 from pathlib import Path
 
 from topoastero.config import configuration_hash
+from topoastero.portability import repository_relative_posix, write_csv_lf
 from topoastero.provenance import sha256_file
 
 ROOT = Path(__file__).parents[1]
@@ -25,11 +26,7 @@ TABLE7_URL = (
 def _write_csv(path: Path, rows: Sequence[Mapping[str, str]]) -> None:
     if not rows:
         raise ValueError(f"refusing to write empty table: {path}")
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(path, rows, fieldnames=list(rows[0]))
 
 
 def _source_row_id(path: Path, row: Mapping[str, str]) -> str:
@@ -130,7 +127,7 @@ def write_reference_manifest(output: Path, table7: Path) -> None:
     rows = [
         {
             "reference_id": f"REF-{index:02d}",
-            "path": str(path.relative_to(ROOT)),
+            "path": repository_relative_posix(path, ROOT),
             "rows": str(sum(1 for _ in path.open(encoding="utf-8")) - 1),
             "size_bytes": str(path.stat().st_size),
             "sha256": sha256_file(path),

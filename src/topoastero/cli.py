@@ -9,6 +9,7 @@ from collections.abc import Sequence
 
 from topoastero.acquisition import verify_cached_products
 from topoastero.config import configuration_hash
+from topoastero.portability import repository_portability_issues
 from topoastero.provenance import sha256_file
 from topoastero.resources import write_resource_audit
 from topoastero.smoke import run_smoke
@@ -64,6 +65,11 @@ def build_parser() -> argparse.ArgumentParser:
     resources.add_argument("--root", default=".")
     resources.add_argument("--output", default="reports/stage0/resource_audit.json")
     resources.add_argument("--check-network", action="store_true")
+
+    portability = subparsers.add_parser(
+        "check-portability", help="validate LF text and platform-independent manifest paths"
+    )
+    portability.add_argument("--root", default=".")
     return parser
 
 
@@ -127,5 +133,14 @@ def main(argv: Sequence[str] | None = None) -> None:
     if args.command == "audit-resources":
         record = write_resource_audit(args.root, args.output, check_network=args.check_network)
         print(json.dumps(record, indent=2, sort_keys=True))
+        return
+    if args.command == "check-portability":
+        errors = repository_portability_issues(args.root)
+        if errors:
+            print("Repository portability contract failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        print("Repository portability contract: PASS")
         return
     raise RuntimeError(f"Unhandled command: {args.command}")

@@ -8,9 +8,7 @@ dated result; routine validation never contacts MAST.
 from __future__ import annotations
 
 import argparse
-import csv
 import hashlib
-import json
 import math
 import time
 import urllib.parse
@@ -19,6 +17,8 @@ from collections.abc import Iterable, Sequence
 from importlib.metadata import version
 from pathlib import Path
 from typing import Any
+
+from topoastero.portability import write_csv_lf, write_json_lf
 
 QUERY_DATE = "2026-09-20"
 RUDY_KIC = "10963065"
@@ -314,11 +314,7 @@ def _manifest_row(row: Any, cache: Path, prefix: str, query_id: str) -> dict[str
 
 
 def _write_csv(path: Path, rows: Sequence[dict[str, str]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS)
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(path, rows, fieldnames=FIELDS)
 
 
 def main(argv: Sequence[str] | None = None) -> None:
@@ -378,9 +374,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         ),
     }
     output.mkdir(parents=True, exist_ok=True)
-    (output / "mast_query_snapshot.json").write_text(
-        json.dumps(snapshot, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    write_json_lf(output / "mast_query_snapshot.json", snapshot)
 
 
 if __name__ == "__main__":

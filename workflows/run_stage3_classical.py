@@ -49,6 +49,11 @@ from topoastero.classical import (
     strongest_window_aliases,
 )
 from topoastero.config import configuration_hash, load_yaml
+from topoastero.portability import (
+    repository_relative_posix,
+    write_csv_lf,
+    write_json_lf,
+)
 from topoastero.provenance import sha256_file
 from topoastero.style import (
     FIGSIZE,
@@ -98,11 +103,7 @@ def _read_csv(path: Path) -> list[dict[str, str]]:
 
 
 def _write_csv(path: Path, fieldnames: list[str], rows: Sequence[dict[str, Any]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(path, rows, fieldnames=fieldnames)
 
 
 def _number(value: float, digits: int = 12) -> str:
@@ -1057,7 +1058,7 @@ def run(config_path: Path, cache_dir: Path, output_dir: Path, figure_dir: Path, 
         "schema_version": 1,
         "run_id": config["experiment_id"],
         "software_version": SOFTWARE_VERSION,
-        "config_path": str(config_path.relative_to(ROOT)),
+        "config_path": repository_relative_posix(config_path, ROOT),
         "config_sha256": config_hash,
         "command": "uv run --extra astronomy python workflows/run_stage3_classical.py --cache-dir <external-cache> [--download]",
         "environment": {
@@ -1090,7 +1091,7 @@ def run(config_path: Path, cache_dir: Path, output_dir: Path, figure_dir: Path, 
         "input_policy": "raw FITS payloads checksum-verified in external cache and not redistributed",
         "outputs": [
             {
-                "path": str(path.relative_to(ROOT)),
+                "path": repository_relative_posix(path, ROOT),
                 "size_bytes": path.stat().st_size,
                 "sha256": sha256_file(path),
             }
@@ -1122,7 +1123,7 @@ def run(config_path: Path, cache_dir: Path, output_dir: Path, figure_dir: Path, 
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
     manifest_path = output_dir / "run_manifest.json"
-    manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_json_lf(manifest_path, manifest)
     return manifest
 
 

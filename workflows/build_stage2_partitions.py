@@ -11,6 +11,7 @@ from collections import Counter, defaultdict
 from collections.abc import Mapping, Sequence
 from pathlib import Path
 
+from topoastero.portability import write_csv_lf, write_json_lf
 from topoastero.provenance import sha256_file
 
 ROOT = Path(__file__).parents[1]
@@ -160,11 +161,7 @@ def build_assignments(source: Path) -> list[dict[str, str | int]]:
 
 
 def _write_csv(path: Path, records: Sequence[Mapping[str, str | int]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS)
-        writer.writeheader()
-        writer.writerows(records)
+    write_csv_lf(path, records, fieldnames=FIELDS)
 
 
 def main(argv: Sequence[str] | None = None) -> None:
@@ -199,9 +196,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         "holdout_access_state": "unopened_for_analysis",
     }
     attestation_path = ROOT / args.attestation
-    attestation_path.write_text(
-        json.dumps(attestation, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    write_json_lf(attestation_path, attestation)
     balance = {
         "schema_version": 1,
         "population_rows": len(records),
@@ -218,7 +213,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     }
     balance_path = ROOT / args.balance_report
     balance_path.parent.mkdir(parents=True, exist_ok=True)
-    balance_path.write_text(json.dumps(balance, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_json_lf(balance_path, balance)
 
 
 if __name__ == "__main__":

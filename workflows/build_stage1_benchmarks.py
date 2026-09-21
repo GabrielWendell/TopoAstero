@@ -9,10 +9,11 @@ validation.
 from __future__ import annotations
 
 import argparse
-import csv
 import re
 from collections.abc import Sequence
 from pathlib import Path
+
+from topoastero.portability import write_csv_lf
 
 RUDY_KIC = "10963065"
 GLOBAL_SOURCE = "SilvaAguirre2017"
@@ -33,11 +34,7 @@ def _data_rows(path: Path, columns: int) -> list[list[str]]:
 
 
 def _write_csv(path: Path, fieldnames: Sequence[str], rows: Sequence[dict[str, str]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(path, rows, fieldnames=fieldnames)
 
 
 def _fixed_field(record: str, start: int, stop: int) -> str:

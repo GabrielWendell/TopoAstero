@@ -1,21 +1,21 @@
 {
   "benchmark": {
     "repeats": 100,
-    "seconds_per_run": 0.00034979000047314913,
-    "total_seconds": 0.03497900004731491
+    "seconds_per_run": 0.0006864770001266152,
+    "total_seconds": 0.06864770001266152
   },
-  "captured_at_utc": "2026-09-20T21:04:48+00:00",
+  "captured_at_utc": "2026-09-21T01:00:20+00:00",
   "code": {
-    "commit": "425bcecbb73e726d96ca3352ea396522e9eb31d6",
-    "describe": "425bcec-dirty",
+    "commit": "76f3768c6bc22983e5ff9a43a7445b41e9cf8bee",
+    "describe": "76f3768-dirty",
     "dirty": true
   },
   "configuration": {
-    "path": "configs\\smoke.yaml",
+    "path": "configs/smoke.yaml",
     "sha256_canonical": "571952aa0113f5f84c6f3ff2f791082f9befff1cdada5e0b3a5bf84b2ea54f72"
   },
   "environment": {
-    "captured_at_utc": "2026-09-20T21:04:48+00:00",
+    "captured_at_utc": "2026-09-21T01:00:21+00:00",
     "cpu_count": 20,
     "implementation": "CPython",
     "machine": "AMD64",
@@ -27,16 +27,16 @@
   "hypothesis_id": "DIAGNOSTIC-S0",
   "outputs": {
     "persistence_pairs.csv": {
-      "sha256": "ae7c15ee2cc275b938acb2f323ef2aad9e67a610b87e4a628b1b98a560d236c7"
+      "sha256": "f39d6ec3d5e7bf7ee6f47d40673d10f1f7e4d2316143f15a13e541c6a1aae4be"
     },
     "signal.csv": {
-      "sha256": "06d2c1f0e8c8fa86eb551e7b658c7e99ea2a3fba9b5db4fc6538c15d67c81f71"
+      "sha256": "20d86b5671c8e3f8125dd1b388b596c522ce3d366adb2ee04fb6509901b77ccb"
     },
     "smoke_figure.svg": {
-      "sha256": "a270a860320a7144d95b9aaa68b074fe5762adf2bad0c1f818d74610392d798f"
+      "sha256": "0ac7daf1f3e5188b058b82ba08f4ba739814621e7c2a508ab791ec44b40836f0"
     },
     "summary.json": {
-      "sha256": "39ab433f05fde60e902e7fc089ac66bca4ac598ca9b8406202320e1f43b9a4bf"
+      "sha256": "6af0d8c28d1fe6bebfc5815f9d5ff1c9093f697ae47b66de2897c41813fff6a8"
     }
   },
   "package_version": "0.4.0",

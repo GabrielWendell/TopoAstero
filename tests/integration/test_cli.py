@@ -22,6 +22,9 @@ def test_cli_hash_checksum_and_validation(capsys: pytest.CaptureFixture[str], tm
     main(["validate-stage0", "--root", str(ROOT), "--without-smoke"])
     assert "PASS" in capsys.readouterr().out
 
+    main(["check-portability", "--root", str(ROOT)])
+    assert "PASS" in capsys.readouterr().out
+
 
 @pytest.mark.integration
 def test_cli_resource_audit(capsys: pytest.CaptureFixture[str], tmp_path: Path) -> None:

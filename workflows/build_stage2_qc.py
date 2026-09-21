@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 import csv
-import json
 from collections import Counter, defaultdict
 from itertools import pairwise
 from pathlib import Path
 
 from topoastero.data_model import duplicate_values, validate_mission_product
+from topoastero.portability import write_json_lf
 
 ROOT = Path(__file__).parents[1]
 
@@ -177,8 +177,7 @@ def main() -> None:
         },
     }
     target = ROOT / "reports/stage2/qc_report.json"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_json_lf(target, report)
 
 
 if __name__ == "__main__":

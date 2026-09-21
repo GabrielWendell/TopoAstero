@@ -15,6 +15,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
+from topoastero.portability import write_csv_lf
+
 ROOT = Path(__file__).parents[1]
 QUERY_DATE = "2026-09-20"
 PRODUCT_FIELDS = [
@@ -98,11 +100,7 @@ def _query(kic: str, role: str) -> list[dict[str, str]]:
 
 
 def _write(path: Path, fields: list[str], rows: list[dict[str, str]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(path, rows, fieldnames=fields)
 
 
 def main() -> None:

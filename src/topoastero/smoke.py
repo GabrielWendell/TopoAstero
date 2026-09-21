@@ -9,6 +9,7 @@ from typing import Any
 from topoastero import __version__
 from topoastero.config import configuration_hash, content_hash, load_yaml
 from topoastero.persistence import PersistencePair, superlevel_h0
+from topoastero.portability import repository_relative_posix
 from topoastero.provenance import environment_snapshot, git_state, sha256_file, utc_now
 from topoastero.render import write_json, write_rows, write_smoke_svg
 from topoastero.simulation import deterministic_multimode_signal
@@ -99,7 +100,7 @@ def run_smoke(config_path: str | Path, output_dir: str | Path) -> dict[str, Any]
         "captured_at_utc": utc_now(),
         "package_version": __version__,
         "configuration": {
-            "path": str(config_file.relative_to(repository_root)),
+            "path": repository_relative_posix(config_file, repository_root),
             "sha256_canonical": stable_payload["config_hash"],
         },
         "code": git_state(repository_root),

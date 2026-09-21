@@ -7,6 +7,10 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ### Added
 
+- Cross-platform reproducibility layer with canonical LF text serialization, POSIX manifest paths,
+  a repository portability validator, an in-place repair workflow, and CI enforcement.
+- Portable Stage 0--3 checksum/seal regeneration that preserves scientific values while refreshing
+  byte-level identities after newline/path canonicalization.
 - `TA-PLOT-1.0`, a package-level academic plotting contract with asteroseismic semantic colors,
   journal sizing, deterministic source-aware exports, tests, and governance enforcement.
 - Restyled and regenerated all six Stage 3 figures under the shared visual contract without

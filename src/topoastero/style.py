@@ -33,6 +33,8 @@ from matplotlib.figure import Figure
 from matplotlib.legend import Legend
 from matplotlib.text import Text
 
+from topoastero.portability import normalize_text_file_lf
+
 __all__ = [
     "BACKGROUND_COLORS",
     "BACKGROUND_LABELS",
@@ -693,6 +695,8 @@ def save_figure(
                 bbox_inches="tight",
                 metadata=suffix_metadata,
             )
+        if output.suffix.lower() == ".svg":
+            normalize_text_file_lf(output)
     if close:
         plt.close(fig)
     return destination

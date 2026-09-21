@@ -1,7 +1,48 @@
-* text=auto eol=lf
-*.pdf binary
-*.png binary
-*.fits binary
-*.h5 binary
-*.parquet binary
+# Canonical repository text representation: SHA-256-governed text must be byte-stable.
+* text=auto
 
+*.py      text eol=lf
+*.toml    text eol=lf
+*.yaml    text eol=lf
+*.yml     text eol=lf
+*.json    text eol=lf
+*.jsonl   text eol=lf
+*.csv     text eol=lf
+*.tsv     text eol=lf
+*.md      text eol=lf
+*.rst     text eol=lf
+*.txt     text eol=lf
+*.svg     text eol=lf
+*.bib     text eol=lf
+*.cff     text eol=lf
+*.ipynb   text eol=lf
+*.lock    text eol=lf
+*.sh      text eol=lf
+*.cfg     text eol=lf
+*.ini     text eol=lf
+
+# Text files without useful extensions.
+.gitattributes text eol=lf
+.editorconfig  text eol=lf
+.gitignore     text eol=lf
+.dockerignore  text eol=lf
+.python-version text eol=lf
+CODEOWNERS      text eol=lf
+LICENSE         text eol=lf
+Dockerfile      text eol=lf
+Makefile        text eol=lf
+
+# Binary scientific/data artifacts must never be newline-normalized.
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.pdf     binary
+*.fits    binary
+*.fit     binary
+*.h5      binary
+*.hdf5    binary
+*.npy     binary
+*.npz     binary
+*.parquet binary
+*.zip     binary
+*.gz      binary

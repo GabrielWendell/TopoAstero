@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-import csv
 from pathlib import Path
 
+from topoastero.portability import write_csv_lf
 from topoastero.provenance import sha256_file
 
 ROOT = Path(__file__).parents[1]
@@ -67,6 +67,12 @@ DELIVERABLES = {
         "pyproject.toml",
         "uv.lock",
         ".github/workflows/ci.yml",
+        ".gitattributes",
+        ".editorconfig",
+        "docs/reproducibility/CROSS_PLATFORM_PORTABILITY.md",
+        "src/topoastero/portability.py",
+        "workflows/repair_portability.py",
+        "tests/unit/test_portability.py",
         "src/topoastero/__init__.py",
         "src/topoastero/cli.py",
         "workflows/README.md",
@@ -90,13 +96,11 @@ def main() -> None:
                     "status": "accepted",
                 }
             )
-    TARGET.parent.mkdir(parents=True, exist_ok=True)
-    with TARGET.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(
-            handle, fieldnames=["deliverable", "path", "size_bytes", "sha256", "status"]
-        )
-        writer.writeheader()
-        writer.writerows(rows)
+    write_csv_lf(
+        TARGET,
+        rows,
+        fieldnames=["deliverable", "path", "size_bytes", "sha256", "status"],
+    )
 
 
 if __name__ == "__main__":

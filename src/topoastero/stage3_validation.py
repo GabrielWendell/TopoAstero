@@ -254,6 +254,8 @@ def validate_tess(root: Path, errors: list[str]) -> None:
 
 def validate_manifest_gate_and_notebook(root: Path, errors: list[str]) -> None:
     manifest = json.loads((root / "results/stage3/run_manifest.json").read_text(encoding="utf-8"))
+    if "\\" in str(manifest.get("config_path", "")):
+        errors.append("Stage 3 run manifest config path is not POSIX portable")
     if manifest.get("config_sha256") != configuration_hash(root / "configs/stage3_classical.yaml"):
         errors.append("Stage 3 run manifest has the wrong configuration hash")
     if manifest.get("software_version") != "TopoAstero-0.4.0" or manifest.get("topology_used") is not False:
@@ -288,7 +290,10 @@ def validate_manifest_gate_and_notebook(root: Path, errors: list[str]) -> None:
             if not isinstance(record, dict):
                 errors.append("Stage 3 run manifest has a malformed output")
                 continue
-            path = root / str(record.get("path", ""))
+            serialized_path = str(record.get("path", ""))
+            if "\\" in serialized_path:
+                errors.append(f"Stage 3 output path is not POSIX portable: {serialized_path}")
+            path = root / serialized_path
             if not path.is_file() or record.get("sha256") != sha256_file(path):
                 errors.append(f"Stage 3 output checksum mismatch: {record.get('path', '')}")
 

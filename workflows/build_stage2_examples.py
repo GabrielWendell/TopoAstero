@@ -16,15 +16,13 @@ from topoastero.data_model import (
     SpectrumRow,
     StellarReferenceRow,
 )
+from topoastero.portability import write_text_lf
 
 ROOT = Path(__file__).parents[1]
 
 
 def _jsonl(path: Path, rows: list[dict[str, object]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        "".join(json.dumps(row, sort_keys=True) + "\n" for row in rows), encoding="utf-8"
-    )
+    write_text_lf(path, "".join(json.dumps(row, sort_keys=True) + "\n" for row in rows))
 
 
 def _first_manifest_row() -> dict[str, str]:

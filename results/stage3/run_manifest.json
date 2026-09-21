@@ -1,6 +1,6 @@
 {
   "command": "uv run --extra astronomy python workflows/run_stage3_classical.py --cache-dir <external-cache> [--download]",
-  "config_path": "configs\\stage3_classical.yaml",
+  "config_path": "configs/stage3_classical.yaml",
   "config_sha256": "dc29dd00e0bdd413c3ebeb406d86ae0e9323de166d7c1fea7b7234b5eb6293d0",
   "elapsed_seconds": 104.047,
   "environment": {
@@ -217,84 +217,84 @@
   },
   "outputs": [
     {
-      "path": "results\\stage3\\background_models.csv",
-      "sha256": "b9e02e6590e3587d59a8f6fccc3313425dc09950cd9aad2021ca4bb4fb754813",
-      "size_bytes": 867
+      "path": "results/stage3/background_models.csv",
+      "sha256": "40f8e5ca6f55101abded8a57cda7ac158d7e5fb4a6ac9976dc0183c9976960e9",
+      "size_bytes": 863
     },
     {
-      "path": "results\\stage3\\preprocessing_sensitivity.csv",
-      "sha256": "82afd0a9fd660d60adc75e9825098e31613560b7ef1e840dc2c14261a7c4d79f",
-      "size_bytes": 471
+      "path": "results/stage3/preprocessing_sensitivity.csv",
+      "sha256": "c93ad5bde783c569c82fe934e02fef4c5ba2f59fa8d1248f3ef8fa5f407f3ed2",
+      "size_bytes": 466
     },
     {
-      "path": "results\\stage3\\rudy_baseline.csv",
-      "sha256": "acc50e275d8b582189ba08fad77d03883e5859bf3e1b24f5f1d8b714a4983a26",
-      "size_bytes": 2424
+      "path": "results/stage3/rudy_baseline.csv",
+      "sha256": "7990bbc06821277207c89afbeeea37639659378e8757a54e92a5b737005a8077",
+      "size_bytes": 2413
     },
     {
-      "path": "results\\stage3\\pipeline_comparison.csv",
-      "sha256": "3757e5ff2e07d20ba38b0251e5ce27488150d27ba08654c36ba1bc75cbd5fbf9",
-      "size_bytes": 1463
+      "path": "results/stage3/pipeline_comparison.csv",
+      "sha256": "111004b598079af4a7d43d4a806a3bb0efb5685b85410968545df6c1da829845",
+      "size_bytes": 1457
     },
     {
-      "path": "results\\stage3\\uncertainty_budget.csv",
-      "sha256": "c438bc88cc962c7b65c60a24c4cdbc452025be686776877aae6a1ec0f790447a",
-      "size_bytes": 605
+      "path": "results/stage3/uncertainty_budget.csv",
+      "sha256": "9ea3ec2a9817914c294bdb369407b5abb411ee5b3a8c64866929523f1106292a",
+      "size_bytes": 599
     },
     {
-      "path": "results\\stage3\\window_atlas.csv",
-      "sha256": "12b48b3ecf271da7f7d66458ab46edd72730436b725b5a12a7b573a5e45cf996",
-      "size_bytes": 1391
+      "path": "results/stage3/window_atlas.csv",
+      "sha256": "6b410ec99eb8958027fed05bd9e8776c26c6c629ca89259282ab8cdf7d89065c",
+      "size_bytes": 1384
     },
     {
-      "path": "results\\stage3\\mode_audit.csv",
-      "sha256": "ec2e202a9403c41c0a64f2c13bff12c522d649757b9b518199cf944211a08091",
-      "size_bytes": 5104
+      "path": "results/stage3/mode_audit.csv",
+      "sha256": "3466de914218af7eb7683b65f72b29d4ce134796f977e983cd9dc2a5bba9498f",
+      "size_bytes": 5061
     },
     {
-      "path": "results\\stage3\\echelle_trials.csv",
-      "sha256": "5bfb5b3c68a5db74b9b1d298dfbb37fdd375a228a959fe6c3297035f7a563c4b",
-      "size_bytes": 642
+      "path": "results/stage3/echelle_trials.csv",
+      "sha256": "15d6cf768fcfabd8d9ee2d95d3a5a4997573ff457873986a805a7f3a3b5234ed",
+      "size_bytes": 638
     },
     {
-      "path": "results\\stage3\\reduced_spectrum.csv",
-      "sha256": "f35a02f5133ee76d92df18026d12fc4b37dacd604327257c3f82ffc71e4220b4",
-      "size_bytes": 385454
+      "path": "results/stage3/reduced_spectrum.csv",
+      "sha256": "16a8cb07a273a6ca4b543477e57157988e55560947b80cdcb02a9ce4e18bdf00",
+      "size_bytes": 379452
     },
     {
-      "path": "results\\stage3\\tess_sector_feasibility.csv",
-      "sha256": "ba5ae0181dd3ff76858ff2902e0c0fc19c3138ca53b52c960930b303b5d926f4",
-      "size_bytes": 2612
+      "path": "results/stage3/tess_sector_feasibility.csv",
+      "sha256": "d0c8f2bb94c2d9cc00ebed016a74222ce1d9b3fdd11e13f419fb5c0ba34c506a",
+      "size_bytes": 2600
     },
     {
-      "path": "reports\\stage3\\figures\\rudy_power_spectrum.svg",
-      "sha256": "ad1698b117baf706020b5bc9b0f4734b8ef388e8da392a5e54fc6700735e63e6",
-      "size_bytes": 137883
+      "path": "reports/stage3/figures/rudy_power_spectrum.svg",
+      "sha256": "65e83bad3835664e3d6bc91fc7b3f67daf22ed1c0e63378870ba70b7612082c7",
+      "size_bytes": 136274
     },
     {
-      "path": "reports\\stage3\\figures\\background_comparison.svg",
-      "sha256": "cb1fd64d60eb0000144ee66f8c396143ab6487dbe68c5c7ab0178d4fa576b307",
-      "size_bytes": 513155
+      "path": "reports/stage3/figures/background_comparison.svg",
+      "sha256": "03f36d602b618d3f010397c7f19e5a8f72c53d52b53773a8ff5630b44aff0554",
+      "size_bytes": 511760
     },
     {
-      "path": "reports\\stage3\\figures\\window_atlas.svg",
-      "sha256": "8c3462abee3df4b2d2aefc5f63cb71e8bb8371d0b4fc52c9bc43dd07329b001d",
-      "size_bytes": 41168
+      "path": "reports/stage3/figures/window_atlas.svg",
+      "sha256": "1ffaf7a8283ac5835a399d3409dedc0a266eaa75b04ed98e675ef5d0ab739637",
+      "size_bytes": 39938
     },
     {
-      "path": "reports\\stage3\\figures\\echelle_trials.svg",
-      "sha256": "88280881b86add3d02ab83e93089b5221a053d91efe8b539aea683f1d90d368a",
-      "size_bytes": 85427
+      "path": "reports/stage3/figures/echelle_trials.svg",
+      "sha256": "464c97336add18a6254718a15594c2706d05687e3ae3d96ea53285d18abde939",
+      "size_bytes": 84160
     },
     {
-      "path": "reports\\stage3\\figures\\mode_overlay_audit.svg",
-      "sha256": "9b2b7c0afb4f0173911ede32c3fcbc4d01ba90237de871f1a49e78374ebd55d8",
-      "size_bytes": 51682
+      "path": "reports/stage3/figures/mode_overlay_audit.svg",
+      "sha256": "4f442fd40851e7353af455cdab34eff58011fd1808ce605324e7ab63f8fba5a3",
+      "size_bytes": 50443
     },
     {
-      "path": "reports\\stage3\\figures\\tess_sector_feasibility.svg",
-      "sha256": "db7a44d62479797d8cd1eb036f581d268d03da16545631a4d86642fcc9f0fe69",
-      "size_bytes": 24293
+      "path": "reports/stage3/figures/tess_sector_feasibility.svg",
+      "sha256": "603602145f3c453fa85615574092140aba4d86250327141f0d747840c93c951d",
+      "size_bytes": 23731
     }
   ],
   "plot_style": {

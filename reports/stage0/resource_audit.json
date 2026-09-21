@@ -6,7 +6,7 @@
     "url": "https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html"
   },
   "audit_version": 1,
-  "captured_at_utc": "2026-09-20T21:05:02+00:00",
+  "captured_at_utc": "2026-09-21T01:00:30+00:00",
   "host": {
     "logical_cpu_count": 20,
     "machine": "AMD64",
@@ -14,7 +14,7 @@
     "platform": "Windows-11-10.0.26200-SP0",
     "python": "3.12.10",
     "storage": {
-      "free_bytes": 262670856192,
+      "free_bytes": 258008576000,
       "path": "TopoAstero",
       "total_bytes": 510481395712
     }
@@ -24,8 +24,8 @@
     "pairs_last_run": 61,
     "repeats": 100,
     "samples": 512,
-    "seconds_per_run": 0.00037507100030779837,
-    "total_seconds": 0.03750710003077984
+    "seconds_per_run": 0.0006939270003931597,
+    "total_seconds": 0.06939270003931597
   },
   "planning_targets": {
     "archival_derived_gb_max": 200,
