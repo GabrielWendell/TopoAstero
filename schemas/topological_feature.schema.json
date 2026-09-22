@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/topological_feature.schema.json",
+  "title": "TopoAstero compact topological feature registry row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["feature_id", "representation_id", "summary", "homology_dimension", "physical_target", "normalization", "essential_handling", "null_family", "calibration_statistic", "control_id", "later_stage", "later_claim_role", "status", "selection_reason"],
+  "properties": {
+    "feature_id": {"type": "string", "pattern": "^S5-[A-Z0-9-]+$"},
+    "representation_id": {"type": "string", "pattern": "^REP-"},
+    "summary": {"type": "string", "minLength": 3},
+    "homology_dimension": {"type": "string", "pattern": "^[0-2]$"},
+    "physical_target": {"type": "string", "minLength": 4},
+    "normalization": {"type": "string", "minLength": 3},
+    "essential_handling": {"const": "excluded_from_numeric_summary"},
+    "null_family": {"type": "string", "minLength": 3},
+    "calibration_statistic": {"type": "string", "minLength": 3},
+    "control_id": {"type": "string", "pattern": "^CTL-"},
+    "later_stage": {"enum": ["S6", "S7", "S8", "none"]},
+    "later_claim_role": {"type": "string", "minLength": 3},
+    "status": {"enum": ["retained", "retained_exploratory", "diagnostic_only", "dropped"]},
+    "selection_reason": {"type": "string", "minLength": 12}
+  }
+}
+

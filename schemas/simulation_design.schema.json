@@ -8,7 +8,7 @@
   "properties": {
     "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
     "seed": {"type": "integer", "minimum": 1},
-    "snr_level": {"enum": ["low", "medium", "high"]},
+    "snr_level": {"enum": ["Low", "Medium", "High"]},
     "duration_days": {"type": "number", "exclusiveMinimum": 0},
     "cadence_seconds": {"type": "number", "exclusiveMinimum": 0},
     "duty_cycle": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},

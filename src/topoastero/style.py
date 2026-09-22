@@ -175,7 +175,7 @@ FIGSIZE: dict[str, tuple[float, float]] = {
     "double": (7.10, 4.40),
     "double_short": (7.10, 3.20),
     "triple": (7.10, 2.85),
-    "gallery": (7.10, 8.20),
+    "gallery": (9.50, 8.20),
 }
 
 
@@ -660,6 +660,7 @@ def save_figure(
     close: bool = False,
     dpi: int | None = None,
     facecolor: str = "white",
+    pad_inches: float = 0.1,
     formats: Sequence[str] | None = None,
     source: str | Sequence[str] | None = None,
     description: str | None = None,
@@ -686,13 +687,20 @@ def save_figure(
     for output in dict.fromkeys(destinations):
         suffix_metadata = _metadata_for_suffix(output.suffix.lower(), export_metadata)
         if suffix_metadata is None:
-            fig.savefig(output, dpi=dpi, facecolor=facecolor, bbox_inches="tight")
+            fig.savefig(
+                output,
+                dpi=dpi,
+                facecolor=facecolor,
+                bbox_inches="tight",
+                pad_inches=pad_inches,
+            )
         else:
             fig.savefig(
                 output,
                 dpi=dpi,
                 facecolor=facecolor,
                 bbox_inches="tight",
+                pad_inches=pad_inches,
                 metadata=suffix_metadata,
             )
         if output.suffix.lower() == ".svg":

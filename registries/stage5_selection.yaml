@@ -1,0 +1,67 @@
+schema_version: 1
+registry_id: TA-S05-SELECTION-1.0
+status: locked
+locked_on: '2026-09-22'
+input_scope: Stage 4 simulation-development data only
+population_data_used: false
+final_holdout_used: false
+records:
+- representation_id: REP-LC
+  status: diagnostic_only
+  interpretability: not_primary
+  calibration: pass
+  incremental_utility: pass
+  stability: pass
+  compute: pass
+  retained_features: []
+  reason: Morphology remains available, but prominence is simpler and no p-mode claim
+    is assigned.
+  later_stage: none
+- representation_id: REP-DELAY
+  status: retained_exploratory
+  interpretability: pass
+  calibration: pass
+  incremental_utility: pass
+  stability: pass
+  compute: pass
+  retained_features:
+  - S5-DELAY-H1-MAX
+  reason: One loop statistic proceeds only to the Stage 7 PSD-preserving surrogate
+    retain/drop test.
+  later_stage: S7
+- representation_id: REP-PSD
+  status: retained
+  interpretability: pass
+  calibration: pass
+  incremental_utility: pass
+  stability: pass
+  compute: pass
+  retained_features:
+  - S5-PSD-H0-MAX
+  - S5-PSD-H0-CENTROID
+  reason: Exact localization and background-null calibration support the Stage 6 prominence/equivalence
+    audit.
+  later_stage: S6
+- representation_id: REP-MODE
+  status: dropped
+  interpretability: pass
+  calibration: pass
+  incremental_utility: fail
+  stability: pass
+  compute: pass
+  retained_features: []
+  reason: Upstream mode extraction and nearest-neighbor redundancy provide no distinct
+    critical-path role.
+  later_stage: none
+- representation_id: REP-ECHELLE
+  status: retained
+  interpretability: pass
+  calibration: pass
+  incremental_utility: deferred
+  stability: pass
+  compute: pass
+  retained_features:
+  - S5-ECH-H0-RIDGE
+  reason: Correct periodic topology and localized ridge lifetime support the Stage
+    8 matched-control test.
+  later_stage: S8

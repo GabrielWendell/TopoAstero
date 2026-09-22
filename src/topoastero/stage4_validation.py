@@ -184,7 +184,7 @@ def validate_design_windows(root: Path, errors: list[str]) -> None:
     if len({row.get("seed") for row in rows}) != 72:
         errors.append("factorial pilot seeds must be unique")
     expected_levels = {
-        "snr_level": {"low", "medium", "high"},
+        "snr_level": {"Low", "Medium", "High"},
         "duration_days": {"27.4", "90.0", "109.6", "360.0"},
         "duty_cycle": {"0.5", "0.8", "0.95"},
         "lifetime_days": {"2.0", "10.0", "30.0"},

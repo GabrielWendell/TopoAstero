@@ -4,13 +4,13 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.5.0 implements Stages 0-4 through the analytic and stochastic simulation gate. It contains
+Version 0.6.0 implements Stages 0-5 through the TDA representation-audit gate. It contains
 traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
 independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
-calibrated null/coverage maps, and source-backed figure suites, but redistributes no Kepler, TESS,
-or publisher payloads.
+calibrated null/coverage maps, a localized dependency-light TDA core, a locked compact statistic
+set, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher payloads.
 
-## Reproduce Stages 0-4
+## Reproduce Stages 0-5
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -23,6 +23,7 @@ uv run topoastero validate-stage1 --root .
 uv run topoastero validate-stage2 --root .
 uv run topoastero validate-stage3 --root .
 uv run topoastero validate-stage4 --root .
+uv run topoastero validate-stage5 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -46,6 +47,10 @@ Stage 4 validation checks 12 exact analytic cases, stochastic PSD/time-domain re
 balanced 72-cell pilot, payload-derived mission windows, seven independently evaluated null
 families, max-statistic multiplicity control, 27 uncertainty-coverage cells, the compute/precision
 budget, the locked confirmation protocol, G4, and all earlier contracts.
+Stage 5 validation checks the exact path/Rips/periodic-grid core, six backend cross-checks, all five
+candidate representations on the same 72-cell panel, physical localization, five independent null
+calibrations, nine nuisance audits, redundancy/ablation evidence, the locked retained set, G5, and
+all earlier contracts.
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -146,6 +151,23 @@ The detailed mapping and gate record are in
 [`reports/stage4/TRACEABILITY_MATRIX.md`](reports/stage4/TRACEABILITY_MATRIX.md) and
 [`reports/stage4/G4_ACCEPTANCE.json`](reports/stage4/G4_ACCEPTANCE.json).
 
+## Stage 5 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T5.1 Filtrations | representation specification and parameter registry | five complete domain/direction/normalization contracts |
+| T5.2 Backends | `topoastero.tda` and representation adapters | exact path, Rips, periodic grid, distances and summaries |
+| T5.3 Cross-checks | six-case backend table | prominence, MST, exact-square, cylinder/disk and metric tests |
+| T5.4 Localization | localized pair API and JSON catalog | time, frequency, landmark, mode and pixel mappings |
+| T5.5 Summaries | 13-candidate feature registry | four retained physical statistics; no feature bank |
+| T5.6 Nuisances | nine-perturbation table | affine, monotone, sampling, embedding, smoothing, grid and boundary tests |
+| T5.7 Redundancy | rank/MI matrix and six-fold ablations | topology-free conditional comparisons on development simulations |
+| T5.8 Selection | locked selection registry and memo | PSD/delay/echelle proceed; LC diagnostic; mode cloud dropped |
+
+The detailed mapping and gate record are in
+[`reports/stage5/TRACEABILITY_MATRIX.md`](reports/stage5/TRACEABILITY_MATRIX.md) and
+[`reports/stage5/G5_ACCEPTANCE.json`](reports/stage5/G5_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -157,7 +179,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage4/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage5/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -203,6 +225,9 @@ explain those records but do not silently override them.
 - Stage 4 calibrates compact folded-spectrum/H0 summaries; it does not yet establish a population-
   level advantage over classical estimators. That question remains behind the locked confirmation
   and holdout rules.
+- Stage 5 uses simulation-development data only. Its delay statistic is exploratory, its PSD
+  statistics still require the Stage 6 prominence/equivalence audit, and its echelle ridge lifetime
+  still requires the Stage 8 graph-only/alias tests; G5 is not an astrophysical performance claim.
 
 ## License and citation
 

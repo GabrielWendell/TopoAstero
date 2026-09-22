@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/localization.schema.json",
+  "title": "TopoAstero localized persistence pair",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["representation_id", "pair_id", "dimension", "birth", "death", "persistence", "essential", "birth_vertices", "death_vertices", "birth_location", "death_location"],
+  "properties": {
+    "representation_id": {"type": "string", "pattern": "^REP-"},
+    "pair_id": {"type": "string", "minLength": 8},
+    "dimension": {"type": "integer", "minimum": 0, "maximum": 2},
+    "birth": {"type": "number"},
+    "death": {"type": ["number", "null"]},
+    "persistence": {"type": ["number", "null"], "minimum": 0},
+    "essential": {"type": "boolean"},
+    "birth_vertices": {"type": "array", "minItems": 1, "items": {"type": "integer", "minimum": 0}},
+    "death_vertices": {"type": ["array", "null"], "items": {"type": "integer", "minimum": 0}},
+    "birth_location": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "death_location": {"type": ["array", "null"], "items": {"type": "object"}}
+  }
+}
+

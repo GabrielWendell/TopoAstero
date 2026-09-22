@@ -1,0 +1,57 @@
+{
+  "accepted_on": "2026-09-22",
+  "checks": [
+    {
+      "check": "backend_crosschecks",
+      "evidence": "6/6 pass",
+      "status": "pass"
+    },
+    {
+      "check": "five_representations",
+      "evidence": "5/5 implemented and audited",
+      "status": "pass"
+    },
+    {
+      "check": "independent_null_calibration",
+      "evidence": "maximum evaluation FPR 0.078125",
+      "status": "pass"
+    },
+    {
+      "check": "localization",
+      "evidence": "35 mapped pairs across five physical domains",
+      "status": "pass"
+    },
+    {
+      "check": "nuisance_sensitivity",
+      "evidence": "9/9 pass",
+      "status": "pass"
+    },
+    {
+      "check": "compact_nonredundant_registry",
+      "evidence": "13 audited candidates; 4 retained statistics",
+      "status": "pass"
+    },
+    {
+      "check": "locked_later_claim_roles",
+      "evidence": "PSD->S6; delay->S7; echelle->S8",
+      "status": "pass"
+    }
+  ],
+  "final_holdout_used": false,
+  "gate": "G5",
+  "population_data_used": false,
+  "retained_feature_ids": [
+    "S5-DELAY-H1-MAX",
+    "S5-PSD-H0-MAX",
+    "S5-PSD-H0-CENTROID",
+    "S5-ECH-H0-RIDGE"
+  ],
+  "retained_representations": [
+    "REP-DELAY",
+    "REP-PSD",
+    "REP-ECHELLE"
+  ],
+  "run_id": "TA-S05-TDA-R001",
+  "status": "pass",
+  "visual_interest_is_selection_criterion": false
+}

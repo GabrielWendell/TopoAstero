@@ -7,7 +7,7 @@
   "required": ["cell_id", "snr_level", "duration_days", "lifetime_days", "calibration_realizations", "evaluation_realizations", "bias_uHz", "realization_sigma_uHz", "pipeline_choice_sigma_uHz", "interval_half_width_uHz", "empirical_coverage", "nominal_coverage", "status"],
   "properties": {
     "cell_id": {"type": "string", "pattern": "^UC-[0-9]{3}$"},
-    "snr_level": {"enum": ["low", "medium", "high"]},
+    "snr_level": {"enum": ["Low", "Medium", "High"]},
     "duration_days": {"type": "number", "exclusiveMinimum": 0},
     "lifetime_days": {"type": "number", "exclusiveMinimum": 0},
     "calibration_realizations": {"type": "integer", "minimum": 1},

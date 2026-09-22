@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/selection_record.schema.json",
+  "title": "TopoAstero Stage 5 representation decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["representation_id", "status", "interpretability", "calibration", "incremental_utility", "stability", "compute", "retained_features", "reason", "later_stage"],
+  "properties": {
+    "representation_id": {"type": "string", "pattern": "^REP-"},
+    "status": {"enum": ["retained", "retained_exploratory", "diagnostic_only", "dropped"]},
+    "interpretability": {"enum": ["pass", "fail", "not_primary"]},
+    "calibration": {"enum": ["pass", "fail"]},
+    "incremental_utility": {"enum": ["pass", "fail", "deferred"]},
+    "stability": {"enum": ["pass", "fail"]},
+    "compute": {"enum": ["pass", "fail"]},
+    "retained_features": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^S5-"}},
+    "reason": {"type": "string", "minLength": 12},
+    "later_stage": {"enum": ["S6", "S7", "S8", "none"]}
+  }
+}
+

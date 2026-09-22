@@ -230,19 +230,21 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
                         record.get("path"),
                     )
 
-    stage4 = repository / "results/stage4/run_manifest.json"
-    if stage4.is_file():
-        payload = json.loads(stage4.read_text(encoding="utf-8"))
-        check_value("results/stage4/run_manifest.json:config_path", payload.get("config_path"))
-        for collection in ("inputs", "outputs"):
-            records = payload.get(collection, [])
-            if isinstance(records, list):
-                for index, record in enumerate(records):
-                    if isinstance(record, dict):
-                        check_value(
-                            f"results/stage4/run_manifest.json:{collection}[{index}].path",
-                            record.get("path"),
-                        )
+    for stage in (4, 5):
+        manifest = repository / f"results/stage{stage}/run_manifest.json"
+        if manifest.is_file():
+            payload = json.loads(manifest.read_text(encoding="utf-8"))
+            label = f"results/stage{stage}/run_manifest.json"
+            check_value(f"{label}:config_path", payload.get("config_path"))
+            for collection in ("inputs", "outputs"):
+                records = payload.get(collection, [])
+                if isinstance(records, list):
+                    for index, record in enumerate(records):
+                        if isinstance(record, dict):
+                            check_value(
+                                f"{label}:{collection}[{index}].path",
+                                record.get("path"),
+                            )
 
     split = repository / "registries/split_attestation.json"
     if split.is_file():
@@ -257,6 +259,7 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
         repository / "reports/stage2/deliverable_manifest.csv",
         repository / "reports/stage3/deliverable_manifest.csv",
         repository / "reports/stage4/deliverable_manifest.csv",
+        repository / "reports/stage5/deliverable_manifest.csv",
     ]
     for manifest in csv_manifests:
         if not manifest.is_file():

@@ -7,7 +7,20 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ### Planned
 
-- Stage 5 topological representation benchmark under the locked confirmation protocol.
+- Stage 6 persistent topology of the power spectrum under the locked Stage 5 representation set.
+
+## [0.6.0] - 2026-09-22
+
+### Added
+
+- Complete Stage 5 TDA core with exact path H0, deterministic Vietoris--Rips H0/H1, periodic-grid
+  persistence, localized pairs, diagram metrics, compact summaries, and analytic cross-checks.
+- Five-representation audit over all 72 Stage 4 pilot cells with independent null calibration,
+  nine nuisance perturbations, rank/MI redundancy analysis, and matched conditional ablations.
+- Locked four-statistic retained set for Stages 6-8, explicit diagnostic/drop records for light-
+  curve and mode-cloud candidates, and no deletion of negative results.
+- Seven source-backed `TA-PLOT-1.0` figures, schemas, governed notebook, G5 validator and CLI,
+  traceability, run seals, tests, and deliverable checksums.
 
 ## [0.5.0] - 2026-09-21
 
