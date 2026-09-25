@@ -275,6 +275,8 @@ def validate_manifest_gate_notebook(root: Path, errors: list[str]) -> None:
     deliverable = _read_csv(root / "reports/stage5/deliverable_manifest.csv")
     if {row.get("deliverable") for row in deliverable} != {"D5.1", "D5.2", "D5.3", "D5.4", "G5", "software"}:
         errors.append("Stage 5 deliverable manifest has incomplete groups")
+    if any(str(row.get("path", "")).replace("\\", "/").startswith("dist/") for row in deliverable):
+        errors.append("Stage 5 deliverable manifest must not seal ignored dist/ build artifacts")
     for row in deliverable:
         path = root / row.get("path", "")
         if not path.is_file():
