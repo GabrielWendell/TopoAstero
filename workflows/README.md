@@ -21,8 +21,22 @@ unit-tested; notebooks call the same functions and are never authoritative.
 - `run_stage3_classical.py`: one-command T3.1-T3.9 tables, figures, and run-manifest workflow.
 - `build_stage3_manifest.py`: rebuilds the Stage 3 deliverable checksum index.
 - `validate_stage3.py`: validates T3.1-T3.9, G3, and all earlier-stage regressions offline.
+- `build_stage4_window_templates.py`: derives compact Kepler/TESS interval masks from verified
+  external FITS payloads without redistributing fluxes.
+- `run_stage4_simulation_lab.py`: executes T4.1-T4.9 tables, calibrated experiments, reports,
+  publication-style figures, and the Stage 4 run manifest.
+- `build_stage4_manifest.py`: rebuilds the Stage 4 deliverable checksum index.
+- `validate_stage4.py`: validates T4.1-T4.9, G4, and all earlier-stage regressions offline.
+- `run_stage5_tda_audit.py`: executes the five-representation pilot, backend checks, null and
+  nuisance audits, redundancy/ablation analysis, localization figures, reports, and run manifest.
+- `build_stage5_manifest.py`: rebuilds the Stage 5 deliverable checksum index.
+- `validate_stage5.py`: validates T5.1-T5.8, G5, and all earlier-stage regressions offline.
+- `run_stage6_psd_topology.py`: executes normalized PSD persistence, prominence equivalence,
+  uncertainty-bearing `nu_max`/comb comparisons, null calibration, robustness, QC, and figures.
+- `build_stage6_manifest.py`: rebuilds the Stage 6 deliverable checksum index.
+- `validate_stage6.py`: validates T6.1-T6.8, G6, and all earlier-stage regressions offline.
 - `repair_portability.py`: canonicalizes tracked text to LF, converts serialized repository paths to
-  POSIX form, and refreshes dependent Stage 0--3 checksums/seals without rerunning science.
+  POSIX form, and refreshes dependent Stage 0--6 checksums/seals without rerunning science.
 
 Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
 `TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.

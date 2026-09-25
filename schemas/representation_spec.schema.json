@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/representation_spec.schema.json",
+  "title": "TopoAstero Stage 5 representation specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["representation_id", "name", "domain", "scalar_or_distance", "filtration_direction", "maximum_dimension", "physical_target", "null_family", "simple_control", "later_claim_role"],
+  "properties": {
+    "representation_id": {"type": "string", "pattern": "^REP-(LC|DELAY|PSD|MODE|ECHELLE)$"},
+    "name": {"type": "string", "minLength": 3},
+    "domain": {"type": "string", "minLength": 3},
+    "scalar_or_distance": {"type": "string", "minLength": 3},
+    "filtration_direction": {"enum": ["superlevel", "sublevel", "increasing distance"]},
+    "maximum_dimension": {"type": "integer", "minimum": 0, "maximum": 2},
+    "physical_target": {"type": "string", "minLength": 5},
+    "null_family": {"type": "string", "minLength": 3},
+    "simple_control": {"type": "string", "minLength": 3},
+    "later_claim_role": {"type": "string", "minLength": 3}
+  }
+}
+

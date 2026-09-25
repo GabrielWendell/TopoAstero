@@ -1,0 +1,6 @@
+representation_id,target,classical_controls,topological_features,folds,baseline_rmse,hybrid_rmse,baseline_R2,hybrid_R2,incremental_R2,interpretation
+REP-LC,duty_cycle,lc_peak_prominence;lc_skewness,lc_h0_total,6,0.1509493177,0.150473442,0.3489800994,0.3530783783,0.004098278901,development_selection_diagnostic_not_confirmatory_performance
+REP-DELAY,log_lifetime_days,delay_autocorrelation;delay_spectral_entropy;snr_numeric,delay_h1_max,6,1.319859409,1.258997371,-0.4085505634,-0.2816420331,0.1269085303,development_selection_diagnostic_not_confirmatory_performance
+REP-PSD,injected_snr,psd_peak_prominence;psd_envelope_centroid_uHz,psd_h0_max;psd_centroid_uHz,6,1.139736167,1.036400324,-0.3047976301,-0.07892083555,0.2258767945,development_selection_diagnostic_not_confirmatory_performance
+REP-MODE,ridge_curvature_level,mode_nn_mean;mode_nn_cv,mode_h0_total;mode_h1_max,6,0.8593793354,0.8774569891,-0.107799263,-0.1548961515,-0.04709688842,development_selection_diagnostic_not_confirmatory_performance
+REP-ECHELLE,nominal_spacing_selected,echelle_ridge_resultant;echelle_ridge_contrast,echelle_ridge_lifetime,6,0.487517529,0.4919303153,-8.00327545e-05,-0.0182665063,-0.01818647355,development_selection_diagnostic_not_confirmatory_performance

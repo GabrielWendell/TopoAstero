@@ -11,3 +11,18 @@ dependent outputs.
 `stage3_classical.yaml` freezes the exact Rudy mission subset, both classical estimators,
 background/window/echelle conventions, mode matching, branch registry, bootstrap seed/resamples,
 TESS marginal-detection rule, and G3 tolerances. It must be changed under a new run ID.
+
+`stage4_simulation.yaml` freezes analytic conventions, oscillator and observation models, the
+72-cell pilot factors, seven null families, multiplicity scope, split calibration/evaluation
+sizes, uncertainty coverage rules, compute budget, seeds, and G4 tolerances. It must be changed
+under a new run ID and a new locked confirmation-protocol version.
+
+`stage5_tda.yaml` freezes five representation filtrations, the common F2/essential-class policy,
+bounded landmark and grid resolutions, independent null streams, nine nuisance audits, redundancy
+and ablation methods, retain/drop criteria, seeds, and G5 tolerances. Any semantic change requires
+a new run ID and selection-registry version before population topology is inspected.
+
+`stage6_psd_topology.yaml` freezes the primary and sensitivity normalizations, exact path-H0 rules,
+`nu_max` interval construction, half/nominal/double comb candidates, ACF/PSPS controls, matched
+maximum-statistic nulls, robustness branches, five quality flags, and G6 limits. Any semantic change
+requires a new run ID and a new pre-execution simulation lock.

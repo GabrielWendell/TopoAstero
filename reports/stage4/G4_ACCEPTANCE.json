@@ -1,0 +1,45 @@
+{
+  "accepted_on": "2026-09-21",
+  "checks": [
+    {
+      "check": "exact_analytic_cases",
+      "evidence": "12/12 pass",
+      "status": "pass"
+    },
+    {
+      "check": "simulator_target_and_distribution_recovery",
+      "evidence": "4/4 distribution checks and 3/3 input parameters pass",
+      "status": "pass"
+    },
+    {
+      "check": "factorial_pilot_completion",
+      "evidence": "72/72 frozen cells complete",
+      "status": "pass"
+    },
+    {
+      "check": "independent_null_false_alarm_calibration",
+      "evidence": "7/7 families pass; maximum FWER 0.06640625",
+      "status": "pass"
+    },
+    {
+      "check": "interval_coverage",
+      "evidence": "27/27 cells pass; range 0.9125-0.971875",
+      "status": "pass"
+    },
+    {
+      "check": "computational_feasibility",
+      "evidence": "12/12 representation-size profiles measured; precision budget frozen",
+      "status": "pass"
+    },
+    {
+      "check": "confirmation_protocol",
+      "evidence": "TA-STAGE4-CONFIRMATION-1.0 locked before population analysis",
+      "status": "pass"
+    }
+  ],
+  "gate": "G4",
+  "population_data_used": false,
+  "run_id": "TA-S04-LAB-R001",
+  "status": "pass",
+  "uncalibrated_action": "diagnostic_only_or_drop"
+}

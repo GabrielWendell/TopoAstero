@@ -1,0 +1,104 @@
+schema_version: 1
+config_id: TA-STAGE5-TDA-1.0
+experiment_id: TA-S05-TDA-R001
+frozen_on: "2026-09-22"
+software_version: TopoAstero-0.6.0
+master_seed: 20260922
+data_scope:
+  source_design: registries/stage4_factorial_design.csv
+  source_execution: results/stage4/factorial_pilot.csv
+  expected_cells: 72
+  role: pilot_simulation_only
+  population_or_final_holdout_allowed: false
+topology:
+  coefficient_field: F2
+  deterministic_simplex_order: [filtration, dimension, lexicographic_vertices]
+  zero_length_bars: excluded
+  essential_policy: retain_localization_exclude_numeric_summaries
+  tolerance: 1.0e-10
+representations:
+  light_curve_filtration:
+    representation_id: REP-LC
+    direction: superlevel
+    normalization: median_MAD
+    maximum_dimension: 0
+    samples: 192
+    control: peak_prominence_and_distributional_summaries
+    null_family: iaaft
+  delay_embedding:
+    representation_id: REP-DELAY
+    direction: increasing_distance
+    normalization: coordinatewise_median_MAD
+    maximum_dimension: 1
+    embedding_dimension: 2
+    lag_samples: 12
+    landmarks: 18
+    maximum_edge_quantile: 0.85
+    control: lag_autocorrelation_and_spectral_entropy
+    null_family: phase_randomized_and_iaaft
+  psd_superlevels:
+    representation_id: REP-PSD
+    direction: superlevel
+    normalization: median_MAD_of_log_P_over_B
+    maximum_dimension: 0
+    frequency_bins: 192
+    smoothing_bins: 1.0
+    control: peak_prominence_and_smoothed_envelope
+    null_family: background_only
+  mode_frequency_cloud:
+    representation_id: REP-MODE
+    direction: increasing_distance
+    normalization: Delta_nu_and_degree_scaled
+    maximum_dimension: 1
+    maximum_orders: 7
+    control: nearest_neighbor_geometry
+    null_family: matched_density_randomized_modes
+  cylindrical_echelle:
+    representation_id: REP-ECHELLE
+    direction: superlevel
+    normalization: median_MAD_of_binned_log_power
+    maximum_dimension: 1
+    pilot_summary_dimension: 0
+    order_bins: 6
+    phase_bins: 12
+    periodic_axis: phase
+    control: circular_ridge_resultant_and_contrast
+    null_family: randomized_comb
+null_calibration:
+  calibration_realizations: 64
+  evaluation_realizations: 64
+  alpha: 0.05
+  empirical_pvalue: plus_one_upper_tail
+  independent_seed_streams: true
+nuisance_audit:
+  registered:
+    - amplitude_scaling
+    - additive_offset
+    - monotone_transform
+    - cadence
+    - sample_density
+    - embedding_dimension
+    - smoothing
+    - grid_resolution
+    - periodic_boundary
+  ordinary_relative_change_limit: 0.60
+  invariant_distance_tolerance: 1.0e-10
+redundancy:
+  association: spearman_rank
+  information_proxy: gaussian_copula_mutual_information
+  ablation: deterministic_six_fold_ridge
+  practical_incremental_R2: 0.0
+selection:
+  criteria: [interpretability, calibration, incremental_utility, stability, compute]
+  allowed_status: [retained, retained_exploratory, diagnostic_only, dropped]
+  failed_work_is_deleted: false
+  final_holdout_used: false
+gate:
+  required_representations_audited: 5
+  maximum_evaluation_false_positive_rate: 0.125
+  require_named_target: true
+  require_calibrated_null: true
+  require_simple_control: true
+  require_stable_numerics: true
+  require_later_claim_role: true
+

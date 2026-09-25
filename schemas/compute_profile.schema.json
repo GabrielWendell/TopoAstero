@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/compute_profile.schema.json",
+  "title": "Stage 4 compute profile row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["representation", "sample_size", "median_runtime_seconds", "peak_memory_bytes", "timing_repetitions", "environment", "status"],
+  "properties": {
+    "representation": {"enum": ["superlevel_H0", "delay_embedding", "FFT_spectrum", "null_score_ensemble"]},
+    "sample_size": {"type": "integer", "minimum": 8},
+    "median_runtime_seconds": {"type": "number", "minimum": 0},
+    "peak_memory_bytes": {"type": "integer", "minimum": 0},
+    "timing_repetitions": {"type": "integer", "minimum": 1},
+    "environment": {"type": "string", "minLength": 1},
+    "status": {"const": "measured"}
+  }
+}

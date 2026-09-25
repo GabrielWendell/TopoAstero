@@ -1,0 +1,4 @@
+parameter,input,estimate,error,tolerance,status
+frequency_uHz,2000,1999.998736,-0.001264219319,0.5,pass
+height_ppm2_per_uHz,80,76.17579956,-0.04780250544,0.12_relative,pass
+linewidth_uHz,1.2,1.224184262,0.0201535517,0.18_relative,pass

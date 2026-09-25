@@ -1,0 +1,43 @@
+{
+  "accepted_on": "2026-09-22",
+  "checks": [
+    {
+      "check": "maximum_statistic_false_alarms",
+      "evidence": "maximum independent FPR=0.062500; false confidence=0.054688",
+      "status": "pass"
+    },
+    {
+      "check": "numax_interval_coverage",
+      "evidence": "evaluation 95% coverage=1.000000",
+      "status": "pass"
+    },
+    {
+      "check": "reliable_numax_failures",
+      "evidence": "reliable-row catastrophic rate=0.000000",
+      "status": "pass"
+    },
+    {
+      "check": "spacing_alias_handling",
+      "evidence": "incorrect/ambiguous outcome flag capture=0.875000",
+      "status": "pass"
+    },
+    {
+      "check": "prominence_equivalence",
+      "evidence": "maximum absolute difference=0.000e+00; claim limited to organization/localization",
+      "status": "pass"
+    },
+    {
+      "check": "comparative_robustness",
+      "evidence": "median absolute error: topology=8.368 uHz; smoothing=140.275 uHz",
+      "status": "pass"
+    }
+  ],
+  "claim": "equivalence_limited_localization_and_calibrated_reliability",
+  "external_pysyd_executed": false,
+  "final_holdout_used": false,
+  "gate": "G6",
+  "population_data_used": false,
+  "prominence_identity": "exact_on_shared_elder_rule_path_domain",
+  "run_id": "TA-S06-PSD-R001",
+  "status": "pass"
+}

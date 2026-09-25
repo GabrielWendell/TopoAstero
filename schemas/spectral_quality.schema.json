@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/spectral_quality.schema.json",
+  "title": "Stage 6 spectral quality assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_id", "flags", "status", "reliable"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "flags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"enum": ["absent_envelope", "alias_ambiguity", "insufficient_orders", "window_contamination", "unstable_background"]}
+    },
+    "status": {"enum": ["reliable", "limited", "not_detected"]},
+    "reliable": {"type": "boolean"}
+  }
+}
+

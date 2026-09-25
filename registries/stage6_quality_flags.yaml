@@ -1,0 +1,25 @@
+schema_version: 1
+registry_id: TA-S6-QC-1.0
+status: locked
+flags:
+  - code: absent_envelope
+    trigger: null_calibrated_envelope_pvalue_above_alpha
+    action: return_not_detected_and_retain_row
+  - code: alias_ambiguity
+    trigger: leading_comb_score_ratio_below_1.15_or_alias_aware_controls_disagree_or_trial_boundary
+    action: expose_half_nominal_double_candidates_without_forcing_one
+  - code: insufficient_orders
+    trigger: fewer_than_5_visible_radial_orders
+    action: withhold_reliable_comb_label
+  - code: window_contamination
+    trigger: registered_window_alias_power_above_0.25
+    action: mark_spacing_and_interval_as_limited
+  - code: unstable_background
+    trigger: background_branch_numax_spread_above_0.20_relative
+    action: report_branch_atlas_and_mark_interval_as_limited
+policy:
+  nonexclusive: true
+  unflagged_label: reliable
+  absent_envelope_label: not_detected
+  other_flagged_label: limited
+  missing_or_failed_rows_are_retained: true

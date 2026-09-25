@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/numax_estimate.schema.json",
+  "title": "Stage 6 nu_max estimate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["numax_uHz", "lower_uHz", "upper_uHz", "interval_level", "method", "effective_peak_count", "finite_peak_count", "detection_statistic", "bootstrap_replicates"],
+  "properties": {
+    "numax_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "lower_uHz": {"type": "number", "minimum": 0},
+    "upper_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "interval_level": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "method": {"enum": ["centroid", "weighted_median", "huber"]},
+    "effective_peak_count": {"type": "number", "exclusiveMinimum": 0},
+    "finite_peak_count": {"type": "integer", "minimum": 1},
+    "detection_statistic": {"type": "number", "minimum": 0},
+    "bootstrap_replicates": {"type": "integer", "minimum": 8}
+  }
+}
+

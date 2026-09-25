@@ -23,6 +23,8 @@ data/raw/**
 !data/raw/README.md
 data/derived/**
 !data/derived/README.md
+!data/derived/stage4/
+!data/derived/stage4/**
 data/archive/**
 !data/archive/README.md
 
@@ -35,3 +37,9 @@ results/*
 !results/smoke/**
 !results/stage3/
 !results/stage3/**
+!results/stage4/
+!results/stage4/**
+!results/stage5/
+!results/stage5/**
+!results/stage6/
+!results/stage6/**

@@ -1,0 +1,59 @@
+schema_version: 1
+registry_id: TA-S05-REPRESENTATIONS-1.0
+status: locked_after_development_audit
+locked_on: "2026-09-22"
+authority: docs/science/TDA_REPRESENTATION_SPECIFICATION.md
+coefficient_field: F2
+essential_policy: retain localization; exclude from finite numeric summaries
+representations:
+  - representation_id: REP-LC
+    name: light_curve_filtration
+    domain: observed time path
+    scalar_or_distance: median/MAD-standardized relative flux
+    filtration_direction: superlevel
+    maximum_dimension: 0
+    physical_target: excursion hierarchy, asymmetry, activity/granulation morphology
+    null_family: IAAFT
+    simple_control: peak prominence and distributional summaries
+    later_claim_role: diagnostic only; no p-mode comb claim
+  - representation_id: REP-DELAY
+    name: delay_embedding
+    domain: landmark cloud in delay-coordinate space
+    scalar_or_distance: Euclidean distance after robust coordinate normalization
+    filtration_direction: increasing distance
+    maximum_dimension: 1
+    physical_target: periodicity, coherence, phase information, and lifetime effects
+    null_family: phase-randomized and IAAFT surrogates
+    simple_control: lag autocorrelation and spectral entropy
+    later_claim_role: Stage 7 phase-information test
+  - representation_id: REP-PSD
+    name: psd_superlevels
+    domain: ordered frequency path
+    scalar_or_distance: median/MAD-standardized log(P/B)
+    filtration_direction: superlevel
+    maximum_dimension: 0
+    physical_target: peak hierarchy, envelope location, and stable candidate selection
+    null_family: background-only spectra
+    simple_control: peak prominence and smoothed-envelope centroid
+    later_claim_role: Stage 6 localized PSD estimator
+  - representation_id: REP-MODE
+    name: mode_frequency_cloud
+    domain: normalized frequency-degree point cloud
+    scalar_or_distance: Euclidean distance in Delta-nu and degree-scaled coordinates
+    filtration_direction: increasing distance
+    maximum_dimension: 1
+    physical_target: comb/ridge geometry and degree separation
+    null_family: matched-density randomized mode clouds
+    simple_control: nearest-neighbor geometry
+    later_claim_role: no critical-path role; failed candidate preserved
+  - representation_id: REP-ECHELLE
+    name: cylindrical_echelle
+    domain: radial-order interval times circular phase (I x S1)
+    scalar_or_distance: median/MAD-standardized binned log power
+    filtration_direction: superlevel
+    maximum_dimension: 1
+    physical_target: ridge connectivity and trial-spacing coherence
+    null_family: randomized-comb fields
+    simple_control: circular ridge resultant and ridge contrast
+    later_claim_role: Stage 8 cylindrical topological echelle
+

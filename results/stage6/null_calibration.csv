@@ -1,0 +1,5 @@
+claim,null_family,multiplicity_scope,trial_count,alpha,calibration_realizations,evaluation_realizations,calibration_seed_range,evaluation_seed_range,threshold,evaluation_false_positive_rate,evaluation_false_confidence_rate,detections,status
+envelope_detection_avg1,background_only_matched_gamma_periodogram,maximum_over_frequency,1,0.05,128,128,6110000-6110127,6210000-6210127,9.688245907,0.0546875,0.0546875,7,pass
+envelope_detection_avg2,background_only_matched_gamma_periodogram,maximum_over_frequency,1,0.05,128,128,6120000-6120127,6220000-6220127,5.87641087,0.03125,0.03125,4,pass
+envelope_detection_avg7,background_only_matched_gamma_periodogram,maximum_over_frequency,1,0.05,128,128,6170000-6170127,6270000-6270127,2.51987025,0.0390625,0.0390625,5,pass
+comb_detection,background_only_exponential_periodogram,maximum_over_frequency_and_trial_spacing,57,0.05,128,128,6310000-6310127,6320000-6320127,0.09203787784,0.0625,0.0390625,8,pass

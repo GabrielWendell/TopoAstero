@@ -1,0 +1,6 @@
+representation_id,status,interpretability,calibration,incremental_utility,stability,compute,reason,later_stage,retained_features,incremental_R2,deterministic_operation_units,visual_interest_used
+REP-LC,diagnostic_only,not_primary,pass,pass,pass,pass,"Morphology remains available, but prominence is simpler and no p-mode claim is assigned.",none,,0.004098278901,192,false
+REP-DELAY,retained_exploratory,pass,pass,pass,pass,pass,One loop statistic proceeds only to the Stage 7 PSD-preserving surrogate retain/drop test.,S7,S5-DELAY-H1-MAX,0.1269085303,816,false
+REP-PSD,retained,pass,pass,pass,pass,pass,Exact localization and background-null calibration support the Stage 6 prominence/equivalence audit.,S6,S5-PSD-H0-MAX;S5-PSD-H0-CENTROID,0.2258767945,192,false
+REP-MODE,dropped,pass,pass,fail,pass,pass,Upstream mode extraction and nearest-neighbor redundancy provide no distinct critical-path role.,none,,-0.04709688842,1771,false
+REP-ECHELLE,retained,pass,pass,deferred,pass,pass,Correct periodic topology and localized ridge lifetime support the Stage 8 matched-control test.,S8,S5-ECH-H0-RIDGE,-0.01818647355,252,false

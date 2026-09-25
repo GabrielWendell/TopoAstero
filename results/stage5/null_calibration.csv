@@ -1,0 +1,6 @@
+representation_id,null_family,registered_statistic,calibration_realizations,evaluation_realizations,calibration_seed_range,evaluation_seed_range,threshold_alpha_0_05,evaluation_false_positive_rate,maximum_pilot_statistic,minimum_pilot_pvalue,status
+REP-LC,iaaft,lc_h0_max,64,64,20360922:20360985,30360922:30360985,5.379230094,0,6.588226545,0.01538461538,pass
+REP-DELAY,phase_randomized_and_iaaft,delay_h1_max,64,64,20361922:20361985,30361922:30361985,0.5781873894,0.078125,0.5549572758,0.07692307692,pass
+REP-PSD,background_only,psd_h0_max,64,64,20362922:20362985,30362922:30362985,8.070256685,0.015625,9.488082869,0.01538461538,pass
+REP-MODE,matched_density_randomized_modes,mode_h0_total,64,64,20363922:20363985,30363922:30363985,8.252423315,0.015625,13.81242787,0.01538461538,pass
+REP-ECHELLE,randomized_comb,echelle_ridge_lifetime,64,64,20364922:20364985,30364922:30364985,3.620239347,0.0625,9.172625255,0.01538461538,pass

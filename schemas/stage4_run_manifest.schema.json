@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/stage4_run_manifest.schema.json",
+  "title": "Stage 4 run manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "config_id", "config_path", "config_sha256", "software_version", "style_id", "master_seed", "random_streams", "inputs", "environment", "outputs", "population_data_used", "status"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"const": "TA-S04-LAB-R001"},
+    "config_id": {"const": "TA-STAGE4-SIMULATION-1.0"},
+    "config_path": {"const": "configs/stage4_simulation.yaml"},
+    "config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "software_version": {"const": "TopoAstero-0.5.0"},
+    "style_id": {"const": "TA-PLOT-1.0"},
+    "master_seed": {"type": "integer", "minimum": 1},
+    "random_streams": {"type": "object"},
+    "inputs": {"type": "array", "minItems": 2, "items": {"type": "object"}},
+    "environment": {"type": "object"},
+    "outputs": {"type": "array", "minItems": 10, "items": {"type": "object"}},
+    "population_data_used": {"const": false},
+    "status": {"const": "complete"}
+  }
+}

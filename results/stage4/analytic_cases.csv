@@ -1,0 +1,13 @@
+case_id,construction,expected,observed,absolute_error,tolerance,status,assumptions
+AC-01,constant_finite_H0_bars,0,0,0,0,pass,path graph; zero bars omitted
+AC-02,impulse_essential_birth,1,1,0,0,pass,single isolated maximum; essential class retained
+AC-03,peak_persistence_prominence,2,2,0,0,pass,interior nonessential peaks; same elder-rule saddle
+AC-04,sinusoid_delay_ellipse,0,8.770761895e-15,8.770761895e-15,1e-11,pass,uniform phase sampling; noiseless sinusoid; nondegenerate lag
+AC-05,two_sinusoid_delay_rank,2,2,0,0,pass,incommensurate sampled phases; nonzero amplitudes
+AC-06,comb_true_spacing_ridges,1,1,0,0,pass,finite exact comb; modulo folding
+AC-07,comb_half_spacing_alias,1,1,0,0,pass,Delta/2 alias collapses an exact comb
+AC-08,comb_double_spacing_alias,2,2,0,0,pass,2Delta alias forms even/odd ridges
+AC-09,gaussian_half_width,2.354820045,2.355,0.0001799549691,0.002,pass,unit height; sigma=2; dense symmetric grid
+AC-10,lorentzian_half_width,2,2,0,0.002,pass,unit height; HWHM=2; dense symmetric grid
+AC-11,straight_ridge_mismatch_RMS,3.872983346,3.872983346,2.074171945e-10,1e-09,pass,nine centered orders; unwrapped phase; constant slope error
+AC-12,curved_ridge_RMS,1.773884626,1.773884626,2.220446049e-16,1e-12,pass,quadratic curvature; centered orders; no phase wrapping

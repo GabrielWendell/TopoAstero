@@ -11,6 +11,9 @@ artifacts must additionally use `topoastero.portability` so a file is canonical 
 computed. In particular, use `write_csv_lf`, `write_json_lf`, `write_text_lf`, and
 `repository_relative_posix` rather than relying on host defaults.
 
+The repair dependency order extends through the Stage 4 run manifest and Stage 0--4 deliverable
+indexes. It changes byte seals only; it never reruns the stochastic simulation laboratory.
+
 ## Validation
 
 Run the portability contract directly:

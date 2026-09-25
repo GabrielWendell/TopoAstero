@@ -48,12 +48,34 @@ def test_normalization_repairs_crlf_and_is_idempotent(tmp_path: Path) -> None:
 def test_portability_check_reports_newline_and_manifest_path_defects(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     (root / "results/stage3").mkdir(parents=True)
+    (root / "results/stage4").mkdir(parents=True)
+    (root / "results/stage5").mkdir(parents=True)
     (root / "artifact.csv").write_bytes(b"a,b\r\n1,2\r\n")
     write_json_lf(
         root / "results/stage3/run_manifest.json",
         {"config_path": r"configs\stage3_classical.yaml", "outputs": []},
     )
+    write_json_lf(
+        root / "results/stage4/run_manifest.json",
+        {
+            "config_path": "configs/stage4_simulation.yaml",
+            "inputs": [{"path": r"data\derived\stage4\window.csv"}],
+            "outputs": [{"path": r"results\stage4\table.csv"}],
+        },
+    )
+    write_json_lf(
+        root / "results/stage5/run_manifest.json",
+        {
+            "config_path": r"configs\stage5_tda.yaml",
+            "inputs": [{"path": r"results\stage4\factorial_pilot.csv"}],
+            "outputs": [{"path": r"results\stage5\features.csv"}],
+        },
+    )
 
     issues = repository_portability_issues(root)
     assert any("non-LF tracked text: artifact.csv" in issue for issue in issues)
     assert any("config_path" in issue for issue in issues)
+    assert any("stage4/run_manifest.json:inputs" in issue for issue in issues)
+    assert any("stage4/run_manifest.json:outputs" in issue for issue in issues)
+    assert any("stage5/run_manifest.json:inputs" in issue for issue in issues)
+    assert any("stage5/run_manifest.json:outputs" in issue for issue in issues)

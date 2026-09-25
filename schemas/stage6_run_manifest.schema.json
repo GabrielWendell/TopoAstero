@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/stage6_run_manifest.schema.json",
+  "title": "Stage 6 run manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "status", "software_version", "config_path", "config_sha256", "style_id", "normalization", "coefficient_field", "simulation_cells", "population_data_used", "final_holdout_used", "inputs", "outputs"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"const": "TA-S06-PSD-R001"},
+    "status": {"const": "complete"},
+    "software_version": {"const": "TopoAstero-0.7.0"},
+    "config_path": {"const": "configs/stage6_psd_topology.yaml"},
+    "config_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "style_id": {"const": "TA-PLOT-1.0"},
+    "normalization": {"const": "log_ratio"},
+    "coefficient_field": {"const": "F2"},
+    "simulation_cells": {"const": 72},
+    "population_data_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "inputs": {"type": "array", "minItems": 4, "items": {"$ref": "#/$defs/file"}},
+    "outputs": {"type": "array", "minItems": 15, "items": {"$ref": "#/$defs/file"}}
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "size_bytes"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1, "pattern": "^[^\\\\]+$"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "size_bytes": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

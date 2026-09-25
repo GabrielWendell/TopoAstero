@@ -1,0 +1,17 @@
+case_id,domain,finite_classes,essential_classes,boundary_finite_classes,maximum_absolute_error,mean_absolute_error,control,interpretation,status
+analytic_two_peak,analytic,1,1,0,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+analytic_boundary_peak,analytic,3,1,2,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+analytic_equal_birth_tie,analytic,1,1,0,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+analytic_multiscale,analytic,2,1,0,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-001,locked_realistic_spectrum,79,1,0,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-007,locked_realistic_spectrum,89,1,2,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-013,locked_realistic_spectrum,82,1,2,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-019,locked_realistic_spectrum,87,1,1,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-025,locked_realistic_spectrum,85,1,2,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-031,locked_realistic_spectrum,80,1,1,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-037,locked_realistic_spectrum,85,1,0,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-043,locked_realistic_spectrum,85,1,1,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-049,locked_realistic_spectrum,82,1,2,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-055,locked_realistic_spectrum,79,1,1,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-061,locked_realistic_spectrum,86,1,1,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass
+F4-067,locked_realistic_spectrum,78,1,2,0,0,independent_elder_rule_path_scan,exact_equivalence_organization_only,pass

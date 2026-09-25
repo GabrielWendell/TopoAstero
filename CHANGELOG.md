@@ -5,20 +5,56 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ## [Unreleased]
 
+### Planned
+
+- Stage 7 phase-sensitive delay topology under the locked Stage 5 representation set.
+
+## [0.7.0] - 2026-09-23
+
 ### Added
 
+- Complete Stage 6 normalized-spectrum and exact localized PSD `H0` pipeline with explicit endpoint,
+  tie, essential-class, birth-frequency, and merge-saddle rules.
+- Uncertainty-bearing persistence-centroid, robust `nu_max`, and half/nominal/double comb APIs with
+  topology-free smoothing, external-pySYD adapter, ACF, and PSPS controls.
+- Independent prominence equivalence audit that limits the inferential claim to stable
+  organization/localization rather than presenting path `H0` lifetime as a novel prominence.
+- Nuisance-matched maximum-statistic null calibration, six-branch robustness atlas, five
+  nonexclusive quality flags, paired 72-cell benchmark summaries, and G6 validation.
+- Seven source-backed `TA-PLOT-1.0` figures, five closed schemas, governed notebook, CLI, tests,
+  provenance seals, and deliverable checksums.
+
+## [0.6.0] - 2026-09-22
+
+### Added
+
+- Complete Stage 5 TDA core with exact path H0, deterministic Vietoris--Rips H0/H1, periodic-grid
+  persistence, localized pairs, diagram metrics, compact summaries, and analytic cross-checks.
+- Five-representation audit over all 72 Stage 4 pilot cells with independent null calibration,
+  nine nuisance perturbations, rank/MI redundancy analysis, and matched conditional ablations.
+- Locked four-statistic retained set for Stages 6-8, explicit diagnostic/drop records for light-
+  curve and mode-cloud candidates, and no deletion of negative results.
+- Seven source-backed `TA-PLOT-1.0` figures, schemas, governed notebook, G5 validator and CLI,
+  traceability, run seals, tests, and deliverable checksums.
+
+## [0.5.0] - 2026-09-21
+
+### Added
+
+- Complete Stage 4 analytic-case and stochastic simulation laboratory with 12 exact regressions,
+  a damped-mode/Harvey/observation simulator, and payload-derived Kepler/TESS window templates.
+- Balanced 72-cell factorial pilot, seven nuisance-matched null families, independent max-statistic
+  FWER calibration, and explicit diagnostic-only treatment of pointwise thresholds.
+- Split 27-cell uncertainty coverage map with realization/pipeline components, measured runtime and
+  memory profiles, MCSE-derived repetition budgets, and locked confirmation protocol version 1.0.
+- Six source-backed `TA-PLOT-1.0` figures, schemas, executed audit notebook, G4 validator, CLI/CI
+  enforcement, full traceability, run seals, and deliverable checksums.
 - Cross-platform reproducibility layer with canonical LF text serialization, POSIX manifest paths,
   a repository portability validator, an in-place repair workflow, and CI enforcement.
-- Portable Stage 0--3 checksum/seal regeneration that preserves scientific values while refreshing
+- Portable Stage 0--4 checksum/seal regeneration that preserves scientific values while refreshing
   byte-level identities after newline/path canonicalization.
 - `TA-PLOT-1.0`, a package-level academic plotting contract with asteroseismic semantic colors,
   journal sizing, deterministic source-aware exports, tests, and governance enforcement.
-- Restyled and regenerated all six Stage 3 figures under the shared visual contract without
-  changing any machine-readable scientific result.
-
-### Planned
-
-- Stage 4 simulation and null-calibration engine.
 
 ## [0.4.0] - 2026-09-20
 
