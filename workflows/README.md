@@ -40,3 +40,10 @@ unit-tested; notebooks call the same functions and are never authoritative.
 
 Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
 `TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.
+## Source-tree deliverables versus build artifacts
+
+`dist/` is intentionally ignored by Git. Wheel and sdist files are ephemeral build outputs and must
+not be listed in Stage deliverable checksum manifests, because a clean CI checkout cannot contain
+them. CI verifies package buildability separately with `uv build --out-dir "$RUNNER_TEMP/dist"`.
+Stage manifests seal only version-controlled scientific/software source artifacts.
+

@@ -75,8 +75,6 @@ DELIVERABLES = {
         "CITATION.cff",
         "pyproject.toml",
         "uv.lock",
-        "dist/topoastero-0.6.0-py3-none-any.whl",
-        "dist/topoastero-0.6.0.tar.gz",
         "src/topoastero/__init__.py",
         "src/topoastero/cli.py",
         "registries/experiment_ledger.csv",
