@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.org/schemas/psd_persistence_pair.schema.json",
+  "title": "Localized PSD H0 persistence pair",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pair_id", "dimension", "peak_index", "birth_frequency_uHz", "birth_value", "saddle_index", "saddle_frequency_uHz", "death_value", "persistence", "essential", "boundary_peak"],
+  "properties": {
+    "pair_id": {"type": "string", "pattern": "^PSD-H0-[0-9]{5}$"},
+    "dimension": {"const": 0},
+    "peak_index": {"type": "integer", "minimum": 0},
+    "birth_frequency_uHz": {"type": "number", "minimum": 0},
+    "birth_value": {"type": "number"},
+    "saddle_index": {"type": ["integer", "null"], "minimum": 0},
+    "saddle_frequency_uHz": {"type": ["number", "null"], "minimum": 0},
+    "death_value": {"type": ["number", "null"]},
+    "persistence": {"type": ["number", "null"], "exclusiveMinimum": 0},
+    "essential": {"type": "boolean"},
+    "boundary_peak": {"type": "boolean"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"essential": {"const": true}}, "required": ["essential"]},
+      "then": {
+        "properties": {
+          "saddle_index": {"type": "null"},
+          "saddle_frequency_uHz": {"type": "null"},
+          "death_value": {"type": "null"},
+          "persistence": {"type": "null"}
+        }
+      }
+    }
+  ]
+}
+

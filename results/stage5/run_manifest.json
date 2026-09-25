@@ -1,0 +1,169 @@
+{
+  "coefficient_field": "F2",
+  "config_path": "configs/stage5_tda.yaml",
+  "config_sha256": "bc45e3525c31ad34a88c3032e9fc01e1af284127b916943b3fa503cfe1028711",
+  "created_at_utc": "2026-09-22T23:59:59Z",
+  "final_holdout_used": false,
+  "input_stage": "Stage 4 pilot simulation only",
+  "inputs": [
+    {
+      "path": "configs/stage5_tda.yaml",
+      "sha256": "512eb1b84f932269faf8e392cfefd5b8083b0375963a34ec0cbe7114b52ded25",
+      "size_bytes": 3221
+    },
+    {
+      "path": "registries/stage4_factorial_design.csv",
+      "sha256": "4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34",
+      "size_bytes": 9682
+    },
+    {
+      "path": "results/stage4/factorial_pilot.csv",
+      "sha256": "a1b7ce33b7377d5066e856662068eb7b8f260b4c339aef8db996c0c1aff99e8d",
+      "size_bytes": 20086
+    },
+    {
+      "path": "registries/stage5_representation_parameters.yaml",
+      "sha256": "252c22697d77932a42c52898ac1413a493f8eb12d85c26a1ea84853a2d9a29e7",
+      "size_bytes": 2725
+    },
+    {
+      "path": "registries/stage5_feature_registry.csv",
+      "sha256": "a0898a3793aaddb871e02206463ac68f0d520d5a200fde25225b53d4889b2200",
+      "size_bytes": 4502
+    }
+  ],
+  "master_seed": 20260922,
+  "outputs": [
+    {
+      "path": "registries/stage5_selection.yaml",
+      "sha256": "97b5af7118fe72e2f616be1401cadd10313ecc7444ec57d45ed0f2dbba041100",
+      "size_bytes": 1849
+    },
+    {
+      "path": "reports/stage5/BACKEND_CROSSCHECK_REPORT.md",
+      "sha256": "795e25c44c9e404c182a9764e19e922ddd8dd87fe36a95905a2a5d679d62210f",
+      "size_bytes": 638
+    },
+    {
+      "path": "reports/stage5/figures/ablation_utility.svg",
+      "sha256": "9f7ba8a1a0dabb7c6f9215aa5d1ee1f6e3388c3e602ebe84138737ef9aab3043",
+      "size_bytes": 35320
+    },
+    {
+      "path": "reports/stage5/figures/backend_crosschecks.svg",
+      "sha256": "142834f867d2b161803e909fa121c6c5429bda6ed4ccb37fc4a2fc8d14e760b5",
+      "size_bytes": 66611
+    },
+    {
+      "path": "reports/stage5/figures/localization_atlas.svg",
+      "sha256": "c18d5b42c883e0e934de9280e9c679c423ea42d8657f6f44885848f94389c0f7",
+      "size_bytes": 87115
+    },
+    {
+      "path": "reports/stage5/figures/nuisance_sensitivity.svg",
+      "sha256": "6ff1584fd64416167fb0265ea29692df8143e3c301da89b8b7a4ff4ff052a7cc",
+      "size_bytes": 34065
+    },
+    {
+      "path": "reports/stage5/figures/redundancy_matrix.svg",
+      "sha256": "e8cf7782af6d17311f2c7875cd87d28ebb65974da003e5cd3ed9b908a902daaa",
+      "size_bytes": 59617
+    },
+    {
+      "path": "reports/stage5/figures/representation_atlas.svg",
+      "sha256": "da365270c6de9c91479d18881189519677321370ca297da59dfa650bbcfb0e64",
+      "size_bytes": 172937
+    },
+    {
+      "path": "reports/stage5/figures/selection_summary.svg",
+      "sha256": "5e3f7888c5d678b85007d8ce05c00d45a0994ea25453760fb561ae44b5b01eb4",
+      "size_bytes": 29736
+    },
+    {
+      "path": "reports/stage5/G5_ACCEPTANCE.json",
+      "sha256": "701a630374aa89da4dacfb06f71673367df9f4dec1fc93208829d8a852c685be",
+      "size_bytes": 1330
+    },
+    {
+      "path": "reports/stage5/REDUNDANCY_AND_ABLATION_REPORT.md",
+      "sha256": "6f0720c7802a24db9e5d9d66f207c6f8d04f36eecb26620420e8fa4b408e98fa",
+      "size_bytes": 710
+    },
+    {
+      "path": "reports/stage5/REPRESENTATION_SELECTION_MEMO.md",
+      "sha256": "1a4654bfdbf1a0309f5988e680e26cb69d78830f5eb5c00a82526b49e2630fdd",
+      "size_bytes": 1156
+    },
+    {
+      "path": "reports/stage5/SENSITIVITY_REPORT.md",
+      "sha256": "03e9a8c993657515a646aad3c42659197b223a156ad96ffed612ce8bbf945065",
+      "size_bytes": 692
+    },
+    {
+      "path": "reports/stage5/STAGE5_REPORT.md",
+      "sha256": "a7cde56514ec8f057c7eb4e67d7a767e88f070bd43e498fb3395375f2ccdd8cb",
+      "size_bytes": 1382
+    },
+    {
+      "path": "reports/stage5/TRACEABILITY_MATRIX.md",
+      "sha256": "794c65574d5e9c6cc8cc2c0e397c73634c0a8cbc4a6a711573ce3a7b75673107",
+      "size_bytes": 1343
+    },
+    {
+      "path": "results/stage5/ablation_results.csv",
+      "sha256": "512a2eae540c8e510fb58ecdad53ce822b867c1a9a7f0ff87be5acfafbb1e15b",
+      "size_bytes": 1246
+    },
+    {
+      "path": "results/stage5/backend_crosscheck.csv",
+      "sha256": "10605973bf7a664f42b500a7514a98924d9e693f81e7196429072ab32d4150cb",
+      "size_bytes": 733
+    },
+    {
+      "path": "results/stage5/environment.json",
+      "sha256": "3f544cbc7bbae835db4e507ee459703803dab80be4eff11c68ebe28b42d8289c",
+      "size_bytes": 93
+    },
+    {
+      "path": "results/stage5/localization_catalog.json",
+      "sha256": "5ddc9b863ac78ce86921d4970b5666c1f5a1f8d4146421f839bc190c731d9187",
+      "size_bytes": 25592
+    },
+    {
+      "path": "results/stage5/nuisance_sensitivity.csv",
+      "sha256": "124469be88862767f846eb1f62d3ec5b28852531e67fab6b92b09659b4a5c181",
+      "size_bytes": 1572
+    },
+    {
+      "path": "results/stage5/null_calibration.csv",
+      "sha256": "1e1a4b6cb982358369e8c009f2f6e750246a07f9fbc23ee991dcf9f346ed9e89",
+      "size_bytes": 927
+    },
+    {
+      "path": "results/stage5/redundancy_matrix.csv",
+      "sha256": "ebdcc0299ee86a2fd64cf1082bb48542cc5986a9d1b47180e8af66cb1a9871ac",
+      "size_bytes": 2239
+    },
+    {
+      "path": "results/stage5/redundancy_pairs.csv",
+      "sha256": "54b286d0129ca056ec6dfdea451ec1743eb6fdf275001354a121851e633f4223",
+      "size_bytes": 4465
+    },
+    {
+      "path": "results/stage5/representation_features.csv",
+      "sha256": "154717e2c35db5a122408f2d952c7e02913ba089473706cf11e236d0a8e71837",
+      "size_bytes": 28883
+    },
+    {
+      "path": "results/stage5/selection_scores.csv",
+      "sha256": "06307a547e90ece8b0009f000e8feca0a26cccf1a3d58decba9496190f72e35f",
+      "size_bytes": 1125
+    }
+  ],
+  "population_data_used": false,
+  "run_id": "TA-S05-TDA-R001",
+  "schema_version": 1,
+  "software_version": "TopoAstero-0.6.0",
+  "status": "complete",
+  "style_id": "TA-PLOT-1.0"
+}

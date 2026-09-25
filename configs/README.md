@@ -21,3 +21,8 @@ under a new run ID and a new locked confirmation-protocol version.
 bounded landmark and grid resolutions, independent null streams, nine nuisance audits, redundancy
 and ablation methods, retain/drop criteria, seeds, and G5 tolerances. Any semantic change requires
 a new run ID and selection-registry version before population topology is inspected.
+
+`stage6_psd_topology.yaml` freezes the primary and sensitivity normalizations, exact path-H0 rules,
+`nu_max` interval construction, half/nominal/double comb candidates, ACF/PSPS controls, matched
+maximum-statistic nulls, robustness branches, five quality flags, and G6 limits. Any semantic change
+requires a new run ID and a new pre-execution simulation lock.

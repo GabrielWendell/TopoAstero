@@ -1,0 +1,1142 @@
+[
+  {
+    "birth": 1.814390282325767,
+    "birth_location": [
+      {
+        "normalized_flux": 1.814390282325767,
+        "sample_index": 142,
+        "time_days": 0.0967190315523148
+      }
+    ],
+    "birth_vertices": [
+      142
+    ],
+    "death": -3.4447876317608848,
+    "death_location": [
+      {
+        "normalized_flux": -3.4447876317608848,
+        "sample_index": 50,
+        "time_days": 0.03405599702546296
+      }
+    ],
+    "death_vertices": [
+      50
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-LC-D0-0001",
+    "persistence": 5.259177914086652,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 1.2087940620896724,
+    "birth_location": [
+      {
+        "normalized_flux": 1.2087940620896724,
+        "sample_index": 63,
+        "time_days": 0.042910556252083336
+      }
+    ],
+    "birth_vertices": [
+      63
+    ],
+    "death": -2.369246904488517,
+    "death_location": [
+      {
+        "normalized_flux": -2.369246904488517,
+        "sample_index": 85,
+        "time_days": 0.057895194943287036
+      }
+    ],
+    "death_vertices": [
+      85
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-LC-D0-0002",
+    "persistence": 3.5780409665781896,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 1.764049034587539,
+    "birth_location": [
+      {
+        "normalized_flux": 1.764049034587539,
+        "sample_index": 4,
+        "time_days": 0.002724479762037037
+      }
+    ],
+    "birth_vertices": [
+      4
+    ],
+    "death": -1.7382425402332555,
+    "death_location": [
+      {
+        "normalized_flux": -1.7382425402332555,
+        "sample_index": 17,
+        "time_days": 0.011579038988657408
+      }
+    ],
+    "death_vertices": [
+      17
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-LC-D0-0003",
+    "persistence": 3.5022915748207946,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 0.6095635006409793,
+    "birth_location": [
+      {
+        "normalized_flux": 0.6095635006409793,
+        "sample_index": 189,
+        "time_days": 0.12873166875625
+      }
+    ],
+    "birth_vertices": [
+      189
+    ],
+    "death": -2.605567388500657,
+    "death_location": [
+      {
+        "normalized_flux": -2.605567388500657,
+        "sample_index": 178,
+        "time_days": 0.12123934941064815
+      }
+    ],
+    "death_vertices": [
+      178
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-LC-D0-0004",
+    "persistence": 3.2151308891416366,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 1.8140374067768494,
+    "birth_location": [
+      {
+        "normalized_flux": 1.8140374067768494,
+        "sample_index": 127,
+        "time_days": 0.08650223244467593
+      }
+    ],
+    "birth_vertices": [
+      127
+    ],
+    "death": -1.1607255788369593,
+    "death_location": [
+      {
+        "normalized_flux": -1.1607255788369593,
+        "sample_index": 135,
+        "time_days": 0.09195119196875
+      }
+    ],
+    "death_vertices": [
+      135
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-LC-D0-0005",
+    "persistence": 2.9747629856138085,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 1.3557735161656217,
+    "birth_location": [
+      {
+        "normalized_flux": 1.3557735161656217,
+        "sample_index": 40,
+        "time_days": 0.02724479762037037
+      }
+    ],
+    "birth_vertices": [
+      40
+    ],
+    "death": -1.3482104822205996,
+    "death_location": [
+      {
+        "normalized_flux": -1.3482104822205996,
+        "sample_index": 28,
+        "time_days": 0.01907135833425926
+      }
+    ],
+    "death_vertices": [
+      28
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-LC-D0-0006",
+    "persistence": 2.7039839983862213,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 2.1382238853393005,
+    "birth_location": [
+      {
+        "normalized_flux": 2.1382238853393005,
+        "sample_index": 22,
+        "time_days": 0.014984638691203703
+      }
+    ],
+    "birth_vertices": [
+      22
+    ],
+    "death": null,
+    "death_location": null,
+    "death_vertices": null,
+    "dimension": 0,
+    "essential": true,
+    "pair_id": "REP-LC-D0-0007",
+    "persistence": null,
+    "representation_id": "REP-LC"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": 1.2465623440877531,
+        "coordinate_1": -3.4447876317608848,
+        "landmark_index": 1,
+        "source_index": 38
+      }
+    ],
+    "birth_vertices": [
+      1
+    ],
+    "death": 1.7619194848774744,
+    "death_location": [
+      {
+        "coordinate_0": -3.4447876317608848,
+        "coordinate_1": 0.9905635786906097,
+        "landmark_index": 0,
+        "source_index": 50
+      },
+      {
+        "coordinate_0": -2.605567388500657,
+        "coordinate_1": -0.5586522405202418,
+        "landmark_index": 6,
+        "source_index": 178
+      }
+    ],
+    "death_vertices": [
+      0,
+      6
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-DELAY-D0-0001",
+    "persistence": 1.7619194848774744,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": 1.5268796150940664,
+        "coordinate_1": 1.1919567580488188,
+        "landmark_index": 2,
+        "source_index": 25
+      }
+    ],
+    "birth_vertices": [
+      2
+    ],
+    "death": 1.3271107677776535,
+    "death_location": [
+      {
+        "coordinate_0": 1.5268796150940664,
+        "coordinate_1": 1.1919567580488188,
+        "landmark_index": 2,
+        "source_index": 25
+      },
+      {
+        "coordinate_0": 1.0219380166499914,
+        "coordinate_1": -0.0353398532526773,
+        "landmark_index": 16,
+        "source_index": 89
+      }
+    ],
+    "death_vertices": [
+      2,
+      16
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-DELAY-D0-0002",
+    "persistence": 1.3271107677776535,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": -0.8471358912794552,
+        "coordinate_1": 1.7303344457163587,
+        "landmark_index": 4,
+        "source_index": 141
+      }
+    ],
+    "birth_vertices": [
+      4
+    ],
+    "death": 1.3262388487440033,
+    "death_location": [
+      {
+        "coordinate_0": -0.8471358912794552,
+        "coordinate_1": 1.7303344457163587,
+        "landmark_index": 4,
+        "source_index": 141
+      },
+      {
+        "coordinate_0": 0.47643658510773235,
+        "coordinate_1": 1.814390282325767,
+        "landmark_index": 11,
+        "source_index": 130
+      }
+    ],
+    "death_vertices": [
+      4,
+      11
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-DELAY-D0-0003",
+    "persistence": 1.3262388487440033,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": -0.9740218426012779,
+        "coordinate_1": -1.0052306751906022,
+        "landmark_index": 3,
+        "source_index": 57
+      }
+    ],
+    "birth_vertices": [
+      3
+    ],
+    "death": 1.3199088952641962,
+    "death_location": [
+      {
+        "coordinate_0": 1.2465623440877531,
+        "coordinate_1": -3.4447876317608848,
+        "landmark_index": 1,
+        "source_index": 38
+      },
+      {
+        "coordinate_0": 1.3557735161656217,
+        "coordinate_1": -2.129404641263087,
+        "landmark_index": 13,
+        "source_index": 40
+      }
+    ],
+    "death_vertices": [
+      1,
+      13
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-DELAY-D0-0004",
+    "persistence": 1.3199088952641962,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": -2.605567388500657,
+        "coordinate_1": -0.5586522405202418,
+        "landmark_index": 6,
+        "source_index": 178
+      }
+    ],
+    "birth_vertices": [
+      6
+    ],
+    "death": 1.2391809034724592,
+    "death_location": [
+      {
+        "coordinate_0": -0.9740218426012779,
+        "coordinate_1": -1.0052306751906022,
+        "landmark_index": 3,
+        "source_index": 57
+      },
+      {
+        "coordinate_0": -2.129404641263087,
+        "coordinate_1": -1.4531814538339989,
+        "landmark_index": 14,
+        "source_index": 52
+      }
+    ],
+    "death_vertices": [
+      3,
+      14
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-DELAY-D0-0005",
+    "persistence": 1.2391809034724592,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": 0.47643658510773235,
+        "coordinate_1": 1.814390282325767,
+        "landmark_index": 11,
+        "source_index": 130
+      }
+    ],
+    "birth_vertices": [
+      11
+    ],
+    "death": 1.2210053445381361,
+    "death_location": [
+      {
+        "coordinate_0": 1.5268796150940664,
+        "coordinate_1": 1.1919567580488188,
+        "landmark_index": 2,
+        "source_index": 25
+      },
+      {
+        "coordinate_0": 0.47643658510773235,
+        "coordinate_1": 1.814390282325767,
+        "landmark_index": 11,
+        "source_index": 130
+      }
+    ],
+    "death_vertices": [
+      2,
+      11
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-DELAY-D0-0006",
+    "persistence": 1.2210053445381361,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "coordinate_0": -3.4447876317608848,
+        "coordinate_1": 0.9905635786906097,
+        "landmark_index": 0,
+        "source_index": 50
+      }
+    ],
+    "birth_vertices": [
+      0
+    ],
+    "death": null,
+    "death_location": null,
+    "death_vertices": null,
+    "dimension": 0,
+    "essential": true,
+    "pair_id": "REP-DELAY-D0-0007",
+    "persistence": null,
+    "representation_id": "REP-DELAY"
+  },
+  {
+    "birth": 0.13405906324733918,
+    "birth_location": [
+      {
+        "frequency_index": 191,
+        "frequency_uHz": 1176.0,
+        "normalized_log_power": 0.13405906324733918
+      }
+    ],
+    "birth_vertices": [
+      191
+    ],
+    "death": -4.462862418831571,
+    "death_location": [
+      {
+        "frequency_index": 183,
+        "frequency_uHz": 1161.2565445026178,
+        "normalized_log_power": -4.462862418831571
+      }
+    ],
+    "death_vertices": [
+      183
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-PSD-D0-0001",
+    "persistence": 4.59692148207891,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 1.7009219622751461,
+    "birth_location": [
+      {
+        "frequency_index": 167,
+        "frequency_uHz": 1131.7696335078533,
+        "normalized_log_power": 1.7009219622751461
+      }
+    ],
+    "birth_vertices": [
+      167
+    ],
+    "death": -2.6254867287287618,
+    "death_location": [
+      {
+        "frequency_index": 163,
+        "frequency_uHz": 1124.3979057591623,
+        "normalized_log_power": -2.6254867287287618
+      }
+    ],
+    "death_vertices": [
+      163
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-PSD-D0-0002",
+    "persistence": 4.326408691003908,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 0.09544861294848804,
+    "birth_location": [
+      {
+        "frequency_index": 0,
+        "frequency_uHz": 824.0,
+        "normalized_log_power": 0.09544861294848804
+      }
+    ],
+    "birth_vertices": [
+      0
+    ],
+    "death": -3.8197580337353267,
+    "death_location": [
+      {
+        "frequency_index": 15,
+        "frequency_uHz": 851.6439790575917,
+        "normalized_log_power": -3.8197580337353267
+      }
+    ],
+    "death_vertices": [
+      15
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-PSD-D0-0003",
+    "persistence": 3.915206646683815,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 1.9137331400186615,
+    "birth_location": [
+      {
+        "frequency_index": 140,
+        "frequency_uHz": 1082.0104712041884,
+        "normalized_log_power": 1.9137331400186615
+      }
+    ],
+    "birth_vertices": [
+      140
+    ],
+    "death": -1.9592484723787176,
+    "death_location": [
+      {
+        "frequency_index": 115,
+        "frequency_uHz": 1035.9371727748692,
+        "normalized_log_power": -1.9592484723787176
+      }
+    ],
+    "death_vertices": [
+      115
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-PSD-D0-0004",
+    "persistence": 3.8729816123973793,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 1.4804327604347067,
+    "birth_location": [
+      {
+        "frequency_index": 158,
+        "frequency_uHz": 1115.1832460732985,
+        "normalized_log_power": 1.4804327604347067
+      }
+    ],
+    "birth_vertices": [
+      158
+    ],
+    "death": -2.2415452134928575,
+    "death_location": [
+      {
+        "frequency_index": 149,
+        "frequency_uHz": 1098.5968586387435,
+        "normalized_log_power": -2.2415452134928575
+      }
+    ],
+    "death_vertices": [
+      149
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-PSD-D0-0005",
+    "persistence": 3.7219779739275642,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 1.5920367051572832,
+    "birth_location": [
+      {
+        "frequency_index": 110,
+        "frequency_uHz": 1026.7225130890051,
+        "normalized_log_power": 1.5920367051572832
+      }
+    ],
+    "birth_vertices": [
+      110
+    ],
+    "death": -1.8105569239596162,
+    "death_location": [
+      {
+        "frequency_index": 98,
+        "frequency_uHz": 1004.6073298429319,
+        "normalized_log_power": -1.8105569239596162
+      }
+    ],
+    "death_vertices": [
+      98
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-PSD-D0-0006",
+    "persistence": 3.4025936291168994,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 2.4078036758444967,
+    "birth_location": [
+      {
+        "frequency_index": 62,
+        "frequency_uHz": 938.261780104712,
+        "normalized_log_power": 2.4078036758444967
+      }
+    ],
+    "birth_vertices": [
+      62
+    ],
+    "death": null,
+    "death_location": null,
+    "death_vertices": null,
+    "dimension": 0,
+    "essential": true,
+    "pair_id": "REP-PSD-D0-0007",
+    "persistence": null,
+    "representation_id": "REP-PSD"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 0,
+        "frequency_uHz": 1002.3911691686329,
+        "mode_index": 7,
+        "radial_order_coordinate": 2.1415624320577495
+      }
+    ],
+    "birth_vertices": [
+      7
+    ],
+    "death": 0.7639238283773621,
+    "death_location": [
+      {
+        "degree": 2,
+        "frequency_uHz": 994.1769188450066,
+        "mode_index": 6,
+        "radial_order_coordinate": 1.9922124261736351
+      },
+      {
+        "degree": 1,
+        "frequency_uHz": 1025.94291225112,
+        "mode_index": 8,
+        "radial_order_coordinate": 2.5697759426484255
+      }
+    ],
+    "death_vertices": [
+      6,
+      8
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-MODE-D0-0001",
+    "persistence": 0.7639238283773621,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 0,
+        "frequency_uHz": 947.3104009727793,
+        "mode_index": 4,
+        "radial_order_coordinate": 1.1400939194058661
+      }
+    ],
+    "birth_vertices": [
+      4
+    ],
+    "death": 0.7593506531164961,
+    "death_location": [
+      {
+        "degree": 2,
+        "frequency_uHz": 938.2144950443021,
+        "mode_index": 3,
+        "radial_order_coordinate": 0.974713811615371
+      },
+      {
+        "degree": 1,
+        "frequency_uHz": 969.6470510734426,
+        "mode_index": 5,
+        "radial_order_coordinate": 1.546214830327017
+      }
+    ],
+    "death_vertices": [
+      3,
+      5
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-MODE-D0-0002",
+    "persistence": 0.7593506531164961,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 0,
+        "frequency_uHz": 890.5136519971148,
+        "mode_index": 1,
+        "radial_order_coordinate": 0.1074257562119659
+      }
+    ],
+    "birth_vertices": [
+      1
+    ],
+    "death": 0.7469086057511782,
+    "death_location": [
+      {
+        "degree": 2,
+        "frequency_uHz": 884.6052354054567,
+        "mode_index": 0,
+        "radial_order_coordinate": 0.0
+      },
+      {
+        "degree": 1,
+        "frequency_uHz": 915.1226764461,
+        "mode_index": 2,
+        "radial_order_coordinate": 0.5548625643753315
+      }
+    ],
+    "death_vertices": [
+      0,
+      2
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-MODE-D0-0003",
+    "persistence": 0.7469086057511782,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 0,
+        "frequency_uHz": 1110.1440144908083,
+        "mode_index": 13,
+        "radial_order_coordinate": 4.10070507427912
+      }
+    ],
+    "birth_vertices": [
+      13
+    ],
+    "death": 0.7321914864616278,
+    "death_location": [
+      {
+        "degree": 1,
+        "frequency_uHz": 1080.7252156053705,
+        "mode_index": 11,
+        "radial_order_coordinate": 3.5658178218166148
+      },
+      {
+        "degree": 0,
+        "frequency_uHz": 1110.1440144908083,
+        "mode_index": 13,
+        "radial_order_coordinate": 4.10070507427912
+      }
+    ],
+    "death_vertices": [
+      11,
+      13
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-MODE-D0-0004",
+    "persistence": 0.7321914864616278,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 0,
+        "frequency_uHz": 1054.6987201227405,
+        "mode_index": 10,
+        "radial_order_coordinate": 3.0926088130415232
+      }
+    ],
+    "birth_vertices": [
+      10
+    ],
+    "death": 0.7234322431046918,
+    "death_location": [
+      {
+        "degree": 1,
+        "frequency_uHz": 1025.94291225112,
+        "mode_index": 8,
+        "radial_order_coordinate": 2.5697759426484255
+      },
+      {
+        "degree": 0,
+        "frequency_uHz": 1054.6987201227405,
+        "mode_index": 10,
+        "radial_order_coordinate": 3.0926088130415232
+      }
+    ],
+    "death_vertices": [
+      8,
+      10
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-MODE-D0-0005",
+    "persistence": 0.7234322431046918,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 1,
+        "frequency_uHz": 1138.1414153636981,
+        "mode_index": 14,
+        "radial_order_coordinate": 4.60974872651348
+      }
+    ],
+    "birth_vertices": [
+      14
+    ],
+    "death": 0.7135302655669876,
+    "death_location": [
+      {
+        "degree": 0,
+        "frequency_uHz": 1110.1440144908083,
+        "mode_index": 13,
+        "radial_order_coordinate": 4.10070507427912
+      },
+      {
+        "degree": 1,
+        "frequency_uHz": 1138.1414153636981,
+        "mode_index": 14,
+        "radial_order_coordinate": 4.60974872651348
+      }
+    ],
+    "death_vertices": [
+      13,
+      14
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-MODE-D0-0006",
+    "persistence": 0.7135302655669876,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 0.0,
+    "birth_location": [
+      {
+        "degree": 2,
+        "frequency_uHz": 884.6052354054567,
+        "mode_index": 0,
+        "radial_order_coordinate": 0.0
+      }
+    ],
+    "birth_vertices": [
+      0
+    ],
+    "death": null,
+    "death_location": null,
+    "death_vertices": null,
+    "dimension": 0,
+    "essential": true,
+    "pair_id": "REP-MODE-D0-0007",
+    "persistence": null,
+    "representation_id": "REP-MODE"
+  },
+  {
+    "birth": 2.602129195936509,
+    "birth_location": [
+      {
+        "field_value": 2.602129195936509,
+        "phase": 0.041666666666666664,
+        "pixel_index": 12,
+        "radial_order_coordinate": 1.75
+      }
+    ],
+    "birth_vertices": [
+      12
+    ],
+    "death": 0.10341575631503515,
+    "death_location": [
+      {
+        "field_value": 0.6698430704679317,
+        "phase": 0.625,
+        "pixel_index": 55,
+        "radial_order_coordinate": 5.25
+      },
+      {
+        "field_value": 0.10341575631503515,
+        "phase": 0.7083333333333334,
+        "pixel_index": 56,
+        "radial_order_coordinate": 5.25
+      }
+    ],
+    "death_vertices": [
+      55,
+      56
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-ECHELLE-D0-0001",
+    "persistence": 2.498713439621474,
+    "representation_id": "REP-ECHELLE"
+  },
+  {
+    "birth": 2.080778999365418,
+    "birth_location": [
+      {
+        "field_value": 2.080778999365418,
+        "phase": 0.9583333333333334,
+        "pixel_index": 35,
+        "radial_order_coordinate": 2.916666666666667
+      }
+    ],
+    "birth_vertices": [
+      35
+    ],
+    "death": 0.11654874183818995,
+    "death_location": [
+      {
+        "field_value": 0.11654874183818995,
+        "phase": 0.041666666666666664,
+        "pixel_index": 24,
+        "radial_order_coordinate": 2.916666666666667
+      },
+      {
+        "field_value": 2.080778999365418,
+        "phase": 0.9583333333333334,
+        "pixel_index": 35,
+        "radial_order_coordinate": 2.916666666666667
+      }
+    ],
+    "death_vertices": [
+      24,
+      35
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-ECHELLE-D0-0002",
+    "persistence": 1.9642302575272281,
+    "representation_id": "REP-ECHELLE"
+  },
+  {
+    "birth": 1.6859531181279854,
+    "birth_location": [
+      {
+        "field_value": 1.6859531181279854,
+        "phase": 0.7083333333333334,
+        "pixel_index": 8,
+        "radial_order_coordinate": 0.5833333333333334
+      }
+    ],
+    "birth_vertices": [
+      8
+    ],
+    "death": 0.4574757461028855,
+    "death_location": [
+      {
+        "field_value": 0.4574757461028855,
+        "phase": 0.7083333333333334,
+        "pixel_index": 20,
+        "radial_order_coordinate": 1.75
+      },
+      {
+        "field_value": 1.7952723571004736,
+        "phase": 0.7083333333333334,
+        "pixel_index": 32,
+        "radial_order_coordinate": 2.916666666666667
+      }
+    ],
+    "death_vertices": [
+      20,
+      32
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-ECHELLE-D0-0003",
+    "persistence": 1.2284773720250999,
+    "representation_id": "REP-ECHELLE"
+  },
+  {
+    "birth": 0.679679287245703,
+    "birth_location": [
+      {
+        "field_value": 0.679679287245703,
+        "phase": 0.875,
+        "pixel_index": 46,
+        "radial_order_coordinate": 4.083333333333334
+      }
+    ],
+    "birth_vertices": [
+      46
+    ],
+    "death": -0.5203953232681662,
+    "death_location": [
+      {
+        "field_value": -0.5203953232681662,
+        "phase": 0.7916666666666666,
+        "pixel_index": 33,
+        "radial_order_coordinate": 2.916666666666667
+      },
+      {
+        "field_value": 0.679679287245703,
+        "phase": 0.875,
+        "pixel_index": 46,
+        "radial_order_coordinate": 4.083333333333334
+      }
+    ],
+    "death_vertices": [
+      33,
+      46
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-ECHELLE-D0-0004",
+    "persistence": 1.200074610513869,
+    "representation_id": "REP-ECHELLE"
+  },
+  {
+    "birth": 1.6867835593569078,
+    "birth_location": [
+      {
+        "field_value": 1.6867835593569078,
+        "phase": 0.20833333333333334,
+        "pixel_index": 14,
+        "radial_order_coordinate": 1.75
+      }
+    ],
+    "birth_vertices": [
+      14
+    ],
+    "death": 0.72623312681268,
+    "death_location": [
+      {
+        "field_value": 0.72623312681268,
+        "phase": 0.125,
+        "pixel_index": 13,
+        "radial_order_coordinate": 1.75
+      },
+      {
+        "field_value": 1.6867835593569078,
+        "phase": 0.20833333333333334,
+        "pixel_index": 14,
+        "radial_order_coordinate": 1.75
+      }
+    ],
+    "death_vertices": [
+      13,
+      14
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-ECHELLE-D0-0005",
+    "persistence": 0.9605504325442278,
+    "representation_id": "REP-ECHELLE"
+  },
+  {
+    "birth": 0.8057691619833685,
+    "birth_location": [
+      {
+        "field_value": 0.8057691619833685,
+        "phase": 0.2916666666666667,
+        "pixel_index": 3,
+        "radial_order_coordinate": 0.5833333333333334
+      }
+    ],
+    "birth_vertices": [
+      3
+    ],
+    "death": 0.04850902000939979,
+    "death_location": [
+      {
+        "field_value": 0.04850902000939979,
+        "phase": 0.20833333333333334,
+        "pixel_index": 2,
+        "radial_order_coordinate": 0.5833333333333334
+      },
+      {
+        "field_value": 1.6867835593569078,
+        "phase": 0.20833333333333334,
+        "pixel_index": 14,
+        "radial_order_coordinate": 1.75
+      }
+    ],
+    "death_vertices": [
+      2,
+      14
+    ],
+    "dimension": 0,
+    "essential": false,
+    "pair_id": "REP-ECHELLE-D0-0006",
+    "persistence": 0.7572601419739686,
+    "representation_id": "REP-ECHELLE"
+  },
+  {
+    "birth": 2.7230043535144803,
+    "birth_location": [
+      {
+        "field_value": 2.7230043535144803,
+        "phase": 0.7083333333333334,
+        "pixel_index": 44,
+        "radial_order_coordinate": 4.083333333333334
+      }
+    ],
+    "birth_vertices": [
+      44
+    ],
+    "death": null,
+    "death_location": null,
+    "death_vertices": null,
+    "dimension": 0,
+    "essential": true,
+    "pair_id": "REP-ECHELLE-D0-0007",
+    "persistence": null,
+    "representation_id": "REP-ECHELLE"
+  }
+]

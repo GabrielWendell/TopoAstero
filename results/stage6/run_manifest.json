@@ -1,0 +1,188 @@
+{
+  "coefficient_field": "F2",
+  "config_path": "configs/stage6_psd_topology.yaml",
+  "config_sha256": "8210aa9158bee4bb8ff40ea8c9e66abd74993fa4f73bf04ff6c4500223c77fc7",
+  "final_holdout_used": false,
+  "inputs": [
+    {
+      "path": "configs/stage6_psd_topology.yaml",
+      "sha256": "079412845ada670c45fdd958bd83dce919ae07ebde2b379cd30c6e2fdb5c0baf",
+      "size_bytes": 3264
+    },
+    {
+      "path": "registries/stage6_normalization_contract.yaml",
+      "sha256": "cb84a86bb4d14ae2a0d5589ad4d008d7c4cad0f0e0bcc8dd801cf3c388775485",
+      "size_bytes": 1252
+    },
+    {
+      "path": "registries/stage6_quality_flags.yaml",
+      "sha256": "7d6ae02bad9e95c47de5a9b20f8604365332fb78ec97631ff35d456fb018b313",
+      "size_bytes": 970
+    },
+    {
+      "path": "registries/stage6_simulation_lock.yaml",
+      "sha256": "dbf5b4bf3a40e36c5196b3d74d90fb7eb1d8ecfeaec452bb93f2421595b805f6",
+      "size_bytes": 797
+    },
+    {
+      "path": "registries/stage4_factorial_design.csv",
+      "sha256": "4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34",
+      "size_bytes": 9682
+    },
+    {
+      "path": "results/stage4/factorial_pilot.csv",
+      "sha256": "a1b7ce33b7377d5066e856662068eb7b8f260b4c339aef8db996c0c1aff99e8d",
+      "size_bytes": 20086
+    },
+    {
+      "path": "registries/stage5_selection.yaml",
+      "sha256": "97b5af7118fe72e2f616be1401cadd10313ecc7444ec57d45ed0f2dbba041100",
+      "size_bytes": 1849
+    }
+  ],
+  "normalization": "log_ratio",
+  "outputs": [
+    {
+      "path": "results/stage6/comb_benchmark.csv",
+      "sha256": "09167a7a0b6a251466b9f7d9378c1125bbe3c2fa1234e72a69424ca35fb26780",
+      "size_bytes": 23207
+    },
+    {
+      "path": "results/stage6/comb_candidates.csv",
+      "sha256": "c643e23c215614eda9a4520644a985b3f4c489960e7ce61529151f2aca2a10dc",
+      "size_bytes": 22136
+    },
+    {
+      "path": "results/stage6/environment.json",
+      "sha256": "7d8711dfa9d23863416b6e87c18997b866547fb81e03061c31c6d34933c3ef88",
+      "size_bytes": 170
+    },
+    {
+      "path": "results/stage6/equivalence_audit.csv",
+      "sha256": "213a5715c53b0455cb944e59f6c365141a4d95e41be8756e18ea0bc6d3834919",
+      "size_bytes": 2019
+    },
+    {
+      "path": "results/stage6/normalization_audit.csv",
+      "sha256": "62377a1d2726bdb273d4d5c503453d500ff906f1a22aa6e5dc9819a843650303",
+      "size_bytes": 535
+    },
+    {
+      "path": "results/stage6/null_calibration.csv",
+      "sha256": "c4202b5da0220be127d90131d00e76b49de1baa4b16d700c784d7bc006c390c4",
+      "size_bytes": 942
+    },
+    {
+      "path": "results/stage6/null_draw_maxima.csv",
+      "sha256": "74fe22346ba3a2af82f87d59e650500d68da6473695c863b91fe9f4ad376da4a",
+      "size_bytes": 40031
+    },
+    {
+      "path": "results/stage6/numax_benchmark.csv",
+      "sha256": "c0f6c11b6e20d3b0588421dd96e292489357c2ecff7df48c08455ab5c7846c5d",
+      "size_bytes": 42396
+    },
+    {
+      "path": "results/stage6/numax_summary.csv",
+      "sha256": "b9ae1f9c7e74736422b084844b195337b08533265b860301b35fa4fd3801705f",
+      "size_bytes": 3690
+    },
+    {
+      "path": "results/stage6/peak_diagram.json",
+      "sha256": "bd73818fdbc8bd84285c9331b9c51b67a43dd2d674e50bfa9fefc91f07b0bc16",
+      "size_bytes": 31785
+    },
+    {
+      "path": "results/stage6/pysyd_adapter_audit.json",
+      "sha256": "52e03b7b5e2b990ed78fd25cedbc256fc03ab8e25921ba7ee04842a9ab232075",
+      "size_bytes": 354
+    },
+    {
+      "path": "results/stage6/quality_flags.csv",
+      "sha256": "6f2f3fa68eece58baa3fff92699d6c92de51a18f371fd0f78770e51ece32fb0b",
+      "size_bytes": 10298
+    },
+    {
+      "path": "results/stage6/robustness_atlas.csv",
+      "sha256": "160e5be3502be681a050a27f4e89aee72062562651a2278312cd857e44fa13cb",
+      "size_bytes": 7387
+    },
+    {
+      "path": "reports/stage6/G6_ACCEPTANCE.json",
+      "sha256": "f95cfe6cd558e971ff86b2267a4d3d8bf36c602b77d33a429a933937311eacf6",
+      "size_bytes": 1288
+    },
+    {
+      "path": "reports/stage6/EQUIVALENCE_AND_ABLATION_REPORT.md",
+      "sha256": "0c3ad39eb5d9089fc0f95d9c2b612111682864693779896d3819d54b249530b5",
+      "size_bytes": 806
+    },
+    {
+      "path": "reports/stage6/NULL_CALIBRATION_AND_QC_REPORT.md",
+      "sha256": "8a3b6f7c815f0d8c55f09bfad1e4b721c6b01a9fdec4dfeecb4376f6773a03fd",
+      "size_bytes": 605
+    },
+    {
+      "path": "reports/stage6/ROBUSTNESS_ATLAS.md",
+      "sha256": "fd5a5e44eceb2bff9b2ea33c616066c42e54431c2f82b24217a368b6b6caa390",
+      "size_bytes": 449
+    },
+    {
+      "path": "reports/stage6/TRACEABILITY_MATRIX.md",
+      "sha256": "228cd18913077c08b8197e3307b46956d182da21d8598964e301fbd410033b6b",
+      "size_bytes": 1345
+    },
+    {
+      "path": "reports/stage6/STAGE6_REPORT.md",
+      "sha256": "cf08fe34b86c51b0e9fa368e8e294fe2d53a2de331515a14d62a2dfe95ee6012",
+      "size_bytes": 1166
+    },
+    {
+      "path": "reports/stage6/figures/comb_alias_atlas.svg",
+      "sha256": "7f23f65f300b0f9692e08635e0d0562397d8307fd255e5a44e690838f7de5b08",
+      "size_bytes": 22188
+    },
+    {
+      "path": "reports/stage6/figures/normalized_spectrum_and_diagram.svg",
+      "sha256": "32f7d94ecbfee1f194b022d47a8152c1140e9132d92609d4a7e42895d441822e",
+      "size_bytes": 93519
+    },
+    {
+      "path": "reports/stage6/figures/null_calibration.svg",
+      "sha256": "b4bf3fdf39449d1508b9aa6fd9807b53ace3167cc7a7a633465b72d5f37fef8b",
+      "size_bytes": 62064
+    },
+    {
+      "path": "reports/stage6/figures/numax_comparison.svg",
+      "sha256": "22e037e2b3a69336c413ad13923bb222dd9535b1194d156e45074c79bbb5aacf",
+      "size_bytes": 60368
+    },
+    {
+      "path": "reports/stage6/figures/prominence_equivalence.svg",
+      "sha256": "dc6cc66bdddb9f069e38bb82e17c437cc5aaceafd7f94176aab3bb5c311fcde9",
+      "size_bytes": 28372
+    },
+    {
+      "path": "reports/stage6/figures/quality_flags.svg",
+      "sha256": "e7aee4c479ec17d7cc5bec9fad2e256d9b4d0e185f06cd030208d572b5b3c896",
+      "size_bytes": 31293
+    },
+    {
+      "path": "reports/stage6/figures/robustness_atlas.svg",
+      "sha256": "2aafb334b992b06f1f572e9cb0f22834a47aef23548872fec6f94cb3d671959d",
+      "size_bytes": 41508
+    },
+    {
+      "path": "notebooks/06_psd_persistence.ipynb",
+      "sha256": "a959991575dcdcfba3c616b5f6a5506266544860480a6342f9a9f85308796f5a",
+      "size_bytes": 1086
+    }
+  ],
+  "population_data_used": false,
+  "run_id": "TA-S06-PSD-R001",
+  "schema_version": 1,
+  "simulation_cells": 72,
+  "software_version": "TopoAstero-0.7.0",
+  "status": "complete",
+  "style_id": "TA-PLOT-1.0"
+}

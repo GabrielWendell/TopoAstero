@@ -1,0 +1,36 @@
+contract_id: TA-S6-SPECTRUM-1.0
+status: locked
+locked_on: "2026-09-22"
+primary_method: log_ratio
+methods:
+  - method: log_ratio
+    formula: log(P/B)
+    role: primary
+    invariance: multiplicative_power_and_background_scale
+    background_uncertainty: propagated_by_registered_branches
+  - method: ratio
+    formula: P/B
+    role: sensitivity
+    invariance: multiplicative_power_and_background_scale
+    background_uncertainty: propagated_by_registered_branches
+  - method: whitened_residual
+    formula: P/B-1
+    role: sensitivity
+    invariance: multiplicative_power_and_background_scale
+    background_uncertainty: propagated_by_registered_branches
+  - method: uncertainty_zscore
+    formula: (P-B)/sqrt(B^2+sigma_B^2)
+    role: sensitivity
+    invariance: joint_scale_when_sigma_B_scales
+    background_uncertainty: explicit_sigma_B
+input_contract:
+  frequency_unit: uHz
+  power_and_background: finite_strictly_positive_equal_length
+  frequency_axis: finite_strictly_increasing
+  minimum_bins: 5
+  background_source: registered_fit_or_posterior_branch
+forbidden:
+  - clipping_nonpositive_values_without_a_reason_code
+  - choosing_normalization_after_viewing_confirmation_performance
+  - treating_normalization_sensitivity_as_independent_stars
+

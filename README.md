@@ -4,13 +4,15 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.6.0 implements Stages 0-5 through the TDA representation-audit gate. It contains
+Version 0.7.0 implements Stages 0-6 through persistent topology of the power spectrum. It contains
 traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
 independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
 calibrated null/coverage maps, a localized dependency-light TDA core, a locked compact statistic
-set, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher payloads.
+set, exact PSD peak/saddle localization, uncertainty-bearing `nu_max` and comb APIs, reason-coded
+quality control, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher
+payloads.
 
-## Reproduce Stages 0-5
+## Reproduce Stages 0-6
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -24,6 +26,7 @@ uv run topoastero validate-stage2 --root .
 uv run topoastero validate-stage3 --root .
 uv run topoastero validate-stage4 --root .
 uv run topoastero validate-stage5 --root .
+uv run topoastero validate-stage6 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -51,6 +54,10 @@ Stage 5 validation checks the exact path/Rips/periodic-grid core, six backend cr
 candidate representations on the same 72-cell panel, physical localization, five independent null
 calibrations, nine nuisance audits, redundancy/ablation evidence, the locked retained set, G5, and
 all earlier contracts.
+Stage 6 validation checks four normalized-spectrum contracts, exact localized PSD `H0`, independent
+prominence equivalence, three paired `nu_max` methods, explicit half/nominal/double comb candidates,
+ACF/PSPS ablations, nuisance-matched maximum-statistic nulls, six robustness branches, five
+reason-coded flags, G6, and all earlier contracts.
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -168,6 +175,23 @@ The detailed mapping and gate record are in
 [`reports/stage5/TRACEABILITY_MATRIX.md`](reports/stage5/TRACEABILITY_MATRIX.md) and
 [`reports/stage5/G5_ACCEPTANCE.json`](reports/stage5/G5_ACCEPTANCE.json).
 
+## Stage 6 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T6.1 Normalization | spectrum contract and four-method registry | primary `log(P/B)` plus ratio, residual, and uncertainty-aware audits |
+| T6.2 Exact `H0` | localized peak API and pair schema | endpoint births, one essential class, birth and merge-saddle frequencies |
+| T6.3 Prominence | independent elder-rule path scan | analytic/realistic equality table and equivalence-limited claim |
+| T6.4 `nu_max` | centroid/median/Huber API with intervals | paired smoothing and explicitly labeled pySYD-style controls |
+| T6.5 Comb | persistence difference/autocorrelation scores | half/nominal/double candidates plus ACF and PSPS controls |
+| T6.6 Significance | nuisance-matched maximum-statistic nulls | independent FPR and false-confidence evaluation |
+| T6.7 Robustness | six-branch recomputation atlas | diagram distance, estimator shift, and comb-winner changes |
+| T6.8 Quality | five-code locked QC registry | reliable, limited, and not-detected rows retained in full |
+
+The detailed mapping and gate record are in
+[`reports/stage6/TRACEABILITY_MATRIX.md`](reports/stage6/TRACEABILITY_MATRIX.md) and
+[`reports/stage6/G6_ACCEPTANCE.json`](reports/stage6/G6_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -179,7 +203,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage5/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage6/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -226,11 +250,16 @@ explain those records but do not silently override them.
   level advantage over classical estimators. That question remains behind the locked confirmation
   and holdout rules.
 - Stage 5 uses simulation-development data only. Its delay statistic is exploratory, its PSD
-  statistics still require the Stage 6 prominence/equivalence audit, and its echelle ridge lifetime
-  still requires the Stage 8 graph-only/alias tests; G5 is not an astrophysical performance claim.
+  statistics entered the Stage 6 prominence/equivalence audit, and its echelle ridge lifetime still
+  requires the Stage 8 graph-only/alias tests; G5 is not an astrophysical performance claim.
+- Stage 6 finds exact finite path-`H0`/prominence equivalence and therefore retains persistence only
+  as an organization/localization layer for this representation. The offline pySYD-style comparator
+  is not an external pySYD execution; genuine pySYD output is required before a population claim.
+- Stage 6 uses locked simulations only. Its G6 result calibrates reliability and failure return; it
+  does not substitute for the unopened Kepler population holdout.
 
 ## License and citation
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 4.
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 6.

@@ -1,0 +1,98 @@
+schema_version: 1
+config_id: TA-STAGE6-PSD-1.0
+experiment_id: TA-S06-PSD-R001
+frozen_on: "2026-09-22"
+software_version: TopoAstero-0.7.0
+master_seed: 20260923
+data_scope:
+  design: registries/stage4_factorial_design.csv
+  stage4_execution: results/stage4/factorial_pilot.csv
+  stage5_selection: registries/stage5_selection.yaml
+  expected_cells: 72
+  role: locked_simulation_confirmation
+  population_data_allowed: false
+  final_holdout_allowed: false
+  independent_stage6_seed_offset: 600000
+normalization:
+  primary: log_ratio
+  sensitivities: [ratio, whitened_residual, uncertainty_zscore]
+  formula_primary: log(P/B)
+  posterior_background_sigma_fraction: 0.10
+  positivity_policy: reject_nonpositive_power_or_background
+persistence:
+  backend: exact_path_H0
+  direction: superlevel
+  coefficient_field: F2
+  boundary_rule: endpoints_are_valid_peak_births
+  tie_rule: larger_birth_then_lower_frequency_index_is_older
+  essential_rule: retain_localization_exclude_numeric_summaries
+  finite_class_location: birth_frequency_and_merge_saddle_frequency
+  prominence_control: independent_elder_rule_path_scan
+numax:
+  primary_location: persistence_weighted_centroid
+  sensitivities: [weighted_median, huber]
+  search_half_width_dnu: 3.0
+  minimum_persistence: 0.0
+  interval_level: 0.95
+  predictive_draws: 48
+  minimum_interval_half_width_dnu: 0.35
+  catastrophic_error_dnu: 0.50
+  controls:
+    - smoothed_envelope
+    - pysyd_style_gaussian_envelope
+    - external_pysyd_result_adapter
+  external_pysyd_execution_required_for_population_claim: true
+comb:
+  scaling_relation_diagnostic: dnu=0.294*numax^0.772
+  trial_min_uHz: 20.0
+  trial_max_uHz: 300.0
+  trial_count: 57
+  fractional_kernel_bandwidth: 0.06
+  alternatives: [half, nominal, double]
+  ambiguity_score_ratio: 1.15
+  ambiguity_also_if: [topology_free_controls_disagree, winner_on_trial_boundary]
+  correct_spacing_relative_tolerance: 0.15
+  controls: [acf, psps]
+  force_single_spacing: false
+null_calibration:
+  calibration_realizations: 128
+  evaluation_realizations: 128
+  alpha: 0.05
+  threshold: higher_empirical_quantile_of_per_realization_maximum
+  pvalue: plus_one_upper_tail
+  scope:
+    envelope: maximum_over_frequency_conditioned_on_registered_periodogram_averages
+    comb: maximum_over_frequency_and_trial_spacing
+  independent_seed_streams: true
+robustness:
+  factors:
+    - background_posterior_low
+    - background_posterior_high
+    - background_model_slope
+    - smoothing
+    - resolution
+    - window_features
+  representative_cells: 12
+  numax_shift_limit_dnu: 0.40
+  diagram_distance_reported: true
+quality:
+  flags:
+    - absent_envelope
+    - alias_ambiguity
+    - insufficient_orders
+    - window_contamination
+    - unstable_background
+  minimum_visible_orders: 5
+  maximum_window_alias_power: 0.25
+  maximum_background_relative_spread: 0.20
+  flags_are_reason_coded_and_nonexclusive: true
+gate:
+  maximum_null_false_positive_rate: 0.08
+  maximum_null_false_confidence_rate: 0.08
+  minimum_numax_interval_coverage: 0.85
+  maximum_numax_interval_coverage: 1.00
+  maximum_reliable_catastrophic_rate: 0.10
+  minimum_alias_failure_flag_capture: 0.85
+  maximum_prominence_equivalence_error: 1.0e-10
+  require_topology_free_ablation: true
+  allow_equivalence_limited_claim: true

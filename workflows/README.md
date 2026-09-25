@@ -31,8 +31,12 @@ unit-tested; notebooks call the same functions and are never authoritative.
   nuisance audits, redundancy/ablation analysis, localization figures, reports, and run manifest.
 - `build_stage5_manifest.py`: rebuilds the Stage 5 deliverable checksum index.
 - `validate_stage5.py`: validates T5.1-T5.8, G5, and all earlier-stage regressions offline.
+- `run_stage6_psd_topology.py`: executes normalized PSD persistence, prominence equivalence,
+  uncertainty-bearing `nu_max`/comb comparisons, null calibration, robustness, QC, and figures.
+- `build_stage6_manifest.py`: rebuilds the Stage 6 deliverable checksum index.
+- `validate_stage6.py`: validates T6.1-T6.8, G6, and all earlier-stage regressions offline.
 - `repair_portability.py`: canonicalizes tracked text to LF, converts serialized repository paths to
-  POSIX form, and refreshes dependent Stage 0--5 checksums/seals without rerunning science.
+  POSIX form, and refreshes dependent Stage 0--6 checksums/seals without rerunning science.
 
 Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
 `TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.

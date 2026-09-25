@@ -1,0 +1,10 @@
+audit_id,nuisance,representation_id,baseline_statistic,perturbed_statistic,relative_change,bottleneck_distance,acceptance_limit,interpretation,status
+NS-01,amplitude_scaling,REP-LC,5.259177914,5.259177914,1.688816074e-16,0,1e-10,robust normalization must remove affine amplitude/offset; monotone warp is a registered sensitivity,pass
+NS-02,additive_offset,REP-LC,5.259177914,5.259177914,1.013289644e-15,0,1e-10,robust normalization must remove affine amplitude/offset; monotone warp is a registered sensitivity,pass
+NS-03,monotone_transform,REP-LC,5.259177914,7.431334122,0.4130220052,1.574529837,0.6,robust normalization must remove affine amplitude/offset; monotone warp is a registered sensitivity,pass
+NS-04,cadence,REP-DELAY,0.4046333023,0.4733120249,0.1697307715,0.169259499,0.6,registered delay-coordinate convergence sensitivity,pass
+NS-05,sample_density,REP-DELAY,0.4046333023,0.4115062836,0.01698570358,0.2057531418,0.6,registered delay-coordinate convergence sensitivity,pass
+NS-06,embedding_dimension,REP-DELAY,0.4046333023,0.364291324,0.09970009412,0.2023166511,0.6,registered delay-coordinate convergence sensitivity,pass
+NS-07,smoothing,REP-PSD,4.596921482,3.078409523,0.3303323681,1.446379181,0.6,Stage 6 must propagate the smoothing branch,pass
+NS-08,grid_resolution,REP-ECHELLE,2.49871344,2.303717192,0.07803865965,0.5877170479,0.6,registered periodic-grid convergence sensitivity,pass
+NS-09,periodic_boundary,REP-ECHELLE,0,1,1e+12,1,expected_nonzero_topology_change,the cylindrical domain must add exactly one essential H1 class relative to a disk,pass

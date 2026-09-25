@@ -1,0 +1,15 @@
+{
+  "adapter_input": {
+    "numax": 2203.7,
+    "numax_err": 6.5
+  },
+  "adapter_output": {
+    "numax_err_uHz": 6.5,
+    "numax_uHz": 2203.7
+  },
+  "external_package_executed": false,
+  "population_claim_requires_external_execution": true,
+  "status": "pass",
+  "style_control_is_external_pysyd": false,
+  "style_control_label": "pysyd_style_control"
+}

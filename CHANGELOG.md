@@ -7,7 +7,22 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ### Planned
 
-- Stage 6 persistent topology of the power spectrum under the locked Stage 5 representation set.
+- Stage 7 phase-sensitive delay topology under the locked Stage 5 representation set.
+
+## [0.7.0] - 2026-09-23
+
+### Added
+
+- Complete Stage 6 normalized-spectrum and exact localized PSD `H0` pipeline with explicit endpoint,
+  tie, essential-class, birth-frequency, and merge-saddle rules.
+- Uncertainty-bearing persistence-centroid, robust `nu_max`, and half/nominal/double comb APIs with
+  topology-free smoothing, external-pySYD adapter, ACF, and PSPS controls.
+- Independent prominence equivalence audit that limits the inferential claim to stable
+  organization/localization rather than presenting path `H0` lifetime as a novel prominence.
+- Nuisance-matched maximum-statistic null calibration, six-branch robustness atlas, five
+  nonexclusive quality flags, paired 72-cell benchmark summaries, and G6 validation.
+- Seven source-backed `TA-PLOT-1.0` figures, five closed schemas, governed notebook, CLI, tests,
+  provenance seals, and deliverable checksums.
 
 ## [0.6.0] - 2026-09-22
 
