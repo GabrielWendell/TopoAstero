@@ -279,6 +279,40 @@ def _repair_stage6_manifest(root: Path) -> int:
     return changed
 
 
+def _repair_stage7_manifest(root: Path) -> int:
+    path = root / "results/stage7/run_manifest.json"
+    if not path.is_file():
+        return 0
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    changed = 0
+    config_path = serialized_posix_path(str(payload.get("config_path", "")))
+    if payload.get("config_path") != config_path:
+        payload["config_path"] = config_path
+        changed += 1
+    for collection in ("inputs", "outputs"):
+        records = payload.get(collection)
+        if not isinstance(records, list):
+            continue
+        for record in records:
+            if not isinstance(record, dict):
+                continue
+            portable = serialized_posix_path(str(record.get("path", "")))
+            target = root / portable
+            if not target.is_file():
+                raise FileNotFoundError(target)
+            updates: dict[str, Any] = {
+                "path": portable,
+                "size_bytes": target.stat().st_size,
+                "sha256": sha256_file(target),
+            }
+            for key, value in updates.items():
+                if record.get(key) != value:
+                    record[key] = value
+                    changed += 1
+    write_json_lf(path, payload)
+    return changed
+
+
 def repair(root: Path) -> dict[str, Any]:
     repository = root.resolve()
     normalized = normalize_tracked_text_files(repository)
@@ -295,9 +329,10 @@ def repair(root: Path) -> dict[str, Any]:
     refreshed["stage4_run_manifest"] = _repair_stage4_manifest(repository)
     refreshed["stage5_run_manifest"] = _repair_stage5_manifest(repository)
     refreshed["stage6_run_manifest"] = _repair_stage6_manifest(repository)
+    refreshed["stage7_run_manifest"] = _repair_stage7_manifest(repository)
 
     # Rebuild stage checksum indexes last, because they cover many of the files changed above.
-    for stage in range(7):
+    for stage in range(8):
         key = f"stage{stage}_deliverable_manifest"
         refreshed[key] = _refresh_checksum_manifest(
             repository / f"reports/stage{stage}/deliverable_manifest.csv", repository

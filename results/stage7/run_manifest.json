@@ -1,0 +1,192 @@
+{
+  "coefficient_field": "F2",
+  "config_path": "configs/stage7_delay_topology.yaml",
+  "config_sha256": "17aae398697ed0ff7ec7509ba46576c2ec6888990563ad44c851bfe985b6e3d3",
+  "decision": "drop",
+  "final_holdout_used": false,
+  "inputs": [
+    {
+      "path": "configs/stage7_delay_topology.yaml",
+      "sha256": "e1f8a508887528a8df20000ed97df506a4c7fa57acaf6718e699b3a3531b5f73",
+      "size_bytes": 2891
+    },
+    {
+      "path": "registries/stage7_delay_policy.yaml",
+      "sha256": "d8390a2a61fc89a08e19185e4179649bcd8ff83b40145567885dd2f4930d37af",
+      "size_bytes": 857
+    },
+    {
+      "path": "registries/stage7_simulation_lock.yaml",
+      "sha256": "8e3d3770f8ca0bc53b99421c03f7a6ccaf767f662a57788366ef60996eeb58ed",
+      "size_bytes": 1113
+    },
+    {
+      "path": "registries/stage7_decision_policy.yaml",
+      "sha256": "8a3114e3f405d228cf58a0b33ff24959a52cfdf201d4943c1ebbc19afe2cfc16",
+      "size_bytes": 752
+    },
+    {
+      "path": "registries/stage4_factorial_design.csv",
+      "sha256": "4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34",
+      "size_bytes": 9682
+    },
+    {
+      "path": "results/stage4/run_manifest.json",
+      "sha256": "3482868f9cb62c33c9abee979dd23c02307fab81ba73691344eca2851b2a7734",
+      "size_bytes": 4984
+    },
+    {
+      "path": "results/stage5/run_manifest.json",
+      "sha256": "83c116ce2286b4ac11fe6be9b539a50117894d77fc3144273e335eb80599115d",
+      "size_bytes": 5907
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/stage7/classical_controls.csv",
+      "sha256": "2eedee227e878ba1dd8f30f9a5449924d9ed8635b651a01922c1040405e3e717",
+      "size_bytes": 2399
+    },
+    {
+      "path": "results/stage7/coherence_response_surfaces.csv",
+      "sha256": "ac1d84e84eee61af44ded070d1e6063e47c8b31bed919b67f88377a703357d91",
+      "size_bytes": 2769
+    },
+    {
+      "path": "results/stage7/convergence_audit.csv",
+      "sha256": "73662ad2b69016c74715519caab015c1d5a6c8a7a466707118855580f21ff31b",
+      "size_bytes": 2874
+    },
+    {
+      "path": "results/stage7/delay_parameter_audit.csv",
+      "sha256": "689e4827d0e9c31059bd7bbcceb4aa69b27f47cf66f89122eddc227a22998d3b",
+      "size_bytes": 8416
+    },
+    {
+      "path": "results/stage7/delay_policy_summary.csv",
+      "sha256": "9105abaa7213b4e723a068e8513ef87d0910e5c7068ca667dacd0402446c23b7",
+      "size_bytes": 378
+    },
+    {
+      "path": "results/stage7/diagram_suite.json",
+      "sha256": "4b38670910cd3f78741f5d9ef828d07839d5a13ca02d8efd5ab093e077a5177c",
+      "size_bytes": 68746
+    },
+    {
+      "path": "results/stage7/embedding_audit.csv",
+      "sha256": "0e44085b388a01b23d8d63aa0318a9ba303e7b5cdcbeaff67b8c4c67cf86a551",
+      "size_bytes": 1782
+    },
+    {
+      "path": "results/stage7/environment.json",
+      "sha256": "0515f88e643116634b2befd97576eebae47fca2ae88149eb78462b5197942723",
+      "size_bytes": 170
+    },
+    {
+      "path": "results/stage7/phase_tests.csv",
+      "sha256": "7b364918fa15ed69f15c1e88942e08d9034695b8c692d5ff66d5481eac19f437",
+      "size_bytes": 4857
+    },
+    {
+      "path": "results/stage7/predictive_ablation.csv",
+      "sha256": "e7ffee82d7c9c48de3afdc736725bcba73a309e19fb443f223e4d49cb0038285",
+      "size_bytes": 450
+    },
+    {
+      "path": "results/stage7/response_correlations.csv",
+      "sha256": "8b75cf86b868347c6e96608f0621774343a9f1db8d15d4712264e806da10a843",
+      "size_bytes": 1439
+    },
+    {
+      "path": "results/stage7/segmentation_stability.csv",
+      "sha256": "28eeabf0b5a1fee7ab09926c9f026353fc1e561beb6f57d5d606fd9bb76dc7a1",
+      "size_bytes": 6370
+    },
+    {
+      "path": "results/stage7/surrogate_draw_maxima.csv",
+      "sha256": "5bbcb9117a55ac7b482c6b9deabf05f5dfdf872af1588bafbe1e403b64c9bec7",
+      "size_bytes": 83403
+    },
+    {
+      "path": "results/stage7/vineyard_tracks.csv",
+      "sha256": "68203c795ab1300998fed21a74475a077e64ad27f488e3a40591f4430564ed27",
+      "size_bytes": 334
+    },
+    {
+      "path": "reports/stage7/COHERENCE_AND_ABLATION_REPORT.md",
+      "sha256": "ca2f4daa0fa1438b50611f19c5a15b770a6c665a9e56124258b60244a96793d5",
+      "size_bytes": 685
+    },
+    {
+      "path": "reports/stage7/figures/classical_control_ablation.svg",
+      "sha256": "b999941b373ad4291871971c55a453bca3c274ad86afd4560e6f379553ff5fa4",
+      "size_bytes": 21935
+    },
+    {
+      "path": "reports/stage7/figures/coherence_response_surface.svg",
+      "sha256": "e51f3b08a7445bb001211418d4c7e6fcc14ff203d29f3e1a77fb118c7d81e6ee",
+      "size_bytes": 30953
+    },
+    {
+      "path": "reports/stage7/figures/delay_policy_comparison.svg",
+      "sha256": "fc47747b03c914d6d28de1d30d0c2d941dc544f0e161d2e370c658bd3e87f37e",
+      "size_bytes": 36295
+    },
+    {
+      "path": "reports/stage7/figures/embedding_and_h1_diagram.svg",
+      "sha256": "6f7048417305c932302ea5f91584128dde8eaf32cecf8235ba5be98c37d06d1e",
+      "size_bytes": 53368
+    },
+    {
+      "path": "reports/stage7/figures/phase_surrogate_tests.svg",
+      "sha256": "608495f6afb0e18ba66cc82a1eebaa8322458e8e4a4c25e5b9192c5b270ae7b8",
+      "size_bytes": 48965
+    },
+    {
+      "path": "reports/stage7/figures/segmentation_stability.svg",
+      "sha256": "41bbb5deea71fc24e700d7a733bd46454f86cac1656f6b1ec2e675b42d1b6260",
+      "size_bytes": 31118
+    },
+    {
+      "path": "reports/stage7/G7_ACCEPTANCE.json",
+      "sha256": "aa66ffe6d360c20c611edb7ac19b0f8e7b08f76e2f6a8aad784e423fa28ca2c7",
+      "size_bytes": 1697
+    },
+    {
+      "path": "reports/stage7/PHASE_INFORMATION_TEST.md",
+      "sha256": "95caf9a9f1d8cf3a5e706c5e4ecbe7b98e00d4569b0b7a0277e5a32e9f821496",
+      "size_bytes": 753
+    },
+    {
+      "path": "reports/stage7/RETAIN_DROP_DECISION.md",
+      "sha256": "48c1b09732a9997cb1133dae2726f72418033c08fc142c8af63a14a39cc63929",
+      "size_bytes": 676
+    },
+    {
+      "path": "reports/stage7/SEGMENTATION_STABILITY_REPORT.md",
+      "sha256": "788292a0f9c4854e275b2d4963d8e869fccd2540b8b866cd5a4cc8ca1d97bd65",
+      "size_bytes": 631
+    },
+    {
+      "path": "reports/stage7/STAGE7_REPORT.md",
+      "sha256": "acdccaab00a5205dd49d2d9540daa838cb05afc3f2736cc801ccec2eab116431",
+      "size_bytes": 1025
+    },
+    {
+      "path": "reports/stage7/TRACEABILITY_MATRIX.md",
+      "sha256": "66e474c17ac3997fa06ca64c863fb82d60786de43bc8c0c9a6af0b2e787cd6f4",
+      "size_bytes": 655
+    },
+    {
+      "path": "notebooks/07_delay_embedding_phase_test.ipynb",
+      "sha256": "64b5f7fa4161b43d6e24e61ba1b9773c583b3de095460c3fcbcfa27b1a2bbab2",
+      "size_bytes": 65465
+    }
+  ],
+  "population_data_used": false,
+  "run_id": "TA-S07-DELAY-R001",
+  "schema_version": 1,
+  "software_version": "TopoAstero-0.8.0",
+  "status": "complete",
+  "style_id": "TA-PLOT-1.0"
+}

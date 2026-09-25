@@ -1,0 +1,21 @@
+schema_version: 1
+policy_id: TA-STAGE7-RETAIN-DROP-1.0
+status: locked_before_stage7_execution
+frozen_on: "2026-09-25"
+positive_paths:
+  phase_information:
+    metric: evaluation_BH_rejection_rate_for_each_PSD_preserving_null
+    threshold: 0.25
+    direction: greater_than_or_equal
+  predictive_increment:
+    metric: combined_lifetime_MAE_improvement_over_classical
+    threshold: 0.10
+    direction: greater_than_or_equal
+decision_rule: retain_if_either_positive_path_passes_else_drop
+negative_result_action:
+  - freeze_all_null_and_ablation_evidence
+  - mark_delay_PH_exploratory_only
+  - remove_delay_PH_from_critical_path
+  - preserve_API_for_reproducibility_and_future_regimes
+claim_boundary: simulation_regime_only_no_population_generalization
+

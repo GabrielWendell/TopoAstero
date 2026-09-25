@@ -1,0 +1,90 @@
+schema_version: 1
+config_id: TA-STAGE7-DELAY-1.0
+run_id: TA-S07-DELAY-R001
+frozen_on: "2026-09-25"
+software_version: TopoAstero-0.8.0
+objective: test_phase_information_beyond_the_PSD
+data_scope:
+  source: registries/stage4_factorial_design.csv
+  selection: first_24_balanced_simulation_cells
+  expected_cells: 24
+  calibration_rule: odd_cell_number
+  evaluation_rule: even_cell_number
+  population_data_allowed: false
+  final_holdout_allowed: false
+signal_simulation:
+  process: stationary_complex_AR1_damped_mode_mixture
+  samples_by_duration_days:
+    "27.4": 512
+    "90.0": 640
+    "109.6": 768
+    "360.0": 1024
+  burn_in_samples: 256
+  maximum_mode_components: 3
+  preserve_registered_cadence_aliasing: true
+delay_policy:
+  primary: multiscale_consensus
+  alternatives:
+    - physics_quarter_period
+    - acf_first_minimum
+    - mutual_information_first_minimum
+  maximum_lag_samples: 48
+  mutual_information_bins: 12
+  multiscale_fractions: [0.25, 0.5, 1.0]
+embedding:
+  primary_dimension: 3
+  h2_diagnostic_dimension: 4
+  normalization: robust_global
+  missing_window_rule: require_all_coordinates_observed
+  sampling_density_control: deterministic_farthest_point
+  primary_landmarks: 18
+  surrogate_landmarks: 12
+  h2_landmarks: 10
+  dimensionality_reduction: PCA_visualization_only_never_PH
+persistence:
+  complex: Vietoris_Rips
+  coefficient_field: F2
+  primary_metric: euclidean
+  metric_sensitivities: [standardized_euclidean, cosine_chord]
+  dimensions: [0, 1]
+  limited_h2: true
+  essential_rule: retain_localization_exclude_numeric_summaries
+  convergence_landmarks: [12, 15, 18]
+coherence:
+  physical_targets: [amplitude, linewidth_uHz, lifetime_days, quality_factor, mode_mixture]
+  topological_summaries: [h1_maximum_persistence, h1_total_persistence, h1_entropy]
+phase_test:
+  surrogate_families: [phase_randomized, iaaft]
+  draws_per_cell_family: 24
+  alpha: 0.05
+  across_cell_fdr_q: 0.10
+  maximum_statistic_scope: all_four_registered_delay_rules
+  plus_one_pvalues: true
+classical_controls:
+  features:
+    - coherence_time_seconds
+    - acf_decay_lag
+    - acf_integral
+    - wavelet_concentration
+    - spectral_entropy
+    - dominant_fourier_fraction
+    - fourier_phase_coupling
+  prediction_target: log10_lifetime_days
+  ridge_penalty: 1.0
+segmentation:
+  window_fractions: [0.25, 0.5, 1.0]
+  rolling_step_fraction: 0.5
+  uncertainty_interval: 0.90
+decision:
+  retain_if_any:
+    - evaluation_BH_rejection_rate_both_nulls_at_least: 0.25
+    - combined_lifetime_MAE_improvement_over_classical_at_least: 0.10
+  otherwise: freeze_negative_result_and_drop_from_critical_path
+gate:
+  allow_positive_or_calibrated_negative_result: true
+  require_independent_calibration_evaluation_cells: true
+  require_psd_preservation_audit: true
+  require_classical_control_ablation: true
+  require_segmentation_stability_report: true
+  require_explicit_retain_drop_decision: true
+

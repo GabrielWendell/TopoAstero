@@ -17,3 +17,7 @@ The one-command workflow remains authoritative and the notebook runs offline fro
 
 `06_psd_persistence.ipynb` is a compact read-only client for governed run
 `TA-S06-PSD-R001`. It reads sealed Stage 6 tables and never tunes the locked workflow.
+
+`07_delay_embedding_phase_test.ipynb` is an executed read-only audit client for governed run
+`TA-S07-DELAY-R001`. It exposes phase-null and predictive decision evidence without retuning the
+locked workflow.

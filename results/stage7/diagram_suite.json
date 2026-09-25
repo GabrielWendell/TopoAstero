@@ -1,0 +1,3416 @@
+{
+  "cells": [
+    "F4-001",
+    "F4-002",
+    "F4-003",
+    "F4-004"
+  ],
+  "coefficient_field": "F2",
+  "dimensionality_reduction_used_for_persistence": false,
+  "essential_rule": "retain_localization_exclude_numeric_summaries",
+  "h2_audit": [
+    {
+      "cell_id": "F4-001",
+      "embedding_dimension": 4,
+      "h2_count": 0,
+      "h2_maximum_persistence": 0.0,
+      "interpretation": "limited_diagnostic_not_confirmatory",
+      "landmarks": 10
+    },
+    {
+      "cell_id": "F4-002",
+      "embedding_dimension": 4,
+      "h2_count": 0,
+      "h2_maximum_persistence": 0.0,
+      "interpretation": "limited_diagnostic_not_confirmatory",
+      "landmarks": 10
+    },
+    {
+      "cell_id": "F4-003",
+      "embedding_dimension": 4,
+      "h2_count": 0,
+      "h2_maximum_persistence": 0.0,
+      "interpretation": "limited_diagnostic_not_confirmatory",
+      "landmarks": 10
+    },
+    {
+      "cell_id": "F4-004",
+      "embedding_dimension": 4,
+      "h2_count": 0,
+      "h2_maximum_persistence": 0.0,
+      "interpretation": "limited_diagnostic_not_confirmatory",
+      "landmarks": 10
+    }
+  ],
+  "pairs": [
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 188
+        }
+      ],
+      "birth_vertices": [
+        4
+      ],
+      "cell_id": "F4-001",
+      "death": 2.063387937314628,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 188
+        },
+        {
+          "delay": 1,
+          "source_index": 382
+        }
+      ],
+      "death_vertices": [
+        4,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0001",
+      "persistence": 2.063387937314628,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 65
+        }
+      ],
+      "birth_vertices": [
+        1
+      ],
+      "cell_id": "F4-001",
+      "death": 2.0201795185844675,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 144
+        },
+        {
+          "delay": 1,
+          "source_index": 502
+        }
+      ],
+      "death_vertices": [
+        2,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0002",
+      "persistence": 2.0201795185844675,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 146
+        }
+      ],
+      "birth_vertices": [
+        3
+      ],
+      "cell_id": "F4-001",
+      "death": 2.019339918051781,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 8
+        },
+        {
+          "delay": 1,
+          "source_index": 381
+        }
+      ],
+      "death_vertices": [
+        0,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0003",
+      "persistence": 2.019339918051781,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 144
+        }
+      ],
+      "birth_vertices": [
+        2
+      ],
+      "cell_id": "F4-001",
+      "death": 1.8972201635433392,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 144
+        },
+        {
+          "delay": 1,
+          "source_index": 259
+        }
+      ],
+      "death_vertices": [
+        2,
+        8
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0004",
+      "persistence": 1.8972201635433392,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 208
+        }
+      ],
+      "birth_vertices": [
+        5
+      ],
+      "cell_id": "F4-001",
+      "death": 1.8720543750116767,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 208
+        },
+        {
+          "delay": 1,
+          "source_index": 432
+        }
+      ],
+      "death_vertices": [
+        5,
+        15
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0005",
+      "persistence": 1.8720543750116767,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 382
+        }
+      ],
+      "birth_vertices": [
+        14
+      ],
+      "cell_id": "F4-001",
+      "death": 1.8441500704471894,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 256
+        },
+        {
+          "delay": 1,
+          "source_index": 382
+        }
+      ],
+      "death_vertices": [
+        7,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0006",
+      "persistence": 1.8441500704471894,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 259
+        }
+      ],
+      "birth_vertices": [
+        8
+      ],
+      "cell_id": "F4-001",
+      "death": 1.8391677898410674,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 259
+        },
+        {
+          "delay": 1,
+          "source_index": 375
+        }
+      ],
+      "death_vertices": [
+        8,
+        12
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0007",
+      "persistence": 1.8391677898410674,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 432
+        }
+      ],
+      "birth_vertices": [
+        15
+      ],
+      "cell_id": "F4-001",
+      "death": 1.7668657985975444,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 249
+        },
+        {
+          "delay": 1,
+          "source_index": 432
+        }
+      ],
+      "death_vertices": [
+        6,
+        15
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0008",
+      "persistence": 1.7668657985975444,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 249
+        }
+      ],
+      "birth_vertices": [
+        6
+      ],
+      "cell_id": "F4-001",
+      "death": 1.717742570758775,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 65
+        },
+        {
+          "delay": 1,
+          "source_index": 249
+        }
+      ],
+      "death_vertices": [
+        1,
+        6
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0009",
+      "persistence": 1.717742570758775,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 307
+        }
+      ],
+      "birth_vertices": [
+        10
+      ],
+      "cell_id": "F4-001",
+      "death": 1.6991070984542886,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 307
+        },
+        {
+          "delay": 1,
+          "source_index": 494
+        }
+      ],
+      "death_vertices": [
+        10,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0010",
+      "persistence": 1.6991070984542886,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 364
+        }
+      ],
+      "birth_vertices": [
+        11
+      ],
+      "cell_id": "F4-001",
+      "death": 1.6949792279665326,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 249
+        },
+        {
+          "delay": 1,
+          "source_index": 364
+        }
+      ],
+      "death_vertices": [
+        6,
+        11
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0011",
+      "persistence": 1.6949792279665326,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 306
+        }
+      ],
+      "birth_vertices": [
+        9
+      ],
+      "cell_id": "F4-001",
+      "death": 1.66850787915964,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 249
+        },
+        {
+          "delay": 1,
+          "source_index": 306
+        }
+      ],
+      "death_vertices": [
+        6,
+        9
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0012",
+      "persistence": 1.66850787915964,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 256
+        }
+      ],
+      "birth_vertices": [
+        7
+      ],
+      "cell_id": "F4-001",
+      "death": 1.6332265025376318,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 256
+        },
+        {
+          "delay": 1,
+          "source_index": 494
+        }
+      ],
+      "death_vertices": [
+        7,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0013",
+      "persistence": 1.6332265025376318,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 381
+        }
+      ],
+      "birth_vertices": [
+        13
+      ],
+      "cell_id": "F4-001",
+      "death": 1.565649837935059,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 146
+        },
+        {
+          "delay": 1,
+          "source_index": 381
+        }
+      ],
+      "death_vertices": [
+        3,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0014",
+      "persistence": 1.565649837935059,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 502
+        }
+      ],
+      "birth_vertices": [
+        17
+      ],
+      "cell_id": "F4-001",
+      "death": 1.5130201819249893,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 146
+        },
+        {
+          "delay": 1,
+          "source_index": 502
+        }
+      ],
+      "death_vertices": [
+        3,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0015",
+      "persistence": 1.5130201819249893,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 375
+        }
+      ],
+      "birth_vertices": [
+        12
+      ],
+      "cell_id": "F4-001",
+      "death": 1.5008298053642104,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 65
+        },
+        {
+          "delay": 1,
+          "source_index": 375
+        }
+      ],
+      "death_vertices": [
+        1,
+        12
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0016",
+      "persistence": 1.5008298053642104,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 494
+        }
+      ],
+      "birth_vertices": [
+        16
+      ],
+      "cell_id": "F4-001",
+      "death": 1.464158265068388,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 375
+        },
+        {
+          "delay": 1,
+          "source_index": 494
+        }
+      ],
+      "death_vertices": [
+        12,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0017",
+      "persistence": 1.464158265068388,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 8
+        }
+      ],
+      "birth_vertices": [
+        0
+      ],
+      "cell_id": "F4-001",
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 0,
+      "essential": true,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D0-0018",
+      "persistence": null,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 2.0490517290263552,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 208
+        },
+        {
+          "delay": 1,
+          "source_index": 381
+        }
+      ],
+      "birth_vertices": [
+        5,
+        13
+      ],
+      "cell_id": "F4-001",
+      "death": 2.6049764767696044,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 259
+        },
+        {
+          "delay": 1,
+          "source_index": 432
+        },
+        {
+          "delay": 1,
+          "source_index": 494
+        }
+      ],
+      "death_vertices": [
+        8,
+        15,
+        16
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D1-0019",
+      "persistence": 0.5559247477432492,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 2.15384654971359,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 432
+        },
+        {
+          "delay": 1,
+          "source_index": 502
+        }
+      ],
+      "birth_vertices": [
+        15,
+        17
+      ],
+      "cell_id": "F4-001",
+      "death": 2.3728015822849566,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 208
+        },
+        {
+          "delay": 1,
+          "source_index": 381
+        },
+        {
+          "delay": 1,
+          "source_index": 502
+        }
+      ],
+      "death_vertices": [
+        5,
+        13,
+        17
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D1-0020",
+      "persistence": 0.21895503257136673,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 2.1565591272956857,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 381
+        },
+        {
+          "delay": 1,
+          "source_index": 382
+        }
+      ],
+      "birth_vertices": [
+        13,
+        14
+      ],
+      "cell_id": "F4-001",
+      "death": 2.3382651339065323,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 381
+        },
+        {
+          "delay": 1,
+          "source_index": 382
+        },
+        {
+          "delay": 1,
+          "source_index": 432
+        }
+      ],
+      "death_vertices": [
+        13,
+        14,
+        15
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D1-0021",
+      "persistence": 0.18170600661084668,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 2.12332856166719,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 188
+        },
+        {
+          "delay": 1,
+          "source_index": 249
+        }
+      ],
+      "birth_vertices": [
+        4,
+        6
+      ],
+      "cell_id": "F4-001",
+      "death": 2.1519497961312966,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 249
+        },
+        {
+          "delay": 1,
+          "source_index": 382
+        },
+        {
+          "delay": 1,
+          "source_index": 432
+        }
+      ],
+      "death_vertices": [
+        6,
+        14,
+        15
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-001-DELAY-D1-0022",
+      "persistence": 0.028621234464106582,
+      "representation_id": "F4-001-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 523
+        }
+      ],
+      "birth_vertices": [
+        10
+      ],
+      "cell_id": "F4-002",
+      "death": 2.545042585068133,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 523
+        },
+        {
+          "delay": 1,
+          "source_index": 557
+        }
+      ],
+      "death_vertices": [
+        10,
+        12
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0001",
+      "persistence": 2.545042585068133,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 630
+        }
+      ],
+      "birth_vertices": [
+        16
+      ],
+      "cell_id": "F4-002",
+      "death": 2.0593820145660224,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 605
+        },
+        {
+          "delay": 1,
+          "source_index": 630
+        }
+      ],
+      "death_vertices": [
+        14,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0002",
+      "persistence": 2.0593820145660224,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 557
+        }
+      ],
+      "birth_vertices": [
+        12
+      ],
+      "cell_id": "F4-002",
+      "death": 1.9549574980042805,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 557
+        },
+        {
+          "delay": 1,
+          "source_index": 605
+        }
+      ],
+      "death_vertices": [
+        12,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0003",
+      "persistence": 1.9549574980042805,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 288
+        }
+      ],
+      "birth_vertices": [
+        6
+      ],
+      "cell_id": "F4-002",
+      "death": 1.9160200347119651,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 84
+        },
+        {
+          "delay": 1,
+          "source_index": 288
+        }
+      ],
+      "death_vertices": [
+        0,
+        6
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0004",
+      "persistence": 1.9160200347119651,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 636
+        }
+      ],
+      "birth_vertices": [
+        17
+      ],
+      "cell_id": "F4-002",
+      "death": 1.9130851129975976,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 318
+        },
+        {
+          "delay": 1,
+          "source_index": 636
+        }
+      ],
+      "death_vertices": [
+        7,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0005",
+      "persistence": 1.9130851129975976,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 172
+        }
+      ],
+      "birth_vertices": [
+        2
+      ],
+      "cell_id": "F4-002",
+      "death": 1.9025556495203761,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 139
+        },
+        {
+          "delay": 1,
+          "source_index": 259
+        }
+      ],
+      "death_vertices": [
+        1,
+        5
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0006",
+      "persistence": 1.9025556495203761,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 481
+        }
+      ],
+      "birth_vertices": [
+        9
+      ],
+      "cell_id": "F4-002",
+      "death": 1.900076130995572,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 241
+        },
+        {
+          "delay": 1,
+          "source_index": 481
+        }
+      ],
+      "death_vertices": [
+        4,
+        9
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0007",
+      "persistence": 1.900076130995572,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 139
+        }
+      ],
+      "birth_vertices": [
+        1
+      ],
+      "cell_id": "F4-002",
+      "death": 1.7942562493415541,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 194
+        },
+        {
+          "delay": 1,
+          "source_index": 605
+        }
+      ],
+      "death_vertices": [
+        3,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0008",
+      "persistence": 1.7942562493415541,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 241
+        }
+      ],
+      "birth_vertices": [
+        4
+      ],
+      "cell_id": "F4-002",
+      "death": 1.7263865906552194,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 194
+        },
+        {
+          "delay": 1,
+          "source_index": 473
+        }
+      ],
+      "death_vertices": [
+        3,
+        8
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0009",
+      "persistence": 1.7263865906552194,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 605
+        }
+      ],
+      "birth_vertices": [
+        14
+      ],
+      "cell_id": "F4-002",
+      "death": 1.7040018256697016,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 84
+        },
+        {
+          "delay": 1,
+          "source_index": 605
+        }
+      ],
+      "death_vertices": [
+        0,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0010",
+      "persistence": 1.7040018256697016,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 614
+        }
+      ],
+      "birth_vertices": [
+        15
+      ],
+      "cell_id": "F4-002",
+      "death": 1.6635884732318693,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 605
+        },
+        {
+          "delay": 1,
+          "source_index": 614
+        }
+      ],
+      "death_vertices": [
+        14,
+        15
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0011",
+      "persistence": 1.6635884732318693,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 603
+        }
+      ],
+      "birth_vertices": [
+        13
+      ],
+      "cell_id": "F4-002",
+      "death": 1.6218208027117191,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 473
+        },
+        {
+          "delay": 1,
+          "source_index": 603
+        }
+      ],
+      "death_vertices": [
+        8,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0012",
+      "persistence": 1.6218208027117191,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 259
+        }
+      ],
+      "birth_vertices": [
+        5
+      ],
+      "cell_id": "F4-002",
+      "death": 1.6144775546421724,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 172
+        },
+        {
+          "delay": 1,
+          "source_index": 259
+        }
+      ],
+      "death_vertices": [
+        2,
+        5
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0013",
+      "persistence": 1.6144775546421724,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 318
+        }
+      ],
+      "birth_vertices": [
+        7
+      ],
+      "cell_id": "F4-002",
+      "death": 1.6123152846316016,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 241
+        },
+        {
+          "delay": 1,
+          "source_index": 318
+        }
+      ],
+      "death_vertices": [
+        4,
+        7
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0014",
+      "persistence": 1.6123152846316016,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 473
+        }
+      ],
+      "birth_vertices": [
+        8
+      ],
+      "cell_id": "F4-002",
+      "death": 1.6116989464336122,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 318
+        },
+        {
+          "delay": 1,
+          "source_index": 473
+        }
+      ],
+      "death_vertices": [
+        7,
+        8
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0015",
+      "persistence": 1.6116989464336122,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 194
+        }
+      ],
+      "birth_vertices": [
+        3
+      ],
+      "cell_id": "F4-002",
+      "death": 1.5986450456475925,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 139
+        },
+        {
+          "delay": 1,
+          "source_index": 546
+        }
+      ],
+      "death_vertices": [
+        1,
+        11
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0016",
+      "persistence": 1.5986450456475925,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 546
+        }
+      ],
+      "birth_vertices": [
+        11
+      ],
+      "cell_id": "F4-002",
+      "death": 1.5786187679175772,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 194
+        },
+        {
+          "delay": 1,
+          "source_index": 546
+        }
+      ],
+      "death_vertices": [
+        3,
+        11
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0017",
+      "persistence": 1.5786187679175772,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 84
+        }
+      ],
+      "birth_vertices": [
+        0
+      ],
+      "cell_id": "F4-002",
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 0,
+      "essential": true,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D0-0018",
+      "persistence": null,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 1.9420502685038883,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 84
+        },
+        {
+          "delay": 1,
+          "source_index": 172
+        }
+      ],
+      "birth_vertices": [
+        0,
+        2
+      ],
+      "cell_id": "F4-002",
+      "death": 2.5540326049930817,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 172
+        },
+        {
+          "delay": 1,
+          "source_index": 259
+        },
+        {
+          "delay": 1,
+          "source_index": 318
+        }
+      ],
+      "death_vertices": [
+        2,
+        5,
+        7
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D1-0019",
+      "persistence": 0.6119823364891934,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 2.01809730589893,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 172
+        },
+        {
+          "delay": 1,
+          "source_index": 481
+        }
+      ],
+      "birth_vertices": [
+        2,
+        9
+      ],
+      "cell_id": "F4-002",
+      "death": 2.6071865251453374,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 172
+        },
+        {
+          "delay": 1,
+          "source_index": 241
+        },
+        {
+          "delay": 1,
+          "source_index": 481
+        }
+      ],
+      "death_vertices": [
+        2,
+        4,
+        9
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D1-0020",
+      "persistence": 0.5890892192464072,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 1.9692955321749606,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 84
+        },
+        {
+          "delay": 1,
+          "source_index": 318
+        }
+      ],
+      "birth_vertices": [
+        0,
+        7
+      ],
+      "cell_id": "F4-002",
+      "death": 2.5445731284398536,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 194
+        },
+        {
+          "delay": 1,
+          "source_index": 318
+        },
+        {
+          "delay": 1,
+          "source_index": 605
+        }
+      ],
+      "death_vertices": [
+        3,
+        7,
+        14
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D1-0021",
+      "persistence": 0.575277596264893,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 2.1387226988568036,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 172
+        },
+        {
+          "delay": 1,
+          "source_index": 557
+        }
+      ],
+      "birth_vertices": [
+        2,
+        12
+      ],
+      "cell_id": "F4-002",
+      "death": 2.6122589296195944,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 546
+        },
+        {
+          "delay": 1,
+          "source_index": 557
+        },
+        {
+          "delay": 1,
+          "source_index": 605
+        }
+      ],
+      "death_vertices": [
+        11,
+        12,
+        14
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D1-0022",
+      "persistence": 0.47353623076279083,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 1.966061626786725,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 139
+        },
+        {
+          "delay": 1,
+          "source_index": 318
+        }
+      ],
+      "birth_vertices": [
+        1,
+        7
+      ],
+      "cell_id": "F4-002",
+      "death": 2.2581642330639835,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 139
+        },
+        {
+          "delay": 1,
+          "source_index": 194
+        },
+        {
+          "delay": 1,
+          "source_index": 546
+        }
+      ],
+      "death_vertices": [
+        1,
+        3,
+        11
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D1-0023",
+      "persistence": 0.2921026062772585,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 2.387379816831592,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 546
+        },
+        {
+          "delay": 1,
+          "source_index": 557
+        }
+      ],
+      "birth_vertices": [
+        11,
+        12
+      ],
+      "cell_id": "F4-002",
+      "death": 2.51339606116447,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 139
+        },
+        {
+          "delay": 1,
+          "source_index": 546
+        },
+        {
+          "delay": 1,
+          "source_index": 557
+        }
+      ],
+      "death_vertices": [
+        1,
+        11,
+        12
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-002-DELAY-D1-0024",
+      "persistence": 0.12601624433287828,
+      "representation_id": "F4-002-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 116
+        }
+      ],
+      "birth_vertices": [
+        5
+      ],
+      "cell_id": "F4-003",
+      "death": 1.8436201652393487,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 116
+        },
+        {
+          "delay": 1,
+          "source_index": 711
+        }
+      ],
+      "death_vertices": [
+        5,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0001",
+      "persistence": 1.8436201652393487,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 266
+        }
+      ],
+      "birth_vertices": [
+        8
+      ],
+      "cell_id": "F4-003",
+      "death": 1.5854510405908664,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 266
+        },
+        {
+          "delay": 1,
+          "source_index": 755
+        }
+      ],
+      "death_vertices": [
+        8,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0002",
+      "persistence": 1.5854510405908664,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 338
+        }
+      ],
+      "birth_vertices": [
+        9
+      ],
+      "cell_id": "F4-003",
+      "death": 1.466227650259665,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 338
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "death_vertices": [
+        9,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0003",
+      "persistence": 1.466227650259665,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 405
+        }
+      ],
+      "birth_vertices": [
+        10
+      ],
+      "cell_id": "F4-003",
+      "death": 1.4459217982962944,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 405
+        },
+        {
+          "delay": 1,
+          "source_index": 617
+        }
+      ],
+      "death_vertices": [
+        10,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0004",
+      "persistence": 1.4459217982962944,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 501
+        }
+      ],
+      "birth_vertices": [
+        11
+      ],
+      "cell_id": "F4-003",
+      "death": 1.4456471816021286,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 501
+        },
+        {
+          "delay": 1,
+          "source_index": 755
+        }
+      ],
+      "death_vertices": [
+        11,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0005",
+      "persistence": 1.4456471816021286,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 20
+        }
+      ],
+      "birth_vertices": [
+        1
+      ],
+      "cell_id": "F4-003",
+      "death": 1.4446744144296204,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 716
+        }
+      ],
+      "death_vertices": [
+        6,
+        15
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0006",
+      "persistence": 1.4446744144296204,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 755
+        }
+      ],
+      "birth_vertices": [
+        17
+      ],
+      "cell_id": "F4-003",
+      "death": 1.3956211261252265,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 338
+        },
+        {
+          "delay": 1,
+          "source_index": 755
+        }
+      ],
+      "death_vertices": [
+        9,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0007",
+      "persistence": 1.3956211261252265,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 79
+        }
+      ],
+      "birth_vertices": [
+        3
+      ],
+      "cell_id": "F4-003",
+      "death": 1.3585049296458773,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 15
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "death_vertices": [
+        0,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0008",
+      "persistence": 1.3585049296458773,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 716
+        }
+      ],
+      "birth_vertices": [
+        15
+      ],
+      "cell_id": "F4-003",
+      "death": 1.3253934106590648,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        },
+        {
+          "delay": 1,
+          "source_index": 716
+        }
+      ],
+      "death_vertices": [
+        7,
+        15
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0009",
+      "persistence": 1.3253934106590648,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        }
+      ],
+      "birth_vertices": [
+        7
+      ],
+      "cell_id": "F4-003",
+      "death": 1.2884692471644987,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 79
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "death_vertices": [
+        3,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0010",
+      "persistence": 1.2884692471644987,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        }
+      ],
+      "birth_vertices": [
+        6
+      ],
+      "cell_id": "F4-003",
+      "death": 1.2779643547430208,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 74
+        },
+        {
+          "delay": 1,
+          "source_index": 207
+        }
+      ],
+      "death_vertices": [
+        2,
+        6
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0011",
+      "persistence": 1.2779643547430208,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 74
+        }
+      ],
+      "birth_vertices": [
+        2
+      ],
+      "cell_id": "F4-003",
+      "death": 1.271836486892702,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 20
+        },
+        {
+          "delay": 1,
+          "source_index": 74
+        }
+      ],
+      "death_vertices": [
+        1,
+        2
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0012",
+      "persistence": 1.271836486892702,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 106
+        }
+      ],
+      "birth_vertices": [
+        4
+      ],
+      "cell_id": "F4-003",
+      "death": 1.2703033764411675,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 106
+        },
+        {
+          "delay": 1,
+          "source_index": 617
+        }
+      ],
+      "death_vertices": [
+        4,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0013",
+      "persistence": 1.2703033764411675,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 711
+        }
+      ],
+      "birth_vertices": [
+        14
+      ],
+      "cell_id": "F4-003",
+      "death": 1.2694250593083982,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 711
+        }
+      ],
+      "death_vertices": [
+        6,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0014",
+      "persistence": 1.2694250593083982,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 617
+        }
+      ],
+      "birth_vertices": [
+        13
+      ],
+      "cell_id": "F4-003",
+      "death": 1.2631332487310396,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 535
+        },
+        {
+          "delay": 1,
+          "source_index": 617
+        }
+      ],
+      "death_vertices": [
+        12,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0015",
+      "persistence": 1.2631332487310396,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 535
+        }
+      ],
+      "birth_vertices": [
+        12
+      ],
+      "cell_id": "F4-003",
+      "death": 1.2355802903650006,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 15
+        },
+        {
+          "delay": 1,
+          "source_index": 535
+        }
+      ],
+      "death_vertices": [
+        0,
+        12
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0016",
+      "persistence": 1.2355802903650006,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "birth_vertices": [
+        16
+      ],
+      "cell_id": "F4-003",
+      "death": 1.1982898516520724,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "death_vertices": [
+        7,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0017",
+      "persistence": 1.1982898516520724,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 15
+        }
+      ],
+      "birth_vertices": [
+        0
+      ],
+      "cell_id": "F4-003",
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 0,
+      "essential": true,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D0-0018",
+      "persistence": null,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 1.526580678944085,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 74
+        },
+        {
+          "delay": 1,
+          "source_index": 79
+        }
+      ],
+      "birth_vertices": [
+        2,
+        3
+      ],
+      "cell_id": "F4-003",
+      "death": 1.9818231079145652,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 74
+        },
+        {
+          "delay": 1,
+          "source_index": 716
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "death_vertices": [
+        2,
+        15,
+        16
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D1-0019",
+      "persistence": 0.4552424289704802,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 1.5314258145422162,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        },
+        {
+          "delay": 1,
+          "source_index": 501
+        }
+      ],
+      "birth_vertices": [
+        7,
+        11
+      ],
+      "cell_id": "F4-003",
+      "death": 1.8345262915678227,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 338
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        },
+        {
+          "delay": 1,
+          "source_index": 755
+        }
+      ],
+      "death_vertices": [
+        9,
+        16,
+        17
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D1-0020",
+      "persistence": 0.3031004770256065,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 1.69956134468885,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 20
+        },
+        {
+          "delay": 1,
+          "source_index": 501
+        }
+      ],
+      "birth_vertices": [
+        1,
+        11
+      ],
+      "cell_id": "F4-003",
+      "death": 1.8331515024718672,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        },
+        {
+          "delay": 1,
+          "source_index": 711
+        },
+        {
+          "delay": 1,
+          "source_index": 716
+        }
+      ],
+      "death_vertices": [
+        7,
+        14,
+        15
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D1-0021",
+      "persistence": 0.1335901577830172,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 1.7416332489826232,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        },
+        {
+          "delay": 1,
+          "source_index": 711
+        }
+      ],
+      "birth_vertices": [
+        7,
+        14
+      ],
+      "cell_id": "F4-003",
+      "death": 1.8095399076126921,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 232
+        },
+        {
+          "delay": 1,
+          "source_index": 501
+        },
+        {
+          "delay": 1,
+          "source_index": 711
+        }
+      ],
+      "death_vertices": [
+        7,
+        11,
+        14
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D1-0022",
+      "persistence": 0.06790665863006895,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 1.5107765610290718,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 617
+        },
+        {
+          "delay": 1,
+          "source_index": 716
+        }
+      ],
+      "birth_vertices": [
+        13,
+        15
+      ],
+      "cell_id": "F4-003",
+      "death": 1.5700317964020665,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 617
+        },
+        {
+          "delay": 1,
+          "source_index": 716
+        },
+        {
+          "delay": 1,
+          "source_index": 725
+        }
+      ],
+      "death_vertices": [
+        13,
+        15,
+        16
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-003-DELAY-D1-0023",
+      "persistence": 0.05925523537299471,
+      "representation_id": "F4-003-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        }
+      ],
+      "birth_vertices": [
+        1
+      ],
+      "cell_id": "F4-004",
+      "death": 1.8863391178573978,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 861
+        }
+      ],
+      "death_vertices": [
+        1,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0001",
+      "persistence": 1.8863391178573978,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 682
+        }
+      ],
+      "birth_vertices": [
+        12
+      ],
+      "cell_id": "F4-004",
+      "death": 1.8847742658022675,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 530
+        },
+        {
+          "delay": 1,
+          "source_index": 682
+        }
+      ],
+      "death_vertices": [
+        8,
+        12
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0002",
+      "persistence": 1.8847742658022675,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 817
+        }
+      ],
+      "birth_vertices": [
+        13
+      ],
+      "cell_id": "F4-004",
+      "death": 1.8400381198618816,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 817
+        }
+      ],
+      "death_vertices": [
+        1,
+        13
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0003",
+      "persistence": 1.8400381198618816,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 218
+        }
+      ],
+      "birth_vertices": [
+        2
+      ],
+      "cell_id": "F4-004",
+      "death": 1.8089438392932733,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 218
+        }
+      ],
+      "death_vertices": [
+        1,
+        2
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0004",
+      "persistence": 1.8089438392932733,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 262
+        }
+      ],
+      "birth_vertices": [
+        3
+      ],
+      "cell_id": "F4-004",
+      "death": 1.8044395676193845,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 262
+        }
+      ],
+      "death_vertices": [
+        1,
+        3
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0005",
+      "persistence": 1.8044395676193845,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 520
+        }
+      ],
+      "birth_vertices": [
+        7
+      ],
+      "cell_id": "F4-004",
+      "death": 1.7834470043944575,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 520
+        },
+        {
+          "delay": 1,
+          "source_index": 642
+        }
+      ],
+      "death_vertices": [
+        7,
+        11
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0006",
+      "persistence": 1.7834470043944575,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 642
+        }
+      ],
+      "birth_vertices": [
+        11
+      ],
+      "cell_id": "F4-004",
+      "death": 1.6929645008844407,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 571
+        },
+        {
+          "delay": 1,
+          "source_index": 642
+        }
+      ],
+      "death_vertices": [
+        9,
+        11
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0007",
+      "persistence": 1.6929645008844407,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 468
+        }
+      ],
+      "birth_vertices": [
+        4
+      ],
+      "cell_id": "F4-004",
+      "death": 1.6922409846787543,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        },
+        {
+          "delay": 1,
+          "source_index": 530
+        }
+      ],
+      "death_vertices": [
+        0,
+        8
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0008",
+      "persistence": 1.6922409846787543,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 498
+        }
+      ],
+      "birth_vertices": [
+        6
+      ],
+      "cell_id": "F4-004",
+      "death": 1.691209012923537,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 468
+        },
+        {
+          "delay": 1,
+          "source_index": 861
+        }
+      ],
+      "death_vertices": [
+        4,
+        14
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0009",
+      "persistence": 1.691209012923537,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 530
+        }
+      ],
+      "birth_vertices": [
+        8
+      ],
+      "cell_id": "F4-004",
+      "death": 1.6814396468603041,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 530
+        },
+        {
+          "delay": 1,
+          "source_index": 593
+        }
+      ],
+      "death_vertices": [
+        8,
+        10
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0010",
+      "persistence": 1.6814396468603041,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 872
+        }
+      ],
+      "birth_vertices": [
+        15
+      ],
+      "cell_id": "F4-004",
+      "death": 1.607110461851676,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 861
+        },
+        {
+          "delay": 1,
+          "source_index": 872
+        }
+      ],
+      "death_vertices": [
+        14,
+        15
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0011",
+      "persistence": 1.607110461851676,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 861
+        }
+      ],
+      "birth_vertices": [
+        14
+      ],
+      "cell_id": "F4-004",
+      "death": 1.594453215101809,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 861
+        },
+        {
+          "delay": 1,
+          "source_index": 1009
+        }
+      ],
+      "death_vertices": [
+        14,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0012",
+      "persistence": 1.594453215101809,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 488
+        }
+      ],
+      "birth_vertices": [
+        5
+      ],
+      "cell_id": "F4-004",
+      "death": 1.5915709162846496,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 468
+        },
+        {
+          "delay": 1,
+          "source_index": 488
+        }
+      ],
+      "death_vertices": [
+        4,
+        5
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0013",
+      "persistence": 1.5915709162846496,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 571
+        }
+      ],
+      "birth_vertices": [
+        9
+      ],
+      "cell_id": "F4-004",
+      "death": 1.55364684377307,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 530
+        },
+        {
+          "delay": 1,
+          "source_index": 571
+        }
+      ],
+      "death_vertices": [
+        8,
+        9
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0014",
+      "persistence": 1.55364684377307,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 1009
+        }
+      ],
+      "birth_vertices": [
+        17
+      ],
+      "cell_id": "F4-004",
+      "death": 1.5308880701927923,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 498
+        },
+        {
+          "delay": 1,
+          "source_index": 1009
+        }
+      ],
+      "death_vertices": [
+        6,
+        17
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0015",
+      "persistence": 1.5308880701927923,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 593
+        }
+      ],
+      "birth_vertices": [
+        10
+      ],
+      "cell_id": "F4-004",
+      "death": 1.4483685445385919,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 488
+        },
+        {
+          "delay": 1,
+          "source_index": 877
+        }
+      ],
+      "death_vertices": [
+        5,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0016",
+      "persistence": 1.4483685445385919,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 877
+        }
+      ],
+      "birth_vertices": [
+        16
+      ],
+      "cell_id": "F4-004",
+      "death": 1.4273209357843986,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 593
+        },
+        {
+          "delay": 1,
+          "source_index": 877
+        }
+      ],
+      "death_vertices": [
+        10,
+        16
+      ],
+      "dimension": 0,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0017",
+      "persistence": 1.4273209357843986,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 0.0,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        }
+      ],
+      "birth_vertices": [
+        0
+      ],
+      "cell_id": "F4-004",
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 0,
+      "essential": true,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D0-0018",
+      "persistence": null,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 1.8715283589223528,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 520
+        },
+        {
+          "delay": 1,
+          "source_index": 861
+        }
+      ],
+      "birth_vertices": [
+        7,
+        14
+      ],
+      "cell_id": "F4-004",
+      "death": 2.3163044377062803,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 520
+        },
+        {
+          "delay": 1,
+          "source_index": 642
+        },
+        {
+          "delay": 1,
+          "source_index": 861
+        }
+      ],
+      "death_vertices": [
+        7,
+        11,
+        14
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0019",
+      "persistence": 0.44477607878392744,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 1.9859538601051745,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 262
+        },
+        {
+          "delay": 1,
+          "source_index": 593
+        }
+      ],
+      "birth_vertices": [
+        3,
+        10
+      ],
+      "cell_id": "F4-004",
+      "death": 2.3570055312421814,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 262
+        },
+        {
+          "delay": 1,
+          "source_index": 877
+        }
+      ],
+      "death_vertices": [
+        1,
+        3,
+        16
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0020",
+      "persistence": 0.3710516711370069,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 1.9703600077383132,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        },
+        {
+          "delay": 1,
+          "source_index": 817
+        }
+      ],
+      "birth_vertices": [
+        0,
+        13
+      ],
+      "cell_id": "F4-004",
+      "death": 2.3255215219334757,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        },
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 817
+        }
+      ],
+      "death_vertices": [
+        0,
+        1,
+        13
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0021",
+      "persistence": 0.3551615141951625,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 1.8671908841054496,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        },
+        {
+          "delay": 1,
+          "source_index": 468
+        }
+      ],
+      "birth_vertices": [
+        0,
+        4
+      ],
+      "cell_id": "F4-004",
+      "death": 1.966121163380182,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        },
+        {
+          "delay": 1,
+          "source_index": 530
+        },
+        {
+          "delay": 1,
+          "source_index": 877
+        }
+      ],
+      "death_vertices": [
+        0,
+        8,
+        16
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0022",
+      "persistence": 0.09893027927473241,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 1.8935160470420034,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 468
+        },
+        {
+          "delay": 1,
+          "source_index": 571
+        }
+      ],
+      "birth_vertices": [
+        4,
+        9
+      ],
+      "cell_id": "F4-004",
+      "death": 1.9872054260429586,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 16
+        },
+        {
+          "delay": 1,
+          "source_index": 530
+        },
+        {
+          "delay": 1,
+          "source_index": 571
+        }
+      ],
+      "death_vertices": [
+        0,
+        8,
+        9
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0023",
+      "persistence": 0.0936893790009552,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 1.904591917313769,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 817
+        },
+        {
+          "delay": 1,
+          "source_index": 872
+        }
+      ],
+      "birth_vertices": [
+        13,
+        15
+      ],
+      "cell_id": "F4-004",
+      "death": 1.9794137890027113,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 861
+        },
+        {
+          "delay": 1,
+          "source_index": 872
+        }
+      ],
+      "death_vertices": [
+        1,
+        14,
+        15
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0024",
+      "persistence": 0.07482187168894217,
+      "representation_id": "F4-004-DELAY"
+    },
+    {
+      "birth": 2.0052899189955897,
+      "birth_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 488
+        }
+      ],
+      "birth_vertices": [
+        1,
+        5
+      ],
+      "cell_id": "F4-004",
+      "death": 2.0480164348298158,
+      "death_location": [
+        {
+          "delay": 1,
+          "source_index": 207
+        },
+        {
+          "delay": 1,
+          "source_index": 468
+        },
+        {
+          "delay": 1,
+          "source_index": 861
+        }
+      ],
+      "death_vertices": [
+        1,
+        4,
+        14
+      ],
+      "dimension": 1,
+      "essential": false,
+      "metric": "euclidean",
+      "pair_id": "F4-004-DELAY-D1-0025",
+      "persistence": 0.04272651583422604,
+      "representation_id": "F4-004-DELAY"
+    }
+  ],
+  "run_id": "TA-S07-DELAY-R001"
+}

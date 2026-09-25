@@ -1,0 +1,5 @@
+method,cells,median_lag_samples,median_independence_score,median_h1_normalized_maximum,failure_rate,role
+physics_quarter_period,24,1,0.9349375052,0.07531139783,0,sensitivity
+acf_first_minimum,24,2,0.7909561606,0.07159392308,0,sensitivity
+mutual_information_first_minimum,24,1,0.9333873809,0.0787062043,0,sensitivity
+multiscale_consensus,24,1,0.9204789584,0.0787062043,0,primary

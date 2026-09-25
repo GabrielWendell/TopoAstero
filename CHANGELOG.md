@@ -7,7 +7,22 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ### Planned
 
-- Stage 7 phase-sensitive delay topology under the locked Stage 5 representation set.
+- Stage 8 topological echelle and ridge-connectivity analysis.
+
+## [0.8.0] - 2026-09-25
+
+### Added
+
+- Complete Stage 7 missing-aware delay-embedding API with physics, ACF, mutual-information, and
+  multiscale-consensus delay rules plus deterministic density control and PCA-only visualization.
+- Unreduced VR `H0/H1`, bounded `H2`, metric and landmark convergence audits, localized diagrams,
+  and coherence response surfaces for amplitude, linewidth, lifetime, quality factor, and mixtures.
+- Paired phase-randomized/IAAFT maximum-statistic tests with Fourier-amplitude preservation audits,
+  evaluation-only BH maps, seven topology-free controls, and held-out lifetime ablations.
+- Quarter/half/full rolling stability, finite-realization intervals, vineyard-style tracks, and a
+  preregistered calibrated-negative G7 decision that removes delay PH from the critical path.
+- Six source-backed `TA-PLOT-1.0` figures, five closed schemas, executed audit notebook, CLI,
+  validators, tests, provenance seals, and deliverable checksums.
 
 ## [0.7.0] - 2026-09-23
 

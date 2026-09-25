@@ -4,7 +4,7 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.7.0 implements Stages 0-6 through persistent topology of the power spectrum. It contains
+Version 0.8.0 implements Stages 0-7 through the delay-embedding phase-information decision. It contains
 traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
 independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
 calibrated null/coverage maps, a localized dependency-light TDA core, a locked compact statistic
@@ -12,7 +12,7 @@ set, exact PSD peak/saddle localization, uncertainty-bearing `nu_max` and comb A
 quality control, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher
 payloads.
 
-## Reproduce Stages 0-6
+## Reproduce Stages 0-7
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -27,6 +27,7 @@ uv run topoastero validate-stage3 --root .
 uv run topoastero validate-stage4 --root .
 uv run topoastero validate-stage5 --root .
 uv run topoastero validate-stage6 --root .
+uv run topoastero validate-stage7 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -58,6 +59,10 @@ Stage 6 validation checks four normalized-spectrum contracts, exact localized PS
 prominence equivalence, three paired `nu_max` methods, explicit half/nominal/double comb candidates,
 ACF/PSPS ablations, nuisance-matched maximum-statistic nulls, six robustness branches, five
 reason-coded flags, G6, and all earlier contracts.
+Stage 7 validation checks four simulation-only delay rules, missing-aware unreduced embeddings,
+`H0/H1` plus limited `H2`, metric and landmark convergence, paired phase-randomized/IAAFT maximum
+statistics, classical coherence controls, held-out lifetime ablations, rolling stability, the
+locked retain/drop decision, G7, and all earlier contracts.
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -192,6 +197,23 @@ The detailed mapping and gate record are in
 [`reports/stage6/TRACEABILITY_MATRIX.md`](reports/stage6/TRACEABILITY_MATRIX.md) and
 [`reports/stage6/G6_ACCEPTANCE.json`](reports/stage6/G6_ACCEPTANCE.json).
 
+## Stage 7 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T7.1 Delay selection | four-rule simulation-only policy | per-cell lag/H1 audit and method summary |
+| T7.2 Embeddings | missing-aware robust sliding-window API | complete-window and deterministic density-control audit |
+| T7.3 Persistence | unreduced VR `H0/H1` and limited `H2` | localized diagram suite and metric/landmark convergence |
+| T7.4 Coherence | physical-target response surfaces | amplitude, linewidth, lifetime, quality-factor, and mixture map |
+| T7.5 Phase nulls | paired phase-randomized and IAAFT maxima | plus-one p-values, PSD audit, and evaluation-only BH map |
+| T7.6 Controls | seven classical coherence/Fourier controls | held-out topology/classical/combined lifetime ablation |
+| T7.7 Segmentation | quarter/half/full rolling analysis | finite-realization intervals, bottleneck stability, vineyard track |
+| T7.8 Decision | locked dual-path retain/drop policy | G7 calibrated-negative decision and critical-path action |
+
+The detailed mapping and gate record are in
+[`reports/stage7/TRACEABILITY_MATRIX.md`](reports/stage7/TRACEABILITY_MATRIX.md) and
+[`reports/stage7/G7_ACCEPTANCE.json`](reports/stage7/G7_ACCEPTANCE.json).
+
 ## Repository layout
 
 ```text
@@ -203,7 +225,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage6/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage7/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
