@@ -57,8 +57,8 @@
     },
     {
       "path": "workflows/run_stage9_mathematics.py",
-      "sha256": "3bc69aef10c152c70c87d022e1efffef9d767b9461bb75bd304d932e9bb003f7",
-      "size_bytes": 12453
+      "sha256": "41cd7ef2ed8e10c4a5397723a3d96e18b8f7a8d2b31836502aaa36c36918acdc",
+      "size_bytes": 12500
     },
     {
       "path": "notebooks/09_mathematical_relations.ipynb",
@@ -72,8 +72,8 @@
     },
     {
       "path": "reports/stage9/figures/ridge_jump_bounds.svg",
-      "sha256": "899fe4dd06d9f47ec55f1a65612c01a160ac544f7bb83ed87a132469b797c7ce",
-      "size_bytes": 32280
+      "sha256": "4380df5f767f825949a2eeb9549e77e8bc4997284ddc57d7e73aa507aea1469d",
+      "size_bytes": 32295
     },
     {
       "path": "reports/stage9/figures/gamma_calibration.svg",
