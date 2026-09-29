@@ -7,7 +7,23 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 ### Planned
 
-- Stage 8 topological echelle and ridge-connectivity analysis.
+- Follow-up estimator development under a newly registered protocol; no Stage 8 score utility claim.
+
+## [0.9.0] - 2026-09-28
+
+### Added
+
+- Exact periodic cubical cylinder `H0/H1` with physical localization, missing-order semantics,
+  rectangle/seam controls, fast agreement-tested `H0`, and circular competing ridge hypotheses.
+- Frozen finite-`H0`/graph score, independent Stage 6 ACF-seeded half/nominal/double search,
+  per-cell maximum-statistic background null, stochastic/background-branch intervals, and six
+  paired baseline/ablation methods over a sealed 24-cell Stage 4 simulation panel.
+- Anchored ridge-angle API and identified-frequency five-point ratio audit, six-factor diagnostic
+  stress atlas, five `TA-PLOT-1.0` figures, executed notebook, closed schemas, G8 validator, and
+  byte-sealed reproducibility records.
+- G8 geometry-only outcome: cylindrical geometry passes; the combined topological score misses
+  locked alias accuracy, interval coverage, and graph-only increment thresholds on five eligible
+  evaluation cells. Population and final holdout remain unopened.
 
 ## [0.8.0] - 2026-09-25
 

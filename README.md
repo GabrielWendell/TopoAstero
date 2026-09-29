@@ -4,7 +4,7 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.8.0 implements Stages 0-7 through the delay-embedding phase-information decision. It contains
+Version 0.9.0 implements Stages 0-8 through the cylindrical-echelle geometry/utility decision. It contains
 traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
 independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
 calibrated null/coverage maps, a localized dependency-light TDA core, a locked compact statistic
@@ -12,7 +12,7 @@ set, exact PSD peak/saddle localization, uncertainty-bearing `nu_max` and comb A
 quality control, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher
 payloads.
 
-## Reproduce Stages 0-7
+## Reproduce Stages 0-8
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -28,6 +28,7 @@ uv run topoastero validate-stage4 --root .
 uv run topoastero validate-stage5 --root .
 uv run topoastero validate-stage6 --root .
 uv run topoastero validate-stage7 --root .
+uv run topoastero validate-stage8 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -63,6 +64,10 @@ Stage 7 validation checks four simulation-only delay rules, missing-aware unredu
 `H0/H1` plus limited `H2`, metric and landmark convergence, paired phase-randomized/IAAFT maximum
 statistics, classical coherence controls, held-out lifetime ablations, rolling stability, the
 locked retain/drop decision, G7, and all earlier contracts.
+Stage 8 validation checks the exact periodic cubical seam, the matched fast/full `H0` reduction,
+15-spacing half/nominal/double alias search, maximum-statistic background nulls, paired six-method
+benchmark, stochastic/background intervals, identified-mode ratio audit, failure atlas, the
+geometry-only G8 decision, and all earlier contracts.
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -214,6 +219,28 @@ The detailed mapping and gate record are in
 [`reports/stage7/TRACEABILITY_MATRIX.md`](reports/stage7/TRACEABILITY_MATRIX.md) and
 [`reports/stage7/G7_ACCEPTANCE.json`](reports/stage7/G7_ACCEPTANCE.json).
 
+## Stage 8 implementation map
+
+| Task | Frozen artifact | Executable evidence |
+| --- | --- | --- |
+| T8.1 Mathematical object | normalized log(P/B) field on order × circle | missing-order-aware cubical/F2 API and formal science note |
+| T8.2 Boundary | periodic seam, radial nonwrap | exact cylinder/rectangle and fast/full regression tests |
+| T8.3 Ridge paths | circular maxima and connected graph | up to three competing adjacent-order hypotheses |
+| T8.4 Score | finite H0 plus graph, orderwise diagnostic | frozen formula and topology-free ablation |
+| T8.5 Aliases/null | Stage 6-anchored 15-point grid | half/nominal/double scores, independent null maxima and p-values |
+| T8.6 Uncertainty | stochastic/bootstrap and background branches | 90% spacing and circular ridge-location intervals |
+| T8.7 Small separation | anchored ridge angles and identified modes | r02 proxy, five-point ratios, published formula audit |
+| T8.8 Failures | six prespecified perturbations | diagnostic stress/failure atlas |
+| T8.9 Comparison | same trials and simulations for six methods | conventional, Hough, graph, ACF/PSPS and topology |
+| T8.10 Figure | TA-PLOT-1.0 paired echelle | same spectrum, cylinder ridges, phase uncertainty overlay |
+
+The bounded negative utility decision is recorded in
+[`reports/stage8/G8_ACCEPTANCE.json`](reports/stage8/G8_ACCEPTANCE.json): geometry passes,
+but topological correct-alias accuracy is 0.20 versus graph-only 0.60 and declared 90% interval
+coverage is 0.20 on the five prespecified eligible evaluation cells. The combined score is not
+a validated population estimator. See
+[`reports/stage8/TRACEABILITY_MATRIX.md`](reports/stage8/TRACEABILITY_MATRIX.md).
+
 ## Repository layout
 
 ```text
@@ -225,7 +252,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage7/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage8/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -279,9 +306,14 @@ explain those records but do not silently override them.
   is not an external pySYD execution; genuine pySYD output is required before a population claim.
 - Stage 6 uses locked simulations only. Its G6 result calibrates reliability and failure return; it
   does not substitute for the unopened Kepler population holdout.
+- Stage 7 found no positive PSD-preserving phase or classical-adjusted predictive path, so delay
+  persistence is dropped from the critical path in the tested regime.
+- Stage 8 validates the periodic geometry but fails the frozen alias/coverage/increment utility
+  gates. The score and angular proxy cannot be promoted to an astrophysical estimator without a
+  new preregistered, independent evaluation. Published modes audit formulae only.
 
 ## License and citation
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 6.
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 8.

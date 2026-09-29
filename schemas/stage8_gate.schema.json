@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage8_gate.schema.json",
+  "title": "Stage 8 geometry and utility gate",
+  "type": "object", "additionalProperties": false,
+  "required": ["gate", "status", "decision", "claim", "run_id", "accepted_on", "detectable_evaluation_cells", "alias_accuracy_topology", "alias_accuracy_graph", "interval_coverage", "published_ratio_max_absolute_discrepancy", "published_ratio_max_uncertainty_normalized_discrepancy", "population_spectra_used", "final_holdout_used", "checks"],
+  "properties": {
+    "gate": {"const": "G8"},
+    "status": {"const": "pass"},
+    "decision": {"enum": ["retain", "geometry_only"]},
+    "claim": {"enum": ["topological_echelle_simulation_utility", "correct_cylindrical_geometry_only"]},
+    "run_id": {"const": "TA-S08-ECHELLE-R001"},
+    "accepted_on": {"type": "string", "format": "date"},
+    "detectable_evaluation_cells": {"type": "integer", "minimum": 1},
+    "alias_accuracy_topology": {"type": "number", "minimum": 0, "maximum": 1},
+    "alias_accuracy_graph": {"type": "number", "minimum": 0, "maximum": 1},
+    "interval_coverage": {"type": "number", "minimum": 0, "maximum": 1},
+    "published_ratio_max_absolute_discrepancy": {"type": "number", "minimum": 0},
+    "published_ratio_max_uncertainty_normalized_discrepancy": {"type": "number", "minimum": 0},
+    "population_spectra_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "checks": {"type": "array", "minItems": 7, "items": {"type": "object", "additionalProperties": false, "required": ["check", "status", "value"], "properties": {"check": {"type": "string"}, "status": {"enum": ["pass", "limited", "fail"]}, "value": {"type": "string"}}}}
+  }
+}

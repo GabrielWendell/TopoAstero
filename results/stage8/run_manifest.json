@@ -1,0 +1,147 @@
+{
+  "coefficient_field": "F2",
+  "config_path": "configs/stage8_echelle.yaml",
+  "config_sha256": "9cafedf04805d3b9874882bb63442336789d9781f315d9d8ea48c0ee853aa6d7",
+  "decision": "geometry_only",
+  "final_holdout_used": false,
+  "inputs": [
+    {
+      "path": "registries/stage4_factorial_design.csv",
+      "sha256": "4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34",
+      "size_bytes": 9682
+    },
+    {
+      "path": "results/stage4/run_manifest.json",
+      "sha256": "3482868f9cb62c33c9abee979dd23c02307fab81ba73691344eca2851b2a7734",
+      "size_bytes": 4984
+    },
+    {
+      "path": "results/stage6/run_manifest.json",
+      "sha256": "684efb6ef93289f2174ac550aaf28c1e923f838b226e478629ab20c0fb346b38",
+      "size_bytes": 6531
+    },
+    {
+      "path": "results/stage6/comb_benchmark.csv",
+      "sha256": "09167a7a0b6a251466b9f7d9378c1125bbe3c2fa1234e72a69424ca35fb26780",
+      "size_bytes": 23207
+    },
+    {
+      "path": "data/reference/mode_frequencies.csv",
+      "sha256": "fce9491ddce070502652386f4b649baf89ca118db4477a3527f982ecfc7cf901",
+      "size_bytes": 9396
+    },
+    {
+      "path": "data/reference/frequency_ratios.csv",
+      "sha256": "34a09d9a199b7c023a38f20e18fbc132bf43504c4c6ef0518720924aa4166ab3",
+      "size_bytes": 8807
+    }
+  ],
+  "outputs": [
+    {
+      "path": "reports/stage8/ALIAS_AND_ABLATION_REPORT.md",
+      "sha256": "50d2c7acecb64bffbcb08858725b49d26d35eca5f3c1cafd1f7e5d8686a3d226",
+      "size_bytes": 529
+    },
+    {
+      "path": "reports/stage8/figures/interval_coverage.svg",
+      "sha256": "d05620056a0c32f702f4c930ccc732ac0fe5ebcdc611269a59117605dd8c09ac",
+      "size_bytes": 41449
+    },
+    {
+      "path": "reports/stage8/figures/paired_echelle.svg",
+      "sha256": "6f941472171c3b00de96da9961af3479426a3d68d28e5bfd6f9d2c0644abf758",
+      "size_bytes": 92545
+    },
+    {
+      "path": "reports/stage8/figures/paired_method_accuracy.svg",
+      "sha256": "103266c3821a6d774548166daf49d9863244a9e4a76897fdfdd5a95ddcbc9ebb",
+      "size_bytes": 29518
+    },
+    {
+      "path": "reports/stage8/figures/published_ratio_formula_audit.svg",
+      "sha256": "3bd0a65b3ece56a10c48747fb5afa54d21656b19a9c4b7c06b5c02c3b31793bf",
+      "size_bytes": 56909
+    },
+    {
+      "path": "reports/stage8/figures/score_curves.svg",
+      "sha256": "2bebbb473c6f8d34c23cc7210ac94fb57fc55f68ba38a5c840f7dca0046a623b",
+      "size_bytes": 42724
+    },
+    {
+      "path": "reports/stage8/G8_ACCEPTANCE.json",
+      "sha256": "4fe87527ba9e99681e7a6434e636a17363c224e9ad7badce02740844fb7acbfa",
+      "size_bytes": 1502
+    },
+    {
+      "path": "reports/stage8/RIDGE_ANGLES_AND_RATIO_AUDIT.md",
+      "sha256": "8176a08c4245d6ed3adac4e8bd636eac60d614609091baf833a2c3f846eb9fc8",
+      "size_bytes": 713
+    },
+    {
+      "path": "reports/stage8/STAGE8_REPORT.md",
+      "sha256": "91b23c524014482b5bce922c05b6430fcc7c56a43e9436f964bc7b28e800f09f",
+      "size_bytes": 599
+    },
+    {
+      "path": "reports/stage8/TRACEABILITY_MATRIX.md",
+      "sha256": "afc60bbe8be1f591142f67fa1745dc87790c67f4ccf3ad835380fce00d50b3a0",
+      "size_bytes": 816
+    },
+    {
+      "path": "reports/stage8/UNCERTAINTY_AND_FAILURE_ATLAS.md",
+      "sha256": "092f2ee5b58dedf7eafbebc443f5a4331c23a2bf3d5edfd905eed797f9c73f93",
+      "size_bytes": 698
+    },
+    {
+      "path": "results/stage8/bootstrap_draws.csv",
+      "sha256": "911fcddfb76e26e0ee27433fc7302563b957f54ba2ce509e84cbe351b83ad09d",
+      "size_bytes": 3901
+    },
+    {
+      "path": "results/stage8/diagram_suite.json",
+      "sha256": "4c40921d3ccc64ab5f46d11608a11d14418c14fbd28a5e17afba3797147877c1",
+      "size_bytes": 53701
+    },
+    {
+      "path": "results/stage8/environment.json",
+      "sha256": "3f84026b949adc54b71dd6f59c58ea7aff96fb5efe2cfb7f6078450146f42757",
+      "size_bytes": 170
+    },
+    {
+      "path": "results/stage8/failure_atlas.csv",
+      "sha256": "194cc4e0d849382ce94b93f459b6ecff0a88af42f7593a173efd7e2e445aac66",
+      "size_bytes": 1630
+    },
+    {
+      "path": "results/stage8/intervals.csv",
+      "sha256": "2fc2af9747b8812a4cdaf46a59e8d1b52f455e05ca627fe1ae4100cbe6545eef",
+      "size_bytes": 1611
+    },
+    {
+      "path": "results/stage8/null_maxima.csv",
+      "sha256": "92ecef40cc1a895a02e15f5bbbd97b1c5d7d2948dd59e8fd7a58a3b7aa81f66d",
+      "size_bytes": 29886
+    },
+    {
+      "path": "results/stage8/paired_benchmark.csv",
+      "sha256": "d722599c02f85b5ebc806e8b788d14677f58419e41db8c395773567590e42ac9",
+      "size_bytes": 13902
+    },
+    {
+      "path": "results/stage8/ratio_audit.csv",
+      "sha256": "394c7f3032398a9e3bca05728d66f0a0a2a863f64aa23ace745908f43b149506",
+      "size_bytes": 8969
+    },
+    {
+      "path": "results/stage8/score_curves.csv",
+      "sha256": "da603f7638ae4e3d07f08bfbf464e495639f45f95ebbba7a3515c3ece42d81b4",
+      "size_bytes": 44252
+    }
+  ],
+  "population_spectra_used": false,
+  "run_id": "TA-S08-ECHELLE-R001",
+  "schema_version": 1,
+  "software_version": "TopoAstero-0.9.0",
+  "status": "complete",
+  "style_id": "TA-PLOT-1.0"
+}

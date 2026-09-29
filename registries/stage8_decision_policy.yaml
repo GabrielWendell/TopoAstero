@@ -1,0 +1,14 @@
+schema_version: 1
+policy_id: TA-STAGE8-G8-1.0
+status: locked_before_stage8_execution
+decision_rule: retain_topology_only_if_all_three_utility_thresholds_pass_else_geometry_only
+integrity_requirements:
+  - exact_periodic_boundary_tests
+  - paired_method_comparison_on_same_evaluation_cells
+  - null_maximum_over_all_spacing_trials
+  - stochastic_and_background_branch_interval_audit
+  - no_truth_or_published_ratios_used_in_spacing_selection
+  - no_population_spectra_or_final_holdout
+outcomes:
+  retain: topological_echelle_estimator_supported_in_locked_simulations
+  geometry_only: cylinder_valid_but_inferential_claim_narrowed

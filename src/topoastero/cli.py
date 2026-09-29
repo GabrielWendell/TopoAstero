@@ -20,6 +20,7 @@ from topoastero.stage4_validation import validate_stage4
 from topoastero.stage5_validation import validate_stage5
 from topoastero.stage6_validation import validate_stage6
 from topoastero.stage7_validation import validate_stage7
+from topoastero.stage8_validation import validate_stage8
 from topoastero.validation import validate_stage0
 
 
@@ -78,6 +79,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     stage7.add_argument("--root", default=".")
     stage7.add_argument("--without-prior-stages", action="store_true")
+
+    stage8 = subparsers.add_parser(
+        "validate-stage8", help="validate cylindrical echelle geometry, benchmark, and G8"
+    )
+    stage8.add_argument("--root", default=".")
+    stage8.add_argument("--without-prior-stages", action="store_true")
 
     cache = subparsers.add_parser(
         "verify-stage2-cache", help="verify cached mission payloads against frozen manifests"
@@ -180,6 +187,15 @@ def main(argv: Sequence[str] | None = None) -> None:
                 print(f"- {error}", file=sys.stderr)
             raise SystemExit(1)
         print("Stage 7 delay-topology and phase-information contract: PASS")
+        return
+    if args.command == "validate-stage8":
+        errors = validate_stage8(args.root, require_prior_stages=not args.without_prior_stages)
+        if errors:
+            print("Stage 8 cylindrical-echelle contract failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        print("Stage 8 cylindrical-echelle geometry and bounded-inference contract: PASS")
         return
     if args.command == "verify-stage2-cache":
         errors = verify_cached_products(args.manifest, args.cache_dir)

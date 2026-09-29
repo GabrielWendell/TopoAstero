@@ -45,3 +45,5 @@ results/*
 !results/stage6/**
 !results/stage7/
 !results/stage7/**
+!results/stage8/
+!results/stage8/**

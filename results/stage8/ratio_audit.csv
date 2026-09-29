@@ -1,0 +1,61 @@
+source,cell_id,radial_order_n,ratio,estimate,reference,absolute_difference,published_side_uncertainty,uncertainty_normalized_difference,meaning
+Lund2017_Table6_v_Table7,KIC 10963065,13,r10,0.04023657165,0.0398,0.0004365716502,0.0323,0.01351615016,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,14,r02,0.077058135,0.078,0.000941865002,0.0551,0.01709373869,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,14,r01,0.0416869879,0.0417,1.30120952e-05,0.0328,0.0003967102195,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,14,r10,0.04328380096,0.0437,0.0004161990419,0.0135,0.03082955866,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,15,r02,0.07972732662,0.0799,0.0001726733847,0.0523,0.003301594354,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,15,r01,0.04568020154,0.0458,0.0001197984588,0.0239,0.005012487816,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,15,r10,0.04556155829,0.0457,0.0001384417129,0.0362,0.003824356711,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,16,r02,0.07557394817,0.0755,7.394817223e-05,0.0175,0.004225609842,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,16,r01,0.04312001182,0.0429,0.0002200118238,0.0216,0.01018573258,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,16,r10,0.04113189851,0.041,0.0001318985092,0.0039,0.03382013057,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,17,r02,0.0719890153,0.0728,0.0008109846999,0.0431,0.01881635035,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,17,r01,0.03966016085,0.0397,3.983915261e-05,0.0162,0.002459206951,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,17,r10,0.03945571596,0.0395,4.428404214e-05,0.0377,0.001174643028,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,18,r02,0.07546620047,0.0757,0.0002337995338,0.0632,0.003699359712,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,18,r01,0.03905642968,0.0394,0.0003435703186,0.0368,0.009336149961,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,18,r10,0.03807352799,0.0383,0.0002264720147,0.0177,0.01279502908,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,19,r02,0.07195216049,0.0722,0.0002478395062,0.0361,0.006865360282,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,19,r01,0.03637393904,0.0365,0.0001260609568,0.0376,0.003352685021,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,19,r10,0.0359178744,0.036,8.212560387e-05,0.0263,0.003122646535,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,20,r02,0.0695280637,0.0695,2.806370169e-05,0.0045,0.006236378153,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,20,r01,0.03704602836,0.037,4.602835502e-05,0.0334,0.001378094462,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,20,r10,0.0361516035,0.0361,5.160349854e-05,0.0239,0.002159142198,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,21,r02,0.0638338781,0.0644,0.0005661218996,0.0405,0.01397831851,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,21,r01,0.03196500673,0.032,3.499327053e-05,0.0179,0.001954931314,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,21,r10,0.02868773018,0.0286,8.773018027e-05,0.0189,0.00464180848,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,22,r02,0.0614714424,0.0618,0.0003285575992,0.0298,0.01102542279,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,22,r01,0.02800096805,0.0277,0.0003009680542,0.0205,0.0146813685,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,22,r10,0.02926377119,0.0288,0.0004637711864,0.028,0.01656325666,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,23,r02,0.07266235646,0.0723,0.0003623564605,0.0168,0.02156883693,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,23,r01,0.02997442825,0.0296,0.0003744282544,0.0301,0.01243947689,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,23,r10,0.0287883926,0.0282,0.0005883925976,0.0286,0.02057316775,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,24,r02,0.060100328,0.0606,0.0004996720046,0.0304,0.0164365791,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,24,r01,0.02800019294,0.0275,0.0005001929385,0.0314,0.01592971142,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,24,r10,0.02688403715,0.0267,0.0001840371541,0.0299,0.006155088765,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,25,r02,0.05146782085,0.0592,0.007732179149,0.0431,0.1794009083,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,25,r01,0.02327578096,0.0245,0.001224219044,0.0198,0.06182924465,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,25,r10,0.02470902947,0.0266,0.001890970528,0.024,0.07879043865,published_mode_frequency_formula_audit_not_topological_inference
+Lund2017_Table6_v_Table7,KIC 10963065,26,r02,0.09736386377,0.0865,0.01086386377,0.0413,0.2630475489,published_mode_frequency_formula_audit_not_topological_inference
+Stage4_simulated_identified_modes,F4-004,-3,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-3,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-3,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-2,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-2,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-2,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-1,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-1,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,-1,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,0,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,0,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,0,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,1,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,1,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,1,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,2,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,2,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,2,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,3,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,3,r01,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,3,r10,0,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement
+Stage4_simulated_identified_modes,F4-004,4,r02,1.12,,,,,oracle_mode_id_formula_check_not_blind_ridge_measurement

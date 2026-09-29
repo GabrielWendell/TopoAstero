@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage8_interval.schema.json",
+  "title": "Stage 8 stochastic and background-branch interval",
+  "type": "object", "additionalProperties": false,
+  "required": ["cell_id", "role", "true_dnu_uHz", "point_dnu_uHz", "lower_dnu_uHz", "upper_dnu_uHz", "interval_level", "replicates", "branches", "covers_truth", "ridge_draws_available", "ridge_phase_lower_cycles", "ridge_phase_upper_cycles", "ridge_phase_interval_wraps"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "role": {"const": "evaluation"},
+    "true_dnu_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "point_dnu_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "lower_dnu_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "upper_dnu_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "interval_level": {"const": 0.9},
+    "replicates": {"const": 8},
+    "branches": {"const": "primary;slope_minus;slope_plus"},
+    "covers_truth": {"type": "boolean"},
+    "ridge_draws_available": {"type": "integer", "minimum": 0, "maximum": 8},
+    "ridge_phase_lower_cycles": {"type": ["number", "null"], "minimum": 0, "exclusiveMaximum": 1},
+    "ridge_phase_upper_cycles": {"type": ["number", "null"], "minimum": 0, "exclusiveMaximum": 1},
+    "ridge_phase_interval_wraps": {"type": "boolean"}
+  }
+}
