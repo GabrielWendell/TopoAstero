@@ -6,6 +6,7 @@ import argparse
 import json
 import sys
 from collections.abc import Sequence
+from pathlib import Path
 
 from topoastero.acquisition import verify_cached_products
 from topoastero.config import configuration_hash
@@ -21,6 +22,7 @@ from topoastero.stage5_validation import validate_stage5
 from topoastero.stage6_validation import validate_stage6
 from topoastero.stage7_validation import validate_stage7
 from topoastero.stage8_validation import validate_stage8
+from topoastero.stage9_validation import validate_stage9
 from topoastero.validation import validate_stage0
 
 
@@ -85,6 +87,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     stage8.add_argument("--root", default=".")
     stage8.add_argument("--without-prior-stages", action="store_true")
+
+    stage9 = subparsers.add_parser(
+        "validate-stage9", help="validate mathematical audit and independent-review hold"
+    )
+    stage9.add_argument("--root", default=".")
+    stage9.add_argument("--without-prior-stages", action="store_true")
 
     cache = subparsers.add_parser(
         "verify-stage2-cache", help="verify cached mission payloads against frozen manifests"
@@ -196,6 +204,16 @@ def main(argv: Sequence[str] | None = None) -> None:
                 print(f"- {error}", file=sys.stderr)
             raise SystemExit(1)
         print("Stage 8 cylindrical-echelle geometry and bounded-inference contract: PASS")
+        return
+    if args.command == "validate-stage9":
+        errors = validate_stage9(args.root, require_prior_stages=not args.without_prior_stages)
+        if errors:
+            print("Stage 9 mathematical-audit contract failed:", file=sys.stderr)
+            for error in errors:
+                print(f"- {error}", file=sys.stderr)
+            raise SystemExit(1)
+        gate = json.loads((Path(args.root) / "reports/stage9/G9_ACCEPTANCE.json").read_text())
+        print(f"Stage 9 implementation: PASS; scientific G9: {gate['status']}")
         return
     if args.command == "verify-stage2-cache":
         errors = verify_cached_products(args.manifest, args.cache_dir)

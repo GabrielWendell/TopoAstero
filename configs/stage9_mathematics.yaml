@@ -1,0 +1,20 @@
+config_id: TA-STAGE9-MATHEMATICS-1.0
+run_id: TA-S09-MATH-R001
+software_version: TopoAstero-0.10.0
+prior_stage8_decision: geometry_only
+field_domain: finite_path_or_masked_finite_cylinder
+coefficients: F2
+stage8_ridge_jump_limit_cycles: 0.17
+phase_bins: 24
+path_random_cases: 128
+cylinder_random_cases: 20
+ridge_random_cases: 160
+gamma:
+  shape: 8.0
+  bins: 24
+  alpha: 0.1
+  simulation_replicates: 4096
+seed: 20260929
+population_spectra_allowed: false
+final_holdout_allowed: false
+

@@ -340,6 +340,29 @@ def _repair_stage8_manifest(root: Path) -> int:
     return changed
 
 
+def _repair_stage9_manifest(root: Path) -> int:
+    """Refresh byte seals without interpreting the independent-review decision."""
+
+    path = root / "results/stage9/run_manifest.json"
+    if not path.is_file():
+        return 0
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    changed = 0
+    for collection in ("inputs", "outputs"):
+        for record in payload.get(collection, []):
+            portable = serialized_posix_path(str(record.get("path", "")))
+            target = root / portable
+            if not target.is_file():
+                raise FileNotFoundError(target)
+            updates = {"path": portable, "size_bytes": target.stat().st_size, "sha256": sha256_file(target)}
+            for key, value in updates.items():
+                if record.get(key) != value:
+                    record[key] = value
+                    changed += 1
+    write_json_lf(path, payload)
+    return changed
+
+
 def repair(root: Path) -> dict[str, Any]:
     repository = root.resolve()
     normalized = normalize_tracked_text_files(repository)
@@ -358,9 +381,10 @@ def repair(root: Path) -> dict[str, Any]:
     refreshed["stage6_run_manifest"] = _repair_stage6_manifest(repository)
     refreshed["stage7_run_manifest"] = _repair_stage7_manifest(repository)
     refreshed["stage8_run_manifest"] = _repair_stage8_manifest(repository)
+    refreshed["stage9_run_manifest"] = _repair_stage9_manifest(repository)
 
     # Rebuild stage checksum indexes last, because they cover many of the files changed above.
-    for stage in range(9):
+    for stage in range(10):
         key = f"stage{stage}_deliverable_manifest"
         refreshed[key] = _refresh_checksum_manifest(
             repository / f"reports/stage{stage}/deliverable_manifest.csv", repository

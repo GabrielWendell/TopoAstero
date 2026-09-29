@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "changed": [
+        4,
+        3,
+        3
+      ],
+      "family": "merged_peaks",
+      "id": "CE01",
+      "values": [
+        4,
+        1,
+        3
+      ],
+      "violated_assumption": "distinct heights / positive lifetime margin"
+    },
+    {
+      "changed": [
+        1,
+        0,
+        3
+      ],
+      "family": "edge_birth",
+      "id": "CE02",
+      "values": [
+        3,
+        0,
+        2
+      ],
+      "violated_assumption": "interior-only peaks or finite global survivor"
+    },
+    {
+      "family": "missing_order",
+      "id": "CE03",
+      "phases": [
+        0.1,
+        0.1,
+        null,
+        0.1
+      ],
+      "violated_assumption": "consecutive observed trial rows"
+    },
+    {
+      "family": "curvature",
+      "id": "CE04",
+      "residual_uHz": [
+        4,
+        1,
+        0,
+        1,
+        4
+      ],
+      "violated_assumption": "C=0 straight ridge"
+    },
+    {
+      "family": "crossing_ridges",
+      "id": "CE05",
+      "phases_a": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "phases_b": [
+        0.5,
+        0.4,
+        0.3,
+        0.2
+      ],
+      "violated_assumption": "fixed target identity and candidate retention"
+    },
+    {
+      "circular_mismatches": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "family": "half_double_alias",
+      "id": "CE06",
+      "trials_uHz": [
+        50,
+        100,
+        200
+      ],
+      "true_spacing_uHz": 100,
+      "violated_assumption": "physical radial orders in consecutive trial rows"
+    },
+    {
+      "comb_spacings_uHz": [
+        90,
+        110
+      ],
+      "family": "multimodal_spacing",
+      "id": "CE07",
+      "violated_assumption": "single true comb / unimodal score"
+    },
+    {
+      "family": "stochastic_reordering",
+      "gamma_shape": 8.0,
+      "id": "CE08",
+      "observed_peak_ranking_changes": true,
+      "violated_assumption": "realization-invariant local peak ordering"
+    },
+    {
+      "family": "sheared_field",
+      "id": "CE09",
+      "transformation": "phase rotation per row on a continuous cylinder",
+      "violated_assumption": "monotone persistence loss with ridge drift"
+    }
+  ],
+  "run_id": "TA-S09-MATH-R001"
+}

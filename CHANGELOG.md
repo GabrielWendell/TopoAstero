@@ -9,6 +9,20 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 - Follow-up estimator development under a newly registered protocol; no Stage 8 score utility claim.
 
+## [0.10.0] - 2026-09-29
+
+### Added
+
+- Stage 9 formal domain and convention chapter: path elder prominence, continuous-delay ellipse,
+  fixed-complex bottleneck stability, lifted r02 geometry, conditional Gamma tail calibration,
+  and exact algebraic stellar propagation with separate astrophysical corrections.
+- New conditional finite-order target-ridge jump and graph coherence ceiling with explicit
+  adjacent trial rows, curvature, localization and candidate-retention assumptions; proof awaits
+  independent human review and is not an estimator-utility claim.
+- Nine adversarial constructions, seeded proof-linked numerical/property regressions, styled
+  figures, executed notebook, schemas, provenance seals and honest G9 `review_pending` gate.
+- Preserved Stage 8's `geometry_only` decision and barred population/final holdout use.
+
 ## [0.9.0] - 2026-09-28
 
 ### Added

@@ -4,7 +4,7 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.9.0 implements Stages 0-8 through the cylindrical-echelle geometry/utility decision. It contains
+Version 0.10.0 implements Stages 0-9 through the mathematical audit and proof-review packet. It contains
 traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
 independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
 calibrated null/coverage maps, a localized dependency-light TDA core, a locked compact statistic
@@ -12,7 +12,7 @@ set, exact PSD peak/saddle localization, uncertainty-bearing `nu_max` and comb A
 quality control, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher
 payloads.
 
-## Reproduce Stages 0-8
+## Reproduce Stages 0-9
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -29,6 +29,7 @@ uv run topoastero validate-stage5 --root .
 uv run topoastero validate-stage6 --root .
 uv run topoastero validate-stage7 --root .
 uv run topoastero validate-stage8 --root .
+uv run topoastero validate-stage9 --root .
 uv run ruff check .
 uv run mypy src
 uv run pytest
@@ -68,6 +69,20 @@ Stage 8 validation checks the exact periodic cubical seam, the matched fast/full
 15-spacing half/nominal/double alias search, maximum-statistic background nulls, paired six-method
 benchmark, stochastic/background intervals, identified-mode ratio audit, failure atlas, the
 geometry-only G8 decision, and all earlier contracts.
+Stage 9 validation checks proof-linked analytic and numerical identities, fixed-mask diagram
+stability, conditional finite-order ridge jumps, Gamma tail calibration, nine counterexamples,
+explicit stellar systematics, source-backed figures, an executed notebook and byte provenance.
+It reports implementation **PASS** separately from scientific G9 **review_pending**: a named
+independent proof review is required to accept the new proposition. Stage 8 remains geometry-only.
+
+To regenerate the Stage 9 evidence in a clean checkout before the validator, run:
+
+```bash
+uv run python workflows/run_stage9_mathematics.py
+uv run python workflows/execute_stage9_notebook.py
+uv run python workflows/build_stage9_manifest.py
+uv run topoastero validate-stage9 --root .
+```
 
 To reacquire the exact 10 Kepler and 11 SPOC TESS payloads into an external cache and regenerate the
 full Stage 3 tables and figures:
@@ -241,6 +256,26 @@ coverage is 0.20 on the five prespecified eligible evaluation cells. The combine
 a validated population estimator. See
 [`reports/stage8/TRACEABILITY_MATRIX.md`](reports/stage8/TRACEABILITY_MATRIX.md).
 
+## Stage 9 implementation map
+
+| Task | Artifact | Executable evidence |
+| --- | --- | --- |
+| T9.1 | Definitions, fixed-mask/F2 boundary and stochastic assumptions | closed protocol and formal chapter |
+| T9.2 | Peak identity, sinusoid ellipse and lifted ratio propositions | independent seeded/property regressions |
+| T9.3 | Fixed-complex stability and new conditional target-ridge bound | diagram bottleneck and finite-order jump tests |
+| T9.4 | Raw-Gamma Chernoff/union calibration | 4096 seeded draws and Wilson interval |
+| T9.5 | Explicit seismic/stellar log budgets | separate correction arguments and exact interval tests |
+| T9.6 | Nine assumption-breaking constructions | catalog and machine-readable adversarial examples |
+| T9.7 | Theorem/proposition/approximation/empirical claim register | IDs S9-P1–P6, S9-T1, S9-E1, S9-C1 |
+| T9.8 | Review packet and clean-extraction recipe | executed notebook, CI, manifests; **independent review pending** |
+
+The [formal chapter](docs/science/STAGE9_THEOREMS_AND_PROOFS.md),
+[traceability matrix](reports/stage9/TRACEABILITY_MATRIX.md) and
+[G9 record](reports/stage9/G9_ACCEPTANCE.json) distinguish automated implementation
+integrity from the human proof-review requirement. The proposition concerns a specified,
+observed target candidate in consecutive trial rows; it does not establish a global score
+bound or reverse Stage 8's negative utility verdict.
+
 ## Repository layout
 
 ```text
@@ -252,7 +287,7 @@ TopoAstero/
 |- environment/             Container and cross-platform environment specifications
 |- notebooks/               Readable demonstrations only; never the sole analysis path
 |- registries/              Hypotheses, decisions, risks, splits, experiments, changes
-|- reports/stage0..stage8/  Acceptance evidence and machine audit outputs
+|- reports/stage0..stage9/  Acceptance evidence and machine audit outputs
 |- results/                 Machine-readable outputs and figure recipes
 |- schemas/                 JSON Schemas for configuration and provenance records
 |- src/topoastero/          Installable Python package
@@ -311,9 +346,12 @@ explain those records but do not silently override them.
 - Stage 8 validates the periodic geometry but fails the frozen alias/coverage/increment utility
   gates. The score and angular proxy cannot be promoted to an astrophysical estimator without a
   new preregistered, independent evaluation. Published modes audit formulae only.
+- Stage 9's new conditional ridge statement awaits independent human proof review. Its Gamma
+  statement applies to unsmoothed raw bins under a specified marginal model; its stellar
+  propagation requires independently supplied correction allowances. G9 is review pending.
 
 ## License and citation
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 8.
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 9.

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage9_run_manifest.schema.json",
+  "title": "Stage 9 run provenance",
+  "type": "object", "additionalProperties": false,
+  "required": ["run_id", "config_sha256", "software_version", "style_id", "status", "gate_status", "population_spectra_used", "final_holdout_used", "inputs", "outputs"],
+  "properties": {
+    "run_id": {"const": "TA-S09-MATH-R001"},
+    "config_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "software_version": {"const": "TopoAstero-0.10.0"}, "style_id": {"const": "TA-PLOT-1.0"},
+    "status": {"const": "implementation_complete"},
+    "gate_status": {"enum": ["review_pending", "pass"]},
+    "population_spectra_used": {"const": false}, "final_holdout_used": {"const": false},
+    "inputs": {"$ref": "#/$defs/records"}, "outputs": {"$ref": "#/$defs/records"}
+  },
+  "$defs": {"records": {"type": "array", "minItems": 2, "items": {"type": "object", "additionalProperties": false, "required": ["path", "size_bytes", "sha256"], "properties": {"path": {"type": "string"}, "size_bytes": {"type": "integer", "minimum": 0}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}}}
+}
