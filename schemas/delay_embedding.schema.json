@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/delay_embedding.schema.json",
+  "title": "TopoAstero delay embedding audit record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_id", "role", "delay", "dimension", "normalization", "total_windows", "rejected_windows", "valid_fraction", "retained_points", "sampling"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "role": {"enum": ["calibration", "evaluation"]},
+    "delay": {"type": "integer", "minimum": 1},
+    "dimension": {"type": "integer", "minimum": 2},
+    "normalization": {"enum": ["robust_global", "zscore_global", "none"]},
+    "total_windows": {"type": "integer", "minimum": 4},
+    "rejected_windows": {"type": "integer", "minimum": 0},
+    "valid_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+    "retained_points": {"type": "integer", "minimum": 4},
+    "sampling": {"enum": ["uniform", "farthest"]}
+  }
+}
+

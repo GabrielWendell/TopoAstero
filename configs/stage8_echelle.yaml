@@ -1,0 +1,74 @@
+schema_version: 1
+config_id: TA-STAGE8-ECHELLE-1.0
+run_id: TA-S08-ECHELLE-R001
+frozen_on: "2026-09-28"
+software_version: TopoAstero-0.9.0
+scope:
+  source: registries/stage4_factorial_design.csv
+  selection: first_24_balanced_simulation_cells
+  expected_cells: 24
+  calibration: odd_cell_number
+  evaluation: even_cell_number
+  stage6_prior: results/stage6/comb_benchmark.csv
+  prior_method: acf
+  published_ratio_table: data/reference/frequency_ratios.csv
+  published_ratio_usage: formula_audit_only_no_training
+  population_spectra_allowed: false
+  final_holdout_allowed: false
+simulation:
+  independent_seed_offset: 800008
+  frequency_bins: 512
+  half_bandwidth_true_dnu: 5.0
+  smoothing_bins: 1.2
+  noise_model: gamma_periodogram_matched_to_duration
+  maximum_periodogram_averages: 8
+  cadence_integration: true
+geometry:
+  phase_bins: 24
+  phase_centers: half_bin_no_duplicated_endpoint
+  order_interval: floor_frequency_over_trial_spacing
+  minimum_order_coverage: 0.75
+  incomplete_order_rule: omit_vertices_and_incident_cells
+  periodic_axis: angular_only
+  cubical_filtration: upper_star_minimum_vertex_F2
+  score_normalization: median_and_maximum_of_half_or_1p4826_MAD
+score:
+  h0_weight: 0.55
+  graph_weight: 0.45
+  finite_h0_limit_per_order: 3
+  persistence_cap: 4.0
+  essential_classes_in_numeric_score: false
+  maximum_ridge_candidates_per_order: 5
+  circular_jump_limit_cycles: 0.17
+  scan_fractions: [0.90, 0.95, 1.00, 1.05, 1.10]
+  aliases: [half, nominal, double]
+  min_valid_orders: 4
+  correct_spacing_relative_tolerance: 0.12
+  ambiguity_top_two_ratio: 1.05
+"null":
+  family: background_only_matched_gamma_periodogram
+  draws_per_evaluation_cell: 24
+  statistic: maximum_over_15_registered_spacing_trials
+  pvalue: plus_one_upper_tail
+  alpha: 0.05
+  note: null_draws_are_independent_from_observed_and_bootstrap_streams
+uncertainty:
+  level: 0.90
+  independent_realizations_per_evaluation_cell: 8
+  fitted_background_branches: [primary, slope_minus, slope_plus]
+  slope_fraction: 0.08
+  minimum_half_width_relative_to_point: 0.12
+  circular_arc_method: shortest_empirical_arc
+  denominator: detectable_evaluation_cells
+ratios:
+  angle_requires_external_degree_anchor: true
+  five_point_requires_identified_mode_frequencies: true
+  do_not_substitute_ridge_angle_for_r01_or_r10: true
+stress:
+  factors: [glitch, curvature, dropout, avoided_crossing, rotation, noise]
+gate:
+  detectable_definition: high_or_medium_snr_and_at_least_nine_visible_orders_and_nyquist_above_numax_plus_1p5dnu_and_duty_at_least_0p8
+  minimum_detectable_alias_accuracy: 0.60
+  minimum_detectable_90pct_interval_coverage: 0.80
+  minimum_topology_accuracy_gain_over_graph: 0.05
+  fallback: correct_geometry_only_and_narrow_claims

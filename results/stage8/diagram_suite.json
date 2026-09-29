@@ -1,0 +1,2355 @@
+{
+  "cell_id": "F4-004",
+  "coefficient_field": "F2",
+  "essential_h0": 1,
+  "essential_h1": 1,
+  "filtration": "normalized_log(P/B)_superlevel_upper_star",
+  "finite_h0": 36,
+  "finite_h1": 13,
+  "incomplete_order_rule": "omit_vertices_and_incident_cells",
+  "pairs": [
+    {
+      "birth": 1.602941096859639,
+      "birth_location": [
+        {
+          "frequency_uHz": 2509.0625,
+          "order": 23,
+          "phase_cycles": 0.8958333333333334,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        189
+      ],
+      "death": 0.05125149700570866,
+      "death_location": [
+        {
+          "frequency_uHz": 2587.8125,
+          "order": 24,
+          "phase_cycles": 0.6458333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2592.1875,
+          "order": 24,
+          "phase_cycles": 0.6875,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        207,
+        208
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0000",
+      "persistence": 1.5516895998539302,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 1.4674083331340944,
+      "birth_location": [
+        {
+          "frequency_uHz": 1879.0624999999998,
+          "order": 17,
+          "phase_cycles": 0.8958333333333334,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        45
+      ],
+      "death": 0.34796767301645093,
+      "death_location": [
+        {
+          "frequency_uHz": 2189.6875,
+          "order": 20,
+          "phase_cycles": 0.8541666666666666,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2294.6875,
+          "order": 21,
+          "phase_cycles": 0.8541666666666666,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        116,
+        140
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0001",
+      "persistence": 1.1194406601176434,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.5091673511416601,
+      "birth_location": [
+        {
+          "frequency_uHz": 2679.6875,
+          "order": 25,
+          "phase_cycles": 0.5208333333333334,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        228
+      ],
+      "death": -0.2957428333890785,
+      "death_location": [
+        {
+          "frequency_uHz": 2670.9375,
+          "order": 25,
+          "phase_cycles": 0.4375,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2675.3125,
+          "order": 25,
+          "phase_cycles": 0.4791666666666667,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        226,
+        227
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0002",
+      "persistence": 0.8049101845307386,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.27936335912408106,
+      "birth_location": [
+        {
+          "frequency_uHz": 2640.3125,
+          "order": 25,
+          "phase_cycles": 0.14583333333333334,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        219
+      ],
+      "death": -0.38884308871231454,
+      "death_location": [
+        {
+          "frequency_uHz": 2535.3125,
+          "order": 24,
+          "phase_cycles": 0.14583333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2640.3125,
+          "order": 25,
+          "phase_cycles": 0.14583333333333334,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        195,
+        219
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0003",
+      "persistence": 0.6682064478363956,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 3.044853952379713,
+      "birth_location": [
+        {
+          "frequency_uHz": 2150.3125,
+          "order": 20,
+          "phase_cycles": 0.4791666666666667,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        107
+      ],
+      "death": 2.394678255949552,
+      "death_location": [
+        {
+          "frequency_uHz": 2145.9375,
+          "order": 20,
+          "phase_cycles": 0.4375,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2250.9375,
+          "order": 21,
+          "phase_cycles": 0.4375,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        106,
+        130
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0004",
+      "persistence": 0.650175696430161,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.7565845497648939,
+      "birth_location": [
+        {
+          "frequency_uHz": 2491.5625,
+          "order": 23,
+          "phase_cycles": 0.7291666666666666,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        185
+      ],
+      "death": 0.1206641244426446,
+      "death_location": [
+        {
+          "frequency_uHz": 2500.3125,
+          "order": 23,
+          "phase_cycles": 0.8125,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2504.6875,
+          "order": 23,
+          "phase_cycles": 0.8541666666666666,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        187,
+        188
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0005",
+      "persistence": 0.6359204253222492,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.544825892942634,
+      "birth_location": [
+        {
+          "frequency_uHz": 2119.6875,
+          "order": 20,
+          "phase_cycles": 0.1875,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        100
+      ],
+      "death": -0.020706436081172813,
+      "death_location": [
+        {
+          "frequency_uHz": 2110.9375,
+          "order": 20,
+          "phase_cycles": 0.10416666666666667,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2115.3125,
+          "order": 20,
+          "phase_cycles": 0.14583333333333334,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        98,
+        99
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0006",
+      "persistence": 0.5655323290238068,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.7175504137288161,
+      "birth_location": [
+        {
+          "frequency_uHz": 2067.1875,
+          "order": 19,
+          "phase_cycles": 0.6875,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        88
+      ],
+      "death": 0.1535314496633983,
+      "death_location": [
+        {
+          "frequency_uHz": 2071.5625,
+          "order": 19,
+          "phase_cycles": 0.7291666666666666,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2176.5625,
+          "order": 20,
+          "phase_cycles": 0.7291666666666666,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        89,
+        113
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0007",
+      "persistence": 0.5640189640654178,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.29139609305299885,
+      "birth_location": [
+        {
+          "frequency_uHz": 1708.4374999999998,
+          "order": 16,
+          "phase_cycles": 0.2708333333333333,
+          "row": 0
+        }
+      ],
+      "birth_vertices": [
+        6
+      ],
+      "death": -0.1795128231104365,
+      "death_location": [
+        {
+          "frequency_uHz": 1712.8125,
+          "order": 16,
+          "phase_cycles": 0.3125,
+          "row": 0
+        },
+        {
+          "frequency_uHz": 1817.8125,
+          "order": 17,
+          "phase_cycles": 0.3125,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        7,
+        31
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0008",
+      "persistence": 0.47090891616343533,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.37855344067145746,
+      "birth_location": [
+        {
+          "frequency_uHz": 2272.8125,
+          "order": 21,
+          "phase_cycles": 0.6458333333333334,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        135
+      ],
+      "death": -0.04615156390651942,
+      "death_location": [
+        {
+          "frequency_uHz": 2272.8125,
+          "order": 21,
+          "phase_cycles": 0.6458333333333334,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2277.1875,
+          "order": 21,
+          "phase_cycles": 0.6875,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        135,
+        136
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0009",
+      "persistence": 0.4247050045779769,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.4797286960908663,
+      "birth_location": [
+        {
+          "frequency_uHz": 2478.4375,
+          "order": 23,
+          "phase_cycles": 0.6041666666666666,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        182
+      ],
+      "death": 0.09472365048263612,
+      "death_location": [
+        {
+          "frequency_uHz": 2469.6875,
+          "order": 23,
+          "phase_cycles": 0.5208333333333334,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2474.0625,
+          "order": 23,
+          "phase_cycles": 0.5625,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        180,
+        181
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0010",
+      "persistence": 0.38500504560823023,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 1.0347720791754298,
+      "birth_location": [
+        {
+          "frequency_uHz": 1892.1874999999998,
+          "order": 18,
+          "phase_cycles": 0.020833333333333332,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        48
+      ],
+      "death": 0.680758561192438,
+      "death_location": [
+        {
+          "frequency_uHz": 1883.4375,
+          "order": 17,
+          "phase_cycles": 0.9375,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1887.8125000000002,
+          "order": 17,
+          "phase_cycles": 0.9791666666666666,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        46,
+        47
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0011",
+      "persistence": 0.35401351798299174,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.5914902359781125,
+      "birth_location": [
+        {
+          "frequency_uHz": 2662.1875,
+          "order": 25,
+          "phase_cycles": 0.3541666666666667,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        224
+      ],
+      "death": 0.33504488740697425,
+      "death_location": [
+        {
+          "frequency_uHz": 2557.1875,
+          "order": 24,
+          "phase_cycles": 0.3541666666666667,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2662.1875,
+          "order": 25,
+          "phase_cycles": 0.3541666666666667,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        200,
+        224
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0012",
+      "persistence": 0.2564453485711382,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.6334609089716681,
+      "birth_location": [
+        {
+          "frequency_uHz": 2303.4375,
+          "order": 21,
+          "phase_cycles": 0.9375,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        142
+      ],
+      "death": 0.38273299904466807,
+      "death_location": [
+        {
+          "frequency_uHz": 2404.0625,
+          "order": 22,
+          "phase_cycles": 0.8958333333333334,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2509.0625,
+          "order": 23,
+          "phase_cycles": 0.8958333333333334,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        165,
+        189
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0013",
+      "persistence": 0.250727909927,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.19061502640074704,
+      "birth_location": [
+        {
+          "frequency_uHz": 1922.8125,
+          "order": 18,
+          "phase_cycles": 0.3125,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        55
+      ],
+      "death": -0.04633928344062581,
+      "death_location": [
+        {
+          "frequency_uHz": 1822.1875000000002,
+          "order": 17,
+          "phase_cycles": 0.3541666666666667,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1826.5624999999998,
+          "order": 17,
+          "phase_cycles": 0.3958333333333333,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        32,
+        33
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0014",
+      "persistence": 0.23695430984137283,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.012796262046210566,
+      "birth_location": [
+        {
+          "frequency_uHz": 2163.4375,
+          "order": 20,
+          "phase_cycles": 0.6041666666666666,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        110
+      ],
+      "death": -0.2236672398576262,
+      "death_location": [
+        {
+          "frequency_uHz": 2163.4375,
+          "order": 20,
+          "phase_cycles": 0.6041666666666666,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2167.8125,
+          "order": 20,
+          "phase_cycles": 0.6458333333333334,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        110,
+        111
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0015",
+      "persistence": 0.23646350190383678,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.1498436202552376,
+      "birth_location": [
+        {
+          "frequency_uHz": 2032.1875000000002,
+          "order": 19,
+          "phase_cycles": 0.3541666666666667,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        80
+      ],
+      "death": -0.07211047710729687,
+      "death_location": [
+        {
+          "frequency_uHz": 2027.8125,
+          "order": 19,
+          "phase_cycles": 0.3125,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2032.1875000000002,
+          "order": 19,
+          "phase_cycles": 0.3541666666666667,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        79,
+        80
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0016",
+      "persistence": 0.22195409736253446,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.11765423196031666,
+      "birth_location": [
+        {
+          "frequency_uHz": 2325.3125,
+          "order": 22,
+          "phase_cycles": 0.14583333333333334,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        147
+      ],
+      "death": -0.08714407601501153,
+      "death_location": [
+        {
+          "frequency_uHz": 2421.5625,
+          "order": 23,
+          "phase_cycles": 0.0625,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2425.9375,
+          "order": 23,
+          "phase_cycles": 0.10416666666666667,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        169,
+        170
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0017",
+      "persistence": 0.2047983079753282,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.03116892993525866,
+      "birth_location": [
+        {
+          "frequency_uHz": 2701.5625,
+          "order": 25,
+          "phase_cycles": 0.7291666666666666,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        233
+      ],
+      "death": -0.1652193084810013,
+      "death_location": [
+        {
+          "frequency_uHz": 2596.5625,
+          "order": 24,
+          "phase_cycles": 0.7291666666666666,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2701.5625,
+          "order": 25,
+          "phase_cycles": 0.7291666666666666,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        209,
+        233
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0018",
+      "persistence": 0.13405037854574264,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.5401635845412182,
+      "birth_location": [
+        {
+          "frequency_uHz": 2285.9375,
+          "order": 21,
+          "phase_cycles": 0.7708333333333334,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        138
+      ],
+      "death": 0.4070817122322047,
+      "death_location": [
+        {
+          "frequency_uHz": 2294.6875,
+          "order": 21,
+          "phase_cycles": 0.8541666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2299.0625,
+          "order": 21,
+          "phase_cycles": 0.8958333333333334,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        140,
+        141
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0019",
+      "persistence": 0.13308187230901347,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.5980642796279348,
+      "birth_location": [
+        {
+          "frequency_uHz": 1848.4375000000002,
+          "order": 17,
+          "phase_cycles": 0.6041666666666666,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        38
+      ],
+      "death": 0.4690256331335978,
+      "death_location": [
+        {
+          "frequency_uHz": 1844.0625,
+          "order": 17,
+          "phase_cycles": 0.5625,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1848.4375000000002,
+          "order": 17,
+          "phase_cycles": 0.6041666666666666,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        37,
+        38
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0020",
+      "persistence": 0.12903864649433705,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.29298608707968743,
+      "birth_location": [
+        {
+          "frequency_uHz": 2005.9375000000002,
+          "order": 19,
+          "phase_cycles": 0.10416666666666667,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        74
+      ],
+      "death": 0.16604524273993657,
+      "death_location": [
+        {
+          "frequency_uHz": 2001.5625,
+          "order": 19,
+          "phase_cycles": 0.0625,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2005.9375000000002,
+          "order": 19,
+          "phase_cycles": 0.10416666666666667,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        73,
+        74
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0021",
+      "persistence": 0.12694084433975086,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.126765583704557,
+      "birth_location": [
+        {
+          "frequency_uHz": 1686.5625,
+          "order": 16,
+          "phase_cycles": 0.0625,
+          "row": 0
+        }
+      ],
+      "birth_vertices": [
+        1
+      ],
+      "death": 0.0018219047772527197,
+      "death_location": [
+        {
+          "frequency_uHz": 1787.1874999999998,
+          "order": 17,
+          "phase_cycles": 0.020833333333333332,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1791.5625,
+          "order": 17,
+          "phase_cycles": 0.0625,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        24,
+        25
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0022",
+      "persistence": 0.12494367892730429,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.07320994314693974,
+      "birth_location": [
+        {
+          "frequency_uHz": 2539.6875,
+          "order": 24,
+          "phase_cycles": 0.1875,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        196
+      ],
+      "death": -0.04606070391729572,
+      "death_location": [
+        {
+          "frequency_uHz": 2544.0625,
+          "order": 24,
+          "phase_cycles": 0.22916666666666666,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2548.4375,
+          "order": 24,
+          "phase_cycles": 0.2708333333333333,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        197,
+        198
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0023",
+      "persistence": 0.11927064706423546,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.2684419843329052,
+      "birth_location": [
+        {
+          "frequency_uHz": 2106.5625,
+          "order": 20,
+          "phase_cycles": 0.0625,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        97
+      ],
+      "death": 0.17311312127185516,
+      "death_location": [
+        {
+          "frequency_uHz": 2207.1875,
+          "order": 21,
+          "phase_cycles": 0.020833333333333332,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2211.5625,
+          "order": 21,
+          "phase_cycles": 0.0625,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        120,
+        121
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0024",
+      "persistence": 0.09532886306105007,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.6061490688713977,
+      "birth_location": [
+        {
+          "frequency_uHz": 1870.3125,
+          "order": 17,
+          "phase_cycles": 0.8125,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        43
+      ],
+      "death": 0.5129306814867921,
+      "death_location": [
+        {
+          "frequency_uHz": 1874.6875000000002,
+          "order": 17,
+          "phase_cycles": 0.8541666666666666,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1879.0624999999998,
+          "order": 17,
+          "phase_cycles": 0.8958333333333334,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        44,
+        45
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0025",
+      "persistence": 0.09321838738460564,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.4356356237098885,
+      "birth_location": [
+        {
+          "frequency_uHz": 2369.0625,
+          "order": 22,
+          "phase_cycles": 0.5625,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        157
+      ],
+      "death": 0.34375385072720166,
+      "death_location": [
+        {
+          "frequency_uHz": 2474.0625,
+          "order": 23,
+          "phase_cycles": 0.5625,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2478.4375,
+          "order": 23,
+          "phase_cycles": 0.6041666666666666,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        181,
+        182
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0026",
+      "persistence": 0.09188177298268685,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.47258038773997935,
+      "birth_location": [
+        {
+          "frequency_uHz": 2176.5625,
+          "order": 20,
+          "phase_cycles": 0.7291666666666666,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        113
+      ],
+      "death": 0.3888910702919305,
+      "death_location": [
+        {
+          "frequency_uHz": 2180.9375,
+          "order": 20,
+          "phase_cycles": 0.7708333333333334,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2285.9375,
+          "order": 21,
+          "phase_cycles": 0.7708333333333334,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        114,
+        138
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0027",
+      "persistence": 0.08368931744804886,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.026164206581588162,
+      "birth_location": [
+        {
+          "frequency_uHz": 2710.3125,
+          "order": 25,
+          "phase_cycles": 0.8125,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        235
+      ],
+      "death": -0.045733800290691934,
+      "death_location": [
+        {
+          "frequency_uHz": 2710.3125,
+          "order": 25,
+          "phase_cycles": 0.8125,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2714.6875,
+          "order": 25,
+          "phase_cycles": 0.8541666666666666,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        235,
+        236
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0028",
+      "persistence": 0.0718980068722801,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.09052279104122504,
+      "birth_location": [
+        {
+          "frequency_uHz": 2425.9375,
+          "order": 23,
+          "phase_cycles": 0.10416666666666667,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        170
+      ],
+      "death": 0.038408102047761516,
+      "death_location": [
+        {
+          "frequency_uHz": 2320.9375,
+          "order": 22,
+          "phase_cycles": 0.10416666666666667,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2425.9375,
+          "order": 23,
+          "phase_cycles": 0.10416666666666667,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        146,
+        170
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0029",
+      "persistence": 0.052114688993463526,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.47230004873838904,
+      "birth_location": [
+        {
+          "frequency_uHz": 2084.6875,
+          "order": 19,
+          "phase_cycles": 0.8541666666666666,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        92
+      ],
+      "death": 0.43617098090583317,
+      "death_location": [
+        {
+          "frequency_uHz": 1979.6875000000002,
+          "order": 18,
+          "phase_cycles": 0.8541666666666666,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 2084.6875,
+          "order": 19,
+          "phase_cycles": 0.8541666666666666,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        68,
+        92
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0030",
+      "persistence": 0.03612906783255587,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.9114297256148223,
+      "birth_location": [
+        {
+          "frequency_uHz": 1887.8125000000002,
+          "order": 17,
+          "phase_cycles": 0.9791666666666666,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        47
+      ],
+      "death": 0.8872140435988076,
+      "death_location": [
+        {
+          "frequency_uHz": 1992.8125000000002,
+          "order": 18,
+          "phase_cycles": 0.9791666666666666,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1892.1874999999998,
+          "order": 18,
+          "phase_cycles": 0.020833333333333332,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        71,
+        48
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0031",
+      "persistence": 0.02421568201601465,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.11734091658701411,
+      "birth_location": [
+        {
+          "frequency_uHz": 1695.3124999999998,
+          "order": 16,
+          "phase_cycles": 0.14583333333333334,
+          "row": 0
+        }
+      ],
+      "birth_vertices": [
+        3
+      ],
+      "death": -0.1356080909632121,
+      "death_location": [
+        {
+          "frequency_uHz": 1690.9375000000002,
+          "order": 16,
+          "phase_cycles": 0.10416666666666667,
+          "row": 0
+        },
+        {
+          "frequency_uHz": 1695.3124999999998,
+          "order": 16,
+          "phase_cycles": 0.14583333333333334,
+          "row": 0
+        }
+      ],
+      "death_vertices": [
+        2,
+        3
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0032",
+      "persistence": 0.018267174376198,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.3006259182052019,
+      "birth_location": [
+        {
+          "frequency_uHz": 2207.1875,
+          "order": 21,
+          "phase_cycles": 0.020833333333333332,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        120
+      ],
+      "death": 0.2866974885110489,
+      "death_location": [
+        {
+          "frequency_uHz": 2307.8125,
+          "order": 21,
+          "phase_cycles": 0.9791666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2207.1875,
+          "order": 21,
+          "phase_cycles": 0.020833333333333332,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        143,
+        120
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0033",
+      "persistence": 0.013928429694152977,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.05767760886123466,
+      "birth_location": [
+        {
+          "frequency_uHz": 1957.8124999999998,
+          "order": 18,
+          "phase_cycles": 0.6458333333333334,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        63
+      ],
+      "death": 0.044313810547131044,
+      "death_location": [
+        {
+          "frequency_uHz": 2062.8125,
+          "order": 19,
+          "phase_cycles": 0.6458333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2067.1875,
+          "order": 19,
+          "phase_cycles": 0.6875,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        87,
+        88
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0034",
+      "persistence": 0.013363798314103614,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.3603643852222701,
+      "birth_location": [
+        {
+          "frequency_uHz": 2592.1875,
+          "order": 24,
+          "phase_cycles": 0.6875,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        208
+      ],
+      "death": 0.3576636772980182,
+      "death_location": [
+        {
+          "frequency_uHz": 2487.1875,
+          "order": 23,
+          "phase_cycles": 0.6875,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2592.1875,
+          "order": 24,
+          "phase_cycles": 0.6875,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        184,
+        208
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D0-0035",
+      "persistence": 0.0027007079242519216,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 3.6178691192312624,
+      "birth_location": [
+        {
+          "frequency_uHz": 2250.9375,
+          "order": 21,
+          "phase_cycles": 0.4375,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        130
+      ],
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 0,
+      "essential": true,
+      "pair_id": "F4-004-cylinder-D0-0036",
+      "persistence": null,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": 0.16604524273993657,
+      "birth_location": [
+        {
+          "frequency_uHz": 2001.5625,
+          "order": 19,
+          "phase_cycles": 0.0625,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2106.5625,
+          "order": 20,
+          "phase_cycles": 0.0625,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        73,
+        97
+      ],
+      "death": -0.52303886327153,
+      "death_location": [
+        {
+          "frequency_uHz": 2093.4375,
+          "order": 19,
+          "phase_cycles": 0.9375,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2097.8125,
+          "order": 19,
+          "phase_cycles": 0.9791666666666666,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2198.4375,
+          "order": 20,
+          "phase_cycles": 0.9375,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2202.8125,
+          "order": 20,
+          "phase_cycles": 0.9791666666666666,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        94,
+        95,
+        118,
+        119
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0037",
+      "persistence": 0.6890841060114666,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.38884308871231454,
+      "birth_location": [
+        {
+          "frequency_uHz": 2535.3125,
+          "order": 24,
+          "phase_cycles": 0.14583333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2539.6875,
+          "order": 24,
+          "phase_cycles": 0.1875,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        195,
+        196
+      ],
+      "death": -0.9557633682461248,
+      "death_location": [
+        {
+          "frequency_uHz": 2439.0625,
+          "order": 23,
+          "phase_cycles": 0.22916666666666666,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2443.4375,
+          "order": 23,
+          "phase_cycles": 0.2708333333333333,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2544.0625,
+          "order": 24,
+          "phase_cycles": 0.22916666666666666,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2548.4375,
+          "order": 24,
+          "phase_cycles": 0.2708333333333333,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        173,
+        174,
+        197,
+        198
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0038",
+      "persistence": 0.5669202795338103,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.032355828569742076,
+      "birth_location": [
+        {
+          "frequency_uHz": 1852.8124999999998,
+          "order": 17,
+          "phase_cycles": 0.6458333333333334,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1957.8124999999998,
+          "order": 18,
+          "phase_cycles": 0.6458333333333334,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        39,
+        63
+      ],
+      "death": -0.5521735337492535,
+      "death_location": [
+        {
+          "frequency_uHz": 2058.4375,
+          "order": 19,
+          "phase_cycles": 0.6041666666666666,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2062.8125,
+          "order": 19,
+          "phase_cycles": 0.6458333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2163.4375,
+          "order": 20,
+          "phase_cycles": 0.6041666666666666,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2167.8125,
+          "order": 20,
+          "phase_cycles": 0.6458333333333334,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        86,
+        87,
+        110,
+        111
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0039",
+      "persistence": 0.5198177051795114,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.15094060725364605,
+      "birth_location": [
+        {
+          "frequency_uHz": 2128.4375,
+          "order": 20,
+          "phase_cycles": 0.2708333333333333,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2132.8125,
+          "order": 20,
+          "phase_cycles": 0.3125,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        102,
+        103
+      ],
+      "death": -0.6527880059767192,
+      "death_location": [
+        {
+          "frequency_uHz": 1931.5624999999998,
+          "order": 18,
+          "phase_cycles": 0.3958333333333333,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1935.9375,
+          "order": 18,
+          "phase_cycles": 0.4375,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 2036.5624999999998,
+          "order": 19,
+          "phase_cycles": 0.3958333333333333,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2040.9375,
+          "order": 19,
+          "phase_cycles": 0.4375,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        57,
+        58,
+        81,
+        82
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0040",
+      "persistence": 0.5018473987230732,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.25281707381793783,
+      "birth_location": [
+        {
+          "frequency_uHz": 2268.4375,
+          "order": 21,
+          "phase_cycles": 0.6041666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2373.4375,
+          "order": 22,
+          "phase_cycles": 0.6041666666666666,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        134,
+        158
+      ],
+      "death": -0.542162645125491,
+      "death_location": [
+        {
+          "frequency_uHz": 2377.8125,
+          "order": 22,
+          "phase_cycles": 0.6458333333333334,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2382.1875,
+          "order": 22,
+          "phase_cycles": 0.6875,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2482.8125,
+          "order": 23,
+          "phase_cycles": 0.6458333333333334,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2487.1875,
+          "order": 23,
+          "phase_cycles": 0.6875,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        159,
+        160,
+        183,
+        184
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0041",
+      "persistence": 0.2893455713075531,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.2718460563423859,
+      "birth_location": [
+        {
+          "frequency_uHz": 2224.6875,
+          "order": 21,
+          "phase_cycles": 0.1875,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2329.6875,
+          "order": 22,
+          "phase_cycles": 0.1875,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        124,
+        148
+      ],
+      "death": -0.5041259881672683,
+      "death_location": [
+        {
+          "frequency_uHz": 2316.5625,
+          "order": 22,
+          "phase_cycles": 0.0625,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2320.9375,
+          "order": 22,
+          "phase_cycles": 0.10416666666666667,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2421.5625,
+          "order": 23,
+          "phase_cycles": 0.0625,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2425.9375,
+          "order": 23,
+          "phase_cycles": 0.10416666666666667,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        145,
+        146,
+        169,
+        170
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0042",
+      "persistence": 0.23227993182488238,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.22459239541802747,
+      "birth_location": [
+        {
+          "frequency_uHz": 1966.5625000000002,
+          "order": 18,
+          "phase_cycles": 0.7291666666666666,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1970.9374999999998,
+          "order": 18,
+          "phase_cycles": 0.7708333333333334,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        65,
+        66
+      ],
+      "death": -0.44731992813150145,
+      "death_location": [
+        {
+          "frequency_uHz": 2075.9375,
+          "order": 19,
+          "phase_cycles": 0.7708333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2080.3125,
+          "order": 19,
+          "phase_cycles": 0.8125,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 2180.9375,
+          "order": 20,
+          "phase_cycles": 0.7708333333333334,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2185.3125,
+          "order": 20,
+          "phase_cycles": 0.8125,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        90,
+        91,
+        114,
+        115
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0043",
+      "persistence": 0.22272753271347398,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.529688051318553,
+      "birth_location": [
+        {
+          "frequency_uHz": 1699.6875,
+          "order": 16,
+          "phase_cycles": 0.1875,
+          "row": 0
+        },
+        {
+          "frequency_uHz": 1704.0625000000002,
+          "order": 16,
+          "phase_cycles": 0.22916666666666666,
+          "row": 0
+        }
+      ],
+      "birth_vertices": [
+        4,
+        5
+      ],
+      "death": -0.717575788091294,
+      "death_location": [
+        {
+          "frequency_uHz": 1809.0625000000002,
+          "order": 17,
+          "phase_cycles": 0.22916666666666666,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1813.4374999999998,
+          "order": 17,
+          "phase_cycles": 0.2708333333333333,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1914.0625000000002,
+          "order": 18,
+          "phase_cycles": 0.22916666666666666,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1918.4374999999998,
+          "order": 18,
+          "phase_cycles": 0.2708333333333333,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        29,
+        30,
+        53,
+        54
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0044",
+      "persistence": 0.18788773677274095,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.2540844566847089,
+      "birth_location": [
+        {
+          "frequency_uHz": 2159.0625,
+          "order": 20,
+          "phase_cycles": 0.5625,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2163.4375,
+          "order": 20,
+          "phase_cycles": 0.6041666666666666,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        109,
+        110
+      ],
+      "death": -0.4334333609619677,
+      "death_location": [
+        {
+          "frequency_uHz": 2264.0625,
+          "order": 21,
+          "phase_cycles": 0.5625,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2268.4375,
+          "order": 21,
+          "phase_cycles": 0.6041666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2369.0625,
+          "order": 22,
+          "phase_cycles": 0.5625,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2373.4375,
+          "order": 22,
+          "phase_cycles": 0.6041666666666666,
+          "row": 6
+        }
+      ],
+      "death_vertices": [
+        133,
+        134,
+        157,
+        158
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0045",
+      "persistence": 0.1793489042772588,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.3050238184504867,
+      "birth_location": [
+        {
+          "frequency_uHz": 2574.6875,
+          "order": 24,
+          "phase_cycles": 0.5208333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2679.6875,
+          "order": 25,
+          "phase_cycles": 0.5208333333333334,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        204,
+        228
+      ],
+      "death": -0.41741925106099764,
+      "death_location": [
+        {
+          "frequency_uHz": 2570.3125,
+          "order": 24,
+          "phase_cycles": 0.4791666666666667,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2574.6875,
+          "order": 24,
+          "phase_cycles": 0.5208333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2675.3125,
+          "order": 25,
+          "phase_cycles": 0.4791666666666667,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2679.6875,
+          "order": 25,
+          "phase_cycles": 0.5208333333333334,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        203,
+        204,
+        227,
+        228
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0046",
+      "persistence": 0.11239543261051094,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.2672232250362805,
+      "birth_location": [
+        {
+          "frequency_uHz": 2312.1875,
+          "order": 22,
+          "phase_cycles": 0.020833333333333332,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2417.1875,
+          "order": 23,
+          "phase_cycles": 0.020833333333333332,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        144,
+        168
+      ],
+      "death": -0.33586220745355067,
+      "death_location": [
+        {
+          "frequency_uHz": 2412.8125,
+          "order": 22,
+          "phase_cycles": 0.9791666666666666,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2312.1875,
+          "order": 22,
+          "phase_cycles": 0.020833333333333332,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2517.8125,
+          "order": 23,
+          "phase_cycles": 0.9791666666666666,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2417.1875,
+          "order": 23,
+          "phase_cycles": 0.020833333333333332,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        167,
+        144,
+        191,
+        168
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0047",
+      "persistence": 0.06863898241727018,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.19783962042764086,
+      "birth_location": [
+        {
+          "frequency_uHz": 2137.1875,
+          "order": 20,
+          "phase_cycles": 0.3541666666666667,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2141.5625,
+          "order": 20,
+          "phase_cycles": 0.3958333333333333,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        104,
+        105
+      ],
+      "death": -0.2533738089610193,
+      "death_location": [
+        {
+          "frequency_uHz": 2237.8125,
+          "order": 21,
+          "phase_cycles": 0.3125,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2242.1875,
+          "order": 21,
+          "phase_cycles": 0.3541666666666667,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2342.8125,
+          "order": 22,
+          "phase_cycles": 0.3125,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2347.1875,
+          "order": 22,
+          "phase_cycles": 0.3541666666666667,
+          "row": 6
+        }
+      ],
+      "death_vertices": [
+        127,
+        128,
+        151,
+        152
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0048",
+      "persistence": 0.05553418853337844,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.4000073137433623,
+      "birth_location": [
+        {
+          "frequency_uHz": 2631.5625,
+          "order": 25,
+          "phase_cycles": 0.0625,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2635.9375,
+          "order": 25,
+          "phase_cycles": 0.10416666666666667,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        217,
+        218
+      ],
+      "death": -0.4134950684014328,
+      "death_location": [
+        {
+          "frequency_uHz": 2530.9375,
+          "order": 24,
+          "phase_cycles": 0.10416666666666667,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2535.3125,
+          "order": 24,
+          "phase_cycles": 0.14583333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2635.9375,
+          "order": 25,
+          "phase_cycles": 0.10416666666666667,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2640.3125,
+          "order": 25,
+          "phase_cycles": 0.14583333333333334,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        194,
+        195,
+        218,
+        219
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "F4-004-cylinder-D1-0049",
+      "persistence": 0.013487754658070505,
+      "representation_id": "F4-004-cylinder"
+    },
+    {
+      "birth": -0.1397611288767441,
+      "birth_location": [
+        {
+          "frequency_uHz": 2233.4375,
+          "order": 21,
+          "phase_cycles": 0.2708333333333333,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2338.4375,
+          "order": 22,
+          "phase_cycles": 0.2708333333333333,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        126,
+        150
+      ],
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 1,
+      "essential": true,
+      "pair_id": "F4-004-cylinder-D1-0050",
+      "persistence": null,
+      "representation_id": "F4-004-cylinder"
+    }
+  ],
+  "periodic_axes": [
+    false,
+    true
+  ],
+  "rectangle_essential_h1": 0,
+  "ridge_angle_geometry_simulation_anchor_only": {
+    "delta_theta_02": null,
+    "r02_proxy": null,
+    "theta_0": 0.8912051305522674,
+    "theta_1": 0.4583333333333333,
+    "theta_2": null
+  },
+  "ridges": [
+    {
+      "center_phase_cycles": 0.4583333333333333,
+      "coherence": 0.6228356328367199,
+      "path": [
+        {
+          "order": 16,
+          "phase_cycles": 0.5625
+        },
+        {
+          "order": 17,
+          "phase_cycles": 0.5208333333333334
+        },
+        {
+          "order": 18,
+          "phase_cycles": 0.5208333333333334
+        },
+        {
+          "order": 19,
+          "phase_cycles": 0.4791666666666667
+        },
+        {
+          "order": 20,
+          "phase_cycles": 0.4791666666666667
+        },
+        {
+          "order": 21,
+          "phase_cycles": 0.4375
+        },
+        {
+          "order": 22,
+          "phase_cycles": 0.4375
+        },
+        {
+          "order": 23,
+          "phase_cycles": 0.3958333333333333
+        },
+        {
+          "order": 24,
+          "phase_cycles": 0.3958333333333333
+        },
+        {
+          "order": 25,
+          "phase_cycles": 0.3541666666666667
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "center_phase_cycles": 0.6746179635039344,
+      "coherence": 0.3766507521705361,
+      "path": [
+        {
+          "order": 16,
+          "phase_cycles": 0.5625
+        },
+        {
+          "order": 17,
+          "phase_cycles": 0.6041666666666666
+        },
+        {
+          "order": 18,
+          "phase_cycles": 0.6458333333333334
+        },
+        {
+          "order": 19,
+          "phase_cycles": 0.6875
+        },
+        {
+          "order": 20,
+          "phase_cycles": 0.7291666666666666
+        },
+        {
+          "order": 21,
+          "phase_cycles": 0.6458333333333334
+        },
+        {
+          "order": 22,
+          "phase_cycles": 0.5625
+        },
+        {
+          "order": 23,
+          "phase_cycles": 0.7291666666666666
+        },
+        {
+          "order": 24,
+          "phase_cycles": 0.7708333333333334
+        },
+        {
+          "order": 25,
+          "phase_cycles": 0.8125
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "center_phase_cycles": 0.8912051305522674,
+      "coherence": 0.486351466628934,
+      "path": [
+        {
+          "order": 16,
+          "phase_cycles": 0.8958333333333334
+        },
+        {
+          "order": 17,
+          "phase_cycles": 0.8958333333333334
+        },
+        {
+          "order": 18,
+          "phase_cycles": 0.8958333333333334
+        },
+        {
+          "order": 19,
+          "phase_cycles": 0.8541666666666666
+        },
+        {
+          "order": 20,
+          "phase_cycles": 0.8541666666666666
+        },
+        {
+          "order": 21,
+          "phase_cycles": 0.9375
+        },
+        {
+          "order": 22,
+          "phase_cycles": 0.8958333333333334
+        },
+        {
+          "order": 23,
+          "phase_cycles": 0.8958333333333334
+        },
+        {
+          "order": 24,
+          "phase_cycles": 0.8958333333333334
+        }
+      ],
+      "rank": 3
+    }
+  ],
+  "spacing_uHz": 105.0,
+  "valid_vertices": 236,
+  "vertex_shape": [
+    10,
+    24
+  ]
+}

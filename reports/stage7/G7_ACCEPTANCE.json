@@ -1,0 +1,55 @@
+{
+  "accepted_on": "2026-09-25",
+  "checks": [
+    {
+      "check": "locked_simulation_only_scope",
+      "evidence": "24 sealed Stage 4 simulation cells; odd/even calibration/evaluation split",
+      "status": "pass"
+    },
+    {
+      "check": "delay_and_embedding_contract",
+      "evidence": "96 delay comparisons; 24 primary embeddings",
+      "status": "pass"
+    },
+    {
+      "check": "persistence_convergence",
+      "evidence": "median normalized 15-to-18-landmark bottleneck=0.090161",
+      "status": "pass"
+    },
+    {
+      "check": "PSD_preserving_null_audit",
+      "evidence": "maximum phase-randomized amplitude error=2.640e-16; maximum median IAAFT error=0.008",
+      "status": "pass"
+    },
+    {
+      "check": "phase_information_path",
+      "evidence": "evaluation BH rejection rates: phase=0.000, IAAFT=0.000",
+      "status": "negative_calibrated"
+    },
+    {
+      "check": "predictive_increment_path",
+      "evidence": "combined held-out lifetime MAE improvement over classical=-0.136",
+      "status": "negative_calibrated"
+    },
+    {
+      "check": "segmentation_and_finite_realization",
+      "evidence": "72 registered window-stability rows retained",
+      "status": "pass"
+    },
+    {
+      "check": "retain_drop_rule",
+      "evidence": "locked decision=drop; claim=calibrated_negative_result",
+      "status": "pass"
+    }
+  ],
+  "claim": "calibrated_negative_result",
+  "critical_path_action": "remove_delay_PH_from_critical_path",
+  "decision": "drop",
+  "final_holdout_used": false,
+  "gate": "G7",
+  "phase_path_passed": false,
+  "population_data_used": false,
+  "predictive_path_passed": false,
+  "run_id": "TA-S07-DELAY-R001",
+  "status": "pass"
+}

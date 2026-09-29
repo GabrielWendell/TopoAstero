@@ -1,0 +1,3 @@
+# Ridge angles and separation ratios
+
+The ridge graph retains up to three competing circular paths. A degree-identified anchor is required to interpret their phases as l=0/1/2; unlabeled bright tracks do not yield r01 or r10. The API computes delta-theta02 and an r02 angular proxy when anchored. Five-point r02/r01/r10 formulae on published KIC 10963065 frequencies have maximum absolute point-estimate difference 0.01086; the maximum difference relative to the appropriate asymmetric published uncertainty is 0.263. Rounded mode-frequency ratios and separately published ratio point estimates need not agree to four decimals. This checks the ratio implementation, not a blind topological estimate on that star.

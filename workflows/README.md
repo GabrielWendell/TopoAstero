@@ -35,15 +35,19 @@ unit-tested; notebooks call the same functions and are never authoritative.
   uncertainty-bearing `nu_max`/comb comparisons, null calibration, robustness, QC, and figures.
 - `build_stage6_manifest.py`: rebuilds the Stage 6 deliverable checksum index.
 - `validate_stage6.py`: validates T6.1-T6.8, G6, and all earlier-stage regressions offline.
+- `run_stage7_delay_topology.py`: executes delay selection, missing-aware embeddings, VR diagrams,
+  phase/IAAFT tests, classical ablations, rolling stability, figures, and the retain/drop decision.
+- `build_stage7_manifest.py`: rebuilds the Stage 7 deliverable checksum index.
+- `validate_stage7.py`: validates T7.1-T7.8, G7, and all earlier-stage regressions offline.
+- `run_stage8_echelle.py`: generates the cylindrical echelle benchmark and bounded G8 verdict.
+- `validate_stage8.py`: validates the Stage 8 geometry-only gate and prior-stage regressions.
+- `run_stage9_mathematics.py`: regenerates exact/conditional proof-linked numeric audits,
+  nine counterexample constructions, Gamma coverage, and styled figures with a fixed seed.
+- `execute_stage9_notebook.py`: executes the small governed mathematics notebook offline.
+- `build_stage9_manifest.py`: seals the outputs and preserves the independent-review hold.
+- `validate_stage9.py`: checks T9.1-T9.8 implementation integrity and reports G9 separately.
 - `repair_portability.py`: canonicalizes tracked text to LF, converts serialized repository paths to
-  POSIX form, and refreshes dependent Stage 0--6 checksums/seals without rerunning science.
+POSIX form, and refreshes dependent Stage 0–9 checksums/seals without rerunning science.
 
 Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
 `TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.
-## Source-tree deliverables versus build artifacts
-
-`dist/` is intentionally ignored by Git. Wheel and sdist files are ephemeral build outputs and must
-not be listed in Stage deliverable checksum manifests, because a clean CI checkout cannot contain
-them. CI verifies package buildability separately with `uv build --out-dir "$RUNNER_TEMP/dist"`.
-Stage manifests seal only version-controlled scientific/software source artifacts.
-

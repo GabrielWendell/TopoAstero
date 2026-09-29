@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/phase_test.schema.json",
+  "title": "TopoAstero paired PSD-preserving phase test",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_id", "role", "surrogate_family", "observed_maximum", "null_draws", "pvalue", "alpha", "rejected", "bh_rejected", "trials", "median_psd_amplitude_error"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "role": {"enum": ["calibration", "evaluation"]},
+    "surrogate_family": {"enum": ["phase_randomized", "iaaft"]},
+    "observed_maximum": {"type": "number", "minimum": 0},
+    "null_draws": {"type": "integer", "minimum": 3},
+    "pvalue": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+    "alpha": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "rejected": {"type": "boolean"},
+    "bh_rejected": {"type": "boolean"},
+    "trials": {"type": "integer", "minimum": 1},
+    "median_psd_amplitude_error": {"type": "number", "minimum": 0}
+  }
+}
+

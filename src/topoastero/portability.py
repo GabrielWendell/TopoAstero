@@ -230,7 +230,7 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
                         record.get("path"),
                     )
 
-    for stage in (4, 5, 6):
+    for stage in (4, 5, 6, 7, 8):
         manifest = repository / f"results/stage{stage}/run_manifest.json"
         if manifest.is_file():
             payload = json.loads(manifest.read_text(encoding="utf-8"))
@@ -261,6 +261,8 @@ def manifest_path_portability_issues(root: str | Path) -> list[str]:
         repository / "reports/stage4/deliverable_manifest.csv",
         repository / "reports/stage5/deliverable_manifest.csv",
         repository / "reports/stage6/deliverable_manifest.csv",
+        repository / "reports/stage7/deliverable_manifest.csv",
+        repository / "reports/stage8/deliverable_manifest.csv",
     ]
     for manifest in csv_manifests:
         if not manifest.is_file():

@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Wendell"
     given-names: "Gabriel"
-version: 0.7.0
-date-released: 2026-09-22
+version: 0.10.0
+date-released: 2026-09-29
 license: BSD-3-Clause
 keywords:
   - asteroseismology

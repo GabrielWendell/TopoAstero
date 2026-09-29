@@ -1,0 +1,39 @@
+{
+  "claim_ids": [
+    "S9-P1",
+    "S9-P2",
+    "S9-P3",
+    "S9-P4",
+    "S9-T1",
+    "S9-P5",
+    "S9-P6"
+  ],
+  "cylinder_cases": 20,
+  "final_holdout_used": false,
+  "gamma_alpha": 0.1,
+  "gamma_bins": 24,
+  "gamma_exceedance_rate": 0.01513671875,
+  "gamma_exceedances": 62,
+  "gamma_radius": 1.4506849909868484,
+  "gamma_replicates": 4096,
+  "gamma_shape": 8.0,
+  "gamma_tail_bound": 0.09999999999999994,
+  "gamma_wilson95": [
+    0.011826070600958015,
+    0.019356012140970356
+  ],
+  "max_cylinder_essential_violation": 0.0,
+  "max_cylinder_stability_violation": 0.0,
+  "max_delay_axis_error": 8.881784197001252e-16,
+  "max_path_essential_violation": 6.938893903907228e-17,
+  "max_path_stability_violation": 1.8041124150158794e-16,
+  "max_peak_identity_error": 0.0,
+  "max_ridge_inequality_violation": 0.0,
+  "max_scaling_inequality_violation": 0.0,
+  "path_cases": 128,
+  "population_spectra_used": false,
+  "ridge_cases": 160,
+  "run_id": "TA-S09-MATH-R001",
+  "seed": 20260929,
+  "stage8_decision": "geometry_only"
+}

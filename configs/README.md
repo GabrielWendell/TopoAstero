@@ -26,3 +26,7 @@ a new run ID and selection-registry version before population topology is inspec
 `nu_max` interval construction, half/nominal/double comb candidates, ACF/PSPS controls, matched
 maximum-statistic nulls, robustness branches, five quality flags, and G6 limits. Any semantic change
 requires a new run ID and a new pre-execution simulation lock.
+
+`stage7_delay_topology.yaml` freezes the 24-cell simulation-only panel, delay and embedding rules,
+unreduced VR persistence, PSD-preserving nulls, classical controls, rolling segmentation, and the
+dual-path retain/drop decision. Any semantic change requires a new run ID and pre-execution lock.

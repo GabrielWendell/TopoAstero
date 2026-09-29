@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "check": "exact_identities_and_property_regressions",
+      "status": "pass"
+    },
+    {
+      "check": "fixed_mask_stability_and_conditional_target_bound",
+      "status": "pass"
+    },
+    {
+      "check": "probabilistic_and_stellar_systematics_calibration",
+      "status": "pass"
+    },
+    {
+      "check": "counterexamples_and_claim_classification",
+      "status": "pass"
+    },
+    {
+      "check": "independent_human_proof_review",
+      "status": "pending"
+    }
+  ],
+  "final_holdout_used": false,
+  "gate": "G9",
+  "implementation_status": "pass",
+  "new_claim": "S9-T1",
+  "population_spectra_used": false,
+  "prior_stage8_decision": "geometry_only",
+  "review_document_sha256": null,
+  "review_id": "TA-S09-PROOF-REVIEW-001",
+  "review_status": "pending_external_review",
+  "run_id": "TA-S09-MATH-R001",
+  "status": "review_pending"
+}

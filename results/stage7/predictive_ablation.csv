@@ -1,0 +1,4 @@
+method,train_cells,evaluation_cells,target,mae_log10_days,median_absolute_error_log10_days,r2,catastrophic_rate_gt_0p5dex,ridge_penalty,improvement_over_classical
+topology,12,12,log10_lifetime_days,0.5325023435,0.5420871038,-0.6146713663,0.5833333333,1,0
+classical,12,12,log10_lifetime_days,0.6324338583,0.2358206157,-8.583157829,0.1666666667,1,0
+combined,12,12,log10_lifetime_days,0.7182678527,0.1950497761,-13.81901625,0.1666666667,1,-0.1357201125

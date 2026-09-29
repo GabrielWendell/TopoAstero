@@ -1,0 +1,30 @@
+schema_version: 1
+lock_id: TA-STAGE7-SIM-LOCK-1.0
+status: locked_before_stage7_execution
+frozen_on: "2026-09-25"
+selection_rule: first_24_rows_of_balanced_stage4_factorial_design
+selected_cell_range: [F4-001, F4-024]
+expected_cells: 24
+split:
+  calibration: odd_cell_number
+  evaluation: even_cell_number
+  overlap_allowed: false
+sealed_inputs:
+  - label: stage4_factorial_design
+    path: registries/stage4_factorial_design.csv
+    sha256: 4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34
+  - label: stage4_execution
+    path: results/stage4/run_manifest.json
+    sha256: 3482868f9cb62c33c9abee979dd23c02307fab81ba73691344eca2851b2a7734
+  - label: stage5_execution
+    path: results/stage5/run_manifest.json
+    sha256: 83c116ce2286b4ac11fe6be9b539a50117894d77fc3144273e335eb80599115d
+  - label: stage5_selection
+    path: registries/stage5_selection.yaml
+    sha256: 97b5af7118fe72e2f616be1401cadd10313ecc7444ec57d45ed0f2dbba041100
+inspection_policy:
+  simulation_inputs_only: true
+  population_data_used: false
+  final_holdout_used: false
+  phase_test_thresholds_refit_after_evaluation: false
+

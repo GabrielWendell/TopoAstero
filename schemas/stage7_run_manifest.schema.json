@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage7_run_manifest.schema.json",
+  "title": "TopoAstero Stage 7 run manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "status", "software_version", "config_path", "config_sha256", "style_id", "coefficient_field", "population_data_used", "final_holdout_used", "decision", "inputs", "outputs"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"const": "TA-S07-DELAY-R001"},
+    "status": {"const": "complete"},
+    "software_version": {"const": "TopoAstero-0.8.0"},
+    "config_path": {"const": "configs/stage7_delay_topology.yaml"},
+    "config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "style_id": {"const": "TA-PLOT-1.0"},
+    "coefficient_field": {"const": "F2"},
+    "population_data_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "decision": {"enum": ["retain", "drop"]},
+    "inputs": {"type": "array", "minItems": 4, "items": {"$ref": "#/$defs/file"}},
+    "outputs": {"type": "array", "minItems": 12, "items": {"$ref": "#/$defs/file"}}
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "size_bytes", "sha256"],
+      "properties": {
+        "path": {"type": "string", "pattern": "^[^\\\\]+$"},
+        "size_bytes": {"type": "integer", "minimum": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "accepted_on": "2026-09-28",
+  "alias_accuracy_graph": 0.6,
+  "alias_accuracy_topology": 0.2,
+  "checks": [
+    {
+      "check": "cylindrical_topology",
+      "status": "pass",
+      "value": "H1 cylinder=1; rectangle=0"
+    },
+    {
+      "check": "simulated_spacing_grid",
+      "status": "pass",
+      "value": "360 scored spacing trials; 24 cells"
+    },
+    {
+      "check": "maximum_statistic_null",
+      "status": "pass",
+      "value": "288 null maxima over all 15 trials"
+    },
+    {
+      "check": "published_ratio_formula",
+      "status": "pass",
+      "value": "maximum absolute discrepancy=0.01086; maximum asymmetric-uncertainty-normalized discrepancy=0.263"
+    },
+    {
+      "check": "alias_accuracy",
+      "status": "limited",
+      "value": "detectable=5; topological=0.200; graph=0.600"
+    },
+    {
+      "check": "interval_coverage",
+      "status": "limited",
+      "value": "detectable 90% coverage=0.200"
+    },
+    {
+      "check": "topological_increment",
+      "status": "limited",
+      "value": "paired alias-accuracy increment=-0.400"
+    }
+  ],
+  "claim": "correct_cylindrical_geometry_only",
+  "decision": "geometry_only",
+  "detectable_evaluation_cells": 5,
+  "final_holdout_used": false,
+  "gate": "G8",
+  "interval_coverage": 0.2,
+  "population_spectra_used": false,
+  "published_ratio_max_absolute_discrepancy": 0.01086386377,
+  "published_ratio_max_uncertainty_normalized_discrepancy": 0.2630475489,
+  "run_id": "TA-S08-ECHELLE-R001",
+  "status": "pass"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/echelle_score.schema.json",
+  "title": "One registered Stage 8 cylindrical echelle score trial",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cell_id", "role", "trial_index", "alias", "spacing_uHz", "valid_orders", "finite_h0_count", "finite_h0_component", "orderwise_h0_component", "topology_score", "graph_score", "conventional_score", "hough_score", "acf_score", "psps_score"],
+  "properties": {
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "role": {"enum": ["calibration", "evaluation"]},
+    "trial_index": {"type": "integer", "minimum": 0, "maximum": 14},
+    "alias": {"enum": ["half", "nominal", "double"]},
+    "spacing_uHz": {"type": "number", "exclusiveMinimum": 0},
+    "valid_orders": {"type": "integer", "minimum": 0},
+    "finite_h0_count": {"type": "integer", "minimum": 0},
+    "finite_h0_component": {"type": "number", "minimum": 0},
+    "orderwise_h0_component": {"type": "number", "minimum": 0},
+    "topology_score": {"type": "number", "minimum": 0},
+    "graph_score": {"type": "number", "minimum": 0},
+    "conventional_score": {"type": "number", "minimum": 0},
+    "hough_score": {"type": "number", "minimum": 0},
+    "acf_score": {"type": "number"},
+    "psps_score": {"type": "number", "minimum": 0}
+  }
+}

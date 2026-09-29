@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage7_decision.schema.json",
+  "title": "TopoAstero Stage 7 retain/drop decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gate", "status", "run_id", "decision", "claim", "phase_path_passed", "predictive_path_passed", "population_data_used", "final_holdout_used", "checks"],
+  "properties": {
+    "gate": {"const": "G7"},
+    "status": {"const": "pass"},
+    "run_id": {"const": "TA-S07-DELAY-R001"},
+    "accepted_on": {"type": "string", "format": "date"},
+    "decision": {"enum": ["retain", "drop"]},
+    "claim": {"enum": ["positive_phase_information", "positive_predictive_increment", "calibrated_negative_result"]},
+    "phase_path_passed": {"type": "boolean"},
+    "predictive_path_passed": {"type": "boolean"},
+    "population_data_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "critical_path_action": {"enum": ["retain_delay_PH", "remove_delay_PH_from_critical_path"]},
+    "checks": {"type": "array", "minItems": 5, "items": {"type": "object"}}
+  }
+}

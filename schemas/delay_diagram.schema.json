@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/delay_diagram.schema.json",
+  "title": "TopoAstero localized delay persistence pair",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["representation_id", "pair_id", "cell_id", "dimension", "birth", "death", "persistence", "essential", "birth_vertices", "death_vertices", "birth_location", "death_location", "metric"],
+  "properties": {
+    "representation_id": {"type": "string", "minLength": 1},
+    "pair_id": {"type": "string", "minLength": 1},
+    "cell_id": {"type": "string", "pattern": "^F4-[0-9]{3}$"},
+    "dimension": {"type": "integer", "minimum": 0, "maximum": 2},
+    "birth": {"type": "number"},
+    "death": {"type": ["number", "null"]},
+    "persistence": {"type": ["number", "null"], "minimum": 0},
+    "essential": {"type": "boolean"},
+    "birth_vertices": {"type": "array", "items": {"type": "integer", "minimum": 0}},
+    "death_vertices": {"type": ["array", "null"], "items": {"type": "integer", "minimum": 0}},
+    "birth_location": {"type": "array", "items": {"type": "object"}},
+    "death_location": {"type": ["array", "null"], "items": {"type": "object"}},
+    "metric": {"enum": ["euclidean", "standardized_euclidean", "cosine_chord"]}
+  }
+}

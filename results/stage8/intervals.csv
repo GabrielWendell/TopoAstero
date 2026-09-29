@@ -1,0 +1,13 @@
+cell_id,role,true_dnu_uHz,point_dnu_uHz,lower_dnu_uHz,upper_dnu_uHz,interval_level,replicates,branches,covers_truth,ridge_draws_available,ridge_phase_lower_cycles,ridge_phase_upper_cycles,ridge_phase_interval_wraps
+F4-002,evaluation,103,230,202.4,257.6,0.90,8,primary;slope_minus;slope_plus,false,6,0.6147193339,0.9058372642,false
+F4-004,evaluation,103,105,90,117.6,0.90,8,primary;slope_minus;slope_plus,true,8,0.4099671269,0.4875692638,false
+F4-006,evaluation,55,99,85.5,110.88,0.90,8,primary;slope_minus;slope_plus,false,8,0.126003315,0.4123596542,false
+F4-008,evaluation,55,85.5,75.24,97.425,0.90,8,primary;slope_minus;slope_plus,false,6,0.3333333333,0.4513534298,false
+F4-010,evaluation,55,99,87.12,121,0.90,8,primary;slope_minus;slope_plus,false,8,0.05518834766,0.1666666667,false
+F4-012,evaluation,140,252,221.76,282.24,0.90,8,primary;slope_minus;slope_plus,false,7,0.8782410149,0.0202482461,true
+F4-014,evaluation,140,308,266,344.96,0.90,8,primary;slope_minus;slope_plus,false,7,0.7372174606,0.9170298339,false
+F4-016,evaluation,140,147.25,129.58,294.5,0.90,8,primary;slope_minus;slope_plus,true,7,0.5949455976,0.8680200965,false
+F4-018,evaluation,103,189,166.32,211.68,0.90,8,primary;slope_minus;slope_plus,false,4,0.6707373042,0.7759524172,false
+F4-020,evaluation,103,204.75,180.18,229.32,0.90,8,primary;slope_minus;slope_plus,false,7,0.7184128266,0.9687948134,false
+F4-022,evaluation,103,194.75,171.38,225.5,0.90,8,primary;slope_minus;slope_plus,false,7,0.4759256518,0.6125692638,false
+F4-024,evaluation,55,84,73.92,94.08,0.90,8,primary;slope_minus;slope_plus,false,8,0.03484694246,0.3023154252,false

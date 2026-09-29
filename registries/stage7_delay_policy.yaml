@@ -1,0 +1,24 @@
+schema_version: 1
+policy_id: TA-STAGE7-DELAY-POLICY-1.0
+status: locked_before_stage7_execution
+frozen_on: "2026-09-25"
+simulation_tuning_only: true
+primary_method: multiscale_consensus
+methods:
+  - method: physics_quarter_period
+    definition: round_one_quarter_of_numax_period_in_samples_clipped_to_search
+    role: sensitivity
+  - method: acf_first_minimum
+    definition: first_finite_local_minimum_of_pairwise_complete_ACF
+    role: sensitivity
+  - method: mutual_information_first_minimum
+    definition: first_finite_local_minimum_of_normalized_histogram_MI
+    role: sensitivity
+  - method: multiscale_consensus
+    definition: median_of_physics_ACF_MI_and_centered_multiscale_ACF_MI_delays
+    role: primary
+window_fractions: [0.25, 0.5, 1.0]
+maximum_lag_samples: 48
+tie_rule: lower_integer_lag_after_rounding
+population_retuning_prohibited: true
+

@@ -1,0 +1,35 @@
+schema_version: 1
+lock_id: TA-STAGE8-SIM-LOCK-1.0
+status: locked_before_stage8_execution
+frozen_on: "2026-09-28"
+selection_rule: first_24_rows_of_balanced_stage4_factorial_design
+selected_cell_range: [F4-001, F4-024]
+expected_cells: 24
+split:
+  calibration: odd_cell_number
+  evaluation: even_cell_number
+  overlap_allowed: false
+sealed_inputs:
+  - label: stage4_factorial_design
+    path: registries/stage4_factorial_design.csv
+    sha256: 4fba72f8f0ec413829dc7dde10d5d664b4a2ef863d64c0b53edbb6239cac8b34
+  - label: stage4_execution
+    path: results/stage4/run_manifest.json
+    sha256: 3482868f9cb62c33c9abee979dd23c02307fab81ba73691344eca2851b2a7734
+  - label: stage6_execution
+    path: results/stage6/run_manifest.json
+    sha256: 684efb6ef93289f2174ac550aaf28c1e923f838b226e478629ab20c0fb346b38
+  - label: stage6_acf_prior
+    path: results/stage6/comb_benchmark.csv
+    sha256: 09167a7a0b6a251466b9f7d9378c1125bbe3c2fa1234e72a69424ca35fb26780
+  - label: published_mode_frequencies
+    path: data/reference/mode_frequencies.csv
+    sha256: fce9491ddce070502652386f4b649baf89ca118db4477a3527f982ecfc7cf901
+  - label: published_frequency_ratios
+    path: data/reference/frequency_ratios.csv
+    sha256: 34a09d9a199b7c023a38f20e18fbc132bf43504c4c6ef0518720924aa4166ab3
+inspection_policy:
+  population_spectra_used: false
+  final_holdout_used: false
+  published_ratios_used_for_tuning: false
+  stage7_delay_PH_kept_off_critical_path: true

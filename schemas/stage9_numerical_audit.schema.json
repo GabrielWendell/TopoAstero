@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage9_numerical_audit.schema.json",
+  "title": "Proof-linked Stage 9 numerical audit",
+  "type": "object", "additionalProperties": false,
+  "required": ["run_id", "claim_ids", "seed", "path_cases", "cylinder_cases", "ridge_cases", "max_peak_identity_error", "max_delay_axis_error", "max_path_stability_violation", "max_path_essential_violation", "max_cylinder_stability_violation", "max_cylinder_essential_violation", "max_ridge_inequality_violation", "max_scaling_inequality_violation", "gamma_shape", "gamma_bins", "gamma_alpha", "gamma_radius", "gamma_tail_bound", "gamma_replicates", "gamma_exceedances", "gamma_exceedance_rate", "gamma_wilson95", "stage8_decision", "population_spectra_used", "final_holdout_used"],
+  "properties": {
+    "run_id": {"const": "TA-S09-MATH-R001"},
+    "claim_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^S9-(P[1-6]|T1)$"}, "minItems": 7, "maxItems": 7},
+    "seed": {"type": "integer"}, "path_cases": {"type": "integer", "minimum": 1},
+    "cylinder_cases": {"type": "integer", "minimum": 1}, "ridge_cases": {"type": "integer", "minimum": 1},
+    "max_peak_identity_error": {"type": "number", "minimum": 0},
+    "max_delay_axis_error": {"type": "number", "minimum": 0},
+    "max_path_stability_violation": {"type": "number", "minimum": 0},
+    "max_path_essential_violation": {"type": "number", "minimum": 0},
+    "max_cylinder_stability_violation": {"type": "number", "minimum": 0},
+    "max_cylinder_essential_violation": {"type": "number", "minimum": 0},
+    "max_ridge_inequality_violation": {"type": "number", "minimum": 0},
+    "max_scaling_inequality_violation": {"type": "number", "minimum": 0},
+    "gamma_shape": {"type": "number", "exclusiveMinimum": 0},
+    "gamma_bins": {"type": "integer", "minimum": 1},
+    "gamma_alpha": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "gamma_radius": {"type": "number", "minimum": 0},
+    "gamma_tail_bound": {"type": "number", "minimum": 0, "maximum": 1},
+    "gamma_replicates": {"type": "integer", "minimum": 1},
+    "gamma_exceedances": {"type": "integer", "minimum": 0},
+    "gamma_exceedance_rate": {"type": "number", "minimum": 0, "maximum": 1},
+    "gamma_wilson95": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}], "minItems": 2, "maxItems": 2},
+    "stage8_decision": {"const": "geometry_only"},
+    "population_spectra_used": {"const": false}, "final_holdout_used": {"const": false}
+  }
+}

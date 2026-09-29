@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage9_counterexamples.schema.json",
+  "title": "Stage 9 adversarial constructions",
+  "type": "object", "additionalProperties": false,
+  "required": ["run_id", "cases"],
+  "properties": {
+    "run_id": {"const": "TA-S09-MATH-R001"},
+    "cases": {"type": "array", "minItems": 9, "maxItems": 9, "items": {
+      "type": "object", "required": ["id", "family", "violated_assumption"],
+      "properties": {"id": {"type": "string", "pattern": "^CE0[1-9]$"}, "family": {"type": "string"}, "violated_assumption": {"type": "string", "minLength": 8}, "values": {"type": "array"}, "changed": {"type": "array"}, "phases": {"type": "array"}, "residual_uHz": {"type": "array"}, "phases_a": {"type": "array"}, "phases_b": {"type": "array"}, "true_spacing_uHz": {"type": "number"}, "trials_uHz": {"type": "array"}, "circular_mismatches": {"type": "array"}, "comb_spacings_uHz": {"type": "array"}, "gamma_shape": {"type": "number"}, "observed_peak_ranking_changes": {"type": "boolean"}, "transformation": {"type": "string"}},
+      "additionalProperties": false
+    }}
+  }
+}
