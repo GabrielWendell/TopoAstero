@@ -1,0 +1,74 @@
+{
+  "G9_proof_status": "review_pending",
+  "absolute_span_days": 488.1751058739246,
+  "actual_TESS_candidate_sectors": [
+    15
+  ],
+  "bootstrap_replicates": 256,
+  "claim_scope": "single_descriptive_star_conditional_nulls_no_population_or_incremental_utility_claim",
+  "conditional_null_mean_ratio": 1.001785151732616,
+  "conditional_null_replicates": 256,
+  "delay_status": "not_run_G7_preregistered_drop",
+  "duty_cycle": 0.6004687990512401,
+  "echelle_claim": "geometry_only_no_estimator_utility",
+  "echelle_winning_alias": "double",
+  "echelle_winning_spacing_uHz": 217.0637714445438,
+  "final_holdout_used": false,
+  "kepler_cadences": 430387,
+  "maximum_prominence_equivalence_error": 0.0,
+  "monthly_averaged": {
+    "acf_winner_uHz": 105.0,
+    "classical_acf_peak": 0.759393008509851,
+    "classical_dnu_uHz": 103.42141594429482,
+    "classical_envelope_snr": 1.438449172746649,
+    "classical_numax_uHz": 2232.6,
+    "comb_max_score": 0.07569133313609719,
+    "comb_top_two_ratio": 1.0142417103122174,
+    "comb_winner_uHz": 300.0,
+    "finite_peak_count": 218.0,
+    "peak_max_lifetime": 2.073615626959237,
+    "persistence_numax_uHz": 2098.0542177873735,
+    "psps_winner_uHz": 50.0
+  },
+  "population_spectra_used": false,
+  "primary": {
+    "acf_winner_uHz": 105.0,
+    "classical_acf_peak": 0.752785735507925,
+    "classical_dnu_uHz": 103.363700687878,
+    "classical_envelope_snr": 1.4325828394509967,
+    "classical_numax_uHz": 2233.6,
+    "comb_max_score": 0.0756722610299133,
+    "comb_top_two_ratio": 1.0190068302159419,
+    "comb_winner_uHz": 300.0,
+    "finite_peak_count": 221.0,
+    "peak_max_lifetime": 2.1212973987157087,
+    "persistence_numax_uHz": 2105.2507639246855,
+    "psps_winner_uHz": 50.0
+  },
+  "product_count": 21,
+  "robustness_rows": 72,
+  "run_id": "TA-S10-RUDY-R001",
+  "stochastic_replicates": 64,
+  "transfer_cells": 396,
+  "tutorial": {
+    "dnu": 103.11210228179654,
+    "logg": 4.292957468758897,
+    "mass": 1.0815643268656792,
+    "numax": 2145.0,
+    "radius": 1.2290831266457236
+  },
+  "window_aliases": [
+    [
+      0.09483531709014179,
+      0.016602357747496303
+    ],
+    [
+      0.16596180490774812,
+      0.004689135840150907
+    ],
+    [
+      0.21337946345281902,
+      0.0037534926166420913
+    ]
+  ]
+}

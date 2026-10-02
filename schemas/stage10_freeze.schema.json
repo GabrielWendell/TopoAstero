@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/stage10_freeze.schema.json",
+  "title": "Paper I internal review snapshot",
+  "type": "object",
+  "required": ["snapshot_id", "run_id", "status", "locked_on", "software_version", "external_publication_or_DOI_created", "population_spectra_used", "final_holdout_used", "files"],
+  "properties": {
+    "snapshot_id": {"const": "TA-PAPER-I-FREEZE-001"},
+    "run_id": {"const": "TA-S10-RUDY-R001"},
+    "status": {"const": "internal_review_snapshot"},
+    "locked_on": {"const": "2026-10-01"},
+    "software_version": {"const": "TopoAstero-0.11.0"},
+    "external_publication_or_DOI_created": {"const": false},
+    "population_spectra_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "files": {
+      "type": "array", "minItems": 80,
+      "items": {
+        "type": "object",
+        "required": ["path", "size_bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1, "pattern": "^[^\\\\:]+$"},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

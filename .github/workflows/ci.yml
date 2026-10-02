@@ -58,5 +58,9 @@ jobs:
         run: uv run topoastero validate-stage8 --root .
       - name: Validate Stage 9 implementation and proof-review hold
         run: uv run topoastero validate-stage9 --root .
+      - name: Validate Stage 10 internal-review freeze
+        run: uv run topoastero validate-stage10 --root .
+      - name: Replay Stage 10 reduced headline diagnostics offline
+        run: uv run python workflows/replay_stage10_reduced.py
       - name: Build distribution
         run: uv build

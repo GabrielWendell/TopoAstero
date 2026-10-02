@@ -4,7 +4,7 @@ TopoAstero is the reproducible research repository for the project *Topological
 Asteroseismology of Solar-like Stars*. The repository name and Python distribution are
 `TopoAstero`; the import package and command-line program are `topoastero`.
 
-Version 0.10.0 implements Stages 0-9 through the mathematical audit and proof-review packet. It contains
+Version 0.11.0 implements Stages 0-10 through the Rudy/Paper I internal review freeze. It contains
 traceable derived tables, payload-verified mission manifests, a reproduced Lightkurve Rudy case, an
 independent classical pipeline, exact analytic regressions, a stochastic oscillator laboratory,
 calibrated null/coverage maps, a localized dependency-light TDA core, a locked compact statistic
@@ -12,7 +12,7 @@ set, exact PSD peak/saddle localization, uncertainty-bearing `nu_max` and comb A
 quality control, and source-backed figure suites, but redistributes no Kepler, TESS, or publisher
 payloads.
 
-## Reproduce Stages 0-9
+## Reproduce Stages 0-10
 
 Install [uv](https://docs.astral.sh/uv/) and run from the repository root:
 
@@ -276,6 +276,33 @@ integrity from the human proof-review requirement. The proposition concerns a sp
 observed target candidate in consecutive trial rows; it does not establish a global score
 bound or reverse Stage 8's negative utility verdict.
 
+## Stage 10 implementation map
+
+All T10.1-T10.10 have an executable implementation and a mapped evidence artifact.
+See [task traceability](reports/stage10/TRACEABILITY_MATRIX.md) and the
+[reproduction protocol](docs/reproducibility/STAGE10_REPRODUCTION.md).
+
+```text
+uv sync --locked --group dev --extra astronomy
+uv run python workflows/reproduce_stage10.py --cache-dir ../topoastero-mission-cache --download
+uv run python workflows/reproduce_stage10.py --cache-dir ../topoastero-mission-cache --clean-check
+uv run topoastero validate-stage10 --root .
+uv run python workflows/replay_stage10_reduced.py
+```
+
+The first workflow verifies all 21 frozen public products, regenerates 72 registered
+spectral diagnostics, 256 conditional window-matched nulls, quarter/monthly/stochastic
+uncertainty, 396 Kepler-to-TESS cells, ten academic figure sets, the claim ledger and
+the complete editable/compiled Paper I draft. TeX is required to compile the PDF;
+the analysis/figures use the locked astronomy extra. The clean check uses a fresh
+source copy, locked environment and new process. Offline reduced replay is separate.
+
+The [Paper I draft](paper1/main.pdf) is an **internal review freeze**. Stage 7's delay
+drop and Stage 8's geometry-only verdict are preserved. Cylindrical ratios and
+population claims are withheld. G9 proof review and G10 independent human
+reproduction/claim review remain pending; automated tests do not fill those records.
+No submission, archive DOI or public deposition has been performed.
+
 ## Repository layout
 
 ```text
@@ -354,4 +381,4 @@ explain those records but do not silently override them.
 
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
-Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 9.
+Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 10.

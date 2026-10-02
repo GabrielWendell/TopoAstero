@@ -49,3 +49,13 @@ results/*
 !results/stage8/**
 !results/stage9/
 !results/stage9/**
+!results/stage10/
+!results/stage10/**
+
+# Paper I source/PDF are frozen; transient TeX build files are not versioned.
+paper1/*.aux
+paper1/*.bbl
+paper1/*.blg
+paper1/*.log
+paper1/*.out
+paper1/*.toc

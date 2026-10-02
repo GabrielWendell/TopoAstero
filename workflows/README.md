@@ -1,5 +1,15 @@
 # Workflows
 
+## Stage 10 / Paper I
+
+`reproduce_stage10.py --cache-dir ../topoastero-mission-cache --download` is the full
+public-ID entry point. It calls `run_stage10_rudy.py`, `build_stage10_evidence.py`,
+`plot_stage10.py`, `build_stage10_paper.py` and `build_stage10_manifest.py` in order.
+`--clean-check` creates a fresh source/environment/process and compares raw-product
+reproduction with the frozen outputs. `replay_stage10_reduced.py` and
+`validate_stage10.py` are offline checks. Independent human review remains separate.
+See `docs/reproducibility/STAGE10_REPRODUCTION.md` for Windows/uv and TeX details.
+
 Workflow files are thin, unattended entry points. Scientific logic lives in the package and is
 unit-tested; notebooks call the same functions and are never authoritative.
 

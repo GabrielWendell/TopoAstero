@@ -9,6 +9,22 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 - Follow-up estimator development under a newly registered protocol; no Stage 8 score utility claim.
 
+## [0.11.0] - 2026-10-01
+
+### Added
+
+- Complete T10.1-T10.10 Rudy/Paper I internal review capsule: 21 checksum-verified public
+  Kepler/TESS products, original tutorial, independent background/ACF, localized spectral
+  persistence, periodic cylinder and graph/conventional/Hough/classical controls.
+- 72 registered branch diagnostics, 256 window-matched conditional nulls with seven-family
+  Holm correction, monthly/quarter/stochastic uncertainty and 396 real-window TESS transfers.
+- Explicit segment-duty PSD conversion and analytic linear-interpolation response correction,
+  validated by nuisance checks before the freeze; exact Stage 3 TESS feasibility policy retained.
+- Eight bounded claims, editable and compiled Paper I internal review draft, ten PDF/SVG/PNG
+  academic figures, schemas, offline replay, raw-product clean reproduction and integrity tests.
+- Honest G10 independent-human-review hold, preserving G7 drop, G8 geometry_only and G9
+  proof-review pending. No public publication/DOI or population utility claim is invented.
+
 ## [0.10.0] - 2026-09-29
 
 ### Added
