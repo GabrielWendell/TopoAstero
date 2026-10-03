@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage11_gate.schema.json",
+  "title": "Stage 11 implementation and population-confirmation gate",
+  "type": "object",
+  "required": ["schema_version", "stage_id", "implementation_status", "status", "scientific_population_gate_passed", "holds", "confirmation_status", "holdout_opening_count", "publication_ready"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "implementation_status": {"const": "pass"},
+    "status": {"enum": ["population_pending", "pass_with_limitation"]},
+    "scientific_population_gate_passed": {"type": "boolean"},
+    "cohort_stars": {"const": 66},
+    "holdout_opening_count": {"type": "integer", "minimum": 0, "maximum": 1},
+    "confirmation_status": {"enum": ["unopened", "running", "completed"]},
+    "publication_ready": {"const": false},
+    "holds": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [{"if": {"properties": {"confirmation_status": {"enum": ["unopened", "running"]}}}, "then": {"properties": {"scientific_population_gate_passed": {"const": false}, "status": {"const": "population_pending"}}}}]
+}

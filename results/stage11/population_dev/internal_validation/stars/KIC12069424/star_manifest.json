@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC12069424/analysis.json",
+      "sha256": "ce9bde9366bf734bbaf5c9b0bb5e2dd338c4af9a5a7d24d2b49db808bc2c0497",
+      "size_bytes": 388
+    }
+  ],
+  "input_id": "4a21e19f8e1499030998f8a1df0fa31a9d82ee39195e30347669a44781e23446",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 12069424"
+}

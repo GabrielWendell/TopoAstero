@@ -163,3 +163,17 @@ describe software releases, while immutable experiment IDs identify scientific r
 - Falsifiable hypothesis registry, terminology dictionary, and objective crosswalk.
 - Preregistered validation, data-management, risk, resource, and change-control artifacts.
 - Installable package, deterministic persistence smoke workflow, tests, CI, and lock file.
+
+
+## Stage 11 additive extension (TA-S11-LEGACY-v1)
+
+- Added 66-star cohort reconciliation and corrected erratum mode/ratio import.
+- Added checksum acquisition, monthly PSD/background/window batching, frozen
+  persistent-peak and cylindrical geometry diagnostics, paired uncertainties.
+- Added star-paired performance, TOST/Holm, explicit missingness/failure domains
+  and reference-conditioned ridge-ratio checks.
+- Added a verifiably signed release and atomic one-time confirmation/resume guard.
+- Added source-backed reports, figures, Paper II draft, schemas and tests.
+- Preserved prior core source files and the original grouped split; repaired
+  inherited stale administrative seals and checked Stage 10 clean reproduction.
+- Scientific G11 remains population_pending until acquisition and confirmation.

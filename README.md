@@ -382,3 +382,22 @@ explain those records but do not silently override them.
 Code is released under the BSD 3-Clause License. Data products retain the terms of their source;
 project-authored documentation and tables are intended for CC BY 4.0 release at publication.
 Use `CITATION.cff` for software citation. No DOI has been assigned through Stage 10.
+
+
+## Stage 11 - Kepler LEGACY population validation
+
+The additive Stage 11 commands preserve the Stage 10 source interface and the
+original star-grouped partitions. Start with:
+
+```text
+uv run python workflows/validate_stage11.py --root .
+uv run python workflows/replay_stage11_reduced.py --root .
+```
+
+Full acquisition/development, signed release and one-time confirmation commands
+are in [the Stage 11 reproduction guide](docs/reproducibility/STAGE11_REPRODUCTION.md).
+All T11.1-T11.11 implementations and current scientific completion states are
+in [the traceability matrix](reports/stage11/TRACEABILITY_MATRIX.md). The delivered
+scientific G11 is `population_pending`: 66-star metadata and corrected references
+are included, while only Rudy observation payloads were supplied. No final holdout
+was opened and no Paper II population performance claim is made.

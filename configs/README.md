@@ -30,3 +30,8 @@ requires a new run ID and a new pre-execution simulation lock.
 `stage7_delay_topology.yaml` freezes the 24-cell simulation-only panel, delay and embedding rules,
 unreduced VR persistence, PSD-preserving nulls, classical controls, rolling segmentation, and the
 dual-path retain/drop decision. Any semantic change requires a new run ID and pre-execution lock.
+
+
+`stage11_legacy.yaml` fixes the population observation operator, blind search,
+representations, primary metrics, equivalence margins, uncertainty and quality
+rules. Freeze signs the exact parsed configuration before confirmation.

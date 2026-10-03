@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/run_manifest.json",
+      "sha256": "f321597195655a7eb8d35e3a0a20976fb08550a80eaa1903e2bca849eaa565ad",
+      "size_bytes": 24210
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/run_manifest.json",
+      "sha256": "8c2996e280faa616034bd11fb7ba1cc2494b4b26974059a10ad598f4fb71ed83",
+      "size_bytes": 8009
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/run_manifest.json",
+      "sha256": "de68758ebb91688cd9eb22e91ebb32f77c754b8e2e35b953c88723c18f42adcc",
+      "size_bytes": 1990
+    }
+  ],
+  "report_files": [
+    {
+      "path": "reports/stage11/G11_ACCEPTANCE.json",
+      "sha256": "8b22ee352243752f385e932b10264c5e06202a36f24f4125a1ef12a35034a8d7",
+      "size_bytes": 1472
+    },
+    {
+      "path": "reports/stage11/cohort_ledger.csv",
+      "sha256": "65b309324f723cf482042f67cb81606e0e3fb9cf3e9754f08977556c07420f85",
+      "size_bytes": 18820
+    },
+    {
+      "path": "reports/stage11/failure_atlas.csv",
+      "sha256": "021bd6202a800a819eadb595bb9334754648d2158ff7f3fb110cec68e78f1622",
+      "size_bytes": 3514
+    },
+    {
+      "path": "reports/stage11/leakage_multiplicity_audit.json",
+      "sha256": "8a38d73aa6fdd69343e210cb8ad7191cb00fc0d619ca943221375a4b89f33c78",
+      "size_bytes": 1019
+    },
+    {
+      "path": "reports/stage11/task_traceability.csv",
+      "sha256": "204a0ac4e6195373f6a0b55756ca9f39b1a0e0669fb3f933f692a5df3e92e706",
+      "size_bytes": 1155
+    }
+  ],
+  "role_directories": {
+    "confirmation": "results/stage11/confirmation",
+    "descriptive_benchmark": "results/stage11/population_dev/descriptive_benchmark",
+    "development": "results/stage11/population_dev/development",
+    "internal_validation": "results/stage11/population_dev/internal_validation"
+  },
+  "schema_version": 1
+}

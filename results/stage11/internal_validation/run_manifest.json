@@ -1,0 +1,186 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/internal_validation/catalog.csv",
+      "sha256": "07b0fa307d3431626835854472e3276ead6e17abce77f1922ded2d37720960a2",
+      "size_bytes": 14895
+    },
+    {
+      "path": "results/stage11/internal_validation/catalog.json",
+      "sha256": "a1787bb7f239245ed4040fe69522cdd6873574ff5935d13f3ffd18fb1bf1ca71",
+      "size_bytes": 46402
+    },
+    {
+      "path": "results/stage11/internal_validation/operating_domain.csv",
+      "sha256": "47a1141e17e4d76a5ef82e54940924e593e31e133227d5b44f67cca34b09ff6e",
+      "size_bytes": 13763
+    },
+    {
+      "path": "results/stage11/internal_validation/paired_comparisons.csv",
+      "sha256": "612800b12ad378e9d309009074f84b68e1e0d7a32c6678fc00b5102f79854188",
+      "size_bytes": 339
+    },
+    {
+      "path": "results/stage11/internal_validation/performance.csv",
+      "sha256": "a9da9f5849196d47ec9019ef82f393c3d81769c9b138dca5c253d475befd105c",
+      "size_bytes": 2092
+    },
+    {
+      "path": "results/stage11/internal_validation/ratio_benchmark.csv",
+      "sha256": "4cc56231390bbcb14fde830d0238c5945bcb8c31e4f083034baf0dbf39106bc1",
+      "size_bytes": 126991
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC10079226/analysis.json",
+      "sha256": "aa3190b5b9b8830efac527cec633260570233da0dfe4d3059ca5f83302756e3a",
+      "size_bytes": 388
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC10079226/star_manifest.json",
+      "sha256": "a8daf9bc12e16b499a9ae75a07b4486240d360b6ec629050bc860a12f1b74bf2",
+      "size_bytes": 400
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC11081729/analysis.json",
+      "sha256": "f115208fdf8cf22e53bcef4cf6cfed00ff0f834811a66a88e83044b1e0c32996",
+      "size_bytes": 388
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC11081729/star_manifest.json",
+      "sha256": "666ea945d339bb6a865dc86f691c8ed4fa372251340f1ba4845688f4f186fc37",
+      "size_bytes": 400
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC12069424/analysis.json",
+      "sha256": "ce9bde9366bf734bbaf5c9b0bb5e2dd338c4af9a5a7d24d2b49db808bc2c0497",
+      "size_bytes": 388
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC12069424/star_manifest.json",
+      "sha256": "49ea7646d1b7455c022c9ffd718654ab018046f6498a2e1fb4c6a2bf7f69b71a",
+      "size_bytes": 400
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/analysis.json",
+      "sha256": "30399b7dfe550d3b0eee3e53ee47d5dd299e7a8f527eaef0a40492603daa3a1b",
+      "size_bytes": 207088
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/mean_spectrum.csv",
+      "sha256": "960243956ce6b83f678746779c52a995ecdca1cfdf6d42ca4df9c18247d53402",
+      "size_bytes": 352423
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/monthly_spectra.npz",
+      "sha256": "f7b73856a42a5377e21e05d8af15f870a0501c8de91f36b65b831452ed99c1de",
+      "size_bytes": 1137457
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/segment_bootstrap.csv",
+      "sha256": "1d2039ab48ce50492b854c583704a1def2765a10e6e5ca87d9f380a065444058",
+      "size_bytes": 8435
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/star_manifest.json",
+      "sha256": "2fbf12169038743cae86b0cde95e26fc138ed42092865f41ae1d81965d5160fe",
+      "size_bytes": 1042
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC5773345/analysis.json",
+      "sha256": "1e55736d3d93555f1ed7b95542c0c6a8c8d24d629667e0d0228b1a7787f555b5",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC5773345/star_manifest.json",
+      "sha256": "2bb4cf21b8783aad072ce17a040ea8820af24a26b638edc2eb33adcc204e4cdc",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC6508366/analysis.json",
+      "sha256": "913d7c06c390019dac65bb18a0a94c3d9c29b7d6af4c12cb01493dcb4c67211d",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC6508366/star_manifest.json",
+      "sha256": "71dc79009723066a8fa3a9d3ac90a5fa5ceeaebf0ba4f8ccf7ed140b7ac45eb3",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC7103006/analysis.json",
+      "sha256": "dd9dd08a2bdb08ecc7a75d45e7069a5a001343ec0351f079bf6e14a2e1c2c0cb",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC7103006/star_manifest.json",
+      "sha256": "c197c9ce556ba82e8f64d575c9862fd88d0232fed4b0b37c15c6601b5d04d70c",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC7106245/analysis.json",
+      "sha256": "f1264dc91cb162befa365192e5ba97924e83bb9475faa586471b2de30508fff0",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC7106245/star_manifest.json",
+      "sha256": "7c372d4e232172822655bc5a7deb7848b5fcc9ab84b7f48ad6ebbfc620b1ffda",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC8006161/analysis.json",
+      "sha256": "357848bca6e40859f294b934ac9539d4507994b8ea0a05261b9d2decc477c58d",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC8006161/star_manifest.json",
+      "sha256": "b7ed8418d046f11e75210ea468d2e50d6117556e5aefda77551adf0e73a4240e",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC8150065/analysis.json",
+      "sha256": "29117767f9d06412d823a5133c6f01f286700201355b5f91871121edeca58966",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC8150065/star_manifest.json",
+      "sha256": "76d106da77a0858bd4f8f2ad364f553951440962eb33be36cccf7b229cf681e8",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC9025370/analysis.json",
+      "sha256": "0ab451e917c7ffc2a9c474a8357aff064718fd0e24a9bc62d840b4db8990d9a0",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC9025370/star_manifest.json",
+      "sha256": "96c10a99dd6b7502b715168b8d11af649ebf22482154b82a23be38f84cd7e7f3",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC9410862/analysis.json",
+      "sha256": "ebfbf0c45c0c213be9b193d8cb70ab1348336c83571087991b9747c7bfc70e79",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC9410862/star_manifest.json",
+      "sha256": "f3325707b308fe7b45b40662739184cd43ad8a7e0cf53c64fd15bfeabf37d65c",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC9965715/analysis.json",
+      "sha256": "6a6fa802ea6a81265523410d75f5f895bbd9e9864ad5b4ec4648611e06d20363",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC9965715/star_manifest.json",
+      "sha256": "22c067f38dc59b0e83a261625c481e1ecdbcdd9180f9a44b88fc4e422325f164",
+      "size_bytes": 398
+    },
+    {
+      "path": "results/stage11/internal_validation/summary.json",
+      "sha256": "f691bd855ae1e7e603db4db5ed172c46b70c115651964c5baddb44e0480c6c01",
+      "size_bytes": 3584
+    }
+  ],
+  "role": "internal_validation",
+  "schema_version": 1
+}

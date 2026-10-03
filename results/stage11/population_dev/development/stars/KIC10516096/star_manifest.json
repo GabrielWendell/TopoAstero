@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10516096/analysis.json",
+      "sha256": "e9f951e20fe95f21f03e2fde66b33465030107c5725f118c218aac9d70fa0200",
+      "size_bytes": 387
+    }
+  ],
+  "input_id": "db53cb3080e91b007cad272cb68242087b3ee4d860d7a4c55d4ec6b64c2a10b9",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 10516096"
+}

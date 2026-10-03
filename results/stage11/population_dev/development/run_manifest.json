@@ -1,0 +1,566 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/catalog.csv",
+      "sha256": "2f91f54b396f2b292f8e8f4ce445a47107721d136a6afc27d524698848b0d423",
+      "size_bytes": 45786
+    },
+    {
+      "path": "results/stage11/population_dev/development/catalog.json",
+      "sha256": "563b34c748c51deffa324196ea06a7768259f7e3ac0fb448c235fd2c58e2f6e0",
+      "size_bytes": 140165
+    },
+    {
+      "path": "results/stage11/population_dev/development/operating_domain.csv",
+      "sha256": "f5853dd863ac86ef97360fd65065705302c72496c616d950819899c90a3ebaab",
+      "size_bytes": 16673
+    },
+    {
+      "path": "results/stage11/population_dev/development/paired_comparisons.csv",
+      "sha256": "1723c508f0f89b18ea53549213b54d180f0acc3d4b4a8138da9b3a994c82d06b",
+      "size_bytes": 750
+    },
+    {
+      "path": "results/stage11/population_dev/development/performance.csv",
+      "sha256": "708c66257a8cfd44c86777a3f0c7a1bc75d401df3bdd34d7b81281eabff695b8",
+      "size_bytes": 3045
+    },
+    {
+      "path": "results/stage11/population_dev/development/ratio_benchmark.csv",
+      "sha256": "e7edadc7b77a003c458d0fecbfde23f304cb167d81ad833cd7b62fc45b4df9d0",
+      "size_bytes": 387806
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10162436/analysis.json",
+      "sha256": "69575e084d57f4edddbb4b5a47d46e2615623ad4e14a0fa25e2c2a0054710915",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10162436/star_manifest.json",
+      "sha256": "bcf005b037b56060fcd82d9832a9253b810c0ee6e8f0b1a54d12ae5474336f71",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10454113/analysis.json",
+      "sha256": "296bfbefa6e74895054e50c29f7ceb2bb2dbe149f1ee3f411c9b79537fa5b904",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10454113/star_manifest.json",
+      "sha256": "7c57a527282632ee8497208e1fe7f1840761fedd6b9b59b59db62fdad4cd3bdc",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10516096/analysis.json",
+      "sha256": "e9f951e20fe95f21f03e2fde66b33465030107c5725f118c218aac9d70fa0200",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10516096/star_manifest.json",
+      "sha256": "9a599ad969dacc7639d5bdee53bd3066499f1abc79fd0feb3e2d6b0ef5f8b143",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10730618/analysis.json",
+      "sha256": "b003192da473d0ddfa1c44913be3c4af96184eea98e92c91a53a36f51522e73b",
+      "size_bytes": 231707
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10730618/mean_spectrum.csv",
+      "sha256": "61fc0c457b96bee2902e9ddab837d0ed656e23237610c05ec291d42630427153",
+      "size_bytes": 345968
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10730618/monthly_spectra.npz",
+      "sha256": "d3b2072fc52c42c2dd591591faa8cc6ab2e354928a64911fdebecb704bbf0114",
+      "size_bytes": 1473115
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10730618/segment_bootstrap.csv",
+      "sha256": "cb5524acf6ceca4161777404eea29f175298e0cf79e1018606ca6d6fb27e1608",
+      "size_bytes": 8327
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC10730618/star_manifest.json",
+      "sha256": "dd658f47fe0c6eeba988ac485c3c0149fa45fdb456648217f314daccbfcb4bf9",
+      "size_bytes": 1067
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC11253226/analysis.json",
+      "sha256": "03029d8c28b9944ec33298fcd7596126a9b02ec0678daabfcd7a8bd9603c2483",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC11253226/star_manifest.json",
+      "sha256": "4ffb7b1f9a56231c6b4f3f0431edea3ef32750abd4812db2853630f054f8ece2",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC11772920/analysis.json",
+      "sha256": "4801635b11360100705dedfd9f1211a1d0222b541ea4d46a0bb780f07bfbf0d5",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC11772920/star_manifest.json",
+      "sha256": "16d2b6eb01d3ecce1f5c6908bc5ef7dd947fb819aca6dab7e7b5c6a289919991",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069127/analysis.json",
+      "sha256": "3319ea6e4f5ba7f1ba86802e8fcb0b724b83f4342fc0cc98f38789edc1a9f5ee",
+      "size_bytes": 228831
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069127/mean_spectrum.csv",
+      "sha256": "2aeb65f70b42bc53c492721606a4b4302e511df5888b578e1815aa558448e3f0",
+      "size_bytes": 339797
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069127/monthly_spectra.npz",
+      "sha256": "d8a259479a6293ec3d343666df17ce90ead346ccf878bc35be5971355285231d",
+      "size_bytes": 1001186
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069127/segment_bootstrap.csv",
+      "sha256": "e7966f3ffbd91767b99726345680d27539d198f1db963cb2699b3e781af822e3",
+      "size_bytes": 8172
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069127/star_manifest.json",
+      "sha256": "67233e2d4d03fd75076cffb7dad3af491901ff515dde54f6bd05c86e481b27f4",
+      "size_bytes": 1067
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069449/analysis.json",
+      "sha256": "d159d188f7172734e569d0993d09c4f85f004eab9bc79d5bc237f84f13e2f74e",
+      "size_bytes": 380
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12069449/star_manifest.json",
+      "sha256": "dd91b6b996e4fcd21daebf9b76122eba691390917ae238ace8bdab647dc4ed9c",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12317678/analysis.json",
+      "sha256": "ebd06d65c78d309bf6f8506667c839d71de5f7cf7ccdd94205838ffd5162dc9c",
+      "size_bytes": 380
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC12317678/star_manifest.json",
+      "sha256": "f8f453d5bb643bc91b90237720384a547d691274dc9a555d499b01b602c02d90",
+      "size_bytes": 399
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC1435467/analysis.json",
+      "sha256": "07965054d188ef0673b8f2b8cf95978b06770054a37cd527ebefdea557cf64ba",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC1435467/star_manifest.json",
+      "sha256": "e5772df8c04ec3ccce165055a463c51a633adb043c60850ac9fae8eb0942c56f",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC2837475/analysis.json",
+      "sha256": "e7f97e777e7cb39926786053eaafa4d8d17aff27831bab3b5cbaf3485a1e2a9a",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC2837475/star_manifest.json",
+      "sha256": "9b6c96b76fe2d60b7354e5be310d3fee869d8e6398979c5cdebb74d522d2348d",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3427720/analysis.json",
+      "sha256": "fc95aef54821d9dc01f99129f0b486df6bfac3cf6516e41bb8475f3d9f268a3d",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3427720/star_manifest.json",
+      "sha256": "accc6b813f8d5b7f4a67c67a0ce999fe9c87089791dac4f2f1d7831eb00cdc05",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3656476/analysis.json",
+      "sha256": "068a1eb953d52fba638d9d292203755f0eb44194b3867cf0353a61a9bde2c6ac",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3656476/star_manifest.json",
+      "sha256": "b313b6caa3276bbf613f1145a9055c83c24b8586c15e0d1e240ae1150edb92fa",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3735871/analysis.json",
+      "sha256": "c069193e811dce483e02a5f40a9d11dea37bda7fc5eb7476cb2596cba56653e4",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3735871/star_manifest.json",
+      "sha256": "15ec7f1723489ca373917de048da9fedaa7955855ee0d59ff6245392ae81c362",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC4914923/analysis.json",
+      "sha256": "7a0c057b748840a68a733aa7332c600ca06d9b25597508c1584a2cc8d78f1980",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC4914923/star_manifest.json",
+      "sha256": "bab7c2d7cd7753ede9603ba599f976d4ed5fe86f7e96ce015151fb15387367db",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5184732/analysis.json",
+      "sha256": "aa63613a32ce0b66fdea6621cf367840e3b95dee49711a342d2e05ad7686f922",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5184732/star_manifest.json",
+      "sha256": "7daca2f33d33f53095da52843b98144e66998c2c5056b59dd5c83979913f77da",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5950854/analysis.json",
+      "sha256": "7f4b12f7e63772f5da25ba7be2f581d585844013987d2f70205cc36493a4d3b0",
+      "size_bytes": 185363
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5950854/mean_spectrum.csv",
+      "sha256": "59e5d7b723ceb9d2001610b0421396096047f5439ce59bb06a84de7079ef5f30",
+      "size_bytes": 340308
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5950854/monthly_spectra.npz",
+      "sha256": "8f25fa3ff70a475417e834f39f95cb6c2611a7f162eb2dc6bad5a53281acdbb0",
+      "size_bytes": 793648
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5950854/segment_bootstrap.csv",
+      "sha256": "668a5f51f4b25ad20ce2b07026480048c1a981288899db291128a1c83feea5e3",
+      "size_bytes": 8438
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC5950854/star_manifest.json",
+      "sha256": "ee65170e659a2f19a7757aaa81d0cf3ec787113638c397089f513c80bfd72096",
+      "size_bytes": 1061
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6603624/analysis.json",
+      "sha256": "32cde59ad0cd251f0c0f049aa8bd1d12736480ffb7cdde6134160959c2f8bcc0",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6603624/star_manifest.json",
+      "sha256": "896aa47548fc8456f876e91b89e884281ae7b7ad844fcddd9af208b7e3c19e2b",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6679371/analysis.json",
+      "sha256": "91843b9528ee577bbd990f188e0d56cd3bf945e70cba25c7c1be99a98ab4147a",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6679371/star_manifest.json",
+      "sha256": "f372eeecfd7639cb7e8f27bd7db35a3e0d8ac850aec50098bb2a8e34557528ac",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6933899/analysis.json",
+      "sha256": "06d82b66fe64978598909098cc3c110234e140e42371b9e0c36cf446b812f6af",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6933899/star_manifest.json",
+      "sha256": "adcfb2a0cf481eee6061404f3b0f221e65bf3c3676efb63b5b7b067e7b2923c3",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7206837/analysis.json",
+      "sha256": "d5ebae15992464fcfea017929e3f8a805bac77db66e1ad892d737844d4e84aab",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7206837/star_manifest.json",
+      "sha256": "c03634d1ced2c51739570403f0c23460f732d96e64c5c88e10c0bd6beda3e7b7",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7296438/analysis.json",
+      "sha256": "f056c9ea413ec93076ba99ab09f500df23604953b0850c5d6cd932e2cbcc24fe",
+      "size_bytes": 200419
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7296438/mean_spectrum.csv",
+      "sha256": "0e379943a52da5dadc757a6fd6e169362240f84e23ecd3705784a573e032a122",
+      "size_bytes": 346631
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7296438/monthly_spectra.npz",
+      "sha256": "3021162d9490e0ed1f03f6012b3da281fb4e27b429b4fe18c43fdeccca404847",
+      "size_bytes": 843174
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7296438/segment_bootstrap.csv",
+      "sha256": "21523c35844bdd5042feca59a683ecd1f01af7a0b6ae1510afd6936bd5d6fde5",
+      "size_bytes": 8324
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7296438/star_manifest.json",
+      "sha256": "caf91d08992f8008491f91d5eda84f61ebb2129e9904f39191cfef6f4cdcd362",
+      "size_bytes": 1061
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7510397/analysis.json",
+      "sha256": "976b6438095c41b1ecdc961804a133bb37ce8f514ee0aa708d26c4c424eb47c3",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7510397/star_manifest.json",
+      "sha256": "251fc8b2b6ac43d280acdb76f02a365bb1e59d0b694ff08f9209501441c7b662",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7680114/analysis.json",
+      "sha256": "daee2d1e2db7423ddbce4b8729252111b6498540f7172cecc1fcb989ee1a15fc",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7680114/star_manifest.json",
+      "sha256": "e5d5bbc9054bb237b524570911c0ab5fb931a35360bfbcd051608f380009fee2",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7771282/analysis.json",
+      "sha256": "38d8f57a4d3a0958acf9f045c8bc01f6cffd6faeeddcd3a4d0ed0fba8ba44793",
+      "size_bytes": 213738
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7771282/mean_spectrum.csv",
+      "sha256": "7625b302c4e9028fef5ca0e3696012da414a49d79d8520fe9f6465e58b1e2d70",
+      "size_bytes": 339794
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7771282/monthly_spectra.npz",
+      "sha256": "19f8fd105e16834fe236054d3608e4fbca5825197ffe5d8e92d19a43d6821d0d",
+      "size_bytes": 1003123
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7771282/segment_bootstrap.csv",
+      "sha256": "27d3641bc213878261c6d2add4440714eb2383226c2f6c95bcdf66c63a1793f9",
+      "size_bytes": 8328
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7771282/star_manifest.json",
+      "sha256": "8e62d29e790d70ecc1534fd3e3369501caf399f0056ba9005c744fee66dec2f0",
+      "size_bytes": 1062
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7871531/analysis.json",
+      "sha256": "0e907c1ed3428613eacfa8d0914e181fa60688ca470330337096aa2bc8ac02a6",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7871531/star_manifest.json",
+      "sha256": "654db356b494223245e6bcdbb76f0d818a5e1cc29004cfbbc1229f2c21b89393",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7940546/analysis.json",
+      "sha256": "3ec2062025cab218700660582a246a7db46ad7afec658875a453af308a7a1f40",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7940546/star_manifest.json",
+      "sha256": "141ee8f8ce39c079df121bfcdefd5611e81cd653767dc95e44e1abfc5772ef50",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7970740/analysis.json",
+      "sha256": "770ac3d582d4a615b12241fd7bbdc295be62dac37577297620869766c2d020a3",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC7970740/star_manifest.json",
+      "sha256": "4905e66043a2bc1ba2b2792a19d577a6b75f9a4c8373e4964cda7d5bf46fdac8",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/analysis.json",
+      "sha256": "354877a1156db8c3907d8f1c4d05c0c0705760c5ea2e8d734ed16b7cd860c214",
+      "size_bytes": 220565
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/mean_spectrum.csv",
+      "sha256": "27d238d9c4077549a47271368c2daeb97c5932b5e9aa58446394afaa4bb8e812",
+      "size_bytes": 350083
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/monthly_spectra.npz",
+      "sha256": "bd972854f0a19a2270d82e67d7626abe2d129b10651460b1bb8700c13d6f845e",
+      "size_bytes": 999525
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/segment_bootstrap.csv",
+      "sha256": "34b92b28ba91331ab1ff3959cc543add2cf1e0040b654f6d7475d01fe745b121",
+      "size_bytes": 8302
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/star_manifest.json",
+      "sha256": "f9e9ed76d2685c91a64e0ad4f97d3411879cf54a3963665ad6051bab60908003",
+      "size_bytes": 1061
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8394589/analysis.json",
+      "sha256": "ffca55350b1b6d7dc6fe92d08e3a80f15953f5c7041c437c7743717c027633c8",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8394589/star_manifest.json",
+      "sha256": "bef4a3428457f3fe86a406ed5ea3fda9344e5ca2919d8eb2846c50860ee4b772",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8424992/analysis.json",
+      "sha256": "a0d29434c4f5d37b5dc505d794249a67583540ac86c4b28aaba218cf6b566515",
+      "size_bytes": 172090
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8424992/mean_spectrum.csv",
+      "sha256": "31a339428db516b08a6bf103ac76c21511f4d4728b5e1f9fb46650e0f949d7d9",
+      "size_bytes": 346308
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8424992/monthly_spectra.npz",
+      "sha256": "355619df001bb3908ddbce260ad3ba23bb4b8762692ee1e1723dee32c1b34613",
+      "size_bytes": 691750
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8424992/segment_bootstrap.csv",
+      "sha256": "307d47281db72070ef4e9ce63acbdb0991539877af1d6947962eb9ec5a7628be",
+      "size_bytes": 8529
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8424992/star_manifest.json",
+      "sha256": "47f3ff2815203012079f794eead2ec1c063533808d389797326144843f87d4fe",
+      "size_bytes": 1061
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8694723/analysis.json",
+      "sha256": "854315c59fdaddc55b4273c67342ca7094f7aafe9c22ad2576e84533a6069e06",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8694723/star_manifest.json",
+      "sha256": "eec2ab52bfaa2b52a6af31afd8462b92b5527ae55fc6f4a7efe5ca3a782883ac",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8760414/analysis.json",
+      "sha256": "8e26dcf1fe192f76dfe8463ea764d0e913d9f3956a7c5cda0e1eb2434ffa961a",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8760414/star_manifest.json",
+      "sha256": "acfc89ff1c9a19788b47d95fab6a9ccac3862d1c32abe0c5aa86deefd1664d8f",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8938364/analysis.json",
+      "sha256": "ffd1bc573858c3a36af077c1fa702de3a46f8b69fc64ca16d2929235e753bb2e",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8938364/star_manifest.json",
+      "sha256": "2e769ee58162cc869aa09286f9809780bd72605181f91dd56ef5cc6412c4a187",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9139151/analysis.json",
+      "sha256": "e5c8f186f4e0d8ab918c195045fc3f061468b35133a7788e2c29c751f2c1ad12",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9139151/star_manifest.json",
+      "sha256": "ab457c4a1807341ad4ba0678d0b86f441fb4ad976b580123241b67f8befc5146",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9206432/analysis.json",
+      "sha256": "86133f462981117af773c23c375562e32e6ebf606f4843b7bc8bae98bf574202",
+      "size_bytes": 247443
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9206432/mean_spectrum.csv",
+      "sha256": "e02e4848dec63c95af9b582789322d7614b06445097902cb8204cf8b54ea5663",
+      "size_bytes": 348790
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9206432/monthly_spectra.npz",
+      "sha256": "acc93e56d1793a00d7936f5e206679125d08f412836a65aee0e7cf8e8f8e1733",
+      "size_bytes": 1153416
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9206432/segment_bootstrap.csv",
+      "sha256": "efbd378b2a36f4b3efe751f1aed0a4df37b8bc5e7644edf41444c24c87e146c9",
+      "size_bytes": 8370
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9206432/star_manifest.json",
+      "sha256": "0e665df9a2fb259555a7dae459d962e179094f46e4b697bdebee78c11f9c8046",
+      "size_bytes": 1062
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9353712/analysis.json",
+      "sha256": "5b1ecfa1eeb58aaa8e967220ca91ed9112215c71768c9d6d6cff0e66c1963c90",
+      "size_bytes": 238945
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9353712/mean_spectrum.csv",
+      "sha256": "92a41906be862f2c607d4f3679674189a821a46bd5acba62b3031fbc3ab0f3bd",
+      "size_bytes": 339662
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9353712/monthly_spectra.npz",
+      "sha256": "82001ceb57a5903adc1cc8573a5d21df0f79b36d9005d4d4f967a884ed691e7f",
+      "size_bytes": 1106268
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9353712/segment_bootstrap.csv",
+      "sha256": "223f36fd16c14734996edb3652c35af817761732413343ca510092e1882a0ddf",
+      "size_bytes": 8178
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9353712/star_manifest.json",
+      "sha256": "446b108829806c20d72bcfb8e35db3bccedb813497d315f7151f4e2b9f9be048",
+      "size_bytes": 1062
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9414417/analysis.json",
+      "sha256": "fb278248e3b3faaa609b298a6b9f53c29eafd06e3e0901a12a3822875d119e7e",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9414417/star_manifest.json",
+      "sha256": "e65d6a04fbab64c087080210bd850b743b09cb85d464b3fd2d8b37ade768c1c6",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9955598/analysis.json",
+      "sha256": "ead79edfc5e5435b2ed9c10679b449c503b74beb2ab37a1a9b85853e193f8225",
+      "size_bytes": 386
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9955598/star_manifest.json",
+      "sha256": "a365cec2b935b0bdddd270b962e8fd35bc751e5ccba2175f5ee405c5199b4990",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/development/summary.json",
+      "sha256": "b2c5ebc17387103f811e36aab9b823348fc688be1afa209547e18fadb846b887",
+      "size_bytes": 9647
+    }
+  ],
+  "role": "development",
+  "schema_version": 1
+}

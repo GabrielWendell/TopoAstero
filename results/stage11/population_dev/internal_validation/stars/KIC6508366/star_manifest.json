@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC6508366/analysis.json",
+      "sha256": "913d7c06c390019dac65bb18a0a94c3d9c29b7d6af4c12cb01493dcb4c67211d",
+      "size_bytes": 387
+    }
+  ],
+  "input_id": "9861d5b9871eb0f29a897374c2cf0b046588134c1963291f88ecf4298e7afb01",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 6508366"
+}

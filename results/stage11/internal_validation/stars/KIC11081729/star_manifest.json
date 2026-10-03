@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/internal_validation/stars/KIC11081729/analysis.json",
+      "sha256": "f115208fdf8cf22e53bcef4cf6cfed00ff0f834811a66a88e83044b1e0c32996",
+      "size_bytes": 388
+    }
+  ],
+  "input_id": "da433cbcdb944c1b9b4ab412fd5d8e0336900b736e7d74f6485435ec95e2c767",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 11081729"
+}

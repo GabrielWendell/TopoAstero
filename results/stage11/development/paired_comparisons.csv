@@ -1,0 +1,3 @@
+role,quantity,comparison,difference_lower95,difference_upper95,status,n,mean_loss_difference,margin,p_tost,lower,upper,equivalent_unadjusted,assumption,p_tost_holm,equivalent_familywise
+development,numax,topology_minus_classical_absolute_fractional_loss,-0.0047237542397921325,0.007062000729196329,evaluated,9,0.0012381293032832667,0.01,0.013936255478933207,-0.004838587550735444,0.007314846157301978,True,paired_star_difference_t_approximation,0.027872510957866414,True
+development,dnu,topology_minus_classical_absolute_fractional_loss,-3.0743154935366747e-17,0.11386433364402955,evaluated,9,0.04723990045086593,0.005,0.8890756605558447,-0.012052884351912874,0.10653268525364473,False,paired_star_difference_t_approximation,0.8890756605558447,False

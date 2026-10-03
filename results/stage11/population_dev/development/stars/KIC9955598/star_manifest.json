@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9955598/analysis.json",
+      "sha256": "ead79edfc5e5435b2ed9c10679b449c503b74beb2ab37a1a9b85853e193f8225",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "74a0ccbea9f7480821a525022680f1ea57aecd54ea899c235630f7df7e6c5580",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9955598"
+}

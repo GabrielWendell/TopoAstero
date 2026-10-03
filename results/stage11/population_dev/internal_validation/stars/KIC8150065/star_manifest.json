@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC8150065/analysis.json",
+      "sha256": "29117767f9d06412d823a5133c6f01f286700201355b5f91871121edeca58966",
+      "size_bytes": 387
+    }
+  ],
+  "input_id": "cae43054a2ef717160cadfbbfcb02a356aaebc273ab2811b6fb9396273f0ef94",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 8150065"
+}

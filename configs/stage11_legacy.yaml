@@ -1,0 +1,78 @@
+schema_version: 1
+stage_id: TA-S11-LEGACY-v1
+master_seed: 20260721
+cohort_size: 66
+partitions: registries/population_partitions.csv
+split_attestation: registries/split_attestation.json
+population: evidence/benchmarks/legacy_population.csv
+stellar_references: data/reference/stellar_references.csv
+products: data/manifests/stage2/legacy_kepler_product_index.csv
+acquisition: data/manifests/stage11/acquisition.json
+reference_manifest: data/reference/stage11/reference_manifest.json
+mode_references: data/reference/stage11/mode_frequencies.csv
+ratio_references: data/reference/stage11/frequency_ratios.csv
+covariates: data/reference/stage11/covariates.csv
+exclusions: registries/stage11_exclusions.csv
+qa_log: registries/stage11_qa.jsonl
+release: reports/stage11/confirmation_release.json
+confirmation_state: registries/stage11_confirmation.json
+output: results/stage11
+reports: reports/stage11
+observation:
+  preprocessing_branch: PP-01
+  cadence_seconds: 58.84876286
+  frequency_grid_uHz: [100.0, 8000.0, 1.0]
+  quality_bitmask: default
+  estimator: exposure_weighted_monthly_mean_psd
+  minimum_months: 3
+classical:
+  envelope_search_uHz: [500.0, 5000.0]
+  envelope_smoothing_uHz: 35.0
+  initial_continuum_smoothing_uHz: 600.0
+  envelope_half_width_fraction: 0.30
+  minimum_half_width_uHz: 275.0
+  background_components: 2
+topology:
+  normalization: log_ratio
+  peak_smoothing_uHz: 1.0
+  echelle_phase_bins: 24
+  echelle_trial_fractions: [0.9, 0.95, 1.0, 1.05, 1.1]
+  spacing_points: 41
+  nominal_spacing_range: [0.75, 1.25]
+  ridge_inference: geometry_only
+  delay_topology: dropped_at_G7
+quality:
+  minimum_envelope_ratio: 1.5
+  minimum_duty_cycle: 0.50
+  minimum_orders: 5
+  alias_score_ratio: 1.03
+  reference_anchor_tolerance_uHz: 2.0
+uncertainty:
+  segment_bootstrap_replicates: 128
+  interval_level: 0.90
+  refit_background: true
+statistics:
+  star_bootstrap_replicates: 2000
+  minimum_stars_for_interval: 3
+  alpha: 0.05
+  primary_quantities: [numax, dnu]
+  equivalence_fractional_margin: {numax: 0.01, dnu: 0.005}
+  catastrophic_fractional_error: {numax: 0.10, dnu: 0.10}
+  multiplicity: holm_primary_tost
+  coverage_target: published_reference_center
+  pooled_roles_allowed: false
+operating_domain:
+  numax_uHz: [1500, 2500, 3500]
+  dnu_uHz: [75, 110, 145]
+  teff_K: [5700, 6200, 6600]
+  kp_mag: [8.0, 9.0, 10.0]
+  envelope_ratio: [2.0, 5.0, 10.0]
+  duty_cycle: [0.5, 0.75, 0.90]
+  duration_days: [365, 730, 1095]
+  linewidth_uHz: [1.0, 3.0, 6.0]
+references:
+  base_url: https://cdsarc.cds.unistra.fr/ftp/J/ApJ/835/172/
+  edition: Lund2017-erratum-ApJ850-110-CDS
+  readme_url: https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/ApJ/835/172
+  erratum_doi: 10.3847/1538-4357/aa9658
+  uncertainty_semantics: published_asymmetric_intervals_no_covariance_claim

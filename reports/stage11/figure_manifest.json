@@ -1,0 +1,67 @@
+{
+  "files": [
+    {
+      "path": "reports/stage11/figures/01_cohort_coverage.png",
+      "sha256": "663128d592c24ed4d390d8fee8f7c4d34a1ea01b651082c8043590c36d17e369",
+      "size_bytes": 80614
+    },
+    {
+      "path": "reports/stage11/figures/01_cohort_coverage.svg",
+      "sha256": "281004156628938255334a4ff780aa8069dbf057df5c0825d7cfee2b70cb1655",
+      "size_bytes": 35290
+    },
+    {
+      "path": "reports/stage11/figures/01_cohort_coverage.pdf",
+      "sha256": "b753cf33666d6e7c84b0544f92a07780219ae5b2e27f805c34d6a79b70730ede",
+      "size_bytes": 14030
+    },
+    {
+      "path": "reports/stage11/figures/02_numax_comparison.png",
+      "sha256": "e0194397b5421f494628ba69c44fa1fa5bfdc5258e487d0d69ca8a93fa477266",
+      "size_bytes": 138764
+    },
+    {
+      "path": "reports/stage11/figures/02_numax_comparison.svg",
+      "sha256": "397e5a227377974de0cfabd63531d48a1821556379810d283a3dc2bce42871b0",
+      "size_bytes": 58949
+    },
+    {
+      "path": "reports/stage11/figures/02_numax_comparison.pdf",
+      "sha256": "dd6051470681d28e3b2280d9b258bb899a42ff4449c73f44c15491e5f9ed3e4b",
+      "size_bytes": 19005
+    },
+    {
+      "path": "reports/stage11/figures/03_dnu_comparison.png",
+      "sha256": "e09b79292c67c431d2199bdf7988b32ba4ef80fb1cf1821f0aeb38c74dc4b6f4",
+      "size_bytes": 124115
+    },
+    {
+      "path": "reports/stage11/figures/03_dnu_comparison.svg",
+      "sha256": "5373ced5b6ce915db65ce5dbbf59de03ad0800418bbcb4143b9e9e53fc917ae5",
+      "size_bytes": 36422
+    },
+    {
+      "path": "reports/stage11/figures/03_dnu_comparison.pdf",
+      "sha256": "88daaf28fdc7c73f36d05836aad02c9df849d578df0c7708a86a783838f48547",
+      "size_bytes": 18086
+    },
+    {
+      "path": "reports/stage11/figures/04_failure_atlas.png",
+      "sha256": "9d6da033e884c8c5bedb77d7c7f8226e6360d029262a40f5f8796d1a733022b2",
+      "size_bytes": 75064
+    },
+    {
+      "path": "reports/stage11/figures/04_failure_atlas.svg",
+      "sha256": "e995a766c536a54d44ffafdcf741f15ea67687c2b640d9ce72302073e90273d9",
+      "size_bytes": 31130
+    },
+    {
+      "path": "reports/stage11/figures/04_failure_atlas.pdf",
+      "sha256": "fd8264e2e474370871a5a0cadb3c89238a4ec879a7ffbabfc31eb38907336ce7",
+      "size_bytes": 13668
+    }
+  ],
+  "schema_version": 1,
+  "scope": "source_backed_roles_separated_no_population_claim_before_confirmation",
+  "style_id": "TA-PLOT-1.0"
+}

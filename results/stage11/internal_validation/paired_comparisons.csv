@@ -1,0 +1,3 @@
+role,quantity,comparison,difference_lower95,difference_upper95,status,n,p_tost,equivalent_unadjusted,p_tost_holm,equivalent_familywise
+internal_validation,numax,topology_minus_classical_absolute_fractional_loss,,,insufficient_stars,1,,,,
+internal_validation,dnu,topology_minus_classical_absolute_fractional_loss,,,insufficient_stars,1,,,,

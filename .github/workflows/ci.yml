@@ -64,3 +64,7 @@ jobs:
         run: uv run python workflows/replay_stage10_reduced.py
       - name: Build distribution
         run: uv build
+      - name: Validate additive Stage 11 implementation and population hold
+        run: uv run python workflows/validate_stage11.py --root .
+      - name: Replay Stage 11 available observational headlines
+        run: uv run python workflows/replay_stage11_reduced.py --root .

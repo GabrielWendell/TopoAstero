@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC10079226/analysis.json",
+      "sha256": "aa3190b5b9b8830efac527cec633260570233da0dfe4d3059ca5f83302756e3a",
+      "size_bytes": 388
+    }
+  ],
+  "input_id": "ca24da83ad42ca47bdf1eb701ab2a43c0395f361a8ea334104c890c20d885f43",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 10079226"
+}

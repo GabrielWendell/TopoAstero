@@ -1,0 +1,186 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/internal_validation/catalog.csv",
+      "sha256": "07b0fa307d3431626835854472e3276ead6e17abce77f1922ded2d37720960a2",
+      "size_bytes": 14895
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/catalog.json",
+      "sha256": "a1787bb7f239245ed4040fe69522cdd6873574ff5935d13f3ffd18fb1bf1ca71",
+      "size_bytes": 46402
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/operating_domain.csv",
+      "sha256": "47a1141e17e4d76a5ef82e54940924e593e31e133227d5b44f67cca34b09ff6e",
+      "size_bytes": 13763
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/paired_comparisons.csv",
+      "sha256": "612800b12ad378e9d309009074f84b68e1e0d7a32c6678fc00b5102f79854188",
+      "size_bytes": 339
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/performance.csv",
+      "sha256": "a9da9f5849196d47ec9019ef82f393c3d81769c9b138dca5c253d475befd105c",
+      "size_bytes": 2092
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/ratio_benchmark.csv",
+      "sha256": "4cc56231390bbcb14fde830d0238c5945bcb8c31e4f083034baf0dbf39106bc1",
+      "size_bytes": 126991
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC10079226/analysis.json",
+      "sha256": "aa3190b5b9b8830efac527cec633260570233da0dfe4d3059ca5f83302756e3a",
+      "size_bytes": 388
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC10079226/star_manifest.json",
+      "sha256": "ddb9102346300bc85d659b7c1eca3944ef27acdde120085f259dfaa2a6fc8bd3",
+      "size_bytes": 415
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC11081729/analysis.json",
+      "sha256": "f115208fdf8cf22e53bcef4cf6cfed00ff0f834811a66a88e83044b1e0c32996",
+      "size_bytes": 388
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC11081729/star_manifest.json",
+      "sha256": "5827758191074228c8c427cbf9ab881b63c6f8e812097a038183e982ad31299a",
+      "size_bytes": 415
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC12069424/analysis.json",
+      "sha256": "ce9bde9366bf734bbaf5c9b0bb5e2dd338c4af9a5a7d24d2b49db808bc2c0497",
+      "size_bytes": 388
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC12069424/star_manifest.json",
+      "sha256": "4256407e2e07be105fac75b071fc816b221311e2e1b3a894438f4caef241aeeb",
+      "size_bytes": 415
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC3632418/analysis.json",
+      "sha256": "30399b7dfe550d3b0eee3e53ee47d5dd299e7a8f527eaef0a40492603daa3a1b",
+      "size_bytes": 207088
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC3632418/mean_spectrum.csv",
+      "sha256": "960243956ce6b83f678746779c52a995ecdca1cfdf6d42ca4df9c18247d53402",
+      "size_bytes": 352423
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC3632418/monthly_spectra.npz",
+      "sha256": "f7b73856a42a5377e21e05d8af15f870a0501c8de91f36b65b831452ed99c1de",
+      "size_bytes": 1137457
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC3632418/segment_bootstrap.csv",
+      "sha256": "1d2039ab48ce50492b854c583704a1def2765a10e6e5ca87d9f380a065444058",
+      "size_bytes": 8435
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC3632418/star_manifest.json",
+      "sha256": "08bde4d9c855b9ec9ea1ffd8542128393d3d1c070259b4ab6d695df90c9ccb35",
+      "size_bytes": 1102
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC5773345/analysis.json",
+      "sha256": "1e55736d3d93555f1ed7b95542c0c6a8c8d24d629667e0d0228b1a7787f555b5",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC5773345/star_manifest.json",
+      "sha256": "6c9ab3bab721897ee01bc004ad09843c9bb95888901695e48fa34d0db326be71",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC6508366/analysis.json",
+      "sha256": "913d7c06c390019dac65bb18a0a94c3d9c29b7d6af4c12cb01493dcb4c67211d",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC6508366/star_manifest.json",
+      "sha256": "64912ede66b2a2360ece051a83b3d8bfae9a7654fa58951091dbcfb107de79c7",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC7103006/analysis.json",
+      "sha256": "dd9dd08a2bdb08ecc7a75d45e7069a5a001343ec0351f079bf6e14a2e1c2c0cb",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC7103006/star_manifest.json",
+      "sha256": "f6c5b6c926766339fa806df3d057b0f85ac42b75d31f330c737406e813f00510",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC7106245/analysis.json",
+      "sha256": "f1264dc91cb162befa365192e5ba97924e83bb9475faa586471b2de30508fff0",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC7106245/star_manifest.json",
+      "sha256": "9010863b0b3bfdb472623ce1e241711199fc2dbd5efcab554ecb47b7747a9e41",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC8006161/analysis.json",
+      "sha256": "357848bca6e40859f294b934ac9539d4507994b8ea0a05261b9d2decc477c58d",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC8006161/star_manifest.json",
+      "sha256": "d8c0e4176f2c37ed970e1afba23cf01c172a8216bb17a9f8baa8f629bc23e7ad",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC8150065/analysis.json",
+      "sha256": "29117767f9d06412d823a5133c6f01f286700201355b5f91871121edeca58966",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC8150065/star_manifest.json",
+      "sha256": "a64d0b74dbb26649f20146ee40063a35173700fe314aa2418e1229fe22cacb37",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9025370/analysis.json",
+      "sha256": "0ab451e917c7ffc2a9c474a8357aff064718fd0e24a9bc62d840b4db8990d9a0",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9025370/star_manifest.json",
+      "sha256": "cdcda8165131291666900c617c5f63e2a1af16aa2ca55618c595eb7afd08beff",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9410862/analysis.json",
+      "sha256": "ebfbf0c45c0c213be9b193d8cb70ab1348336c83571087991b9747c7bfc70e79",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9410862/star_manifest.json",
+      "sha256": "0c5eb59bc7dea0c00bbe23e44761c82951d0d20388a9a7d8c17bf337e88433b6",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9965715/analysis.json",
+      "sha256": "6a6fa802ea6a81265523410d75f5f895bbd9e9864ad5b4ec4648611e06d20363",
+      "size_bytes": 387
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9965715/star_manifest.json",
+      "sha256": "b6f5aea49523efc757478ce3bada0122c13b1732a12fedee6e3e541e2a44602d",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/population_dev/internal_validation/summary.json",
+      "sha256": "f691bd855ae1e7e603db4db5ed172c46b70c115651964c5baddb44e0480c6c01",
+      "size_bytes": 3584
+    }
+  ],
+  "role": "internal_validation",
+  "schema_version": 1
+}

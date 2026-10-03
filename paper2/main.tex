@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,booktabs,graphicx,hyperref}
+\input{results_status}
+\title{Persistent spectral localization and cylindrical geometry across the Kepler LEGACY sample}
+\author{Gabriel Wendell}
+\date{Stage 11 evidence-aware working draft}
+\begin{document}\maketitle
+\begin{abstract}
+We define a star-grouped validation of localized power-spectrum persistence and
+classical seismic estimators for the 66-star Kepler LEGACY cohort. The current
+scientific gate is \GateStatus. The archived development evidence contains
+\ObservedStars{} stars with estimates and \PayloadCount{} verified mission products.
+Population generalization is not established until the signed confirmation release
+is executed once. This draft states the construction, planned comparisons and
+current limitations without substituting missing measurements with simulations.
+\end{abstract}
+\section{Population and observation operator}
+Use the existing grouped split: 39 development, 13 internal validation, 13 final
+holdout stars and the previously studied descriptive benchmark Rudy. Monthly
+PDCSAP light curves follow PP-01. A common physical frequency grid is rebinned
+without extrapolation; monthly spectra are averaged with retained-exposure weights.
+Published global references are traceable to Silva Aguirre et al. (2017);
+mode/ratio references use the corrected Lund et al. (2017) erratum edition.
+The observational references are documented in
+\cite{SilvaAguirre2017,Lund2017,Lund2017Erratum}.
+\section{Construction and controls}
+For a background-normalized scalar spectrum, path-superlevel $H_0$ persistence
+equals elder-rule peak prominence on the shared domain. We therefore report the
+independent prominence check as a mandatory control. A persistence-weighted peak
+centroid estimates $\nu_{\max}$ within a data-selected envelope. Comb trials around
+the classical spacing retain half, nominal and double alternatives. Cylinder
+scores compare periodic ridge geometry and finite $H_0$ localization but do not
+establish independent spectral information or blind degree identification.
+\section{Statistical analysis}
+The primary endpoints are errors in $\nu_{\max}$ and $\Delta\nu$. Both methods use
+the same successful stars; method-specific missingness, failures and catastrophic
+errors are displayed beside bias, MAE and RMSE. Star bootstrap draws are paired.
+Practical equivalence uses paired TOST on absolute fractional-loss differences,
+with registered margins 0.01 and 0.005 and Holm correction across both endpoints.
+Small-cell operating domains remain descriptive. Monthly intervals refer to the
+mean-spectrum estimator; reference-center coverage and reference-interval overlap
+are distinct quantities. A positive-only selected cohort cannot estimate
+specificity, false-alarm rates or probability calibration.
+\section{Current evidence and confirmation state}
+\input{results_tables}
+\par\medskip
+Machine-readable catalogs and reason-coded failure/operating-domain tables are
+generated separately for each role. The one-time holdout archive will supply final
+performance estimates; no population superiority claim is currently supported.
+\section{Ridge ratios and counterexamples}
+The degree/order-conditioned mode-localization benchmark compares $r_{02}$ and
+related ratios to corrected individual-frequency references. It is explicitly
+reference-conditioned. Unanchored ridges, alias ambiguity, sparse orders,
+background instability and missing observations are failure cases, not suppressed
+examples. A ratio of median frequencies need not equal the median ratio.
+No covariance-based ratio interval is claimed without covariance data.
+\section{Domain of validity and reproducibility}
+This benchmark concerns selected main-sequence and mildly evolved solar-like
+LEGACY oscillators. Extrapolation to undetected oscillators, red giants or TESS
+requires separate validation. Delay topology remains dropped after Stage 7;
+cylindrical inference remains geometry-only after Stage 8. Earlier independent
+proof and human reproduction reviews remain pending. Code, environment, inputs,
+exclusions, thresholds and statistical rules must be signed and frozen before
+confirmation. Public identifiers are visible; local guards are procedural access
+controls, not cryptographic blinding. See the Stage 11 protocol, reproduction
+guide and task traceability for commands and exact archived evidence.
+\bibliographystyle{plain}\bibliography{references}
+\end{document}

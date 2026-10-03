@@ -1,0 +1,13 @@
+{
+  "available_products": 0,
+  "expected_products": 15,
+  "input_id": "cae43054a2ef717160cadfbbfcb02a356aaebc273ab2811b6fb9396273f0ef94",
+  "quality_flags": [
+    "missing_products"
+  ],
+  "reason": "fewer_than_three_nonoverlapping_months",
+  "reference_values_used_in_estimation": false,
+  "role": "internal_validation",
+  "stable_star_id": "KIC 8150065",
+  "status": "missing_input"
+}

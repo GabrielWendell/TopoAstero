@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/analysis.json",
+      "sha256": "354877a1156db8c3907d8f1c4d05c0c0705760c5ea2e8d734ed16b7cd860c214",
+      "size_bytes": 220565
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/mean_spectrum.csv",
+      "sha256": "27d238d9c4077549a47271368c2daeb97c5932b5e9aa58446394afaa4bb8e812",
+      "size_bytes": 350083
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/monthly_spectra.npz",
+      "sha256": "bd972854f0a19a2270d82e67d7626abe2d129b10651460b1bb8700c13d6f845e",
+      "size_bytes": 999525
+    },
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC8179536/segment_bootstrap.csv",
+      "sha256": "34b92b28ba91331ab1ff3959cc543add2cf1e0040b654f6d7475d01fe745b121",
+      "size_bytes": 8302
+    }
+  ],
+  "input_id": "42ca9a2310849b04d396b82d44064631d1ad86307c8f9bdea3e3d7f621253bfb",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 8179536"
+}

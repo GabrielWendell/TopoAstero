@@ -20,6 +20,7 @@ Thumbs.db
 
 # Scientific data: metadata stays in Git; payloads do not.
 data/raw/**
+data/caches/**
 !data/raw/README.md
 data/derived/**
 !data/derived/README.md
@@ -51,6 +52,8 @@ results/*
 !results/stage9/**
 !results/stage10/
 !results/stage10/**
+!results/stage11/
+!results/stage11/**
 
 # Paper I source/PDF are frozen; transient TeX build files are not versioned.
 paper1/*.aux
@@ -59,3 +62,9 @@ paper1/*.blg
 paper1/*.log
 paper1/*.out
 paper1/*.toc
+paper2/*.aux
+paper2/*.bbl
+paper2/*.blg
+paper2/*.log
+paper2/*.out
+paper2/*.toc

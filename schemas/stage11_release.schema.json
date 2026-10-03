@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage11_release.schema.json",
+  "title": "Stage 11 signed canonical confirmation release",
+  "type": "object",
+  "required": ["payload", "payload_sha256", "signature_hex", "public_key_pem", "signature_algorithm"],
+  "properties": {
+    "payload_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "signature_hex": {"type": "string", "pattern": "^[a-f0-9]+$"},
+    "signature_algorithm": {"const": "OpenSSL-SHA256-PEM"},
+    "payload": {"type": "object", "required": ["schema_version", "supervisor", "data_steward", "container_digest", "holdout_opened", "configuration", "files"], "properties": {
+      "schema_version": {"const": 1},
+      "holdout_opened": {"const": false},
+      "supervisor": {"type": "string", "minLength": 1},
+      "data_steward": {"type": "string", "minLength": 1},
+      "container_digest": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+      "files": {"type": "array", "minItems": 1}
+    }}
+  }
+}

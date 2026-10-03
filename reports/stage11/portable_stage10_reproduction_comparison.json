@@ -1,0 +1,290 @@
+{
+  "comparisons": [
+    {
+      "maximum_absolute_difference": 0.0001728391507640481,
+      "maximum_relative_difference": 1.3773197456109272e-07,
+      "path": "results/stage10/background_models.json",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 3.4829167772088e-08,
+      "maximum_relative_difference": 2.4111327678286946e-08,
+      "path": "results/stage10/branch_spectra.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 3.971829976023855e-09,
+      "maximum_relative_difference": 1.4131653394244993e-09,
+      "path": "results/stage10/broad_spectrum.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 4.950152288074605e-08,
+      "maximum_relative_difference": 2.28061708423848e-08,
+      "path": "results/stage10/classical_branches.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.4854937280261993e-09,
+      "maximum_relative_difference": 1.036933912035048e-09,
+      "path": "results/stage10/conditional_null_tests.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.45898337855499e-09,
+      "maximum_relative_difference": 1.7155479993583492e-06,
+      "path": "results/stage10/cylinder.json",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 7.101448318280745e-10,
+      "maximum_relative_difference": 3.14302153480964e-12,
+      "path": "results/stage10/echelle_bootstrap.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 2.777833518763373e-09,
+      "maximum_relative_difference": 2.6312522296689885e-08,
+      "path": "results/stage10/echelle_branch_controls.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 8.462525125096931e-11,
+      "maximum_relative_difference": 2.0492019090391244e-10,
+      "path": "results/stage10/echelle_score_scan.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 9.322320693172514e-11,
+      "maximum_relative_difference": 5.227805980347438e-12,
+      "path": "results/stage10/kepler_to_tess.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.4131365730363221e-09,
+      "maximum_relative_difference": 8.467684837299871e-06,
+      "path": "results/stage10/localized_peaks.json",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 3.096374712185934e-09,
+      "maximum_relative_difference": 1.1482575860198676e-09,
+      "path": "results/stage10/monthly_bootstrap.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.8882673202824662e-12,
+      "maximum_relative_difference": 2.1883827531983513e-10,
+      "path": "results/stage10/monthly_spectra.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.1741576599888504e-09,
+      "maximum_relative_difference": 1.4326111827390899e-10,
+      "path": "results/stage10/null_draws.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference": 0.0,
+      "path": "results/stage10/observation_preview.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference": 0.0,
+      "path": "results/stage10/published_frequency_ratios.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference": 0.0,
+      "path": "results/stage10/published_mode_overlay.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 2.1268533600959927e-09,
+      "maximum_relative_difference": 8.610793230024366e-10,
+      "path": "results/stage10/quality_flags.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 2.124124875990674e-09,
+      "maximum_relative_difference": 1.1446020261505108e-09,
+      "path": "results/stage10/quarter_stability.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference": 0.0,
+      "path": "results/stage10/ratio_reference_audit.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 3.4043068808387034e-07,
+      "maximum_relative_difference": 2.396141381170932e-08,
+      "path": "results/stage10/robustness.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.1102230246251565e-16,
+      "maximum_relative_difference": 1.1102230246251568e-16,
+      "path": "results/stage10/sampling_audit.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 5.086349119665101e-10,
+      "maximum_relative_difference": 1.9779875874691263e-11,
+      "path": "results/stage10/scaling_draws.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.0331069333346932e-11,
+      "maximum_relative_difference": 1.8610271221137663e-11,
+      "path": "results/stage10/scaling_uncertainty.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 1.2278178473934531e-11,
+      "maximum_relative_difference": 1.187861734073387e-13,
+      "path": "results/stage10/simulation_placement.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 9.625977792637741e-11,
+      "maximum_relative_difference": 1.3238819510008332e-08,
+      "path": "results/stage10/spectral_score_scan.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 4.440892098500626e-16,
+      "maximum_relative_difference": 3.584008158069758e-14,
+      "path": "results/stage10/spectral_windows.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 4.040430212626234e-09,
+      "maximum_relative_difference": 1.1532290176818393e-09,
+      "path": "results/stage10/stochastic_draws.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 2.1268533600959927e-09,
+      "maximum_relative_difference": 1.038134801908256e-09,
+      "path": "results/stage10/summary.json",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 6.622258297284134e-12,
+      "maximum_relative_difference": 9.779286717604133e-14,
+      "path": "results/stage10/tess_sectors.csv",
+      "status": "pass"
+    },
+    {
+      "maximum_absolute_difference": 5.753327059210278e-08,
+      "maximum_relative_difference": 2.0428018733429308e-10,
+      "path": "results/stage10/uncertainty_budget.csv",
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/01_observation_window.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/02_psd_background.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/03_ordinary_echelle.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/04_localized_persistence.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/05_spacing_aliases.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/06_cylinder_ridges.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/07_simulation_placement.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/08_sensitivity_uncertainty.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/09_quarter_stability.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "changed_pixel_fraction_over_8": 0.0,
+      "path": "reports/stage10/figures/10_kepler_tess_transfer.svg",
+      "pixel_mae_0_255": 0.0,
+      "same_viewbox_and_text": true,
+      "status": "pass"
+    },
+    {
+      "exact_bytes": true,
+      "path": "paper1/main.tex",
+      "status": "pass"
+    },
+    {
+      "exact_bytes": true,
+      "path": "paper1/results_macros.tex",
+      "status": "pass"
+    },
+    {
+      "exact_bytes": true,
+      "path": "paper1/results_tables.tex",
+      "status": "pass"
+    },
+    {
+      "exact_bytes": true,
+      "path": "paper1/claim_ledger.tex",
+      "status": "pass"
+    },
+    {
+      "exact_bytes": true,
+      "path": "paper1/references.bib",
+      "status": "pass"
+    }
+  ],
+  "differences": [],
+  "figure_criteria": "SVG_viewBox_and_text_exact; PNG_pixel_MAE<=0.5; fraction_pixels_delta>8<=0.01",
+  "numeric_atol": 1e-06,
+  "numeric_rtol": 1e-06,
+  "status": "pass"
+}

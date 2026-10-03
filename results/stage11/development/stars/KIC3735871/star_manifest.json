@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/development/stars/KIC3735871/analysis.json",
+      "sha256": "c069193e811dce483e02a5f40a9d11dea37bda7fc5eb7476cb2596cba56653e4",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "5a92a315852922374835d958d49f00a8af14a0d079678c9356136dc94bc5c847",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 3735871"
+}

@@ -61,3 +61,13 @@ POSIX form, and refreshes dependent Stage 0–9 checksums/seals without rerunnin
 
 Stage 3 and all later figure-producing workflows must use `topoastero.style` visual contract
 `TA-PLOT-1.0`; the governance test rejects direct `savefig` calls in plotting workflows.
+
+
+### Stage 11 additive commands
+
+`run_stage11_legacy.py` exposes references/acquire/cohort/run-development/log-change/
+freeze/open-confirmation/report/validate. `reproduce_stage11.py` runs all non-holdout
+roles from verified inputs; `replay_stage11_reduced.py` recomputes stored monthly
+PSD headlines offline; `plot_stage11.py` exports role-aware academic figures;
+`validate_stage11.py` validates implementation and optionally scientific confirmation.
+See `docs/reproducibility/STAGE11_REPRODUCTION.md` for commands and sequencing.

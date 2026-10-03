@@ -1,0 +1,13 @@
+{
+  "available_products": 36,
+  "expected_products": 36,
+  "input_id": "b85e2bfdd5302009f61badf1afb8ff4902f04604a93f453bea66179036e537f8",
+  "quality_flags": [
+    "pipeline_failure"
+  ],
+  "reason": "ValueError: rebinning may not extrapolate",
+  "reference_values_used_in_estimation": false,
+  "role": "development",
+  "stable_star_id": "KIC 7970740",
+  "status": "pipeline_failure"
+}

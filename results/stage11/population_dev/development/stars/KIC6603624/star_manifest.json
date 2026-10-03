@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC6603624/analysis.json",
+      "sha256": "32cde59ad0cd251f0c0f049aa8bd1d12736480ffb7cdde6134160959c2f8bcc0",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "6ab4226732580720f8b44d09f8ea0e7bfe9d5375d0535cb2b1a0c49b84c966af",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 6603624"
+}

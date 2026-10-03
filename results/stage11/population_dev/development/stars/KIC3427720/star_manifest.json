@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3427720/analysis.json",
+      "sha256": "fc95aef54821d9dc01f99129f0b486df6bfac3cf6516e41bb8475f3d9f268a3d",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "81f4b5ab3f4368d9a0eda466ae34a58aad470b68bcb2c06c517a142dbc48016c",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 3427720"
+}

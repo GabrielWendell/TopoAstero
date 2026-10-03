@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9139151/analysis.json",
+      "sha256": "e5c8f186f4e0d8ab918c195045fc3f061468b35133a7788e2c29c751f2c1ad12",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "d6605c1cdba8c769d0fbbedba82f0c4a268cdf8c8b0ae61b48afdfa1f0d2b897",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9139151"
+}

@@ -1,0 +1,12 @@
+task_id,evidence,status
+T11.1,cohort_ledger.csv; corrected_reference_manifest,metadata_complete_payloads_pending
+T11.2,results/stage11/<role>/catalog.csv; per_star_mean_PSD_window_background,implemented_population_pending
+T11.3,per_star_analysis.json; prominence_control; alias_scans; geometry_only_echelle,implemented_population_pending
+T11.4,registries/stage11_qa.jsonl; checksum_checked_resumable_development,implemented
+T11.5,signed_confirmation_release; exact_code_config_environment_container_and_exclusion_seals,ready_not_frozen
+T11.6,one_time_open_confirmation; atomic_state; first_completed_archive,ready_unopened
+T11.7,performance.csv; paired_comparisons.csv; coverage_and_failure_counts,implemented_confirmation_pending
+T11.8,operating_domain.csv; failure_atlas.csv; sparse_cell_suppression,implemented_confirmation_pending
+T11.9,ratio_benchmark.csv; corrected_ratios; degree_order_conditioned_localization,implemented_blind_ratios_withheld
+T11.10,leakage_multiplicity_audit.json; access_and_QA_logs; release_verification,implemented_confirmation_pending
+T11.11,paper2/main.tex; generated_status_and_tables; references.bib,evidence_aware_draft
