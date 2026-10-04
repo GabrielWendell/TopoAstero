@@ -103,7 +103,12 @@ def build_figures(root: Path, cfg: dict[str, Any], *, formats: tuple[str, ...] =
             if refs:
                 ax.axhline(refs[0], color="#2A6F55", linestyle=":", label="Published center")
             ax.set(title=(r"$\nu_{\max}$" if quantity == "numax" else r"$\Delta\nu$") + " — Actual TESS candidates")
-            style_axes(ax, xlabel="Sector", ylabel=f"Candidate estimate ($\\mu$Hz)", legend=True)
+            style_axes(
+                ax, 
+                xlabel="Sector", 
+                ylabel=f"Candidate estimate ($\mu$Hz)", 
+                legend=True
+            )
         finish(fig, "stage12_actual_tess_quality", ["actual_tess.json"], "All actual sectors retained. Rejected candidates are not detections; TESS probability and interval calibration withheld.")
     manifest = {"schema_version": 1, "style": "TA-PLOT-1.0", "figures": figures}
     write_json(contained(root, cfg["reports"]) / "figure_manifest.json", manifest)
