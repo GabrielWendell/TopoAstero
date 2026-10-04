@@ -1,0 +1,126 @@
+{
+  "bootstrap_unit": "star_for_population_month_for_star_interval",
+  "code_sha256": "748e7ba8e9797eca652290ef37b5c57ad9711c467d7631cf82e4f74a86b1cb5d",
+  "configuration_sha256": "630f82befd317083c36b3d502ff47a5686c269336b678107841d4e0648ce7ea1",
+  "holdout_used": false,
+  "multiplicity": "holm_primary_tost",
+  "primary_quantities": [
+    "numax",
+    "dnu"
+  ],
+  "probability_calibration": "withheld_positive_only_no_null_validation",
+  "raw_payloads_reprocessed": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "ridge_inference": "geometry_only",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "split_sha256": "12036c71b9ca1a6f1e4425bcff718c1926fe300cbde22558cd9ebd79182019d1",
+  "stars": 13,
+  "stars_with_estimates": 1,
+  "statuses": [
+    {
+      "flags": [
+        "incomplete_products"
+      ],
+      "input_id": "def6e2df7f8a07aa760d0baaf18c0667ace7a4ce66d1d6349685f446c8d44df1",
+      "stable_star_id": "KIC 3632418",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "138638f1a4207ef4e02216e85db97365cef4823c87536d523b0486c8bea8ee66",
+      "stable_star_id": "KIC 5773345",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "29d98c28fbeba5b04dfc9729842ddde63b6cbbff64fe0b323e6dd7e46223bb3a",
+      "stable_star_id": "KIC 6508366",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "ac3a73487cd56c9bf2d01afd8dacefd7b5a9acc81bbc986b407abbcb46ed5dfe",
+      "stable_star_id": "KIC 7103006",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "26675c1c485bbf1c590dd84fda8b38819e140878c7c622758471509d6cb907e3",
+      "stable_star_id": "KIC 7106245",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "b91fbf7b6175d6731daa1602786f39f97c43c33d58834ca557055a79f82f1560",
+      "stable_star_id": "KIC 8006161",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "13aa73acc5867e2b25c79a5ce0840616517d6772e5aaa82815068c8c7f229f99",
+      "stable_star_id": "KIC 8150065",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "5e3587521c1074cbbff9032fb9805f55f0a96c4b1f7e2d11a1ed852c8c9ae79f",
+      "stable_star_id": "KIC 9025370",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "702a7e0e8c75216b319fe8f68cfec761cd01bc69f7dee54342d8bb73c241e9b4",
+      "stable_star_id": "KIC 9410862",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "6120888122c4fe8a84773954f05be09ed77ec9185ea57cc7d8e4fa1747682c92",
+      "stable_star_id": "KIC 9965715",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "5a5c2e443c4e5d6e63f81b9d1990e9fe66a79fe6ab6082b03db51862c74a1017",
+      "stable_star_id": "KIC 10079226",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "cfd060cc1bd67bb9b4da8668761ec6e15116eba51fcd1b36d46454a0a5ad6eaa",
+      "stable_star_id": "KIC 11081729",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "63b4692753490b68ca90bc4974c07c31701bca1cfcff4c1b607b26d4cfdfe923",
+      "stable_star_id": "KIC 12069424",
+      "status": "missing_input"
+    }
+  ]
+}

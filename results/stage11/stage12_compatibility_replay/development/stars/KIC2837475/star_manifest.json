@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC2837475/analysis.json",
+      "sha256": "127d5ccc64068e48d4f3071179885aeafe5feda2b6446509382dddc2aa9ec9db",
+      "size_bytes": 746
+    }
+  ],
+  "input_id": "f3d2e9e585a81d0856e171fcb39a481d70e9ff7f7e0846eb7e970a671cd1ebc5",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 2837475"
+}

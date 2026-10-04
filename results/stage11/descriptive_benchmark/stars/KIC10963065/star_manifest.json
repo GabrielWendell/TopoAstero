@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/descriptive_benchmark/stars/KIC10963065/analysis.json",
+      "sha256": "9bbfbe5614a3976fd702190cf268d8a4d829f3f04cd41c1b34e75faf95f53a4b",
+      "size_bytes": 397
+    }
+  ],
+  "input_id": "982d212edb4b3cdaf1c19719611be2346044536bbaf3b1ea7b7b0a0b74c6979c",
+  "role": "descriptive_benchmark",
+  "schema_version": 1,
+  "stable_star_id": "KIC 10963065"
+}

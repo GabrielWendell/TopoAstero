@@ -1,0 +1,289 @@
+{
+  "models": [
+    {
+      "aic": 950122.9128799965,
+      "bic": 950133.4496115856,
+      "branch_id": "PP-01",
+      "component_count": 0,
+      "components": [],
+      "covariance_condition": 1.0,
+      "log_residual_rms": 0.5729213137768522,
+      "model_id": "H0",
+      "negative_log_likelihood": 475060.45643999823,
+      "parameter_sigma_log": [
+        0.04601814731657811
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 3.007065541672815
+    },
+    {
+      "aic": 847838.4679035397,
+      "bic": 847870.0780983069,
+      "branch_id": "PP-01",
+      "component_count": 1,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 4.035430437492453,
+          "characteristic_uHz": 624.3004358862717,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 5.402219229969811,
+      "log_residual_rms": 0.14734625999390824,
+      "model_id": "H1",
+      "negative_log_likelihood": 423916.2339517698,
+      "parameter_sigma_log": [
+        0.020855868486192683,
+        0.02829554295526837,
+        0.02853611232314391
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 1.5358890908854028
+    },
+    {
+      "aic": 845368.7235466351,
+      "bic": 845421.4072045806,
+      "branch_id": "PP-01",
+      "component_count": 2,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 3.4961697781103194,
+          "characteristic_uHz": 414.56340806625934,
+          "exponent": 4.0
+        },
+        {
+          "amplitude_ppm2_per_uHz": 1.1361192543671013,
+          "characteristic_uHz": 1538.4157911966265,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 148.57218936805612,
+      "log_residual_rms": 0.1033134099925298,
+      "model_id": "H2",
+      "negative_log_likelihood": 422679.36177331756,
+      "parameter_sigma_log": [
+        0.017773835721273862,
+        0.04084220812598354,
+        0.04420570838293519,
+        0.1059054772858345,
+        0.1061207686452367
+      ],
+      "selected": true,
+      "white_noise_ppm2_per_uHz": 1.4120771621034878
+    },
+    {
+      "aic": 945981.4569813877,
+      "bic": 945991.9937129768,
+      "branch_id": "PP-02",
+      "component_count": 0,
+      "components": [],
+      "covariance_condition": 1.0,
+      "log_residual_rms": 0.5569281194332746,
+      "model_id": "H0",
+      "negative_log_likelihood": 472989.72849069384,
+      "parameter_sigma_log": [
+        0.04473354303381256
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 2.9550533930458274
+    },
+    {
+      "aic": 849060.9844384866,
+      "bic": 849092.5946332539,
+      "branch_id": "PP-02",
+      "component_count": 1,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 3.827392397375888,
+          "characteristic_uHz": 651.4221252232032,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 5.363547098331074,
+      "log_residual_rms": 0.12622671319796244,
+      "model_id": "H1",
+      "negative_log_likelihood": 424527.4922192433,
+      "parameter_sigma_log": [
+        0.018047494332275666,
+        0.02422441879822411,
+        0.024844164246352437
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 1.5116852343043155
+    },
+    {
+      "aic": 847683.1982833006,
+      "bic": 847735.8819412461,
+      "branch_id": "PP-02",
+      "component_count": 2,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 3.1190042633151354,
+          "characteristic_uHz": 446.4087104088293,
+          "exponent": 4.0
+        },
+        {
+          "amplitude_ppm2_per_uHz": 1.142783698307708,
+          "characteristic_uHz": 1335.9895326626436,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 252.30490315801438,
+      "log_residual_rms": 0.09465400463636149,
+      "model_id": "H2",
+      "negative_log_likelihood": 423836.5991416503,
+      "parameter_sigma_log": [
+        0.015428604924330328,
+        0.05223377925779622,
+        0.050043156702105164,
+        0.13989066468147532,
+        0.09687439427804016
+      ],
+      "selected": true,
+      "white_noise_ppm2_per_uHz": 1.4263685970473652
+    },
+    {
+      "aic": 846930.386284446,
+      "bic": 846940.9230160351,
+      "branch_id": "PP-03",
+      "component_count": 0,
+      "components": [],
+      "covariance_condition": 1.0,
+      "log_residual_rms": 0.5922936945139974,
+      "model_id": "H0",
+      "negative_log_likelihood": 423464.193142223,
+      "parameter_sigma_log": [
+        0.04757417438207147
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 2.522487622001988
+    },
+    {
+      "aic": 732903.4050808443,
+      "bic": 732935.0152756115,
+      "branch_id": "PP-03",
+      "component_count": 1,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 3.4147101863312193,
+          "characteristic_uHz": 696.9261869367073,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 4.803830906655996,
+      "log_residual_rms": 0.1329509607382732,
+      "model_id": "H1",
+      "negative_log_likelihood": 366448.70254042215,
+      "parameter_sigma_log": [
+        0.019394304863375556,
+        0.024079033025558014,
+        0.024484216862146618
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 1.2032996034960814
+    },
+    {
+      "aic": 731342.3371655487,
+      "bic": 731395.0208234942,
+      "branch_id": "PP-03",
+      "component_count": 2,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 2.882349804241313,
+          "characteristic_uHz": 494.95531060729655,
+          "exponent": 4.0
+        },
+        {
+          "amplitude_ppm2_per_uHz": 0.891200930687439,
+          "characteristic_uHz": 1627.6580420316468,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 241.56569329723794,
+      "log_residual_rms": 0.09747411898868216,
+      "model_id": "H2",
+      "negative_log_likelihood": 365666.16858277435,
+      "parameter_sigma_log": [
+        0.017729842120262584,
+        0.04364206217169181,
+        0.04360163655352484,
+        0.13011636044236233,
+        0.12527415443653436
+      ],
+      "selected": true,
+      "white_noise_ppm2_per_uHz": 1.1254959740157662
+    },
+    {
+      "aic": 945981.4569813877,
+      "bic": 945991.9937129768,
+      "branch_id": "PP-04",
+      "component_count": 0,
+      "components": [],
+      "covariance_condition": 1.0,
+      "log_residual_rms": 0.5569281194332746,
+      "model_id": "H0",
+      "negative_log_likelihood": 472989.72849069384,
+      "parameter_sigma_log": [
+        0.04473354303381256
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 2.9550533930458274
+    },
+    {
+      "aic": 849060.9844384866,
+      "bic": 849092.5946332539,
+      "branch_id": "PP-04",
+      "component_count": 1,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 3.827392397375888,
+          "characteristic_uHz": 651.4221252232032,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 5.363547098331074,
+      "log_residual_rms": 0.12622671319796244,
+      "model_id": "H1",
+      "negative_log_likelihood": 424527.4922192433,
+      "parameter_sigma_log": [
+        0.018047494332275666,
+        0.02422441879822411,
+        0.024844164246352437
+      ],
+      "selected": false,
+      "white_noise_ppm2_per_uHz": 1.5116852343043155
+    },
+    {
+      "aic": 847683.1982833006,
+      "bic": 847735.8819412461,
+      "branch_id": "PP-04",
+      "component_count": 2,
+      "components": [
+        {
+          "amplitude_ppm2_per_uHz": 3.1190042633151354,
+          "characteristic_uHz": 446.4087104088293,
+          "exponent": 4.0
+        },
+        {
+          "amplitude_ppm2_per_uHz": 1.142783698307708,
+          "characteristic_uHz": 1335.9895326626436,
+          "exponent": 4.0
+        }
+      ],
+      "covariance_condition": 252.30490315801438,
+      "log_residual_rms": 0.09465400463636149,
+      "model_id": "H2",
+      "negative_log_likelihood": 423836.5991416503,
+      "parameter_sigma_log": [
+        0.015428604924330328,
+        0.05223377925779622,
+        0.050043156702105164,
+        0.13989066468147532,
+        0.09687439427804016
+      ],
+      "selected": true,
+      "white_noise_ppm2_per_uHz": 1.4263685970473652
+    }
+  ],
+  "selection": "minimum_BIC_descriptive"
+}

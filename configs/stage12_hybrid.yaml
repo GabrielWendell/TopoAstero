@@ -1,0 +1,46 @@
+schema_version: 1
+stage_id: TA-S12-HYBRID-v1
+seed: 20260721
+output: results/stage12/local_windows_v2
+reports: reports/stage12/local_windows_v2
+stage11_evidence: reports/stage11/evidence_manifest.json
+training_role: development
+classical_features: [log_numax, log_dnu, log_envelope, duty_cycle, log_duration, log_resolution, prominence_delta, graph_score]
+topology_features: [comb_score, alias_excess, cylinder_score]
+outer_folds: 3
+inner_folds: 3
+ridge_penalties: [1.0, 10.0, 100.0]
+interval_level: 0.90
+minimum_fit_stars: 6
+minimum_claim_stars: 20
+minimum_classifier_class: 3
+bootstrap_replicates: 2000
+primary_margin: {numax: 0.01, dnu: 0.005}
+catastrophic_fraction: 0.10
+failure_Brier_margin: 0.01
+quality:
+  minimum_envelope_ratio: 1.5
+  alias_score_ratio: 1.03
+  domain_standard_deviations: 4.0
+  probability_threshold: 0.25
+transfer:
+  profile: pilot
+  pilot_sectors: [14, 40, 81]
+  source_quarter: 5
+  offsets_days: [0.0, 30.0]
+  pilot_replicates: 4
+  full_replicates: 32
+  cadence_seconds: 120.0
+  exposure_seconds: 120.0
+  short_duration_days: 13.7
+  additional_duty: 0.75
+  contaminating_to_target_flux: 0.30
+  maximum_source_gap_seconds: 180.0
+  frequency_grid_uHz: [105.0, 3900.0, 2.0]
+  minimum_envelope_ratio: 1.5
+  adjacent_sector_groups: [[14, 15], [40, 41], [74, 75], [80, 81, 82]]
+  recalibration_enabled: false
+  minimum_calibration_stars: 10
+  additional_signal_color_response: 1.0
+release: registries/stage12_release_local_windows_v2.json
+confirmation_state: registries/stage12_confirmation_local_windows_v2.json

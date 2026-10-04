@@ -1,0 +1,12 @@
+task_id,evidence,status
+T12.1,registries/stage12_tasks.csv,registered
+T12.2,models.json;fold_audit.json,nested_grouped_baseline
+T12.3,models.json;registries/stage12_features.csv,locked_three_feature_hybrid
+T12.4,increment.json;probability_calibration.json,OOF_pilot_no_population_claim
+T12.5,MODEL_CARD.md;actual_tess.json,reason_codes_probabilities_withheld_when_unsupported
+T12.6,degraded/*.npz;degradation_cells.csv,matched_physical_degradation
+T12.7,transfer_curves.csv;actual_vs_degraded.json,conditional_Rudy_trajectories
+T12.8,actual_tess.json,11_sectors_and_registered_PSD_combinations
+T12.9,recalibration_note.json;calibration_layer_CLI,implemented_disabled_without_authorization
+T12.10,TESS_SCOPE_DECISION.json,stop_broader_sample_pending_power_and_domain_evidence
+T12.11,paper3/main.tex;main.pdf,evidence_aware_working_draft

@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC4914923/analysis.json",
+      "sha256": "a73fe94198a2a245e610371ef83ad97150926c54da7adb87d34fe745a3a8388e",
+      "size_bytes": 746
+    }
+  ],
+  "input_id": "db70ec5456a20f5fc4c819e179640fcad744d0dd5190a3057ecc639f2f00c504",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 4914923"
+}

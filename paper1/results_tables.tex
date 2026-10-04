@@ -1,0 +1,29 @@
+\begin{table}[htbp]\centering\small
+\caption{Mandatory preprocessing branches. The tutorial and independent estimators use different whitening and envelope conventions. All frequencies are in $\mu$Hz.}
+\begin{tabular}{lrrrrr}\toprule
+Branch & Cadences & Tutorial $\nu_{\max}$ & Tutorial $\Delta\nu$ & Classical $\nu_{\max}$ & Classical $\Delta\nu$\\\midrule
+PP-01 & 430387 & 2145 & 103.1121 & 2233.6 & 103.3637\\
+PP-02 & 363690 & 2175 & 102.9461 & 2152.8 & 103.2427\\
+PP-03 & 430158 & 2175 & 102.5431 & 2152.2 & 103.2803\\
+PP-04 & 363690 & 2175 & 102.9461 & 2152.8 & 103.2427\\
+\bottomrule\end{tabular}\label{tab:branches}\end{table}
+\begin{table}[htbp]\centering\small
+\caption{Conditional fitted-background maximum-statistic tests. MC uncertainty and exceedance counts are provided in the machine-readable table. Holm controls the seven reported families within this conditional model.}
+\begin{tabular}{lrrr}\toprule
+Statistic family & Observed & Plus-one $p$ & Holm $p$\\\midrule
+Smoothed envelope & 1.4326 & 0.0039 & 0.0272\\
+Largest finite peak lifetime & 2.1213 & 0.0039 & 0.0272\\
+Persistence comb maximum & 0.0757 & 0.0039 & 0.0272\\
+Cylindrical combined maximum & 0.3893 & 0.0039 & 0.0272\\
+Ridge graph maximum & 0.5861 & 0.0039 & 0.0272\\
+ACF maximum & 0.6781 & 0.0039 & 0.0272\\
+PSPS maximum & 0.0537 & 0.0039 & 0.0272\\
+\bottomrule\end{tabular}\label{tab:nulls}\end{table}
+\begin{table}[htbp]\centering\small
+\caption{Distinct uncertainty targets. Bootstrap endpoints target the monthly averaged spectrum. The full-span point is a different estimator. Pipeline ranges include all 72 registered diagnostics; components are not combined.}
+\begin{tabular}{lrrrr}\toprule
+Quantity ($\mu$Hz) & Full span & Monthly point & Monthly bootstrap 95\% & Pipeline range\\\midrule
+Classical envelope & 2233.60 & 2232.60 & [2142.10, 2435.70] & [2146.40, 2236.30]\\
+Classical spacing & 103.36 & 103.42 & [102.89, 103.57] & [103.23, 103.37]\\
+Persistence centroid & 2105.25 & 2098.05 & [2087.14, 2112.25] & [2092.48, 2125.69]\\
+\bottomrule\end{tabular}\label{tab:uncertainty}\end{table}

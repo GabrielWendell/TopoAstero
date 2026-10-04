@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9955598/analysis.json",
+      "sha256": "f4f997abc366f55813c1b4d158e8323208d2c8e7c69ef8df6a2ad4a123fbb4d7",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "254b7529c4601a6d0e5f87bbe75182639d3b32a18506c3eb9640b15ce6d0c251",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9955598"
+}

@@ -1,0 +1,8 @@
+{
+  "claim_evidence_sha256": "c8b39adfd28a2de0a2bdf30eaed1f976ec68568d2196ee3ecaf1b061a77ea1d6",
+  "claims_frozen_before_manuscript": true,
+  "engine": "pdflatex_and_bibtex",
+  "external_publication_or_DOI_created": false,
+  "publication_status": "internal_review_draft",
+  "status": "compiled"
+}

@@ -1,0 +1,155 @@
+{
+  "files": [
+    {
+      "path": "results/stage12/development_run.json",
+      "sha256": "b1233ff4fa1cd94811fdf6be0b1065615d0c5802ac81168861b6d7ca810fd0aa",
+      "size_bytes": 12074
+    },
+    {
+      "path": "results/stage12/transfer_run.json",
+      "sha256": "12aeb7c6afc5f1821ffdb4dbb92e72cd7f9ef9f12554893b97a581e6f8b7e8c6",
+      "size_bytes": 78758
+    },
+    {
+      "path": "reports/stage12/G12_ACCEPTANCE.json",
+      "sha256": "3cf7b945bc5abfc5ed43dae7bf775a8236587e88fe3f24c0b6aa4dd83d5cd161",
+      "size_bytes": 945
+    },
+    {
+      "path": "reports/stage12/TESS_SCOPE_DECISION.json",
+      "sha256": "8bf907d2eeae38c9829e8a7bb262babf366153ad5d39fa6a4455cfd5e63779d9",
+      "size_bytes": 437
+    },
+    {
+      "path": "reports/stage12/recalibration_note.json",
+      "sha256": "8458c0d98d5337a301815acbc99c4f967b9f38e45318114d96f705ea53bb99fb",
+      "size_bytes": 396
+    },
+    {
+      "path": "reports/stage12/task_traceability.csv",
+      "sha256": "ea5dda0f59ad28568b638d57eb9911312c6089c6e46a6f8452d96b1713c7a7fa",
+      "size_bytes": 836
+    },
+    {
+      "path": "reports/stage12/MODEL_CARD.md",
+      "sha256": "0f366f12da6ce55d35437538ab0e2499519e927a712bf2496d95c3806a788a34",
+      "size_bytes": 3865
+    },
+    {
+      "path": "reports/stage12/STAGE12_REPORT.md",
+      "sha256": "a5cb6aebb30511c8078412640c2d0b2e4a6895498ba110bb5686dd7504964784",
+      "size_bytes": 1095
+    },
+    {
+      "path": "paper3/main.tex",
+      "sha256": "ebc7b680ef71a3773c627ed506bbc057e4a8e77a6683aef6ae4c974d68d76fca",
+      "size_bytes": 8228
+    },
+    {
+      "path": "paper3/results_status.tex",
+      "sha256": "70d12cdd4b8d8a113935d87600dd955ebdc503436f08a9ea787b60d5cf554c49",
+      "size_bytes": 110
+    },
+    {
+      "path": "paper3/results_tables.tex",
+      "sha256": "2c843baf11587b8cfc0fefdec868ac9ae21e08fa1790eaababd55c1a45d878f0",
+      "size_bytes": 191
+    },
+    {
+      "path": "paper3/references.bib",
+      "sha256": "90b753e6977853c2d57578f92dadc72460c6edd734edaae9a782cb15c72f513f",
+      "size_bytes": 15564
+    },
+    {
+      "path": "reports/stage12/figure_manifest.json",
+      "sha256": "66ab9969d29969124b8565c11bdf25f49a7451b411c69f3d540242a91d6b855d",
+      "size_bytes": 4537
+    },
+    {
+      "path": "figures/stage12/stage12_oof_increment.png",
+      "sha256": "bfc3e647b7a9eaad56aa55f281cc8bd4354b414d0c84c51ee76c08aa11b2cf75",
+      "size_bytes": 205179
+    },
+    {
+      "path": "figures/stage12/stage12_oof_increment.svg",
+      "sha256": "11fa62020013f2b75e29d04f2dd8e07ecd09366a0b070f2be420a6158b7c52b2",
+      "size_bytes": 96916
+    },
+    {
+      "path": "figures/stage12/stage12_oof_increment.pdf",
+      "sha256": "f6bc996d81fc8feb762ccec8c7388a7e940dc65727b530656e236fccb5d98e7c",
+      "size_bytes": 17279
+    },
+    {
+      "path": "results/stage12/oof_predictions.csv",
+      "sha256": "7227acf0d86914ee1d837d6e64564f5752a2e49ef13b3f6cf5667e04be20781a",
+      "size_bytes": 1831
+    },
+    {
+      "path": "results/stage12/increment.json",
+      "sha256": "9c902fb122aab3c60c6c7dcc8eac898d8a1164978a1b091735d646f01a343b7d",
+      "size_bytes": 2701
+    },
+    {
+      "path": "figures/stage12/stage12_quality_calibration.png",
+      "sha256": "ef20b3774aa84964ea976725d01474d7f49266ac704203f5588e471f827abb04",
+      "size_bytes": 139646
+    },
+    {
+      "path": "figures/stage12/stage12_quality_calibration.svg",
+      "sha256": "cd76b05f1256b707805a69393ca6cfba7b02a521bccd8abc47bac6749a5d76c8",
+      "size_bytes": 52128
+    },
+    {
+      "path": "figures/stage12/stage12_quality_calibration.pdf",
+      "sha256": "dd64b53821e1d8df0ab31639ccb16ad72b0d25e409b66c231a85d5646c99b695",
+      "size_bytes": 15117
+    },
+    {
+      "path": "results/stage12/probability_calibration.json",
+      "sha256": "ea02d67b3946f696d3d0055ff6f5e4a48606f5e0fad76bc82fa2c2835cf0c3b4",
+      "size_bytes": 1232
+    },
+    {
+      "path": "figures/stage12/stage12_transfer_trajectories.png",
+      "sha256": "44467487f10393a12a17f58ea6a077ad324ecf506adbf25d88a6412000bb5bf8",
+      "size_bytes": 358135
+    },
+    {
+      "path": "figures/stage12/stage12_transfer_trajectories.svg",
+      "sha256": "5cc92c7aa8e8f024e4f38ac6b446df02c42c3e8cb56194014da25cd9bf5785da",
+      "size_bytes": 150861
+    },
+    {
+      "path": "figures/stage12/stage12_transfer_trajectories.pdf",
+      "sha256": "ad29983968ae04cf679042a2db6a94d21ea3372d694bf7f140dc84011486d1cd",
+      "size_bytes": 23422
+    },
+    {
+      "path": "results/stage12/transfer_curves.csv",
+      "sha256": "7ce2a56196108effce27d552220735ccc512dd84d2c57e4df86bb659e9e80faf",
+      "size_bytes": 13167
+    },
+    {
+      "path": "figures/stage12/stage12_actual_tess_quality.png",
+      "sha256": "e4aabe47ff18b2e59b2a991904697207fd82f579b919ae96d3ab0068d25e1798",
+      "size_bytes": 184238
+    },
+    {
+      "path": "figures/stage12/stage12_actual_tess_quality.svg",
+      "sha256": "ccc73c0f5298c2b57aa6d306832aa96e47f70f02cdaaa64e267f5b6554891d54",
+      "size_bytes": 84674
+    },
+    {
+      "path": "figures/stage12/stage12_actual_tess_quality.pdf",
+      "sha256": "dd12adc66488ace19bc36309a2358a6953d0dab2756852898a5478f5fefd27e2",
+      "size_bytes": 17634
+    },
+    {
+      "path": "results/stage12/actual_tess.json",
+      "sha256": "3b1013412f4a0760e816d1722c715e1f00ce74a5e172085f86873703bf4ac410",
+      "size_bytes": 44016
+    }
+  ],
+  "schema_version": 1
+}

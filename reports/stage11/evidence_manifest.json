@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/run_manifest.json",
+      "sha256": "7b76cca01b3b548f2317a039331a44bbf2e82e67b1088368326d339acc75da98",
+      "size_bytes": 26114
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/run_manifest.json",
+      "sha256": "bb62fc21ce503614349f366ad84297b3b5d53a6bc856feda475c2d5075ea407a",
+      "size_bytes": 8621
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/descriptive_benchmark/run_manifest.json",
+      "sha256": "57e23e49a759ba5222073a7fd710bfdf0bb914dbdbe02623c05309e41d923100",
+      "size_bytes": 2144
+    }
+  ],
+  "report_files": [
+    {
+      "path": "reports/stage11/G11_ACCEPTANCE.json",
+      "sha256": "5da62088b0773f4c4e6bc01bf006df40ffdb431411913b2af932152cadc8a5f6",
+      "size_bytes": 1523
+    },
+    {
+      "path": "reports/stage11/cohort_ledger.csv",
+      "sha256": "65b309324f723cf482042f67cb81606e0e3fb9cf3e9754f08977556c07420f85",
+      "size_bytes": 18820
+    },
+    {
+      "path": "reports/stage11/failure_atlas.csv",
+      "sha256": "021bd6202a800a819eadb595bb9334754648d2158ff7f3fb110cec68e78f1622",
+      "size_bytes": 3514
+    },
+    {
+      "path": "reports/stage11/leakage_multiplicity_audit.json",
+      "sha256": "8a38d73aa6fdd69343e210cb8ad7191cb00fc0d619ca943221375a4b89f33c78",
+      "size_bytes": 1019
+    },
+    {
+      "path": "reports/stage11/task_traceability.csv",
+      "sha256": "204a0ac4e6195373f6a0b55756ca9f39b1a0e0669fb3f933f692a5df3e92e706",
+      "size_bytes": 1155
+    }
+  ],
+  "role_directories": {
+    "confirmation": "results/stage11/confirmation",
+    "descriptive_benchmark": "results/stage11/stage12_compatibility_replay_v2/descriptive_benchmark",
+    "development": "results/stage11/stage12_compatibility_replay_v2/development",
+    "internal_validation": "results/stage11/stage12_compatibility_replay_v2/internal_validation"
+  },
+  "schema_version": 1
+}

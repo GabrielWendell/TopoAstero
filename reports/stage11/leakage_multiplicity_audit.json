@@ -1,0 +1,24 @@
+{
+  "development_holdout_access": false,
+  "grouping": "one_row_per_star_method_quantity",
+  "holdout_observation_access": false,
+  "holdout_opening_count": 0,
+  "holdout_public_metadata_visible": true,
+  "missingness": "all_star_denominators_and_reason_flags_retained",
+  "multiplicity": "two_registered_endpoints_Holm_on_paired_TOST; missing_endpoint_p1",
+  "partition_counts": {
+    "descriptive_benchmark": 1,
+    "development": 39,
+    "final_holdout": 13,
+    "internal_validation": 13
+  },
+  "partition_integrity": "original_stage2_sha256_verified",
+  "procedural_boundary": "local guard_is_not_cryptographic_identity_blinding_or_remote_access_control",
+  "ratio_reference_edition": "Lund2017-erratum-ApJ850-110-CDS",
+  "reference_uncertainty": "asymmetric_intervals_preserved_no_sigma_conversion",
+  "release_valid": false,
+  "repeated_months_count_as_stars": false,
+  "role_pooling": false,
+  "schema_version": 1,
+  "subgroup_inference": "fixed_bins_descriptive_only_no_multiple_subgroup_significance_tests"
+}

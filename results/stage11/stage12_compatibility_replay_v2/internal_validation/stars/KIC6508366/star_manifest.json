@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC6508366/analysis.json",
+      "sha256": "20898f86195ba0c54c8aa6d8d0ee94f3621a0491153221d8f59b65ba9cf0ff50",
+      "size_bytes": 769
+    }
+  ],
+  "input_id": "ece79a65c0165241d5140533ae232b44f78bd3dae19665bd9b0d54139e666a75",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 6508366"
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC10079226/analysis.json",
+      "sha256": "da022134ef544a6815c1efc403de30207163a098d12fac7cdf754d472d3220dd",
+      "size_bytes": 771
+    }
+  ],
+  "input_id": "d02da5d031abe2a05638ed2a5a4e5c6520f1780f1804c70550b0bc0e7dcd6a8f",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 10079226"
+}

@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/analysis.json",
+      "sha256": "30399b7dfe550d3b0eee3e53ee47d5dd299e7a8f527eaef0a40492603daa3a1b",
+      "size_bytes": 207088
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/mean_spectrum.csv",
+      "sha256": "960243956ce6b83f678746779c52a995ecdca1cfdf6d42ca4df9c18247d53402",
+      "size_bytes": 352423
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/monthly_spectra.npz",
+      "sha256": "f7b73856a42a5377e21e05d8af15f870a0501c8de91f36b65b831452ed99c1de",
+      "size_bytes": 1137457
+    },
+    {
+      "path": "results/stage11/internal_validation/stars/KIC3632418/segment_bootstrap.csv",
+      "sha256": "1d2039ab48ce50492b854c583704a1def2765a10e6e5ca87d9f380a065444058",
+      "size_bytes": 8435
+    }
+  ],
+  "input_id": "0d26f39a351373a380adac73804f869556ff52d2d8c09bf4b246c2ab8cff9e9a",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 3632418"
+}

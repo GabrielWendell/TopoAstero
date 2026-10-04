@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC8150065/analysis.json",
+      "sha256": "3b5d53598d3826f4072f7c1c5795416ded8bf5f3ddae764b1021021e13e936b2",
+      "size_bytes": 769
+    }
+  ],
+  "input_id": "328a22e6d7e8771e2440348c05ede870f06480dda482455503d205b965897ab2",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 8150065"
+}

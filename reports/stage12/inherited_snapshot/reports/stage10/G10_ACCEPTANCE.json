@@ -1,0 +1,47 @@
+{
+  "G9_proof_review": "review_pending",
+  "checks": [
+    {
+      "check": "public_payload_capsule",
+      "status": "pass"
+    },
+    {
+      "check": "all_registered_branches_and_controls",
+      "status": "pass"
+    },
+    {
+      "check": "conditional_nulls_and_uncertainty_targets",
+      "status": "pass"
+    },
+    {
+      "check": "claim_evidence_audit",
+      "status": "pass"
+    },
+    {
+      "check": "paper_and_journal_figures",
+      "status": "pass"
+    },
+    {
+      "check": "fresh_process_reproduction",
+      "status": "pending"
+    },
+    {
+      "check": "independent_human_reproduction_and_claim_review",
+      "status": "pending"
+    }
+  ],
+  "claim_audit": "pass",
+  "claim_scope": "single_descriptive_star_conditional_nulls_no_population_or_incremental_utility_claim",
+  "clean_reproduction": "not_run",
+  "final_holdout_used": false,
+  "gate": "G10",
+  "implementation_status": "awaiting_clean_reproduction",
+  "independent_human_review": "pending",
+  "population_spectra_used": false,
+  "prior_decisions": {
+    "G7": "drop",
+    "G8": "geometry_only"
+  },
+  "run_id": "TA-S10-RUDY-R001",
+  "status": "review_pending"
+}

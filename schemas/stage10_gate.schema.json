@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/stage10_gate.schema.json",
+  "title": "G10 implementation versus independent human review",
+  "type": "object",
+  "required": ["gate", "run_id", "status", "implementation_status", "independent_human_review", "claim_scope", "clean_reproduction", "claim_audit", "G9_proof_review", "prior_decisions", "population_spectra_used", "final_holdout_used", "checks"],
+  "properties": {
+    "gate": {"const": "G10"},
+    "run_id": {"const": "TA-S10-RUDY-R001"},
+    "status": {"enum": ["review_pending", "pass"]},
+    "implementation_status": {"enum": ["pass", "awaiting_clean_reproduction"]},
+    "independent_human_review": {"enum": ["pending", "accepted"]},
+    "claim_scope": {"const": "single_descriptive_star_conditional_nulls_no_population_or_incremental_utility_claim"},
+    "clean_reproduction": {"enum": ["pass", "not_run"]},
+    "claim_audit": {"const": "pass"},
+    "G9_proof_review": {"enum": ["review_pending", "pass"]},
+    "prior_decisions": {
+      "type": "object",
+      "properties": {"G7": {"const": "drop"}, "G8": {"const": "geometry_only"}},
+      "required": ["G7", "G8"], "additionalProperties": false
+    },
+    "population_spectra_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "checks": {"type": "array", "minItems": 6}
+  },
+  "additionalProperties": false
+}

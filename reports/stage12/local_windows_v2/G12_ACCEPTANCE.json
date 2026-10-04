@@ -1,0 +1,26 @@
+{
+  "actual_TESS_sectors": 11,
+  "code_sha256": "2c99b69b11ff96139ad0db1d2a34440db754e85b0ee1bd588f0749778ca1210b",
+  "configuration_sha256": "fd1a1a79877ce6838d39e237a6b6f0951f169983c6af8fbd38ba0770380f059b",
+  "confirmation_opening_count": 0,
+  "confirmation_status": "unopened",
+  "cylinder_inference": "geometry_only",
+  "delay_PH": "dropped_at_G7",
+  "holds": [
+    "insufficient_independent_development_stars",
+    "G11_population_validation_pending",
+    "signed_Stage12_confirmation_pending",
+    "full_transfer_randomization_pending",
+    "single_star_transfer_not_population_power"
+  ],
+  "implementation_status": "pass",
+  "positive_complementarity_claim": false,
+  "positive_population_transfer_claim": false,
+  "publication_ready": false,
+  "registered_development_stars": 39,
+  "schema_version": 1,
+  "stage_id": "TA-S12-HYBRID-v1",
+  "status": "validation_pending",
+  "transfer_parent_stars": 1,
+  "usable_development_stars": 9
+}

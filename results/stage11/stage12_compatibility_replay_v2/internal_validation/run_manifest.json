@@ -1,0 +1,186 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/catalog.csv",
+      "sha256": "e17ec828bc7cde3492ce606df17eea591a1835ff272b8451e673f8b3ae4a8401",
+      "size_bytes": 14894
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/catalog.json",
+      "sha256": "0b2b89e17472c6cb1cd202de47e7981a5ee9fbf91ab48cd11b6c8ec6f628ffbb",
+      "size_bytes": 46401
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/operating_domain.csv",
+      "sha256": "47a1141e17e4d76a5ef82e54940924e593e31e133227d5b44f67cca34b09ff6e",
+      "size_bytes": 13763
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/paired_comparisons.csv",
+      "sha256": "612800b12ad378e9d309009074f84b68e1e0d7a32c6678fc00b5102f79854188",
+      "size_bytes": 339
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/performance.csv",
+      "sha256": "fc59e24c4f4965ef17029c1b900c4f140a541d45ae31379421c64d6b8bbf1338",
+      "size_bytes": 2092
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/ratio_benchmark.csv",
+      "sha256": "4cc56231390bbcb14fde830d0238c5945bcb8c31e4f083034baf0dbf39106bc1",
+      "size_bytes": 126991
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC10079226/analysis.json",
+      "sha256": "da022134ef544a6815c1efc403de30207163a098d12fac7cdf754d472d3220dd",
+      "size_bytes": 771
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC10079226/star_manifest.json",
+      "sha256": "7e89b3e1adef21c96b16fb4f395443365f6429c551a31dab4c052ea4350302f9",
+      "size_bytes": 432
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC11081729/analysis.json",
+      "sha256": "561c315232f5132e5ef630c5c17891dbd784080a3c1f05a701b5e15e7da797f5",
+      "size_bytes": 771
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC11081729/star_manifest.json",
+      "sha256": "a203976767b5a97ce5a240c267c42b1c936ad2c0e6b75b22e3e93f9bd867a9df",
+      "size_bytes": 432
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC12069424/analysis.json",
+      "sha256": "b182181fc5579eccb636bfde0db3cba258cc25e90635ef8795e00d450012baf6",
+      "size_bytes": 771
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC12069424/star_manifest.json",
+      "sha256": "26c7067639efc5c972d0a932c6f8d5dda5753026d955efc08ae53da7eaa1d0f9",
+      "size_bytes": 432
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC3632418/analysis.json",
+      "sha256": "81b711d194cf037761f39b714a2ed782391574496f493c28b0e192c790367f52",
+      "size_bytes": 207464
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC3632418/mean_spectrum.csv",
+      "sha256": "1ea7ea183b41ca7b68a17c6c4984b2c232bdba8ecc3fbe7c6182d23c2defb4ed",
+      "size_bytes": 352361
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC3632418/monthly_spectra.npz",
+      "sha256": "f7b73856a42a5377e21e05d8af15f870a0501c8de91f36b65b831452ed99c1de",
+      "size_bytes": 1137457
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC3632418/segment_bootstrap.csv",
+      "sha256": "441986543681cea0124fdcf76f14306f26582197e47ac3f16a7e2f1d04dc8bd3",
+      "size_bytes": 8417
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC3632418/star_manifest.json",
+      "sha256": "f36b13d061983944c3ed2d0ab2eac441427a2600ca916baf4a332f52a0941205",
+      "size_bytes": 1170
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC5773345/analysis.json",
+      "sha256": "26fe84e92c3e487caf30be56e1601d3d00179fe1d6978b64fc5dbe5bd7aee496",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC5773345/star_manifest.json",
+      "sha256": "9fe418da1ce237ba1c2b106d304fdb035e3294c42de561fe6b3079b6e982be68",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC6508366/analysis.json",
+      "sha256": "20898f86195ba0c54c8aa6d8d0ee94f3621a0491153221d8f59b65ba9cf0ff50",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC6508366/star_manifest.json",
+      "sha256": "3b441104cfd9cd22e64d3b6406f0c5c1b952572483ceb5063f615781e9a50d36",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC7103006/analysis.json",
+      "sha256": "1b9a31fb1c84d425e5fcdd875334b12bce64ffb18210129d3bce0011cc8cc72f",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC7103006/star_manifest.json",
+      "sha256": "c8f0561c7320489da184da68bae925e06f50b3f90841f19f3b6bdc5d707986b9",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC7106245/analysis.json",
+      "sha256": "162ddbf31eacd9f3cc1db19ee2604ea3b0f8869e9a8724ade89a9def376c5a6a",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC7106245/star_manifest.json",
+      "sha256": "d8096d1186a462d8ed68bc2bf36b881dcf43aa68bf250e1b5ca1c68730ef2128",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC8006161/analysis.json",
+      "sha256": "f16e787bb321028f0fd5c4b84fc6466b76028d1c55349593565176e75d86b3b7",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC8006161/star_manifest.json",
+      "sha256": "1fa6eb24bd6243865563f152ad7f1f83c582f3993c50361628345b8216d25a85",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC8150065/analysis.json",
+      "sha256": "3b5d53598d3826f4072f7c1c5795416ded8bf5f3ddae764b1021021e13e936b2",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC8150065/star_manifest.json",
+      "sha256": "edd063362af2529985cb39a190b53c02ff7d6fbcd7902529e0b9c48edc7d8ca8",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC9025370/analysis.json",
+      "sha256": "ffd733e5aa222d5ae5a13f4b1e5ecee4beffed55fcee512e4a0fb1dbefe76982",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC9025370/star_manifest.json",
+      "sha256": "49e83cfda1558da02b6120a9ced101bb95e385ccf1fbae14f02c31405b87d7db",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC9410862/analysis.json",
+      "sha256": "d08e3d63b8247b6e0e105e785ebe9f5b39467fb78ecbb3757d3073f361445603",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC9410862/star_manifest.json",
+      "sha256": "42e19b3bc492bc1a37ef59ced9d264b4de34c89bf9ca3fd667aadaa4a2bb5790",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC9965715/analysis.json",
+      "sha256": "2543e5dce2fe4c8fea65b1de625ac182df88030017d7eb1b4d41e70b53c01ba2",
+      "size_bytes": 769
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC9965715/star_manifest.json",
+      "sha256": "dc6265820ed72fd0d07bc4918287abbd25e950c36bb3916993a6d9fcfd8b9090",
+      "size_bytes": 430
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/summary.json",
+      "sha256": "9ed3253f6bb1d7f11c758a2e022b1734adef3922a96079a9241c6d2dc7561ce1",
+      "size_bytes": 3706
+    }
+  ],
+  "role": "internal_validation",
+  "schema_version": 1
+}

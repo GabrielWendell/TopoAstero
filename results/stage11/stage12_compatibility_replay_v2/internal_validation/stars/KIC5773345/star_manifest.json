@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/stars/KIC5773345/analysis.json",
+      "sha256": "26fe84e92c3e487caf30be56e1601d3d00179fe1d6978b64fc5dbe5bd7aee496",
+      "size_bytes": 769
+    }
+  ],
+  "input_id": "b9090760646888f77124ca031b643cb3e43d34849fe6e34faecc9f4a456a8b3b",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 5773345"
+}

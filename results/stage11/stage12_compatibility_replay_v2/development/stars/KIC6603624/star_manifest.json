@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6603624/analysis.json",
+      "sha256": "d26f5d2aede082585cf05533fd31fe22c2c042e93fdd61b761590f30d65ac8bb",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "66fed8da06a17cb962f5198c58c048b66ba2fa9735617d88615880997f201de6",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 6603624"
+}

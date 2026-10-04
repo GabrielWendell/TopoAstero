@@ -1,0 +1,342 @@
+{
+  "bootstrap_unit": "star_for_population_month_for_star_interval",
+  "code_sha256": "748e7ba8e9797eca652290ef37b5c57ad9711c467d7631cf82e4f74a86b1cb5d",
+  "configuration_sha256": "630f82befd317083c36b3d502ff47a5686c269336b678107841d4e0648ce7ea1",
+  "holdout_used": false,
+  "multiplicity": "holm_primary_tost",
+  "primary_quantities": [
+    "numax",
+    "dnu"
+  ],
+  "probability_calibration": "withheld_positive_only_no_null_validation",
+  "raw_payloads_reprocessed": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "ridge_inference": "geometry_only",
+  "role": "development",
+  "schema_version": 1,
+  "split_sha256": "12036c71b9ca1a6f1e4425bcff718c1926fe300cbde22558cd9ebd79182019d1",
+  "stars": 39,
+  "stars_with_estimates": 9,
+  "statuses": [
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "665cdc2538e9d510387a644a56d48c7aa7b0eda5d18e26876f44893679761e22",
+      "stable_star_id": "KIC 1435467",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "f3d2e9e585a81d0856e171fcb39a481d70e9ff7f7e0846eb7e970a671cd1ebc5",
+      "stable_star_id": "KIC 2837475",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "c5244290015113f3addd6a860ba834fb469bb1c474bc74aab2e0064053b590ba",
+      "stable_star_id": "KIC 3427720",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "77428d1af411b44c32b8193f8c04964a2bcbb475e110f3179f523f6fce21d271",
+      "stable_star_id": "KIC 3656476",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "738fe0cdf9fe90ff5c435dbb933229bc6ff369f709e256a28f52adc91cffd0d1",
+      "stable_star_id": "KIC 3735871",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "db70ec5456a20f5fc4c819e179640fcad744d0dd5190a3057ecc639f2f00c504",
+      "stable_star_id": "KIC 4914923",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "374057111455d8fcc8fc4ef963361f42726410ad8bb2a81520beff2f1423e924",
+      "stable_star_id": "KIC 5184732",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "774928a2453416d21a8f76e7171fcd1a0ea65b8d9c20c46513fc8e94f92019ba",
+      "stable_star_id": "KIC 5950854",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "ca3225c55a254f2d06847232ab57b68d0e9c93dd11b5289cafd8650fc30d6ff1",
+      "stable_star_id": "KIC 6603624",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "ee1f610e56114c31beea15b1e41bed38804c8128376625651f825b6c7af166fe",
+      "stable_star_id": "KIC 6679371",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "afad97828cae670d05803eb937f86f94c5a3c213f99a2e6465f32498beffeb84",
+      "stable_star_id": "KIC 6933899",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "94bb6a98ee04d5072ae58bced6a4dbbea50819282e7356c2caf0f6ab0cf1c2b4",
+      "stable_star_id": "KIC 7206837",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "9b9714b91e1e580deb6ee4f6a9e171c89b46f46f2103f84e147f6ac2858a7e1d",
+      "stable_star_id": "KIC 7296438",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "affc4d8b9747467dc322a30c89845340e655f0af855b3148d7f2c87350f94d47",
+      "stable_star_id": "KIC 7510397",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "d4e6df73d0db8308f725c49f1ef9605e43f2ecf59f679e415bc6e5d025fd1ecd",
+      "stable_star_id": "KIC 7680114",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "8656d003abcf5dd90ce804578abd32bd0f4607cba76065c86c19dcd4476828a9",
+      "stable_star_id": "KIC 7771282",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "004d84a19df24d9ebfec5b816f5fa6470276b110be21a48d595c2098b1815ddf",
+      "stable_star_id": "KIC 7871531",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "eb9393e9ec168a3e02bc0dce246706dc998113bea8c6f234066970aad94b08a4",
+      "stable_star_id": "KIC 7940546",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "7257f4c3b646adc246a35b69e015e5adebd5fd39eeea66f0de73844d08b313bc",
+      "stable_star_id": "KIC 7970740",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "6ef3a05e0ced8f6ef367ac4beec6feb909c6f87507cc9ccf7a7a2ae9b913cba6",
+      "stable_star_id": "KIC 8179536",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "cc49567c9812652f21d041c331baf14c8b921d7744f0c0874c8ae7c5750a0103",
+      "stable_star_id": "KIC 8394589",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "2f44072744c33f36908d63b8842049c0c901b74b555845d1ecffb6b5a832067e",
+      "stable_star_id": "KIC 8424992",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "57151671e5806243f31c6eb39e6e3d46b4ba678bf6150cee8f63de55135699c2",
+      "stable_star_id": "KIC 8694723",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "63cd55fea330b4f09704d1a51003ee90f89f7ffe4c0956e36fd6878cc80cd70e",
+      "stable_star_id": "KIC 8760414",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "e030b04a38a4b0d9fa347d53544283501c2eccff74f04facadb99f49edfeb790",
+      "stable_star_id": "KIC 8938364",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "cafe66413cc2f22e5f5deaf35ba015b773d694b1521668f56a523d5ea74d77ec",
+      "stable_star_id": "KIC 9139151",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "be58b98f59b7c879236deb5c75bed3233fa219131ce6d55945b746f58e3695f7",
+      "stable_star_id": "KIC 9206432",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "fbef825c8593909e760de204c75f5081fc642ee6ef3b489c585fda7a22cf1e34",
+      "stable_star_id": "KIC 9353712",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "e78ccd2a6a1eb33d41e037ddd9e0c110a6476c8849d53f8ba22a575c390097e5",
+      "stable_star_id": "KIC 9414417",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "2ec92081546cbf5313a45b91f0d196eab6896eb241bdfc0da444432b251631dc",
+      "stable_star_id": "KIC 9955598",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "7838334f9db1d725fe276b60a59d2addf0d45be2982d78ff9b663889f97ae0b0",
+      "stable_star_id": "KIC 10162436",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "750765e28d4494c7da7ba8a3a83fbe670aa1a79d2063a5773210a3506aa15ce6",
+      "stable_star_id": "KIC 10454113",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "f5917b8f3ef17a8c2cea5585ad13a62fd84c39a5fb85eba97042c2d3798a6b8e",
+      "stable_star_id": "KIC 10516096",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio",
+        "alias_ambiguity"
+      ],
+      "input_id": "a62289a1ad2c553a2d73510b401487fde84cbe269c9df5c22589a56cb4ba4b98",
+      "stable_star_id": "KIC 10730618",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "d52cfca1493d9a04fe9e47242e66b70cb807a4e900ed7a2ee5e0a1a028c08fe3",
+      "stable_star_id": "KIC 11253226",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "ac79bb25a3c55e28504ab1d9f70dab8f2b5483acb5db5a462688ecd24fdf38ec",
+      "stable_star_id": "KIC 11772920",
+      "status": "pipeline_failure"
+    },
+    {
+      "flags": [
+        "low_envelope_ratio"
+      ],
+      "input_id": "cd247016e6fd9c47ec3a4f8588585c278ecec108127c23e315a20d0930d19c3e",
+      "stable_star_id": "KIC 12069127",
+      "status": "limited"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "76a78df74d2dbc4c0f5bad39cfd3239e62c49c41ab028096bc4e60e36a7274b0",
+      "stable_star_id": "KIC 12069449",
+      "status": "missing_input"
+    },
+    {
+      "flags": [
+        "missing_products"
+      ],
+      "input_id": "447e6da5347d200e942d61f555a2fd4c3d7a2d870ced42d838e8b108177fef70",
+      "stable_star_id": "KIC 12317678",
+      "status": "missing_input"
+    }
+  ]
+}

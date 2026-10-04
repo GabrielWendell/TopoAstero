@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7510397/analysis.json",
+      "sha256": "366e076184dff19c59bd7287370783f3896a1ceacff2207ed92d2890cfae5436",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "454131425bc3a1f80abf4b5729dfea5b4a08d244648f33df74f5bd9655094aa1",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7510397"
+}

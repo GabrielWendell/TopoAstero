@@ -1,0 +1,4787 @@
+{
+  "degree_identification": "unidentified_competing_paths",
+  "graph": {
+    "edges": [
+      {
+        "cost": 0.3247251322649963,
+        "phase_distance": 0.04166666666666674,
+        "source": 3,
+        "target": 5
+      },
+      {
+        "cost": 0.5763231445094531,
+        "phase_distance": 0.08333333333333326,
+        "source": 4,
+        "target": 5
+      },
+      {
+        "cost": 0.023329351147692474,
+        "phase_distance": 0.0,
+        "source": 0,
+        "target": 6
+      },
+      {
+        "cost": 0.5144459713285919,
+        "phase_distance": 0.08333333333333337,
+        "source": 0,
+        "target": 7
+      },
+      {
+        "cost": 0.9946160246512352,
+        "phase_distance": 0.16666666666666666,
+        "source": 1,
+        "target": 7
+      },
+      {
+        "cost": 1.0155224255135993,
+        "phase_distance": 0.16666666666666663,
+        "source": 0,
+        "target": 8
+      },
+      {
+        "cost": 0.49353957046622743,
+        "phase_distance": 0.08333333333333334,
+        "source": 1,
+        "target": 8
+      },
+      {
+        "cost": 1.0265982672578422,
+        "phase_distance": 0.16666666666666669,
+        "source": 0,
+        "target": 9
+      },
+      {
+        "cost": 0.24954236248242992,
+        "phase_distance": 0.04166666666666674,
+        "source": 2,
+        "target": 9
+      },
+      {
+        "cost": 0.992225636451011,
+        "phase_distance": 0.16666666666666674,
+        "source": 4,
+        "target": 9
+      },
+      {
+        "cost": 0.043224872175144445,
+        "phase_distance": 0.0,
+        "source": 5,
+        "target": 10
+      },
+      {
+        "cost": 0.27281846123576403,
+        "phase_distance": 0.04166666666666674,
+        "source": 6,
+        "target": 11
+      },
+      {
+        "cost": 0.2737390029852902,
+        "phase_distance": 0.04166666666666666,
+        "source": 7,
+        "target": 11
+      },
+      {
+        "cost": 0.7748154571702981,
+        "phase_distance": 0.12499999999999997,
+        "source": 8,
+        "target": 11
+      },
+      {
+        "cost": 0.7439241375962425,
+        "phase_distance": 0.125,
+        "source": 6,
+        "target": 12
+      },
+      {
+        "cost": 0.25464860091439645,
+        "phase_distance": 0.04166666666666663,
+        "source": 7,
+        "target": 12
+      },
+      {
+        "cost": 0.265528976668032,
+        "phase_distance": 0.04166666666666666,
+        "source": 8,
+        "target": 12
+      },
+      {
+        "cost": 1.056698558269236,
+        "phase_distance": 0.16666666666666663,
+        "source": 5,
+        "target": 13
+      },
+      {
+        "cost": 0.49220889334804807,
+        "phase_distance": 0.08333333333333331,
+        "source": 9,
+        "target": 13
+      },
+      {
+        "cost": 0.8151386346044298,
+        "phase_distance": 0.125,
+        "source": 5,
+        "target": 14
+      },
+      {
+        "cost": 0.24767384314471808,
+        "phase_distance": 0.04166666666666663,
+        "source": 10,
+        "target": 15
+      },
+      {
+        "cost": 0.8574011951577264,
+        "phase_distance": 0.125,
+        "source": 13,
+        "target": 15
+      },
+      {
+        "cost": 1.1060373499242924,
+        "phase_distance": 0.16666666666666663,
+        "source": 14,
+        "target": 15
+      },
+      {
+        "cost": 0.5033109420116934,
+        "phase_distance": 0.08333333333333326,
+        "source": 11,
+        "target": 16
+      },
+      {
+        "cost": 0.032205265651214836,
+        "phase_distance": 0.0,
+        "source": 12,
+        "target": 16
+      },
+      {
+        "cost": 0.005524661740051222,
+        "phase_distance": 0.0,
+        "source": 11,
+        "target": 17
+      },
+      {
+        "cost": 0.5148111422423173,
+        "phase_distance": 0.08333333333333331,
+        "source": 12,
+        "target": 17
+      },
+      {
+        "cost": 0.2610148389254461,
+        "phase_distance": 0.04166666666666663,
+        "source": 13,
+        "target": 18
+      },
+      {
+        "cost": 0.815689899751878,
+        "phase_distance": 0.125,
+        "source": 11,
+        "target": 19
+      },
+      {
+        "cost": 1.0081779427834072,
+        "phase_distance": 0.16666666666666674,
+        "source": 13,
+        "target": 19
+      },
+      {
+        "cost": 0.03508853584050984,
+        "phase_distance": 0.0,
+        "source": 15,
+        "target": 20
+      },
+      {
+        "cost": 1.1535045699236823,
+        "phase_distance": 0.16666666666666663,
+        "source": 18,
+        "target": 20
+      },
+      {
+        "cost": 0.27397971796075155,
+        "phase_distance": 0.04166666666666666,
+        "source": 16,
+        "target": 21
+      },
+      {
+        "cost": 0.2815699198010214,
+        "phase_distance": 0.04166666666666663,
+        "source": 17,
+        "target": 21
+      },
+      {
+        "cost": 1.1027844812929506,
+        "phase_distance": 0.16666666666666663,
+        "source": 19,
+        "target": 21
+      },
+      {
+        "cost": 0.2539211118820666,
+        "phase_distance": 0.04166666666666663,
+        "source": 16,
+        "target": 22
+      },
+      {
+        "cost": 0.7365269884731693,
+        "phase_distance": 0.125,
+        "source": 17,
+        "target": 22
+      },
+      {
+        "cost": 0.605165428043024,
+        "phase_distance": 0.08333333333333337,
+        "source": 15,
+        "target": 23
+      },
+      {
+        "cost": 0.5132506060401486,
+        "phase_distance": 0.08333333333333326,
+        "source": 18,
+        "target": 23
+      },
+      {
+        "cost": 1.067859732934125,
+        "phase_distance": 0.16666666666666663,
+        "source": 16,
+        "target": 24
+      },
+      {
+        "cost": 0.25141851554444017,
+        "phase_distance": 0.04166666666666663,
+        "source": 20,
+        "target": 25
+      },
+      {
+        "cost": 0.8790315267704657,
+        "phase_distance": 0.125,
+        "source": 23,
+        "target": 25
+      },
+      {
+        "cost": 0.04974954428515416,
+        "phase_distance": 0.0,
+        "source": 21,
+        "target": 26
+      },
+      {
+        "cost": 0.5776503741279725,
+        "phase_distance": 0.08333333333333331,
+        "source": 22,
+        "target": 26
+      },
+      {
+        "cost": 0.9837348936697071,
+        "phase_distance": 0.16666666666666663,
+        "source": 23,
+        "target": 27
+      },
+      {
+        "cost": 0.8903310828466772,
+        "phase_distance": 0.125,
+        "source": 20,
+        "target": 28
+      },
+      {
+        "cost": 0.25007711896314344,
+        "phase_distance": 0.04166666666666663,
+        "source": 23,
+        "target": 28
+      },
+      {
+        "cost": 1.0523553385016833,
+        "phase_distance": 0.16666666666666674,
+        "source": 22,
+        "target": 29
+      },
+      {
+        "cost": 0.25177936098174863,
+        "phase_distance": 0.04166666666666674,
+        "source": 24,
+        "target": 29
+      },
+      {
+        "cost": 0.27957637768639104,
+        "phase_distance": 0.04166666666666663,
+        "source": 25,
+        "target": 30
+      },
+      {
+        "cost": 0.9184889449886281,
+        "phase_distance": 0.125,
+        "source": 28,
+        "target": 30
+      },
+      {
+        "cost": 0.011999511326120036,
+        "phase_distance": 0.0,
+        "source": 26,
+        "target": 31
+      },
+      {
+        "cost": 0.0009333043897411653,
+        "phase_distance": 0.0,
+        "source": 27,
+        "target": 32
+      },
+      {
+        "cost": 0.7426826298117373,
+        "phase_distance": 0.125,
+        "source": 28,
+        "target": 32
+      },
+      {
+        "cost": 1.116763112912664,
+        "phase_distance": 0.16666666666666663,
+        "source": 26,
+        "target": 33
+      },
+      {
+        "cost": 0.5132425997169915,
+        "phase_distance": 0.08333333333333337,
+        "source": 29,
+        "target": 33
+      },
+      {
+        "cost": 0.8952325932792998,
+        "phase_distance": 0.125,
+        "source": 25,
+        "target": 34
+      },
+      {
+        "cost": 0.7412921735780807,
+        "phase_distance": 0.125,
+        "source": 29,
+        "target": 34
+      },
+      {
+        "cost": 0.0271562534801358,
+        "phase_distance": 0.0,
+        "source": 31,
+        "target": 35
+      },
+      {
+        "cost": 1.1319198550666798,
+        "phase_distance": 0.16666666666666666,
+        "source": 33,
+        "target": 35
+      },
+      {
+        "cost": 0.28548939023797193,
+        "phase_distance": 0.04166666666666663,
+        "source": 30,
+        "target": 36
+      },
+      {
+        "cost": 0.8893195807277189,
+        "phase_distance": 0.125,
+        "source": 34,
+        "target": 36
+      },
+      {
+        "cost": 1.1146966856878993,
+        "phase_distance": 0.16666666666666666,
+        "source": 31,
+        "target": 37
+      },
+      {
+        "cost": 0.2565931568885003,
+        "phase_distance": 0.04166666666666674,
+        "source": 32,
+        "target": 37
+      },
+      {
+        "cost": 1.1198066033350205,
+        "phase_distance": 0.16666666666666663,
+        "source": 31,
+        "target": 38
+      },
+      {
+        "cost": 0.015043001748476484,
+        "phase_distance": 0.0,
+        "source": 33,
+        "target": 38
+      },
+      {
+        "cost": 0.5056399079464368,
+        "phase_distance": 0.08333333333333337,
+        "source": 33,
+        "target": 39
+      },
+      {
+        "cost": 0.7368987534865915,
+        "phase_distance": 0.125,
+        "source": 34,
+        "target": 39
+      },
+      {
+        "cost": 0.01093158164826713,
+        "phase_distance": 0.0,
+        "source": 35,
+        "target": 40
+      },
+      {
+        "cost": 1.1309213575197679,
+        "phase_distance": 0.16666666666666663,
+        "source": 37,
+        "target": 40
+      },
+      {
+        "cost": 1.1360312751668893,
+        "phase_distance": 0.16666666666666666,
+        "source": 38,
+        "target": 40
+      },
+      {
+        "cost": 0.07090809942237479,
+        "phase_distance": 0.0,
+        "source": 36,
+        "target": 41
+      },
+      {
+        "cost": 0.8394785853775847,
+        "phase_distance": 0.125,
+        "source": 36,
+        "target": 42
+      },
+      {
+        "cost": 0.6194027800261536,
+        "phase_distance": 0.08333333333333337,
+        "source": 36,
+        "target": 43
+      },
+      {
+        "cost": 1.0036062825090915,
+        "phase_distance": 0.16666666666666663,
+        "source": 39,
+        "target": 43
+      },
+      {
+        "cost": 0.7448412841256914,
+        "phase_distance": 0.125,
+        "source": 38,
+        "target": 44
+      },
+      {
+        "cost": 0.2542443779277312,
+        "phase_distance": 0.04166666666666663,
+        "source": 39,
+        "target": 44
+      },
+      {
+        "cost": 0.31826861731502043,
+        "phase_distance": 0.04166666666666663,
+        "source": 40,
+        "target": 45
+      },
+      {
+        "cost": 0.0011974238336031108,
+        "phase_distance": 0.0,
+        "source": 41,
+        "target": 46
+      },
+      {
+        "cost": 0.7697679097888129,
+        "phase_distance": 0.125,
+        "source": 42,
+        "target": 46
+      },
+      {
+        "cost": 0.5496921044373819,
+        "phase_distance": 0.08333333333333337,
+        "source": 43,
+        "target": 46
+      },
+      {
+        "cost": 0.7881464619236789,
+        "phase_distance": 0.125,
+        "source": 41,
+        "target": 47
+      },
+      {
+        "cost": 0.019575975968469033,
+        "phase_distance": 0.0,
+        "source": 42,
+        "target": 47
+      },
+      {
+        "cost": 0.5260520252705063,
+        "phase_distance": 0.08333333333333337,
+        "source": 44,
+        "target": 48
+      },
+      {
+        "cost": 1.0131028779159312,
+        "phase_distance": 0.16666666666666663,
+        "source": 42,
+        "target": 49
+      },
+      {
+        "cost": 0.0329851424702838,
+        "phase_distance": 0.0,
+        "source": 46,
+        "target": 50
+      },
+      {
+        "cost": 0.7563587432869983,
+        "phase_distance": 0.125,
+        "source": 47,
+        "target": 50
+      },
+      {
+        "cost": 0.044719963031602056,
+        "phase_distance": 0.0,
+        "source": 45,
+        "target": 51
+      },
+      {
+        "cost": 0.9918319536754518,
+        "phase_distance": 0.16666666666666666,
+        "source": 48,
+        "target": 51
+      },
+      {
+        "cost": 0.5443518239769244,
+        "phase_distance": 0.08333333333333331,
+        "source": 45,
+        "target": 52
+      },
+      {
+        "cost": 0.9935801408311759,
+        "phase_distance": 0.16666666666666674,
+        "source": 49,
+        "target": 52
+      },
+      {
+        "cost": 0.5598918483893164,
+        "phase_distance": 0.08333333333333337,
+        "source": 46,
+        "target": 53
+      },
+      {
+        "cost": 0.5116757852374711,
+        "phase_distance": 0.08333333333333326,
+        "source": 47,
+        "target": 54
+      },
+      {
+        "cost": 0.4985410401527544,
+        "phase_distance": 0.08333333333333337,
+        "source": 49,
+        "target": 54
+      },
+      {
+        "cost": 0.2631351854254926,
+        "phase_distance": 0.04166666666666663,
+        "source": 50,
+        "target": 55
+      },
+      {
+        "cost": 0.753967598924912,
+        "phase_distance": 0.125,
+        "source": 53,
+        "target": 55
+      },
+      {
+        "cost": 1.0048993430989768,
+        "phase_distance": 0.16666666666666663,
+        "source": 54,
+        "target": 55
+      },
+      {
+        "cost": 0.269623179357407,
+        "phase_distance": 0.04166666666666674,
+        "source": 50,
+        "target": 56
+      },
+      {
+        "cost": 0.25728352656162556,
+        "phase_distance": 0.04166666666666663,
+        "source": 53,
+        "target": 56
+      },
+      {
+        "cost": 0.7396375982205027,
+        "phase_distance": 0.125,
+        "source": 52,
+        "target": 57
+      },
+      {
+        "cost": 0.7524835827634269,
+        "phase_distance": 0.125,
+        "source": 54,
+        "target": 57
+      },
+      {
+        "cost": 0.2593191097461959,
+        "phase_distance": 0.04166666666666666,
+        "source": 51,
+        "target": 58
+      },
+      {
+        "cost": 0.24988332723224588,
+        "phase_distance": 0.04166666666666663,
+        "source": 52,
+        "target": 58
+      },
+      {
+        "cost": 0.5230415437004735,
+        "phase_distance": 0.08333333333333337,
+        "source": 51,
+        "target": 59
+      },
+      {
+        "cost": 1.0038018396178958,
+        "phase_distance": 0.16666666666666663,
+        "source": 52,
+        "target": 59
+      }
+    ],
+    "hypotheses": [
+      {
+        "center_phase": 0.22190880169144633,
+        "coherence": 0.5638476046321266,
+        "mean_jump": 0.02272727272727272,
+        "node_indices": [
+          0,
+          7,
+          12,
+          16,
+          21,
+          26,
+          31,
+          35,
+          40,
+          45,
+          51,
+          58
+        ]
+      },
+      {
+        "center_phase": 0.7187352335576577,
+        "coherence": 0.5861058412865686,
+        "mean_jump": 0.022727272727272717,
+        "node_indices": [
+          3,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          36,
+          41,
+          46,
+          50,
+          55
+        ]
+      },
+      {
+        "center_phase": 0.08539927235856844,
+        "coherence": 0.3003675776697147,
+        "mean_jump": 0.06944444444444446,
+        "node_indices": [
+          0,
+          7,
+          12,
+          16,
+          24,
+          29,
+          33,
+          39,
+          44,
+          48
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "column": 7,
+        "contrast": 0.7447558532198653,
+        "order": 15,
+        "phase": 0.3125,
+        "row": 1
+      },
+      {
+        "column": 1,
+        "contrast": 0.26383384464849813,
+        "order": 15,
+        "phase": 0.0625,
+        "row": 1
+      },
+      {
+        "column": 12,
+        "contrast": 0.1116254324468623,
+        "order": 15,
+        "phase": 0.5208333333333334,
+        "row": 1
+      },
+      {
+        "column": 18,
+        "contrast": 0.10051064128747672,
+        "order": 15,
+        "phase": 0.7708333333333334,
+        "row": 1
+      },
+      {
+        "column": 15,
+        "contrast": 0.01926097842783364,
+        "order": 15,
+        "phase": 0.6458333333333334,
+        "row": 1
+      },
+      {
+        "column": 17,
+        "contrast": 1.0958493044038464,
+        "order": 16,
+        "phase": 0.7291666666666666,
+        "row": 2
+      },
+      {
+        "column": 7,
+        "contrast": 0.45313896387370933,
+        "order": 16,
+        "phase": 0.3125,
+        "row": 2
+      },
+      {
+        "column": 5,
+        "contrast": 0.4416321920046261,
+        "order": 16,
+        "phase": 0.22916666666666666,
+        "row": 2
+      },
+      {
+        "column": 3,
+        "contrast": 0.3056274950841838,
+        "order": 16,
+        "phase": 0.14583333333333334,
+        "row": 2
+      },
+      {
+        "column": 11,
+        "contrast": 0.1671794732811528,
+        "order": 16,
+        "phase": 0.4791666666666667,
+        "row": 2
+      },
+      {
+        "column": 17,
+        "contrast": 1.636160206593152,
+        "order": 17,
+        "phase": 0.7291666666666666,
+        "row": 3
+      },
+      {
+        "column": 6,
+        "contrast": 0.7996442391246761,
+        "order": 17,
+        "phase": 0.2708333333333333,
+        "row": 3
+      },
+      {
+        "column": 4,
+        "contrast": 0.5610142132385059,
+        "order": 17,
+        "phase": 0.1875,
+        "row": 3
+      },
+      {
+        "column": 13,
+        "contrast": 0.14201928682270698,
+        "order": 17,
+        "phase": 0.5625,
+        "row": 3
+      },
+      {
+        "column": 20,
+        "contrast": 0.09779284243670822,
+        "order": 17,
+        "phase": 0.8541666666666666,
+        "row": 3
+      },
+      {
+        "column": 16,
+        "contrast": 1.6683577557060525,
+        "order": 18,
+        "phase": 0.6875,
+        "row": 4
+      },
+      {
+        "column": 4,
+        "contrast": 0.9635800338786913,
+        "order": 18,
+        "phase": 0.1875,
+        "row": 4
+      },
+      {
+        "column": 6,
+        "contrast": 0.8687025108753164,
+        "order": 18,
+        "phase": 0.2708333333333333,
+        "row": 4
+      },
+      {
+        "column": 12,
+        "contrast": -0.05694070954929367,
+        "order": 18,
+        "phase": 0.5208333333333334,
+        "row": 4
+      },
+      {
+        "column": 9,
+        "contrast": -0.20530303718556467,
+        "order": 18,
+        "phase": 0.3958333333333333,
+        "row": 4
+      },
+      {
+        "column": 16,
+        "contrast": 2.1069644537124255,
+        "order": 19,
+        "phase": 0.6875,
+        "row": 5
+      },
+      {
+        "column": 5,
+        "contrast": 1.3246010181920083,
+        "order": 19,
+        "phase": 0.22916666666666666,
+        "row": 5
+      },
+      {
+        "column": 3,
+        "contrast": 0.8532916255489342,
+        "order": 19,
+        "phase": 0.14583333333333334,
+        "row": 5
+      },
+      {
+        "column": 14,
+        "contrast": 0.23124088556041272,
+        "order": 19,
+        "phase": 0.6041666666666666,
+        "row": 5
+      },
+      {
+        "column": 0,
+        "contrast": -0.12976466701356254,
+        "order": 19,
+        "phase": 0.020833333333333332,
+        "row": 5
+      },
+      {
+        "column": 17,
+        "contrast": 2.027958499602999,
+        "order": 20,
+        "phase": 0.7291666666666666,
+        "row": 6
+      },
+      {
+        "column": 5,
+        "contrast": 1.9464703217564352,
+        "order": 20,
+        "phase": 0.22916666666666666,
+        "row": 6
+      },
+      {
+        "column": 10,
+        "contrast": 0.27302509564744076,
+        "order": 20,
+        "phase": 0.4375,
+        "row": 6
+      },
+      {
+        "column": 13,
+        "contrast": 0.16900238871719492,
+        "order": 20,
+        "phase": 0.5625,
+        "row": 6
+      },
+      {
+        "column": 23,
+        "contrast": -0.04624814493778817,
+        "order": 20,
+        "phase": 0.9791666666666666,
+        "row": 6
+      },
+      {
+        "column": 16,
+        "contrast": 2.458937730486811,
+        "order": 21,
+        "phase": 0.6875,
+        "row": 7
+      },
+      {
+        "column": 5,
+        "contrast": 1.7964764301799347,
+        "order": 21,
+        "phase": 0.22916666666666666,
+        "row": 7
+      },
+      {
+        "column": 10,
+        "contrast": 0.2613587907756762,
+        "order": 21,
+        "phase": 0.4375,
+        "row": 7
+      },
+      {
+        "column": 1,
+        "contrast": 0.24183337113244552,
+        "order": 21,
+        "phase": 0.0625,
+        "row": 7
+      },
+      {
+        "column": 20,
+        "contrast": 0.028727554199986044,
+        "order": 21,
+        "phase": 0.8541666666666666,
+        "row": 7
+      },
+      {
+        "column": 5,
+        "contrast": 2.1359295986816322,
+        "order": 22,
+        "phase": 0.22916666666666666,
+        "row": 8
+      },
+      {
+        "column": 17,
+        "contrast": 1.954045842708238,
+        "order": 22,
+        "phase": 0.7291666666666666,
+        "row": 8
+      },
+      {
+        "column": 9,
+        "contrast": 0.11766981986550584,
+        "order": 22,
+        "phase": 0.3958333333333333,
+        "row": 8
+      },
+      {
+        "column": 1,
+        "contrast": 0.05379584927648948,
+        "order": 22,
+        "phase": 0.0625,
+        "row": 8
+      },
+      {
+        "column": 23,
+        "contrast": 0.048785502194145736,
+        "order": 22,
+        "phase": 0.9791666666666666,
+        "row": 8
+      },
+      {
+        "column": 5,
+        "contrast": 1.999284828078293,
+        "order": 23,
+        "phase": 0.22916666666666666,
+        "row": 9
+      },
+      {
+        "column": 17,
+        "contrast": 1.067694599928553,
+        "order": 23,
+        "phase": 0.7291666666666666,
+        "row": 9
+      },
+      {
+        "column": 14,
+        "contrast": 0.6517399960766642,
+        "order": 23,
+        "phase": 0.6041666666666666,
+        "row": 9
+      },
+      {
+        "column": 19,
+        "contrast": 0.3389620727734777,
+        "order": 23,
+        "phase": 0.8125,
+        "row": 9
+      },
+      {
+        "column": 22,
+        "contrast": -0.06554373170641871,
+        "order": 23,
+        "phase": 0.9375,
+        "row": 9
+      },
+      {
+        "column": 4,
+        "contrast": 1.084652601836613,
+        "order": 24,
+        "phase": 0.1875,
+        "row": 10
+      },
+      {
+        "column": 17,
+        "contrast": 1.0826623978485919,
+        "order": 24,
+        "phase": 0.7291666666666666,
+        "row": 10
+      },
+      {
+        "column": 14,
+        "contrast": 0.4070402964708013,
+        "order": 24,
+        "phase": 0.6041666666666666,
+        "row": 10
+      },
+      {
+        "column": 0,
+        "contrast": 0.38265560378275143,
+        "order": 24,
+        "phase": 0.020833333333333332,
+        "row": 10
+      },
+      {
+        "column": 10,
+        "contrast": 0.24285598291183474,
+        "order": 24,
+        "phase": 0.4375,
+        "row": 10
+      },
+      {
+        "column": 17,
+        "contrast": 0.6703481169700444,
+        "order": 25,
+        "phase": 0.7291666666666666,
+        "row": 11
+      },
+      {
+        "column": 4,
+        "contrast": 0.5256530639415873,
+        "order": 25,
+        "phase": 0.1875,
+        "row": 11
+      },
+      {
+        "column": 6,
+        "contrast": 0.4077057825172139,
+        "order": 25,
+        "phase": 0.2708333333333333,
+        "row": 11
+      },
+      {
+        "column": 19,
+        "contrast": 0.21146527337429644,
+        "order": 25,
+        "phase": 0.8125,
+        "row": 11
+      },
+      {
+        "column": 12,
+        "contrast": 0.1385439613945637,
+        "order": 25,
+        "phase": 0.5208333333333334,
+        "row": 11
+      },
+      {
+        "column": 16,
+        "contrast": 0.44488378934746287,
+        "order": 26,
+        "phase": 0.6875,
+        "row": 12
+      },
+      {
+        "column": 18,
+        "contrast": 0.36378386519854067,
+        "order": 26,
+        "phase": 0.7708333333333334,
+        "row": 12
+      },
+      {
+        "column": 9,
+        "contrast": 0.35341227534916486,
+        "order": 26,
+        "phase": 0.3958333333333333,
+        "row": 12
+      },
+      {
+        "column": 5,
+        "contrast": 0.3478896823102161,
+        "order": 26,
+        "phase": 0.22916666666666666,
+        "row": 12
+      },
+      {
+        "column": 2,
+        "contrast": 0.11508474807782743,
+        "order": 26,
+        "phase": 0.10416666666666667,
+        "row": 12
+      }
+    ]
+  },
+  "inferred_r01": null,
+  "inferred_r02": null,
+  "inferred_r10": null,
+  "orders": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "pairs": [
+    {
+      "birth": 2.1359295986816322,
+      "birth_location": [
+        {
+          "frequency_uHz": 2297.688929874288,
+          "order": 22,
+          "phase_cycles": 0.22916666666666666,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        197
+      ],
+      "death": -0.1421456277729859,
+      "death_location": [
+        {
+          "frequency_uHz": 2418.2799140101456,
+          "order": 23,
+          "phase_cycles": 0.3958333333333333,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2422.5867348721404,
+          "order": 23,
+          "phase_cycles": 0.4375,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        225,
+        226
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0001",
+      "persistence": 2.278075226454618,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.7447558532198653,
+      "birth_location": [
+        {
+          "frequency_uHz": 1582.7566667831318,
+          "order": 15,
+          "phase_cycles": 0.3125,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        31
+      ],
+      "death": 0.15372888912842053,
+      "death_location": [
+        {
+          "frequency_uHz": 1574.1430250591418,
+          "order": 15,
+          "phase_cycles": 0.22916666666666666,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1677.50672574702,
+          "order": 16,
+          "phase_cycles": 0.22916666666666666,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        29,
+        53
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0002",
+      "persistence": 0.5910269640914447,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.35341227534916486,
+      "birth_location": [
+        {
+          "frequency_uHz": 2728.3710160737796,
+          "order": 26,
+          "phase_cycles": 0.3958333333333333,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        297
+      ],
+      "death": -0.11998444640379612,
+      "death_location": [
+        {
+          "frequency_uHz": 2422.5867348721404,
+          "order": 23,
+          "phase_cycles": 0.4375,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2426.8935557341356,
+          "order": 23,
+          "phase_cycles": 0.4791666666666667,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        226,
+        227
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0003",
+      "persistence": 0.473396721752961,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.27302509564744076,
+      "birth_location": [
+        {
+          "frequency_uHz": 2112.4956328085063,
+          "order": 20,
+          "phase_cycles": 0.4375,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        154
+      ],
+      "death": -0.11101856877999954,
+      "death_location": [
+        {
+          "frequency_uHz": 2224.4729752203743,
+          "order": 21,
+          "phase_cycles": 0.5208333333333334,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2228.779796082369,
+          "order": 21,
+          "phase_cycles": 0.5625,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        180,
+        181
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0004",
+      "persistence": 0.3840436644274403,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.01926097842783364,
+      "birth_location": [
+        {
+          "frequency_uHz": 1617.2112336790913,
+          "order": 15,
+          "phase_cycles": 0.6458333333333334,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        39
+      ],
+      "death": -0.3165479419278364,
+      "death_location": [
+        {
+          "frequency_uHz": 1608.5975919551013,
+          "order": 15,
+          "phase_cycles": 0.5625,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1612.904412817096,
+          "order": 15,
+          "phase_cycles": 0.6041666666666666,
+          "row": 1
+        }
+      ],
+      "death_vertices": [
+        37,
+        38
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0005",
+      "persistence": 0.33580892035567006,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.24285598291183474,
+      "birth_location": [
+        {
+          "frequency_uHz": 2525.9504355600184,
+          "order": 24,
+          "phase_cycles": 0.4375,
+          "row": 10
+        }
+      ],
+      "birth_vertices": [
+        250
+      ],
+      "death": -0.07424143933511494,
+      "death_location": [
+        {
+          "frequency_uHz": 2625.0073153859016,
+          "order": 25,
+          "phase_cycles": 0.3958333333333333,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2728.3710160737796,
+          "order": 26,
+          "phase_cycles": 0.3958333333333333,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        273,
+        297
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0006",
+      "persistence": 0.3170974222469497,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 1.636160206593152,
+      "birth_location": [
+        {
+          "frequency_uHz": 1832.552276778837,
+          "order": 17,
+          "phase_cycles": 0.7291666666666666,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        89
+      ],
+      "death": 1.3283073427031404,
+      "death_location": [
+        {
+          "frequency_uHz": 1931.60915660472,
+          "order": 18,
+          "phase_cycles": 0.6875,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1935.915977466715,
+          "order": 18,
+          "phase_cycles": 0.7291666666666666,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        112,
+        113
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0007",
+      "persistence": 0.30785286389001154,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.14201928682270698,
+      "birth_location": [
+        {
+          "frequency_uHz": 1815.3249933308573,
+          "order": 17,
+          "phase_cycles": 0.5625,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        85
+      ],
+      "death": -0.14328569534631053,
+      "death_location": [
+        {
+          "frequency_uHz": 1811.0181724688623,
+          "order": 17,
+          "phase_cycles": 0.5208333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1815.3249933308573,
+          "order": 17,
+          "phase_cycles": 0.5625,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        84,
+        85
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0008",
+      "persistence": 0.2853049821690175,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.26383384464849813,
+      "birth_location": [
+        {
+          "frequency_uHz": 1556.9157416111623,
+          "order": 15,
+          "phase_cycles": 0.0625,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        25
+      ],
+      "death": 0.002462799036738794,
+      "death_location": [
+        {
+          "frequency_uHz": 1660.2794422990403,
+          "order": 16,
+          "phase_cycles": 0.0625,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1664.5862631610353,
+          "order": 16,
+          "phase_cycles": 0.10416666666666667,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        49,
+        50
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0009",
+      "persistence": 0.26137104561175933,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.4416321920046261,
+      "birth_location": [
+        {
+          "frequency_uHz": 1677.50672574702,
+          "order": 16,
+          "phase_cycles": 0.22916666666666666,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        53
+      ],
+      "death": 0.18596132004705007,
+      "death_location": [
+        {
+          "frequency_uHz": 1776.563605572903,
+          "order": 17,
+          "phase_cycles": 0.1875,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1780.870426434898,
+          "order": 17,
+          "phase_cycles": 0.22916666666666666,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        76,
+        77
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0010",
+      "persistence": 0.25567087195757604,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 1.954045842708238,
+      "birth_location": [
+        {
+          "frequency_uHz": 2349.370780218227,
+          "order": 22,
+          "phase_cycles": 0.7291666666666666,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        209
+      ],
+      "death": 1.7105993074473755,
+      "death_location": [
+        {
+          "frequency_uHz": 2345.063959356232,
+          "order": 22,
+          "phase_cycles": 0.6875,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2349.370780218227,
+          "order": 22,
+          "phase_cycles": 0.7291666666666666,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        208,
+        209
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0011",
+      "persistence": 0.24344653526086235,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.11766981986550584,
+      "birth_location": [
+        {
+          "frequency_uHz": 2314.9162133222676,
+          "order": 22,
+          "phase_cycles": 0.3958333333333333,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        201
+      ],
+      "death": -0.1128263455602923,
+      "death_location": [
+        {
+          "frequency_uHz": 2310.609392460273,
+          "order": 22,
+          "phase_cycles": 0.3541666666666667,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2314.9162133222676,
+          "order": 22,
+          "phase_cycles": 0.3958333333333333,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        200,
+        201
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0012",
+      "persistence": 0.23049616542579815,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.36378386519854067,
+      "birth_location": [
+        {
+          "frequency_uHz": 2767.132403831734,
+          "order": 26,
+          "phase_cycles": 0.7708333333333334,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        306
+      ],
+      "death": 0.13975363196539975,
+      "death_location": [
+        {
+          "frequency_uHz": 2762.825582969739,
+          "order": 26,
+          "phase_cycles": 0.7291666666666666,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2767.132403831734,
+          "order": 26,
+          "phase_cycles": 0.7708333333333334,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        305,
+        306
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0013",
+      "persistence": 0.22403023323314092,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.1671794732811528,
+      "birth_location": [
+        {
+          "frequency_uHz": 1703.3476509189895,
+          "order": 16,
+          "phase_cycles": 0.4791666666666667,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        59
+      ],
+      "death": -0.0450508909141005,
+      "death_location": [
+        {
+          "frequency_uHz": 1690.4271883330048,
+          "order": 16,
+          "phase_cycles": 0.3541666666666667,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1694.7340091949995,
+          "order": 16,
+          "phase_cycles": 0.3958333333333333,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        56,
+        57
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0014",
+      "persistence": 0.2122303641952533,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.09666414802796873,
+      "birth_location": [
+        {
+          "frequency_uHz": 1651.6658005750503,
+          "order": 15,
+          "phase_cycles": 0.9791666666666666,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        47
+      ],
+      "death": -0.29764587787553903,
+      "death_location": [
+        {
+          "frequency_uHz": 1755.0295012629285,
+          "order": 16,
+          "phase_cycles": 0.9791666666666666,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1655.9726214370453,
+          "order": 16,
+          "phase_cycles": 0.020833333333333332,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        71,
+        48
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0015",
+      "persistence": 0.2009817298475703,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.23124088556041272,
+      "birth_location": [
+        {
+          "frequency_uHz": 2026.3592155686083,
+          "order": 19,
+          "phase_cycles": 0.6041666666666666,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        134
+      ],
+      "death": 0.0359257675877262,
+      "death_location": [
+        {
+          "frequency_uHz": 2228.779796082369,
+          "order": 21,
+          "phase_cycles": 0.5625,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2233.0866169443643,
+          "order": 21,
+          "phase_cycles": 0.6041666666666666,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        181,
+        182
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0016",
+      "persistence": 0.19531511797268652,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.24183337113244552,
+      "birth_location": [
+        {
+          "frequency_uHz": 2177.09794573843,
+          "order": 21,
+          "phase_cycles": 0.0625,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        169
+      ],
+      "death": 0.05379584927648948,
+      "death_location": [
+        {
+          "frequency_uHz": 2280.461646426308,
+          "order": 22,
+          "phase_cycles": 0.0625,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2383.825347114186,
+          "order": 23,
+          "phase_cycles": 0.0625,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        193,
+        217
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0017",
+      "persistence": 0.18803752185595604,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.04624814493778817,
+      "birth_location": [
+        {
+          "frequency_uHz": 2168.4843040144406,
+          "order": 20,
+          "phase_cycles": 0.9791666666666666,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        167
+      ],
+      "death": -0.22007062478408432,
+      "death_location": [
+        {
+          "frequency_uHz": 2172.7911248764353,
+          "order": 21,
+          "phase_cycles": 0.020833333333333332,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2177.09794573843,
+          "order": 21,
+          "phase_cycles": 0.0625,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        168,
+        169
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0018",
+      "persistence": 0.17382247984629615,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.1385439613945637,
+      "birth_location": [
+        {
+          "frequency_uHz": 2637.9277779718864,
+          "order": 25,
+          "phase_cycles": 0.5208333333333334,
+          "row": 11
+        }
+      ],
+      "birth_vertices": [
+        276
+      ],
+      "death": -0.03425370522638976,
+      "death_location": [
+        {
+          "frequency_uHz": 2534.5640772840084,
+          "order": 24,
+          "phase_cycles": 0.5208333333333334,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2637.9277779718864,
+          "order": 25,
+          "phase_cycles": 0.5208333333333334,
+          "row": 11
+        }
+      ],
+      "death_vertices": [
+        252,
+        276
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0019",
+      "persistence": 0.17279766662095347,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.6517399960766642,
+      "birth_location": [
+        {
+          "frequency_uHz": 2439.8140183201203,
+          "order": 23,
+          "phase_cycles": 0.6041666666666666,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        230
+      ],
+      "death": 0.4878036906606199,
+      "death_location": [
+        {
+          "frequency_uHz": 2336.4503176322423,
+          "order": 22,
+          "phase_cycles": 0.6041666666666666,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2439.8140183201203,
+          "order": 23,
+          "phase_cycles": 0.6041666666666666,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        206,
+        230
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0020",
+      "persistence": 0.16393630541604431,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.0757572436594702,
+      "birth_location": [
+        {
+          "frequency_uHz": 2745.598299521759,
+          "order": 26,
+          "phase_cycles": 0.5625,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        301
+      ],
+      "death": -0.23210744420464335,
+      "death_location": [
+        {
+          "frequency_uHz": 2741.2914786597644,
+          "order": 26,
+          "phase_cycles": 0.5208333333333334,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2745.598299521759,
+          "order": 26,
+          "phase_cycles": 0.5625,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        300,
+        301
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0021",
+      "persistence": 0.15635020054517315,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 1.9464703217564352,
+      "birth_location": [
+        {
+          "frequency_uHz": 2090.961528498532,
+          "order": 20,
+          "phase_cycles": 0.22916666666666666,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        149
+      ],
+      "death": 1.7964764301799347,
+      "death_location": [
+        {
+          "frequency_uHz": 2194.32522918641,
+          "order": 21,
+          "phase_cycles": 0.22916666666666666,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2297.688929874288,
+          "order": 22,
+          "phase_cycles": 0.22916666666666666,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        173,
+        197
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0022",
+      "persistence": 0.14999389157650045,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.04083317271185352,
+      "birth_location": [
+        {
+          "frequency_uHz": 2784.3596872797134,
+          "order": 26,
+          "phase_cycles": 0.9375,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        310
+      ],
+      "death": -0.10243232820108933,
+      "death_location": [
+        {
+          "frequency_uHz": 2788.6665081417086,
+          "order": 26,
+          "phase_cycles": 0.9791666666666666,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2689.6096283158254,
+          "order": 26,
+          "phase_cycles": 0.020833333333333332,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        311,
+        288
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0023",
+      "persistence": 0.14326550091294285,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.9635800338786913,
+      "birth_location": [
+        {
+          "frequency_uHz": 1879.927306260781,
+          "order": 18,
+          "phase_cycles": 0.1875,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        100
+      ],
+      "death": 0.8238735921293667,
+      "death_location": [
+        {
+          "frequency_uHz": 1978.984186086664,
+          "order": 19,
+          "phase_cycles": 0.14583333333333334,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 1983.291006948659,
+          "order": 19,
+          "phase_cycles": 0.1875,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        123,
+        124
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0024",
+      "persistence": 0.13970644174932456,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.028727554199986044,
+      "birth_location": [
+        {
+          "frequency_uHz": 2258.927542116334,
+          "order": 21,
+          "phase_cycles": 0.8541666666666666,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        188
+      ],
+      "death": -0.10975845316775099,
+      "death_location": [
+        {
+          "frequency_uHz": 2357.9844219422166,
+          "order": 22,
+          "phase_cycles": 0.8125,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2362.291242804212,
+          "order": 22,
+          "phase_cycles": 0.8541666666666666,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        211,
+        212
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0025",
+      "persistence": 0.13848600736773703,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.1116254324468623,
+      "birth_location": [
+        {
+          "frequency_uHz": 1604.2907710931065,
+          "order": 15,
+          "phase_cycles": 0.5208333333333334,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        36
+      ],
+      "death": -0.017227279734893713,
+      "death_location": [
+        {
+          "frequency_uHz": 1703.3476509189895,
+          "order": 16,
+          "phase_cycles": 0.4791666666666667,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1707.6544717809843,
+          "order": 16,
+          "phase_cycles": 0.5208333333333334,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        59,
+        60
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0026",
+      "persistence": 0.128852712181756,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.09779284243670822,
+      "birth_location": [
+        {
+          "frequency_uHz": 1845.4727393648218,
+          "order": 17,
+          "phase_cycles": 0.8541666666666666,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        92
+      ],
+      "death": -0.02900125777572765,
+      "death_location": [
+        {
+          "frequency_uHz": 1841.1659185028268,
+          "order": 17,
+          "phase_cycles": 0.8125,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1845.4727393648218,
+          "order": 17,
+          "phase_cycles": 0.8541666666666666,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        91,
+        92
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0027",
+      "persistence": 0.12679410021243587,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.38265560378275143,
+      "birth_location": [
+        {
+          "frequency_uHz": 2482.8822269400694,
+          "order": 24,
+          "phase_cycles": 0.020833333333333332,
+          "row": 10
+        }
+      ],
+      "birth_vertices": [
+        240
+      ],
+      "death": 0.26396846052318845,
+      "death_location": [
+        {
+          "frequency_uHz": 2379.5185262521914,
+          "order": 23,
+          "phase_cycles": 0.020833333333333332,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2482.8822269400694,
+          "order": 24,
+          "phase_cycles": 0.020833333333333332,
+          "row": 10
+        }
+      ],
+      "death_vertices": [
+        216,
+        240
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0028",
+      "persistence": 0.11868714325956298,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.8687025108753164,
+      "birth_location": [
+        {
+          "frequency_uHz": 1888.5409479847708,
+          "order": 18,
+          "phase_cycles": 0.2708333333333333,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        102
+      ],
+      "death": 0.7565321393435348,
+      "death_location": [
+        {
+          "frequency_uHz": 1987.597827810654,
+          "order": 19,
+          "phase_cycles": 0.22916666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 1991.9046486726488,
+          "order": 19,
+          "phase_cycles": 0.2708333333333333,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        125,
+        126
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0029",
+      "persistence": 0.11217037153178155,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.3056274950841838,
+      "birth_location": [
+        {
+          "frequency_uHz": 1668.89308402303,
+          "order": 16,
+          "phase_cycles": 0.14583333333333334,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        51
+      ],
+      "death": 0.2030742171765535,
+      "death_location": [
+        {
+          "frequency_uHz": 1772.256784710908,
+          "order": 17,
+          "phase_cycles": 0.14583333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1776.563605572903,
+          "order": 17,
+          "phase_cycles": 0.1875,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        75,
+        76
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0030",
+      "persistence": 0.1025532779076303,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 2.1069644537124255,
+      "birth_location": [
+        {
+          "frequency_uHz": 2034.972857292598,
+          "order": 19,
+          "phase_cycles": 0.6875,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        136
+      ],
+      "death": 2.0051823923809406,
+      "death_location": [
+        {
+          "frequency_uHz": 2138.336557980476,
+          "order": 20,
+          "phase_cycles": 0.6875,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2241.700258668354,
+          "order": 21,
+          "phase_cycles": 0.6875,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        160,
+        184
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0031",
+      "persistence": 0.10178206133148482,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.05694070954929367,
+      "birth_location": [
+        {
+          "frequency_uHz": 1914.3818731567403,
+          "order": 18,
+          "phase_cycles": 0.5208333333333334,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        108
+      ],
+      "death": -0.14328569534631053,
+      "death_location": [
+        {
+          "frequency_uHz": 1811.0181724688623,
+          "order": 17,
+          "phase_cycles": 0.5208333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1914.3818731567403,
+          "order": 18,
+          "phase_cycles": 0.5208333333333334,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        84,
+        108
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0032",
+      "persistence": 0.08634498579701685,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.1171561289287604,
+      "birth_location": [
+        {
+          "frequency_uHz": 1759.3363221249233,
+          "order": 17,
+          "phase_cycles": 0.020833333333333332,
+          "row": 3
+        }
+      ],
+      "birth_vertices": [
+        72
+      ],
+      "death": -0.19720521358576343,
+      "death_location": [
+        {
+          "frequency_uHz": 1759.3363221249233,
+          "order": 17,
+          "phase_cycles": 0.020833333333333332,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1763.6431429869183,
+          "order": 17,
+          "phase_cycles": 0.0625,
+          "row": 3
+        }
+      ],
+      "death_vertices": [
+        72,
+        73
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0033",
+      "persistence": 0.08004908465700303,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.06554373170641871,
+      "birth_location": [
+        {
+          "frequency_uHz": 2474.2685852160794,
+          "order": 23,
+          "phase_cycles": 0.9375,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        238
+      ],
+      "death": -0.14439717165782057,
+      "death_location": [
+        {
+          "frequency_uHz": 2469.9617643540846,
+          "order": 23,
+          "phase_cycles": 0.8958333333333334,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2474.2685852160794,
+          "order": 23,
+          "phase_cycles": 0.9375,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        237,
+        238
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0034",
+      "persistence": 0.07885343995140186,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.11508474807782743,
+      "birth_location": [
+        {
+          "frequency_uHz": 2698.2232700398154,
+          "order": 26,
+          "phase_cycles": 0.10416666666666667,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        290
+      ],
+      "death": 0.03748554658203082,
+      "death_location": [
+        {
+          "frequency_uHz": 2698.2232700398154,
+          "order": 26,
+          "phase_cycles": 0.10416666666666667,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2702.53009090181,
+          "order": 26,
+          "phase_cycles": 0.14583333333333334,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        290,
+        291
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0035",
+      "persistence": 0.0775992014957966,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.17559584005700415,
+      "birth_location": [
+        {
+          "frequency_uHz": 2004.8251112586336,
+          "order": 19,
+          "phase_cycles": 0.3958333333333333,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        129
+      ],
+      "death": -0.2439094679845604,
+      "death_location": [
+        {
+          "frequency_uHz": 1897.1545897087608,
+          "order": 18,
+          "phase_cycles": 0.3541666666666667,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1901.4614105707556,
+          "order": 18,
+          "phase_cycles": 0.3958333333333333,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        104,
+        105
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0036",
+      "persistence": 0.06831362792755624,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.16292720262262247,
+      "birth_location": [
+        {
+          "frequency_uHz": 1643.0521588510608,
+          "order": 15,
+          "phase_cycles": 0.8958333333333334,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        45
+      ],
+      "death": -0.22802681305066638,
+      "death_location": [
+        {
+          "frequency_uHz": 1742.1090386769438,
+          "order": 16,
+          "phase_cycles": 0.8541666666666666,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1746.4158595389385,
+          "order": 16,
+          "phase_cycles": 0.8958333333333334,
+          "row": 2
+        }
+      ],
+      "death_vertices": [
+        68,
+        69
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0037",
+      "persistence": 0.06509961042804391,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.048785502194145736,
+      "birth_location": [
+        {
+          "frequency_uHz": 2375.2117053901966,
+          "order": 22,
+          "phase_cycles": 0.9791666666666666,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        215
+      ],
+      "death": -0.015011021934424634,
+      "death_location": [
+        {
+          "frequency_uHz": 2375.2117053901966,
+          "order": 22,
+          "phase_cycles": 0.9791666666666666,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2276.1548255643133,
+          "order": 22,
+          "phase_cycles": 0.020833333333333332,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        215,
+        192
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0038",
+      "persistence": 0.06379652412857037,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.3389620727734777,
+      "birth_location": [
+        {
+          "frequency_uHz": 2461.3481226300946,
+          "order": 23,
+          "phase_cycles": 0.8125,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        235
+      ],
+      "death": 0.2770132036411102,
+      "death_location": [
+        {
+          "frequency_uHz": 2457.0413017681,
+          "order": 23,
+          "phase_cycles": 0.7708333333333334,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2461.3481226300946,
+          "order": 23,
+          "phase_cycles": 0.8125,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        234,
+        235
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0039",
+      "persistence": 0.06194886913236747,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.0653779653618835,
+      "birth_location": [
+        {
+          "frequency_uHz": 2207.245691772395,
+          "order": 21,
+          "phase_cycles": 0.3541666666666667,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        176
+      ],
+      "death": -0.1128263455602923,
+      "death_location": [
+        {
+          "frequency_uHz": 2306.3025715982776,
+          "order": 22,
+          "phase_cycles": 0.3125,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2310.609392460273,
+          "order": 22,
+          "phase_cycles": 0.3541666666666667,
+          "row": 8
+        }
+      ],
+      "death_vertices": [
+        199,
+        200
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0040",
+      "persistence": 0.04744838019840879,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 2.027958499602999,
+      "birth_location": [
+        {
+          "frequency_uHz": 2142.643378842471,
+          "order": 20,
+          "phase_cycles": 0.7291666666666666,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        161
+      ],
+      "death": 2.0051823923809406,
+      "death_location": [
+        {
+          "frequency_uHz": 2138.336557980476,
+          "order": 20,
+          "phase_cycles": 0.6875,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2142.643378842471,
+          "order": 20,
+          "phase_cycles": 0.7291666666666666,
+          "row": 6
+        }
+      ],
+      "death_vertices": [
+        160,
+        161
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0041",
+      "persistence": 0.02277610722205825,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 1.0826623978485919,
+      "birth_location": [
+        {
+          "frequency_uHz": 2556.098181593983,
+          "order": 24,
+          "phase_cycles": 0.7291666666666666,
+          "row": 10
+        }
+      ],
+      "birth_vertices": [
+        257
+      ],
+      "death": 1.067694599928553,
+      "death_location": [
+        {
+          "frequency_uHz": 2452.734480906105,
+          "order": 23,
+          "phase_cycles": 0.7291666666666666,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2556.098181593983,
+          "order": 24,
+          "phase_cycles": 0.7291666666666666,
+          "row": 10
+        }
+      ],
+      "death_vertices": [
+        233,
+        257
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0042",
+      "persistence": 0.014967797920038883,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.13321367699785708,
+      "birth_location": [
+        {
+          "frequency_uHz": 2573.3254650419626,
+          "order": 24,
+          "phase_cycles": 0.8958333333333334,
+          "row": 10
+        }
+      ],
+      "birth_vertices": [
+        261
+      ],
+      "death": -0.14439717165782057,
+      "death_location": [
+        {
+          "frequency_uHz": 2469.9617643540846,
+          "order": 23,
+          "phase_cycles": 0.8958333333333334,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2573.3254650419626,
+          "order": 24,
+          "phase_cycles": 0.8958333333333334,
+          "row": 10
+        }
+      ],
+      "death_vertices": [
+        237,
+        261
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0043",
+      "persistence": 0.011183494659963489,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.3306275259541144,
+      "birth_location": [
+        {
+          "frequency_uHz": 1957.4500817766896,
+          "order": 18,
+          "phase_cycles": 0.9375,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        118
+      ],
+      "death": -0.3398125818307609,
+      "death_location": [
+        {
+          "frequency_uHz": 1953.1432609146946,
+          "order": 18,
+          "phase_cycles": 0.8958333333333334,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1957.4500817766896,
+          "order": 18,
+          "phase_cycles": 0.9375,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        117,
+        118
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0044",
+      "persistence": 0.00918505587664653,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.3478896823102161,
+      "birth_location": [
+        {
+          "frequency_uHz": 2711.1437326258,
+          "order": 26,
+          "phase_cycles": 0.22916666666666666,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        293
+      ],
+      "death": 0.3387086313387614,
+      "death_location": [
+        {
+          "frequency_uHz": 2607.780031937922,
+          "order": 25,
+          "phase_cycles": 0.22916666666666666,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2711.1437326258,
+          "order": 26,
+          "phase_cycles": 0.22916666666666666,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        269,
+        293
+      ],
+      "dimension": 0,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D0-0045",
+      "persistence": 0.009181050971454718,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 2.458937730486811,
+      "birth_location": [
+        {
+          "frequency_uHz": 2241.700258668354,
+          "order": 21,
+          "phase_cycles": 0.6875,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        184
+      ],
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 0,
+      "essential": true,
+      "pair_id": "RUDY-CYLINDER-D0-0046",
+      "persistence": null,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.24943780105891264,
+      "birth_location": [
+        {
+          "frequency_uHz": 1862.7000228128013,
+          "order": 18,
+          "phase_cycles": 0.020833333333333332,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1966.0637235006793,
+          "order": 19,
+          "phase_cycles": 0.020833333333333332,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        96,
+        120
+      ],
+      "death": -0.7724087633792268,
+      "death_location": [
+        {
+          "frequency_uHz": 2073.734245050552,
+          "order": 20,
+          "phase_cycles": 0.0625,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2078.0410659125473,
+          "order": 20,
+          "phase_cycles": 0.10416666666666667,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2177.09794573843,
+          "order": 21,
+          "phase_cycles": 0.0625,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2181.4047666004253,
+          "order": 21,
+          "phase_cycles": 0.10416666666666667,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        145,
+        146,
+        169,
+        170
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0047",
+      "persistence": 0.5229709623203141,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.3464204293735745,
+      "birth_location": [
+        {
+          "frequency_uHz": 2052.200140740578,
+          "order": 19,
+          "phase_cycles": 0.8541666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2056.5069616025726,
+          "order": 19,
+          "phase_cycles": 0.8958333333333334,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        140,
+        141
+      ],
+      "death": -0.8155622166679769,
+      "death_location": [
+        {
+          "frequency_uHz": 2047.8933198785828,
+          "order": 19,
+          "phase_cycles": 0.8125,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2052.200140740578,
+          "order": 19,
+          "phase_cycles": 0.8541666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2151.2570205664606,
+          "order": 20,
+          "phase_cycles": 0.8125,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2155.563841428456,
+          "order": 20,
+          "phase_cycles": 0.8541666666666666,
+          "row": 6
+        }
+      ],
+      "death_vertices": [
+        139,
+        140,
+        163,
+        164
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0048",
+      "persistence": 0.4691417872944024,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.16744414903990543,
+      "birth_location": [
+        {
+          "frequency_uHz": 2629.3141362478964,
+          "order": 25,
+          "phase_cycles": 0.4375,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2633.6209571098916,
+          "order": 25,
+          "phase_cycles": 0.4791666666666667,
+          "row": 11
+        }
+      ],
+      "birth_vertices": [
+        274,
+        275
+      ],
+      "death": -0.6179716574771494,
+      "death_location": [
+        {
+          "frequency_uHz": 2530.2572564220136,
+          "order": 24,
+          "phase_cycles": 0.4791666666666667,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2534.5640772840084,
+          "order": 24,
+          "phase_cycles": 0.5208333333333334,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2633.6209571098916,
+          "order": 25,
+          "phase_cycles": 0.4791666666666667,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2637.9277779718864,
+          "order": 25,
+          "phase_cycles": 0.5208333333333334,
+          "row": 11
+        }
+      ],
+      "death_vertices": [
+        251,
+        252,
+        275,
+        276
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0049",
+      "persistence": 0.450527508437244,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.21056134686701866,
+      "birth_location": [
+        {
+          "frequency_uHz": 1918.6886940187353,
+          "order": 18,
+          "phase_cycles": 0.5625,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2022.0523947066133,
+          "order": 19,
+          "phase_cycles": 0.5625,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        109,
+        133
+      ],
+      "death": -0.6273815087610716,
+      "death_location": [
+        {
+          "frequency_uHz": 2108.1888119465116,
+          "order": 20,
+          "phase_cycles": 0.3958333333333333,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2112.4956328085063,
+          "order": 20,
+          "phase_cycles": 0.4375,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2211.5525126343896,
+          "order": 21,
+          "phase_cycles": 0.3958333333333333,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2215.8593334963844,
+          "order": 21,
+          "phase_cycles": 0.4375,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        153,
+        154,
+        177,
+        178
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0050",
+      "persistence": 0.4168201618940529,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.5222047711450427,
+      "birth_location": [
+        {
+          "frequency_uHz": 1621.518054541086,
+          "order": 15,
+          "phase_cycles": 0.6875,
+          "row": 1
+        },
+        {
+          "frequency_uHz": 1625.8248754030808,
+          "order": 15,
+          "phase_cycles": 0.7291666666666666,
+          "row": 1
+        }
+      ],
+      "birth_vertices": [
+        40,
+        41
+      ],
+      "death": -0.9190441219563467,
+      "death_location": [
+        {
+          "frequency_uHz": 1823.938635054847,
+          "order": 17,
+          "phase_cycles": 0.6458333333333334,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1828.245455916842,
+          "order": 17,
+          "phase_cycles": 0.6875,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1927.302335742725,
+          "order": 18,
+          "phase_cycles": 0.6458333333333334,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1931.60915660472,
+          "order": 18,
+          "phase_cycles": 0.6875,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        87,
+        88,
+        111,
+        112
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0051",
+      "persistence": 0.39683935081130395,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.2995954416415968,
+      "birth_location": [
+        {
+          "frequency_uHz": 2724.064195211785,
+          "order": 26,
+          "phase_cycles": 0.3541666666666667,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2728.3710160737796,
+          "order": 26,
+          "phase_cycles": 0.3958333333333333,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        296,
+        297
+      ],
+      "death": -0.66850847707955,
+      "death_location": [
+        {
+          "frequency_uHz": 2620.700494523907,
+          "order": 25,
+          "phase_cycles": 0.3541666666666667,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2625.0073153859016,
+          "order": 25,
+          "phase_cycles": 0.3958333333333333,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2724.064195211785,
+          "order": 26,
+          "phase_cycles": 0.3541666666666667,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2728.3710160737796,
+          "order": 26,
+          "phase_cycles": 0.3958333333333333,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        272,
+        273,
+        296,
+        297
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0052",
+      "persistence": 0.3689130354379532,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.41793330910283255,
+      "birth_location": [
+        {
+          "frequency_uHz": 1750.7226804009335,
+          "order": 16,
+          "phase_cycles": 0.9375,
+          "row": 2
+        },
+        {
+          "frequency_uHz": 1755.0295012629285,
+          "order": 16,
+          "phase_cycles": 0.9791666666666666,
+          "row": 2
+        }
+      ],
+      "birth_vertices": [
+        70,
+        71
+      ],
+      "death": -0.7479684811503363,
+      "death_location": [
+        {
+          "frequency_uHz": 2159.8706622904506,
+          "order": 20,
+          "phase_cycles": 0.8958333333333334,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2164.1774831524453,
+          "order": 20,
+          "phase_cycles": 0.9375,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2263.2343629783286,
+          "order": 21,
+          "phase_cycles": 0.8958333333333334,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2267.5411838403234,
+          "order": 21,
+          "phase_cycles": 0.9375,
+          "row": 7
+        }
+      ],
+      "death_vertices": [
+        165,
+        166,
+        189,
+        190
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0053",
+      "persistence": 0.33003517204750377,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.38646689091648356,
+      "birth_location": [
+        {
+          "frequency_uHz": 2547.484539869993,
+          "order": 24,
+          "phase_cycles": 0.6458333333333334,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2551.791360731988,
+          "order": 24,
+          "phase_cycles": 0.6875,
+          "row": 10
+        }
+      ],
+      "birth_vertices": [
+        255,
+        256
+      ],
+      "death": 0.17683295247826708,
+      "death_location": [
+        {
+          "frequency_uHz": 2444.120839182115,
+          "order": 23,
+          "phase_cycles": 0.6458333333333334,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2448.42766004411,
+          "order": 23,
+          "phase_cycles": 0.6875,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2547.484539869993,
+          "order": 24,
+          "phase_cycles": 0.6458333333333334,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2551.791360731988,
+          "order": 24,
+          "phase_cycles": 0.6875,
+          "row": 10
+        }
+      ],
+      "death_vertices": [
+        231,
+        232,
+        255,
+        256
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0054",
+      "persistence": 0.20963393843821648,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.11998444640379612,
+      "birth_location": [
+        {
+          "frequency_uHz": 2426.8935557341356,
+          "order": 23,
+          "phase_cycles": 0.4791666666666667,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2431.2003765961304,
+          "order": 23,
+          "phase_cycles": 0.5208333333333334,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        227,
+        228
+      ],
+      "death": -0.32608839625359404,
+      "death_location": [
+        {
+          "frequency_uHz": 2332.143496770247,
+          "order": 22,
+          "phase_cycles": 0.5625,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2336.4503176322423,
+          "order": 22,
+          "phase_cycles": 0.6041666666666666,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2435.507197458125,
+          "order": 23,
+          "phase_cycles": 0.5625,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2439.8140183201203,
+          "order": 23,
+          "phase_cycles": 0.6041666666666666,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        205,
+        206,
+        229,
+        230
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0055",
+      "persistence": 0.2061039498497979,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.35643787545696204,
+      "birth_location": [
+        {
+          "frequency_uHz": 2370.9048845282014,
+          "order": 22,
+          "phase_cycles": 0.9375,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2375.2117053901966,
+          "order": 22,
+          "phase_cycles": 0.9791666666666666,
+          "row": 8
+        }
+      ],
+      "birth_vertices": [
+        214,
+        215
+      ],
+      "death": -0.5566075168517499,
+      "death_location": [
+        {
+          "frequency_uHz": 2366.5980636662066,
+          "order": 22,
+          "phase_cycles": 0.8958333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2370.9048845282014,
+          "order": 22,
+          "phase_cycles": 0.9375,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2469.9617643540846,
+          "order": 23,
+          "phase_cycles": 0.8958333333333334,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2474.2685852160794,
+          "order": 23,
+          "phase_cycles": 0.9375,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        213,
+        214,
+        237,
+        238
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0056",
+      "persistence": 0.20016964139478788,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.027594630891454336,
+      "birth_location": [
+        {
+          "frequency_uHz": 2181.4047666004253,
+          "order": 21,
+          "phase_cycles": 0.10416666666666667,
+          "row": 7
+        },
+        {
+          "frequency_uHz": 2185.71158746242,
+          "order": 21,
+          "phase_cycles": 0.14583333333333334,
+          "row": 7
+        }
+      ],
+      "birth_vertices": [
+        170,
+        171
+      ],
+      "death": -0.1488255317075583,
+      "death_location": [
+        {
+          "frequency_uHz": 2284.7684672883033,
+          "order": 22,
+          "phase_cycles": 0.10416666666666667,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2289.075288150298,
+          "order": 22,
+          "phase_cycles": 0.14583333333333334,
+          "row": 8
+        },
+        {
+          "frequency_uHz": 2388.1321679761813,
+          "order": 23,
+          "phase_cycles": 0.10416666666666667,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2392.438988838176,
+          "order": 23,
+          "phase_cycles": 0.14583333333333334,
+          "row": 9
+        }
+      ],
+      "death_vertices": [
+        194,
+        195,
+        218,
+        219
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0057",
+      "persistence": 0.17642016259901264,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.2722280196084157,
+      "birth_location": [
+        {
+          "frequency_uHz": 1970.3705443626743,
+          "order": 19,
+          "phase_cycles": 0.0625,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 1974.6773652246693,
+          "order": 19,
+          "phase_cycles": 0.10416666666666667,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        121,
+        122
+      ],
+      "death": -0.43886663979338764,
+      "death_location": [
+        {
+          "frequency_uHz": 1867.0068436747963,
+          "order": 18,
+          "phase_cycles": 0.0625,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1871.3136645367913,
+          "order": 18,
+          "phase_cycles": 0.10416666666666667,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1970.3705443626743,
+          "order": 19,
+          "phase_cycles": 0.0625,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 1974.6773652246693,
+          "order": 19,
+          "phase_cycles": 0.10416666666666667,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        97,
+        98,
+        121,
+        122
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0058",
+      "persistence": 0.16663862018497194,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.3084519126245656,
+      "birth_location": [
+        {
+          "frequency_uHz": 2780.0528664177186,
+          "order": 26,
+          "phase_cycles": 0.8958333333333334,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2784.3596872797134,
+          "order": 26,
+          "phase_cycles": 0.9375,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        309,
+        310
+      ],
+      "death": -0.39812795934409395,
+      "death_location": [
+        {
+          "frequency_uHz": 2577.6322859039574,
+          "order": 24,
+          "phase_cycles": 0.9375,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2581.9391067659526,
+          "order": 24,
+          "phase_cycles": 0.9791666666666666,
+          "row": 10
+        },
+        {
+          "frequency_uHz": 2680.9959865918354,
+          "order": 25,
+          "phase_cycles": 0.9375,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2685.3028074538306,
+          "order": 25,
+          "phase_cycles": 0.9791666666666666,
+          "row": 11
+        }
+      ],
+      "death_vertices": [
+        262,
+        263,
+        286,
+        287
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0059",
+      "persistence": 0.08967604671952834,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.5622032199236486,
+      "birth_location": [
+        {
+          "frequency_uHz": 2060.8137824645673,
+          "order": 19,
+          "phase_cycles": 0.9375,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2065.1206033265626,
+          "order": 19,
+          "phase_cycles": 0.9791666666666666,
+          "row": 5
+        }
+      ],
+      "birth_vertices": [
+        142,
+        143
+      ],
+      "death": -0.6502864861007158,
+      "death_location": [
+        {
+          "frequency_uHz": 1961.7569026386846,
+          "order": 18,
+          "phase_cycles": 0.9791666666666666,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1862.7000228128013,
+          "order": 18,
+          "phase_cycles": 0.020833333333333332,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 2065.1206033265626,
+          "order": 19,
+          "phase_cycles": 0.9791666666666666,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 1966.0637235006793,
+          "order": 19,
+          "phase_cycles": 0.020833333333333332,
+          "row": 5
+        }
+      ],
+      "death_vertices": [
+        119,
+        96,
+        143,
+        120
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0060",
+      "persistence": 0.08808326617706719,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.4672080111822573,
+      "birth_location": [
+        {
+          "frequency_uHz": 2009.1319321206286,
+          "order": 19,
+          "phase_cycles": 0.4375,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2112.4956328085063,
+          "order": 20,
+          "phase_cycles": 0.4375,
+          "row": 6
+        }
+      ],
+      "birth_vertices": [
+        130,
+        154
+      ],
+      "death": -0.5432771178246707,
+      "death_location": [
+        {
+          "frequency_uHz": 2013.4387529826236,
+          "order": 19,
+          "phase_cycles": 0.4791666666666667,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2017.7455738446183,
+          "order": 19,
+          "phase_cycles": 0.5208333333333334,
+          "row": 5
+        },
+        {
+          "frequency_uHz": 2116.8024536705016,
+          "order": 20,
+          "phase_cycles": 0.4791666666666667,
+          "row": 6
+        },
+        {
+          "frequency_uHz": 2121.1092745324963,
+          "order": 20,
+          "phase_cycles": 0.5208333333333334,
+          "row": 6
+        }
+      ],
+      "death_vertices": [
+        131,
+        132,
+        155,
+        156
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0061",
+      "persistence": 0.0760691066424134,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.31983033803128963,
+      "birth_location": [
+        {
+          "frequency_uHz": 2775.746045555724,
+          "order": 26,
+          "phase_cycles": 0.8541666666666666,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2780.0528664177186,
+          "order": 26,
+          "phase_cycles": 0.8958333333333334,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        308,
+        309
+      ],
+      "death": -0.39125781364770895,
+      "death_location": [
+        {
+          "frequency_uHz": 2672.382344867846,
+          "order": 25,
+          "phase_cycles": 0.8541666666666666,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2676.6891657298406,
+          "order": 25,
+          "phase_cycles": 0.8958333333333334,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2775.746045555724,
+          "order": 26,
+          "phase_cycles": 0.8541666666666666,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2780.0528664177186,
+          "order": 26,
+          "phase_cycles": 0.8958333333333334,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        284,
+        285,
+        308,
+        309
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0062",
+      "persistence": 0.07142747561641932,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": 0.0732797206812087,
+      "birth_location": [
+        {
+          "frequency_uHz": 2767.132403831734,
+          "order": 26,
+          "phase_cycles": 0.7708333333333334,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2771.4392246937286,
+          "order": 26,
+          "phase_cycles": 0.8125,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        306,
+        307
+      ],
+      "death": 0.032085309118530914,
+      "death_location": [
+        {
+          "frequency_uHz": 2663.768703143856,
+          "order": 25,
+          "phase_cycles": 0.7708333333333334,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2668.0755240058506,
+          "order": 25,
+          "phase_cycles": 0.8125,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2767.132403831734,
+          "order": 26,
+          "phase_cycles": 0.7708333333333334,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2771.4392246937286,
+          "order": 26,
+          "phase_cycles": 0.8125,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        282,
+        283,
+        306,
+        307
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0063",
+      "persistence": 0.04119441156267778,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.19248590634723808,
+      "birth_location": [
+        {
+          "frequency_uHz": 2586.2459276279474,
+          "order": 25,
+          "phase_cycles": 0.020833333333333332,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2689.6096283158254,
+          "order": 26,
+          "phase_cycles": 0.020833333333333332,
+          "row": 12
+        }
+      ],
+      "birth_vertices": [
+        264,
+        288
+      ],
+      "death": -0.21354722247886732,
+      "death_location": [
+        {
+          "frequency_uHz": 2590.552748489942,
+          "order": 25,
+          "phase_cycles": 0.0625,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2594.8595693519374,
+          "order": 25,
+          "phase_cycles": 0.10416666666666667,
+          "row": 11
+        },
+        {
+          "frequency_uHz": 2693.91644917782,
+          "order": 26,
+          "phase_cycles": 0.0625,
+          "row": 12
+        },
+        {
+          "frequency_uHz": 2698.2232700398154,
+          "order": 26,
+          "phase_cycles": 0.10416666666666667,
+          "row": 12
+        }
+      ],
+      "death_vertices": [
+        265,
+        266,
+        289,
+        290
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0064",
+      "persistence": 0.021061316131629232,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.4027336218915141,
+      "birth_location": [
+        {
+          "frequency_uHz": 1901.4614105707556,
+          "order": 18,
+          "phase_cycles": 0.3958333333333333,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1905.7682314327506,
+          "order": 18,
+          "phase_cycles": 0.4375,
+          "row": 4
+        }
+      ],
+      "birth_vertices": [
+        105,
+        106
+      ],
+      "death": -0.41809012905436954,
+      "death_location": [
+        {
+          "frequency_uHz": 1798.0977098828776,
+          "order": 17,
+          "phase_cycles": 0.3958333333333333,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1802.4045307448725,
+          "order": 17,
+          "phase_cycles": 0.4375,
+          "row": 3
+        },
+        {
+          "frequency_uHz": 1901.4614105707556,
+          "order": 18,
+          "phase_cycles": 0.3958333333333333,
+          "row": 4
+        },
+        {
+          "frequency_uHz": 1905.7682314327506,
+          "order": 18,
+          "phase_cycles": 0.4375,
+          "row": 4
+        }
+      ],
+      "death_vertices": [
+        81,
+        82,
+        105,
+        106
+      ],
+      "dimension": 1,
+      "essential": false,
+      "pair_id": "RUDY-CYLINDER-D1-0065",
+      "persistence": 0.015356507162855415,
+      "representation_id": "RUDY-CYLINDER"
+    },
+    {
+      "birth": -0.22336544635935196,
+      "birth_location": [
+        {
+          "frequency_uHz": 2474.2685852160794,
+          "order": 23,
+          "phase_cycles": 0.9375,
+          "row": 9
+        },
+        {
+          "frequency_uHz": 2478.5754060780746,
+          "order": 23,
+          "phase_cycles": 0.9791666666666666,
+          "row": 9
+        }
+      ],
+      "birth_vertices": [
+        238,
+        239
+      ],
+      "death": null,
+      "death_location": null,
+      "death_vertices": null,
+      "dimension": 1,
+      "essential": true,
+      "pair_id": "RUDY-CYLINDER-D1-0066",
+      "persistence": null,
+      "representation_id": "RUDY-CYLINDER"
+    }
+  ],
+  "phases": [
+    0.020833333333333332,
+    0.0625,
+    0.10416666666666667,
+    0.14583333333333334,
+    0.1875,
+    0.22916666666666666,
+    0.2708333333333333,
+    0.3125,
+    0.3541666666666667,
+    0.3958333333333333,
+    0.4375,
+    0.4791666666666667,
+    0.5208333333333334,
+    0.5625,
+    0.6041666666666666,
+    0.6458333333333334,
+    0.6875,
+    0.7291666666666666,
+    0.7708333333333334,
+    0.8125,
+    0.8541666666666666,
+    0.8958333333333334,
+    0.9375,
+    0.9791666666666666
+  ],
+  "score": {
+    "combined": 0.29928582071833376,
+    "finite_h0_count": 45,
+    "finite_h1_count": 19,
+    "graph_only": 0.5861058412865686,
+    "orderwise": 1.4549187181398533,
+    "spacing_uHz": 103.363700687878,
+    "topology": 0.06461489479886885,
+    "valid_orders": 12
+  },
+  "valid": [
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  ],
+  "values": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -0.16896600986202204,
+      0.22622830362081597,
+      -0.09591664812878176,
+      -0.0511986375472471,
+      -0.07238724002384173,
+      0.17117582586077718,
+      0.2895072881992396,
+      0.46668930790649954,
+      -0.10789230407879427,
+      -0.06408519560423333,
+      -0.013039230505166362,
+      -0.17609049432091387,
+      0.15012409751999806,
+      -0.06396258966735129,
+      -0.008405335701815089,
+      0.10394187051048373,
+      -0.16679100427595445,
+      -0.049606352654267404,
+      0.14456670194030527,
+      -0.03398347177554207,
+      -0.21630169871385846,
+      0.012847779985255676,
+      -0.15692014567509568,
+      0.045979307282582545
+    ],
+    [
+      -0.054511557641202614,
+      0.0955427808149363,
+      0.15266712495845255,
+      0.2471251288386588,
+      -0.0029178394428873294,
+      0.31512747729887997,
+      0.12555000841206657,
+      0.3208808632334216,
+      0.07178593583951666,
+      0.12513436840684541,
+      0.1258770108064739,
+      0.1779011179371433,
+      0.08569774142912005,
+      -0.07263862161700906,
+      -0.24956660555823723,
+      0.07458184815475045,
+      -0.20037316181686168,
+      0.6422360334984901,
+      0.20606480394448054,
+      0.17465255126992998,
+      -0.01970202522876628,
+      0.006331165423139292,
+      -0.11465527325484938,
+      -0.05215468520315279
+    ],
+    [
+      0.03573331683218671,
+      -0.004291225496314804,
+      -0.03670702464251923,
+      0.19584848988484366,
+      0.37481848791581984,
+      0.18729204132009195,
+      0.49413350085890495,
+      0.042764046877501086,
+      -0.06569920619503349,
+      -0.11473368323061786,
+      -0.056619780148217065,
+      -0.052139616644028317,
+      0.02266853362341164,
+      0.1653210247079204,
+      -0.08952801988782975,
+      -0.3652106796816064,
+      0.4378739154441519,
+      0.9123914845931429,
+      0.1825542928518243,
+      0.07981075240870308,
+      0.14320780251492102,
+      -0.0423788497616274,
+      -0.09186229850231233,
+      -0.19158522859323127
+    ],
+    [
+      -0.03040751923288941,
+      -0.1251219386001269,
+      -0.014532537040536178,
+      0.23239048695838221,
+      0.5761013982359126,
+      0.3347552409352033,
+      0.5286626367342251,
+      0.1470850290634741,
+      -0.02764335269571329,
+      -0.008340137296215426,
+      -0.10705542964919015,
+      -0.1013861320947848,
+      0.06584102652192007,
+      -0.010969292136942414,
+      -0.07115523363419687,
+      0.13461643631613326,
+      0.9284902591495932,
+      0.7584650526481371,
+      0.12597498891380324,
+      -0.03265391007545028,
+      -0.09776586843946702,
+      -0.07559490961881353,
+      -0.07100238168049029,
+      -0.23083186175379097
+    ],
+    [
+      0.029429047789785636,
+      -0.04180262850764094,
+      0.05500553256592579,
+      0.520957194071034,
+      0.5062481773612503,
+      0.756611890392571,
+      0.4725774509683343,
+      0.18516294559084667,
+      -0.16499701510697606,
+      0.006513461268064829,
+      -0.13929262429456174,
+      -0.17732717761576847,
+      -0.01646282244762242,
+      0.1855137440244161,
+      0.20993182407677327,
+      0.05807326752380557,
+      1.1477936081527798,
+      0.7338887010299894,
+      0.057880115009776974,
+      -0.31346972703742154,
+      0.021477361872025424,
+      -0.07889883339022033,
+      -0.1867902286652574,
+      -0.08241290255165706
+    ],
+    [
+      0.05143676775646355,
+      -0.2918930003930465,
+      -0.09790067928011417,
+      0.6419032714205829,
+      0.6724190335533997,
+      1.0675465421747845,
+      0.2986006054440771,
+      0.0375776004820042,
+      0.0006829802590953872,
+      -0.21937937308396888,
+      0.2308239291202873,
+      -0.09967558805155605,
+      -0.00810993419315913,
+      0.17881257565516437,
+      0.09621630983719046,
+      0.35673362050720425,
+      1.0969025774870373,
+      1.1082906310980665,
+      0.27087698308985125,
+      -0.019965480097113908,
+      0.06143278519352773,
+      -0.27967285927860125,
+      -0.23533717144715416,
+      0.07118730882767282
+    ],
+    [
+      -0.015723931095475246,
+      0.21522806686278967,
+      0.10810869674229408,
+      0.44591033503067823,
+      0.88219354139372,
+      0.9925495963865343,
+      0.5570085644387324,
+      0.023626992636100325,
+      0.06162239861562516,
+      -0.15823675486254876,
+      0.224990776684405,
+      0.13332824840505136,
+      0.03880209690656714,
+      0.11227426509043001,
+      0.25450858196751286,
+      0.3064819831539111,
+      1.3237802465399724,
+      0.9287234696190669,
+      0.02482234450990031,
+      0.01731053896796573,
+      0.10867515839655993,
+      0.10849733008577228,
+      0.022852703531826037,
+      -0.10501228610616592
+    ],
+    [
+      0.08680587032935459,
+      0.12120930593481165,
+      0.019898615442787763,
+      0.3885611178700025,
+      0.7720094217624149,
+      1.1622761806373831,
+      0.5001182765154214,
+      0.09937407651954235,
+      0.03789820851642076,
+      0.15314629122931983,
+      -0.0074734462003715535,
+      0.06482391064769778,
+      0.004468217618413825,
+      -0.06873281683023011,
+      0.33821322662687686,
+      0.46841044080722216,
+      0.9496110350202547,
+      1.0713343026506859,
+      0.1068205060572469,
+      0.06130090003536729,
+      0.03943215471269142,
+      -0.18399237712930805,
+      -0.0839075564319141,
+      0.11870413239363978
+    ],
+    [
+      0.22629561155816114,
+      0.2765583924860983,
+      0.2990344418045002,
+      0.605649993536266,
+      0.8264454528870183,
+      1.0939537953357135,
+      0.5497378516374525,
+      0.09645200158212575,
+      0.04421062359245649,
+      0.023238567410073956,
+      0.05845365306771974,
+      0.03431915809466885,
+      0.10920521060066009,
+      0.41043861890164,
+      0.420181379334899,
+      0.18272785753570045,
+      0.5669319664293019,
+      0.6281586812608434,
+      0.232817983117122,
+      0.26379241768330575,
+      0.10855066171675831,
+      0.022112795467656633,
+      0.061539515443357555,
+      -0.017371341883109077
+    ],
+    [
+      0.2856391831879426,
+      0.09569045585647845,
+      0.27681850769091004,
+      0.6018560347343901,
+      0.6366376822148734,
+      0.5787478843796272,
+      0.3625321603990132,
+      0.13309091445520274,
+      -0.05158145784333996,
+      0.12028940714973502,
+      0.21573937275248428,
+      -0.21467444744200784,
+      0.07718452868337203,
+      0.2804499220112568,
+      0.29783152953196756,
+      0.2875448267548087,
+      0.5202412955039144,
+      0.6356425802208628,
+      0.23013455349017356,
+      0.2280289706578255,
+      -0.07404041185396246,
+      0.02770454279763837,
+      -0.10475259837548005,
+      0.21362584805224494
+    ],
+    [
+      -0.0019315718770521314,
+      -0.012462229942866746,
+      0.02156317540405905,
+      0.1560054397768987,
+      0.35713791326736055,
+      0.2636656969659476,
+      0.29816427255517386,
+      0.20526304992186908,
+      -0.23994285724320805,
+      0.05719066162900944,
+      0.010589306776614198,
+      0.10773639091450539,
+      0.16358336199384876,
+      -0.033322567379181024,
+      0.008934687390201902,
+      0.33840750066416464,
+      0.37443469771563725,
+      0.4294854397815891,
+      0.11035403585583237,
+      0.20004401798371513,
+      -0.10131752552728755,
+      -0.008202747779432912,
+      -0.06584709523946326,
+      -0.024846413538054123
+    ],
+    [
+      0.043095217196022245,
+      0.09307998177819753,
+      0.15185375533548062,
+      0.11305415458758232,
+      0.2435339872732888,
+      0.26825622245167496,
+      0.21496994899612915,
+      0.08976343950185971,
+      -0.05548633952423149,
+      0.27101751897114934,
+      0.02713381491803824,
+      -0.19256947340162123,
+      -0.02174234080575476,
+      0.05643275946683181,
+      -0.05557337871576481,
+      0.16965947314088098,
+      0.31675327597029834,
+      0.16418819727926678,
+      0.27620331389583724,
+      0.13095124163717126,
+      -0.0656037877190779,
+      -0.059914575015715885,
+      0.11472796765249367,
+      0.057907947962260294
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ]
+}

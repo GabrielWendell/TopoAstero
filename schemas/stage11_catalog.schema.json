@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.local/schemas/stage11_catalog.schema.json",
+  "title": "Stage 11 star-grouped catalog with explicit missingness",
+  "type": "object",
+  "required": ["schema_version", "role", "rows"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "role": {"enum": ["development", "internal_validation", "descriptive_benchmark", "final_holdout"]},
+    "rows": {"type": "array", "items": {"type": "object", "required": ["stable_star_id", "role", "method", "quantity", "estimate", "reference", "status", "flags", "input_id"], "properties": {
+      "stable_star_id": {"type": "string", "pattern": "^KIC [1-9][0-9]{5,8}$"},
+      "method": {"enum": ["classical", "topology"]},
+      "quantity": {"enum": ["numax", "dnu"]},
+      "estimate": {"type": ["number", "null"]},
+      "reference": {"type": "number", "exclusiveMinimum": 0},
+      "lower": {"type": ["number", "null"]},
+      "upper": {"type": ["number", "null"]},
+      "status": {"enum": ["ok", "limited", "excluded", "not_detected", "missing_input", "pipeline_failure"]}
+    }}}
+  }
+}

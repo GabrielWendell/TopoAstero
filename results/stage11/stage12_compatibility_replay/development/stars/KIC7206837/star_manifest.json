@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7206837/analysis.json",
+      "sha256": "f93fedfcc22236dac140ca92204e1be6d9cf407ab8afef7cbf396b5f0aec0671",
+      "size_bytes": 746
+    }
+  ],
+  "input_id": "94bb6a98ee04d5072ae58bced6a4dbbea50819282e7356c2caf0f6ab0cf1c2b4",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7206837"
+}

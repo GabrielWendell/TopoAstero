@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3656476/analysis.json",
+      "sha256": "dde023db9652f11138281449fbfe51e272f3ca8d6da825192c9e0f2527ab2cb8",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "04bb23b960042ad10e7dd64503c8690ed5c5c066d2c933059ec892b8515764f6",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 3656476"
+}

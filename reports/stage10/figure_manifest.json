@@ -1,0 +1,143 @@
+{
+  "figures": [
+    {
+      "caption": "Kepler absolute-time observations (every 200th cadence for display) and cadence-mask spectral windows; no gap compression.",
+      "figure_id": "01_observation_window",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/observation_preview.csv",
+        "results/stage10/spectral_windows.csv"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "PSD and all three registered Harvey families; primary whitening uses minimum descriptive BIC. The published envelope location is contextual, not a tuning target.",
+      "figure_id": "02_psd_background",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/broad_spectrum.csv",
+        "results/stage10/branch_spectra.csv",
+        "results/stage10/summary.json"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Conventional echelle at the primary classical ACF spacing, with externally degree-identified Lund et al. modes. Folded row indices are not physical radial-order labels.",
+      "figure_id": "03_ordinary_echelle",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/branch_spectra.csv",
+        "results/stage10/published_mode_overlay.csv",
+        "results/stage10/summary.json"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Localized finite path H0 classes. Their lifetimes equal elder-rule peak prominence exactly; the essential component is retained in the JSON but omitted from numeric summaries.",
+      "figure_id": "04_localized_persistence",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/localized_peaks.json",
+        "results/stage10/summary.json"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Spectral and cylindrical trial scans retain half, nominal, double and boundary alternatives. Cylindrical performance remains geometry-only under G8; a matching Rudy spacing cannot establish estimator utility.",
+      "figure_id": "05_spacing_aliases",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/spectral_score_scan.csv",
+        "results/stage10/echelle_score_scan.csv"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Periodic cylindrical field and competing ridge-graph paths. Seam duplication is display-only. The paths lack a defensible degree anchor, so no topological frequency ratios are reported.",
+      "figure_id": "06_cylinder_ridges",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/cylinder.json"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Rudy and actual TESS sectors placed against the registered simulation coordinates. This is domain context, not a calibrated inversion from simulated parameters to stellar properties.",
+      "figure_id": "07_simulation_placement",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/simulation_placement.csv"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "All 72 registered branch/factor diagnostics. Red bars are monthly-estimator bootstrap intervals, gray bars registered pipeline ranges, and green crosses full-span points; their estimands differ and the components are not combined.",
+      "figure_id": "08_sensitivity_uncertainty",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/robustness.csv",
+        "results/stage10/uncertainty_budget.csv"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Quarter and cumulative-baseline diagnostics with the full-span background held fixed. Quarter scatter reflects realization plus window variation; cumulative points overlap and are not independent replicates.",
+      "figure_id": "09_quarter_stability",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/quarter_stability.csv"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    },
+    {
+      "caption": "Same-star Kepler degradation through all 11 real TESS windows, three source offsets, two durations/duty factors and three added-noise factors. Reused Kepler segments are correlated; actual TESS candidates remain unconfirmed under the Stage 3 thresholds.",
+      "figure_id": "10_kepler_tess_transfer",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "sources": [
+        "results/stage10/kepler_to_tess.csv",
+        "results/stage10/tess_sectors.csv"
+      ],
+      "style_id": "TA-PLOT-1.0"
+    }
+  ]
+}

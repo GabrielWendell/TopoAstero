@@ -1,0 +1,55 @@
+{
+  "covariance_available": false,
+  "edition": "Lund2017-erratum-ApJ850-110-CDS",
+  "erratum_doi": "10.3847/1538-4357/aa9658",
+  "files": [
+    {
+      "path": "data/reference/stage11/mode_frequencies.csv",
+      "sha256": "482c626032e0bf553f38a6714d4e3b37b81a1d399faa026f4f77b58d7439cba9",
+      "size_bytes": 422903
+    },
+    {
+      "path": "data/reference/stage11/frequency_ratios.csv",
+      "sha256": "6df2fad477cf51510586a5ec8c51549ddb4ada8abd7c8249b5dfe87918a879da",
+      "size_bytes": 362536
+    },
+    {
+      "path": "data/reference/stage11/covariates.csv",
+      "sha256": "0490cb6d378edec6a454e1984c885714891190e1eed55760a462da3e6baa33c1",
+      "size_bytes": 9092
+    },
+    {
+      "path": "data/reference/stage11/duplicate_reference_rows.csv",
+      "sha256": "2243f6efe7401ae629fa97cbf420b374cd151859c072a4bdfdae9d66ab62897c",
+      "size_bytes": 2996
+    }
+  ],
+  "identical_duplicate_mode_rows": 45,
+  "mode_rows": 2843,
+  "ratio_rows": 2508,
+  "schema_version": 1,
+  "sources": [
+    {
+      "name": "ReadMe",
+      "sha256": "9db660e79ddb09785955b5e5940d8dde9bd39ae295f3a6146895ba9a20ed2a94",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/835/172/ReadMe"
+    },
+    {
+      "name": "table1.dat",
+      "sha256": "ffcf72155f251206e5c3a7ecff5b29b0ac5c1835d2dca3e0d8ce4ecf7d9e3e39",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/835/172/table1.dat"
+    },
+    {
+      "name": "table6.dat",
+      "sha256": "f178f0446ffe8ee9a5bb165ad3fd28b0b7161de6696666444bd35eac2479197b",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/835/172/table6.dat"
+    },
+    {
+      "name": "table7.dat",
+      "sha256": "353912464867fcd3244a04109beadfa526cb5b2e998e690a8987f2281127a42b",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/835/172/table7.dat"
+    }
+  ],
+  "stars": 66,
+  "uncertainty_semantics": "published_asymmetric_intervals; no Gaussian conversion; no joint covariance inferred"
+}

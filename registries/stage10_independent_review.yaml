@@ -1,0 +1,12 @@
+schema_version: 1
+review_id: TA-S10-INDEPENDENT-REVIEW-001
+status: pending_external_review
+reviewed_snapshot: reports/stage10/freeze_manifest.json
+reviewer_name: null
+reviewer_affiliation: null
+reviewer_independent_of_authors: null
+review_date: null
+document_sha256: null
+decision: null
+reproduced_claim_ids: []
+notes: Automated clean-process reproduction is separate from independent human reproduction and claim review.

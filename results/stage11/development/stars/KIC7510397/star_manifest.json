@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/development/stars/KIC7510397/analysis.json",
+      "sha256": "976b6438095c41b1ecdc961804a133bb37ce8f514ee0aa708d26c4c424eb47c3",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "8b5ad16207b6105e28704069956d4f08e7a43d752bc8a88537d7b4970ca630df",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7510397"
+}

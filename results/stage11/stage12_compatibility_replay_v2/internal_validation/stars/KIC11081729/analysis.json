@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC11081729/analysis.json",
+    "sha256": "d0e4a703daf26e57e4b96d5149160fae9d2e5b5e7db3732f0ba3ca2f78735aed",
+    "size_bytes": 757
+  },
+  "available_products": 0,
+  "completed_failed_records_retried": false,
+  "expected_products": 39,
+  "input_id": "9ede4e87709ec2134d1c00ff7e577838fd5542a63300d135377ab385c855b41a",
+  "quality_flags": [
+    "missing_products"
+  ],
+  "reason": "fewer_than_three_nonoverlapping_months",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "internal_validation",
+  "stable_star_id": "KIC 11081729",
+  "status": "missing_input"
+}

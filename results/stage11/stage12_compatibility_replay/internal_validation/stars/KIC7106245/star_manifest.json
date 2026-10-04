@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC7106245/analysis.json",
+      "sha256": "d243f7f3097b0c8b6f00eb8cf711c67f3d473d5c80c1a806da78686c02fa87fd",
+      "size_bytes": 755
+    }
+  ],
+  "input_id": "26675c1c485bbf1c590dd84fda8b38819e140878c7c622758471509d6cb907e3",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7106245"
+}

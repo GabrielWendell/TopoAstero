@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/catalog.csv",
+      "sha256": "63654729e7bb5e30537a990a6e3270cc5d2216dba48e5db26b640e60e779aa2b",
+      "size_bytes": 1452
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/catalog.json",
+      "sha256": "b24d153fb505d2eeb2e58403f86cb308eccacca0863c8846449d7e5261ab425f",
+      "size_bytes": 3681
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/operating_domain.csv",
+      "sha256": "47505ec2a447e1708139b8bbff521d4c7550802e123b4edd264bda10ec354a99",
+      "size_bytes": 5315
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/paired_comparisons.csv",
+      "sha256": "c120724ea01549c089a5db67cceb5ca16c12f1c8d242bdaf01e3f342aa6f29f3",
+      "size_bytes": 343
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/performance.csv",
+      "sha256": "b3835ac88ac415a30176a4f55a0979b20c614927aa0210fa1f6611577bd79cfc",
+      "size_bytes": 1471
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/ratio_benchmark.csv",
+      "sha256": "6f1b524801e627092d461592f8bf9cefdf37e3ebaf4b70dd147c5a160859aa49",
+      "size_bytes": 10894
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/stars/KIC10963065/analysis.json",
+      "sha256": "9bbfbe5614a3976fd702190cf268d8a4d829f3f04cd41c1b34e75faf95f53a4b",
+      "size_bytes": 397
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/stars/KIC10963065/star_manifest.json",
+      "sha256": "fa052c66a61ef33115a69c24fd2b8c44b4f19858ee306da68c2cdaf05d6586eb",
+      "size_bytes": 419
+    },
+    {
+      "path": "results/stage11/population_dev/descriptive_benchmark/summary.json",
+      "sha256": "703293e631d7b4c85fb3729d67ba2ee5aefa2565a2e5b7db2c362cadd6365709",
+      "size_bytes": 913
+    }
+  ],
+  "role": "descriptive_benchmark",
+  "schema_version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7680114/analysis.json",
+      "sha256": "fcb9c9d67d951f3cba1307246d5c9c16759c4b7c279b40c06cd6922e806ddc84",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "4921a7f281c2b387ed977e57f5e74f9f14a63a8bffc83b7068f3a60992266f19",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7680114"
+}

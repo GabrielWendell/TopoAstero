@@ -1,0 +1,30 @@
+{
+  "bootstrap_unit": "star_for_population_month_for_star_interval",
+  "code_sha256": "748e7ba8e9797eca652290ef37b5c57ad9711c467d7631cf82e4f74a86b1cb5d",
+  "configuration_sha256": "630f82befd317083c36b3d502ff47a5686c269336b678107841d4e0648ce7ea1",
+  "holdout_used": false,
+  "multiplicity": "holm_primary_tost",
+  "primary_quantities": [
+    "numax",
+    "dnu"
+  ],
+  "probability_calibration": "withheld_positive_only_no_null_validation",
+  "raw_payloads_reprocessed": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "ridge_inference": "geometry_only",
+  "role": "descriptive_benchmark",
+  "schema_version": 1,
+  "split_sha256": "12036c71b9ca1a6f1e4425bcff718c1926fe300cbde22558cd9ebd79182019d1",
+  "stars": 1,
+  "stars_with_estimates": 0,
+  "statuses": [
+    {
+      "flags": [
+        "pipeline_failure"
+      ],
+      "input_id": "d5a16f5faec270678978d5cd92ca724ad56eea5a91ae980af98650cf1ce52875",
+      "stable_star_id": "KIC 10963065",
+      "status": "pipeline_failure"
+    }
+  ]
+}

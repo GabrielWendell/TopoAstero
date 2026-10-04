@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "python_version": "3.12.14",
+  "test_count": 397,
+  "failures": 0,
+  "errors": 0,
+  "coverage_percent": 85.04321301474326,
+  "coverage_requirement": 85,
+  "checks": {
+    "pytest": "pass",
+    "ruff": "pass",
+    "mypy_strict": "pass",
+    "source_and_wheel_build": "pass",
+    "portability": "pass",
+    "stage_0_through_11_implementation_validators": "pass",
+    "stage11_raw_non_holdout_reproduction": "pass",
+    "stage11_reduced_replay": "pass",
+    "latex_compile_and_visual_inspection": "pass",
+    "stage10_portable_raw_reproduction": "pass"
+  },
+  "stage11_observed_stars": 1,
+  "stage11_observed_products": 10,
+  "stage11_expected_products": 2159,
+  "scientific_G11": "population_pending",
+  "confirmation_openings": 0,
+  "container_built": false,
+  "limitations": [
+    "Only Python 3.12.14 executed locally; CI retains the existing 3.11/3.12/3.13 matrix.",
+    "Full LEGACY payload acquisition and signed confirmation have not been executed.",
+    "The strict inherited Stage 10 comparison did not pass; the separate portable numerical/rendered comparison passed, with both results preserved.",
+    "Independent human G9/G10 reviews remain pending."
+  ]
+}

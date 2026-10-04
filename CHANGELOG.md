@@ -9,6 +9,22 @@ describe software releases, while immutable experiment IDs identify scientific r
 
 - Follow-up estimator development under a newly registered protocol; no Stage 8 score utility claim.
 
+## [0.11.0] - 2026-10-01
+
+### Added
+
+- Complete T10.1-T10.10 Rudy/Paper I internal review capsule: 21 checksum-verified public
+  Kepler/TESS products, original tutorial, independent background/ACF, localized spectral
+  persistence, periodic cylinder and graph/conventional/Hough/classical controls.
+- 72 registered branch diagnostics, 256 window-matched conditional nulls with seven-family
+  Holm correction, monthly/quarter/stochastic uncertainty and 396 real-window TESS transfers.
+- Explicit segment-duty PSD conversion and analytic linear-interpolation response correction,
+  validated by nuisance checks before the freeze; exact Stage 3 TESS feasibility policy retained.
+- Eight bounded claims, editable and compiled Paper I internal review draft, ten PDF/SVG/PNG
+  academic figures, schemas, offline replay, raw-product clean reproduction and integrity tests.
+- Honest G10 independent-human-review hold, preserving G7 drop, G8 geometry_only and G9
+  proof-review pending. No public publication/DOI or population utility claim is invented.
+
 ## [0.10.0] - 2026-09-29
 
 ### Added
@@ -147,3 +163,24 @@ describe software releases, while immutable experiment IDs identify scientific r
 - Falsifiable hypothesis registry, terminology dictionary, and objective crosswalk.
 - Preregistered validation, data-management, risk, resource, and change-control artifacts.
 - Installable package, deterministic persistence smoke workflow, tests, CI, and lock file.
+
+
+## Stage 11 additive extension (TA-S11-LEGACY-v1)
+
+- Added 66-star cohort reconciliation and corrected erratum mode/ratio import.
+- Added checksum acquisition, monthly PSD/background/window batching, frozen
+  persistent-peak and cylindrical geometry diagnostics, paired uncertainties.
+- Added star-paired performance, TOST/Holm, explicit missingness/failure domains
+  and reference-conditioned ridge-ratio checks.
+- Added a verifiably signed release and atomic one-time confirmation/resume guard.
+- Added source-backed reports, figures, Paper II draft, schemas and tests.
+- Preserved prior core source files and the original grouped split; repaired
+  inherited stale administrative seals and checked Stage 10 clean reproduction.
+- Scientific G11 remains population_pending until acquisition and confirmation.
+
+## Stage 12 implementation
+
+- Add the `topoastero.hybrid` package, task/feature registries and grouped inference/quality workflows without changing frozen prior estimator modules or dependency versions.
+- Add matched physical degradation, resumable arrays/checkpoints, sectorwise actual TESS cases and conditional transfer contributions.
+- Add signed model-release/first-archive guards, optional authorized development-simulation calibration, source-backed figures, model card and Paper III.
+- Preserve the supplied archive's failed/missing records, repair inherited portability/admin seals, and reproduce Stage 10 plus available Stage 11 derived spectra honestly.

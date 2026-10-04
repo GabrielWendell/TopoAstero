@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC9025370/analysis.json",
+      "sha256": "59f45a0e16b6b7334d213b0381d11af6d8f25123d46027330f38071ed6106174",
+      "size_bytes": 755
+    }
+  ],
+  "input_id": "5e3587521c1074cbbff9032fb9805f55f0a96c4b1f7e2d11a1ed852c8c9ae79f",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9025370"
+}

@@ -1,0 +1,566 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/catalog.csv",
+      "sha256": "59a7d3268f86a98c4ecb7c76c79db2e845e3cdb46b77fee1a163cef49a09b009",
+      "size_bytes": 45795
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/catalog.json",
+      "sha256": "50c7895b19a2d4cca9061f119f974dd619ee77563fdf1e298e33678718c27f53",
+      "size_bytes": 140174
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/operating_domain.csv",
+      "sha256": "647f5b76afe3923274c65b453f146db0ec1e21f81f76674b87aeec3ac4aaf102",
+      "size_bytes": 16670
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/paired_comparisons.csv",
+      "sha256": "2a9db82fdc67ef84ce00ed2d109b0b421701b92b5257329a0691167484027bd4",
+      "size_bytes": 727
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/performance.csv",
+      "sha256": "54fb8c6668d4bbe3f4ebf3375bda717ddb8bc0f0e8a924c070f60d1d84dc9da5",
+      "size_bytes": 3051
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/ratio_benchmark.csv",
+      "sha256": "e7edadc7b77a003c458d0fecbfde23f304cb167d81ad833cd7b62fc45b4df9d0",
+      "size_bytes": 387806
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10162436/analysis.json",
+      "sha256": "789650ba5f1459eda4d756af44159b77cc56c744d5484837115352b66b6a9c3b",
+      "size_bytes": 762
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10162436/star_manifest.json",
+      "sha256": "d2c2d97a059f1057e4236373a0f060ba646c60ece688a594a0ee99c8cf92a34a",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10454113/analysis.json",
+      "sha256": "eb7801eb99191f5bc31953f10f5211a1c9183ca1dc21ff7c978dab60074cdcb8",
+      "size_bytes": 762
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10454113/star_manifest.json",
+      "sha256": "5a4f5ab1ba900fb0929fd4099d5fb4b8325cf7e3acc7f76550d1bc9102609649",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10516096/analysis.json",
+      "sha256": "ad89c3874b3d03f49c8dcfb55190a3c7e5e2c5c07a32a91028b1d4abccbfe23f",
+      "size_bytes": 762
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10516096/star_manifest.json",
+      "sha256": "17de20efbafa4f725d65203b79ad6ba5044850573e1a305d21cdd06077e66b2c",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10730618/analysis.json",
+      "sha256": "5f64878741b637aa04b1b5821cf2db0599d8160e9fbb7dda204baeffbffaf76c",
+      "size_bytes": 232086
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10730618/mean_spectrum.csv",
+      "sha256": "f9cec17508679b99b6b9847278dd0a66f2277916914a9afa3ce81d1bb2c8e3e0",
+      "size_bytes": 345943
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10730618/monthly_spectra.npz",
+      "sha256": "d3b2072fc52c42c2dd591591faa8cc6ab2e354928a64911fdebecb704bbf0114",
+      "size_bytes": 1473115
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10730618/segment_bootstrap.csv",
+      "sha256": "964e50c1710721a5f2e6a1271b844c46d10d2e7cc577b273dfa12a78f201041b",
+      "size_bytes": 8326
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10730618/star_manifest.json",
+      "sha256": "ad7af9220978838dd00bfc879542b7fb0e99fcaf126085057a41f1ed13e43b93",
+      "size_bytes": 1135
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC11253226/analysis.json",
+      "sha256": "e424e4aec3054e241f2f1675d41cc9c235103c6fdc344894f33c329643de42eb",
+      "size_bytes": 762
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC11253226/star_manifest.json",
+      "sha256": "71726f2899865d3b19370f9c66272b22de2eb71c7ff1934d04fbc9ae082556e7",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC11772920/analysis.json",
+      "sha256": "4aeae515176963f2dca55cf085ef37c2812468304ba29ea4a20c99652c8bf75e",
+      "size_bytes": 762
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC11772920/star_manifest.json",
+      "sha256": "51e3af69ce366175169266fea04a444dc4cd04e147a71c02038bf98a3c3dd39f",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069127/analysis.json",
+      "sha256": "4e531993037afbcb95ee8b2fdce7a57a752a681c2255783d7b15d2549bbd0c08",
+      "size_bytes": 229206
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069127/mean_spectrum.csv",
+      "sha256": "7b3d02e451dec762ef0d74e09208832512a48c0023f79aab3a05a800b847b393",
+      "size_bytes": 339819
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069127/monthly_spectra.npz",
+      "sha256": "d8a259479a6293ec3d343666df17ce90ead346ccf878bc35be5971355285231d",
+      "size_bytes": 1001186
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069127/segment_bootstrap.csv",
+      "sha256": "51f7e17502aeea491bb3769fc4bd1a91b40b7136b04e3c3dffc966afda51e6d8",
+      "size_bytes": 8203
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069127/star_manifest.json",
+      "sha256": "e339a6fb9a9cda9f2b1a66197cefc4c40d3a4715ce8247cd6f24c472e9c6a96b",
+      "size_bytes": 1135
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069449/analysis.json",
+      "sha256": "51ee17e6d049e5ec313842407618d135c0decd72591b34348feabbf1e79e4820",
+      "size_bytes": 755
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069449/star_manifest.json",
+      "sha256": "d27f91ea626f9e5f16f22af84c99e6989b81664c4d0dae149106d0f6921eb9d4",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12317678/analysis.json",
+      "sha256": "809401c6a96072fc16e80954aa56e132599d05c0b0de0906e56a4c1dd469c37d",
+      "size_bytes": 755
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12317678/star_manifest.json",
+      "sha256": "8d3a738a47d2eec4edfcc7ae5df6d9b98f90d01ad4c0e811e65cfe312ffa925c",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC1435467/analysis.json",
+      "sha256": "2307e2fb7418b74e1c7a4857a56e4e639c086c537d5e27c21e5d92be90865bd6",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC1435467/star_manifest.json",
+      "sha256": "1fad755f489148a69f3735ae0b118c89ba56f58ad48670cdeebcc803b86a4cc3",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC2837475/analysis.json",
+      "sha256": "53f59701790ac6884bcce3a7513f49e3fe43a045bdb3b644f86ea08bde206a59",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC2837475/star_manifest.json",
+      "sha256": "40782e989a00ef576ebb223f76a6bd931162f59945a9f7593df4d0cdce7c55bb",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3427720/analysis.json",
+      "sha256": "cc7b75842347fc23bae1b9fe352023a54168da4f1f470bd04731ebc8e886c5af",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3427720/star_manifest.json",
+      "sha256": "e2e551d1830a42974598a185a19aa14f49f6eb62f43923047b388e1759ceb813",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3656476/analysis.json",
+      "sha256": "dde023db9652f11138281449fbfe51e272f3ca8d6da825192c9e0f2527ab2cb8",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3656476/star_manifest.json",
+      "sha256": "82e0386282c438b774bd7d6d7f26c6c4eb6f33e5dbfbfcf090e365d37c2af10e",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3735871/analysis.json",
+      "sha256": "f92878c84a170a6b31b7aff58b1c54240188ebb134f30b8c1efe8799dd1bf544",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3735871/star_manifest.json",
+      "sha256": "edf881a6c58c3b213a1494bb1a1444052c90aba319d53170839642619698a803",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC4914923/analysis.json",
+      "sha256": "315963fccc90131e61562b2ff57e415a55bd1dc6c006c4198df26d261bf6bf88",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC4914923/star_manifest.json",
+      "sha256": "d3e7457147f84f4f8385fddd43f9bb81146d00423c2598e0adcde5b9207dac13",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5184732/analysis.json",
+      "sha256": "926afe3f830bb9ba3cd4f5ccc57444dfcb895ef36de19669b169564c6d45d7a2",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5184732/star_manifest.json",
+      "sha256": "29d63fe18919136520e41376da1cd7326f10305338d69f602bd3bc9af5c85a29",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5950854/analysis.json",
+      "sha256": "3dbfaebdc6c117eecb7970a53dbc8ab0e075962314cd077b0cd0146c22f1c1bd",
+      "size_bytes": 185747
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5950854/mean_spectrum.csv",
+      "sha256": "f0f75f56c54718175396bbc9212e9d0306b9c724f5116cd7e6d4aead6020b1dc",
+      "size_bytes": 340397
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5950854/monthly_spectra.npz",
+      "sha256": "8f25fa3ff70a475417e834f39f95cb6c2611a7f162eb2dc6bad5a53281acdbb0",
+      "size_bytes": 793648
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5950854/segment_bootstrap.csv",
+      "sha256": "37a7785be09ec082c5d1fdf1b7d2d33758aec03fe3820191a6c84ec81c8fc332",
+      "size_bytes": 8458
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5950854/star_manifest.json",
+      "sha256": "a149d440e942180d32094c36242744f07a349248d122af9db383286a0f6c7409",
+      "size_bytes": 1129
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6603624/analysis.json",
+      "sha256": "d26f5d2aede082585cf05533fd31fe22c2c042e93fdd61b761590f30d65ac8bb",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6603624/star_manifest.json",
+      "sha256": "65698899604ba9ed2995d3dba5e5c52ca2d9a312b17c2981d2e1ee5ed5f6b513",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6679371/analysis.json",
+      "sha256": "5f56173e3d93d786ac97d5163b2fe58b5c7b0a38f12ac377e02ca9756354917f",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6679371/star_manifest.json",
+      "sha256": "95ac61c08a01da170bf3757088120929fcf210099b922070a91d1c4acca3c924",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6933899/analysis.json",
+      "sha256": "9fc3ef0fc761bd704b792aeb24b63601e40f8df68554636bfd87228e6fa05fd8",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6933899/star_manifest.json",
+      "sha256": "c6f84f122c225f8cb55ba9290cdd56be11908ee8379d6520839001da8c476806",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7206837/analysis.json",
+      "sha256": "11df03547c58c9f067b1ecd2e985723be6092dee7bcd3d6185365d75c03112d8",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7206837/star_manifest.json",
+      "sha256": "1235e95b6a00d24927564664600af166e22bb3cd3dadcf96e1c4e82aec430f63",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7296438/analysis.json",
+      "sha256": "c32de89d93bc60b1d4f427e10e59e0908ddbf00e68be6d4bd6c7291cd19aacb7",
+      "size_bytes": 200792
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7296438/mean_spectrum.csv",
+      "sha256": "25564744d14211b7966bbd6932a7f920d6354707a9006566e5edfdd9859796ef",
+      "size_bytes": 346700
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7296438/monthly_spectra.npz",
+      "sha256": "3021162d9490e0ed1f03f6012b3da281fb4e27b429b4fe18c43fdeccca404847",
+      "size_bytes": 843174
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7296438/segment_bootstrap.csv",
+      "sha256": "2fb8e499f11e038d1e4a573457faefa114f86f488fef17b81e60cbc887fc7081",
+      "size_bytes": 8320
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7296438/star_manifest.json",
+      "sha256": "6d5cfb6403384558f77aefd554459e0d7b2743228e08858cac2880d46557f2a9",
+      "size_bytes": 1129
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7510397/analysis.json",
+      "sha256": "366e076184dff19c59bd7287370783f3896a1ceacff2207ed92d2890cfae5436",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7510397/star_manifest.json",
+      "sha256": "dc1dc035a6c93b41b31b1ffd86cf67519e456db73d265199236c509f3824b051",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7680114/analysis.json",
+      "sha256": "fcb9c9d67d951f3cba1307246d5c9c16759c4b7c279b40c06cd6922e806ddc84",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7680114/star_manifest.json",
+      "sha256": "f34a61cbad49c22619b5797f3337f221aa9762c3b23b63f9a458dda5d207bf16",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7771282/analysis.json",
+      "sha256": "8a19fe0a88f8536c15a0ba0466f9844deb4e2d4ab3ff01dcaced898cb2e38fa5",
+      "size_bytes": 214107
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7771282/mean_spectrum.csv",
+      "sha256": "0184a83478317eb2847bc7763c7348c782863e9e1887995138190f4c3639fa0c",
+      "size_bytes": 339776
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7771282/monthly_spectra.npz",
+      "sha256": "19f8fd105e16834fe236054d3608e4fbca5825197ffe5d8e92d19a43d6821d0d",
+      "size_bytes": 1003123
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7771282/segment_bootstrap.csv",
+      "sha256": "bf421b76f5c62dda6257d0ce45436d72134267c7d6f5c94ed037c167806ea732",
+      "size_bytes": 8325
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7771282/star_manifest.json",
+      "sha256": "a32d448408f3a5d2647ee399b0f387e21fe65333ecd350ef10273959576a8787",
+      "size_bytes": 1130
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7871531/analysis.json",
+      "sha256": "1f8e838d4f9c29055a12f467d03bf946d7426541465a15018c91586840bced00",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7871531/star_manifest.json",
+      "sha256": "c3794d4dc4cdeb74157638a3583fe34919d57b51d0587de448262f967d3c626c",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7940546/analysis.json",
+      "sha256": "ef8d984fc3339f6b8b325c378588141f0077142538b6d93948817a5a7d29e7fb",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7940546/star_manifest.json",
+      "sha256": "614db44a224e6fbc4063c408aacfebc9676e94879cedbad504652acdabecc27c",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7970740/analysis.json",
+      "sha256": "9e6c89aef8146c140df39282d972f0b7982c88a68421b7d005d205b690ea4724",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7970740/star_manifest.json",
+      "sha256": "d657a11d581e843ed92a9007a5d765b86121fa125e687307802dd4d6283ee0d2",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8179536/analysis.json",
+      "sha256": "a6da901b82395bc740ddb9cdbad495c1881bac49de5ff8165ee5e18047f37c86",
+      "size_bytes": 220906
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8179536/mean_spectrum.csv",
+      "sha256": "63bbf7c7d2aa0e501ae8f0e9930e1da2b1a2209a41126ef99345058f7978bf4d",
+      "size_bytes": 350183
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8179536/monthly_spectra.npz",
+      "sha256": "bd972854f0a19a2270d82e67d7626abe2d129b10651460b1bb8700c13d6f845e",
+      "size_bytes": 999525
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8179536/segment_bootstrap.csv",
+      "sha256": "a8be64b542cdf2ab855214ba03b35da3f089bd47b8babc6a09f0187749da05b4",
+      "size_bytes": 8312
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8179536/star_manifest.json",
+      "sha256": "b826d83958f8413251db35fc5bea301fcc5e7ac7535cfecea3963945bb819616",
+      "size_bytes": 1129
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8394589/analysis.json",
+      "sha256": "d097168a1f86789003af9246334f2910b27fea0b7611af7bdd56bf0c150114a0",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8394589/star_manifest.json",
+      "sha256": "67574b6cd6bc2c5bbdacea524be806a18c4d818b19682ed53baf9fba46348179",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8424992/analysis.json",
+      "sha256": "a5d00284fb2e07dba4b4c8676d3ccb9003749c9a2350f38254a9e8bd88cb0c57",
+      "size_bytes": 172459
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8424992/mean_spectrum.csv",
+      "sha256": "90c63253c19ab49823f7e3a632baaf60617cba58ee663693cfe5c83a443d4db4",
+      "size_bytes": 346186
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8424992/monthly_spectra.npz",
+      "sha256": "355619df001bb3908ddbce260ad3ba23bb4b8762692ee1e1723dee32c1b34613",
+      "size_bytes": 691750
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8424992/segment_bootstrap.csv",
+      "sha256": "5ed0034b1b45bd8c892784766574b3c985d2e58c0300acb3fe2ee809dae9d572",
+      "size_bytes": 8512
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8424992/star_manifest.json",
+      "sha256": "900c2c2a2405ab32ee056d52bb526a86c3b9eff865fe920d557f918e4de098c5",
+      "size_bytes": 1129
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8694723/analysis.json",
+      "sha256": "7cec5f50ce360675be064939b225771df3d77dd5ec323bb2ea1daddbfc1b00ef",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8694723/star_manifest.json",
+      "sha256": "d9ca0ffbc0f6010505267cbc14b1e3155ccd0f636df5260f992858a2ee26af02",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8760414/analysis.json",
+      "sha256": "fb174babd9604c484e8f6637539b6668f590f2043019f019f11f6f6c374a4477",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8760414/star_manifest.json",
+      "sha256": "cc8190bb159b8ea8ae39faf6317b815c814c575e83e9e4f06011cc773b31886b",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8938364/analysis.json",
+      "sha256": "29089567c3dc24e97fa8570085e944e8ba8498df99a383a78ce1c65ce6e550d7",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8938364/star_manifest.json",
+      "sha256": "622c0f540179c365060fca2ca52956deeee44a0f0b7c98b7a15a557b353173b6",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9139151/analysis.json",
+      "sha256": "36254b1ad9c384a530fb44a9f8375f441a3773a9641a3f297600ee645c8c502f",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9139151/star_manifest.json",
+      "sha256": "7751a5c301f7f895f91102886985da57a4ea5577f2bb0460a035ca1f71f8e9ec",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9206432/analysis.json",
+      "sha256": "dcc9f4fc8f39c0236e03202f3c5a3988a292beea4665324a1604fa6f7714489b",
+      "size_bytes": 247839
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9206432/mean_spectrum.csv",
+      "sha256": "7327b1ed2583fe71c223e78d4b44463c981a8bb5492f7c071d077d2ccd5638da",
+      "size_bytes": 348804
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9206432/monthly_spectra.npz",
+      "sha256": "acc93e56d1793a00d7936f5e206679125d08f412836a65aee0e7cf8e8f8e1733",
+      "size_bytes": 1153416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9206432/segment_bootstrap.csv",
+      "sha256": "fa9d486187e27ecddb8b84ec8f42fd9f7529c3a058a619636bd5b6d83625215c",
+      "size_bytes": 8396
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9206432/star_manifest.json",
+      "sha256": "18a9f9399e4db9e14cf514c35dcd4b1f4b42782a8c1a501ce11586a45bac2ec6",
+      "size_bytes": 1130
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9353712/analysis.json",
+      "sha256": "6c3d93161bd5f17f661bb1b0f8d3d70f20e12a5267c690368c08aa7768db4c1a",
+      "size_bytes": 239321
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9353712/mean_spectrum.csv",
+      "sha256": "bd17ccd8fed6cbde9672d315e1c18c50abee0ef402ef698f20f43890f00448c1",
+      "size_bytes": 339681
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9353712/monthly_spectra.npz",
+      "sha256": "82001ceb57a5903adc1cc8573a5d21df0f79b36d9005d4d4f967a884ed691e7f",
+      "size_bytes": 1106268
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9353712/segment_bootstrap.csv",
+      "sha256": "ba8961b0a05027747be6183470b504c2f0e4486d9855c12778bfc2e86b05c44c",
+      "size_bytes": 8177
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9353712/star_manifest.json",
+      "sha256": "0952f6166c5ce495266a4a3a8c2983cd57e4b94bf8c954979a143d2c30d5b506",
+      "size_bytes": 1130
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9414417/analysis.json",
+      "sha256": "8a5ea667a5d8cd4223c02af4a19f576017b9b062d98c8b7557e3e3feec2a7d97",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9414417/star_manifest.json",
+      "sha256": "b3a21db691693a6a8fe9206ab7a915e4d208d397bdc2ff91b9b5f880ac145820",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9955598/analysis.json",
+      "sha256": "f4f997abc366f55813c1b4d158e8323208d2c8e7c69ef8df6a2ad4a123fbb4d7",
+      "size_bytes": 760
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9955598/star_manifest.json",
+      "sha256": "3e3e1a76ba9c79ec6fdd5070c8a746d5af165e2952ae4873e9656d84963538dc",
+      "size_bytes": 414
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/summary.json",
+      "sha256": "9b7e6716b45a8d6161d1f7448f5a23d127d6d74cd3fd564332a8fff5eed06b54",
+      "size_bytes": 9769
+    }
+  ],
+  "role": "development",
+  "schema_version": 1
+}

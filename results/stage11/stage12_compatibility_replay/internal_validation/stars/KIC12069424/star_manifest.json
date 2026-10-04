@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC12069424/analysis.json",
+      "sha256": "946b2aa7397be4ed5deca40712e8f004c0c75796a87292aaa54971849f482a7b",
+      "size_bytes": 757
+    }
+  ],
+  "input_id": "63b4692753490b68ca90bc4974c07c31701bca1cfcff4c1b607b26d4cfdfe923",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 12069424"
+}

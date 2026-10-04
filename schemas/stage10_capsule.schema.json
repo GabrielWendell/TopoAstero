@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topoastero.example/schemas/stage10_capsule.schema.json",
+  "title": "Stage 10 frozen public Rudy observation capsule",
+  "type": "object",
+  "required": ["run_id", "config_sha256", "product_count", "products", "inputs", "quality_masks", "preprocessing_selection_used_topology", "population_spectra_used", "final_holdout_used", "delay_decision", "echelle_decision", "G9_status", "raw_payloads_redistributed"],
+  "properties": {
+    "run_id": {"const": "TA-S10-RUDY-R001"},
+    "config_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "product_count": {"const": 21},
+    "products": {
+      "type": "array", "minItems": 21, "maxItems": 21,
+      "items": {
+        "type": "object",
+        "required": ["product_key", "mission", "data_uri", "sha256", "size_bytes", "flux_column", "quality_column", "bjd_reference", "time_system"],
+        "properties": {
+          "product_key": {"type": "string", "minLength": 1},
+          "mission": {"enum": ["Kepler", "TESS"]},
+          "data_uri": {"type": "string", "pattern": "^mast:"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "size_bytes": {"type": "string", "pattern": "^[0-9]+$"}
+        }
+      }
+    },
+    "inputs": {"type": "array", "minItems": 10},
+    "quality_masks": {"type": "object"},
+    "preprocessing_selection_used_topology": {"const": false},
+    "population_spectra_used": {"const": false},
+    "final_holdout_used": {"const": false},
+    "raw_payloads_redistributed": {"const": false},
+    "delay_decision": {"const": "drop"},
+    "echelle_decision": {"const": "geometry_only"},
+    "G9_status": {"enum": ["review_pending", "pass"]}
+  },
+  "additionalProperties": false
+}

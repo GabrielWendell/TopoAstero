@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7940546/analysis.json",
+    "sha256": "6a54a1e16cb8a69bf7e71a7e84973d51d9b1a2a4116f5fac9b45e257594c81ca",
+    "size_bytes": 746
+  },
+  "available_products": 33,
+  "completed_failed_records_retried": false,
+  "expected_products": 33,
+  "input_id": "51f914f9041d66ebc859b743ec4f33d177506347b8d400d05e24d13d0cf335ab",
+  "quality_flags": [
+    "pipeline_failure"
+  ],
+  "reason": "ValueError: rebinning may not extrapolate",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "development",
+  "stable_star_id": "KIC 7940546",
+  "status": "pipeline_failure"
+}

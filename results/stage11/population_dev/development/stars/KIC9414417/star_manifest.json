@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC9414417/analysis.json",
+      "sha256": "fb278248e3b3faaa609b298a6b9f53c29eafd06e3e0901a12a3822875d119e7e",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "42eeaa5705d860a9385abbe9274b881a5cbf4e4f083dfbc8d9febbeb55f2c462",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9414417"
+}

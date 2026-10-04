@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9414417/analysis.json",
+      "sha256": "02aee2608a58566b2b80d6c7bd75420393f5b520405fd089466fe8d0c3ab2994",
+      "size_bytes": 746
+    }
+  ],
+  "input_id": "e78ccd2a6a1eb33d41e037ddd9e0c110a6476c8849d53f8ba22a575c390097e5",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9414417"
+}

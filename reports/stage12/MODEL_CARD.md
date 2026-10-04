@@ -1,0 +1,19 @@
+# Stage 12 model card
+
+The baseline and hybrid predict log corrections to conventional nu_max and Delta_nu. Development stars: 9 usable / 39 registered; failures remain in the cohort ledger. Models are fitted only on development stars. Rudy, internal-validation stars and the final holdout are excluded from fitting.
+
+Conventional/control inputs: log_numax, log_dnu, log_envelope, duty_cycle, log_duration, log_resolution, prominence_delta, graph_score. Hybrid additions: comb_score, alias_excess, cylinder_score. Path H0 equals prominence; its location descriptor is included in BOTH models. The graph control is included in the baseline. Cylinder descriptors remain geometry-only. Any practical increment is conditional on this finite model class, not evidence of irreducible spectral information.
+
+Both models share outer/inner star folds. Median imputation, scaling, penalties and residual/probability calibration use training stars only. Each star has total training weight one. Three regularization values are selected by inner validation. Regression intervals use inner OOF residual ranks, not exact split-conformal guarantees or joint stellar posteriors. Rank support can be insufficient, in which case intervals are null.
+
+Catastrophic-failure and nominal-alias reliability probabilities are calibrated on inner OOF logits only if both classes and all relevant folds support fitting. Astrophysical detection probabilities are withheld for the positive-only cohort. TESS probabilities and Kepler-derived intervals are withheld under mission shift. Null means unavailable; it never means zero risk.
+
+Reason codes: missing_or_weak_envelope, alias_ambiguity, domain_shift, outside_training_range, missing_predictor, unreliable_parameter, failure_probability_uncalibrated, mission_shift, model_unavailable, pipeline_failure, unsupported_window. These reasons are separate from calibrated probabilities. Candidate estimates are retained; acceptance and recoverability are reported separately. QC screening does not constitute an oscillation detection.
+
+Paired primary utility is reduction in absolute fractional error, with margins 0.01 (nu_max) and 0.005 (Delta_nu). Paired star bootstrap intervals condition on the fitted OOF models; they do not include full training-selection uncertainty. The superiority family contains two regression endpoints and the conditional failure-Brier test; absent class support contributes p=1. Regression uses Holm and quality uses conservative three-test Bonferroni. Equivalence is a separate two-regression family. Secondary diagnostics are exploratory. Decision-curve benefit uses a declared failure-action threshold and counts false confidence.
+
+The transfer benchmark uses one previously studied star. Repeated sectors, offsets, levels and draws are correlated observations of that star, never independent population units. Exposure integration rejects unsupported source gaps. Noise is added without subtracting inherited noise. Passband response and contamination are registered sensitivities; the code does not infer these astrophysical/instrument parameters from test labels. TESS PDCSAP processing can already correct dilution, so additional contamination is a sensitivity, not a claimed correction.
+
+The source/model digest is checked before and throughout actual-sector processing. Actual Rudy sectors were already examined in Stage 10; this is a reproducible frozen-method case study, not a newly blinded validation set. Adjacent-sector combinations average PSDs incoherently with exposure weights; no phase stitching across years is attempted. No broader TESS program is authorized by this pilot.
+
+Scientific G12: validation_pending. Publication readiness: false. Required upstream independent reviews remain explicit. See the protocol and reproduction guide for data contracts and signed confirmation procedures.

@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC7103006/analysis.json",
+    "sha256": "94526f75b852a1b2fdc2663cdc0588a795f3803e1ff2a5559f4084378fb491b4",
+    "size_bytes": 755
+  },
+  "available_products": 0,
+  "completed_failed_records_retried": false,
+  "expected_products": 39,
+  "input_id": "32af8d31dd1e8705115a998e7b2468346818f1ff3c18888ecf6a5046f0aa526f",
+  "quality_flags": [
+    "missing_products"
+  ],
+  "reason": "fewer_than_three_nonoverlapping_months",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "internal_validation",
+  "stable_star_id": "KIC 7103006",
+  "status": "missing_input"
+}

@@ -1,0 +1,9 @@
+/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented/.venv/lib/python3.12/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+Stage 12 window S14 offset 0: 32 cells archived
+Stage 12 window S14 offset 30: 32 cells archived
+Stage 12 window S40 offset 0: 32 cells archived
+Stage 12 window S40 offset 30: 32 cells archived
+Stage 12 window S81 offset 0: 32 cells archived
+Stage 12 window S81 offset 30: 32 cells archived
+Stage 12 reproduction complete; scientific G12: validation_pending

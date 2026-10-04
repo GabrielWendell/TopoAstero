@@ -1,0 +1,12 @@
+{
+  "claim_count": 8,
+  "claim_evidence_sha256": "c8b39adfd28a2de0a2bdf30eaed1f976ec68568d2196ee3ecaf1b061a77ea1d6",
+  "claims_frozen_before_manuscript": true,
+  "independent_human_review": "pending",
+  "new_G9_proposition_headline_claims": [],
+  "population_claims": [],
+  "proof_review_status": "review_pending",
+  "run_id": "TA-S10-RUDY-R001",
+  "status": "pass",
+  "unsupported_claims": []
+}

@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/analysis.json",
+      "sha256": "eb034ca46873dee424a7321ab9fc272e3bf3412b65d785b5d17a5c543242d9cb",
+      "size_bytes": 185733
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/mean_spectrum.csv",
+      "sha256": "f0f75f56c54718175396bbc9212e9d0306b9c724f5116cd7e6d4aead6020b1dc",
+      "size_bytes": 340397
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/monthly_spectra.npz",
+      "sha256": "8f25fa3ff70a475417e834f39f95cb6c2611a7f162eb2dc6bad5a53281acdbb0",
+      "size_bytes": 793648
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/segment_bootstrap.csv",
+      "sha256": "37a7785be09ec082c5d1fdf1b7d2d33758aec03fe3820191a6c84ec81c8fc332",
+      "size_bytes": 8458
+    }
+  ],
+  "input_id": "774928a2453416d21a8f76e7171fcd1a0ea65b8d9c20c46513fc8e94f92019ba",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 5950854"
+}

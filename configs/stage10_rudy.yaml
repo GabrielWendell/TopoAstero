@@ -1,0 +1,127 @@
+schema_version: 1
+config_id: TA-STAGE10-RUDY-1.0
+run_id: TA-S10-RUDY-R001
+software_version: TopoAstero-0.11.0
+locked_on: "2026-10-01"
+registration_level: implementation_lock_not_external_preregistration
+internal_revision: 2
+revision_reason: Correct_segment_LS_duty_scale_and_surrogate_interpolation_response_before_freeze
+prior_Rudy_results_inspected: Stage3_descriptive_baseline
+master_seed: 20261001
+scope:
+  target: KIC 10963065
+  tess_identity: TIC 48450369
+  role: descriptive_single_star_benchmark
+  population_spectra_allowed: false
+  final_holdout_allowed: false
+  selection_used_topology: false
+  delay_action: honor_G7_drop
+  cylindrical_claim: honor_G8_geometry_only
+  new_G9_proposition_used_as_headline: false
+inputs:
+  kepler_manifest: data/manifests/stage2/rudy_kepler_products.csv
+  tess_manifest: data/manifests/stage2/rudy_tess_products.csv
+  preprocessing: registries/preprocessing_branches.csv
+  modes: data/reference/mode_frequencies.csv
+  ratios: data/reference/frequency_ratios.csv
+  stellar: data/reference/stellar_references.csv
+  reference_source_manifest: data/manifests/stage2/reference_sources.csv
+  product_count: 21
+  raw_cache_policy: external_checksum_verified_no_payloads_in_release
+preprocessing:
+  primary: PP-01
+  kepler_branches: [PP-01, PP-02, PP-03, PP-04]
+  analytic_branch: PP-05
+  tess_branch: PP-06
+  mask_values_source: installed_Lightkurve_flag_constants_recorded_in_capsule
+  absolute_time_and_monthly_normalization: true
+classical:
+  teff_K: 6140.0
+  teff_sigma_K: 77.0
+  broad_range_uHz: [100.0, 8000.0]
+  reduced_range_uHz: [1500.0, 2800.0]
+  grid_step_uHz: 0.2
+  regrid: mean_of_native_independent_frequency_bins
+  envelope_search_uHz: [1700.0, 2500.0]
+  envelope_smoothing_uHz: 35.0
+  background_exclusion_uHz: [1500.0, 2800.0]
+  background_components: [0, 1, 2]
+  primary_background: minimum_BIC
+  BIC_role: descriptive_correlated_ordinates_not_model_posterior_probability
+  ordinary_echelle_phase_bins: 128
+topology:
+  primary_normalization: log_ratio
+  normalizations: [log_ratio, ratio, whitened_residual, uncertainty_zscore]
+  background_sigma_fraction: 0.10
+  peak_smoothing_uHz: 1.0
+  essential_policy: retain_localization_exclude_numeric_summaries
+  comb_trials_uHz: [20.0, 300.0, 57]
+  comb_fractional_bandwidth: 0.06
+  alias_ambiguity_ratio: 1.15
+  echelle_phase_bins: 24
+  echelle_trial_fractions: [0.90, 0.95, 1.00, 1.05, 1.10]
+  echelle_anchor: primary_classical_ACF_not_published_spacing
+  echelle_weights: [0.55, 0.45]
+  blinded_mode_degree_inference_allowed: false
+nulls:
+  realizations: 256
+  model: stationary_Gaussian_Harvey_background_on_Kepler_cadence_grid
+  observation_operator: interpolate_to_exact_absolute_timestamps_and_same_LS_rebin_smoothing
+  interpolation_response: analytic_mean_fractional_cadence_linear_interpolation_power
+  nuisance_scale: sampling_duty_correction
+  refit_background_in_null: false
+  pvalue_scope: conditional_fitted_background_and_registered_search_family
+  plus_one_upper_tail: true
+  alpha: 0.05
+  minimum_pvalue: 0.0038910505836575876
+  across_family_multiplicity: Holm_over_seven_reported_families
+  precision_reason: Seven_families_times_minimum_pvalue_must_be_below_alpha_before_null_results
+  seed_offset: 10000
+  model_limitation: conditional_parametric_no_background_fit_uncertainty_or_instrument_systematics
+uncertainty:
+  monthly_bootstrap_replicates: 256
+  weighting: retained_cadences_with_resampled_months
+  segment_density_scale: segment_duty_divided_by_full_span_duty
+  interval_level: 0.95
+  seed_offset: 20000
+  stochastic_replicates: 64
+  stochastic_model: smoothed_observed_PSD_stationary_Gaussian
+  stochastic_seed_offset: 30000
+  combine_random_and_pipeline: false
+  pipeline_quantity: registered_branch_min_max
+  independent_seismic_and_stellar_systematics: true
+robustness:
+  full_factorial: preprocessing_x_background_count_x_normalization
+  background_factors: [0.90, 1.10]
+  peak_smoothing_sensitivities_uHz: [0.5, 2.0]
+  resolution_sensitivities_uHz: [0.1, 0.4]
+  primary_chosen_before_new_topology: true
+transfer:
+  source_quarter: 5
+  source_start_offsets_days: [0.0, 30.0, 60.0]
+  durations_days: [13.7, 27.4]
+  additional_duty_fractions: [1.0, 0.80]
+  noise_variance_factors: [0.0, 1.0, 2.0]
+  cadence_seconds: 120.0
+  exposure_model: exact_piecewise_linear_boxcar_integral_no_long_gap_bridge
+  maximum_source_gap_seconds: 180.0
+  noise_matching: positive_difference_between_TESS_and_integrated_Kepler_high_frequency_PSD
+  actual_sector_windows: all_11_registered_SPOC_sectors
+  synthetic_window_seed_offset: 40000
+  noise_seed_offset: 50000
+  detection_policy: inherited_Stage3_fixed_thresholds
+  feasibility_continuum: native_1500_2700_sidebands_1500_1700_and_2550_2700
+  feasibility_numax_search_uHz: [1800.0, 2500.0]
+  feasibility_reference_numax_uHz: 2145.0
+  feasibility_reference_dnu_uHz: 103.11210228179654
+  detection_snr_minimum: 1.20
+  numax_tolerance_uHz: 150.0
+  dnu_tolerance_uHz: 10.0
+  acf_peak_minimum: 0.08
+freeze:
+  target: Paper_I_internal_review_snapshot
+  external_publication_or_DOI_created: false
+  require_claim_evidence_audit: true
+  require_clean_process_reproduction: true
+  human_independent_reproduction_required_for_final_G10: true
+  external_reviewer_attestation: registries/stage10_independent_review.yaml

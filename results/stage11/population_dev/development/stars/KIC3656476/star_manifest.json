@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC3656476/analysis.json",
+      "sha256": "068a1eb953d52fba638d9d292203755f0eb44194b3867cf0353a61a9bde2c6ac",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "facfb8b22faa0b5cc09751e654221cf5c81ddb5e5c61847025ae2d461d091184",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 3656476"
+}

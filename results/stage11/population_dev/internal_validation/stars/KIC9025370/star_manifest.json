@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/internal_validation/stars/KIC9025370/analysis.json",
+      "sha256": "0ab451e917c7ffc2a9c474a8357aff064718fd0e24a9bc62d840b4db8990d9a0",
+      "size_bytes": 387
+    }
+  ],
+  "input_id": "241cb70763b0fae79a355afa829b0ba237d0157e3486a8fd56647647d6ec2521",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9025370"
+}

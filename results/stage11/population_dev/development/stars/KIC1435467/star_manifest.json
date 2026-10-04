@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/population_dev/development/stars/KIC1435467/analysis.json",
+      "sha256": "07965054d188ef0673b8f2b8cf95978b06770054a37cd527ebefdea557cf64ba",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "0bfd9031ff10c28867ff7c8bd270e6738c59c661793c0d1898be007e957c4ab2",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 1435467"
+}

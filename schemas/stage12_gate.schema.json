@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage_id",
+    "implementation_status",
+    "status",
+    "positive_complementarity_claim",
+    "positive_population_transfer_claim",
+    "usable_development_stars",
+    "confirmation_opening_count",
+    "holds",
+    "code_sha256",
+    "configuration_sha256",
+    "publication_ready"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "stage_id": {
+      "const": "TA-S12-HYBRID-v1"
+    },
+    "implementation_status": {
+      "const": "pass"
+    },
+    "status": {
+      "enum": [
+        "validation_pending",
+        "positive_increment",
+        "quantified_redundancy"
+      ]
+    },
+    "positive_complementarity_claim": {
+      "type": "boolean"
+    },
+    "positive_population_transfer_claim": {
+      "const": false
+    },
+    "usable_development_stars": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "confirmation_opening_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "publication_ready": {
+      "const": false
+    },
+    "holds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "code_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "configuration_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "usable_development_stars": {
+            "maximum": 19
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "positive_complementarity_claim": {
+            "const": false
+          }
+        }
+      }
+    }
+  ],
+  "title": "Stage 12 hybrid inference acceptance and scope"
+}

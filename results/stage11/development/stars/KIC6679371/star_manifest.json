@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/development/stars/KIC6679371/analysis.json",
+      "sha256": "91843b9528ee577bbd990f188e0d56cd3bf945e70cba25c7c1be99a98ab4147a",
+      "size_bytes": 386
+    }
+  ],
+  "input_id": "03976ff392c954aaa111d6bae683103ac42d819e7aeca30df40fa50099dced12",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 6679371"
+}

@@ -1,0 +1,264 @@
+{
+  "PDF_regenerated": true,
+  "compared_files": 46,
+  "comparison_report": "reports/stage11/portable_stage10_reproduction_comparison.json",
+  "differences": [],
+  "existing_Stage10_outputs_excluded": true,
+  "fresh_locked_environment": true,
+  "fresh_source_copy": true,
+  "independent_human_reviewer": null,
+  "journal_SVG_byte_identity_required": false,
+  "journal_SVG_semantic_and_PNG_pixel_checks_required": true,
+  "new_process": true,
+  "numeric_atol": 1e-06,
+  "numeric_rtol": 1e-06,
+  "original_strict_attempt_preserved": "reports/stage11/strict_stage10_reproduction_attempt.json",
+  "raw_cache_reused": true,
+  "raw_products_verified_in_child": 21,
+  "result_files": [
+    {
+      "path": "results/stage10/background_models.json",
+      "sha256": "707a393acdb4cfff1e8e1220c744374d4e85fd70aafd0d5e2ec984b4ffdbe053",
+      "size_bytes": 8306
+    },
+    {
+      "path": "results/stage10/branch_spectra.csv",
+      "sha256": "f6783bfea465ed4c6942d3eeeee74f13a5bdf2100f5485dc33357040a1282d2f",
+      "size_bytes": 1325743
+    },
+    {
+      "path": "results/stage10/broad_spectrum.csv",
+      "sha256": "222569071b8386f55d46323337e50386eda01f9fae3bc331ea7e9e9a7bfd4836",
+      "size_bytes": 319703
+    },
+    {
+      "path": "results/stage10/classical_branches.csv",
+      "sha256": "da69694d278cc13701b8d12f343876cfc0171a92ce4f17fbfe9f0d1bc2d0dd9f",
+      "size_bytes": 1670
+    },
+    {
+      "path": "results/stage10/conditional_null_tests.csv",
+      "sha256": "cd4093d15ad95a848df344dfcd9a29a2520998352b7ed5d03b45cab7c800a96b",
+      "size_bytes": 1536
+    },
+    {
+      "path": "results/stage10/cylinder.json",
+      "sha256": "1d4cd4561bf417509b3145a8d7b51f68deffafa10716a4a56a8a39b501c55b28",
+      "size_bytes": 106084
+    },
+    {
+      "path": "results/stage10/echelle_bootstrap.csv",
+      "sha256": "2849bf007cd32a452cd7da0c3a308694ea37d67a6623a49b12f9b0adef14fd5d",
+      "size_bytes": 7739
+    },
+    {
+      "path": "results/stage10/echelle_branch_controls.csv",
+      "sha256": "f7b5ab5c29d9d0dffbcaeca2c1c5e7f5269cee061374d6ac8bd140528ea18fd4",
+      "size_bytes": 39195
+    },
+    {
+      "path": "results/stage10/echelle_score_scan.csv",
+      "sha256": "f6a1e86489b0793af556607e3f0d4693c3be242f21a97336117c4e3cf1d97c81",
+      "size_bytes": 1731
+    },
+    {
+      "path": "results/stage10/kepler_to_tess.csv",
+      "sha256": "0f7a28cb0dc2acc78921769993af45dfca40a5e8149e45bcdff044c14961960a",
+      "size_bytes": 178835
+    },
+    {
+      "path": "results/stage10/localized_peaks.json",
+      "sha256": "4033615501bf3d9a85adc932e5b13ab55dbdec67cd6307d6dd005120c67050f2",
+      "size_bytes": 84247
+    },
+    {
+      "path": "results/stage10/monthly_bootstrap.csv",
+      "sha256": "50f42517440dfa0b47691c1991d830e77993864187fa31516565e8cacb28d549",
+      "size_bytes": 42649
+    },
+    {
+      "path": "results/stage10/monthly_spectra.csv",
+      "sha256": "7ddfb2c674c1267283d8d4f5cbeae330222d196e314f400d21daf7d1679cee33",
+      "size_bytes": 2233843
+    },
+    {
+      "path": "results/stage10/null_draws.csv",
+      "sha256": "6cf23249563935c449910f86bb43d3ca8a2b34200f31c2166835eaf649330d08",
+      "size_bytes": 73346
+    },
+    {
+      "path": "results/stage10/observation_preview.csv",
+      "sha256": "8470f3c179a24224c303d7e9e9745ef7d53ad0e5f71caa858474462d2b0ff81e",
+      "size_bytes": 79308
+    },
+    {
+      "path": "results/stage10/published_frequency_ratios.csv",
+      "sha256": "9a432494e3b9cafc0c046a43bfdcd7659918ab3459c5451e01a8658052c0adca",
+      "size_bytes": 1868
+    },
+    {
+      "path": "results/stage10/published_mode_overlay.csv",
+      "sha256": "6dc43471a46574d3ea4694cd6d1d81956ec3426d12f74d2180dc95cfd6550051",
+      "size_bytes": 3870
+    },
+    {
+      "path": "results/stage10/quality_flags.csv",
+      "sha256": "67a3680778137c9cfaf3da636d61cc3f46dea57f073280175093194bca9812a0",
+      "size_bytes": 644
+    },
+    {
+      "path": "results/stage10/quarter_stability.csv",
+      "sha256": "ac6c956db6dacace70b65223044478ee1346bcc6909565744b1c49efd7fbd36c",
+      "size_bytes": 2434
+    },
+    {
+      "path": "results/stage10/ratio_reference_audit.csv",
+      "sha256": "f45543ccfe7ef319e755d6f2bbe49f503f1abdbe47dacc65a941b963b2eb8d76",
+      "size_bytes": 5146
+    },
+    {
+      "path": "results/stage10/robustness.csv",
+      "sha256": "bc60d6df81023779fc5c83e99c5a95e0b3e44b5f4ae7f66e036bbff42e4d5776",
+      "size_bytes": 14975
+    },
+    {
+      "path": "results/stage10/sampling_audit.csv",
+      "sha256": "deda2078bdcbdf05d5e1e1aadc7d3746e35beda47477edc9d729029902008223",
+      "size_bytes": 4833
+    },
+    {
+      "path": "results/stage10/scaling_draws.csv",
+      "sha256": "3efe0a9a613cacc796aa144cead9a0d8a51710dd213c99257649d355b97f8ab0",
+      "size_bytes": 64536
+    },
+    {
+      "path": "results/stage10/scaling_uncertainty.csv",
+      "sha256": "eff2c81d7bec9e81a8eeb0233c0fcbbdcb541b6a61b6272c950d173af2c7088c",
+      "size_bytes": 633
+    },
+    {
+      "path": "results/stage10/simulation_placement.csv",
+      "sha256": "2ff29bb26eb6a9ba47bd1209d3ba5aecd78d65a24475be3b82efba02dc410783",
+      "size_bytes": 6983
+    },
+    {
+      "path": "results/stage10/spectral_score_scan.csv",
+      "sha256": "fbb70893b1cc0508de5af47d61300937a149d60884a05d0e7b4c17bba8e9d8c9",
+      "size_bytes": 3935
+    },
+    {
+      "path": "results/stage10/spectral_windows.csv",
+      "sha256": "38e10faec5928e95e1c08fda5599a564ce7f3c5d7557603ab2b70afbc11c1ffd",
+      "size_bytes": 180937
+    },
+    {
+      "path": "results/stage10/stochastic_draws.csv",
+      "sha256": "40c4e765c08e1043649fe0468e8472b298e983d30a4c6b659bee3ec0f66e5cc1",
+      "size_bytes": 14068
+    },
+    {
+      "path": "results/stage10/summary.json",
+      "sha256": "c9f2e474c8d0243f1beef10330b7dae26cbff10ccf86b8436ee1fd1f97325d8c",
+      "size_bytes": 2267
+    },
+    {
+      "path": "results/stage10/tess_sectors.csv",
+      "sha256": "0eeb262c9a65a34d3c917dbe08d2d5184052b179a7bcd5cd40cab013dc461b3c",
+      "size_bytes": 4635
+    },
+    {
+      "path": "results/stage10/uncertainty_budget.csv",
+      "sha256": "a9e19328223c8f8f11a47282c8f43f16e3b00f4cfbb4b9a2adaa5a140aab5e8c",
+      "size_bytes": 1009
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "configs/stage10_rudy.yaml",
+      "sha256": "b4bdb2bf728866d493475fe95d5b555ab4e3635bfad59f6f4675fd695dd73712",
+      "size_bytes": 5276
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "8eb4be82be76ebb6d4d9856fc797d729ff4dcf42a1e00dde59d8e359765626a6",
+      "size_bytes": 734011
+    },
+    {
+      "path": "src/topoastero/rudy_benchmark.py",
+      "sha256": "0c72233b7f00f5638db7d5e392c80c26d5dd225b1c5cf7c431d52a4df53b0b68",
+      "size_bytes": 14174
+    },
+    {
+      "path": "src/topoastero/classical.py",
+      "sha256": "0cdc03b4cfdd02bb4d03dc14933e60320a60442fef0e01e1ec2511b4c61fb6af",
+      "size_bytes": 24247
+    },
+    {
+      "path": "src/topoastero/spectral_topology.py",
+      "sha256": "b5550d39ac16301dfaa1b45b5e84d702172de0c887a0cddabae8cc54822d9b35",
+      "size_bytes": 37481
+    },
+    {
+      "path": "src/topoastero/echelle_topology.py",
+      "sha256": "72d4778c97f3ad1ab40cbc645b00693158036b6188a7e6bff05a5d2f8acdf2d1",
+      "size_bytes": 25881
+    },
+    {
+      "path": "src/topoastero/tda.py",
+      "sha256": "1ac2b5208a99f2c30d4c866a9719a97f9584f3f036d034a07f33c3472391850a",
+      "size_bytes": 23361
+    },
+    {
+      "path": "src/topoastero/style.py",
+      "sha256": "c504acce9a3039596f6fdf76a3a2927472c856e8e3399c393fb386d54924e016",
+      "size_bytes": 20201
+    },
+    {
+      "path": "workflows/acquire_stage3_inputs.py",
+      "sha256": "8f04a6182936b88e5990d46d7d23a6588bc64c14ec1788c227917b56da1a954d",
+      "size_bytes": 4289
+    },
+    {
+      "path": "workflows/run_stage3_classical.py",
+      "sha256": "fb93614a6ee333abc211bbfe40e0bd56a5256f02eebdf1e34e0c03ad516c59ea",
+      "size_bytes": 46316
+    },
+    {
+      "path": "workflows/run_stage8_echelle.py",
+      "sha256": "b717a79918dccfb1091412f2da2c6b5c16454c51b0d9469f92330d031096de55",
+      "size_bytes": 42958
+    },
+    {
+      "path": "workflows/run_stage10_rudy.py",
+      "sha256": "2e6abec56d22bca92e8ac2c4399a0c70a56de8064a697e13af643066b6bc8bf3",
+      "size_bytes": 35795
+    },
+    {
+      "path": "workflows/build_stage10_evidence.py",
+      "sha256": "cd661ea906edf838028946587e73d0a4aceb640b7c1e4be4a5f18779a7b64a99",
+      "size_bytes": 17914
+    },
+    {
+      "path": "workflows/plot_stage10.py",
+      "sha256": "f52b59effdee70aab090895d5f0fb320e23c05a5cb0b64293ae53dbeda43af6f",
+      "size_bytes": 18616
+    },
+    {
+      "path": "workflows/build_stage10_paper.py",
+      "sha256": "8f60c1e419ff6c2caa7ca8f649d5d719db9ee310afffc071e31d0071b5b8cf5d",
+      "size_bytes": 8573
+    },
+    {
+      "path": "paper1/manuscript_template.tex",
+      "sha256": "fc8ea94f6a04a6b0f17e72e7ad491a3e26282f790f8d41bdcad3e952f53ce8a6",
+      "size_bytes": 24306
+    },
+    {
+      "path": "paper1/additional_references.bib",
+      "sha256": "1b51d293e8d3de1aeca0f938f756d1d88c80653ee30a3a4ba103788dfe655448",
+      "size_bytes": 451
+    }
+  ],
+  "status": "pass",
+  "subprocess_returncode": 0
+}

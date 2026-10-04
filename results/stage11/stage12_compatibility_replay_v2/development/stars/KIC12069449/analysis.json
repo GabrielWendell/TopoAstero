@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069449/analysis.json",
+    "sha256": "d80212ec98bfbe11b2d7cb0df7a1869fe4f33c348c5feccbe66d95cd84545783",
+    "size_bytes": 741
+  },
+  "available_products": 0,
+  "completed_failed_records_retried": false,
+  "expected_products": 35,
+  "input_id": "6d8c77706678e6f42cc00277c8b914d90dc1c280a985167172dd7b877ad88843",
+  "quality_flags": [
+    "missing_products"
+  ],
+  "reason": "fewer_than_three_nonoverlapping_months",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "development",
+  "stable_star_id": "KIC 12069449",
+  "status": "missing_input"
+}
