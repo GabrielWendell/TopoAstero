@@ -106,7 +106,7 @@ def build_figures(root: Path, cfg: dict[str, Any], *, formats: tuple[str, ...] =
             style_axes(
                 ax, 
                 xlabel="Sector", 
-                ylabel=f"Candidate estimate ($\mu$Hz)", 
+                ylabel="Candidate estimate ($\mu$Hz)", 
                 legend=True
             )
         finish(fig, "stage12_actual_tess_quality", ["actual_tess.json"], "All actual sectors retained. Rejected candidates are not detections; TESS probability and interval calibration withheld.")
