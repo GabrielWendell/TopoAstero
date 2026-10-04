@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC3632418/analysis.json",
+      "sha256": "aaee023932bb29119219395febbf73e918fb672b700818b37080d5633961f514",
+      "size_bytes": 207450
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC3632418/mean_spectrum.csv",
+      "sha256": "1ea7ea183b41ca7b68a17c6c4984b2c232bdba8ecc3fbe7c6182d23c2defb4ed",
+      "size_bytes": 352361
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC3632418/monthly_spectra.npz",
+      "sha256": "f7b73856a42a5377e21e05d8af15f870a0501c8de91f36b65b831452ed99c1de",
+      "size_bytes": 1137457
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC3632418/segment_bootstrap.csv",
+      "sha256": "441986543681cea0124fdcf76f14306f26582197e47ac3f16a7e2f1d04dc8bd3",
+      "size_bytes": 8417
+    }
+  ],
+  "input_id": "def6e2df7f8a07aa760d0baaf18c0667ace7a4ce66d1d6349685f446c8d44df1",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 3632418"
+}

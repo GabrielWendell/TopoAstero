@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/catalog.csv",
+      "sha256": "bfb8500a84cc863266188c3240a4bb0f8b6bf4c431df9d2421e2b38019f9b41b",
+      "size_bytes": 1452
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/catalog.json",
+      "sha256": "823d4841e15d18b87de4da0da2d68fa09530e5d4877eb8a79afb9a2d420f0be8",
+      "size_bytes": 3681
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/operating_domain.csv",
+      "sha256": "47505ec2a447e1708139b8bbff521d4c7550802e123b4edd264bda10ec354a99",
+      "size_bytes": 5315
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/paired_comparisons.csv",
+      "sha256": "c120724ea01549c089a5db67cceb5ca16c12f1c8d242bdaf01e3f342aa6f29f3",
+      "size_bytes": 343
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/performance.csv",
+      "sha256": "b3835ac88ac415a30176a4f55a0979b20c614927aa0210fa1f6611577bd79cfc",
+      "size_bytes": 1471
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/ratio_benchmark.csv",
+      "sha256": "6f1b524801e627092d461592f8bf9cefdf37e3ebaf4b70dd147c5a160859aa49",
+      "size_bytes": 10894
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/stars/KIC10963065/analysis.json",
+      "sha256": "c2af9de9a87c17b3e8154b1697572599ca9414aa58e07615874f62a91f159569",
+      "size_bytes": 768
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/stars/KIC10963065/star_manifest.json",
+      "sha256": "5e74297a02e4028a6edd541af585d74c36faf1bd0e8481547120bf791a5c9dd9",
+      "size_bytes": 433
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/summary.json",
+      "sha256": "4d15706da07455e10cbabc2e23a8aad12764805b81b9fea11720105325ffff1d",
+      "size_bytes": 1035
+    }
+  ],
+  "role": "descriptive_benchmark",
+  "schema_version": 1
+}

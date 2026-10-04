@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC9965715/analysis.json",
+      "sha256": "5ba2a6600906d48271e5aedcb58ffae1a4a04ffc38eaf859a676bb3afcc82ef9",
+      "size_bytes": 755
+    }
+  ],
+  "input_id": "6120888122c4fe8a84773954f05be09ed77ec9185ea57cc7d8e4fa1747682c92",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9965715"
+}

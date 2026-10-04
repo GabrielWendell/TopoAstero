@@ -1,0 +1,29 @@
+{
+  "normalized_text_file_count": 0,
+  "normalized_text_files": [],
+  "refreshed_fields": {
+    "reference_manifest": 0,
+    "reference_sources": 0,
+    "smoke_manifest": 0,
+    "split_attestation": 0,
+    "stage0_deliverable_manifest": 0,
+    "stage1_deliverable_manifest": 0,
+    "stage2_deliverable_manifest": 0,
+    "stage3_deliverable_manifest": 0,
+    "stage3_run_manifest": 0,
+    "stage4_deliverable_manifest": 0,
+    "stage4_run_manifest": 0,
+    "stage5_deliverable_manifest": 0,
+    "stage5_run_manifest": 0,
+    "stage6_deliverable_manifest": 0,
+    "stage6_run_manifest": 0,
+    "stage7_deliverable_manifest": 0,
+    "stage7_run_manifest": 0,
+    "stage8_deliverable_manifest": 0,
+    "stage8_run_manifest": 0,
+    "stage9_deliverable_manifest": 0,
+    "stage9_run_manifest": 0
+  },
+  "remaining_issues": [],
+  "status": "pass"
+}

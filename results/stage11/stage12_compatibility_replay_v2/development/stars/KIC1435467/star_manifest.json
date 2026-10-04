@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC1435467/analysis.json",
+      "sha256": "2307e2fb7418b74e1c7a4857a56e4e639c086c537d5e27c21e5d92be90865bd6",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "4d420828457ec73d6685fed57cab295f8769a203272b88383fc57c3bc386b8ba",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 1435467"
+}

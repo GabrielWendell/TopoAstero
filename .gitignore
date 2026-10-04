@@ -28,6 +28,16 @@ data/derived/**
 !data/derived/stage4/**
 data/archive/**
 !data/archive/README.md
+\results\stage11\descriptive_benchmark\stars
+\results\stage11\development\stars
+\results\stage11\internal_validation\stars
+\results\stage11\population_dev\stars
+\results\stage11\stage12_compatibility_replay\descriptive_benchmark\stars
+\results\stage11\stage12_compatibility_replay\development\stars
+\results\stage11\stage12_compatibility_replay\internal_validation\stars
+\results\stage11\stage12_compatibility_replay_v2\descriptive_benchmark\stars
+\results\stage11\stage12_compatibility_replay_v2\development\stars
+\results\stage11\stage12_compatibility_replay_v2\internal_validation\stars
 
 # Generated scratch outputs. The versioned Stage 0 smoke reference is retained.
 results/*
@@ -68,3 +78,13 @@ paper2/*.blg
 paper2/*.log
 paper2/*.out
 paper2/*.toc
+
+# Stage 12 observed evidence and editable Paper III.
+!results/stage12/
+!results/stage12/**
+paper3/*.aux
+paper3/*.bbl
+paper3/*.blg
+paper3/*.log
+paper3/*.out
+paper3/*.toc

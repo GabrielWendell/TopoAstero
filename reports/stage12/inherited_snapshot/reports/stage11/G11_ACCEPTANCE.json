@@ -1,0 +1,41 @@
+{
+  "acquired_products": 1261,
+  "claim_scope": "population_measurement_pending",
+  "cohort_stars": 66,
+  "configuration_sha256": "630f82befd317083c36b3d502ff47a5686c269336b678107841d4e0648ce7ea1",
+  "confirmation_status": "unopened",
+  "expected_products": 2159,
+  "holdout_opening_count": 0,
+  "holds": [
+    "population_payload_acquisition_incomplete",
+    "confirmation_release_not_frozen",
+    "one_time_confirmation_not_completed"
+  ],
+  "implementation_status": "pass",
+  "limitations": [
+    "G8_geometry_only_no_blind_ridge_ratios",
+    "positive_only_cohort_no_specificity_or_false_alarm_rate",
+    "conditional_monthly_bootstrap_no_joint_stellar_posterior",
+    "reference_covariance_unavailable",
+    "G9_G10_independent_external_reviews_pending",
+    "no_individual_evolutionary_classification"
+  ],
+  "partition_counts": {
+    "descriptive_benchmark": 1,
+    "development": 39,
+    "final_holdout": 13,
+    "internal_validation": 13
+  },
+  "publication_ready": false,
+  "role_directories": {
+    "confirmation": "results/stage11/confirmation",
+    "descriptive_benchmark": "results/stage11/population_dev/descriptive_benchmark",
+    "development": "results/stage11/population_dev/development",
+    "internal_validation": "results/stage11/population_dev/internal_validation"
+  },
+  "schema_version": 1,
+  "scientific_population_gate_passed": false,
+  "stage_id": "TA-S11-LEGACY-v1",
+  "stars_with_complete_acquisition": 39,
+  "status": "population_pending"
+}

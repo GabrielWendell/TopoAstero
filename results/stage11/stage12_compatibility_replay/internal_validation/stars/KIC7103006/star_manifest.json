@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/internal_validation/stars/KIC7103006/analysis.json",
+      "sha256": "94526f75b852a1b2fdc2663cdc0588a795f3803e1ff2a5559f4084378fb491b4",
+      "size_bytes": 755
+    }
+  ],
+  "input_id": "ac3a73487cd56c9bf2d01afd8dacefd7b5a9acc81bbc986b407abbcb46ed5dfe",
+  "role": "internal_validation",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7103006"
+}

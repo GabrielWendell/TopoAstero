@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 import jsonschema
@@ -53,5 +52,10 @@ def test_task_register_is_complete() -> None:
     tasks = read_table(ROOT / "reports/stage11/task_traceability.csv")
     assert {r["task_id"] for r in tasks} == {f"T11.{n}" for n in range(1, 12)}
     assert next(r for r in tasks if r["task_id"] == "T11.6")["status"] == "ready_unopened"
-    status = json.loads((ROOT / "results/stage11/descriptive_benchmark/summary.json").read_text())
-    assert status["stars_with_estimates"] == 1 and status["holdout_used"] is False
+    evidence = read_json(ROOT / "reports/stage11/evidence_manifest.json")
+    active = ROOT / evidence["role_directories"]["descriptive_benchmark"]
+    status = read_json(active / "summary.json")
+    catalog = read_json(active / "catalog.json")["rows"]
+    measured = {r["stable_star_id"] for r in catalog if r["estimate"] is not None}
+    assert status["stars_with_estimates"] == len(measured)
+    assert status["stars"] == 1 and status["holdout_used"] is False

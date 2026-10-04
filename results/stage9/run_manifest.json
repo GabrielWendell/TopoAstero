@@ -157,48 +157,48 @@
     },
     {
       "path": "README.md",
-      "sha256": "1cdf83e5f6ffdec742c49386b0fd3771e0bbf5cef6afbe73a9f90f94d6d3b715",
-      "size_bytes": 24602
+      "sha256": "db36373125feeae11414442b00e52be18cf8f7fcdf11d3dd746eb2b23e737b60",
+      "size_bytes": 28113
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "f6aa4657d3fb3aabe31bae1a726cf4c37d259e2b740203cce6999694e54dcfb3",
-      "size_bytes": 8496
+      "sha256": "d4de643951c9234d7d3821d1b7cc0964bdba35f82bb01c739a62f687f233519e",
+      "size_bytes": 11019
     },
     {
       "path": "CITATION.cff",
-      "sha256": "72784b9b4fd530fc0e77502efaa68e499172a7a8c702e98ddfe0d1758cc3ac39",
+      "sha256": "654207bd435a22a470352b429ae4ff4e54f523ef1e756a111400cbd5301663eb",
       "size_bytes": 368
     },
     {
       "path": "pyproject.toml",
-      "sha256": "5b82c00d800b882cc2ce7da283c32bd6d1ea5f06fe272cf5fb8599bc5699402b",
-      "size_bytes": 2034
+      "sha256": "efeada29a78841e65da2fac03d39e8fdb093702116d6d851bc3048c48d72e55b",
+      "size_bytes": 2035
     },
     {
       "path": "uv.lock",
-      "sha256": "6cbe9102ec798108c0fc710647a16ecfc6b6efe4b5db9c23bc87a3adf8484de8",
+      "sha256": "8eb4be82be76ebb6d4d9856fc797d729ff4dcf42a1e00dde59d8e359765626a6",
       "size_bytes": 734011
     },
     {
       "path": "src/topoastero/__init__.py",
-      "sha256": "032b479bea0187be862626ec700acb932f54592fd81d6a9d2a531de0bc932444",
+      "sha256": "84348631de60efa75f9ce958b5e46170b621d519ca6df36d12b0980f5210c215",
       "size_bytes": 172
     },
     {
       "path": "src/topoastero/cli.py",
-      "sha256": "f8ab59a250f51d12680d8aa06503fc745a1fcfe16869a8bffdd2e0eb08b77cc3",
-      "size_bytes": 11030
+      "sha256": "78f4869b6c6fdf17a33b66e9f016e85b81bb458ce919c2a5a9acfaf3b358a69b",
+      "size_bytes": 11888
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "adffcb7ce9f7a5844c2d480bf922748aa9c922d4e2e96b85a0535b0e75b20f73",
-      "size_bytes": 2173
+      "sha256": "b53406e5a9415cabaf845692c1b3001d6c1cda78c0a0cb6c59ab4f4c6e6dfcc0",
+      "size_bytes": 2975
     },
     {
       "path": "workflows/README.md",
-      "sha256": "c217a0b260f6a1176aabac08592c26e394aeb3e97cc9263b2e73cf13af3d2f5c",
-      "size_bytes": 4381
+      "sha256": "d2e4ce94bda5bf9a041157f1f1fbf744a1589a0b6c0aa763791fea494f3a67eb",
+      "size_bytes": 5516
     },
     {
       "path": "workflows/build_stage9_manifest.py",
@@ -212,18 +212,18 @@
     },
     {
       "path": "registries/decision_log.csv",
-      "sha256": "414050509f03597e4c38c319e0b31936ddc5b42ade1844d3c0a7937cf7bd9aeb",
-      "size_bytes": 6144
+      "sha256": "7cda8213fbece4b661ca48d5b657414ae7db5240315b5daf6633c1efa824f634",
+      "size_bytes": 6612
     },
     {
       "path": "registries/change_log.csv",
-      "sha256": "662d620cbc3a0a68f720decd7ec12103be85a359fb17a7e9723190f55296d343",
-      "size_bytes": 4568
+      "sha256": "3cb7c3b3ce81b8fcced09853474752ec298c370e58cf7ce45bca7dc8509a4c2f",
+      "size_bytes": 5174
     },
     {
       "path": "registries/experiment_ledger.csv",
-      "sha256": "f7a4939389d64cba51c55806f0237f52887be6d428bbc4ed31106ad27bd1240a",
-      "size_bytes": 5920
+      "sha256": "4a8e50763f3e5e0d41865b66fd5ecc920e78f396bd5dc8d9016f4e11cd7b7a3f",
+      "size_bytes": 6811
     }
   ],
   "population_spectra_used": false,

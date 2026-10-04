@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "models",
+    "training_stars",
+    "unique_training_stars",
+    "holdout_used",
+    "code_sha256",
+    "configuration_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "holdout_used": {
+      "const": false
+    },
+    "unique_training_stars": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "training_stars": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^KIC [1-9][0-9]{5,8}$"
+      }
+    },
+    "models": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "kind",
+          "features",
+          "training_stars",
+          "coefficients",
+          "preprocessing"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "ridge",
+              "logistic"
+            ]
+          },
+          "features": {
+            "type": "array",
+            "minItems": 8,
+            "maxItems": 11,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "training_stars": {
+            "type": "array",
+            "uniqueItems": true
+          },
+          "coefficients": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "preprocessing": {
+            "type": "object",
+            "required": [
+              "median",
+              "mean",
+              "scale"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Stage 12 locked compact model pack"
+}

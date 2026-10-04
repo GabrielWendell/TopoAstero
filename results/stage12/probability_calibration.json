@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "Brier": null,
+      "calibration": [],
+      "decision_curve": [],
+      "method": "baseline",
+      "negative_stars": 9,
+      "positive_stars": 0,
+      "status": "withheld_insufficient_classes",
+      "task": "catastrophic_failure"
+    },
+    {
+      "Brier": null,
+      "calibration": [],
+      "decision_curve": [],
+      "method": "hybrid",
+      "negative_stars": 9,
+      "positive_stars": 0,
+      "status": "withheld_insufficient_classes",
+      "task": "catastrophic_failure"
+    },
+    {
+      "Brier": null,
+      "calibration": [],
+      "decision_curve": [],
+      "method": "baseline",
+      "negative_stars": 9,
+      "positive_stars": 0,
+      "status": "withheld_insufficient_classes",
+      "task": "nominal_alias_unreliable"
+    },
+    {
+      "Brier": null,
+      "calibration": [],
+      "decision_curve": [],
+      "method": "hybrid",
+      "negative_stars": 9,
+      "positive_stars": 0,
+      "status": "withheld_insufficient_classes",
+      "task": "nominal_alias_unreliable"
+    },
+    {
+      "reason": "known-positive LEGACY stars do not supply absent-signal labels",
+      "status": "withheld_positive_only_cohort",
+      "task": "astrophysical_detectability"
+    }
+  ]
+}

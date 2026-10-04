@@ -118,8 +118,8 @@
     },
     {
       "path": "reports/stage10/STAGE10_REPORT.md",
-      "sha256": "e2b32d29df8cc778237f953d9a01c493f9c25876534a7d23f4071af4c3103299",
-      "size_bytes": 2387
+      "sha256": "4a5a84ed41f4d770b4917ff5b83a77d0275b233578d4bc231d590b77d067c0df",
+      "size_bytes": 2384
     },
     {
       "path": "reports/stage10/TRACEABILITY_MATRIX.md",
@@ -662,6 +662,31 @@
       "size_bytes": 1410
     },
     {
+      "path": "schemas/stage11_catalog.schema.json",
+      "sha256": "73fc69d45099da0b40423361b6178a33f9164e570653ec70a75ff272167809e8",
+      "size_bytes": 1128
+    },
+    {
+      "path": "schemas/stage11_gate.schema.json",
+      "sha256": "579b8fc9c35bc7d4aa3773af3842002d80f0913029576d7877beeb619fc2de3f",
+      "size_bytes": 1174
+    },
+    {
+      "path": "schemas/stage11_release.schema.json",
+      "sha256": "94d1a335e0fa37a30d64248eeb1ec4005d1d850be41477c424084b99e3b2ff21",
+      "size_bytes": 1049
+    },
+    {
+      "path": "schemas/stage12_gate.schema.json",
+      "sha256": "016b1e76d30a04e9c835d26ade04e51907d3e8a334004fa039f55c4179d56ba9",
+      "size_bytes": 1779
+    },
+    {
+      "path": "schemas/stage12_models.schema.json",
+      "sha256": "6fa896d195d166a52a4721d8c9a4e1d0e41f9748c369a90164d7b38ed2d9cfc5",
+      "size_bytes": 1744
+    },
+    {
       "path": "schemas/stage3_run_manifest.schema.json",
       "sha256": "d70f75dcf34ed1eb2e7e833c534bd232182e4c2151ee1253960c73f8cda0bf30",
       "size_bytes": 3168
@@ -792,6 +817,61 @@
       "size_bytes": 1653
     },
     {
+      "path": "src/topoastero/hybrid/__init__.py",
+      "sha256": "e0bbfb4ad3df1f9dbda69970fc986433406170ba7b36f37e6a4695c23a4fedcf",
+      "size_bytes": 75
+    },
+    {
+      "path": "src/topoastero/hybrid/cli.py",
+      "sha256": "881c1a984c2f017e351846c2db895b2841989647b4dfaf5bb036a3af8107691a",
+      "size_bytes": 4468
+    },
+    {
+      "path": "src/topoastero/hybrid/features.py",
+      "sha256": "1cc8b90300c5bd2dfad5e44f2af4a4c42b6210534466266110750cfeec126e25",
+      "size_bytes": 7841
+    },
+    {
+      "path": "src/topoastero/hybrid/models.py",
+      "sha256": "cc665a0ba8eec33ab63962311b0f991b49acded21e00f15463167a0715c0a908",
+      "size_bytes": 8947
+    },
+    {
+      "path": "src/topoastero/hybrid/pipeline.py",
+      "sha256": "b43accee507204d9f61197070ab6c034e54f71045b8a877e4fb5b664113d45be",
+      "size_bytes": 23340
+    },
+    {
+      "path": "src/topoastero/hybrid/plotting.py",
+      "sha256": "08fde0f6bad086db540ad943e25358eab43414086a0742a47d75235247139978",
+      "size_bytes": 7893
+    },
+    {
+      "path": "src/topoastero/hybrid/release.py",
+      "sha256": "08148c1a0786129ba9862306292595243dd37a829c8239125fe3e5a968a39731",
+      "size_bytes": 9802
+    },
+    {
+      "path": "src/topoastero/hybrid/reporting.py",
+      "sha256": "db55b51fda4d5bf6f3abb4a3dcd0494373547d57db8cad6210a75488249b97c3",
+      "size_bytes": 21548
+    },
+    {
+      "path": "src/topoastero/hybrid/statistics.py",
+      "sha256": "b8bedb9f797e2417d9fd98900856ac093b7dcf663ca4ba6d8c7eb88e4ed77797",
+      "size_bytes": 11775
+    },
+    {
+      "path": "src/topoastero/hybrid/transfer.py",
+      "sha256": "c8d160df9a3679ebc389d258de3f18993a7d9ea5a70307a5e255c7ba863420b8",
+      "size_bytes": 12151
+    },
+    {
+      "path": "src/topoastero/hybrid/validation.py",
+      "sha256": "f2c69b2ab76ad831ac811c5bb2586bc1aa71223e0012af36af17b33566ac9757",
+      "size_bytes": 4099
+    },
+    {
       "path": "src/topoastero/mathematical_relations.py",
       "sha256": "8b17841383ef64d7fae99a357567a7a74c4210f735f76a7be3c3d6a3a368aff8",
       "size_bytes": 9098
@@ -800,6 +880,51 @@
       "path": "src/topoastero/persistence.py",
       "sha256": "495d8f29843a9dbc9c95ff4682cf354a9da07b230c7e87614355a88d0019e4d5",
       "size_bytes": 4056
+    },
+    {
+      "path": "src/topoastero/population.py",
+      "sha256": "f57856eb177bf68fb9071e85b534559c495966b1abae974e13891b6bd0ddbfa2",
+      "size_bytes": 12788
+    },
+    {
+      "path": "src/topoastero/population_acquisition.py",
+      "sha256": "ac4b2cba8674343b68e54313d61afadf2b48245fda69f808dba6905aeec7eb91",
+      "size_bytes": 10492
+    },
+    {
+      "path": "src/topoastero/population_cli.py",
+      "sha256": "5a9b3daa9b157e272ec9fe4a40405df9ea104b99b7b6ef96da1ed2cb484d4dfd",
+      "size_bytes": 8388
+    },
+    {
+      "path": "src/topoastero/population_freeze.py",
+      "sha256": "84f8696a97ff53959e21444366980ad9948d7c9dca304b4e9689cabfd823b1bb",
+      "size_bytes": 11757
+    },
+    {
+      "path": "src/topoastero/population_pipeline.py",
+      "sha256": "36ac308a72cb30fd2e88a5b88ef0accd81710f16dc2fef6fd3bd84ad3d68c4d7",
+      "size_bytes": 17559
+    },
+    {
+      "path": "src/topoastero/population_references.py",
+      "sha256": "9e092d930bbc2dc595a29f7d8519cb5872929c7d8c4277941e99926e4da07eb2",
+      "size_bytes": 6410
+    },
+    {
+      "path": "src/topoastero/population_reporting.py",
+      "sha256": "6836bd923e338430abe324c5710909c25136ffd1c827e142d663f2788fe2bddd",
+      "size_bytes": 17125
+    },
+    {
+      "path": "src/topoastero/population_statistics.py",
+      "sha256": "2294f95d7a2bd549a8d2def68c90ac5ee2539f6269ab1e15f65679bf83c1cbd6",
+      "size_bytes": 10991
+    },
+    {
+      "path": "src/topoastero/population_store.py",
+      "sha256": "7c48bb27ce0d8b23df13cdb608bf301a91d575825f017bad3e063d4263fb1bd5",
+      "size_bytes": 3329
     },
     {
       "path": "src/topoastero/portability.py",
@@ -855,6 +980,11 @@
       "path": "src/topoastero/stage10_validation.py",
       "sha256": "f6a1747f4824da2b41e63dbfc9615651b37c9fb6fbceae5b8fe5be95fc8794dd",
       "size_bytes": 14146
+    },
+    {
+      "path": "src/topoastero/stage11_validation.py",
+      "sha256": "6be1346071637c7ce3758b664c6768cd4996e37270554cd728f8e7b1ac4056e8",
+      "size_bytes": 6714
     },
     {
       "path": "src/topoastero/stage1_validation.py",
@@ -917,6 +1047,11 @@
       "size_bytes": 7374
     },
     {
+      "path": "tests/conftest.py",
+      "sha256": "a5f3b86e38f873b3158d7c6d99e6bb40b93cf030047565189ae1fb2116844c16",
+      "size_bytes": 2760
+    },
+    {
       "path": "tests/governance/test_plot_style_contract.py",
       "sha256": "f2313bbf1647b9820fe855469fd7e28c9736d1bd74680528af24af04e50bfb65",
       "size_bytes": 1055
@@ -940,6 +1075,16 @@
       "path": "tests/governance/test_stage10_schemas.py",
       "sha256": "2b65a2d9db4512f68786893106e095042acd661815c9a7d4522873b1687f7bb2",
       "size_bytes": 707
+    },
+    {
+      "path": "tests/governance/test_stage11_contract.py",
+      "sha256": "23aee4170c684f67b62ce465292297fc967ff3d5a8d6d73e15046c4a10aa2b38",
+      "size_bytes": 3152
+    },
+    {
+      "path": "tests/governance/test_stage12_contract.py",
+      "sha256": "04b53399bb9308bd7128fb917ffd4157d1ce61d4812beb187d0b700d582da6cf",
+      "size_bytes": 3687
     },
     {
       "path": "tests/governance/test_stage1_contract.py",
@@ -1042,6 +1187,16 @@
       "size_bytes": 857
     },
     {
+      "path": "tests/integration/test_stage11_cli.py",
+      "sha256": "1a7f3ee17733f27530d9a87eff426e25390503ace8598931dbc187268584ffd7",
+      "size_bytes": 1204
+    },
+    {
+      "path": "tests/integration/test_stage12_cli.py",
+      "sha256": "0019cca1b8d53f0847de87226681583cf5a199b9fb894592e0a769dcbe149c18",
+      "size_bytes": 405
+    },
+    {
       "path": "tests/integration/test_stage1_cli.py",
       "sha256": "b37fb74a0547c0d0a9e9982c22d4e3f3564fe7da15cedc7b913ff671a14086ea",
       "size_bytes": 739
@@ -1122,6 +1277,36 @@
       "size_bytes": 1528
     },
     {
+      "path": "tests/unit/test_hybrid_features.py",
+      "sha256": "c64c91a1989d294ec5e4c3c1cc3dadf5526e9840953bd0480a5f450f9e466b2a",
+      "size_bytes": 5411
+    },
+    {
+      "path": "tests/unit/test_hybrid_models.py",
+      "sha256": "13e561deb9aea30ac903a4538339ab591113644a447c6ec4465e2fe61c80a232",
+      "size_bytes": 4933
+    },
+    {
+      "path": "tests/unit/test_hybrid_pipeline.py",
+      "sha256": "14a060f65e6c588f8aee1084089bf92010c5846e62a390c1bc1b2e61bae46e58",
+      "size_bytes": 10754
+    },
+    {
+      "path": "tests/unit/test_hybrid_release_cli.py",
+      "sha256": "5817c118e885473a0b2b2bf58a2fa72eb50c43edc2e460d877dacbdb50706df6",
+      "size_bytes": 8365
+    },
+    {
+      "path": "tests/unit/test_hybrid_statistics.py",
+      "sha256": "815cac1971ae81e91d8d3fa525de55bc1e5a18dd8d13699b255176fdc49b0752",
+      "size_bytes": 4815
+    },
+    {
+      "path": "tests/unit/test_hybrid_transfer.py",
+      "sha256": "d74a27baaa835044f24839ccd884149ce4a6117a076040c69906934c7473bc4a",
+      "size_bytes": 10350
+    },
+    {
       "path": "tests/unit/test_mathematical_relations.py",
       "sha256": "49b0f9c38c84249abbc33b005c1083361800161e88b84605a569cd58fc3c27c5",
       "size_bytes": 6656
@@ -1130,6 +1315,21 @@
       "path": "tests/unit/test_persistence.py",
       "sha256": "e441cffe806f0516b2a366ba3e927e9d0151fa9da1ad5f36037ac90ec70a5574",
       "size_bytes": 1771
+    },
+    {
+      "path": "tests/unit/test_population_acquisition_network.py",
+      "sha256": "f62f7e66a7f513bcbd841a69fc2a529ebf0122d5338bca64a608af066f1cf99d",
+      "size_bytes": 2805
+    },
+    {
+      "path": "tests/unit/test_population_freeze.py",
+      "sha256": "50317f278714b4c66a21576b2518d79b48bc27837cac57662b6caef3aed46545",
+      "size_bytes": 15635
+    },
+    {
+      "path": "tests/unit/test_population_statistics.py",
+      "sha256": "3dd2a177d826fbc50578da6e9268a18478e93b2c899d0544dc5ccc2c17de0835",
+      "size_bytes": 6081
     },
     {
       "path": "tests/unit/test_portability.py",
@@ -1297,6 +1497,11 @@
       "size_bytes": 8057
     },
     {
+      "path": "workflows/check_stage10_portable_reproduction.py",
+      "sha256": "3e0aa88d220b6de89764fa9b08b85b287cb1063c84ef3aad9438d028f3c211ac",
+      "size_bytes": 8944
+    },
+    {
       "path": "workflows/compare_smoke_reference.py",
       "sha256": "56942b9e00691179f8e4b35e2908f99675c365fb34ec89daa488557b55b91f64",
       "size_bytes": 5259
@@ -1317,6 +1522,16 @@
       "size_bytes": 18616
     },
     {
+      "path": "workflows/plot_stage11.py",
+      "sha256": "8a99a08043ba76a9e2a8220e835f0cf3db138ceef791f4f8f7a4fb489c54ea22",
+      "size_bytes": 5693
+    },
+    {
+      "path": "workflows/plot_stage12.py",
+      "sha256": "40a0a63fea6ec56550b88a07007a6788123b52aec6431387adc1af2fc3b08fe8",
+      "size_bytes": 559
+    },
+    {
       "path": "workflows/query_legacy_kepler_inventory.py",
       "sha256": "472667e6a1b9378099f99363bea2adc6145db7c4401c023bccc8ad74d81eb9a5",
       "size_bytes": 6571
@@ -1332,9 +1547,24 @@
       "size_bytes": 15648
     },
     {
+      "path": "workflows/repair_stage12_inherited.py",
+      "sha256": "847af3bc95395a74df01fcd7a926b66bcc3af6cbec8e3c71d56d71d55ec00237",
+      "size_bytes": 6343
+    },
+    {
       "path": "workflows/replay_stage10_reduced.py",
       "sha256": "6181cb000bac5e5ff02552098ae65ce341dfba41e3c66dfdfbccf4ffd8933644",
       "size_bytes": 1372
+    },
+    {
+      "path": "workflows/replay_stage11_reduced.py",
+      "sha256": "6e908110e76e679c2522632f1fcb7b8657516cb38b81d9563963dad0f0a359af",
+      "size_bytes": 1820
+    },
+    {
+      "path": "workflows/replay_stage12_reduced.py",
+      "sha256": "243da05233f38c79b0a8c1b269a8b17f4ea792562dc14f89af9cd8c5517d1c0e",
+      "size_bytes": 1822
     },
     {
       "path": "workflows/reproduce_stage10.py",
@@ -1342,9 +1572,29 @@
       "size_bytes": 9406
     },
     {
+      "path": "workflows/reproduce_stage11.py",
+      "sha256": "02af5583de94f83e2f82690ee7f813e53678129e4f912a585f00537710c8ce72",
+      "size_bytes": 1334
+    },
+    {
+      "path": "workflows/reproduce_stage12.py",
+      "sha256": "4236265f4d8fd59d75a577f5642e6885b898d83d860e883606778c00fd474a59",
+      "size_bytes": 885
+    },
+    {
       "path": "workflows/run_stage10_rudy.py",
       "sha256": "2e6abec56d22bca92e8ac2c4399a0c70a56de8064a697e13af643066b6bc8bf3",
       "size_bytes": 35795
+    },
+    {
+      "path": "workflows/run_stage11_legacy.py",
+      "sha256": "de97c0dbbce1166a7a33fb88a64d4472cc071d1e503df1a202a72106c942d7a9",
+      "size_bytes": 175
+    },
+    {
+      "path": "workflows/run_stage12_hybrid.py",
+      "sha256": "cd35508f78177554a4fb1ce4b2a8f2d801592684ea135fe261b16ec211a6aba3",
+      "size_bytes": 161
     },
     {
       "path": "workflows/run_stage3_classical.py",
@@ -1400,6 +1650,16 @@
       "path": "workflows/validate_stage10.py",
       "sha256": "81014bd0e79473f919ac77d098329323fd1eaaa8fdf3f0d01ca65268313f15e1",
       "size_bytes": 853
+    },
+    {
+      "path": "workflows/validate_stage11.py",
+      "sha256": "3e666b52f7b059cf10dfef2a83417accdd05cff7bd60b31f78146c6e16f060af",
+      "size_bytes": 998
+    },
+    {
+      "path": "workflows/validate_stage12.py",
+      "sha256": "bf5b608c34b690a8b87aa4ae8d60a74a4e54b6daf73ddc87f3f976fc4611c998",
+      "size_bytes": 650
     },
     {
       "path": "workflows/validate_stage2.py",

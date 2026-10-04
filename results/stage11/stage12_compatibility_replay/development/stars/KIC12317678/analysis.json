@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/population_dev/development/stars/KIC12317678/analysis.json",
+    "sha256": "ebd06d65c78d309bf6f8506667c839d71de5f7cf7ccdd94205838ffd5162dc9c",
+    "size_bytes": 380
+  },
+  "available_products": 0,
+  "completed_failed_records_retried": false,
+  "expected_products": 39,
+  "input_id": "447e6da5347d200e942d61f555a2fd4c3d7a2d870ced42d838e8b108177fef70",
+  "quality_flags": [
+    "missing_products"
+  ],
+  "reason": "fewer_than_three_nonoverlapping_months",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "development",
+  "stable_star_id": "KIC 12317678",
+  "status": "missing_input"
+}

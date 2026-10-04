@@ -1,0 +1,10 @@
+{
+  "Rudy_and_actual_test_sectors_forbidden": true,
+  "applied": false,
+  "authorization": null,
+  "feature_redesign": false,
+  "instruction": "Use separately authorized recalibrate command; retain and validate on disjoint simulation stars.",
+  "prespecified_layer": "star_weighted_median_log_offset",
+  "status": "not_authorized_not_applied",
+  "training_role": "development_simulations_only"
+}

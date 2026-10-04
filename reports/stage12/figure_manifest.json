@@ -1,0 +1,123 @@
+{
+  "figures": [
+    {
+      "description": "Paired grouped OOF errors; bootstrap conditional on fitted models. Sparse pilot, no population claim.",
+      "figure_id": "stage12_oof_increment",
+      "files": [
+        {
+          "path": "reports/stage12/figures/stage12_oof_increment.png",
+          "sha256": "90bb9b212f06da50b37466e28c85c55404621d5fbacf66c5b159b4c6bb9c1323",
+          "size_bytes": 193960
+        },
+        {
+          "path": "reports/stage12/figures/stage12_oof_increment.svg",
+          "sha256": "4181d7099a83aa14d98adc4f61bb389815da4cbd558e24fbe286733fcba55a5d",
+          "size_bytes": 96897
+        },
+        {
+          "path": "reports/stage12/figures/stage12_oof_increment.pdf",
+          "sha256": "99ddd756ebc697ef5df076a2d17d4a324f1c76cd07878a1c52eafe19efb01981",
+          "size_bytes": 17276
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/stage12/oof_predictions.csv",
+          "sha256": "7227acf0d86914ee1d837d6e64564f5752a2e49ef13b3f6cf5667e04be20781a",
+          "size_bytes": 1831
+        },
+        {
+          "path": "results/stage12/increment.json",
+          "sha256": "9c902fb122aab3c60c6c7dcc8eac898d8a1164978a1b091735d646f01a343b7d",
+          "size_bytes": 2701
+        }
+      ]
+    },
+    {
+      "description": "Failure calibration and decision curves, or explicit class-support withholding.",
+      "figure_id": "stage12_quality_calibration",
+      "files": [
+        {
+          "path": "reports/stage12/figures/stage12_quality_calibration.png",
+          "sha256": "e3ee82cf068eed68f886648d5eaeeeb9018e3f4487fd0a3eaf02f5ade7ce9bc5",
+          "size_bytes": 124404
+        },
+        {
+          "path": "reports/stage12/figures/stage12_quality_calibration.svg",
+          "sha256": "cd76b05f1256b707805a69393ca6cfba7b02a521bccd8abc47bac6749a5d76c8",
+          "size_bytes": 52128
+        },
+        {
+          "path": "reports/stage12/figures/stage12_quality_calibration.pdf",
+          "sha256": "e5f7cab58525c0b107e25d5651a186f51d1fff9005b13f25f28b9ce60a4a903b",
+          "size_bytes": 15117
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/stage12/probability_calibration.json",
+          "sha256": "ea02d67b3946f696d3d0055ff6f5e4a48606f5e0fad76bc82fa2c2835cf0c3b4",
+          "size_bytes": 1232
+        }
+      ]
+    },
+    {
+      "description": "Conditional Rudy cumulative operator trajectories. Candidates include rejected values; recovery requires QC. Steps are not isolated causal effects.",
+      "figure_id": "stage12_transfer_trajectories",
+      "files": [
+        {
+          "path": "reports/stage12/figures/stage12_transfer_trajectories.png",
+          "sha256": "6c78118986c3c092cf6a6e7e521ecc83def38f8a6f471caafc12bddd6e589a1d",
+          "size_bytes": 327870
+        },
+        {
+          "path": "reports/stage12/figures/stage12_transfer_trajectories.svg",
+          "sha256": "5259c97f297725719b9cf2d72b006f7b59557b41a5c746b8cdff20eab668e977",
+          "size_bytes": 154727
+        },
+        {
+          "path": "reports/stage12/figures/stage12_transfer_trajectories.pdf",
+          "sha256": "7ef0816fc2781a743ea0f15970922f19f41e5531836a5811e9ab2ad5789afd17",
+          "size_bytes": 25735
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/stage12/transfer_curves.csv",
+          "sha256": "7ce2a56196108effce27d552220735ccc512dd84d2c57e4df86bb659e9e80faf",
+          "size_bytes": 13167
+        }
+      ]
+    },
+    {
+      "description": "All actual sectors retained. Rejected candidates are not detections; TESS probability and interval calibration withheld.",
+      "figure_id": "stage12_actual_tess_quality",
+      "files": [
+        {
+          "path": "reports/stage12/figures/stage12_actual_tess_quality.png",
+          "sha256": "00688c5d8edf1550e0050e3f98464ff84be8c0acba8003664fe6ae15851bb981",
+          "size_bytes": 160984
+        },
+        {
+          "path": "reports/stage12/figures/stage12_actual_tess_quality.svg",
+          "sha256": "390c161999217183c69360b0d91da5024a649a99ad2ede9c600e6116a3b17d2c",
+          "size_bytes": 96069
+        },
+        {
+          "path": "reports/stage12/figures/stage12_actual_tess_quality.pdf",
+          "sha256": "84ee9fad743827f0c376d8f79663aa3a1012137347e65451fc31e3063a377ebf",
+          "size_bytes": 20531
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/stage12/actual_tess.json",
+          "sha256": "3b1013412f4a0760e816d1722c715e1f00ce74a5e172085f86873703bf4ac410",
+          "size_bytes": 44016
+        }
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "style": "TA-PLOT-1.0"
+}

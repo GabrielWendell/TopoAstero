@@ -58,8 +58,8 @@
     },
     {
       "path": "reports/stage10/G10_ACCEPTANCE.json",
-      "sha256": "0b725a35d2ce434a53c973ec9c4440c06da396c1386d688d8f09fe20d26ba66a",
-      "size_bytes": 1150
+      "sha256": "0092763edcf0e5a4accac0ebe650da8f4860a1937bfb58cf0d5a1cdd87bbe6c8",
+      "size_bytes": 1121
     },
     {
       "path": "reports/stage10/LIMITATIONS_AND_NEGATIVE_RESULTS.md",
@@ -68,8 +68,8 @@
     },
     {
       "path": "reports/stage10/STAGE10_REPORT.md",
-      "sha256": "e2b32d29df8cc778237f953d9a01c493f9c25876534a7d23f4071af4c3103299",
-      "size_bytes": 2387
+      "sha256": "4a5a84ed41f4d770b4917ff5b83a77d0275b233578d4bc231d590b77d067c0df",
+      "size_bytes": 2384
     },
     {
       "path": "reports/stage10/TRACEABILITY_MATRIX.md",
@@ -88,8 +88,8 @@
     },
     {
       "path": "reports/stage10/clean_reproduction.json",
-      "sha256": "75ec629ad93c0da7d80b11c80a071ccddd29acd1ff408a4b59f122ff893dad2b",
-      "size_bytes": 118
+      "sha256": "61ff046c60f1944a878bf10cad3a90a9434319d4af93366933830eaec85a8514",
+      "size_bytes": 9125
     },
     {
       "path": "reports/stage10/figure_manifest.json",
@@ -248,8 +248,8 @@
     },
     {
       "path": "reports/stage10/freeze_manifest.json",
-      "sha256": "a8d92fd93526e7007a411830e509330917ae6d7a09ad46f9214c2e41fc8e3d16",
-      "size_bytes": 50936
+      "sha256": "b5b7ec3bb88929a452a951c23d4ac728bd8bb1b0e25da1ea7fea5528adc9fb13",
+      "size_bytes": 59996
     },
     {
       "path": "results/stage10/background_models.json",

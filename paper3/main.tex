@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,booktabs,graphicx,hyperref}
+\input{results_status}
+\title{Conditional utility and transfer limits of topological asteroseismic descriptors}
+\author{Gabriel Wendell}
+\date{Stage 12 working draft}
+\begin{document}\maketitle
+\begin{abstract}
+We implement a grouped comparison of compact classical and hybrid seismic models,
+physical Kepler-to-TESS degradation and frozen-method quality screening. The current
+dataset supports \DevelopmentStars{} usable development stars; \TessSectors{} actual
+Rudy TESS sectors supply a descriptive transfer case. Scientific G12 is
+\GateStatus. No positive population increment, calibrated detection or population
+transfer claim follows from this implementation snapshot.
+\end{abstract}
+\section{Question and controls}
+The relevant practical question is whether a small collection of geometric
+descriptors improves prediction after conventional seismic estimates and matched
+controls are included. Path-superlevel $H_0$ persistence and peak prominence are
+the same scalar information. Their location descriptor belongs in both models;
+the baseline additionally includes a conventional graph-ridge score. Solar-like
+oscillation scaling and observational context follow standard reviews
+\cite{ChaplinMiglio2013,GarciaBallot2019}. The hybrid
+adds a nominal comb score, the excess competing-alias score and a cylindrical
+geometry descriptor. A gain within a compact regression class would establish
+conditional operational utility, not independent spectral information.
+The observations and published reference centers follow the LEGACY studies
+\cite{Lund2017,SilvaAguirre2017,Lund2017Erratum}.
+\section{Population and prediction tasks}
+The existing 39/13/13 development/internal/final partition is retained, with Rudy
+outside model fitting. Features are extracted without reference values;
+published centers enter only supervised targets and evaluation. Missing inputs
+and pipeline failures retain their cohort rows. Global parameter regression is
+the primary task. Catastrophic conventional-estimator failure and nominal-alias
+reliability are binary quality tasks when class support permits. The selected
+positive-only population cannot calibrate astrophysical signal absence.
+\section{Models and grouped validation}
+For quantity $q$, the target is $y_i=\log(q_i^{\rm ref}/q_i^{\rm classical})$.
+The fitted correction is $\widehat q_i=q_i^{\rm classical}\exp(\beta_0+x_i^T\beta)$.
+Ridge parameters minimize
+\[\sum_i w_i(y_i-\beta_0-x_i^T\beta)^2+\lambda\|\beta\|^2,\]
+where each parent star has total weight one. Median imputation and standardization
+are fitted inside training folds. Three deterministic outer star folds and three
+inner star folds isolate penalty selection from out-of-sample prediction.
+The registered grid is $\lambda\in\{1,10,100\}$. Logistic quality models use the
+same grouped design; an inner-OOF logit layer calibrates probabilities without
+outer test outcomes. Unsupported class/fold fits are withheld.
+\section{Uncertainty and practical utility}
+The primary loss is absolute fractional error. The paired increment is
+$d_i=|\widehat q_i^{B}/q_i^{\rm ref}-1|-|\widehat q_i^{H}/q_i^{\rm ref}-1|$.
+Prespecified practical margins are 0.01 for $\nu_{\max}$ and 0.005 for
+$\Delta\nu$. Superiority and two-one-sided equivalence tests receive separate
+three-test superiority and separate two-regression equivalence corrections. Paired star bootstrap intervals are conditional
+on the fitted OOF models; full fitting-selection uncertainty is not represented.
+Empirical intervals use inner OOF residual ranks. They are not exact conformal
+intervals, and insufficient rank support produces a missing interval. Coverage
+uses published reference centers rather than known stellar truth. Quality-model
+Brier scores, fixed-bin calibration and threshold decision curves are reported
+only with both outcome classes. TESS risk probabilities are withheld under
+mission shift. A quality flag is not an oscillation detection.
+\section{Current grouped evidence}
+\input{results_tables}
+\par\medskip
+These development OOF measurements are a sparse pilot. Unusable stars are not
+imputed as successful observations. The source archive includes inherited
+pipeline failures; their reasons and compatibility repairs are preserved. The
+registered minimum of 20 development stars is a claim-support guard, not a
+formal assertion of statistical power. A signed model release must precede the
+original Stage 11 holdout opening, after which the first archive is applied once.
+\IfFileExists{../figures/stage12/stage12_oof_increment.pdf}{%
+\begin{figure}[ht]\centering
+\includegraphics[width=\linewidth]{../figures/stage12/stage12_oof_increment.pdf}
+\caption{Paired outer-fold errors and conditional bootstrap increments.
+The sparse development pilot does not support population complementarity.}\end{figure}}{}
+\section{Physical degradation and contribution trajectories}
+Kepler Q5 samples are integrated as a piecewise-linear flux curve over target
+exposures. Unsupported exposures and long source gaps are rejected. Cadence,
+available duration, noise, real sector masks, extra duty loss and contamination
+are changed along registered trajectories. Seeds depend on parent star, sector,
+source offset and draw; paired methods and degradation levels share random
+numbers. Every generated time/flux array and analysis checkpoint is archived.
+Contamination dilutes variability before instrumental noise is added. Inherited
+Kepler noise is retained. The unit color-response assumption is a sensitivity;
+it does not constitute a measured Kepler/TESS passband conversion. The noise
+model and real-window coverage remain explicit nuisance limitations.
+\section{Actual Rudy sectors and combinations}
+The frozen model digest is checked before and during sector processing. All 11
+registered SPOC sectors are retained, including quality rejection and
+nondetection cases. Actual sectors were previously inspected in Stage 10, so
+this is a reproducible case study rather than new blinded test data. Registered
+adjacent combinations average PSDs incoherently with exposure weights; they do
+not coherently stitch stellar phases across years. Candidate estimates are
+retained separately from accepted measurements. Repeated sectors, offsets and
+draws still describe one parent star. Conditional degradation quantiles are not
+population confidence intervals.
+\IfFileExists{../figures/stage12/stage12_transfer_trajectories.pdf}{%
+\begin{figure}[ht]\centering
+\includegraphics[width=\linewidth]{../figures/stage12/stage12_transfer_trajectories.pdf}
+\caption{Rudy cumulative degradation trajectories. Rejected candidates remain
+visible; recoverability additionally requires quality acceptance.}\end{figure}}{}
+\section{Recalibration, scope and counterexamples}
+A separately authorized layer may estimate a star-weighted median log offset
+using development simulations from non-Rudy stars. Holdout stars, Rudy and actual
+test sectors are forbidden from calibration fitting. Features remain fixed, and
+the calibration layer requires evaluation on disjoint simulation stars. No layer
+is applied in this snapshot. Missing envelopes, competing aliases, source gaps,
+out-of-range features, unavailable classes and mission shift are explicit failure
+domains. The current scope decision stops at Rudy transfer limits; no powered
+broader TESS sample is established.
+\section{Reproducibility and claims}
+The release supplies model JSON, feature/task registries, grouped fold audits,
+paired results, source-backed figures, degraded light curves, quality reasons,
+and a model card. Base inference requires NumPy/SciPy only; mission adapters use
+the existing optional astronomy environment. G7's delay-topology drop and G8's
+geometry-only interpretation are preserved. Population complementarity requires
+locked out-of-sample improvement beyond a practical margin or supported failure
+calibration; positive transfer requires compatible actual observations within
+uncertainty. Until those conditions are supported, the honest output is a
+validation-pending pilot and stated transfer limits.
+\bibliographystyle{plain}\bibliography{references}
+\end{document}

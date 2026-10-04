@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7940546/analysis.json",
+      "sha256": "ef8d984fc3339f6b8b325c378588141f0077142538b6d93948817a5a7d29e7fb",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "51f914f9041d66ebc859b743ec4f33d177506347b8d400d05e24d13d0cf335ab",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 7940546"
+}

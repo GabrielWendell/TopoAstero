@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/descriptive_benchmark/stars/KIC10963065/analysis.json",
+      "sha256": "c2af9de9a87c17b3e8154b1697572599ca9414aa58e07615874f62a91f159569",
+      "size_bytes": 768
+    }
+  ],
+  "input_id": "d5a16f5faec270678978d5cd92ca724ad56eea5a91ae980af98650cf1ce52875",
+  "role": "descriptive_benchmark",
+  "schema_version": 1,
+  "stable_star_id": "KIC 10963065"
+}

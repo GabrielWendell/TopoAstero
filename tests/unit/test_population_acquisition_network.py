@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import socket
 from pathlib import Path
 
 import pytest
@@ -15,7 +14,7 @@ class _Response:
         self.payload = payload
         self.offset = 0
 
-    def __enter__(self) -> "_Response":
+    def __enter__(self) -> _Response:
         return self
 
     def __exit__(self, *args: object) -> None:
@@ -36,7 +35,7 @@ def test_download_payload_retries_timeout_then_succeeds(tmp_path: Path, monkeypa
     def fake_urlopen(*args: object, **kwargs: object) -> _Response:
         calls.append(1)
         if len(calls) < 3:
-            raise socket.timeout("synthetic read timeout")
+            raise TimeoutError("synthetic read timeout")
         return _Response(payload)
 
     monkeypatch.setattr(acquisition.urllib.request, "urlopen", fake_urlopen)
@@ -57,7 +56,7 @@ def test_download_payload_retries_timeout_then_succeeds(tmp_path: Path, monkeypa
 
 def test_download_payload_exhaustion_is_atomic(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     def fake_urlopen(*args: object, **kwargs: object) -> _Response:
-        raise socket.timeout("synthetic read timeout")
+        raise TimeoutError("synthetic read timeout")
 
     monkeypatch.setattr(acquisition.urllib.request, "urlopen", fake_urlopen)
     monkeypatch.setattr(acquisition.time, "sleep", lambda _: None)

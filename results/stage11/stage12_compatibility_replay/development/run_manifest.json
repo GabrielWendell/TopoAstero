@@ -1,0 +1,566 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/catalog.csv",
+      "sha256": "7d2d112072cd04abf6ed0bc2b9a5e4bd579fe1dcd8ecee3400d72c0eb7440f03",
+      "size_bytes": 45795
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/catalog.json",
+      "sha256": "f7961d0fb8e57be627c71258e11b2f5d656319f96d89b848f7059a622f7d18d5",
+      "size_bytes": 140174
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/operating_domain.csv",
+      "sha256": "647f5b76afe3923274c65b453f146db0ec1e21f81f76674b87aeec3ac4aaf102",
+      "size_bytes": 16670
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/paired_comparisons.csv",
+      "sha256": "2a9db82fdc67ef84ce00ed2d109b0b421701b92b5257329a0691167484027bd4",
+      "size_bytes": 727
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/performance.csv",
+      "sha256": "54fb8c6668d4bbe3f4ebf3375bda717ddb8bc0f0e8a924c070f60d1d84dc9da5",
+      "size_bytes": 3051
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/ratio_benchmark.csv",
+      "sha256": "e7edadc7b77a003c458d0fecbfde23f304cb167d81ad833cd7b62fc45b4df9d0",
+      "size_bytes": 387806
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10162436/analysis.json",
+      "sha256": "84dc09d7ecb60cfa0fe5d58079f5dfd254234ab7f0d52f95eb09b12250d5fba3",
+      "size_bytes": 748
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10162436/star_manifest.json",
+      "sha256": "a6ac3368f76332475b832edac9d48e282313b7533cd1b31a214346a0ce181188",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10454113/analysis.json",
+      "sha256": "ef0c2ca5bfb35418995d20d75d496944be3a8955204c20300c44c601b8866c46",
+      "size_bytes": 748
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10454113/star_manifest.json",
+      "sha256": "28a21d9d13554434137994884d5c81313b64177df177df98b4fe8bea5b146e84",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10516096/analysis.json",
+      "sha256": "97ad5c3f7fc1c6ac8123cc47c64187479ec5ef4f2f338813af64a80a02bfc766",
+      "size_bytes": 748
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10516096/star_manifest.json",
+      "sha256": "5a563133c28e78393f04c3d2ae39209ea8516451e2fadae4e63a49ec73f271ed",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10730618/analysis.json",
+      "sha256": "ba031b3de2cc0a2ad9a68b74199cf436c0cd4e2f064e8e1919e9440226ba9d3e",
+      "size_bytes": 232072
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10730618/mean_spectrum.csv",
+      "sha256": "f9cec17508679b99b6b9847278dd0a66f2277916914a9afa3ce81d1bb2c8e3e0",
+      "size_bytes": 345943
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10730618/monthly_spectra.npz",
+      "sha256": "d3b2072fc52c42c2dd591591faa8cc6ab2e354928a64911fdebecb704bbf0114",
+      "size_bytes": 1473115
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10730618/segment_bootstrap.csv",
+      "sha256": "964e50c1710721a5f2e6a1271b844c46d10d2e7cc577b273dfa12a78f201041b",
+      "size_bytes": 8326
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC10730618/star_manifest.json",
+      "sha256": "6c67d128e1e227f01af19d4c93a992a1664550d5c00c7dd28dc98f3f47791993",
+      "size_bytes": 1123
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC11253226/analysis.json",
+      "sha256": "87584cc791cc162345b5d6d2223ff7635e69a221035094c6a1a77306e42be1e1",
+      "size_bytes": 748
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC11253226/star_manifest.json",
+      "sha256": "d7e2ad61df8c326942151094da987e81b15dc1d0ea35246b9d528964b4132fb5",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC11772920/analysis.json",
+      "sha256": "5da802fe07e2314f93a38a7b82eba8f1cc3f38e96c30fce51596993abb61194a",
+      "size_bytes": 748
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC11772920/star_manifest.json",
+      "sha256": "726b215e4674b71d1c7ae3f69d02b9aac502726b457eb4a786af1cb2fa1c3952",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069127/analysis.json",
+      "sha256": "51166a59b160086ecf9633c12601a14dd3b70a23bc502631a1ecb03fba5b1421",
+      "size_bytes": 229192
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069127/mean_spectrum.csv",
+      "sha256": "7b3d02e451dec762ef0d74e09208832512a48c0023f79aab3a05a800b847b393",
+      "size_bytes": 339819
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069127/monthly_spectra.npz",
+      "sha256": "d8a259479a6293ec3d343666df17ce90ead346ccf878bc35be5971355285231d",
+      "size_bytes": 1001186
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069127/segment_bootstrap.csv",
+      "sha256": "51f7e17502aeea491bb3769fc4bd1a91b40b7136b04e3c3dffc966afda51e6d8",
+      "size_bytes": 8203
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069127/star_manifest.json",
+      "sha256": "33aee79fc6b4eef403a0793115b620c5db69964f7575b03407ad2a3042b68787",
+      "size_bytes": 1123
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069449/analysis.json",
+      "sha256": "d80212ec98bfbe11b2d7cb0df7a1869fe4f33c348c5feccbe66d95cd84545783",
+      "size_bytes": 741
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12069449/star_manifest.json",
+      "sha256": "8179c3ddd5c872fb813f34cc79221c8935623af35c802a4a89d6b6fdc17b506e",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12317678/analysis.json",
+      "sha256": "197fb85cceb3c076580b4f71614895361ff20b4390922057d6ee85bf11963608",
+      "size_bytes": 741
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12317678/star_manifest.json",
+      "sha256": "4f310bf290226b4736ccb9bd93502d255e3abdbe87bd3c98bda1b861858fd0b9",
+      "size_bytes": 413
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC1435467/analysis.json",
+      "sha256": "8ef93788d48d1487876fe69b123066de7088fdb6ef825c05523dcd3788b2ff44",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC1435467/star_manifest.json",
+      "sha256": "2bf23bdf46edad08c74815e479ce5e0b4a0dae9d14d33686140c694ab3057d45",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC2837475/analysis.json",
+      "sha256": "127d5ccc64068e48d4f3071179885aeafe5feda2b6446509382dddc2aa9ec9db",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC2837475/star_manifest.json",
+      "sha256": "a74207439caac9dc6069eaea81a6ff50a44a9e4750a0cb7bf8b3eac24d41f7ed",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC3427720/analysis.json",
+      "sha256": "040e7d965131c1162551ffeecce6470d126937de7c5e085830582349fdf90ed0",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC3427720/star_manifest.json",
+      "sha256": "09c88d2130b22bf540537b057f70a073abd54e3c100116be7f7c6aaf4c86709d",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC3656476/analysis.json",
+      "sha256": "acaf220dd8254e5ca9b515546627ede4d24568e1e0bef96f3365618029863c8f",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC3656476/star_manifest.json",
+      "sha256": "0bc4f06b06b5bfce514425cb6ff5b37e6bac40d3dc86f574824501a01be16978",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC3735871/analysis.json",
+      "sha256": "988fe55558dfdc87308dd6e0d1dbee4b7dadaf4b283a00ce5ad90c2c67cb74b5",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC3735871/star_manifest.json",
+      "sha256": "8a774a439457b0a1607981765bb9cab6b89b4cbc8e2948d36c75c4e14f9bc387",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC4914923/analysis.json",
+      "sha256": "a73fe94198a2a245e610371ef83ad97150926c54da7adb87d34fe745a3a8388e",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC4914923/star_manifest.json",
+      "sha256": "23297c9d2ee756091a2487f0b505dcafe2e947a618ec9839fd308bfdd73071df",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5184732/analysis.json",
+      "sha256": "5df527d57d0e92259c0988cd96e1c6dd703ba8237b61e982c3f8d94a6ee0d55c",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5184732/star_manifest.json",
+      "sha256": "c5c1d8203f024ac7a47502d4d7f8226e83dc5b86b73f4be236dc4933ad659dfe",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/analysis.json",
+      "sha256": "eb034ca46873dee424a7321ab9fc272e3bf3412b65d785b5d17a5c543242d9cb",
+      "size_bytes": 185733
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/mean_spectrum.csv",
+      "sha256": "f0f75f56c54718175396bbc9212e9d0306b9c724f5116cd7e6d4aead6020b1dc",
+      "size_bytes": 340397
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/monthly_spectra.npz",
+      "sha256": "8f25fa3ff70a475417e834f39f95cb6c2611a7f162eb2dc6bad5a53281acdbb0",
+      "size_bytes": 793648
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/segment_bootstrap.csv",
+      "sha256": "37a7785be09ec082c5d1fdf1b7d2d33758aec03fe3820191a6c84ec81c8fc332",
+      "size_bytes": 8458
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC5950854/star_manifest.json",
+      "sha256": "66a03e3c229c7acc5535f02284d3bed8488671b0b7dc1b835c331edd690622c8",
+      "size_bytes": 1117
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC6603624/analysis.json",
+      "sha256": "8f09f1a9affb5024515f1a8618b5123a60dd2d5f221a5bbdeecbd2ddfcc0c366",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC6603624/star_manifest.json",
+      "sha256": "22adfc78d40277d95b35675e50165ab63e081438e7a4c46cc2414cf1c79e02f2",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC6679371/analysis.json",
+      "sha256": "c05adb69d8cbc758a165a388d1ec87c2ed8aaec299f8bb8684aa52e7c2fff500",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC6679371/star_manifest.json",
+      "sha256": "d4f68c72c3158896aae5678f719d1c58f9b904799b1eed9f6fb83b2422b71b1f",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC6933899/analysis.json",
+      "sha256": "97be4b5681e0fdd6475afafe19ddf5239450853413c834842e5c9a8e902355ef",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC6933899/star_manifest.json",
+      "sha256": "c23aef778ebed732c075ff7adc73bbd2a67e9877f0d176aa8162797c9ca54aee",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7206837/analysis.json",
+      "sha256": "f93fedfcc22236dac140ca92204e1be6d9cf407ab8afef7cbf396b5f0aec0671",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7206837/star_manifest.json",
+      "sha256": "6dd0966264370e76326094b557da3b7dff917c264b0f3a5181394d3600905187",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7296438/analysis.json",
+      "sha256": "aeed9b8bfcbb11a282da08e06c866a6547dc9210e335974e3d02664abd6feec8",
+      "size_bytes": 200778
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7296438/mean_spectrum.csv",
+      "sha256": "25564744d14211b7966bbd6932a7f920d6354707a9006566e5edfdd9859796ef",
+      "size_bytes": 346700
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7296438/monthly_spectra.npz",
+      "sha256": "3021162d9490e0ed1f03f6012b3da281fb4e27b429b4fe18c43fdeccca404847",
+      "size_bytes": 843174
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7296438/segment_bootstrap.csv",
+      "sha256": "2fb8e499f11e038d1e4a573457faefa114f86f488fef17b81e60cbc887fc7081",
+      "size_bytes": 8320
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7296438/star_manifest.json",
+      "sha256": "1f60a7a43e858233d40188d4d52f7b359bc450070268f6ef353da4114a240242",
+      "size_bytes": 1117
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7510397/analysis.json",
+      "sha256": "f78bb1179b75deda70c541fde6317491276a908b26e5b87e5f568dfc28dea5a8",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7510397/star_manifest.json",
+      "sha256": "715966c97c395b02b6a64825d9f8ead4200ed22f1a1bf3dc79c2e532bb1d54cd",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7680114/analysis.json",
+      "sha256": "864a9c4375b1c759dff84f1309f0fc46a75b6e7db52e951b8c5ad2b70e6400dd",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7680114/star_manifest.json",
+      "sha256": "0bcfa2e3f74fafa79133ba2b520eb2595c8f30362ece18b39f69607a29718318",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7771282/analysis.json",
+      "sha256": "dd8961aa852b799a13a269471d8dd53a5b79c7af1bf946f48145b98d72785b30",
+      "size_bytes": 214093
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7771282/mean_spectrum.csv",
+      "sha256": "0184a83478317eb2847bc7763c7348c782863e9e1887995138190f4c3639fa0c",
+      "size_bytes": 339776
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7771282/monthly_spectra.npz",
+      "sha256": "19f8fd105e16834fe236054d3608e4fbca5825197ffe5d8e92d19a43d6821d0d",
+      "size_bytes": 1003123
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7771282/segment_bootstrap.csv",
+      "sha256": "bf421b76f5c62dda6257d0ce45436d72134267c7d6f5c94ed037c167806ea732",
+      "size_bytes": 8325
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7771282/star_manifest.json",
+      "sha256": "ff5abc7744d433c0e85f4463d4e0660124c6523d3605999966a4991680d3dc4e",
+      "size_bytes": 1118
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7871531/analysis.json",
+      "sha256": "c38950f9f478fa8c386e4f233c5f4a494ca10169c9b705c83c9aad0dcb193dd9",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7871531/star_manifest.json",
+      "sha256": "0f52ec9551b2293880c9836dd81159032545aa6db7962b2600e023735ab30a1d",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7940546/analysis.json",
+      "sha256": "6a54a1e16cb8a69bf7e71a7e84973d51d9b1a2a4116f5fac9b45e257594c81ca",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7940546/star_manifest.json",
+      "sha256": "171b59f217a15b7390039537bef9ed5a86d6116ae109c56016a3d0a65eee1984",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7970740/analysis.json",
+      "sha256": "c2eaca7623dddcf45509dbff28d7030b88885c76773010f366913e54e4bb7fb7",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC7970740/star_manifest.json",
+      "sha256": "55270ee8ce6febaf02f63da4c41f40bf82ef5b0de7fa4fbedf593c9966accef8",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8179536/analysis.json",
+      "sha256": "9aaba9a7a2bde0eef16ead664aa63736d40fbb13d267d5e9f12c81778930eb3d",
+      "size_bytes": 220892
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8179536/mean_spectrum.csv",
+      "sha256": "63bbf7c7d2aa0e501ae8f0e9930e1da2b1a2209a41126ef99345058f7978bf4d",
+      "size_bytes": 350183
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8179536/monthly_spectra.npz",
+      "sha256": "bd972854f0a19a2270d82e67d7626abe2d129b10651460b1bb8700c13d6f845e",
+      "size_bytes": 999525
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8179536/segment_bootstrap.csv",
+      "sha256": "a8be64b542cdf2ab855214ba03b35da3f089bd47b8babc6a09f0187749da05b4",
+      "size_bytes": 8312
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8179536/star_manifest.json",
+      "sha256": "d577738d198dd12d7689e754d1aa7b74bfbf9b5fc398db491c9be40ce32d092a",
+      "size_bytes": 1117
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8394589/analysis.json",
+      "sha256": "96faa7d4609a52510050535cb80d316055505f53ddd4ba74d428b3623ae3692a",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8394589/star_manifest.json",
+      "sha256": "a4aaa63f274ea4838a864ad8933b95b1212bd3e339eae56462201fa3fcf1ff10",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8424992/analysis.json",
+      "sha256": "76880ec9a3f73b6e46ae912fc38b3c1180cd583a9193ac179150abfc166cad5d",
+      "size_bytes": 172445
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8424992/mean_spectrum.csv",
+      "sha256": "90c63253c19ab49823f7e3a632baaf60617cba58ee663693cfe5c83a443d4db4",
+      "size_bytes": 346186
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8424992/monthly_spectra.npz",
+      "sha256": "355619df001bb3908ddbce260ad3ba23bb4b8762692ee1e1723dee32c1b34613",
+      "size_bytes": 691750
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8424992/segment_bootstrap.csv",
+      "sha256": "5ed0034b1b45bd8c892784766574b3c985d2e58c0300acb3fe2ee809dae9d572",
+      "size_bytes": 8512
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8424992/star_manifest.json",
+      "sha256": "e041d29278f0043e6f372f0b75a2e8bd5ffbed12eeb362e6d62d62b8e35062ee",
+      "size_bytes": 1117
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8694723/analysis.json",
+      "sha256": "097d24c9ed10becc224bc183aad9f8e02ad6a9ddb9c15c1ba2cc750f1e9a1c99",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8694723/star_manifest.json",
+      "sha256": "14de8e79f1ba095b9a09e14149a4f6412de183bb61d7f01c8df051895c2cce6a",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8760414/analysis.json",
+      "sha256": "cf7b3ff1b8765fe83393687e7e519305eb739057f6336a7a44f2db3ef4ce475a",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8760414/star_manifest.json",
+      "sha256": "f4ffd6d54aa03f4a157580d08a39e38608aa815c45be893b2240345b99e5e698",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8938364/analysis.json",
+      "sha256": "2b448e89efeb061867be217706f18b09ad9bf77c7af2e127844943ef87514941",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC8938364/star_manifest.json",
+      "sha256": "f85251f5daefd700dd9ff64fa4930257b9b78ace44601327df5772bcd1614790",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9139151/analysis.json",
+      "sha256": "729d59e0430b2197bb2e2fa3baee8aa4d1beb621d8a34538cd29558d4da9580e",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9139151/star_manifest.json",
+      "sha256": "6012825e5a35ed42da7ad403d483f27a7bab6e48edc98fc7180a727274ff1dc9",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9206432/analysis.json",
+      "sha256": "8c5a05aa6c33d1f55d6ffb45638824611386faa7c9df85d6ce0828dac109d76a",
+      "size_bytes": 247825
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9206432/mean_spectrum.csv",
+      "sha256": "7327b1ed2583fe71c223e78d4b44463c981a8bb5492f7c071d077d2ccd5638da",
+      "size_bytes": 348804
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9206432/monthly_spectra.npz",
+      "sha256": "acc93e56d1793a00d7936f5e206679125d08f412836a65aee0e7cf8e8f8e1733",
+      "size_bytes": 1153416
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9206432/segment_bootstrap.csv",
+      "sha256": "fa9d486187e27ecddb8b84ec8f42fd9f7529c3a058a619636bd5b6d83625215c",
+      "size_bytes": 8396
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9206432/star_manifest.json",
+      "sha256": "e36209d976637695bf4812c397ec5111c94e3de33c0880735b4be151cf110a3f",
+      "size_bytes": 1118
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9353712/analysis.json",
+      "sha256": "59e6f4511885158375e7f62378506dfa88797649bcdb981f6a2c70ace5bfdd00",
+      "size_bytes": 239307
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9353712/mean_spectrum.csv",
+      "sha256": "bd17ccd8fed6cbde9672d315e1c18c50abee0ef402ef698f20f43890f00448c1",
+      "size_bytes": 339681
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9353712/monthly_spectra.npz",
+      "sha256": "82001ceb57a5903adc1cc8573a5d21df0f79b36d9005d4d4f967a884ed691e7f",
+      "size_bytes": 1106268
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9353712/segment_bootstrap.csv",
+      "sha256": "ba8961b0a05027747be6183470b504c2f0e4486d9855c12778bfc2e86b05c44c",
+      "size_bytes": 8177
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9353712/star_manifest.json",
+      "sha256": "98db95a00c0d2bbefa02b371a6e32ee3344b5bcbbfcb69a37044eab159904bc6",
+      "size_bytes": 1118
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9414417/analysis.json",
+      "sha256": "02aee2608a58566b2b80d6c7bd75420393f5b520405fd089466fe8d0c3ab2994",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9414417/star_manifest.json",
+      "sha256": "95bef79570d7613a4e3da6eeaf79b769002e8a865070a9a6c373b954ca612c72",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9955598/analysis.json",
+      "sha256": "f1138a4baba8d3464cd75b6a4b834cd106346429726554ea9c109fa6016b12f7",
+      "size_bytes": 746
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9955598/star_manifest.json",
+      "sha256": "37fed3d41d8134aa2349aa3e1d8f52a645136b8be356a1c4ca8b1150bc15d035",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/summary.json",
+      "sha256": "3e9d5e1a9d3eb3249368ee67200430dd4a4d0a4b1a16a04131ea74e1ad40ce47",
+      "size_bytes": 9769
+    }
+  ],
+  "role": "development",
+  "schema_version": 1
+}

@@ -1,0 +1,79 @@
+{
+  "quality": {
+    "Brier_margin": 0.01,
+    "p_superior_raw": 1.0,
+    "paired_stars": 0,
+    "positive_quality_increment": false,
+    "status": "withheld"
+  },
+  "rows": [
+    {
+      "bootstrap95_lower": -0.000369800198319963,
+      "bootstrap95_upper": 0.0005050211912711956,
+      "claim_power_supported": false,
+      "interval_scope": "paired_star_bootstrap_conditional_on_fitted_OOF_models",
+      "mean_fractional_loss_improvement": 0.00011325470512048142,
+      "metrics": {
+        "baseline": {
+          "catastrophic_failures": 0,
+          "fractional_MAE": 0.024564917310914963,
+          "fractional_RMSE": 0.025681106629425233,
+          "fractional_bias": 0.0009950833436830713,
+          "interval_available": 0,
+          "reference_center_coverage": null
+        },
+        "hybrid": {
+          "catastrophic_failures": 0,
+          "fractional_MAE": 0.02445166260579448,
+          "fractional_RMSE": 0.02549296437461911,
+          "fractional_bias": 0.0009970448368141266,
+          "interval_available": 0,
+          "reference_center_coverage": null
+        }
+      },
+      "p_equivalent_holm": 1.0067777486793078e-10,
+      "p_equivalent_raw": 5.033888743396539e-11,
+      "p_superior_holm": 1.0,
+      "p_superior_raw": 0.999999999949661,
+      "paired_stars": 9,
+      "positive_increment": false,
+      "practical_margin": 0.01,
+      "quantified_equivalence": false,
+      "quantity": "numax"
+    },
+    {
+      "bootstrap95_lower": -0.0013131648116953506,
+      "bootstrap95_upper": 0.0006033242696363275,
+      "claim_power_supported": false,
+      "interval_scope": "paired_star_bootstrap_conditional_on_fitted_OOF_models",
+      "mean_fractional_loss_improvement": -0.00038788895279547503,
+      "metrics": {
+        "baseline": {
+          "catastrophic_failures": 0,
+          "fractional_MAE": 0.007678565642233398,
+          "fractional_RMSE": 0.012318525952849059,
+          "fractional_bias": -0.0032734542188709425,
+          "interval_available": 0,
+          "reference_center_coverage": null
+        },
+        "hybrid": {
+          "catastrophic_failures": 0,
+          "fractional_MAE": 0.008066454595028872,
+          "fractional_RMSE": 0.012808997365521215,
+          "fractional_bias": -0.003643192843275103,
+          "interval_available": 0,
+          "reference_center_coverage": null
+        }
+      },
+      "p_equivalent_holm": 1.076285566753104e-05,
+      "p_equivalent_raw": 1.076285566753104e-05,
+      "p_superior_holm": 1.0,
+      "p_superior_raw": 0.9999966013782231,
+      "paired_stars": 9,
+      "positive_increment": false,
+      "practical_margin": 0.005,
+      "quantified_equivalence": false,
+      "quantity": "dnu"
+    }
+  ]
+}

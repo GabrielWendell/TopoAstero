@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC12317678/analysis.json",
+      "sha256": "197fb85cceb3c076580b4f71614895361ff20b4390922057d6ee85bf11963608",
+      "size_bytes": 741
+    }
+  ],
+  "input_id": "447e6da5347d200e942d61f555a2fd4c3d7a2d870ced42d838e8b108177fef70",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 12317678"
+}

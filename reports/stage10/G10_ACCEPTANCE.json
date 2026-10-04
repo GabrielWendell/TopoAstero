@@ -23,7 +23,7 @@
     },
     {
       "check": "fresh_process_reproduction",
-      "status": "pending"
+      "status": "pass"
     },
     {
       "check": "independent_human_reproduction_and_claim_review",
@@ -32,10 +32,10 @@
   ],
   "claim_audit": "pass",
   "claim_scope": "single_descriptive_star_conditional_nulls_no_population_or_incremental_utility_claim",
-  "clean_reproduction": "not_run",
+  "clean_reproduction": "pass",
   "final_holdout_used": false,
   "gate": "G10",
-  "implementation_status": "awaiting_clean_reproduction",
+  "implementation_status": "pass",
   "independent_human_review": "pending",
   "population_spectra_used": false,
   "prior_decisions": {

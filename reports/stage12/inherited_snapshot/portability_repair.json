@@ -1,0 +1,31 @@
+{
+  "normalized_text_file_count": 1,
+  "normalized_text_files": [
+    "docs/protocols/STAGE11_LEGACY_FIX.md"
+  ],
+  "refreshed_fields": {
+    "reference_manifest": 0,
+    "reference_sources": 0,
+    "smoke_manifest": 0,
+    "split_attestation": 0,
+    "stage0_deliverable_manifest": 6,
+    "stage1_deliverable_manifest": 8,
+    "stage2_deliverable_manifest": 8,
+    "stage3_deliverable_manifest": 10,
+    "stage3_run_manifest": 0,
+    "stage4_deliverable_manifest": 12,
+    "stage4_run_manifest": 0,
+    "stage5_deliverable_manifest": 4,
+    "stage5_run_manifest": 0,
+    "stage6_deliverable_manifest": 4,
+    "stage6_run_manifest": 0,
+    "stage7_deliverable_manifest": 4,
+    "stage7_run_manifest": 0,
+    "stage8_deliverable_manifest": 8,
+    "stage8_run_manifest": 0,
+    "stage9_deliverable_manifest": 10,
+    "stage9_run_manifest": 21
+  },
+  "remaining_issues": [],
+  "status": "pass"
+}

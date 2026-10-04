@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import socket
 import time
 import urllib.error
 import urllib.parse
@@ -50,7 +49,7 @@ def _download_payload(
                 )
             temporary.replace(path)
             return
-        except (TimeoutError, socket.timeout, urllib.error.URLError, OSError) as exc:
+        except (TimeoutError, urllib.error.URLError, OSError) as exc:
             temporary.unlink(missing_ok=True)
             if attempt == retries:
                 raise OSError(

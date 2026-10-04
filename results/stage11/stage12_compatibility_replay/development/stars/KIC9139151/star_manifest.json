@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay/development/stars/KIC9139151/analysis.json",
+      "sha256": "729d59e0430b2197bb2e2fa3baee8aa4d1beb621d8a34538cd29558d4da9580e",
+      "size_bytes": 746
+    }
+  ],
+  "input_id": "cafe66413cc2f22e5f5deaf35ba015b773d694b1521668f56a523d5ea74d77ec",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 9139151"
+}

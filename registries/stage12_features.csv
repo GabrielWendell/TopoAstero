@@ -1,0 +1,12 @@
+feature,block,definition
+log_numax,conventional,ln estimated nu_max
+log_dnu,conventional,ln estimated Delta_nu
+log_envelope,conventional,ln envelope/background ratio
+duty_cycle,conventional,retained cadence fraction
+log_duration,conventional,ln physical observation span days
+log_resolution,conventional,ln native window resolution microHz
+prominence_delta,matched_control,ln prominence-centroid/classical nu_max; equals H0 location
+graph_score,matched_control,conventional graph at classical spacing
+comb_score,hybrid_addition,locked nominal prominence comb score
+alias_excess,hybrid_addition,ln maximum-alias/nominal comb score
+cylinder_score,hybrid_addition,geometry-only H0 score at classical spacing

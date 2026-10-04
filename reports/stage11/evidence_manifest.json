@@ -1,26 +1,26 @@
 {
   "files": [
     {
-      "path": "results/stage11/population_dev/development/run_manifest.json",
-      "sha256": "f321597195655a7eb8d35e3a0a20976fb08550a80eaa1903e2bca849eaa565ad",
-      "size_bytes": 24210
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/run_manifest.json",
+      "sha256": "7b76cca01b3b548f2317a039331a44bbf2e82e67b1088368326d339acc75da98",
+      "size_bytes": 26114
     },
     {
-      "path": "results/stage11/population_dev/internal_validation/run_manifest.json",
-      "sha256": "8c2996e280faa616034bd11fb7ba1cc2494b4b26974059a10ad598f4fb71ed83",
-      "size_bytes": 8009
+      "path": "results/stage11/stage12_compatibility_replay_v2/internal_validation/run_manifest.json",
+      "sha256": "bb62fc21ce503614349f366ad84297b3b5d53a6bc856feda475c2d5075ea407a",
+      "size_bytes": 8621
     },
     {
-      "path": "results/stage11/population_dev/descriptive_benchmark/run_manifest.json",
-      "sha256": "de68758ebb91688cd9eb22e91ebb32f77c754b8e2e35b953c88723c18f42adcc",
-      "size_bytes": 1990
+      "path": "results/stage11/stage12_compatibility_replay_v2/descriptive_benchmark/run_manifest.json",
+      "sha256": "57e23e49a759ba5222073a7fd710bfdf0bb914dbdbe02623c05309e41d923100",
+      "size_bytes": 2144
     }
   ],
   "report_files": [
     {
       "path": "reports/stage11/G11_ACCEPTANCE.json",
-      "sha256": "8b22ee352243752f385e932b10264c5e06202a36f24f4125a1ef12a35034a8d7",
-      "size_bytes": 1472
+      "sha256": "5da62088b0773f4c4e6bc01bf006df40ffdb431411913b2af932152cadc8a5f6",
+      "size_bytes": 1523
     },
     {
       "path": "reports/stage11/cohort_ledger.csv",
@@ -45,9 +45,9 @@
   ],
   "role_directories": {
     "confirmation": "results/stage11/confirmation",
-    "descriptive_benchmark": "results/stage11/population_dev/descriptive_benchmark",
-    "development": "results/stage11/population_dev/development",
-    "internal_validation": "results/stage11/population_dev/internal_validation"
+    "descriptive_benchmark": "results/stage11/stage12_compatibility_replay_v2/descriptive_benchmark",
+    "development": "results/stage11/stage12_compatibility_replay_v2/development",
+    "internal_validation": "results/stage11/stage12_compatibility_replay_v2/internal_validation"
   },
   "schema_version": 1
 }

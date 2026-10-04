@@ -1,0 +1,1107 @@
+........F..............F...FF...F.....F............F.............F...... [ 18%]
+.....F...............F............F.......FF...........................F [ 36%]
+...F.F.F.F..F.F.F.F.F..F..F............................................. [ 54%]
+........................................................................ [ 72%]
+........................................................................ [ 90%]
+........................................                                 [100%]
+=================================== FAILURES ===================================
+_________________ test_stage10_frozen_contract_and_prior_gates _________________
+
+    @pytest.mark.governance
+    def test_stage10_frozen_contract_and_prior_gates() -> None:
+>       assert validation.validate_stage10(ROOT) == []
+E       AssertionError: assert ['G10 falsely...ELOG.md', ...] == []
+E         
+E         Left contains 50 more items, first extra item: 'G10 falsely reports independent approval'
+E         Use -v to get more diff
+
+tests/governance/test_stage10_contract.py:19: AssertionError
+__________ test_stage11_additive_snapshot_and_honest_population_hold ___________
+
+    @pytest.mark.governance
+    def test_stage11_additive_snapshot_and_honest_population_hold() -> None:
+>       assert validate_stage11(ROOT) == []
+E       AssertionError: assert ['stale batch...e seals', ...] == []
+E         
+E         Left contains 53 more items, first extra item: 'stale batch code/configuration: development'
+E         Use -v to get more diff
+
+tests/governance/test_stage11_contract.py:19: AssertionError
+________________________ test_task_register_is_complete ________________________
+
+    def test_task_register_is_complete() -> None:
+        tasks = read_table(ROOT / "reports/stage11/task_traceability.csv")
+        assert {r["task_id"] for r in tasks} == {f"T11.{n}" for n in range(1, 12)}
+        assert next(r for r in tasks if r["task_id"] == "T11.6")["status"] == "ready_unopened"
+        status = json.loads((ROOT / "results/stage11/descriptive_benchmark/summary.json").read_text())
+>       assert status["stars_with_estimates"] == 1 and status["holdout_used"] is False
+E       assert (0 == 1)
+
+tests/governance/test_stage11_contract.py:57: AssertionError
+________________________ test_complete_stage1_contract _________________________
+
+    @pytest.mark.governance
+    def test_complete_stage1_contract() -> None:
+>       assert validate_stage1(ROOT, require_stage0=True) == []
+E       AssertionError: assert ['Stage 1 man...ws/README.md'] == []
+E         
+E         Left contains 4 more items, first extra item: 'Stage 1 manifest checksum mismatch: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage1_contract.py:16: AssertionError
+________________________ test_complete_stage2_contract _________________________
+
+    @pytest.mark.governance
+    def test_complete_stage2_contract() -> None:
+>       assert validate_stage2(ROOT, require_prior_stages=True) == []
+E       AssertionError: assert ['Stage 2 man...ELOG.md', ...] == []
+E         
+E         Left contains 8 more items, first extra item: 'Stage 2 manifest checksum mismatch: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage2_contract.py:22: AssertionError
+______________ test_stage3_contract_passes_with_all_prerequisites ______________
+
+    def test_stage3_contract_passes_with_all_prerequisites() -> None:
+>       assert validate_stage3(ROOT, require_prior_stages=True) == []
+E       AssertionError: assert ['Stage 3 del...ADME.md', ...] == []
+E         
+E         Left contains 13 more items, first extra item: 'Stage 3 deliverable checksum mismatch: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage3_contract.py:28: AssertionError
+______________ test_stage4_contract_passes_with_all_prerequisites ______________
+
+    def test_stage4_contract_passes_with_all_prerequisites() -> None:
+>       assert validate_stage4(ROOT, require_prior_stages=True) == []
+E       AssertionError: assert ['Stage 4 del...ADME.md', ...] == []
+E         
+E         Left contains 19 more items, first extra item: 'Stage 4 deliverable seal is stale: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage4_contract.py:28: AssertionError
+______________ test_stage5_contract_passes_with_all_prerequisites ______________
+
+    def test_stage5_contract_passes_with_all_prerequisites() -> None:
+>       assert validate_stage5(ROOT, require_prior_stages=True) == []
+E       AssertionError: assert ['Stage 5 del...tignore', ...] == []
+E         
+E         Left contains 21 more items, first extra item: 'Stage 5 deliverable seal is stale: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage5_contract.py:29: AssertionError
+______________ test_stage6_contract_passes_with_all_prerequisites ______________
+
+    def test_stage6_contract_passes_with_all_prerequisites() -> None:
+>       assert validate_stage6(ROOT, require_prior_stages=True) == []
+E       AssertionError: assert ['Stage 6 del...ELOG.md', ...] == []
+E         
+E         Left contains 23 more items, first extra item: 'Stage 6 deliverable seal is stale: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage6_contract.py:30: AssertionError
+______________ test_stage7_contract_passes_with_all_prerequisites ______________
+
+    def test_stage7_contract_passes_with_all_prerequisites() -> None:
+>       assert validate_stage7(ROOT, require_prior_stages=True) == []
+E       AssertionError: assert ['Stage 7 del...ELOG.md', ...] == []
+E         
+E         Left contains 25 more items, first extra item: 'Stage 7 deliverable seal is stale: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage7_contract.py:28: AssertionError
+_____________ test_stage8_passes_with_all_prior_stage_regressions ______________
+
+    def test_stage8_passes_with_all_prior_stage_regressions() -> None:
+>       assert validate_stage8(ROOT) == []
+E       AssertionError: assert ['stale deliv...ELOG.md', ...] == []
+E         
+E         Left contains 29 more items, first extra item: 'stale deliverable seal: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage8_contract.py:14: AssertionError
+____________ test_implementation_pass_science_gate_remains_pending _____________
+
+    def test_implementation_pass_science_gate_remains_pending() -> None:
+>       assert validate_stage9(ROOT) == []
+E       AssertionError: assert ['stale run o...it__.py', ...] == []
+E         
+E         Left contains 46 more items, first extra item: 'stale run output seal: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage9_contract.py:32: AssertionError
+_________________ test_modified_proof_or_fake_gate_is_rejected _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_modified_proof_or_fake_ga0')
+
+    def test_modified_proof_or_fake_gate_is_rejected(tmp_path: Path) -> None:
+        _projection(tmp_path)
+>       assert validate_stage9(tmp_path, require_prior_stages=False) == []
+E       AssertionError: assert ['stale run o...it__.py', ...] == []
+E         
+E         Left contains 17 more items, first extra item: 'stale run output seal: README.md'
+E         Use -v to get more diff
+
+tests/governance/test_stage9_contract.py:41: AssertionError
+____________________ test_cli_hash_checksum_and_validation _____________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f303110aa80>
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_cli_hash_checksum_and_val0')
+
+    @pytest.mark.integration
+    def test_cli_hash_checksum_and_validation(capsys: pytest.CaptureFixture[str], tmp_path: Path) -> None:
+        main(["hash-config", str(ROOT / "configs/smoke.yaml")])
+        assert len(capsys.readouterr().out.strip()) == 64
+    
+        payload = tmp_path / "payload"
+        payload.write_text("x", encoding="utf-8")
+        main(["checksum", str(payload)])
+        assert len(capsys.readouterr().out.strip()) == 64
+    
+        main(["validate-stage0", "--root", str(ROOT), "--without-smoke"])
+        assert "PASS" in capsys.readouterr().out
+    
+>       main(["check-portability", "--root", str(ROOT)])
+
+tests/integration/test_cli.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['check-portability', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 3 classical baseline and observation-model contract: PASS")
+            return
+        if args.command == "validate-stage4":
+            errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 4 analytic cases and stochastic simulation contract: PASS")
+            return
+        if args.command == "validate-stage5":
+            errors = validate_stage5(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 5 TDA/representation-audit contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 5 TDA core and representation-audit contract: PASS")
+            return
+        if args.command == "validate-stage6":
+            errors = validate_stage6(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 6 PSD-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 6 persistent power-spectrum topology contract: PASS")
+            return
+        if args.command == "validate-stage7":
+            errors = validate_stage7(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 7 delay-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 7 delay-topology and phase-information contract: PASS")
+            return
+        if args.command == "validate-stage8":
+            errors = validate_stage8(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 8 cylindrical-echelle contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 8 cylindrical-echelle geometry and bounded-inference contract: PASS")
+            return
+        if args.command == "validate-stage9":
+            errors = validate_stage9(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 9 mathematical-audit contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            gate = json.loads((Path(args.root) / "reports/stage9/G9_ACCEPTANCE.json").read_text())
+            print(f"Stage 9 implementation: PASS; scientific G9: {gate['status']}")
+            return
+        if args.command == "validate-stage10":
+            errors = validate_stage10(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 10 freeze contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            gate = json.loads((Path(args.root) / "reports/stage10/G10_ACCEPTANCE.json").read_text())
+            print(f"Stage 10 implementation: PASS; scientific G10: {gate['status']}")
+            return
+        if args.command == "verify-stage2-cache":
+            errors = verify_cached_products(args.manifest, args.cache_dir)
+            if errors:
+                print("Stage 2 cached payload verification failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 cached payload verification: PASS")
+            return
+        if args.command == "hash-config":
+            print(configuration_hash(args.path))
+            return
+        if args.command == "checksum":
+            print(sha256_file(args.path))
+            return
+        if args.command == "audit-resources":
+            record = write_resource_audit(args.root, args.output, check_network=args.check_network)
+            print(json.dumps(record, indent=2, sort_keys=True))
+            return
+        if args.command == "check-portability":
+            errors = repository_portability_issues(args.root)
+            if errors:
+                print("Repository portability contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:260: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Repository portability contract failed:
+- non-LF tracked text: docs/protocols/STAGE11_LEGACY_FIX.md
+______________ test_stage10_cli_offline_snapshot_and_review_hold _______________
+
+    @pytest.mark.integration
+    def test_stage10_cli_offline_snapshot_and_review_hold() -> None:
+        run = subprocess.run([sys.executable, "-m", "topoastero", "validate-stage10", "--root", str(ROOT), "--without-prior-stages"], capture_output=True, text=True, check=False)
+>       assert run.returncode == 0, run.stdout + run.stderr
+E       AssertionError: Stage 10 freeze contract failed:
+E         - G10 falsely reports independent approval
+E         - clean reproduction is incomplete or masquerades as human review
+E         - clean reproduction source: missing file seals
+E         - clean reproduction result: missing file seals
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented/.venv/bin/python',...s as human review\n- clean reproduction source: missing file seals\n- clean reproduction result: missing file seals\n').returncode
+
+tests/integration/test_stage10_cli.py:15: AssertionError
+______________ test_stage11_cli_validates_without_opening_holdout ______________
+
+    @pytest.mark.integration
+    def test_stage11_cli_validates_without_opening_holdout() -> None:
+        run = subprocess.run([sys.executable, "-m", "topoastero.population_cli", "--root", str(ROOT), "validate", "--without-prior-stages"],
+                             capture_output=True, text=True, check=False)
+>       assert run.returncode == 0, run.stdout + run.stderr
+E       AssertionError: stale batch code/configuration: development
+E         stale batch code/configuration: internal_validation
+E         stale batch code/configuration: descriptive_benchmark
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented/.venv/bin/python',...lopment\nstale batch code/configuration: internal_validation\nstale batch code/configuration: descriptive_benchmark\n').returncode
+
+tests/integration/test_stage11_cli.py:16: AssertionError
+____________________________ test_stage1_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f303101b7a0>
+
+    @pytest.mark.integration
+    def test_stage1_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage1", "--root", str(ROOT), "--without-stage0"])
+
+tests/integration/test_stage1_cli.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage1', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-stage0']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:149: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 1 evidence contract failed:
+- Stage 1 manifest checksum mismatch: README.md
+- Stage 1 manifest checksum mismatch: CHANGELOG.md
+- Stage 1 manifest checksum mismatch: .github/workflows/ci.yml
+- Stage 1 manifest checksum mismatch: workflows/README.md
+____________________________ test_stage2_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f3030fb8080>
+
+    @pytest.mark.integration
+    def test_stage2_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage2", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage2_cli.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage2', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:158: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 2 data contract failed:
+- Stage 2 manifest checksum mismatch: README.md
+- Stage 2 manifest checksum mismatch: CHANGELOG.md
+- Stage 2 manifest checksum mismatch: .github/workflows/ci.yml
+- Stage 2 manifest checksum mismatch: workflows/README.md
+____________________________ test_stage3_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f3031021bb0>
+
+    @pytest.mark.integration
+    def test_stage3_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage3", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage3_cli.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage3', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:167: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 3 classical-baseline contract failed:
+- Stage 3 deliverable checksum mismatch: README.md
+- Stage 3 deliverable checksum mismatch: CHANGELOG.md
+- Stage 3 deliverable checksum mismatch: .github/workflows/ci.yml
+- Stage 3 deliverable checksum mismatch: workflows/README.md
+- Stage 3 deliverable checksum mismatch: configs/README.md
+____________________________ test_stage4_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f30311f75c0>
+
+    @pytest.mark.integration
+    def test_stage4_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage4", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage4_cli.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage4', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 3 classical baseline and observation-model contract: PASS")
+            return
+        if args.command == "validate-stage4":
+            errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:176: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 4 analytic/simulation contract failed:
+- Stage 4 deliverable seal is stale: README.md
+- Stage 4 deliverable seal is stale: CHANGELOG.md
+- Stage 4 deliverable seal is stale: .github/workflows/ci.yml
+- Stage 4 deliverable seal is stale: .gitignore
+- Stage 4 deliverable seal is stale: workflows/README.md
+- Stage 4 deliverable seal is stale: configs/README.md
+____________________________ test_stage5_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f3031106a20>
+
+    @pytest.mark.integration
+    def test_stage5_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage5", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage5_cli.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage5', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 3 classical baseline and observation-model contract: PASS")
+            return
+        if args.command == "validate-stage4":
+            errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 4 analytic cases and stochastic simulation contract: PASS")
+            return
+        if args.command == "validate-stage5":
+            errors = validate_stage5(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 5 TDA/representation-audit contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:185: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 5 TDA/representation-audit contract failed:
+- Stage 5 deliverable seal is stale: README.md
+- Stage 5 deliverable seal is stale: CHANGELOG.md
+____________________________ test_stage6_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f3031013950>
+
+    @pytest.mark.integration
+    def test_stage6_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage6", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage6_cli.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage6', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 3 classical baseline and observation-model contract: PASS")
+            return
+        if args.command == "validate-stage4":
+            errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 4 analytic cases and stochastic simulation contract: PASS")
+            return
+        if args.command == "validate-stage5":
+            errors = validate_stage5(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 5 TDA/representation-audit contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 5 TDA core and representation-audit contract: PASS")
+            return
+        if args.command == "validate-stage6":
+            errors = validate_stage6(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 6 PSD-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:194: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 6 PSD-topology contract failed:
+- Stage 6 deliverable seal is stale: README.md
+- Stage 6 deliverable seal is stale: CHANGELOG.md
+____________________________ test_stage7_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f3031111820>
+
+    @pytest.mark.integration
+    def test_stage7_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage7", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage7_cli.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage7', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 3 classical baseline and observation-model contract: PASS")
+            return
+        if args.command == "validate-stage4":
+            errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 4 analytic cases and stochastic simulation contract: PASS")
+            return
+        if args.command == "validate-stage5":
+            errors = validate_stage5(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 5 TDA/representation-audit contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 5 TDA core and representation-audit contract: PASS")
+            return
+        if args.command == "validate-stage6":
+            errors = validate_stage6(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 6 PSD-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 6 persistent power-spectrum topology contract: PASS")
+            return
+        if args.command == "validate-stage7":
+            errors = validate_stage7(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 7 delay-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:203: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 7 delay-topology contract failed:
+- Stage 7 deliverable seal is stale: README.md
+- Stage 7 deliverable seal is stale: CHANGELOG.md
+____________________________ test_stage8_cli_passes ____________________________
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7f3031021a00>
+
+    @pytest.mark.integration
+    def test_stage8_cli_passes(capsys: pytest.CaptureFixture[str]) -> None:
+>       main(["validate-stage8", "--root", str(ROOT), "--without-prior-stages"])
+
+tests/integration/test_stage8_cli.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+argv = ['validate-stage8', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented', '--without-prior-stages']
+
+    def main(argv: Sequence[str] | None = None) -> None:
+        args = build_parser().parse_args(argv)
+        if args.command == "smoke":
+            result = run_smoke(args.config, args.output_dir)
+            print(json.dumps(result["summary"], indent=2, sort_keys=True))
+            return
+        if args.command == "validate-stage0":
+            errors = validate_stage0(args.root, require_smoke=not args.without_smoke)
+            if errors:
+                print("Stage 0 validation failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 0 governance contract: PASS")
+            return
+        if args.command == "validate-stage1":
+            errors = validate_stage1(args.root, require_stage0=not args.without_stage0)
+            if errors:
+                print("Stage 1 evidence contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 1 literature and benchmark contract: PASS")
+            return
+        if args.command == "validate-stage2":
+            errors = validate_stage2(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 2 data contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 2 data, provenance, and canonical-model contract: PASS")
+            return
+        if args.command == "validate-stage3":
+            errors = validate_stage3(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 3 classical-baseline contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 3 classical baseline and observation-model contract: PASS")
+            return
+        if args.command == "validate-stage4":
+            errors = validate_stage4(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 4 analytic/simulation contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 4 analytic cases and stochastic simulation contract: PASS")
+            return
+        if args.command == "validate-stage5":
+            errors = validate_stage5(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 5 TDA/representation-audit contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 5 TDA core and representation-audit contract: PASS")
+            return
+        if args.command == "validate-stage6":
+            errors = validate_stage6(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 6 PSD-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 6 persistent power-spectrum topology contract: PASS")
+            return
+        if args.command == "validate-stage7":
+            errors = validate_stage7(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 7 delay-topology contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+                raise SystemExit(1)
+            print("Stage 7 delay-topology and phase-information contract: PASS")
+            return
+        if args.command == "validate-stage8":
+            errors = validate_stage8(args.root, require_prior_stages=not args.without_prior_stages)
+            if errors:
+                print("Stage 8 cylindrical-echelle contract failed:", file=sys.stderr)
+                for error in errors:
+                    print(f"- {error}", file=sys.stderr)
+>               raise SystemExit(1)
+E               SystemExit: 1
+
+src/topoastero/cli.py:212: SystemExit
+----------------------------- Captured stderr call -----------------------------
+Stage 8 cylindrical-echelle contract failed:
+- stale deliverable seal: README.md
+- stale deliverable seal: CHANGELOG.md
+- stale deliverable seal: .gitignore
+- stale deliverable seal: .github/workflows/ci.yml
+______ test_stage9_cli_reports_pending_review_without_claiming_gate_pass _______
+
+    def test_stage9_cli_reports_pending_review_without_claiming_gate_pass() -> None:
+>       completed = subprocess.run(
+            [sys.executable, "-m", "topoastero", "validate-stage9", "--root", str(ROOT)],
+            check=True, capture_output=True, text=True,
+        )
+
+tests/integration/test_stage9_cli.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = True, timeout = None, check = True
+popenargs = (['/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented/.venv/bin/python', '-m', 'topoastero', 'validate-stage9', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented'],)
+kwargs = {'text': True, 'stdout': -1, 'stderr': -1}
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented/.venv/bin/python', '-m', 'topoastero', 'validate-stage9', '--root', '/workspace/scratch/0d6b6b830e55/stage12_work/TopoAstero_Stage11_Implemented']' returned non-zero exit status 1.
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:571: CalledProcessError
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                                       Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------------
+src/topoastero/__init__.py                     3      0      0      0   100%
+src/topoastero/__main__.py                     2      2      0      0     0%   1-3
+src/topoastero/acquisition.py                 45      0     18      0   100%
+src/topoastero/classical.py                  341      5     96      8    97%   97, 99, 209, 320, 329->335, 332->335, 390, 432->438
+src/topoastero/cli.py                        212     44     86     14    77%   131-133, 137-140, 150-151, 159-160, 168-169, 177-178, 186-187, 195-196, 204-205, 213-214, 216-224, 226-234, 261-263
+src/topoastero/config.py                      22      0      4      0   100%
+src/topoastero/data_model.py                 233      0     82      0   100%
+src/topoastero/delay_topology.py             352     18    114     16    93%   145, 151, 179, 220, 234-235, 268, 322-323, 381, 422->440, 433, 461, 475, 551, 571, 617, 640, 665
+src/topoastero/echelle_topology.py           379     12    160     12    96%   108, 137, 141, 143, 145, 175, 179, 296->294, 349, 401->403, 436-437, 490, 540
+src/topoastero/evidence.py                    29      0     12      0   100%
+src/topoastero/mathematical_relations.py     114      8     34      8    89%   27, 41, 74, 97, 126, 154, 188, 208
+src/topoastero/persistence.py                 67      2     20      2    95%   79, 98
+src/topoastero/population.py                 135      9     50      9    90%   37, 68, 92, 105, 150, 172-173, 176, 179->181, 182, 183->185
+src/topoastero/population_acquisition.py     127     44     58     15    63%   41->exit, 47, 88, 93-94, 103->111, 105, 112-113, 130, 149-183, 189, 191, 193, 195, 197, 199, 201
+src/topoastero/population_cli.py              99      8     30      5    90%   66, 87, 95, 105, 108, 116-119
+src/topoastero/population_freeze.py          122     14     52     14    84%   54, 56, 58, 76, 78, 80, 94, 97, 102, 107, 112, 115, 131, 145
+src/topoastero/population_pipeline.py        173     38     62     14    74%   40, 46, 48, 55, 58, 61, 64, 66, 80, 116, 122-132, 156-168, 215-220, 229, 251->256
+src/topoastero/population_references.py       65      8     30      7    84%   28-29, 31, 42, 52, 62, 71, 87
+src/topoastero/population_reporting.py        85      4     24      4    91%   49, 58, 59->61, 63-64
+src/topoastero/population_statistics.py      111      0     38      0   100%
+src/topoastero/population_store.py            63      6     16      4    87%   28, 34, 41, 53, 82-83
+src/topoastero/portability.py                125     12     48      8    86%   73, 76-77, 136, 160-161, 187-192, 215->220, 221->233, 225->233, 227->226, 241->239, 243->242
+src/topoastero/provenance.py                  37      1      6      0    98%   52
+src/topoastero/render.py                      35      1      6      1    95%   23
+src/topoastero/representations.py            162      5     44      5    95%   74, 104, 149, 308, 310
+src/topoastero/resources.py                   55     10     10      4    78%   24, 26->25, 28, 39-40, 47-58
+src/topoastero/rudy_benchmark.py             153      1     40      1    99%   158
+src/topoastero/simulation.py                  12      0      4      0   100%
+src/topoastero/simulation_lab.py             304     19    124     21    91%   47, 68, 126, 178, 180, 253, 290->292, 309, 343, 369, 382, 400, 417, 445, 493, 512, 526, 540, 545->547, 565, 567
+src/topoastero/smoke.py                       51      1      8      1    97%   21
+src/topoastero/spectral_topology.py          446     41    158     40    87%   215, 249, 322, 371, 392, 402, 427, 433->443, 442, 466, 468, 503-504, 538, 570, 572, 575, 578, 603, 610, 641, 646, 669, 671, 673, 678, 693, 695, 720, 761, 764, 766, 771, 788, 790, 792, 811, 846, 849, 889, 891, 893
+src/topoastero/stage1_validation.py          214     36    120     33    79%   165, 170, 175, 180, 184, 194, 198, 224, 235, 238, 247, 258, 262, 265, 269, 277, 283, 285, 292, 300, 303, 311, 316, 319, 321, 330, 333, 335, 339, 345, 348, 350, 357-358, 381-382
+src/topoastero/stage2_validation.py          232     65    140     56    67%   81-82, 85-87, 89, 91, 103, 105, 109, 113-114, 117, 119, 127, 129, 133, 136, 140, 142, 145, 148, 150, 154, 156, 164, 166, 168, 171, 174, 176, 178, 182, 196, 199, 202, 204, 206, 209, 213, 216, 223, 233, 235, 238, 241, 244, 246, 248, 264-265, 267-268, 271, 274, 276, 278, 284, 287, 289, 292, 295, 297, 300, 304
+src/topoastero/stage3_validation.py          230     60    146     52    70%   71-73, 75, 83-85, 87, 89, 95, 97, 99, 101, 105, 112, 131, 136, 138-139, 141, 155, 157, 160, 162, 168, 175, 180, 185, 189, 193, 195, 201, 204, 206, 210, 215, 217, 223, 226, 238, 245, 247, 252, 258, 260, 262, 270, 273, 284, 287, 291-292, 295, 298, 309, 320, 323, 327, 332, 336
+src/topoastero/stage4_validation.py          232     59    164     51    72%   71-73, 75, 83-85, 95, 97, 99, 111, 113, 121, 123, 128, 131, 137, 155, 161, 165, 174, 176, 182-183, 199, 202, 204, 236, 238, 246-247, 253, 258, 260, 263, 269, 273, 283, 287, 290, 304, 306, 314, 319, 326, 328, 330, 332, 337, 341, 345, 350, 354, 358, 363, 366, 369, 380, 384
+src/topoastero/stage5_validation.py          196     50    136     44    72%   80-82, 84, 92-94, 104, 106, 108, 115, 122, 127, 131, 135, 142, 147, 149, 155, 160, 164, 167, 172, 179, 183, 186, 203, 205, 208, 212, 215, 218, 220, 225, 234, 237, 243, 245, 247, 249, 254, 256, 260, 264, 266, 268, 273, 277, 279, 283
+src/topoastero/stage6_validation.py          233     53    150     44    75%   82-84, 86, 94-96, 106, 108, 111, 120, 122, 124, 126, 128, 133, 135, 138, 142, 150, 156, 158, 163, 165, 169, 171, 175, 188, 195, 200, 211, 215, 227, 230, 246, 248, 252, 255, 259-261, 265, 271, 273, 275, 277, 287, 291, 297, 299, 304, 308, 310
+src/topoastero/stage7_validation.py          230     47    150     41    77%   81-83, 85, 93-95, 105, 107, 110, 122, 124, 127, 133, 136, 140, 147, 154, 163, 167, 176, 178, 181, 185, 187, 191, 201, 206, 210, 215, 220, 223, 226, 232, 238, 244, 246, 248, 250, 261, 265, 269, 295, 297, 303, 305, 309
+src/topoastero/stage8_validation.py          189     41    112     41    73%   88, 91, 94, 96, 98, 100, 105, 120, 122, 124, 126, 135, 138, 141, 156, 158, 161, 163, 167, 171, 173, 176, 181, 184, 186, 189, 192, 194, 197, 199, 202, 206, 214, 216, 218, 222, 224, 230, 232, 237, 240
+src/topoastero/stage9_validation.py          142     15     82      8    89%   47-48, 51-52, 60-61, 77-85, 95, 104, 140, 147, 176
+src/topoastero/stage10_validation.py         151     14     80     16    87%   127, 129, 133, 146, 158, 162, 168, 176, 179, 182, 185, 189->191, 191->193, 196, 199, 203
+src/topoastero/stage11_validation.py          79     20     44     16    67%   42, 44, 54->56, 60, 62, 66, 68, 70, 74, 77, 79-83, 85, 87, 90, 92-94, 95->97
+src/topoastero/style.py                      196      0     70      2    99%   679->682, 708->710
+src/topoastero/tda.py                        303      8    124      8    96%   257, 274, 440, 443, 450, 524, 545, 559
+src/topoastero/validation.py                  92     13     28     12    79%   41, 51, 59, 81, 83, 92, 107, 129, 165, 178-179, 182, 184
+--------------------------------------------------------------------------------------
+TOTAL                                       6878    794   2980    637    85%
+Coverage JSON written to file /workspace/scratch/0d6b6b830e55/stage12_baseline_coverage.json
+Required test coverage of 85% reached. Total coverage: 85.06%
+=========================== short test summary info ============================
+FAILED tests/governance/test_stage10_contract.py::test_stage10_frozen_contract_and_prior_gates
+FAILED tests/governance/test_stage11_contract.py::test_stage11_additive_snapshot_and_honest_population_hold
+FAILED tests/governance/test_stage11_contract.py::test_task_register_is_complete
+FAILED tests/governance/test_stage1_contract.py::test_complete_stage1_contract
+FAILED tests/governance/test_stage2_contract.py::test_complete_stage2_contract
+FAILED tests/governance/test_stage3_contract.py::test_stage3_contract_passes_with_all_prerequisites
+FAILED tests/governance/test_stage4_contract.py::test_stage4_contract_passes_with_all_prerequisites
+FAILED tests/governance/test_stage5_contract.py::test_stage5_contract_passes_with_all_prerequisites
+FAILED tests/governance/test_stage6_contract.py::test_stage6_contract_passes_with_all_prerequisites
+FAILED tests/governance/test_stage7_contract.py::test_stage7_contract_passes_with_all_prerequisites
+FAILED tests/governance/test_stage8_contract.py::test_stage8_passes_with_all_prior_stage_regressions
+FAILED tests/governance/test_stage9_contract.py::test_implementation_pass_science_gate_remains_pending
+FAILED tests/governance/test_stage9_contract.py::test_modified_proof_or_fake_gate_is_rejected
+FAILED tests/integration/test_cli.py::test_cli_hash_checksum_and_validation
+FAILED tests/integration/test_stage10_cli.py::test_stage10_cli_offline_snapshot_and_review_hold
+FAILED tests/integration/test_stage11_cli.py::test_stage11_cli_validates_without_opening_holdout
+FAILED tests/integration/test_stage1_cli.py::test_stage1_cli_passes - SystemE...
+FAILED tests/integration/test_stage2_cli.py::test_stage2_cli_passes - SystemE...
+FAILED tests/integration/test_stage3_cli.py::test_stage3_cli_passes - SystemE...
+FAILED tests/integration/test_stage4_cli.py::test_stage4_cli_passes - SystemE...
+FAILED tests/integration/test_stage5_cli.py::test_stage5_cli_passes - SystemE...
+FAILED tests/integration/test_stage6_cli.py::test_stage6_cli_passes - SystemE...
+FAILED tests/integration/test_stage7_cli.py::test_stage7_cli_passes - SystemE...
+FAILED tests/integration/test_stage8_cli.py::test_stage8_cli_passes - SystemE...
+FAILED tests/integration/test_stage9_cli.py::test_stage9_cli_reports_pending_review_without_claiming_gate_pass
+25 failed, 375 passed in 36.26s

@@ -1,0 +1,155 @@
+{
+  "files": [
+    {
+      "path": "results/stage12/local_windows_v1/development_run.json",
+      "sha256": "c7e68d89234244b05938168794dcf8907017a85cb337b59110752ccab28bfa27",
+      "size_bytes": 12193
+    },
+    {
+      "path": "results/stage12/local_windows_v1/transfer_run.json",
+      "sha256": "9c2af74c4a4388c733fba760dbcc160722ac153a0202150258e3ac37c10d425b",
+      "size_bytes": 85386
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/G12_ACCEPTANCE.json",
+      "sha256": "98d003a49778aec73c216eea5dd771cc967e4088d833e4c2faae03b2980d8b49",
+      "size_bytes": 945
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/TESS_SCOPE_DECISION.json",
+      "sha256": "8bf907d2eeae38c9829e8a7bb262babf366153ad5d39fa6a4455cfd5e63779d9",
+      "size_bytes": 437
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/recalibration_note.json",
+      "sha256": "8458c0d98d5337a301815acbc99c4f967b9f38e45318114d96f705ea53bb99fb",
+      "size_bytes": 396
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/task_traceability.csv",
+      "sha256": "ea5dda0f59ad28568b638d57eb9911312c6089c6e46a6f8452d96b1713c7a7fa",
+      "size_bytes": 836
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/MODEL_CARD.md",
+      "sha256": "06eeb2ccbea5f8277800d1d0d98d8947e3f119caf99f6d086f744e2db8b5c009",
+      "size_bytes": 3884
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/STAGE12_REPORT.md",
+      "sha256": "81c14ac391caf8949c406a41066dc24d2a4fde37297cf577f37a89f7c3abdf0a",
+      "size_bytes": 1104
+    },
+    {
+      "path": "paper3/main.tex",
+      "sha256": "b7c8a91a31e60fd007566e8941728e5ac69d7b3b8a113dffba550507bdb4bfda",
+      "size_bytes": 8350
+    },
+    {
+      "path": "paper3/results_status.tex",
+      "sha256": "d1c9ca37765909c291f0258e1174e516cc2e5b25b432d5cf0e6b557e607ce348",
+      "size_bytes": 113
+    },
+    {
+      "path": "paper3/results_tables.tex",
+      "sha256": "d05a37dee8ed1cbdf4d132c4ba7dc7effb5b3e57e5a8c780798c898a8195dd42",
+      "size_bytes": 197
+    },
+    {
+      "path": "paper3/references.bib",
+      "sha256": "9f353ee2a517f7823d7c408441f17e750b8c275fdb5d46bd55be0b7562549daf",
+      "size_bytes": 16024
+    },
+    {
+      "path": "reports/stage12/local_windows_v1/figure_manifest.json",
+      "sha256": "e773003ffbd3198173366d5c6787d8c490b0f30f80eb9b8f3e522bf2d42cafd7",
+      "size_bytes": 4718
+    },
+    {
+      "path": "reports/stage12/figures/stage12_oof_increment.png",
+      "sha256": "90bb9b212f06da50b37466e28c85c55404621d5fbacf66c5b159b4c6bb9c1323",
+      "size_bytes": 193960
+    },
+    {
+      "path": "reports/stage12/figures/stage12_oof_increment.svg",
+      "sha256": "4181d7099a83aa14d98adc4f61bb389815da4cbd558e24fbe286733fcba55a5d",
+      "size_bytes": 96897
+    },
+    {
+      "path": "reports/stage12/figures/stage12_oof_increment.pdf",
+      "sha256": "d03327be8bec0dfa9ff4ea2050311a4d679a6a6f4295c6228efbc66105262ec4",
+      "size_bytes": 17276
+    },
+    {
+      "path": "results/stage12/local_windows_v1/oof_predictions.csv",
+      "sha256": "7227acf0d86914ee1d837d6e64564f5752a2e49ef13b3f6cf5667e04be20781a",
+      "size_bytes": 1831
+    },
+    {
+      "path": "results/stage12/local_windows_v1/increment.json",
+      "sha256": "c70a09b163949e693b14f8f00bcf2f3febb9bef30b5ae5a5b09e8db9d2741d6f",
+      "size_bytes": 2702
+    },
+    {
+      "path": "reports/stage12/figures/stage12_quality_calibration.png",
+      "sha256": "e3ee82cf068eed68f886648d5eaeeeb9018e3f4487fd0a3eaf02f5ade7ce9bc5",
+      "size_bytes": 124404
+    },
+    {
+      "path": "reports/stage12/figures/stage12_quality_calibration.svg",
+      "sha256": "cd76b05f1256b707805a69393ca6cfba7b02a521bccd8abc47bac6749a5d76c8",
+      "size_bytes": 52128
+    },
+    {
+      "path": "reports/stage12/figures/stage12_quality_calibration.pdf",
+      "sha256": "a8bfcf26dc886841666fe3148cde1115b1cd10e057429756ee006044b5c2ef54",
+      "size_bytes": 15117
+    },
+    {
+      "path": "results/stage12/local_windows_v1/probability_calibration.json",
+      "sha256": "ea02d67b3946f696d3d0055ff6f5e4a48606f5e0fad76bc82fa2c2835cf0c3b4",
+      "size_bytes": 1232
+    },
+    {
+      "path": "reports/stage12/figures/stage12_transfer_trajectories.png",
+      "sha256": "6ee2b39989be60d3e76e1f22f5aa5ee20964513a4b96e6f1e3b219b80616e643",
+      "size_bytes": 327881
+    },
+    {
+      "path": "reports/stage12/figures/stage12_transfer_trajectories.svg",
+      "sha256": "28368f05510958a2ab5383e60f4b82d6772ac31a0d6b1a7955f7e81f0c733d59",
+      "size_bytes": 154728
+    },
+    {
+      "path": "reports/stage12/figures/stage12_transfer_trajectories.pdf",
+      "sha256": "662d0fb3ef4fb424496cae13e68cc442bb7efbb5dc3374d54d7cf892b0b9787d",
+      "size_bytes": 25732
+    },
+    {
+      "path": "results/stage12/local_windows_v1/transfer_curves.csv",
+      "sha256": "a7a9d08cd1d01caa53ddd2c64101c02f6facbb81eeef147136323af6cb0555a6",
+      "size_bytes": 13161
+    },
+    {
+      "path": "reports/stage12/figures/stage12_actual_tess_quality.png",
+      "sha256": "00688c5d8edf1550e0050e3f98464ff84be8c0acba8003664fe6ae15851bb981",
+      "size_bytes": 160984
+    },
+    {
+      "path": "reports/stage12/figures/stage12_actual_tess_quality.svg",
+      "sha256": "d1ec7a6a1235ae8992da0a0760cbed54b94844495d04c7f5ac4119444d5dbbe7",
+      "size_bytes": 96069
+    },
+    {
+      "path": "reports/stage12/figures/stage12_actual_tess_quality.pdf",
+      "sha256": "091461f0c0cde743f39429e14c97c24eda440e2784152eadab62ffa5ddc82571",
+      "size_bytes": 20519
+    },
+    {
+      "path": "results/stage12/local_windows_v1/actual_tess.json",
+      "sha256": "10eec39a940355d1e62591d5d07290aea77e037311bbc1e84a0df79ae380a41b",
+      "size_bytes": 43998
+    }
+  ],
+  "schema_version": 1
+}

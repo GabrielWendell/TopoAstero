@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/population_dev/internal_validation/stars/KIC9410862/analysis.json",
+    "sha256": "ebfbf0c45c0c213be9b193d8cb70ab1348336c83571087991b9747c7bfc70e79",
+    "size_bytes": 387
+  },
+  "available_products": 0,
+  "completed_failed_records_retried": false,
+  "expected_products": 33,
+  "input_id": "702a7e0e8c75216b319fe8f68cfec761cd01bc69f7dee54342d8bb73c241e9b4",
+  "quality_flags": [
+    "missing_products"
+  ],
+  "reason": "fewer_than_three_nonoverlapping_months",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "internal_validation",
+  "stable_star_id": "KIC 9410862",
+  "status": "missing_input"
+}

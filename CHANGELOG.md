@@ -177,3 +177,10 @@ describe software releases, while immutable experiment IDs identify scientific r
 - Preserved prior core source files and the original grouped split; repaired
   inherited stale administrative seals and checked Stage 10 clean reproduction.
 - Scientific G11 remains population_pending until acquisition and confirmation.
+
+## Stage 12 implementation
+
+- Add the `topoastero.hybrid` package, task/feature registries and grouped inference/quality workflows without changing frozen prior estimator modules or dependency versions.
+- Add matched physical degradation, resumable arrays/checkpoints, sectorwise actual TESS cases and conditional transfer contributions.
+- Add signed model-release/first-archive guards, optional authorized development-simulation calibration, source-backed figures, model card and Paper III.
+- Preserve the supplied archive's failed/missing records, repair inherited portability/admin seals, and reproduce Stage 10 plus available Stage 11 derived spectra honestly.

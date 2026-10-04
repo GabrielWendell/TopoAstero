@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8938364/analysis.json",
+      "sha256": "29089567c3dc24e97fa8570085e944e8ba8498df99a383a78ce1c65ce6e550d7",
+      "size_bytes": 760
+    }
+  ],
+  "input_id": "e1fda6749ad592c3f84cb1fa91b0e207cd154e221bda2019a6b2d643b9e56400",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 8938364"
+}

@@ -25,7 +25,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           enable-cache: true
       - name: Install locked environment
-        run: uv sync --locked --group dev
+        run: uv sync --locked --group dev --extra astronomy
       - name: Check repository portability
         run: uv run topoastero check-portability --root .
       - name: Lint
@@ -68,3 +68,7 @@ jobs:
         run: uv run python workflows/validate_stage11.py --root .
       - name: Replay Stage 11 available observational headlines
         run: uv run python workflows/replay_stage11_reduced.py --root .
+      - name: Validate Stage 12 inference and transfer evidence offline
+        run: uv run python workflows/validate_stage12.py --root .
+      - name: Replay Stage 12 grouped OOF predictions
+        run: uv run python workflows/replay_stage12_reduced.py --root .

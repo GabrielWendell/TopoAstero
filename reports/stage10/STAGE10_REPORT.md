@@ -35,7 +35,7 @@ draft includes methods, simulation context, Rudy, ablations, discussion, limitat
 and data/code availability. No population/final holdout or new unreviewed G9 theorem
 is used for a headline claim. No public deposition, journal submission or DOI is claimed.
 
-Automated clean reproduction: **not_run**. Independent human
+Automated clean reproduction: **pass**. Independent human
 reproduction and claim review: **pending unless a valid signed record is supplied**.
 The scientific G10 gate therefore remains review_pending by default. G9 proof
 review remains review_pending. This is an implementation-complete

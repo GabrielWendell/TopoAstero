@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/population_dev/descriptive_benchmark/stars/KIC10963065/analysis.json",
+    "sha256": "9bbfbe5614a3976fd702190cf268d8a4d829f3f04cd41c1b34e75faf95f53a4b",
+    "size_bytes": 397
+  },
+  "available_products": 27,
+  "completed_failed_records_retried": false,
+  "expected_products": 27,
+  "input_id": "d5a16f5faec270678978d5cd92ca724ad56eea5a91ae980af98650cf1ce52875",
+  "quality_flags": [
+    "pipeline_failure"
+  ],
+  "reason": "ValueError: rebinning may not extrapolate",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "descriptive_benchmark",
+  "stable_star_id": "KIC 10963065",
+  "status": "pipeline_failure"
+}

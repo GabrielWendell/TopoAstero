@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "path": "results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10162436/analysis.json",
+      "sha256": "789650ba5f1459eda4d756af44159b77cc56c744d5484837115352b66b6a9c3b",
+      "size_bytes": 762
+    }
+  ],
+  "input_id": "4a6b728c4fe1f5a49246600bfefb3918c9d33ca52153b9d6eb389a29efe89da8",
+  "role": "development",
+  "schema_version": 1,
+  "stable_star_id": "KIC 10162436"
+}

@@ -1,0 +1,20 @@
+{
+  "archived_analysis_source": {
+    "path": "results/stage11/population_dev/development/stars/KIC2837475/analysis.json",
+    "sha256": "e7f97e777e7cb39926786053eaafa4d8d17aff27831bab3b5cbaf3485a1e2a9a",
+    "size_bytes": 386
+  },
+  "available_products": 39,
+  "completed_failed_records_retried": false,
+  "expected_products": 39,
+  "input_id": "f3d2e9e585a81d0856e171fcb39a481d70e9ff7f7e0846eb7e970a671cd1ebc5",
+  "quality_flags": [
+    "pipeline_failure"
+  ],
+  "reason": "ValueError: rebinning may not extrapolate",
+  "reference_values_used_in_estimation": false,
+  "reproduction_scope": "archived_monthly_spectra_only_no_raw_payload_reproduction",
+  "role": "development",
+  "stable_star_id": "KIC 2837475",
+  "status": "pipeline_failure"
+}

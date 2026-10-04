@@ -401,3 +401,17 @@ in [the traceability matrix](reports/stage11/TRACEABILITY_MATRIX.md). The delive
 scientific G11 is `population_pending`: 66-star metadata and corrected references
 are included, while only Rudy observation payloads were supplied. No final holdout
 was opened and no Paper II population performance claim is made.
+
+## Stage 12 — hybrid inference and transfer
+
+Stage 12 adds compact classical/hybrid models with star-grouped nested validation, empirical uncertainty and supported failure calibration, physical Kepler-to-TESS degradation, all 11 actual Rudy sectors, source-backed figures, and Paper III. See [the protocol](docs/protocols/STAGE12_HYBRID_PROTOCOL.md), [commands](docs/reproducibility/STAGE12_REPRODUCTION.md), and [model card](reports/stage12/MODEL_CARD.md).
+
+```text
+uv sync --locked --group dev --extra astronomy
+uv run python workflows/validate_stage12.py --root .
+uv run python workflows/replay_stage12_reduced.py --root .
+uv run python workflows/reproduce_stage12.py --cache-dir data/raw
+uv run pytest
+```
+
+The delivered evidence is a nine-star development pilot and a one-star transfer benchmark. Software implementation PASS does not imply a positive scientific G12 result. Missing population acquisition, independent review and signed first confirmation remain explicit. No holdout is opened by these commands. The original Stage 11 runs are preserved; their archived monthly spectra were replayed in a new compatibility directory.
