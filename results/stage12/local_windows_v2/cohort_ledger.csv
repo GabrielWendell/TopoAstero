@@ -1,0 +1,40 @@
+stable_star_id,role,included,upstream_status,reason,source
+KIC 1435467,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC1435467/analysis.json
+KIC 2837475,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC2837475/analysis.json
+KIC 3427720,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3427720/analysis.json
+KIC 3656476,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3656476/analysis.json
+KIC 3735871,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC3735871/analysis.json
+KIC 4914923,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC4914923/analysis.json
+KIC 5184732,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5184732/analysis.json
+KIC 5950854,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC5950854/analysis.json
+KIC 6603624,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6603624/analysis.json
+KIC 6679371,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6679371/analysis.json
+KIC 6933899,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC6933899/analysis.json
+KIC 7206837,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7206837/analysis.json
+KIC 7296438,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7296438/analysis.json
+KIC 7510397,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7510397/analysis.json
+KIC 7680114,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7680114/analysis.json
+KIC 7771282,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7771282/analysis.json
+KIC 7871531,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7871531/analysis.json
+KIC 7940546,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7940546/analysis.json
+KIC 7970740,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC7970740/analysis.json
+KIC 8179536,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8179536/analysis.json
+KIC 8394589,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8394589/analysis.json
+KIC 8424992,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8424992/analysis.json
+KIC 8694723,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8694723/analysis.json
+KIC 8760414,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8760414/analysis.json
+KIC 8938364,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC8938364/analysis.json
+KIC 9139151,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9139151/analysis.json
+KIC 9206432,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9206432/analysis.json
+KIC 9353712,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9353712/analysis.json
+KIC 9414417,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9414417/analysis.json
+KIC 9955598,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC9955598/analysis.json
+KIC 10162436,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10162436/analysis.json
+KIC 10454113,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10454113/analysis.json
+KIC 10516096,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10516096/analysis.json
+KIC 10730618,development,True,limited,low_envelope_ratio;alias_ambiguity,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC10730618/analysis.json
+KIC 11253226,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC11253226/analysis.json
+KIC 11772920,development,False,pipeline_failure,ValueError: rebinning may not extrapolate,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC11772920/analysis.json
+KIC 12069127,development,True,limited,low_envelope_ratio,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069127/analysis.json
+KIC 12069449,development,False,missing_input,fewer_than_three_nonoverlapping_months,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12069449/analysis.json
+KIC 12317678,development,False,missing_input,fewer_than_three_nonoverlapping_months,results/stage11/stage12_compatibility_replay_v2/development/stars/KIC12317678/analysis.json

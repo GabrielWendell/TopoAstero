@@ -1,8 +1,8 @@
 schema_version: 1
 stage_id: TA-S12-HYBRID-v1
 seed: 20260721
-output: results/stage12/local_windows_v1
-reports: reports/stage12/local_windows_v1
+output: results/stage12/local_windows_v2
+reports: reports/stage12/local_windows_v2
 stage11_evidence: reports/stage11/evidence_manifest.json
 training_role: development
 classical_features: [log_numax, log_dnu, log_envelope, duty_cycle, log_duration, log_resolution, prominence_delta, graph_score]
@@ -42,5 +42,5 @@ transfer:
   recalibration_enabled: false
   minimum_calibration_stars: 10
   additional_signal_color_response: 1.0
-release: reports/stage12/model_release.json
-confirmation_state: registries/stage12_confirmation.json
+release: registries/stage12_release_local_windows_v2.json
+confirmation_state: registries/stage12_confirmation_local_windows_v2.json

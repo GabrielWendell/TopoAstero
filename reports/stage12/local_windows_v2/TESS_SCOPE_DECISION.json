@@ -1,0 +1,11 @@
+{
+  "broader_TESS_expansion": false,
+  "decision": "stop_at_Rudy_transfer_limits",
+  "reason": "No powered multi-star transfer evidence; candidate values and descriptive sectors do not establish detections.",
+  "required_for_expansion": [
+    "supported_locked_population_increment_or_equivalence",
+    "calibrated_failure_risk",
+    "agreement_with_independent_actual_targets",
+    "prospective_sample_power_and_acquisition_plan"
+  ]
+}

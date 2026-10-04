@@ -843,8 +843,8 @@
     },
     {
       "path": "src/topoastero/hybrid/plotting.py",
-      "sha256": "08fde0f6bad086db540ad943e25358eab43414086a0742a47d75235247139978",
-      "size_bytes": 7893
+      "sha256": "da83f325a2eb73208f4e9f4915a48d291d5ccb1fd2c63f32e8c5f45fa106d5f8",
+      "size_bytes": 8251
     },
     {
       "path": "src/topoastero/hybrid/release.py",

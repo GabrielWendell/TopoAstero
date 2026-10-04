@@ -1,0 +1,2091 @@
+{
+  "actual_sectors": 11,
+  "actual_test_sectors_tuned": false,
+  "cells": 192,
+  "code_sha256": "2c99b69b11ff96139ad0db1d2a34440db754e85b0ee1bd588f0749778ca1210b",
+  "configuration_sha256": "fd1a1a79877ce6838d39e237a6b6f0951f169983c6af8fbd38ba0770380f059b",
+  "files": [
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_contamination.json",
+      "sha256": "1a893e47a7c5485f9817db1faeb53e8f6ca595cd3688740feb9d650108c2145c",
+      "size_bytes": 7381
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_contamination.npz",
+      "sha256": "0d70e4646c8d686214f29370e5d011a22043ebad25eee8ad3eaa763a62f3e78b",
+      "size_bytes": 186654
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_duration.json",
+      "sha256": "2bc7d03d7a3a8353713f834456e9e632189b07e9b88d1ec908f3f3cd5c08403b",
+      "size_bytes": 7176
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_duration.npz",
+      "sha256": "e22a08af5ccfed637e4ce02d2dde0dc1c062b9c534b4d2f935e40aade9680377",
+      "size_bytes": 180120
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_duty.json",
+      "sha256": "44139b69777f8e9381b36c71c25dc2c0ac019b6aa3a843ca139f6ad679c93b23",
+      "size_bytes": 7210
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_duty.npz",
+      "sha256": "af4ec97ee6003890910860c87f4eec9311a76ea025d523cfb47afc638abdd4f3",
+      "size_bytes": 186602
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_exposure.json",
+      "sha256": "74620378ca7978a073670a30de5e2c6f29d0b568697df1580eedc315d2f4e650",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_native.json",
+      "sha256": "66d28c97861e44b223d2895bff9efba46683f56d0eb50e1b6a02fe77ed698d5b",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_noise.json",
+      "sha256": "e5636699455217428310da1cf0fbca9c9a45b48975b0a17819f3a0cef09549e5",
+      "size_bytes": 7212
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_noise.npz",
+      "sha256": "8d3fa819f71c395d2323890ed1be19e83b1a20d58bac545268dc72fccb768585",
+      "size_bytes": 193042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_short_duration.json",
+      "sha256": "e931aa34a2131a7d2002a29b232f5d7477e67d7f9dd46bb397de7dab0784d7bb",
+      "size_bytes": 7389
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_short_duration.npz",
+      "sha256": "0da0719203211cd7cfef99bcea31bd047993e36254156f370e673bd3d4e48101",
+      "size_bytes": 92844
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_window.json",
+      "sha256": "3af243c39edccd9637622f428a493fb3520dd91fef022baedb05681531de0039",
+      "size_bytes": 7233
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R0_window.npz",
+      "sha256": "ccd434031407beb748913b878e492c8d0fedd23a9b72db5e206a0ff7dcc61427",
+      "size_bytes": 245259
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_contamination.json",
+      "sha256": "ea3bb2a7c08f82ba0b732383b977e038d9d1d1b0fe6141e05f78bef4f0bc4d69",
+      "size_bytes": 7372
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_contamination.npz",
+      "sha256": "69a4281af28c3ae2df7461f366c45c27ab670fae7b4459067c9c1341ae083d05",
+      "size_bytes": 185030
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_duration.json",
+      "sha256": "c0905b4a4664b467404dc65a2f6d50dc9123d14ff0fcc890b493fae46a24ad8d",
+      "size_bytes": 7171
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_duration.npz",
+      "sha256": "e22a08af5ccfed637e4ce02d2dde0dc1c062b9c534b4d2f935e40aade9680377",
+      "size_bytes": 180120
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_duty.json",
+      "sha256": "dca754a2a7ae5f7690c5e5570a0617779d817a2ed2a2a8b9e6448b73ee93e118",
+      "size_bytes": 7197
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_duty.npz",
+      "sha256": "a056b91eb3100ce05cc7a0f907f40c389c3aaf7d3c4669689da2ef52533fe242",
+      "size_bytes": 184979
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_exposure.json",
+      "sha256": "e8c74258bbfc7b13c7dd78dabcca7998c14bad44017ad8ec81082336c3a37c7b",
+      "size_bytes": 7178
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_native.json",
+      "sha256": "b1645195b7b81c0cdbf01b2c7461f7583120aac97d835462c4d624011fd72981",
+      "size_bytes": 7201
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_noise.json",
+      "sha256": "10a1f63748c8c59f8133ed1383a7b7dfd02e41f0054c5620fc780e7b668586eb",
+      "size_bytes": 7211
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_noise.npz",
+      "sha256": "5a8c796f16a51e1c79b742a9b2abfe838a9f9be814e74c7285cb813e99b5e684",
+      "size_bytes": 193057
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_short_duration.json",
+      "sha256": "017de7f06d6712ec157aac08943728a139604cf056cad22c1954475c02cef4fd",
+      "size_bytes": 7377
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_short_duration.npz",
+      "sha256": "f2285bf53044f2eeb7bdf2de0120e1ff775b44cf10ef161d8afb77a318802709",
+      "size_bytes": 92376
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_window.json",
+      "sha256": "1e00fc85539d05dcdcd6bbdc9509e105a82fcce07b6172259d96cc34d98fb96f",
+      "size_bytes": 7227
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R1_window.npz",
+      "sha256": "cc33a37ea820237f5fd52c47e3776ef019b1ebed767d08e05727c26f7b89544f",
+      "size_bytes": 245265
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_contamination.json",
+      "sha256": "2937ee03dc21566fb779227f8dc01911490f616edb06370ed03ded6dfd12bf55",
+      "size_bytes": 7384
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_contamination.npz",
+      "sha256": "6eb757a042f191eb137bd2bbf369dfdb170fec759112437c74e8fc13b09b6e48",
+      "size_bytes": 184954
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_duration.json",
+      "sha256": "e53af1dcdb710fe6bd4b52bf02119a93e77eec09cf8e1ca76ef27a5d03e94ee9",
+      "size_bytes": 7176
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_duration.npz",
+      "sha256": "e22a08af5ccfed637e4ce02d2dde0dc1c062b9c534b4d2f935e40aade9680377",
+      "size_bytes": 180120
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_duty.json",
+      "sha256": "819a3da18fbd951c53090a6b2ae02362dcfc71ddcc10f261314ad33827514a91",
+      "size_bytes": 7209
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_duty.npz",
+      "sha256": "58fe14f98196951bc5079ec24ea703ee3cd5f19d53d1caf63f2a948ba1cb4c17",
+      "size_bytes": 184912
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_exposure.json",
+      "sha256": "52dff88263d3f715291d6a7ad7d73d7df391234f34e80e8ae7e17e92e68a62cd",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_native.json",
+      "sha256": "d1dc51a1832e869902faa2e31f9a3e3f0f291dc8d06223dbfa12615f7e1ee8f5",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_noise.json",
+      "sha256": "f0cafe5d1a2a416ed06260fc0acf16bebbd2a1bca70cc67a8c4d480d455e2011",
+      "size_bytes": 7215
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_noise.npz",
+      "sha256": "81b3620586150066cdf9d1fff58777908228b070337b650a41b52819aa3f9306",
+      "size_bytes": 193059
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_short_duration.json",
+      "sha256": "caf49321db7845d9eafbcd14f9893032b92f0e19f151f58b9ddb8f16fcf32e60",
+      "size_bytes": 7388
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_short_duration.npz",
+      "sha256": "bede8dc35fd5579b3f7597f848a790c82efd5510a678497e431eb4886d32d555",
+      "size_bytes": 92444
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_window.json",
+      "sha256": "220d7e6f726d0f8ed7802c4eb35cd4458186f997def7394bd97cfe988c3484a3",
+      "size_bytes": 7232
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R2_window.npz",
+      "sha256": "15c458742fd2a7117194cea82050253377385c6628de8cf7507025f349277e2d",
+      "size_bytes": 245280
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_contamination.json",
+      "sha256": "9638ea5cfd66ce810fd448cf3434a2a66e4c7f2e2a1f74cdc5df90be7c0f84c7",
+      "size_bytes": 7382
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_contamination.npz",
+      "sha256": "9f6456a1fb8534203a5fa43f89fc2c021c718c2b9f8beb62de7475abb04d3b03",
+      "size_bytes": 185778
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_duration.json",
+      "sha256": "923d55f9beb5d800d51e18acfa44f178ed8f46337b839751ec443985ede14771",
+      "size_bytes": 7171
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_duration.npz",
+      "sha256": "e22a08af5ccfed637e4ce02d2dde0dc1c062b9c534b4d2f935e40aade9680377",
+      "size_bytes": 180120
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_duty.json",
+      "sha256": "fe9d882ae01ee832c256e47d7f88a6b345840c3c979758256b6d4e12cd76d87d",
+      "size_bytes": 7202
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_duty.npz",
+      "sha256": "27f9a351f87b4ab8bb87bf5b51928b64889dbcb24086688b777b7def3e5c3927",
+      "size_bytes": 185769
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_exposure.json",
+      "sha256": "7218a74657823b1974b4c09216afd4f47ce1e2c3d9714804a8f13b2e4439ef20",
+      "size_bytes": 7178
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_native.json",
+      "sha256": "04e19479ff0f10d503f612fe40c431c42ea2063810a40e1ab2c3d4a6302803c7",
+      "size_bytes": 7201
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_noise.json",
+      "sha256": "d21dbfae764da268eecaf7322b022b9af86b56132a69ec2eacdc053bf22319a9",
+      "size_bytes": 7209
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_noise.npz",
+      "sha256": "d00450bbc02d22358f44e75ba952301cfd14059e718059b7aa897130e609d798",
+      "size_bytes": 193083
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_short_duration.json",
+      "sha256": "61e7fe5fad207ed378f803c06a1636d2b0dc81a8387d995b5404f4c335ccd5ba",
+      "size_bytes": 7385
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_short_duration.npz",
+      "sha256": "20921bd4587174d948440818202b444d23330f4c2438b614d1ef71520ad4df70",
+      "size_bytes": 92786
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_window.json",
+      "sha256": "7e2044397caed3c2f04dcee2bc9bacb412d9f595ab1fc9d2bcf0f4530a41dcce",
+      "size_bytes": 7226
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O0_R3_window.npz",
+      "sha256": "d72eb774b9a93403504addd568ba433eb21fd99745caec0df0a0d896b47e5016",
+      "size_bytes": 245230
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_contamination.json",
+      "sha256": "03e1efb5d655fb88b58a10b4b2834e2fecdbcee3683f6ac782b0af60494a1d25",
+      "size_bytes": 7394
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_contamination.npz",
+      "sha256": "ae50538f799bbd9f77fef64165187c97a1edc0be35a99c27723b694426e3e686",
+      "size_bytes": 176761
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_duration.json",
+      "sha256": "7dbaaca4c117d177b89c1b21d517b9c3dff788c3ca132b063b462ff19d0c714a",
+      "size_bytes": 7043
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_duration.npz",
+      "sha256": "a7b655f14ce13c583bcc9e796a3c4e83076e8b54f6f9f34aa1f207f56ab77590",
+      "size_bytes": 168952
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_duty.json",
+      "sha256": "7dd35b28019be0cc3a793cec62a235f81b73213ac7e6777d154f2aee63dc5e3c",
+      "size_bytes": 7221
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_duty.npz",
+      "sha256": "d9bbaddf14cf89d0540bd338fd7ff3e8122f02f40b7b3ff40f435ba4c988175a",
+      "size_bytes": 176730
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_exposure.json",
+      "sha256": "680fbd1358e6d6d674d5fc11ecdd8c2e6062a9b8cb22e90dc8823bf3e330448a",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_native.json",
+      "sha256": "37ac1a509c356b439cb6f9fcc8ecd5aceb9ecff8332b440f8bc939cab0e06a40",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_noise.json",
+      "sha256": "a78820357a7a6de1e3121313687bda639338534f07cd16ef595ce30f8405b779",
+      "size_bytes": 7230
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_noise.npz",
+      "sha256": "64b90bc987d380bc700db9d4b9353b1f8b3c9e82cc2e64cf5652183f1d0f81a1",
+      "size_bytes": 184028
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_short_duration.json",
+      "sha256": "50b535b066d70292132a7afbf60161c881f24eac202bb28d21046309a2ddd98b",
+      "size_bytes": 7394
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_short_duration.npz",
+      "sha256": "24ecccc5ec050894ff0ae94f202cfd43b97b6ea08f2fb559a3249bb9f66810c7",
+      "size_bytes": 83855
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_window.json",
+      "sha256": "76b7dde8bd4e9bf26ed4d5ccec9b09def9e1ef08532ea4a57dd7992ad0489d43",
+      "size_bytes": 7238
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R0_window.npz",
+      "sha256": "7dd40c5ba3ebdfdb3fcb5d4b202e3c7d37c1d720640107fddfcd52717cf620a3",
+      "size_bytes": 233470
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_contamination.json",
+      "sha256": "5cabe54282fb6da83335764f2b8c6e88af4abb2a3a7e0f118a8240f655effa9a",
+      "size_bytes": 7388
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_contamination.npz",
+      "sha256": "b732fcc300015202f5cdccb662c419460d953304b2bf1b6d4c09259fc621c6ad",
+      "size_bytes": 178077
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_duration.json",
+      "sha256": "9f24e8baeb6e1404f99b7dd28b6a59d87b87cf7b5738beef243e2d9a5d79c318",
+      "size_bytes": 7038
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_duration.npz",
+      "sha256": "a7b655f14ce13c583bcc9e796a3c4e83076e8b54f6f9f34aa1f207f56ab77590",
+      "size_bytes": 168952
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_duty.json",
+      "sha256": "f4faa13ed72000adfef3636dc191b1206fb6af22b9fd638eb38ba5210514b63e",
+      "size_bytes": 7210
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_duty.npz",
+      "sha256": "e600a57cb525dc5dd549537ba23a3a8fcc864aa1e154a5503c435c8203009c28",
+      "size_bytes": 178036
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_exposure.json",
+      "sha256": "d01642b1bb84b763117b76fa7f533d73a708d18cd0ea7a7fff8b5559f33cede4",
+      "size_bytes": 7037
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_native.json",
+      "sha256": "1f045eda2b7d5ba231aad19f3ed3b6a636ca429d4efe95fc3ed4c5db3145f736",
+      "size_bytes": 7063
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_noise.json",
+      "sha256": "c222ef57dd66f003a22fc59a6b607b93fcbf85980ba53b1301a2601987afe7ab",
+      "size_bytes": 7227
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_noise.npz",
+      "sha256": "6053b9eb4179119d20e3634811e3899d6cd1d9984dba3b648754bc687896027f",
+      "size_bytes": 184026
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_short_duration.json",
+      "sha256": "d788b456616eeaa7fd6ec6dd6ab4900f5f73fb39f03a90ffc3948baf2150260a",
+      "size_bytes": 7399
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_short_duration.npz",
+      "sha256": "575aad86e50b3dac0973538b1ceba62c4fc40dc801498864d5a7f7251038fd32",
+      "size_bytes": 84747
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_window.json",
+      "sha256": "4cfcd171b232a3801f28fa662604b828391c3edefd27d8df17c703da7aec4d52",
+      "size_bytes": 7225
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R1_window.npz",
+      "sha256": "cf5090251fa2c918f6aec67db2057f059cf52e96805d91b45b9a48f86a4d4604",
+      "size_bytes": 233478
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_contamination.json",
+      "sha256": "b08ddeb027cacfff8bb5bc3c8e2f45a76109c6debf66a7b6a48183f73a1f6f8f",
+      "size_bytes": 7393
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_contamination.npz",
+      "sha256": "21bb91690101d496e66c0871ab609e362d5037145eeb65d4f8d12dcbd10fa766",
+      "size_bytes": 174959
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_duration.json",
+      "sha256": "bfe386a73e7c3a64baf5abc055568cf857b7dababff00be6f157b5b6d6d45a40",
+      "size_bytes": 7043
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_duration.npz",
+      "sha256": "a7b655f14ce13c583bcc9e796a3c4e83076e8b54f6f9f34aa1f207f56ab77590",
+      "size_bytes": 168952
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_duty.json",
+      "sha256": "e588b6858aa3da358b039aa93f80147e892513eff5ba17fe3b1f331f2c3a5a0d",
+      "size_bytes": 7217
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_duty.npz",
+      "sha256": "7d0af14def81179d94aceda88b281f3a2552eb31deda6bc8a283ab400a14e237",
+      "size_bytes": 174930
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_exposure.json",
+      "sha256": "8adc8d0fe278257b0c0821d1ab482651372bd3630d57d757cbcc6b1960314b0d",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_native.json",
+      "sha256": "f5215cb1e72eaba2959b1caf5ae282ded49a6844155881a5c25a5621ab88570f",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_noise.json",
+      "sha256": "56d79c3802a7d148c053d4ad5ad68f11e3e41d58f2f4377e78eacadf64d5b865",
+      "size_bytes": 7219
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_noise.npz",
+      "sha256": "5ac48f7e819588f55d5f64c29d017ec68dc19cfcaeb760bb43065dce6549916c",
+      "size_bytes": 184038
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_short_duration.json",
+      "sha256": "4c1663de66dd789fb7cb8bc2f7bdf66ecbcb37692e218bcc2b6198f90eef0577",
+      "size_bytes": 7398
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_short_duration.npz",
+      "sha256": "b3eea9c1f2aa5af6008d337351ec7b596bb88a23b22798503d209e3b0e4c14f1",
+      "size_bytes": 81810
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_window.json",
+      "sha256": "31909473d34bd6c2b00e342647f0d5aaae5c48bea3f5108327c9b6be792b1276",
+      "size_bytes": 7231
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R2_window.npz",
+      "sha256": "9628cdc41d3e9bc197c01f97391f48ae5ef5c16715b81f9e44995ffd8d46564c",
+      "size_bytes": 233480
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_contamination.json",
+      "sha256": "fe346b9b2d7f3f6e5d13df3573f3f2b5db6174adb0255eb870fd5856a34adc09",
+      "size_bytes": 7382
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_contamination.npz",
+      "sha256": "2b198813913c9c5d2c2f94998a1f5e70e94b94262dd66d26a2116010583f98b1",
+      "size_bytes": 176321
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_duration.json",
+      "sha256": "05fa2886ada382f33e79bd1d5cc5b05c4c59f8799140685fe949e5066ed69fcf",
+      "size_bytes": 7043
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_duration.npz",
+      "sha256": "a7b655f14ce13c583bcc9e796a3c4e83076e8b54f6f9f34aa1f207f56ab77590",
+      "size_bytes": 168952
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_duty.json",
+      "sha256": "93fa6ed7ef0e0ad533487d1ba4f77114acd21cc9bb6594a80492e8dcbd8d237e",
+      "size_bytes": 7209
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_duty.npz",
+      "sha256": "e4a46f5ae2faeda4cf352b0df7b58f8b436c90bd7027d32a9b5b86476f2a2aaf",
+      "size_bytes": 176345
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_exposure.json",
+      "sha256": "2d5c05cf46f77b452f5bf5b4bf4a633324951b0433f55705b3b318c549eae839",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_native.json",
+      "sha256": "b7153700a4b10a1b7596342b22b7c399d5294c0d1061485181dce225a8a51d60",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_noise.json",
+      "sha256": "ec6394b910da387303b7fbf1c6b21f921f5821f0b260d19179c2f4973104f70c",
+      "size_bytes": 7230
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_noise.npz",
+      "sha256": "287384e9a6224f4304dbdc2da85b4ece3758c787eb2339e0e796df862f73c80a",
+      "size_bytes": 184046
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_short_duration.json",
+      "sha256": "3cc6cf8ba8a0daf8cbf59dbf2b21307a35afb723a289044801191d69f3135f36",
+      "size_bytes": 7398
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_short_duration.npz",
+      "sha256": "e653e03d03bb1aec005bb1ee42b8a479d54f53d092857850e4900ecbf6124c6a",
+      "size_bytes": 83208
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_window.json",
+      "sha256": "097de51c572ed929343821839f40ba42c633b19c4fc6ecdafc95e2a758d96579",
+      "size_bytes": 7237
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S14_O30_R3_window.npz",
+      "sha256": "feeecdf111c570b9bcc4ae2d983395ef32e5ba64e6867eec819ba10c44dcd565",
+      "size_bytes": 233491
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_contamination.json",
+      "sha256": "4a720e4d9476939fe8b7fb9d5e646007ed0142d1421d0452132d8c2e6e99b607",
+      "size_bytes": 7378
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_contamination.npz",
+      "sha256": "9819bca3e880dd424b0181980ba5cbe21ca7e9871ba6d8bee02898d41ad7e581",
+      "size_bytes": 197796
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_duration.json",
+      "sha256": "dc5329689204fdb9454ba8855cd11485a030da6f657419277b4e939f8a6a9d39",
+      "size_bytes": 7170
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_duration.npz",
+      "sha256": "322be8df54366e6aedb8641235eb97696d8201ec155547076906f18b5ce5c798",
+      "size_bytes": 188986
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_duty.json",
+      "sha256": "16192f28e3c04b74a21b49287898e60ff06c8fd0d39674292687e783c0d70f77",
+      "size_bytes": 7205
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_duty.npz",
+      "sha256": "f32a978964f7464bc198494c7e2c1938a5e4616013c7602f574ce5801fe34892",
+      "size_bytes": 197768
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_exposure.json",
+      "sha256": "bd81d200e416bc2a1a433f5319043389db1d7e09d03348977a8b44a386f19ec1",
+      "size_bytes": 7178
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_native.json",
+      "sha256": "2039989c657ad63755b6dc37f2df8a43baab29f71724e703f1bae13e6c6f57d5",
+      "size_bytes": 7201
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_noise.json",
+      "sha256": "759acb027ccfe9be35f36686a32abf664ebb10f2be9381fa1ead266a3c071c60",
+      "size_bytes": 7202
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_noise.npz",
+      "sha256": "d3e1b0ce75953c7f298ac46dbb423ee55f4a1677cf920ffd3e36624f4a881510",
+      "size_bytes": 202769
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_short_duration.json",
+      "sha256": "eb093bd24c464dc3be0b339c3408f72d505c3b8cec5bbabfd2b95abd6f0bdfa7",
+      "size_bytes": 7383
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_short_duration.npz",
+      "sha256": "a8b74230934d5f26e324ee84cde8bc06afbc656a210f183e76d8165dfbca32a1",
+      "size_bytes": 100198
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_window.json",
+      "sha256": "788af03188dbb623c7674abc782a261c3ab84c6fef62b7261669f5e32a882525",
+      "size_bytes": 7230
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R0_window.npz",
+      "sha256": "53d0ceabdf029fb1755686090be3e0722e4afaae9f93198ddd76d44dc8151abe",
+      "size_bytes": 261557
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_contamination.json",
+      "sha256": "ecb72a559cfb62b2430dd86385cf884b1c4d64292b9ceb49aa18c4d69936d500",
+      "size_bytes": 7394
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_contamination.npz",
+      "sha256": "bd22bffbbc80380b8c99c7f761a512f597bfa4803dbe9adccc8f57604f66a408",
+      "size_bytes": 197570
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_duration.json",
+      "sha256": "196c02e2d68d54d86922b439da3361f20895f7b197b5611dda6f0a62afbac4dc",
+      "size_bytes": 7175
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_duration.npz",
+      "sha256": "322be8df54366e6aedb8641235eb97696d8201ec155547076906f18b5ce5c798",
+      "size_bytes": 188986
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_duty.json",
+      "sha256": "498c22787cd1d662089b82d1acdc6276891c5e065c7987d1b92fba8c56018128",
+      "size_bytes": 7216
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_duty.npz",
+      "sha256": "14482232c8e8e10d1a31ce9a13d564eae8bfec06a42f18efc71594f89c101cf5",
+      "size_bytes": 197579
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_exposure.json",
+      "sha256": "db60fac42b0e119d7dfc4f3a95821b361872f2fed080cb0634fbfe3ff57902d2",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_native.json",
+      "sha256": "e1ac6c7ae114419478506b46466c4ea43dc1a2eae1daae61c8bdc8db8adf14d8",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_noise.json",
+      "sha256": "a7cb4864884b99fb278b8db19a40bff9fff51545805918a948bfc542f0cadd04",
+      "size_bytes": 7214
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_noise.npz",
+      "sha256": "67a53f468bbd22420b22712245e1fcdc71fad55c0fa16ef5f664cdd3cc9a5dfb",
+      "size_bytes": 202759
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_short_duration.json",
+      "sha256": "7ab8a9cf62c3a12aeca62eb85e7de5386701928e5a8fa6778f9a7687c2c840c0",
+      "size_bytes": 7390
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_short_duration.npz",
+      "sha256": "c549b6d94548b67f098442a948d5f75e6ed9aa25742e48a81b0c26bef7cf05c3",
+      "size_bytes": 100294
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_window.json",
+      "sha256": "41666138443e5e897858ee2fa63bc910161e65caaecc3b4ff2a4e45bd9a49ab2",
+      "size_bytes": 7234
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R1_window.npz",
+      "sha256": "efcdce9635478c36d3b3808873e23d90b8f666c0a15b5b375b85fbeac45f96ad",
+      "size_bytes": 261543
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_contamination.json",
+      "sha256": "2d907d1a690782cfaf9dc5f8277636a596276075db1cfe99429b3c0885de2731",
+      "size_bytes": 7388
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_contamination.npz",
+      "sha256": "7c3789cc73fb12615ac228eb7942fa56ec624ee9bdf35e4c8ed2e1ad4cbddd55",
+      "size_bytes": 198709
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_duration.json",
+      "sha256": "753630cfb250f10b956622d082393b3595f397f69b8cad4d846defcf8e19365f",
+      "size_bytes": 7175
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_duration.npz",
+      "sha256": "322be8df54366e6aedb8641235eb97696d8201ec155547076906f18b5ce5c798",
+      "size_bytes": 188986
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_duty.json",
+      "sha256": "46e79329579f67f47442a68f723fe20e3b61af2ad142ef1d3714bdf73a054e13",
+      "size_bytes": 7215
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_duty.npz",
+      "sha256": "952ce905ab086fb6a0005848ff20b3ee2eb8af93cd5c8ab000dd8266eebe6e02",
+      "size_bytes": 198666
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_exposure.json",
+      "sha256": "c2084b5984e54a261a10e6e536154acf4291db3f6d6b2afbb5a18e29ef6cf5b7",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_native.json",
+      "sha256": "bf22525911d9413d4cf922399280c2e51404526bb016571030e6ca00ad767f6f",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_noise.json",
+      "sha256": "b084bc60e8bbe9f80e459c15fdbb6bc8d63a1f42b24775bc7a76031ee3bdd827",
+      "size_bytes": 7216
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_noise.npz",
+      "sha256": "91e5f1c75b691a99fa3addf683302a850e27199df0604f3ed9b452b1e0fe2fbb",
+      "size_bytes": 202723
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_short_duration.json",
+      "sha256": "6379099c89b892e7885887fd234b49dbabc3caa815b29ec1152aae1d30123dcd",
+      "size_bytes": 7377
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_short_duration.npz",
+      "sha256": "04ff54296118aee18767ce8eb5d44867618f9dd763ef437ddb5553aa0127d8ac",
+      "size_bytes": 100468
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_window.json",
+      "sha256": "53a24cca4356d1358b3880ee5a957916f9534c7ffb74bc4a17220a33c45e7731",
+      "size_bytes": 7237
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R2_window.npz",
+      "sha256": "39f01594b20cd397377c90d9987e7d418f205df3750e1928af59170f073b4311",
+      "size_bytes": 261583
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_contamination.json",
+      "sha256": "b59a649570f2b499a124f1b0f4d450cf3ca653ee1bb319378a72d1c986c3c337",
+      "size_bytes": 7389
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_contamination.npz",
+      "sha256": "e0d350900979a96d94af3cfed4fc7ebafea773c3cdb987397bb34700cc0f3894",
+      "size_bytes": 197243
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_duration.json",
+      "sha256": "ec8c111e385269d3d19e02e94047932a2226d85f4171f376c96d47d4e6685929",
+      "size_bytes": 7175
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_duration.npz",
+      "sha256": "322be8df54366e6aedb8641235eb97696d8201ec155547076906f18b5ce5c798",
+      "size_bytes": 188986
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_duty.json",
+      "sha256": "cca07c8132d232bb54f99e5cf77e013e8f84f81473b99638b2255805e771d818",
+      "size_bytes": 7214
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_duty.npz",
+      "sha256": "76add6940198a059d3d3cd411fb142ddee8973e3bf204dd3f758af05fb1cd471",
+      "size_bytes": 197279
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_exposure.json",
+      "sha256": "f6023c56321ae2e7bcb4495d95150c1cf67c8cdd9de00124af9b9b8664bb7b38",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_native.json",
+      "sha256": "506aef176a1da783003b1b405e83d0bfe29bce0de85857dc8bffc711492969de",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_noise.json",
+      "sha256": "89f5c26959c0c529807c653365f105566045d6c62cd310b3a3b2bf0eb16ff7f9",
+      "size_bytes": 7215
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_noise.npz",
+      "sha256": "a0d677a162f5679f7ecf7326d014f2c4881ffbdd8a51870556cf0856e74dd229",
+      "size_bytes": 202743
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_short_duration.json",
+      "sha256": "f9341faf8cd15f8688fb0dfac2bd4b30026acfee3cb2ff6ceb94359af65d0601",
+      "size_bytes": 7394
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_short_duration.npz",
+      "sha256": "989d9b12523cafe40908ba4d7e266215daaa11a902cea8ef62614c730319d32f",
+      "size_bytes": 99555
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_window.json",
+      "sha256": "457475fd27536731f0b357bab2e7828a093999a19d8e2dfd309cf8157c38156c",
+      "size_bytes": 7236
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O0_R3_window.npz",
+      "sha256": "fd091a99059a48575636472aa658a96aa33a9a75497fab50b13576801933debf",
+      "size_bytes": 261575
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_contamination.json",
+      "sha256": "16956b4c42abdc7b10ee6d994c0c93fd2fcca35f5d3a70f75714b6975f1e63e7",
+      "size_bytes": 7389
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_contamination.npz",
+      "sha256": "6eb400f71d12df84ee94ea42c1d640e5c14dfffdca3c65303147fa210c4f5d55",
+      "size_bytes": 188005
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_duration.json",
+      "sha256": "4ffd082bf1deaada96c9919aa297217ef3f92ae57665864f8a74c1406ca7c2eb",
+      "size_bytes": 6974
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_duration.npz",
+      "sha256": "5a5f03bf7a50ef45543ab6f82a2615cb1314ea19b2a5726230fe5c7b78222caa",
+      "size_bytes": 177766
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_duty.json",
+      "sha256": "3558b0798bca51eff3ecb6ad6c54ebc4e44702046274f7d725bd5a29353c1840",
+      "size_bytes": 7220
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_duty.npz",
+      "sha256": "c13ed453cfeb1baca8a8ce2ed2153b07fd1f3646e2d4b547bb7e1c19f97327eb",
+      "size_bytes": 187929
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_exposure.json",
+      "sha256": "62ba99ff01bd69b791917fee3bc3346616df42501247084fa6669488124bbf02",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_native.json",
+      "sha256": "e1241e234577d218cbc70a89be10d76b2f30d75c0d318e6ecab00ecf31b4acd1",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_noise.json",
+      "sha256": "d4d9f60d745e55c5c4f7eed88ede9250c0f62d312516cad83b8780368c003400",
+      "size_bytes": 7155
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_noise.npz",
+      "sha256": "9a2429cb8ce43e98856eb6b1c2ab52cbfd46c1fe18eb2601bd8b6589f169be64",
+      "size_bytes": 193730
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_short_duration.json",
+      "sha256": "03b564f7cac203e6749777ce5a1cf0523b75eeca868269363ef57af20f7b0a35",
+      "size_bytes": 7399
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_short_duration.npz",
+      "sha256": "f02d6f9eb2aaca71162914ac544d1c40a4ae83668ff37915ffef68bebbf753e6",
+      "size_bytes": 90533
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_window.json",
+      "sha256": "e01bd0720e5441c6984e2e34e64c059c868f973de2c1be7602b44f9345742269",
+      "size_bytes": 7237
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R0_window.npz",
+      "sha256": "19d070bfbf2de1fd3d62e413be9049b53eee26ad7dd6ff3d918a48b8b295c353",
+      "size_bytes": 249377
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_contamination.json",
+      "sha256": "97652d5d26b39c929b0117ca1b008a32a5a842b03d8e66d0cd8c6e99a38dc814",
+      "size_bytes": 7391
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_contamination.npz",
+      "sha256": "33c86ee13628ccd50472f778db932b5b6b5185067c6dc007fe2aceda1bbdf0be",
+      "size_bytes": 188749
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_duration.json",
+      "sha256": "9556201ec042c6240bad0aa1b18f96e9cf6a4a2cc0e79acba6c5115d0172207f",
+      "size_bytes": 6974
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_duration.npz",
+      "sha256": "5a5f03bf7a50ef45543ab6f82a2615cb1314ea19b2a5726230fe5c7b78222caa",
+      "size_bytes": 177766
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_duty.json",
+      "sha256": "fd193422819ade8ce9ed377538e8258dd51b2ccfea9e87570586229791a8c20f",
+      "size_bytes": 7221
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_duty.npz",
+      "sha256": "93fe400f0d8c72a3a9e89a6d5d91181fe07c183d220d166a04fbfdccdb8eb978",
+      "size_bytes": 188749
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_exposure.json",
+      "sha256": "bbf5ea81a754d8ba35e9fea38d8532f892ac8190b8e56760a4bb9d708f9329c3",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_native.json",
+      "sha256": "12188dd354571c9741f312ba693da26fa21bae0e909cd2b859c72baf9bf92dbb",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_noise.json",
+      "sha256": "9a48f0526e61e78e32ec18454adc1b92cda0d912872d77e0103bfc8234008d60",
+      "size_bytes": 7155
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_noise.npz",
+      "sha256": "59cfe0879f5c23a1d7d93c28f68a47f5710f6249b55a3a60b76dee11f6ca3839",
+      "size_bytes": 193699
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_short_duration.json",
+      "sha256": "4879698bcfe0f16c44394ce9befc5cb8cb75c7d6cf01a303b09a693a2c71bd8b",
+      "size_bytes": 7406
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_short_duration.npz",
+      "sha256": "506da6e373ce15d0a2b05420888be26f4d8bbd0f37431093c1e35533bae86a2e",
+      "size_bytes": 90776
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_window.json",
+      "sha256": "c54c186a44fdbf822d1b8c90243fb73f4185fd6c56e1359830783faa9b3bb53d",
+      "size_bytes": 7237
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R1_window.npz",
+      "sha256": "b67c31d221f2f2d128194f1afd22897bb61249fd5b8d566cd8220c4c228089af",
+      "size_bytes": 249371
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_contamination.json",
+      "sha256": "b8615942f2cf73bf6df684bea591b9d21bd1ff5c8d5239488598ffcb52217931",
+      "size_bytes": 7390
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_contamination.npz",
+      "sha256": "04a5aea2ddaa1bcc33d5b86f55c5583bfc65d4665a994ae070c22f2fce9d5a74",
+      "size_bytes": 189325
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_duration.json",
+      "sha256": "b516d7b992b42cbac4d1c23e64a67d5f50431c2cf6b05441c3953862abfdf1ac",
+      "size_bytes": 6969
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_duration.npz",
+      "sha256": "5a5f03bf7a50ef45543ab6f82a2615cb1314ea19b2a5726230fe5c7b78222caa",
+      "size_bytes": 177766
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_duty.json",
+      "sha256": "660270e2447237f7582f3547f8d1a5db25409351806447ecdd243edebbcd11cb",
+      "size_bytes": 7201
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_duty.npz",
+      "sha256": "f637de66d94899c34af45dc8b9d1e851b5fc17e07520210579bce15c8662b0c9",
+      "size_bytes": 189287
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_exposure.json",
+      "sha256": "ebb1dc1ea710d949fa6e258fbb24ae88d387c5cf512611843e2325c5d4b1be82",
+      "size_bytes": 7037
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_native.json",
+      "sha256": "f8eba884854e8b7c35c0858bce5e1df68374c4f9add71e44ef36b27f529ad902",
+      "size_bytes": 7063
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_noise.json",
+      "sha256": "8b6baf493582fe979f8bf8be98cf4bedf0806747e7fa0ee6e5437df68c046f29",
+      "size_bytes": 7152
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_noise.npz",
+      "sha256": "916c83f354613047849d402599752b69db0fb03a7f37f6b7bd6ad7ea58b87633",
+      "size_bytes": 193734
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_short_duration.json",
+      "sha256": "98d37d00894f3645a1d350c7afe9908bbe72dfe7a2a8f9a8edff6f756a9e2bd7",
+      "size_bytes": 7393
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_short_duration.npz",
+      "sha256": "9eb5db97273e75cdcccd22fd49078b2a3b6972dbb574237d9af5a103e3441d26",
+      "size_bytes": 91269
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_window.json",
+      "sha256": "d501e9e50362ad1b0c382b39caa34f957d2412b8d2b2fb76c672a46481f27734",
+      "size_bytes": 7233
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R2_window.npz",
+      "sha256": "e13bd90b1ef7e587606b0d43c5651f963d4acc0560c4a7785496ab861cc62700",
+      "size_bytes": 249397
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_contamination.json",
+      "sha256": "140fe2f074267a278abc80a0603895b910558587d6f0d78e5e73426bb87a15fc",
+      "size_bytes": 7391
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_contamination.npz",
+      "sha256": "7fbd6ccb007be8419a7a1c2987ce28d10bf1ebe51c903d6103da8dcfbb77988a",
+      "size_bytes": 188076
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_duration.json",
+      "sha256": "2dc8bb7161552aa4c5f7386b175093f7298d574bfbee0682fb611f2afa7074be",
+      "size_bytes": 6974
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_duration.npz",
+      "sha256": "5a5f03bf7a50ef45543ab6f82a2615cb1314ea19b2a5726230fe5c7b78222caa",
+      "size_bytes": 177766
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_duty.json",
+      "sha256": "214da64dfdf084d49dc80e0c244d6f29d5359f72ac2a607769d4ce422ac2705c",
+      "size_bytes": 7216
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_duty.npz",
+      "sha256": "26cf7ed6f0f2f3bf53917cc570dd718505bf794817404eebaad916c234bf6357",
+      "size_bytes": 188052
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_exposure.json",
+      "sha256": "2094d484b262dbc7ea0426a3560f09a72a759b4536e02125674f6e2d1842d46e",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_native.json",
+      "sha256": "6004f8ef5856db0cf5d3bf3521099556249d93c9b35eca1621541c52d924291e",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_noise.json",
+      "sha256": "64e0dba0f7bfa2b5d41fa8e7aea7d14e3a032809e1af8fb11e491cc6ad02db44",
+      "size_bytes": 7157
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_noise.npz",
+      "sha256": "111b68849610dced55bfdaea5fc4bc7f75d6a0ec4973770a5e802bec489ba726",
+      "size_bytes": 193738
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_short_duration.json",
+      "sha256": "ca062d7087681ec5494206ce4e459bc90a26d99d36cee1819b17117378425796",
+      "size_bytes": 7402
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_short_duration.npz",
+      "sha256": "561f135ad2ed784fdab4db905c454d2c0388035b46858be1107fa5fe02c3e3f2",
+      "size_bytes": 90393
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_window.json",
+      "sha256": "e62ada654885be937a3936618e0645c96a6e4d39029863c0f067bc15c3954db6",
+      "size_bytes": 7235
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S40_O30_R3_window.npz",
+      "sha256": "35b53f0b4837f6281ad9cb2d43ae293fa075c8adc112822ad1f9e690d0abc063",
+      "size_bytes": 249377
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_contamination.json",
+      "sha256": "034befce05a72d87451a3179ec6a0ac8df8772779c0612c90035adc209812817",
+      "size_bytes": 7388
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_contamination.npz",
+      "sha256": "d0c14e0da8ce682f701b28e893cb9ecc4340fe51a02dd19f0c0db46549177e55",
+      "size_bytes": 164546
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_duration.json",
+      "sha256": "89b6c07de0f0413c9de63d71da5daaa6e740f60786efd9f6d91bc2c1372c6115",
+      "size_bytes": 7177
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_duration.npz",
+      "sha256": "5b51a574ce036611a0bce2a80303cccf4ba44b4cae9cf0de70578a04600f106c",
+      "size_bytes": 178653
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_duty.json",
+      "sha256": "7289dfe210e7231638eb525a5f59790355451f68fb2184d17d861758c74eb0da",
+      "size_bytes": 7210
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_duty.npz",
+      "sha256": "8a7ff08ad595d2ffa04a7a536e082d14cc55b68be54a0fdc22fbbf9d8d8c300b",
+      "size_bytes": 164507
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_exposure.json",
+      "sha256": "d7d50b37bf48dd9ace222ed30765156f6032ee1e8b563d2afd7658ec84275af1",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_native.json",
+      "sha256": "0d83c57556b3be1a8b30beaf61f4bcd6d3287450aa9acf628bbb662c616d40dc",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_noise.json",
+      "sha256": "ddf8bff2c155f7bd3084f4b27a51a430a24fa0619b4fac7083ea92a728ac8d50",
+      "size_bytes": 7221
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_noise.npz",
+      "sha256": "e80e7702e208836ef7258181a2499a7d678b8b1db3953146a825ab51df25dd12",
+      "size_bytes": 191437
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_short_duration.json",
+      "sha256": "f23a11e3df762689c388ec1d1415495c0b4d90d0b87e5a5039daa3af87ed29ff",
+      "size_bytes": 7388
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_short_duration.npz",
+      "sha256": "d893480bc41c577f462ec862c56cb03321975ce0b83da23762e64cd6961a8983",
+      "size_bytes": 80344
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_window.json",
+      "sha256": "91486db642cf70313e0c4cb214435468419b7c00b4502021a4175c4ba01f1a1f",
+      "size_bytes": 7231
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R0_window.npz",
+      "sha256": "357bce10e0751e27a549185823a276bccd82f409a0162263bd4b0009801c3f36",
+      "size_bytes": 217713
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_contamination.json",
+      "sha256": "d8e4aedc384760f614bf9d3cb2aa80fb9eb068eb3b5ec75e1b76a84cbfe9002c",
+      "size_bytes": 7382
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_contamination.npz",
+      "sha256": "2b38a87c8e45e4b817cc496074ad551a65fa86de2a1ee7d5bdbd8b2ac02816d2",
+      "size_bytes": 164864
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_duration.json",
+      "sha256": "99dc60fd4611d92f7fa3dee81876ec5a37c0c8eedd2c9f1ec4193aa1aab85375",
+      "size_bytes": 7172
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_duration.npz",
+      "sha256": "5b51a574ce036611a0bce2a80303cccf4ba44b4cae9cf0de70578a04600f106c",
+      "size_bytes": 178653
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_duty.json",
+      "sha256": "dd20fe1d86e363b06cf35d6ac6db06485bc29b60950532d496a95b1df1b670de",
+      "size_bytes": 7205
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_duty.npz",
+      "sha256": "faceac3f218ad2d15631b999698411bcdff0701360b4b1b7e8a835543369dff3",
+      "size_bytes": 164842
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_exposure.json",
+      "sha256": "42c6ef0df0712d2ba03f415a104e7fc8ba9ff6e1d5647cf33c351f4aa4f77031",
+      "size_bytes": 7178
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_native.json",
+      "sha256": "1e2f25736f1a39fa4cb33cb2fbe63cc79ee3aa6f3405d3d5c0654955f0c6e551",
+      "size_bytes": 7201
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_noise.json",
+      "sha256": "d118521abcb86b1870160d41f14189b99ecd667355c302445965483a8dbad5f7",
+      "size_bytes": 7214
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_noise.npz",
+      "sha256": "868add680d78ebb9417db6b4016aab6a9a9a670b66c8a9cb307b5fce3267f913",
+      "size_bytes": 191462
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_short_duration.json",
+      "sha256": "d466fcc625e84fab671f20ab640add85e727c5b148375aa435124ec3931813b6",
+      "size_bytes": 7386
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_short_duration.npz",
+      "sha256": "3f0fc11bdd7cb452b61eed71547a59f8584f900403813717a277c78b48f60cd6",
+      "size_bytes": 80700
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_window.json",
+      "sha256": "f159006a41d7861d95d46a26d8f4efe32c9c05c0d86ffeb5c8ae731e1156eaa9",
+      "size_bytes": 7225
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R1_window.npz",
+      "sha256": "8fc77a2ac86c2c0a195a53e85bb4531c609501c3704a3a895703273226b0642e",
+      "size_bytes": 217746
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_contamination.json",
+      "sha256": "0c581dc843acaac58127f9e4e8c1474023ec5bd6ce80441282ffcb3df53c8649",
+      "size_bytes": 7377
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_contamination.npz",
+      "sha256": "b4846527092bb5ec1981aab95ced58bce399861c9ce77e01890d03c98152b107",
+      "size_bytes": 166563
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_duration.json",
+      "sha256": "d52203f4467b8f720907d8631959914a1d887aa3c8e6e40d16f40ccb3d17b912",
+      "size_bytes": 7172
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_duration.npz",
+      "sha256": "5b51a574ce036611a0bce2a80303cccf4ba44b4cae9cf0de70578a04600f106c",
+      "size_bytes": 178653
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_duty.json",
+      "sha256": "5f41650857ae280d81f19e1c02c7b6901fbae6692dab8658b60deb6a306893da",
+      "size_bytes": 7203
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_duty.npz",
+      "sha256": "4f076ebf3a403debcbeb03de6f7e5597bc88d5731ac35549026a643aba22ed9d",
+      "size_bytes": 166493
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_exposure.json",
+      "sha256": "6499b3cff55e3283a9855021312ab38f9373cda2e40733ba2beabc194fbe0219",
+      "size_bytes": 7178
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_native.json",
+      "sha256": "e1007bbb4fc8d332068cb735170a74c5dc7de2f48f52fc6900bafc2f92b3694a",
+      "size_bytes": 7201
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_noise.json",
+      "sha256": "8ec79e50aa983b68e5685b2ab6a4929e2ed3c745dbc8ab98496e968165e34960",
+      "size_bytes": 7213
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_noise.npz",
+      "sha256": "2122ea5897833a65e64b59e85ec3907242b083f77b3eff6b218c03c6a1b782d6",
+      "size_bytes": 191455
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_short_duration.json",
+      "sha256": "5032a0efd3902f7d7eef2f4807130af1e4fe4d460595421adcc0e02e156ca6b8",
+      "size_bytes": 7383
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_short_duration.npz",
+      "sha256": "b528efef572efc2664c9283c6585fbe713b5fa969755ef467a91d176b09e4838",
+      "size_bytes": 81613
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_window.json",
+      "sha256": "67cb06553c94e8edb87c2feacfd80406bc38c67515b6a0a1c19e96ad941a584e",
+      "size_bytes": 7219
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R2_window.npz",
+      "sha256": "6073f3202b41954316f174a12f902d47c6a9f90ec1e31052bd41162b51b208d2",
+      "size_bytes": 217752
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_contamination.json",
+      "sha256": "33b37efa0eedddd22ad647f520cc2fd6d8035f50fc00bd359742bc8a7a57835d",
+      "size_bytes": 7382
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_contamination.npz",
+      "sha256": "d49730cc456d9ac08a2d9f3679c5ab6a0aa4498500b3559ffe74e34aea87d837",
+      "size_bytes": 164900
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_duration.json",
+      "sha256": "bf589bc4dd2291eb4ed598075d1c95a887776a8db6b266057ed51e12cdba9842",
+      "size_bytes": 7177
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_duration.npz",
+      "sha256": "5b51a574ce036611a0bce2a80303cccf4ba44b4cae9cf0de70578a04600f106c",
+      "size_bytes": 178653
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_duty.json",
+      "sha256": "f6aba7f68a844dbfeb711080b5a0d0d45c9914569e2ce1f141d102ebc7e28d94",
+      "size_bytes": 7213
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_duty.npz",
+      "sha256": "bbe5a1657ccb1b2d23dfb5124dc2180b90ecb8b757ab93d883343f26c884bf4a",
+      "size_bytes": 164903
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_exposure.json",
+      "sha256": "a794293bb2967e35eb847966f61826f103b26f08992ac80c878d330014647d50",
+      "size_bytes": 7183
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_exposure.npz",
+      "sha256": "2d2b625aff120a4c8cc250f426449766853ba070c7405f0b2c0f1d4d9cd2634d",
+      "size_bytes": 388512
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_native.json",
+      "sha256": "7d75bd988a64371776e9f241895d29cb3e746a051f07ee9f70d099a2ad4c14a3",
+      "size_bytes": 7206
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_native.npz",
+      "sha256": "2b121761e76360f747fa276232b61813e93e17456c379e5b0957b20da0aeb445",
+      "size_bytes": 1066531
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_noise.json",
+      "sha256": "4b19bd1057a6361de2a19b7964a566fde5a29a7c30329a151474c98c61481d6e",
+      "size_bytes": 7220
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_noise.npz",
+      "sha256": "48fc6507230dad015dcf7ebf2e0dfa8eb7ce6b9c26f4c1de3b8b6b6ee4931a67",
+      "size_bytes": 191488
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_short_duration.json",
+      "sha256": "52c7e19387dcb6e35d882943d0c626ffcfd14d98f4058e57a28da63325b7978d",
+      "size_bytes": 7387
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_short_duration.npz",
+      "sha256": "10fb425a3f052848094562d97f2ac0f9bc173a75b6bf486587143c811ff6d664",
+      "size_bytes": 80451
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_window.json",
+      "sha256": "803e73e9ce16afab4ab6417728c7fbcd2ddf112c081a8c01a23f1728a6d2ae29",
+      "size_bytes": 7227
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O0_R3_window.npz",
+      "sha256": "9ca4f49e706d8aac29b3d7d2b31213b5216dc694a01ec0e78d223736b12ba650",
+      "size_bytes": 217683
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_contamination.json",
+      "sha256": "21a70a8b5e425110ea85e4a6919945cc728f8bc63af36f563604a2f869065652",
+      "size_bytes": 7400
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_contamination.npz",
+      "sha256": "ea0766889ef2a701ca30e9cb86da886cd8dc5d3f482c71002550521d63f847b8",
+      "size_bytes": 156709
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_duration.json",
+      "sha256": "e291bc07db5d0590811d122fccfc60607e97e175e2db4876242178e723cc62ad",
+      "size_bytes": 7049
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_duration.npz",
+      "sha256": "b2bf0d4508cf829eaa26cfa63c5433a22961107dc9eaa0b685ede04d4af7c645",
+      "size_bytes": 167471
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_duty.json",
+      "sha256": "a4c8b89cfd7c3776c69815b4b695713adb6a821aae2ab7d004c293e303adbe3f",
+      "size_bytes": 7223
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_duty.npz",
+      "sha256": "88caeb0457e709f8644749b8a49f6f8234e5c5cf917df87664b5e4d4e0853bba",
+      "size_bytes": 156733
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_exposure.json",
+      "sha256": "7b42170fc6fbc0f400e0f2c4619bc9e6699ec6878d9b31ccf2d0c15a674165c7",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_native.json",
+      "sha256": "a16408b4a6d5d0e860cef18d5ddb8ec64f5e10d7ca00e5884c39ab2f543f31a6",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_noise.json",
+      "sha256": "671b678c781000a202f3e650ab30c1ba7f79bf5bcf76ed8b0da43456d8606fd0",
+      "size_bytes": 7229
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_noise.npz",
+      "sha256": "47852c560e10d7a3328a7f34b74bf7c30ca48d474b2c49975ff98b0660df2a4e",
+      "size_bytes": 182437
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_short_duration.json",
+      "sha256": "e4285e1060ce0131fa7e7b26e4f7eacc486118c6376844c9b4057ceb0f2b0c8f",
+      "size_bytes": 7401
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_short_duration.npz",
+      "sha256": "d005adff61a6e08279c75ca8be43d76ea2e08ff56a44cc3ad1d8585c6cd5f540",
+      "size_bytes": 71799
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_window.json",
+      "sha256": "5681d612599eb17fd89fd3c95ce10cc3266584ac9c39c18612e5d3a80e49904a",
+      "size_bytes": 7241
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R0_window.npz",
+      "sha256": "386b8d0b9a3947aed78a64cb1a4dc060b9508f0be3c2de06f9b8552414926f47",
+      "size_bytes": 205982
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_contamination.json",
+      "sha256": "02d833f197408083e918655bfc899fb5a099d1d29446c7a94b31ff348df60bec",
+      "size_bytes": 7394
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_contamination.npz",
+      "sha256": "17cd418a35acce82fbc24b0c77880f3bd15c3c0fc19433aea8b6440f219f2bd5",
+      "size_bytes": 155777
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_duration.json",
+      "sha256": "88e8e2b03e1bb5c6b2479d0490201e8dd6a3bf0eaa3706bdddf4b2929d553ef0",
+      "size_bytes": 7049
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_duration.npz",
+      "sha256": "b2bf0d4508cf829eaa26cfa63c5433a22961107dc9eaa0b685ede04d4af7c645",
+      "size_bytes": 167471
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_duty.json",
+      "sha256": "413ec89665a804860ae0ebf1ef125d546c2f60cf38e501b38c0cbc6539422ced",
+      "size_bytes": 7228
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_duty.npz",
+      "sha256": "b1649789bfc43d69c1881bb3fc11e24519948d97c9d0a4ce718f4930eb72775c",
+      "size_bytes": 155787
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_exposure.json",
+      "sha256": "d1edecdac1eff170028c1772cbbc5bbe2ed52ce6056a0bfa03074546f0ffbfbc",
+      "size_bytes": 7042
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_native.json",
+      "sha256": "c8ef511cc127ef7720690392bc6ff041fec42d87dd393d2c914cf48a8308a87a",
+      "size_bytes": 7068
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_noise.json",
+      "sha256": "2c852cc596e5bab2871e16cdeb8160d7c2adb70cccd08dfea057d3e12fc48cdf",
+      "size_bytes": 7224
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_noise.npz",
+      "sha256": "8d8ae8cfde66f300f96e8e2ce18277b9caa27521416e8652e62bcd746cf66d4a",
+      "size_bytes": 182434
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_short_duration.json",
+      "sha256": "b98311c78662a5ae6f68f9504c3de68903067b34ceae8bea46e0d37c686ddc24",
+      "size_bytes": 7396
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_short_duration.npz",
+      "sha256": "34d4c5f3bc661cc786391486f12f0099236e9a7a0da4571ffaeb44057f7726aa",
+      "size_bytes": 70588
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_window.json",
+      "sha256": "25cc7f5e7eff1219d14263b543710b7a7387f3092e21421160c3cc386c4e4dc4",
+      "size_bytes": 7248
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R1_window.npz",
+      "sha256": "cc73c3d79004e79d76d203dcb73fdf9e4776e803dc850f21a844a0b61071997e",
+      "size_bytes": 205971
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_contamination.json",
+      "sha256": "1cdf2f3055319139d33674c3381a7ccc6f26d212b0976753aa8ea8ffdc8ded65",
+      "size_bytes": 7393
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_contamination.npz",
+      "sha256": "3ef295e6716f7bd5626df8c5c8cbfcb5c7f48e1db28eb99911ac519b6e76c525",
+      "size_bytes": 155902
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_duration.json",
+      "sha256": "3cd2596ca7454ee84d8fdbaf937668d405b263918c0c3312e998ceefab8bd780",
+      "size_bytes": 7044
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_duration.npz",
+      "sha256": "b2bf0d4508cf829eaa26cfa63c5433a22961107dc9eaa0b685ede04d4af7c645",
+      "size_bytes": 167471
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_duty.json",
+      "sha256": "be8be0b46514343f2568cec5f28f26f89731f2d44b49652da921fbc85be74a32",
+      "size_bytes": 7224
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_duty.npz",
+      "sha256": "19a92564d53f80cf0e13fa00d603fe90b825ddbf4fa9d8df2a42908fdf2487f7",
+      "size_bytes": 155904
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_exposure.json",
+      "sha256": "e1c5256cbd1c3cd0da536c3febc09985dd805a94cbace0134f12206257c38379",
+      "size_bytes": 7037
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_native.json",
+      "sha256": "f98cb4b0bf76283819844cc190b4af758388b00ea7a22965b77e05494027ea6d",
+      "size_bytes": 7063
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_noise.json",
+      "sha256": "7ee6e083b13dd0ef5a4478f38436e20ab6a893d1ef49b5534dbcdd2ff801db2a",
+      "size_bytes": 7225
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_noise.npz",
+      "sha256": "467a77c958171fae2db5d3c6d4e066d20813d5ffc8e4fd3d46d642473010e5c0",
+      "size_bytes": 182429
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_short_duration.json",
+      "sha256": "61f8592000d308c5c46eaadb36312fda577a5a590f2660c5ddea920e8249ee92",
+      "size_bytes": 7384
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_short_duration.npz",
+      "sha256": "1f3c9c5d4ec1d58e193fe243f43bb5f7dc264ef1a9eee6307a9545427e4d766a",
+      "size_bytes": 71761
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_window.json",
+      "sha256": "e4042615a73a1155865769776d25cdc861c437b8c8679ff51d280e9db4de65ca",
+      "size_bytes": 7233
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R2_window.npz",
+      "sha256": "5e4eb86802a9829ece87d256e2b81957734a5f19b4ad7067ad7fdcdfa9bfd286",
+      "size_bytes": 206010
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_contamination.json",
+      "sha256": "1f4970011cd023dc3515174edefbe060764561643d12e728f1a5ef530e052a65",
+      "size_bytes": 7393
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_contamination.npz",
+      "sha256": "66bfbc61d40dec10eed5f3a6e2f4a86ba4872c020ad81851dcd9607d90158447",
+      "size_bytes": 157139
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_duration.json",
+      "sha256": "37237307313a86a5c56f772abbec700df34dae0bb1096781bf7fd597b035e35f",
+      "size_bytes": 7044
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_duration.npz",
+      "sha256": "b2bf0d4508cf829eaa26cfa63c5433a22961107dc9eaa0b685ede04d4af7c645",
+      "size_bytes": 167471
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_duty.json",
+      "sha256": "808a3c3d1f1ce5dc32bcbfcce09023512eda325a84a01d8b9155b6499bac27ed",
+      "size_bytes": 7220
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_duty.npz",
+      "sha256": "b304e018ed66eb77de5d8dd1f9092a9eacbde761bb70369b650cdb68631acbbd",
+      "size_bytes": 157105
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_exposure.json",
+      "sha256": "913e68c98a118f1c77c2e2997a0c0ed48960f90cf3a44440539ee4934118751e",
+      "size_bytes": 7037
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_exposure.npz",
+      "sha256": "87e11069a88f4b9e3163f3b05008f605d37d611a7deccee3bbc8917fb23437f4",
+      "size_bytes": 382944
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_native.json",
+      "sha256": "9a8e53f6bf519c861afe6150cf113aac62f741baeb256447f46f26bec75a86c1",
+      "size_bytes": 7063
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_native.npz",
+      "sha256": "8de114eb917738163f6154b444aeb5b7032ca1c0408a27fbd70597f8d4a04acc",
+      "size_bytes": 1057022
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_noise.json",
+      "sha256": "590575b69b76d70ac41252ef483ba27bba4ce04afe868e8004e368e4ad9441d9",
+      "size_bytes": 7226
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_noise.npz",
+      "sha256": "4836342f02e5c21a83e1033a0de46dfe170b715ea589707a0cd2151af70bb138",
+      "size_bytes": 182466
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_short_duration.json",
+      "sha256": "e741d2bd52feffb9210425f444efc30942ed0eac9de3fb0af7a66766b4d5f8a1",
+      "size_bytes": 7394
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_short_duration.npz",
+      "sha256": "db02d677e89be284b24afe9eb13803157e60d1c577cd6775aca7f60d801b09b3",
+      "size_bytes": 71975
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_window.json",
+      "sha256": "1eb0018eb818691831f492f1224cb291986e6e70156b9852031608f35087d9e1",
+      "size_bytes": 7238
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degraded/S81_O30_R3_window.npz",
+      "sha256": "11dead1a9538a89bbf97688829513d427ee124c419de7467d80c53d660712fd8",
+      "size_bytes": 205958
+    },
+    {
+      "path": "results/stage12/local_windows_v2/degradation_cells.csv",
+      "sha256": "f6285f7366454c091dc7fc712528d2a249278df332c7606aebc930dc2f5994dd",
+      "size_bytes": 61198
+    },
+    {
+      "path": "results/stage12/local_windows_v2/transfer_predictions.json",
+      "sha256": "8f787eb7338cd29c3a8e0c8d2addb31c1fe16b98b296702496cd12e2d6f0440f",
+      "size_bytes": 1158413
+    },
+    {
+      "path": "results/stage12/local_windows_v2/transfer_curves.csv",
+      "sha256": "a7a9d08cd1d01caa53ddd2c64101c02f6facbb81eeef147136323af6cb0555a6",
+      "size_bytes": 13161
+    },
+    {
+      "path": "results/stage12/local_windows_v2/transfer_contributions.csv",
+      "sha256": "32f201697d7f148802f7c9d536630e95434aad1c9429225bf50f85a55d8c6f9e",
+      "size_bytes": 108333
+    },
+    {
+      "path": "results/stage12/local_windows_v2/actual_tess.json",
+      "sha256": "6cebe9e8fa15c3a527bfa0242b74b2ef96925c8b159e829c25aa66e64c52ba71",
+      "size_bytes": 43998
+    },
+    {
+      "path": "results/stage12/local_windows_v2/actual_vs_degraded.json",
+      "sha256": "c85738b19f7fdb5ddc644ffa3edd463e3181492bd3d3538bb177e2ae0ba5a33f",
+      "size_bytes": 18411
+    }
+  ],
+  "input_id": "0b8094f8c34cbc259bdc4b31d4d843eefe0b8a3fe1403789e300eed584040d09",
+  "inputs": [
+    {
+      "path": "results/stage10/benchmark_capsule.json",
+      "sha256": "f16f9c35a26603f4fe397bf32f5b432bd22744adcb9f4b75364a0927a651cc1f",
+      "size_bytes": 19226
+    },
+    {
+      "path": "results/stage10/tess_sectors.csv",
+      "sha256": "0eeb262c9a65a34d3c917dbe08d2d5184052b179a7bcd5cd40cab013dc461b3c",
+      "size_bytes": 4635
+    },
+    {
+      "path": "data/reference/stellar_references.csv",
+      "sha256": "d119e19e4329da20d5a5b3353c68c95e42f2a3d9b043b42ab00766c798e81586",
+      "size_bytes": 75821
+    }
+  ],
+  "model_frozen_before_actual": true,
+  "parent_stars": 1,
+  "products": [
+    {
+      "bytes": 4011840,
+      "name": "kplr010963065-2009259162342_slc.fits",
+      "sha256": "6e8e0fa657fec8a1bf38cfb273d7eabe78440be23a897bc6b7b51b2f4b6fc58b"
+    },
+    {
+      "bytes": 4659840,
+      "name": "kplr010963065-2010111051353_slc.fits",
+      "sha256": "161db74ff9bcc5b83408fd5aa88a50df34bbe01dfaefb8bc60ea73916bdf59be"
+    },
+    {
+      "bytes": 4086720,
+      "name": "kplr010963065-2010140023957_slc.fits",
+      "sha256": "ec04890bbbcd36e755992d96b8905196f41d70723b671bc084d2a289f064e63f"
+    },
+    {
+      "bytes": 4959360,
+      "name": "kplr010963065-2010174090439_slc.fits",
+      "sha256": "875621c8bf5631ceb59846234d02fc8aa84fefc510aec31bbffcc4ef2842f35f"
+    },
+    {
+      "bytes": 4008960,
+      "name": "kplr010963065-2010203174610_slc.fits",
+      "sha256": "7db34451dcc6031bd4ba6b2ff161b7d5e0fbf6d0e1c2a4e41394ef7607ded6c6"
+    },
+    {
+      "bytes": 4570560,
+      "name": "kplr010963065-2010234115140_slc.fits",
+      "sha256": "b90623efba6713eda1e05eeba38c067f0bc9d23ce55bd204058f8a65c0051ba3"
+    },
+    {
+      "bytes": 4452480,
+      "name": "kplr010963065-2010265121752_slc.fits",
+      "sha256": "fd669c8b77a4b8d2eedf6bf683f694fe4ebcf3dbdda4c385f2b4f56f9f03b2b4"
+    },
+    {
+      "bytes": 4452480,
+      "name": "kplr010963065-2010296114515_slc.fits",
+      "sha256": "310f3cbdddc25179f7e0e46e526df3604fc7c55feb4944d028b74fd4437a4a6f"
+    },
+    {
+      "bytes": 4317120,
+      "name": "kplr010963065-2010326094124_slc.fits",
+      "sha256": "fa98bd028a74073f5b9f73455399e3b8c970489de06160f24e30751c4edafd34"
+    },
+    {
+      "bytes": 4204800,
+      "name": "kplr010963065-2010355172524_slc.fits",
+      "sha256": "c2759609bb0631a41ae0e53931eb867d14cc281ce52b9360d61fb2f38e119f05"
+    },
+    {
+      "bytes": 1964160,
+      "name": "tess2019198215352-s0014-0000000048450369-0150-s_lc.fits",
+      "sha256": "ebe8c2a4ca2e56a233d59285a0c638c65b842165e7d9477b5d740a73428e52cc"
+    },
+    {
+      "bytes": 1906560,
+      "name": "tess2019226182529-s0015-0000000048450369-0151-s_lc.fits",
+      "sha256": "4c73b3695a428d72ac352d23e64135f19aed06ed26e141782538c0cc369381bd"
+    },
+    {
+      "bytes": 2062080,
+      "name": "tess2021175071901-s0040-0000000048450369-0211-s_lc.fits",
+      "sha256": "f6394032c3c49cd04b4431260e6316d1c4f4216667a0aaf06e2b564479fab978"
+    },
+    {
+      "bytes": 1944000,
+      "name": "tess2021204101404-s0041-0000000048450369-0212-s_lc.fits",
+      "sha256": "992a4ac473114fb99613d1d1f6410b4ef1ece2f78658c17c4043f706051bf6a2"
+    },
+    {
+      "bytes": 1828800,
+      "name": "tess2022164095748-s0053-0000000048450369-0226-s_lc.fits",
+      "sha256": "fcef70a71a1b39f777651bc95fc255c9facd9e8aff47a9588d94befadc1280cc"
+    },
+    {
+      "bytes": 1987200,
+      "name": "tess2022217014003-s0055-0000000048450369-0242-s_lc.fits",
+      "sha256": "d7a5611c0bb1cb467fd80fc9839a52a8e1279dc70a7cf3f631664e963ec52abb"
+    },
+    {
+      "bytes": 1952640,
+      "name": "tess2024003055635-s0074-0000000048450369-0269-s_lc.fits",
+      "sha256": "af071ad5392762efdbed5b149ad7c90197f2b525142466dd0bf5fb8cc115cce5"
+    },
+    {
+      "bytes": 2024640,
+      "name": "tess2024030031500-s0075-0000000048450369-0270-s_lc.fits",
+      "sha256": "f13e6c1a1b4660c40465f65dbff17d74c8f92f7b71321c88d7b8ea03067b267f"
+    },
+    {
+      "bytes": 1935360,
+      "name": "tess2024170053053-s0080-0000000048450369-0275-s_lc.fits",
+      "sha256": "e40dc3039483f2e40483ce9c4034abf7ee47d8cc304e80029e9eda2e0a865b33"
+    },
+    {
+      "bytes": 1946880,
+      "name": "tess2024196212429-s0081-0000000048450369-0276-s_lc.fits",
+      "sha256": "a3268c513651eca025111761c36a009a46d687a751ad146731951838730af3b2"
+    },
+    {
+      "bytes": 1892160,
+      "name": "tess2024223182411-s0082-0000000048450369-0278-s_lc.fits",
+      "sha256": "e3679004e547a78ce5e65a586db0fc7cf723e86e68d7a1eff918cc0fa9240098"
+    }
+  ],
+  "profile": "pilot",
+  "recalibration_applied": false,
+  "schema_version": 1,
+  "source_noise_floor_ppm2_per_uHz": 0.456778818934636,
+  "source_noise_scope": "integrated_Q5_native_high_frequency_median_log2_approximation_not_exact_noise_decomposition"
+}
